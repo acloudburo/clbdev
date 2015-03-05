@@ -103,10 +103,10 @@ activate :livereload
 # Site Settings
 ###
 # Set site setting, used in helpers / sitemap.xml / feed.xml.
-set :site_url, 'http://blog.url.com'
-set :site_author, '_AUTHOR_'
-set :site_title, '_TITLE_'
-set :site_description, '_SUBTITLE_'
+set :site_url, 'http://dev.cloudburo.net'
+set :site_author, 'Felix Küstahler'
+set :site_title, 'Dev@Cloudburo'
+set :site_description, 'Developer Blog of Cloudburo'
 # Select the theme from bootswatch.com.
 # If false, you can get plain bootstrap style.
 set :theme_name, 'flatly'
