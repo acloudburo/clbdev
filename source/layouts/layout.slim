@@ -1,0 +1,37 @@
+| <!doctype html> 
+html
+  = partial "partials/meta"
+  body
+    = partial "partials/header"
+    .container
+      .row
+        div.col-lg-9.col-md-9
+          - unless current_article.nil?
+            h1
+              = current_article.title
+            - current_article.tags.each do |tag|
+              small.label.label-default
+                = tag
+            hr
+            p
+              span.glyphicon.glyphicon-time
+              |  Posted on 
+              = current_article.date.strftime('%b %e')
+            hr
+            - if current_article.data.image_src
+              img.img-responsive src=current_article.data.image_src
+              hr
+          = yield
+          hr
+          aside
+            h3
+              | Recent Articles
+            ol
+              - blog.articles[0...10].each do |article|
+                li
+                  = link_to article.title, article
+                  span<>
+                    = article.date.strftime('%b %e')
+          = partial "partials/footer"          
+        = partial "partials/sidebar"
+    = javascript_include_tag  "all"

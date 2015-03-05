@@ -1,0 +1,23 @@
+/*
+  any variables and settings should be defined here,
+  like colors for instance
+*/
+
+$marginTopBody: 80px;
+
+.navbar-inverse {
+background-color: #0064cd;
+border-color: #428bca;
+}
+
+a:hover, a:focus {
+color: #0064cd;
+}
+
+a {
+color: #0064cd;
+}
+
+.label-default {
+background-color: #428bca;
+}
