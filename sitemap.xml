@@ -25,6 +25,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>http://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>http://dev.cloudburo.net/2014/07/27/the-reactive-manifesto.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.7</priority>
