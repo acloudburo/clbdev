@@ -5,7 +5,7 @@
   <id>http://dev.cloudburo.net</id>
   <link href="http://dev.cloudburo.net"/>
   <link href="http://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-01-31T08:04:36Z</updated>
+  <updated>2015-01-31T07:04:36Z</updated>
   <author>
     <name>Felix Küstahler</name>
   </author>
@@ -13,16 +13,17 @@
     <title>Google Ventures releases new DIY guide to help startups design better products</title>
     <link rel="alternate" href="http://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups-design-better-products.html"/>
     <id>http://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups-design-better-products.html</id>
-    <published>2015-01-31T08:04:36Z</published>
-    <updated>2015-03-06T14:38:56+01:00</updated>
+    <published>2015-01-31T07:04:36Z</published>
+    <updated>2015-03-06T15:44:28+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt;      Interesting new DIY guid by google, definitely worth a check&lt;/p&gt;
+    &lt;p&gt;&lt;dummy&gt;      Interesting new DIY Guide by Google, which helps startups to design better products.&lt;/p&gt;
     
-    &lt;p&gt;Today Google’s venture capital arm released a new do-it-yourself guide for startups looking to run a design sprint — Google Ventures’ name for its well-known five-day prototyping process.
+    &lt;p&gt;Google’s venture capital arm released a new do-it-yourself guide for startups looking to run a &amp;quot;design sprint&amp;quot; — Google Ventures’ name for its well-known five-day prototyping process.
+    Google Ventures has long preached the concept and has publicly detailed its various stages, from idea development and prototyping to user testing. With today’s release, however, the design sprint guide gets a lot more formal, and sets the stage for Google Ventures’ plan to publish its techniques in book form
     &lt;a href="http://venturebeat.com/2015/01/30/google-ventures-releases-new-diy-guide-to-help-startups-design-better-products/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
@@ -33,7 +34,7 @@
     <link rel="alternate" href="http://dev.cloudburo.net/2014/11/10/the-future-of-work.html"/>
     <id>http://dev.cloudburo.net/2014/11/10/the-future-of-work.html</id>
     <published>2014-11-10T11:48:00Z</published>
-    <updated>2015-03-06T13:54:41+01:00</updated>
+    <updated>2015-03-06T15:44:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -53,7 +54,7 @@
     <link rel="alternate" href="http://dev.cloudburo.net/2014/10/21/user-customer-partner.html"/>
     <id>http://dev.cloudburo.net/2014/10/21/user-customer-partner.html</id>
     <published>2014-10-21T15:45:00Z</published>
-    <updated>2015-03-06T13:54:41+01:00</updated>
+    <updated>2015-03-06T15:44:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -186,7 +187,7 @@
     <link rel="alternate" href="http://dev.cloudburo.net/2014/10/19/the-big-shift.html"/>
     <id>http://dev.cloudburo.net/2014/10/19/the-big-shift.html</id>
     <published>2014-10-19T23:35:00Z</published>
-    <updated>2015-03-06T13:54:41+01:00</updated>
+    <updated>2015-03-06T15:44:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -248,7 +249,7 @@
     <link rel="alternate" href="http://dev.cloudburo.net/2014/07/27/the-reactive-manifesto.html"/>
     <id>http://dev.cloudburo.net/2014/07/27/the-reactive-manifesto.html</id>
     <published>2014-07-27T13:37:00Z</published>
-    <updated>2015-03-06T13:54:41+01:00</updated>
+    <updated>2015-03-06T15:44:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -270,7 +271,7 @@
     <link rel="alternate" href="http://dev.cloudburo.net/2014/04/16/fullstack-developer.html"/>
     <id>http://dev.cloudburo.net/2014/04/16/fullstack-developer.html</id>
     <published>2014-04-16T18:20:31Z</published>
-    <updated>2015-03-06T13:54:41+01:00</updated>
+    <updated>2015-03-06T15:44:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>

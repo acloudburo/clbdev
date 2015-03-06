@@ -7,9 +7,87 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://dev.cloudburo.net/contact.html</loc>
+    <loc>http://dev.cloudburo.net/2014/01/17/microtization-of-the-enterprises.html</loc>
     <lastmod>2015-03-06</lastmod>
-    <priority>1.0</priority>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2014/01/25/personal-data-api-part-2.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups-design-better-products.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2014/07/27/the-reactive-manifesto.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2014/10/21/user-customer-partner.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2014/11/10/the-future-of-work.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2014/10/19/the-big-shift.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2014/01/05/personal-data-api-part-1.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2014/01/18/the-death-of-corporation.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2014/04/16/fullstack-developer.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2014/03/09/the-passion-of-the-explorer.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/docs/vision.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/docs/model/</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/docs/contentmgmt.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.9</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -31,15 +109,39 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://dev.cloudburo.net/docs/concepts/</loc>
+    <loc>http://dev.cloudburo.net/docs/testing/</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://dev.cloudburo.net/docs/contentmgmt.html</loc>
+    <loc>http://dev.cloudburo.net/docs/opensource/jsonapispec.html</loc>
     <lastmod>2015-03-06</lastmod>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/docs/opensource/clb-modelloader.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/docs/opensource/clb-appenginebackend.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/docs/opensource/clb-test.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/docs/opensource/clb-appenginetemplate.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -73,51 +175,15 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://dev.cloudburo.net/docs/model/</loc>
+    <loc>http://dev.cloudburo.net/docs/concepts/</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://dev.cloudburo.net/docs/opensource/clb-appenginebackend.html</loc>
+    <loc>http://dev.cloudburo.net/contact.html</loc>
     <lastmod>2015-03-06</lastmod>
-    <priority>0.8</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/docs/opensource/clb-appenginetemplate.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.8</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/docs/opensource/clb-modelloader.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.8</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/docs/opensource/clb-test.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.8</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/docs/opensource/jsonapispec.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.8</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/docs/testing/</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.8</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/docs/vision.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -128,84 +194,6 @@
   </url>
   <url>
     <loc>http://dev.cloudburo.net/partials/toc.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/2014/01/05/personal-data-api-part-1.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/2014/01/17/microtization-of-the-enterprises.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/2014/01/18/the-death-of-corporation.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/2014/01/25/personal-data-api-part-2.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/2014/03/09/the-passion-of-the-explorer.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/2014/04/16/fullstack-developer.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/2014/07/27/the-reactive-manifesto.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/2014/10/19/the-big-shift.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/2014/10/21/user-customer-partner.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/2014/11/10/the-future-of-work.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups-design-better-products.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/tags/personaldata.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://dev.cloudburo.net/tags/api.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
@@ -223,7 +211,19 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://dev.cloudburo.net/tags/inspiration.html</loc>
+    <loc>http://dev.cloudburo.net/tags/personaldata.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/tags/api.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/tags/startup.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
@@ -247,7 +247,7 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://dev.cloudburo.net/tags/startup.html</loc>
+    <loc>http://dev.cloudburo.net/tags/inspiration.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
