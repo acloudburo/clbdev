@@ -1,0 +1,358 @@
+<!doctype html> 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>Dev@Cloudburo</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../js/ie8.js" type="text/javascript"></script><![endif]--><link href="../../css/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/favicon.png" rel="icon" type="image/png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">Dev@Cloudburo</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/about.html"> About</a>
+            </li>
+            <li>
+              <a href="/contact.html"> Contact     </a>
+            </li>
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/tags/personaldata.html">personalData (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/api.html">api (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/futurework.html">futureWork (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/modeling.html">modeling (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/banking.html">banking (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">By Year <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/2015.html">2015 (1)</a>
+                </li>
+                <li>
+                  <a href="/2014.html">2014 (10)</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/docs"> Docs</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled list-inline nav navbar-nav navbar-right">
+            <li>
+              <a href="https://twitter.com/talfco"><i class="fa fa-twitter-square fa-lg fa-inverse"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/talfco"><i class="fa fa-github-square fa-lg fa-inverse"></i></a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts"><i class="fa fa-google-plus-square fa-lg fa-inverse"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/felixk"><i class="fa fa-linkedin-square fa-lg fa-inverse"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <h2>
+            Table of Content
+          </h2>
+          <ul>
+          <li>
+          <a href="#java-rest-backend">Java REST Backend</a>
+          </li>
+          <li>
+          <a href="#source-code-location">Source Code Location</a>
+          </li>
+          <li>
+          <a href="#maven-repository">Maven Repository</a>
+          </li>
+          <li>
+          <a href="#implementation-aspects">Implementation Aspects</a>
+          <ul>
+          <li>
+          <a href="#gson-converters">GSON Converters</a>
+          </li>
+          <li>
+          <a href="#objectify-key-with-2-constructor-parameters">Objectify key with 2 constructor parameters</a>
+          </li>
+          <li>
+          <a href="#objectify-key-with-3-constructor-parameters-(parent-key)">Objectify key with 3 constructor parameters (Parent Key)</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#sample">Sample</a>
+          <ul>
+          <li>
+          <a href="#entity-class">Entity Class</a>
+          </li>
+          <li>
+          <a href="#ofyservice-class">OfyService Class</a>
+          </li>
+          <li>
+          <a href="#servlet-class">Servlet Class</a>
+          </li>
+          <li>
+          <a href="#misc">Misc</a>
+          </li>
+          </ul>
+          </li>
+          </ul>
+          <h2 id="java-rest-backend">Java REST Backend</h2>
+
+<p>This is a utility library for a Google AppEngine Java REST backend. It&rsquo;s fully managed by Maven.</p>
+
+<p>The API specification which is implemented can be found here <a href="http://cloudburo.github.com/docs/opensource/jsonapispec">http://cloudburo.github.com/docs/opensource/jsonapispec/</a></p>
+
+<h2 id="source-code-location">Source Code Location</h2>
+
+<p>Fork me on GitHub: <a href="https://github.com/talfco/clb-appEngineBackend">https://github.com/talfco/clb-appEngineBackend</a></p>
+
+<h2 id="maven-repository">Maven Repository</h2>
+
+<p>Add the following entry to your POM:</p>
+<pre class="highlight plaintext"><code>&lt;repositories&gt;
+    &lt;repository&gt;  
+        &lt;id&gt;clb-mvnrepo-snapshots&lt;/id&gt;  
+        &lt;name&gt;Cloudburo Maven Repo Snapshot on Github&lt;/name&gt;  
+        &lt;releases&gt;&lt;enabled&gt;false&lt;/enabled&gt;&lt;/releases&gt;
+        &lt;snapshots&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/snapshots&gt;
+        &lt;url&gt;https://raw.github.com/talfco/clb_mvnrepo/raw/snapshots&lt;/url&gt;  
+    &lt;/repository&gt;
+     &lt;repository&gt;  
+        &lt;id&gt;clb-mvnrepo-release&lt;/id&gt;  
+        &lt;name&gt;Cloudburo Release Repo on Github&lt;/name&gt;  
+        &lt;releases&gt;&lt;enabled&gt;true&lt;/enabled&gt;&lt;/releases&gt;
+        &lt;snapshots&gt;&lt;enabled&gt;false&lt;/enabled&gt;&lt;/snapshots&gt;
+        &lt;url&gt;https://raw.github.com/talfco/clb_mvnrepo/raw/release&lt;/url&gt;  
+    &lt;/repository&gt;
+&lt;/repositories&gt;
+</code></pre>
+
+<p>And the following dependency</p>
+<pre class="highlight plaintext"><code>&lt;dependency&gt;
+    &lt;groupId&gt;com.cloudburo&lt;/groupId&gt;
+      &lt;artifactId&gt;clb-appEngineBackend&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+&lt;/dependency&gt;  
+</code></pre>
+
+<h2 id="implementation-aspects">Implementation Aspects</h2>
+
+<h3 id="gson-converters">GSON Converters</h3>
+
+<p>The Cloudburo library uses <a href="https://code.google.com/p/google-gson/">Gson</a> as a  library to convert Java Objects into their JSON representation. It can also be used to convert a JSON string to an equivalent Java object. Gson can work with arbitrary Java objects including pre-existing objects that you do not have source-code of. It&rsquo;s a open source library (Apache License 2.0).</p>
+
+<p>Within the package <code>con.cloudburo.servlet</code> there is the <code>GsonWrapper</code> class which provides specific serializer- and deserializer for the following conversions</p>
+
+<ul>
+<li>DateTime Type </li>
+<li>Date Type</li>
+<li>LocalDateTime Type</li>
+<li>Objectify Key Type</li>
+</ul>
+
+<p>Special care has to be taken for the Objectify Key Type, which cannot be deserialized by the default GSON implementation. There are various questions posted to this topic in the Google Groups Support forum, as well as Stack Overflow, as one comment stated</p>
+
+<blockquote>
+<p>Private fields, immutable objects, and odd constructors are all common problems in the world of deserializers.</p>
+</blockquote>
+
+<p>I&rsquo;ve chosen the following approach to deserialized  Objectify Key attributes via the GSON library.</p>
+
+<p>The following sample shows a complex Objectify class which will got persisted. It also contains a <code>Key</code> attribute referencing an entity <code>Service</code>.</p>
+<pre class="highlight java"><code>    <span class="nd">@Entity</span>
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ProductType</span> <span class="o">{</span>
+      <span class="kd">public</span> <span class="nd">@Id</span> <span class="n">Long</span> <span class="n">_id</span><span class="o">;</span>
+      <span class="kd">public</span> <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+      <span class="kd">public</span> <span class="n">String</span> <span class="n">category</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+      <span class="kd">public</span> <span class="n">String</span> <span class="n">description</span> <span class="o">=</span> <span class="s">"Test this out"</span><span class="o">;</span>
+
+      <span class="kd">public</span> <span class="n">ProductType</span><span class="o">.</span><span class="na">Relations</span> <span class="n">relations</span><span class="o">;</span>
+      <span class="nd">@Embed</span>
+      <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Relations</span> <span class="o">{</span>
+          <span class="nd">@Embed</span>
+          <span class="kd">static</span> <span class="kd">class</span> <span class="nc">ProductTypeServiceConfig</span> <span class="o">{</span>
+              <span class="kd">public</span> <span class="nd">@Id</span> <span class="n">Long</span> <span class="n">_id</span><span class="o">;</span>
+              <span class="kd">public</span> <span class="kd">enum</span> <span class="n">Periodicity</span> <span class="o">{</span>  <span class="n">M</span><span class="o">,</span> <span class="n">W</span><span class="o">,</span> <span class="n">V</span><span class="o">,</span> <span class="n">D</span><span class="o">};</span>   
+              <span class="kd">public</span> <span class="n">Periodicity</span> <span class="n">periodicity</span><span class="o">;</span>
+              <span class="kd">public</span> <span class="n">Integer</span> <span class="n">count</span><span class="o">;</span>
+                <span class="kd">public</span> <span class="n">Key</span><span class="o">&lt;</span><span class="n">Service</span><span class="o">&gt;</span> <span class="n">service</span><span class="o">;</span>
+          <span class="o">}</span>
+          <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">ProductTypeServiceConfig</span><span class="o">&gt;</span> <span class="n">productTypeServiceConfigs</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span> 
+</code></pre>
+
+<p>In order to deserialize this object the following strategy was chosen. </p>
+
+<h3 id="objectify-key-with-2-constructor-parameters">Objectify key with 2 constructor parameters</h3>
+
+<ul>
+<li>The creation of a key element is dependent on a <code>Long id</code> or a <code>String name</code> as well as a kind, e.g <code>Key&lt;Car&gt; rootKey = Key.create(Car.class, 959);</code></li>
+<li>In the above example a Objectify a service identifier would look like something like &lsquo;[Service(&ldquo;5066549580791808&rdquo;)]&rsquo;, a combination of type and identifier.</li>
+</ul>
+
+<p>The serialization step will now only return the identifier or name to the consumer, to be inline with any other identifier type used in the protocol.</p>
+<pre class="highlight java"><code>       <span class="kd">public</span> <span class="n">JsonElement</span> <span class="nf">serialize</span><span class="p">(</span><span class="n">Key</span> <span class="n">key</span><span class="o">,</span> <span class="n">Type</span> <span class="n">type</span><span class="o">,</span> <span class="n">JsonSerializationContext</span> <span class="n">serialContext</span><span class="o">)</span> <span class="o">{</span>
+         <span class="n">logger</span><span class="o">.</span><span class="na">log</span><span class="o">(</span><span class="n">Level</span><span class="o">.</span><span class="na">INFO</span><span class="o">,</span><span class="s">"Serialize "</span><span class="o">+</span><span class="n">key</span><span class="o">);</span>
+         <span class="k">if</span> <span class="o">(</span><span class="n">key</span><span class="o">.</span><span class="na">getId</span><span class="o">()</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span>
+           <span class="k">return</span> <span class="k">new</span> <span class="n">JsonPrimitive</span><span class="o">(</span><span class="n">key</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+         <span class="k">else</span>
+           <span class="k">return</span> <span class="k">new</span> <span class="n">JsonPrimitive</span><span class="o">(</span><span class="n">key</span><span class="o">.</span><span class="na">getId</span><span class="o">());</span>
+       <span class="o">}</span>
+</code></pre>
+
+<p>The deserialization step has now to take into consideration the type information as well in order to create a correkt Key instance, by inspecting the type input parameter. </p>
+<pre class="highlight java"><code>    <span class="kd">public</span> <span class="n">Key</span> <span class="nf">deserialize</span><span class="p">(</span><span class="n">JsonElement</span> <span class="n">element</span><span class="o">,</span> <span class="n">Type</span> <span class="n">type</span><span class="o">,</span>  <span class="n">JsonDeserializationContext</span> <span class="n">deserialContext</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">JsonParseException</span> <span class="o">{</span>
+      <span class="c1">// When we have a Parent Key dependency we have to pass in the parent key - tbd</span>
+          <span class="n">StringTokenizer</span> <span class="n">tok</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringTokenizer</span><span class="o">(</span><span class="n">element</span><span class="o">.</span><span class="na">getAsString</span><span class="o">(),</span><span class="s">";"</span><span class="o">);</span>
+        <span class="n">String</span> <span class="n">className</span> <span class="o">=</span> <span class="o">((</span><span class="n">ParameterizedType</span><span class="o">)</span><span class="n">type</span><span class="o">).</span><span class="na">getActualTypeArguments</span><span class="o">()[</span><span class="mi">0</span><span class="o">].</span><span class="na">toString</span><span class="o">();</span> 
+        <span class="k">if</span> <span class="o">(</span><span class="n">className</span><span class="o">.</span><span class="na">startsWith</span><span class="o">(</span><span class="s">"class "</span><span class="o">))</span> <span class="o">{</span> <span class="n">className</span> <span class="o">=</span> <span class="n">className</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="s">"class "</span><span class="o">.</span><span class="na">length</span><span class="o">());</span> <span class="o">}</span>
+        <span class="n">logger</span><span class="o">.</span><span class="na">log</span><span class="o">(</span><span class="n">Level</span><span class="o">.</span><span class="na">INFO</span><span class="o">,</span><span class="s">"Deserizalize Objectify key:"</span><span class="o">+</span><span class="n">element</span><span class="o">.</span><span class="na">getAsString</span><span class="o">()+</span><span class="s">" "</span><span class="o">+</span><span class="n">className</span><span class="o">);</span>
+        <span class="k">try</span> <span class="o">{</span>
+           <span class="n">Class</span> <span class="n">clazz</span> <span class="o">=</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">className</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+              <span class="k">if</span> <span class="o">(</span><span class="n">tok</span><span class="o">.</span><span class="na">countTokens</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> 
+              <span class="o">{</span>
+                 <span class="n">String</span> <span class="n">parentKey</span> <span class="o">=</span> <span class="n">tok</span><span class="o">.</span><span class="na">nextToken</span><span class="o">();</span>
+                 <span class="c1">// TODO We have to include here the parent !!!</span>
+                 <span class="k">return</span> <span class="n">Key</span><span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="n">clazz</span><span class="o">,</span><span class="n">Long</span><span class="o">.</span><span class="na">parseLong</span><span class="o">(</span><span class="n">element</span><span class="o">.</span><span class="na">getAsString</span><span class="o">()));</span>
+              <span class="o">}</span>
+              <span class="k">else</span> <span class="o">{</span>
+                 <span class="k">return</span> <span class="n">Key</span><span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="n">clazz</span><span class="o">,</span><span class="n">Long</span><span class="o">.</span><span class="na">parseLong</span><span class="o">(</span><span class="n">element</span><span class="o">.</span><span class="na">getAsString</span><span class="o">()));</span> 
+              <span class="o">}</span>
+      <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+             <span class="k">throw</span> <span class="k">new</span> <span class="n">JsonParseException</span><span class="o">(</span><span class="s">"ObjectifKey conversion failed "</span><span class="o">+</span><span class="n">e</span><span class="o">.</span><span class="na">getMessage</span><span class="o">());</span>
+        <span class="o">}</span>
+      <span class="o">}</span>      
+</code></pre>
+
+<h3 id="objectify-key-with-3-constructor-parameters-(parent-key)">Objectify key with 3 constructor parameters (Parent Key)</h3>
+
+<p>Will be provided in a later build</p>
+
+<h2 id="sample">Sample</h2>
+
+<p>A simple example code can be found in the directory `src/test/java/com/cloudburo/entity&#39;</p>
+
+<h3 id="entity-class">Entity Class</h3>
+
+<p>Simply define for each Entity to be persisted an Objectify annotated based class . Make sure to have each attribute defined as <code>public</code></p>
+<pre class="highlight java"><code>    <span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">cloudburo</span><span class="o">.</span><span class="na">entity</span><span class="o">;</span>
+
+    <span class="kn">import</span> <span class="nn">com.googlecode.objectify.annotation.Entity</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">com.googlecode.objectify.annotation.Id</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">com.googlecode.objectify.annotation.Index</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">java.util.Date</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">org.joda.time.LocalDateTime</span><span class="o">;</span>
+
+    <span class="nd">@Entity</span>
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Customer</span> <span class="o">{</span>
+        <span class="nd">@Id</span> <span class="kd">public</span> <span class="n">Long</span> <span class="n">_id</span><span class="o">;</span>
+        <span class="nd">@Index</span> <span class="kd">public</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+        <span class="nd">@Index</span> <span class="kd">public</span> <span class="n">String</span> <span class="n">surname</span><span class="o">;</span>
+        <span class="nd">@Index</span> <span class="kd">public</span> <span class="n">String</span> <span class="n">email</span><span class="o">;</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="n">address</span><span class="o">;</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="n">plz</span><span class="o">;</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="n">location</span><span class="o">;</span>
+        <span class="kd">public</span> <span class="n">Date</span> <span class="n">date</span><span class="o">;</span>
+        <span class="kd">public</span> <span class="n">LocalDateTime</span> <span class="n">date1</span><span class="o">;</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="n">telephone</span><span class="o">;</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="n">birthdate</span><span class="o">;</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="n">citizenship</span><span class="o">;</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="n">mobile</span><span class="o">;</span>
+    <span class="o">}</span>
+</code></pre>
+
+<h3 id="ofyservice-class">OfyService Class</h3>
+
+<p>As a second class extend the  <code>OfyService</code> class and register your class.</p>
+<pre class="highlight java"><code>    <span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">cloudburo</span><span class="o">.</span><span class="na">entity</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">com.googlecode.objectify.Objectify</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">com.googlecode.objectify.ObjectifyService</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">com.cloudburo.servlet.OfyService</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyOfyService</span> <span class="kd">extends</span> <span class="n">OfyService</span> <span class="o">{</span>
+        <span class="kd">static</span> <span class="o">{</span>
+            <span class="n">ObjectifyService</span><span class="o">.</span><span class="na">factory</span><span class="o">().</span><span class="na">register</span><span class="o">(</span><span class="n">Customer</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+        <span class="o">}</span>   
+        <span class="cm">/** Mandatory to override the method **/</span>
+        <span class="kd">public</span> <span class="kd">static</span> <span class="n">Objectify</span> <span class="n">ofy</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="n">ObjectifyService</span><span class="o">.</span><span class="na">ofy</span><span class="o">();</span> <span class="o">}</span>
+
+    <span class="o">}</span>
+</code></pre>
+
+<h3 id="servlet-class">Servlet Class</h3>
+
+<p>Finally provide a Servlet class which extends the abstract <code>RestAPIServlet</code> class and you are done.</p>
+<pre class="highlight java"><code>    <span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">cloudburo</span><span class="o">.</span><span class="na">entity</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">com.cloudburo.entity.Customer</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">com.cloudburo.entity.MyOfyService</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">com.cloudburo.servlet.RestAPIServlet</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">com.googlecode.objectify.Objectify</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">CustomerServlet</span> <span class="kd">extends</span> <span class="n">RestAPIServlet</span> <span class="o">{</span>
+
+        <span class="kd">protected</span> <span class="n">Class</span> <span class="n">getPersistencyClass</span><span class="o">()</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">Customer</span><span class="o">.</span><span class="na">class</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="kd">protected</span>   <span class="n">Objectify</span> <span class="n">ofy</span><span class="o">()</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">MyOfyService</span><span class="o">.</span><span class="na">ofy</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</code></pre>
+
+<h3 id="misc">Misc</h3>
+
+<ul>
+<li>A <code>mockito</code> based Junit based test servlet can be found under <code>src/test/java/com/cloudburo/servlet</code></li>
+<li>An AppEngine Template using the class can be found under Github <a href="https://github.com/talfco/clb-appEngineTemplate">https://github.com/talfco/clb-appEngineTemplate</a>.</li>
+</ul>
+<hr>
+            <p class="text-center">
+              ©2015 - <a href="/">Dev@Cloudburo</a><br /><span class="small">Powered by<a href="https://cloudburo.net/docs/products.html"> Cloudburo Curation Engine</a></span>
+            </p>
+          </hr>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/all.js" type="text/javascript"></script>
+  </body>
+</html>

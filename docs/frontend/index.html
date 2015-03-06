@@ -1,0 +1,745 @@
+<!doctype html> 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>Dev@Cloudburo</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../js/ie8.js" type="text/javascript"></script><![endif]--><link href="../../css/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/favicon.png" rel="icon" type="image/png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">Dev@Cloudburo</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/about.html"> About</a>
+            </li>
+            <li>
+              <a href="/contact.html"> Contact     </a>
+            </li>
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/tags/personaldata.html">personalData (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/api.html">api (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/futurework.html">futureWork (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/modeling.html">modeling (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/banking.html">banking (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">By Year <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/2015.html">2015 (1)</a>
+                </li>
+                <li>
+                  <a href="/2014.html">2014 (10)</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/docs"> Docs</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled list-inline nav navbar-nav navbar-right">
+            <li>
+              <a href="https://twitter.com/talfco"><i class="fa fa-twitter-square fa-lg fa-inverse"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/talfco"><i class="fa fa-github-square fa-lg fa-inverse"></i></a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts"><i class="fa fa-google-plus-square fa-lg fa-inverse"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/felixk"><i class="fa fa-linkedin-square fa-lg fa-inverse"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <h2>
+            Table of Content
+          </h2>
+          <ul>
+          <li>
+          <a href="#introduction">Introduction</a>
+          <ul>
+          <li>
+          <a href="#terminology-and-abbreviation">Terminology and Abbreviation</a>
+          </li>
+          <li>
+          <a href="#framework-and-technologies-used">Framework and Technologies used</a>
+          <ul>
+          <li>
+          <a href="#bootstrap">Bootstrap</a>
+          </li>
+          <li>
+          <a href="#backbone">Backbone</a>
+          </li>
+          <li>
+          <a href="#backbone.modelbinder">Backbone.ModelBinder</a>
+          </li>
+          <li>
+          <a href="#stitch">Stitch</a>
+          </li>
+          </ul>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#main-class:-app">Main Class: App</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#step-1:-retrieve-the-main-page-template">Step 1: Retrieve the main page template</a>
+          <ul>
+          <li>
+          <a href="#main-configuration-structure-and-caching">Main Configuration Structure and Caching</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#event-overview">Event Overview</a>
+          <ul>
+          <li>
+          <a href="#event:-browser-url-change">Event: Browser URL Change</a>
+          <ul>
+          <li>
+          <a href="#pub-1:-browser.urlopening">Pub 1: Browser.urlOpening</a>
+          </li>
+          <li>
+          <a href="#pub-2:-basemenuview.tabmenuchange">Pub 2: BaseMenuView.tabMenuChange</a>
+          </li>
+          <li>
+          <a href="#pub-3:-rootview.deleterecord">Pub 3: RootView.deleteRecord</a>
+          </li>
+          <li>
+          <a href="#pub-4:-rootview.cancel">Pub 4: RootView.cancel</a>
+          </li>
+          <li>
+          <a href="#consumer-1:-approuter.routes">Consumer 1: Approuter.routes</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#event:-menutabentryclick">Event: MenuTabEntryClick</a>
+          <ul>
+          <li>
+          <a href="#pub-1:-basemenuview.mouseclick">Pub 1: BaseMenuView.mouseClick</a>
+          </li>
+          <li>
+          <a href="#sub-1:-basemenu.view">Sub 1: BaseMenu.&lt;CRUD&gt;View</a>
+          </li>
+          <li>
+          <a href="#sub-2:-basemenu.switchmenutab">Sub 2: BaseMenu.switchMenuTab</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#event:-changebusinessobjectscope">Event: ChangeBusinessObjectScope</a>
+          <ul>
+          <li>
+          <a href="#pub-1:-baserouter.builddetailview">Pub 1: BaseRouter.buildDetailView</a>
+          </li>
+          <li>
+          <a href="#sub-1:-basemenuview.changebusinessobjectscope">Sub 1: BaseMenuView.changeBusinessObjectScope</a>
+          </li>
+          <li>
+          <a href="#sub-2:-tabmenuview.changebusinessobjectscope">Sub 2: TabMenuView.changeBusinessObjectScope</a>
+          </li>
+          <li>
+          <a href="#sub-3:-navbarmenuview.changebusinessobjectscope">Sub 3: NavbarMenuView.changeBusinessObjectScope</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#event:-changebusinessobjectelement">Event: ChangeBusinessObjectElement</a>
+          <ul>
+          <li>
+          <a href="#pub-1:-baserouter.builddetailview">Pub 1: BaseRouter.buildDetailView</a>
+          </li>
+          <li>
+          <a href="#pub-2:-rootview.savetomodel">Pub 2: RootView.saveToModel</a>
+          </li>
+          <li>
+          <a href="#pub-3:-rootlistitemview.click">Pub 3: RootListItemView.click</a>
+          </li>
+          <li>
+          <a href="#sub-1:-rootview.changemodel">Sub 1: RootView.changeModel</a>
+          </li>
+          <li>
+          <a href="#sub-2:-rootlistview.changemodel">Sub 2: RootListView.changeModel</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#event:-currentviewstate">Event: CurrentViewState</a>
+          <ul>
+          <li>
+          <a href="#pub-1:-basemenuview.modifclick">Pub 1: BaseMenuView.modifClick</a>
+          </li>
+          <li>
+          <a href="#sub-1:-rootview.currentviewstateevent">Sub 1: rootView.currentViewStateEvent</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#event:-changecontenttab">Event: changeContentTab</a>
+          <ul>
+          <li>
+          <a href="#pub-1:-rootview.render">Pub 1: RootView.render</a>
+          </li>
+          <li>
+          <a href="#sub-1:-rootview.changecontenttab">Sub 1: RootView.changeContentTab</a>
+          </li>
+          </ul>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#class-approuter">Class AppRouter</a>
+          <ul>
+          <li>
+          <a href="#newinstance-(caching-of-views-and-models)">newInstance (caching of Views and Models)</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#views">Views</a>
+          <ul>
+          <li>
+          <a href="#main-dropdown-menu-and-iconbar">Main Dropdown Menu and Iconbar</a>
+          <ul>
+          <li>
+          <a href="#dropdown-templates">Dropdown Templates</a>
+          </li>
+          <li>
+          <a href="#standardized-trigger-points">Standardized Trigger Points</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#main-view:-rootview-class">Main View: RootView class</a>
+          <ul>
+          <li>
+          <a href="#trigger-events-and-cached-views">Trigger Events and cached Views</a>
+          </li>
+          <li>
+          <a href="#event:-eventchangemodel">Event: eventChangeModel</a>
+          </li>
+          </ul>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#helpful-utilities">Helpful Utilities</a>
+          <h2 id="introduction">Introduction</h2>
+
+<p>As outlined above the main functionality of the Cloudburo App Platform will run as a Javascript based application in the browser of the end user. An is using the based on the following javascript frameworks and libraries.</p>
+
+<h3 id="terminology-and-abbreviation">Terminology and Abbreviation</h3>
+
+<p>The following terms and abbreviations will be used </p>
+
+<ul>
+<li>Business Domain Object (<em>BDO</em>) describes the main entities which are managed within the application, as for example a <em>customer</em>, an <em>employee</em>, a <em>course</em> etc.<br></li>
+</ul>
+
+<h3 id="framework-and-technologies-used">Framework and Technologies used</h3>
+
+<h4 id="bootstrap">Bootstrap</h4>
+
+<p>The Cloudburo App Platform is based on the open sourced and incredible powerful front-end framework <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter</a>, which handles all the user interface related aspects as for example styles (CSS), user interface components (tool tips, popovers, tabs, alerts, page header), javascript plugins and so on. </p>
+
+<h4 id="backbone">Backbone</h4>
+
+<p><a href="http://documentcloud.github.com/backbone/">Backbone</a> is a great platform for writing client side applications. Backbone.js gives structure to web applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface. It&rsquo;s one of the cornerstone client side libraries used in the Cloudburo App Platform.</p>
+
+<h4 id="backbone.modelbinder">Backbone.ModelBinder</h4>
+
+<p>The <a href="https://github.com/theironcook/Backbone.ModelBinder">Bacbkbone.ModelBinder</a> class is a great utility in order to bind backbone model attributes to:</p>
+
+<ul>
+<li>Read-only html elements such as <code>&lt;span&gt;</code>, <code>&lt;div&gt;</code> etc.</li>
+<li>Html element attributes such as enabled, displayed, style etc.</li>
+<li>Editable form elements such as <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code> etc. </li>
+<li>This type of binding is bidirectional between the html elements and the Model&rsquo;s attributes.</li>
+</ul>
+
+<p>As the creator and github user theironcook described</p>
+
+<blockquote>
+<p>The ModelBinder class helped me remove a lot of cluttered boilerplate code that existed to synchronize my models and views. As my application became more asynchronous, the ModelBinder saves me from a lot of pain by automatically displaying model attributes in the view as they are asynchronously loaded. Hopefully you&rsquo;ll find the ModelBinder useful too.</p>
+</blockquote>
+
+<p>It&rsquo;s very useful and I used it to manage all my input forms in a generic way (more later).</p>
+
+<h4 id="stitch">Stitch</h4>
+
+<p>The <a href="https://github.com/sstephenson/stitch">Stitch</a> Package Creator, which will bundle all Javascript Libraries in one file <code>application.js</code> and creates an <code>App</code> class which will be instantiated in the browser window after the HTML is loaded.</p>
+
+<p>Looking in a browser window at the source html of the Cloudburo App Platform you will see only a minimal HTML document below 20 lines of code:  </p>
+<pre class="highlight html"><code><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">utf-8</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Cloudburo App Center<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"/application.css"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"/bootstrap.css"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/application.js"</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">charset=</span><span class="s">"utf-8"</span> <span class="nt">/&gt;</span>
+        <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/javascript"</span> <span class="nx">charset</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="o">&gt;</span>
+          <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">"DOMContentLoaded"</span><span class="p">,</span> 
+            <span class="kd">function</span><span class="p">(){</span> <span class="p">(</span><span class="nx">require</span><span class="p">(</span><span class="s2">"app"</span><span class="p">)).</span><span class="nx">init</span><span class="p">();},</span> 
+            <span class="kc">false</span>
+          <span class="p">);</span>
+        <span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+
+<p>So the complete control is handed over to the javascript <em>App</em> application, after this minimal HTML is loaded in the browser window (includes the download of the application javascript code).</p>
+
+<h2 id="main-class:-app">Main Class: App</h2>
+
+<p>As described above the <code>App</code>class is the main class which instantiates the overall application. </p>
+
+<ul>
+<li>It contains a global variable <em>BusinessObjectDef</em> which defines main configuration of <em>BDOs</em> available to the end user.</li>
+<li>It will load the main application template (application skeleton) and generates the corresponding HTML content.</li>
+<li>It will attach Backbone Views for the <code>MainTabMenuView</code> and the <code>IconbarView</code></li>
+<li>It will instantiate the <code>AppRouter</code> (a Backbone Router) and delegates the control to it.</li>
+</ul>
+<pre class="highlight coffeescript"><code><span class="c1"># Step 1: Retrieve the main page template 
+</span><span class="nx">$</span><span class="p">.</span><span class="na">get</span> <span class="s">"/views/templates/main.show"</span><span class="p">,</span> <span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> 
+    <span class="nx">$</span><span class="p">(</span><span class="s">'body'</span><span class="p">).</span><span class="na">append</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> 
+    <span class="nx">tmpl</span> <span class="o">=</span>   <span class="nb">document</span><span class="p">.</span><span class="na">getElementById</span><span class="p">(</span><span class="s">'tmpl_mainpage'</span><span class="p">).</span><span class="na">firstChild</span>
+    <span class="nx">tmpl1</span> <span class="o">=</span> <span class="nx">_und</span><span class="p">.</span><span class="na">template</span> <span class="nx">tmpl</span><span class="p">.</span><span class="na">textContent</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s">"body"</span><span class="p">).</span><span class="na">append</span> <span class="nx">tmpl1</span>
+      <span class="s">'home'</span> <span class="o">:</span> <span class="s">'Home'</span><span class="p">,</span> 
+      <span class="s">'home_person'</span> <span class="o">:</span> <span class="s">'Person'</span><span class="p">,</span> 
+      <span class="s">'home_account'</span> <span class="o">:</span> <span class="s">'Account'</span>
+      <span class="s">'home_profile'</span> <span class="o">:</span> <span class="s">'Profile'</span>
+      <span class="s">'search'</span> <span class="o">:</span> <span class="s">'Search'</span><span class="p">,</span> 
+      <span class="s">'help'</span> <span class="o">:</span> <span class="s">'Help'</span><span class="p">,</span> 
+      <span class="s">'help_manual'</span> <span class="o">:</span> <span class="s">'Online Manual'</span>
+      <span class="s">'help_faq'</span> <span class="o">:</span> <span class="s">'FAQ'</span>
+      <span class="s">'help_support'</span> <span class="o">:</span> <span class="s">'Support Request'</span>    
+
+
+    <span class="nx">TabMenuView</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s">"views/base/tabMenuView"</span><span class="p">)</span>
+    <span class="nx">tabMenuView</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">TabMenuView</span> 
+    <span class="nx">tabMenuView</span><span class="p">.</span><span class="na">render</span><span class="p">()</span>
+
+    <span class="nx">IconbarView</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s">"views/base/iconbarView"</span><span class="p">)</span>
+    <span class="nx">iconbarView</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">IconbarView</span> 
+    <span class="nx">iconbarView</span><span class="p">.</span><span class="na">render</span><span class="p">()</span>
+
+    <span class="nx">AppRouter</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s">"./appRouter"</span><span class="p">)</span>
+    <span class="nb">window</span><span class="p">.</span><span class="na">appRouter</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AppRouter</span><span class="p">()</span>
+    <span class="nb">window</span><span class="p">.</span><span class="na">app</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+    <span class="nx">Backbone</span><span class="p">.</span><span class="na">history</span><span class="p">.</span><span class="na">start</span><span class="p">();</span>
+</code></pre>
+
+<h3 id="main-configuration-structure-and-caching">Main Configuration Structure and Caching</h3>
+
+<p>The global variable <code>window.BusinessObjectDef</code> defines the overall configuration of the application concerning available <em>BDO&rsquo;s</em> to the end user.</p>
+<pre class="highlight coffeescript"><code><span class="nb">window</span><span class="p">.</span><span class="na">BusinessObjectDef</span> <span class="o">=</span>
+    <span class="na">customers</span> <span class="o">:</span>
+      <span class="na">mainRoute</span><span class="o">:</span> <span class="s">"customers"</span>  
+      <span class="na">dialogAttr1</span><span class="o">:</span> <span class="s">"surname"</span> 
+      <span class="na">dialogAttr2</span><span class="o">:</span> <span class="s">"name"</span>
+    <span class="na">servicetemplates</span><span class="o">:</span>
+      <span class="na">mainRoute</span><span class="o">:</span> <span class="s">"serviceTemplates"</span>
+      <span class="na">dialogAttr1</span><span class="o">:</span> <span class="s">"name"</span>
+      <span class="na">dialogAttr2</span><span class="o">:</span> <span class="s">""</span>
+</code></pre>
+
+<p>In the example above the application will offer the <em>BDO</em> types <em>customers</em> and <em>serviceTemplates</em>.</p>
+
+<p>In the final version the assembly of <em>BDO</em> types offered to a customer will be dependent on the subscription level. </p>
+
+<p>The <code>App</code>class will hold a global cache variable <code>window.cache = new Array()</code> which will cache Backbone models or views already opened and used during a user session.</p>
+
+<h2 id="event-overview">Event Overview</h2>
+
+<h3 id="event:-browser-url-change">Event: Browser URL Change</h3>
+
+<p>This event can be either triggered manually by user typing in an URL in the broweser window or by calling the <code>window.appRouter.navigate</code>operation, which is an instantiation of the Backbone Router class (holding all routes of the application.)  </p>
+
+<h4 id="pub-1:-browser.urlopening">Pub 1: Browser.urlOpening</h4>
+
+<p>Entering a browser URL in the form of</p>
+
+<p><code>http://cloudburo.ch/#customers</code></p>
+
+<p>and hitting return, will trigger the AppRouter dispatcher.</p>
+
+<h4 id="pub-2:-basemenuview.tabmenuchange">Pub 2: BaseMenuView.tabMenuChange</h4>
+
+<p>This event will be triggered in case the user wants to work with another <em>BDO</em> type (e.g. working with the domain objects <code>user</code>instead of <code>customer</code>). That means the detail view, as well as the list view will be switched. </p>
+
+<p>This event is triggered for example when he clicks on a menu tab (<code>customer</code>or <code>user</code>) or any other icon associated via a <em>BDO</em> type.</p>
+
+<p>This will trigger a <code>window.appRouter.navigate</code> operation (details refer to <a href="#anchor1">link</a>)</p>
+
+<h4 id="pub-3:-rootview.deleterecord">Pub 3: RootView.deleteRecord</h4>
+
+<p>When a record is deleted the view is refreshed by calling
+<code>window.appRouter.navigate @viewNameL , {trigger: true}</code></p>
+
+<h4 id="pub-4:-rootview.cancel">Pub 4: RootView.cancel</h4>
+
+<p>When a cancel button is pressed and no previous entry is available.</p>
+
+<h4 id="consumer-1:-approuter.routes">Consumer 1: Approuter.routes</h4>
+
+<p>Our <code>AppRouter</code>class is derived from the <code>Backbone.Router</code>and is responsible to dispatch navigation changes which are reflected in the URL.</p>
+
+<p>A navigation change is either happening when the user types a URL into the browser and hits return oder programmatically in our javascript application, e.g. by a menu tab click event (see above).</p>
+
+<p>Refer to the following registered URL:</p>
+<pre class="highlight javascript"><code><span class="nx">routes</span><span class="err">:</span>
+     <span class="s2">""</span>                         <span class="err">:</span> <span class="s2">"root"</span> 
+     <span class="s2">"customers"</span>                    <span class="err">:</span> <span class="s2">"listCustomer"</span>
+     <span class="s2">"customers/"</span>               <span class="err">:</span> <span class="s2">"listCustomer"</span>
+     <span class="s2">"customers/:id"</span>                <span class="err">:</span> <span class="s2">"detailCustomer"</span>
+     <span class="s2">"customers/:id/modify"</span>     <span class="err">:</span> <span class="s2">"modifyCustomer"</span>
+     <span class="s2">"servicetemplates"</span>         <span class="err">:</span> <span class="s2">"listServiceTemplate"</span>
+     <span class="s2">"servicetemplates/"</span>            <span class="err">:</span> <span class="s2">"listServiceTemplate"</span>
+     <span class="s2">"servicetemplates/:id"</span>     <span class="err">:</span> <span class="s2">"detailServiceTemplate"</span>
+     <span class="s2">"servicetemplates/:id/modify"</span><span class="err">:</span> <span class="s2">"modifyServiceTemplate"</span>
+</code></pre>
+
+<p>Now each triggering of an operation will result in an action similiar like</p>
+<pre class="highlight javascript"><code><span class="nx">listCustomer</span><span class="err">:</span> <span class="o">-&gt;</span>
+      <span class="nx">log</span><span class="p">.</span><span class="nx">info</span> <span class="s2">"AppRouter.listCustomer"</span>
+      <span class="err">@</span><span class="nx">switchBusinessObjectEvent</span> <span class="s2">"customers"</span>
+      <span class="err">@</span><span class="nx">renderListView</span><span class="p">(</span><span class="s2">"Customer"</span><span class="p">)</span>
+
+  <span class="nl">detailCustomer</span><span class="p">:</span> <span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="o">-&gt;</span>
+      <span class="err">@</span><span class="nx">switchBusinessObjectEvent</span> <span class="s2">"customers"</span>
+      <span class="nx">log</span><span class="p">.</span><span class="nx">info</span> <span class="s2">"Approuter.detailCustomer: /customers/id called with id '"</span><span class="o">+</span><span class="nx">id</span><span class="o">+</span><span class="s2">"'"</span>
+      <span class="err">@</span><span class="nx">renderDetailView</span><span class="p">(</span><span class="s2">"Customer"</span><span class="p">,</span><span class="nx">id</span><span class="p">,</span><span class="nb">window</span><span class="p">.</span><span class="nx">viewStateView</span> <span class="p">)</span>
+</code></pre>
+
+<p>The <code>Approuter.switchBusinessObject</code>operation will be call by routes operation and do the following step:</p>
+
+<ul>
+<li> Will check if the <em>BDO</em> template is already loaded, if not it will load it now (= lazy loading in order to reduce size of initial page build up)</li>
+<li> Will trigger the <code>currentBusinessObject</code> event notifying other components that the <em>BDO</em> were changed and the views replaced.</li>
+</ul>
+
+<p>The code looks like:</p>
+<pre class="highlight javascript"><code><span class="nx">switchBusinessObjectEvent</span> <span class="err">:</span> <span class="p">(</span><span class="nx">busObj</span><span class="p">)</span> <span class="o">=&gt;</span> 
+      <span class="nx">busObjShort</span> <span class="o">=</span> <span class="nx">busObj</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nx">busObj</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+      <span class="k">if</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"#tmpl_"</span><span class="o">+</span><span class="nx">busObjShort</span><span class="o">+</span><span class="s2">"_contentsheet"</span><span class="p">).</span><span class="nx">size</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span>
+        <span class="nx">$</span><span class="p">.</span><span class="nx">get</span> <span class="s2">"/views/templates/"</span><span class="o">+</span><span class="nx">busObj</span><span class="o">+</span><span class="s2">".show"</span><span class="p">,</span> <span class="p">(</span><span class="nx">data1</span><span class="p">)</span> <span class="o">=&gt;</span> 
+          <span class="nx">log</span><span class="p">.</span><span class="nx">debug</span> <span class="s2">"Approuter.switchBusinessObjectEvent: Template loaded"</span>
+          <span class="nx">$</span><span class="p">(</span><span class="s1">'body'</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="nx">data1</span><span class="p">)</span>
+          <span class="nb">window</span><span class="p">.</span><span class="nx">Notifier</span><span class="p">.</span><span class="nx">trigger</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">Notifier</span><span class="p">.</span><span class="nx">eventCurrentBusinessObject</span><span class="p">,</span> <span class="nx">busObj</span><span class="p">)</span>  
+      <span class="k">else</span>
+        <span class="nb">window</span><span class="p">.</span><span class="nx">Notifier</span><span class="p">.</span><span class="nx">trigger</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">Notifier</span><span class="p">.</span><span class="nx">eventCurrentBusinessObject</span><span class="p">,</span> <span class="nx">busObj</span><span class="p">)</span> 
+</code></pre>
+
+<p>For more details refert to <a href="#anchor2">link</a>  </p>
+
+<h3 id="event:-menutabentryclick">Event: MenuTabEntryClick</h3>
+
+<h4 id="pub-1:-basemenuview.mouseclick">Pub 1: BaseMenuView.mouseClick</h4>
+
+<p>The <code>BaseMenuView</code>class (<code>views/base/baseMenuView.coffee</code>) installs click listeners which will be triggered in case the user clicks on <code>&lt;a&gt;</code>element in the menu or icon bar <a href="#anchor3">more details</a>. </p>
+<pre class="highlight coffeescript"><code><span class="na">events</span><span class="o">:</span>
+<span class="s">'click #cuh'</span><span class="o">:</span> <span class="s">'switchMenuTab'</span>
+    <span class="s">'click #cuo'</span><span class="o">:</span> <span class="s">'showView'</span>
+    <span class="s">'click #cum'</span><span class="o">:</span> <span class="s">'modifyView'</span>
+    <span class="s">'click #cun'</span><span class="o">:</span> <span class="s">'newView'</span>
+    <span class="s">'click #cud'</span><span class="o">:</span> <span class="s">'deleteView'</span>
+    <span class="s">'click #cuc'</span><span class="o">:</span> <span class="s">'copyView'</span> 
+    <span class="s">'click #cup'</span><span class="o">:</span> <span class="s">'printView'</span>
+</code></pre>
+
+<p>The <code>BaseMenuView</code> is a actually the parent class of <code>TabMenuView</code> class, as well as the <code>IconMenuView</code> class. The icon bar will provide the same click functionality as the tab menu (<code>cum-cuh</code>). </p>
+
+<p><img alt="TabMenuView and IconMenuView" src="../../images/menuAndIconView.png" /></p>
+
+<h4 id="sub-1:-basemenu.view">Sub 1: BaseMenu.<CRUD>View</h4>
+
+<p>The main functionality of the <code>BaseMenuView</code> operations are to trigger a global view state event upon which consumers may react.</p>
+<pre class="highlight coffeescript"><code><span class="na">showView</span><span class="o">:</span> <span class="o">-&gt;</span> 
+    <span class="nx">log</span><span class="p">.</span><span class="na">debug</span> <span class="s">"BaseMenuView.showView"</span>
+    <span class="nb">window</span><span class="p">.</span><span class="na">Notifier</span><span class="p">.</span><span class="na">trigger</span> <span class="nb">window</span><span class="p">.</span><span class="na">Notifier</span><span class="p">.</span><span class="na">eventCurrentViewState</span><span class="p">,</span> <span class="nb">window</span><span class="p">.</span><span class="na">viewStateView</span>
+    <span class="vi">@</span><span class="na">postClickProcessing</span><span class="p">()</span>
+    <span class="k">return</span> <span class="no">false</span>
+
+<span class="na">modifyView</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">log</span><span class="p">.</span><span class="na">debug</span> <span class="s">"BaseMenuView.modifyView"</span>
+    <span class="nb">window</span><span class="p">.</span><span class="na">Notifier</span><span class="p">.</span><span class="na">trigger</span> <span class="nb">window</span><span class="p">.</span><span class="na">Notifier</span><span class="p">.</span><span class="na">eventCurrentViewState</span><span class="p">,</span> <span class="nb">window</span><span class="p">.</span><span class="na">viewStateModify</span>
+    <span class="vi">@</span><span class="na">postClickProcessing</span><span class="p">()</span>
+    <span class="k">return</span> <span class="no">false</span>
+</code></pre>
+
+<p>The <code>postClickProcessing</code>operation does by default nothing but may overwritten by a inherited class, e.g. the <code>TabMenuView</code>class is overwriting this class in order to close the drop down menu again</p>
+<pre class="highlight coffeescript"><code><span class="na">postClickProcessing</span><span class="o">:</span> <span class="o">-&gt;</span>
+    <span class="nx">log</span><span class="p">.</span><span class="na">debug</span>  <span class="s">"TabMenuView.postClickProcessing"</span> <span class="p">,</span> <span class="vi">@</span><span class="na">busObj</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s">'li[class~="open"]'</span><span class="p">).</span><span class="na">removeClass</span> <span class="s">'open'</span>
+</code></pre>
+
+<h4 id="sub-2:-basemenu.switchmenutab">Sub 2: <a href="id:anchor1">BaseMenu.switchMenuTab</a></h4>
+
+<p>A special case is the <code>switchMenuTab</code> operation, which handles the event when user clicks on a tab mennu entry (drop down menu is closed)</p>
+<pre class="highlight coffeescript"><code><span class="na">switchMenuTab</span><span class="o">:</span> <span class="p">(</span><span class="nx">event</span> <span class="p">)</span><span class="o">-&gt;</span>
+    <span class="nx">a</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="na">target</span><span class="p">.</span><span class="na">parentElement</span><span class="p">.</span><span class="na">getAttribute</span><span class="p">(</span><span class="s">"id"</span><span class="p">)</span>
+    <span class="nx">bobj</span> <span class="o">=</span> <span class="nx">a</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nx">a</span><span class="p">.</span><span class="na">length</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span>
+    <span class="nx">log</span><span class="p">.</span><span class="na">debug</span> <span class="s">'BaseMenuView.switchMenuTab: "'</span><span class="o">+</span><span class="nx">bobj</span><span class="o">+</span><span class="s">'" current scope on "'</span><span class="o">+</span><span class="vi">@</span><span class="na">busObj</span><span class="o">+</span><span class="s">'"'</span>
+    <span class="k">if</span> <span class="nx">bobj</span> <span class="o">!=</span> <span class="vi">@</span><span class="na">busObj</span>
+        <span class="vi">@</span><span class="na">busObj</span> <span class="o">=</span> <span class="nx">bobj</span>
+        <span class="nb">window</span><span class="p">.</span><span class="na">appRouter</span><span class="p">.</span><span class="na">navigate</span><span class="p">(</span><span class="s">"/"</span><span class="o">+</span><span class="vi">@</span><span class="na">busObj</span><span class="p">,{</span><span class="na">trigger</span><span class="o">:</span> <span class="no">true</span><span class="p">})</span>
+</code></pre>
+
+<ul>
+<li>The operation will identify the <em>BDO</em> selected by querying the dropdown id <code>&lt;li id=&quot;servicetemplates-dp&quot; class=&quot;dropdown&quot;&gt;</code> and by getting rid of the last three characters. </li>
+<li>It will check if the clicked tab is already selected (stored in the class varialble <code>@busObj</code>) if not the <code>AppRouter.navigate</code> operation will be called.</li>
+</ul>
+
+<h3 id="event:-changebusinessobjectscope">Event: ChangeBusinessObjectScope</h3>
+
+<p>Even which will triggered in case the Business Object scope will change, i.e. the user changes from the business object &lsquo;customer&rsquo; to the &lsquo;order&rsquo; one. As well as a initial Browser opening with a specific URL.</p>
+
+<h4 id="pub-1:-baserouter.builddetailview">Pub 1: BaseRouter.buildDetailView</h4>
+
+<p>See above this event will be triggered as a result of a of renderDetailView request originiated by the <code>switchMenutTab</code> or a browser opening with a specific URL. </p>
+
+<h4 id="sub-1:-basemenuview.changebusinessobjectscope">Sub 1: BaseMenuView.changeBusinessObjectScope</h4>
+
+<p>Will consume the event. In case the passed in business object domain type is different the menu tab must be adjusted. </p>
+
+<h4 id="sub-2:-tabmenuview.changebusinessobjectscope">Sub 2: TabMenuView.changeBusinessObjectScope</h4>
+
+<p>Extends the <code>BaseMenuView</code> will control the toggling of TabMenu entries (on/off)</p>
+
+<h4 id="sub-3:-navbarmenuview.changebusinessobjectscope">Sub 3: NavbarMenuView.changeBusinessObjectScope</h4>
+
+<p>The navigation bar holds the search input field, which has a selection dropdown attached which allows to select the search field. Dependent on the business object domain type shown on the screen (in the example below the <code>Customer</code>) the drop down selection values will be adjusted accordingly.</p>
+
+<p><img alt="TabMenuView and IconMenuView" src="../../images/Voila_Capture320.png" /></p>
+
+<h3 id="event:-changebusinessobjectelement">Event: ChangeBusinessObjectElement</h3>
+
+<p>Will be triggered in case the detail view model was changed to a new one. This can be either triggered by</p>
+
+<ol>
+<li>A <code>changeBusinessScope</code> event happened beforehand due to a initial browser window opening or the user changed scope via menu or tab change</li>
+<li> The user selected another element in the list view</li>
+<li> The user saved a new element in modify view</li>
+</ol>
+
+<h4 id="pub-1:-baserouter.builddetailview">Pub 1: BaseRouter.buildDetailView</h4>
+
+<p>Will handle the constellation 1 and 2 of the above event triggering.</p>
+
+<h4 id="pub-2:-rootview.savetomodel">Pub 2: RootView.saveToModel</h4>
+
+<p>Will handle constellation 3 of the above event triggering. This is method will also triggering the <code>eventCurrentViewState</code> </p>
+
+<h4 id="pub-3:-rootlistitemview.click">Pub 3: RootListItemView.click</h4>
+
+<p>Will be triggered in case the user clicks on a list entry in the List View. The Event Trigger is configurable (<code>RootListItemView</code>is used in multiple list view) and passed in during creation of a list item.</p>
+
+<h4 id="sub-1:-rootview.changemodel">Sub 1: RootView.changeModel</h4>
+
+<p>The operation <code>changeModel</code> will be triggered, which will check if the passed in target model has to be replaced or not and takes over kicks off rendering part.</p>
+
+<h4 id="sub-2:-rootlistview.changemodel">Sub 2: RootListView.changeModel</h4>
+
+<p>The operation <code>changeModel</code> will be triggered which will highlight the entry. the Event Trigger is configurable  and passed in during creation of a list item. Analogue to the publishing even above on <code>RootListItemView</code>.</p>
+
+<h3 id="event:-currentviewstate">Event: CurrentViewState</h3>
+
+<h4 id="pub-1:-basemenuview.modifclick">Pub 1: BaseMenuView.modifClick</h4>
+
+<p>If the user selects the modify entry or new entry the event will be triggered</p>
+
+<h4 id="sub-1:-rootview.currentviewstateevent">Sub 1: rootView.currentViewStateEvent</h4>
+
+<p>Depending on the state will close and reopen the view</p>
+<pre class="highlight javascript"><code><span class="nx">currentViewStateEvent</span><span class="err">:</span> <span class="p">(</span><span class="nx">viewState</span><span class="p">)</span> <span class="o">=&gt;</span>
+    <span class="nx">log</span><span class="p">.</span><span class="nx">debug</span> <span class="s2">"RootView.currentViewStateEvent "</span><span class="o">+</span><span class="err">@</span><span class="nx">state</span><span class="o">+</span><span class="s2">" - "</span><span class="o">+</span><span class="nx">viewState</span>
+    <span class="k">if</span> <span class="err">@</span><span class="nx">state</span> <span class="o">!=</span> <span class="nx">viewState</span>
+      <span class="err">@</span><span class="nx">state</span> <span class="o">=</span> <span class="nx">viewState</span> 
+      <span class="err">@</span><span class="nx">close</span><span class="p">()</span>
+      <span class="err">@</span><span class="nx">render</span><span class="p">()</span>
+</code></pre>
+
+<h3 id="event:-changecontenttab">Event: changeContentTab</h3>
+
+<p>Will be triggered when the the content tabs in a view are changed (i.e. the so-called pill list)</p>
+
+<h4 id="pub-1:-rootview.render">Pub 1: RootView.render</h4>
+
+<p>The rendering of the root view  will trigger the event</p>
+
+<h4 id="sub-1:-rootview.changecontenttab">Sub 1: RootView.changeContentTab</h4>
+
+<p>The operation will toggle the content tabs.</p>
+
+<h2 id="class-approuter"><a href="id:anchor2">Class AppRouter</a></h2>
+
+<p>The <code>AppRouter</code>class provides a set of functions to manage and rendering the Views of the application, theres are </p>
+
+<ul>
+<li><code>newInstance</code></li>
+<li><code>renderViews</code></li>
+<li><code>renderListView</code></li>
+<li><code>renderDetailView</code></li>
+</ul>
+
+<h3 id="newinstance-(caching-of-views-and-models)">newInstance (caching of Views and Models)</h3>
+
+<p>The newInstance is used for the creation of Views and Model and will make use of caching, i.e. any view/model already opened will be cached during the user sessions.</p>
+<pre class="highlight coffeescript"><code><span class="na">newInstance</span><span class="o">:</span> <span class="p">(</span><span class="nx">strClass</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="c1"># Let's cache the Views
+</span>    <span class="k">if</span> <span class="nb">window</span><span class="p">.</span><span class="na">cache</span><span class="p">[</span><span class="nx">strClass</span><span class="p">]</span> <span class="o">!=</span> <span class="no">undefined</span>
+      <span class="k">return</span> <span class="nb">window</span><span class="p">.</span><span class="na">cache</span><span class="p">[</span><span class="nx">strClass</span><span class="p">]</span>
+    <span class="k">else</span>  
+      <span class="nx">args</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="na">prototype</span><span class="p">.</span><span class="na">slice</span><span class="p">.</span><span class="na">call</span> <span class="nx">arguments</span><span class="p">,</span> <span class="mi">1</span> 
+      <span class="nx">clsClass</span> <span class="o">=</span> <span class="nb">eval</span> <span class="nx">strClass</span>
+      <span class="nx">F</span> <span class="o">=</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="k">return</span> <span class="nx">clsClass</span><span class="p">.</span><span class="na">apply</span> <span class="k">this</span><span class="p">,</span> <span class="nx">args</span>
+      <span class="nx">F</span><span class="p">.</span><span class="na">prototype</span> <span class="o">=</span> <span class="nx">clsClass</span><span class="p">.</span><span class="na">prototype</span>
+      <span class="nb">window</span><span class="p">.</span><span class="na">cache</span><span class="p">[</span><span class="nx">strClass</span><span class="p">]</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">F</span><span class="p">()</span>
+      <span class="k">return</span> <span class="nb">window</span><span class="p">.</span><span class="na">cache</span><span class="p">[</span><span class="nx">strClass</span><span class="p">]</span>
+</code></pre>
+
+<h2 id="views">Views</h2>
+
+<h3 id="main-dropdown-menu-and-iconbar">Main Dropdown Menu and Iconbar</h3>
+
+<p>The main dropdown menu will consist of a list of all <em>BDO&rsquo;s</em> with its associated functions. </p>
+
+<h4 id="dropdown-templates">Dropdown Templates</h4>
+
+<p>The menu part of each <em>BDO</em> is defined as part of the <code>views/templates/main.show.tpl</code>and consists of HTML fragments like</p>
+<pre class="highlight html"><code><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/template"</span> <span class="na">id=</span><span class="s">"tmpl_customers_dropdownmenu"</span><span class="nt">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">li</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"customers-dp"</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"dropdown"</span><span class="o">&gt;</span> 
+    <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cuh"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"#"</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"dropdown-toggle"</span> <span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">"dropdown"</span><span class="o">&gt;&lt;%=</span> <span class="nx">customer_menu_header</span> <span class="o">%&gt;&lt;</span><span class="nx">b</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"caret"</span><span class="o">&gt;&lt;</span><span class="sr">/b&gt;&lt;/</span><span class="nx">a</span><span class="o">&gt;</span> 
+    <span class="o">&lt;</span><span class="nx">ul</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"dropdown-menu"</span><span class="o">&gt;</span> 
+      <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cuo"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">""</span> <span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">"tab"</span><span class="o">&gt;&lt;%=</span> <span class="nx">customer_menu_overview</span> <span class="o">%&gt;&lt;</span><span class="sr">/a&gt;&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">li</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"divider"</span><span class="o">&gt;&lt;</span><span class="sr">/li</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cun"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">""</span> <span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">"tab"</span><span class="o">&gt;&lt;%=</span> <span class="nx">customer_menu_new</span> <span class="o">%&gt;&lt;</span><span class="sr">/a&gt;&lt;/</span><span class="nx">li</span><span class="o">&gt;</span> 
+      <span class="o">&lt;</span><span class="nx">li</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"divider"</span><span class="o">&gt;&lt;</span><span class="sr">/li</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cum"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">""</span> <span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">"tab"</span><span class="o">&gt;&lt;%=</span> <span class="nx">customer_menu_modify</span> <span class="o">%&gt;&lt;</span><span class="sr">/a&gt;&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cud"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">""</span> <span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">"tab"</span><span class="o">&gt;&lt;%=</span> <span class="nx">customer_menu_delete</span> <span class="o">%&gt;&lt;</span><span class="sr">/a&gt;&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">li</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"divider"</span><span class="o">&gt;&lt;</span><span class="sr">/li</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cup"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">""</span> <span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">"tab"</span><span class="o">&gt;&lt;</span><span class="sr">/span&gt;&lt;%= customer_menu_print %&gt;&lt;/</span><span class="nx">a</span><span class="o">&gt;&lt;</span><span class="sr">/li&gt;</span><span class="err"> 
+</span>    <span class="o">&lt;</span><span class="sr">/ul&gt;</span><span class="err"> 
+</span>  <span class="o">&lt;</span><span class="sr">/li</span><span class="err">&gt;
+</span><span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/template"</span> <span class="na">id=</span><span class="s">"tmpl_servicetemplates_dropdownmenu"</span><span class="nt">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">li</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"servicetemplates-dp"</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"dropdown"</span><span class="o">&gt;</span> 
+    <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cuh"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"#"</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"dropdown-toggle"</span> <span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">"dropdown"</span><span class="o">&gt;&lt;%=</span> <span class="nx">servicetemplate_menu_header</span> <span class="o">%&gt;&lt;</span><span class="nx">b</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"caret"</span><span class="o">&gt;&lt;</span><span class="sr">/b&gt;&lt;/</span><span class="nx">a</span><span class="o">&gt;</span> 
+    <span class="o">&lt;</span><span class="nx">ul</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"dropdown-menu"</span><span class="o">&gt;</span> 
+      <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cuo"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">""</span> <span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">"tab"</span><span class="o">&gt;&lt;%=</span> <span class="nx">servicetemplate_menu_overview</span> <span class="o">%&gt;&lt;</span><span class="sr">/a&gt;&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">li</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"divider"</span><span class="o">&gt;&lt;</span><span class="sr">/li</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cun"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">""</span> <span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">"tab"</span><span class="o">&gt;&lt;%=</span> <span class="nx">servicetemplate_menu_new</span> <span class="o">%&gt;&lt;</span><span class="sr">/a&gt;&lt;/</span><span class="nx">li</span><span class="o">&gt;</span> 
+      <span class="o">&lt;</span><span class="nx">li</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"divider"</span><span class="o">&gt;&lt;</span><span class="sr">/li</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cum"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">""</span> <span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">"tab"</span><span class="o">&gt;&lt;%=</span> <span class="nx">servicetemplate_menu_modify</span> <span class="o">%&gt;&lt;</span><span class="sr">/a&gt;&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cud"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">""</span> <span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">"tab"</span><span class="o">&gt;&lt;%=</span> <span class="nx">servicetemplate_menu_delete</span> <span class="o">%&gt;&lt;</span><span class="sr">/a&gt;&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">li</span> <span class="kr">class</span><span class="o">=</span><span class="s2">"divider"</span><span class="o">&gt;&lt;</span><span class="sr">/li</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"cup"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">""</span> <span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">"tab"</span><span class="o">&gt;&lt;</span><span class="sr">/span&gt;&lt;%= servicetemplate_menu_print %&gt;&lt;/</span><span class="nx">a</span><span class="o">&gt;&lt;</span><span class="sr">/li&gt;</span><span class="err"> 
+</span>    <span class="o">&lt;</span><span class="sr">/ul&gt;</span><span class="err"> 
+</span>  <span class="o">&lt;</span><span class="sr">/li</span><span class="err">&gt;
+</span><span class="nt">&lt;/script&gt;</span>
+</code></pre>
+
+<h4 id="standardized-trigger-points"><a href="id:anchor3">Standardized Trigger Points</a></h4>
+
+<p>Each of these fragment blocks are identifiable and loadable via the identifier <code>&lt;businessdomainobject&gt;s-dp</code>, e.g. <code>&lt;li id=&quot;customers-dp&quot; class=&quot;dropdown&quot;&gt; p</code>. There are predefined trigger points defined attached to the <code>&lt;a&gt;</code>element in the fragment.</p>
+
+<p><img alt="Menu Trigger Points" src="../../images/menuTriggerpoints.png" /></p>
+
+<ul>
+<li><code>cuh</code>: Is the root trigger point for a tab switch, i.e. the current <em>BDO</em> screens will be replaced through the new one and the drop down menu will be displayed.</li>
+<li><code>cuo</code>: Open Overview Screen, which shows a read only view of a dedicated <em>BDO</em> (the selected one, by defaul the first one) </li>
+<li><code>cun</code>: New <em>BDO</em> Screen</li>
+<li><code>cum</code>: Modify <em>BDO</em> Screen</li>
+<li><code>cud</code>: Delete <em>BDO</em> Screen</li>
+<li><code>cup</code>: Print <em>BDO</em> Screen</li>
+</ul>
+
+<h3 id="main-view:-rootview-class">Main View: RootView class</h3>
+
+<p>As described above the <code>BaseMenuView</code>class will get triggered in case the user wants to change the view state, for example to create, modify or delete a <em>BDO</em>. The class will trigger a global event in the form of <code>window.Notifier.trigger window.Notifier.eventNewRecord</code> which will be consumed by the <code>RootView</code>class in order to do the view state change.</p>
+
+<h4 id="trigger-events-and-cached-views">Trigger Events and cached Views</h4>
+
+<p>It&rsquo;s important to mention that the application will cache view instances during a user session. That means in case the user will trigger a tab menu change the application will check in its cache if the view was already opened beforehand or not. In case the view was already used beforehand the cached instance will be visualized immediately (this handled in the <code>AppRout.newInstance</code> method). </p>
+
+<p>In context of a event trigger based applications some special considerations must be taken. E.g. any view state change trigger event will be consumed by the actual visible view but also all the cached ones which are currently hidden, <em>BUT</em> only the visible view should react on the view state change. That means the view must know if he is the actual visible one or not. </p>
+
+<p>This boolean information will be derived through  <code>window.Notifier.eventChangeModel</code> events which are consumed by <code>RootView</code>class as well.</p>
+
+<h4 id="event:-eventchangemodel">Event: eventChangeModel</h4>
+
+<h2 id="helpful-utilities">Helpful Utilities</h2>
+
+<p>Creating a object via reflection</p>
+<pre class="highlight javascript"><code><span class="nx">newInstance</span><span class="err">:</span> <span class="p">(</span><span class="nx">strClass</span><span class="p">)</span> <span class="o">-&gt;</span>
+      <span class="nx">args</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span> <span class="nx">arguments</span><span class="p">,</span> <span class="mi">1</span> 
+      <span class="nx">clsClass</span> <span class="o">=</span> <span class="nb">eval</span> <span class="nx">strClass</span>
+      <span class="nx">F</span> <span class="o">=</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="k">return</span> <span class="nx">clsClass</span><span class="p">.</span><span class="nx">apply</span> <span class="k">this</span><span class="p">,</span> <span class="nx">args</span>
+      <span class="nx">F</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">clsClass</span><span class="p">.</span><span class="nx">prototype</span>
+      <span class="k">return</span> <span class="k">new</span> <span class="nx">F</span><span class="p">()</span>
+</code></pre>
+
+<p>JavaScript lacks a built-in function for getting the exact class names of object instances. This function will retrieve the name via the constructor.</p>
+<pre class="highlight javascript"><code><span class="nx">getObjectClass</span><span class="err">:</span> <span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="o">-&gt;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">obj</span> <span class="o">&amp;&amp;</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">constructor</span> <span class="o">&amp;&amp;</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">toString</span><span class="p">)</span> 
+        <span class="nx">arr</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">constructor</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">match</span><span class="p">(</span><span class="sr">/function</span><span class="se">\s</span><span class="sr">*</span><span class="se">(\w</span><span class="sr">+</span><span class="se">)</span><span class="sr">/</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span> <span class="o">&amp;&amp;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> 
+        <span class="k">return</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+    <span class="k">return</span> <span class="kc">undefined</span><span class="p">;</span>
+</code></pre>
+<hr>
+            <p class="text-center">
+              ©2015 - <a href="/">Dev@Cloudburo</a><br /><span class="small">Powered by<a href="https://cloudburo.net/docs/products.html"> Cloudburo Curation Engine</a></span>
+            </p>
+          </hr>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/all.js" type="text/javascript"></script>
+  </body>
+</html>

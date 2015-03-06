@@ -1,0 +1,303 @@
+<!doctype html> 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>Dev@Cloudburo</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../js/ie8.js" type="text/javascript"></script><![endif]--><link href="../../css/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/favicon.png" rel="icon" type="image/png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">Dev@Cloudburo</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/about.html"> About</a>
+            </li>
+            <li>
+              <a href="/contact.html"> Contact     </a>
+            </li>
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/tags/personaldata.html">personalData (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/api.html">api (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/futurework.html">futureWork (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/modeling.html">modeling (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/banking.html">banking (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">By Year <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/2015.html">2015 (1)</a>
+                </li>
+                <li>
+                  <a href="/2014.html">2014 (10)</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/docs"> Docs</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled list-inline nav navbar-nav navbar-right">
+            <li>
+              <a href="https://twitter.com/talfco"><i class="fa fa-twitter-square fa-lg fa-inverse"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/talfco"><i class="fa fa-github-square fa-lg fa-inverse"></i></a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts"><i class="fa fa-google-plus-square fa-lg fa-inverse"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/felixk"><i class="fa fa-linkedin-square fa-lg fa-inverse"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <h2>
+            Table of Content
+          </h2>
+          <ul>
+          <li>
+          <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+          <a href="#domain-driven-design">Domain Driven Design</a>
+          </li>
+          <li>
+          <a href="#uml-design-model">UML Design Model</a>
+          </li>
+          <li>
+          <a href="#business-object-model-diagram">Business Object Model Diagram</a>
+          <ul>
+          <li>
+          <a href="#code-generation-aspects">Code Generation Aspects</a>
+          <ul>
+          <li>
+          <a href="#attribute-handling">Attribute Handling</a>
+          <ul>
+          <li>
+          <a href="#primitive">Primitive</a>
+          </li>
+          <li>
+          <a href="#data-type-"referencedata"-(value-object)">Data Type &quot;referenceData&quot; (Value Object)</a>
+          </li>
+          <li>
+          <a href="#enumeration">Enumeration</a>
+          </li>
+          <li>
+          <a href="#toone-association-(identity-object)">ToOne Association (Identity Object)</a>
+          </li>
+          <li>
+          <a href="#tomany-association">ToMany Association</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#modeling-persistency-functionality">Modeling Persistency Functionality</a>
+          </li>
+          <li>
+          <a href="#modeling-visualization-functionality">Modeling Visualization Functionality</a>
+          </li>
+          </ul>
+          </li>
+          </ul>
+          </li>
+          </ul>
+          <h2 id="introduction">Introduction</h2>
+
+<p>The heart of the software is a UML Design Model, with a primary focus on the domain and domain logic. It introduces business objects - dervied from textual business concept description - as well as other design work products centered around the model. The model itself is interconnected with the code by serving as a base to generate a subset of the configuration- and software artifacts which gets deployed into the cloud infrastructure. </p>
+
+<h2 id="domain-driven-design">Domain Driven Design</h2>
+
+<p>We use a <a href="http://en.wikipedia.org/wiki/Domain-driven_design">Domain Driven Design (DDD)</a> approach to shape out the business foundation of the  platform.  DDD is is an approach to the design of software, based on the two premises:</p>
+
+<ul>
+<li>that complex domain designs should be based on a model, and</li>
+<li>that for most software projects, the primary focus should be on the domain and domain logic (as opposed to the particular technology used to implement the system).</li>
+</ul>
+
+<p>Refer to the following <a href="http://www.codeproject.com/Articles/56767/Domain-Driven-Design">article</a> for a good introduction</p>
+
+<blockquote>
+<p>In other words the heart of the DDD is Model and you start developing your application with drawing your model. Model and  design you create should shape each other. Model should represent knowledge to the business and it is language your team   peak.
+To be able effectively design you should build your Model and implementation together in the same time, cultivating a language based on the Model. You should represent knowledge in your Model and continuously distill it. You could do refactoring to it doing brainstorming and experimenting.</p>
+</blockquote>
+
+<p>Integral part of the domain model are the following building blocks:</p>
+
+<ul>
+<li><em>Associations:</em> Expresses a relationship between Entities or Value Objects. It&rsquo;s shows that they could be either linked or combined into some aggregation. </li>
+<li><em>Entities:</em> Objects that have a distinct identity that runs through time and different representations. You also hear these called &ldquo;reference objects&rdquo;. Entities are usually big things like Customer, Service Agreement. </li>
+<li><em>Value Object</em>: Objects that matter only has the combination of their attributes. Two value objects with the same values for all their attributes are considered equal. Values are usually little things like Date, Money, Country.</li>
+<li><em>Service</em>: A standalone operation within the context of your domain. A <em>Service Object</em> collects one or more services into an object. Typically you will have only one instance of each service object type within your execution context.</li>
+<li>An <em>Aggregate</em> is a group of associated objects which are considered as one unit with regard to data changes. The Aggregate is demarcated by a boundary which separates the objects inside from those outside. Each Aggregate has one Root. The Root is an Entity, and it is the only object accessible from outside.</li>
+</ul>
+
+<h2 id="uml-design-model">UML Design Model</h2>
+
+<p>The Domain Model is a UML based model which is an analysis as well as a design model and is a direct connection to the underlying code.   </p>
+
+<p>The UML model is the heart of the software it provides a common language and will not only be used as an aid in early analysis. It&rsquo;s the foundation of the design and ultimately serve as an input to code generators.</p>
+
+<p>This connection between modeling - not just only for analysis work - but also for used for the design (call it model driven design) is a key requirement in a domain driven design.  </p>
+
+<p>Having said that this implies that there is a tight connection between model and the code. As Eric Evans has described in his <a href="http://amzn.to/1ijF5xC">book</a>, which Martin Fowler describes as the canonical source to DDD.</p>
+
+<blockquote>
+<p>If the design, or some central part of it, does not map to the domain model, that model is of little value, and the correctness of the software is suspect. At the same time, complex mappings between models and design functions are difficult to understand and, in practice, impossible to maintain as the design changes. A deadly divide opens between analysis and design so that insight gained in each of those activities does not feed into the other.</p>
+</blockquote>
+
+<p>To establish a model which unifies the analysis as well as the design part(Model-driven design) requires a strong toolset, which is fortunately available as Eclipse Open Source Projects.</p>
+
+<p>We are using the <em>Eclipse Modelling</em> Set, which includes the <a href="http://www.papyrusuml.org/">Papyrus UML Modeller</a> complemented by <a href="http://www.eclipse.org/acceleo/">Acceleo Code Generator</a> and includes EMF, UML, OCL features which are required to describe the model in its necessary details. Refer to the <a href="/docs/foundation/">Foundation Chapter</a> for more details about the toolset.</p>
+
+<p>The model itself is expressed by a set of diagrams, which are means of communication and explanation. It&rsquo;s important to understand that they show design constraints and show conceptually important parts of the object model. But they are not design specifications in every detail.</p>
+
+<p>A lot of the constraints which are driving the code generators are expressed via UML stereotypes attached to UML elements, which are defined in a dedicated UML profile.</p>
+
+<p>As for example in the following diagram attribute <em>name</em> of the business object <em>Customer</em> has some stereotypes attached (representd by <em>&lt;&lt;&hellip;&gt;&gt;</em> markers). </p>
+
+<p><img alt="Business Object with Stereotypes" src="../../images/Voila_Capture356.png" /></p>
+
+<p>Going to the detail view will show the textual definition and configuration of the dedicated items.</p>
+
+<p><img alt="Stereotype Definitions" src="../../images/Voila_Capture355.png" />  </p>
+
+<p>As an example</p>
+
+<ul>
+<li>the <em>Loc</em> stereotype is defining the localization of the attribute name when shown on the screen for various languages (de, en, fr &hellip;)</li>
+<li>the <em>List</em> stereotype is used to define if a certain attribute is used in list view of the Business Object and its positioning. In this example the attribute is part of the list view element shown on the <em>TitleLine</em> </li>
+</ul>
+
+<h2 id="business-object-model-diagram">Business Object Model Diagram</h2>
+
+<p>The Business Object Diagram shows objects of importance to a business and documents the relationships between them in terms of responsibilities and behavior. Its emphasizes the roles performed in the business area and their active responsibilities. </p>
+
+<p><img alt="Business Object Model" src="../../images/Voila_Capture354.png" /></p>
+
+<h3 id="code-generation-aspects">Code Generation Aspects</h3>
+
+<h4 id="attribute-handling">Attribute Handling</h4>
+
+<p>In general the generator differentiates the following attribute types</p>
+
+<h5 id="primitive">Primitive</h5>
+
+<p>Will  result in simple attributes in the generated artifacts (javascript backbone models/views, templates, java objective classes etc.).</p>
+
+<h5 id="data-type-&quot;referencedata&quot;-(value-object)">Data Type &ldquo;referenceData&rdquo; (Value Object)</h5>
+
+<p>Data Type attributes with the Stereotype <code>referenceData</code> will be based on name/value list which are fetched by a client from static JSON Files. In the DDD language they are called <em>Value Object</em></p>
+
+<p>As an example the following <code>country</code> list</p>
+
+<p><img alt="Country JSON" src="../../images/Voila_Capture359.png" /></p>
+
+<p>is the source of data, modelled in the following data type:</p>
+
+<p><img alt="ReferenceData DataType" src="../../images/Voila_Capture360.png" /></p>
+
+<p>The stereotype <code>referenceData</code> has a property <code>refCode</code> which will provide the information how to fetch the data for the specific ReferenceData DataType,</p>
+
+<p>e.g. <code>http://&lt;servername&gt;/refdata/&lt;refCode&gt;.&lt;language&gt;.json</code> </p>
+
+<p>The <code>language</code> parameter is set by end user session (Localization). </p>
+
+<p>Such a data type will be visualized based on a <a href="http://ivaynberg.github.io/select2/">Select2 Remote Select Box</a>, the whole code fragment can be generated.</p>
+
+<p>( /images/Voila_Capture361.png  [ReferenceData DataType] %}</p>
+
+<h5 id="enumeration">Enumeration</h5>
+
+<p>Enumeration will be mapped to choices and will be visualized as select values.</p>
+
+<h5 id="toone-association-(identity-object)">ToOne Association (Identity Object)</h5>
+
+<p>In case we are referencing via a class attribute exactly one other Class Object (which has an identity and a lifecycle, called in DDD an Identity Object) we can generate a simple attribute in the code artefacts.</p>
+
+<p><a href="/images/Voila_Capture358.png">One To One Object Associations2</a></p>
+
+<h5 id="tomany-association">ToMany Association</h5>
+
+<p>These class attributes are reflecting an endpoint of a navigable association. It&rsquo;s navigable due to the fact that member end of the association is owned by the classifier (aka the class).</p>
+
+<p><img alt="One To Many Associations" src="../../images/Voila_Capture357.png" /> </p>
+
+<ul>
+<li>E.g. the association member end <code>serviceConfig</code> is owned by the classifier <code>ProductType</code> and therefore represented as class attribute in the UML class. A product type may include one to many serviceConfig(s) and therefore will be handled specially in the generator.</li>
+</ul>
+
+<h4 id="modeling-persistency-functionality">Modeling Persistency Functionality</h4>
+
+<p>The Business Objects will be stored in a <a href="https://en.wikipedia.org/wiki/NoSQL">NoSQL</a> datastore, which is suited for data that is modeled documents  other that the tabluar relations used in relational databases.</p>
+
+<p>As you can see in the above model diagrams, a class has either the stereotype <code>documentCollection</code> or <code>documentProperty</code>.</p>
+
+<p>The following holds true:</p>
+
+<ul>
+<li>A class of <code>documentCollection</code> will be persisted as JSON document to the underlying data store.</li>
+<li>A class of <code>documentProperty</code> will be persisted as part of the <code>documentCollection</code> which is associated in a navigable way with this one ), actually the association is of type aggregation.</li>
+<li>This will allow to buid complex json data structures which are persisted in a transaction. </li>
+<li>Depending on the Assocation either a single Document Property object will be persisted or a list of Document Property list will be persisted.</li>
+</ul>
+
+<p>As an example the <code>ProductType-ProductTypeServiceConfig</code> model construct will result in the following JSON data structure</p>
+
+<p><a href="/images/Voila_Capture362.png">Document Structure</a></p>
+
+<p>Again all the necessary meta information required in the code will be generated, by default each of the Class will have by default a unique identifier <code>_id</code>.  </p>
+
+<p>As an example the below screenshot shows you the generated AppEngine <a href="https://code.google.com/p/objectify-appengine/">Objectify</a> Entity (Backend Java Class). It&rsquo;s class structuring represents the above JSON structure. Such a Entity class object can be transformed from-/to JSON by simply using the Google <a href="https://code.google.com/p/google-gson/">GSON</a> library. </p>
+
+<p><img alt="Objectify Entity Class" src="../../images/Voila_Capture363.png" /></p>
+
+<h4 id="modeling-visualization-functionality">Modeling Visualization Functionality</h4>
+<hr>
+            <p class="text-center">
+              ©2015 - <a href="/">Dev@Cloudburo</a><br /><span class="small">Powered by<a href="https://cloudburo.net/docs/products.html"> Cloudburo Curation Engine</a></span>
+            </p>
+          </hr>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/all.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+<!doctype html> 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>Dev@Cloudburo</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../js/ie8.js" type="text/javascript"></script><![endif]--><link href="../../css/all.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/favicon.png" rel="icon" type="image/png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">Dev@Cloudburo</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/about.html"> About</a>
+            </li>
+            <li>
+              <a href="/contact.html"> Contact     </a>
+            </li>
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/tags/personaldata.html">personalData (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/api.html">api (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/futurework.html">futureWork (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/modeling.html">modeling (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/banking.html">banking (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">By Year <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/2015.html">2015 (1)</a>
+                </li>
+                <li>
+                  <a href="/2014.html">2014 (10)</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/docs"> Docs</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled list-inline nav navbar-nav navbar-right">
+            <li>
+              <a href="https://twitter.com/talfco"><i class="fa fa-twitter-square fa-lg fa-inverse"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/talfco"><i class="fa fa-github-square fa-lg fa-inverse"></i></a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts"><i class="fa fa-google-plus-square fa-lg fa-inverse"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/felixk"><i class="fa fa-linkedin-square fa-lg fa-inverse"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <h2>
+            Table of Content
+          </h2>
+          <ul>
+          <li>
+          <a href="#npm-node-modules">NPM Node Modules</a>
+          <ul>
+          <li>
+          <a href="#clouburo-provided-modules">Clouburo provided Modules</a>
+          </li>
+          <li>
+          <a href="#third-party-provided-modules">Third party provided Modules</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#file-directory-structure">File Directory Structure</a>
+          <ul>
+          <li>
+          <a href="#index.js">index.js</a>
+          </li>
+          </ul>
+          </li>
+          <li>
+          <a href="#model-loader">Model Loader</a>
+          <ul>
+          <li>
+          <a href="#generic-loading-mechanism-for-backend-business-domain-model">Generic loading mechanism for backend business domain model</a>
+          </li>
+          <li>
+          <a href="#generic-approach-to-bridge-frontend-backbone-business-domain-models">Generic approach to bridge frontend Backbone business domain models</a>
+          </li>
+          </ul>
+          </li>
+          </ul>
+          <p>The Node.js based HTTP server is one of the runtime container used by the Cloudburo deployment strategy. <a href="http://http://nodejs.org/&amp;quot;">Node.js</a> is a platform built on <a href="http://code.google.com/p/v8/">Chrome&rsquo;s</a> JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
+
+<h2 id="npm-node-modules">NPM Node Modules</h2>
+
+<p>Beside the node.js core server application a set of NPM packaged libraries are used, part of them are also used within the frontend based application (as for example &lsquo;underscore&rsquo; or &lsquo;coffee script&rsquo;)</p>
+
+<h3 id="clouburo-provided-modules">Clouburo provided Modules</h3>
+
+<ul>
+<li><a href="https://github.com/talfco/clb-modelloader">clb-modelloader</a>  is a small utility which is loading moongoose model definition files from a file directory location into a nodejs server instance and automatically creates corresponding request handlers</li>
+</ul>
+
+<h3 id="third-party-provided-modules">Third party provided Modules</h3>
+
+<ul>
+<li><a href="http://documentcloud.github.com/underscore/">underscore</a> is a utility-belt library for JavaScript that provides a lot of the functional programming support that you would expect in Prototype.js (or Ruby), but without extending any of the built-in JavaScript objects. It&rsquo;s the tie to go along with jQuery&rsquo;s tux, and Backbone.js&rsquo;s suspenders. Available on <a href="https://github.com/documentcloud/underscore/">github</a>.</li>
+<li><a href="http://coffeescript.org/">coffee-script</a>: The CoffeeScript compiler is itself written in CoffeeScript, using the Jison parser generator. The command-line version of coffee is available as a Node.js utility. Available on <a href="https://github.com/jashkenas/coffee-script">github</a>.</li>
+<li><a href="http://www.mongodb.org/">mongodb</a>: MongoDB (from &ldquo;humongous&rdquo;) is a scalable, high-performance, open source NoSQL database. Available on <a href="https://github.com/mongodb/mongo">github</a>.</li>
+<li><a href="http://mongoosejs.com/">moongoose</a>: An elegant mongodb object modeling for node.js.</li>
+<li><a href="http://expressjs.com/">express</a>: Express is a minimal and flexible node.js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications. Available on <a href="https://github.com/visionmedia/express">github</a>.</li>
+<li><a href="https://github.com/sstephenson/stitch">stitch</a>: Develop and test your JavaScript applications as CommonJS modules in Node.js. Then Stitch them together to run in the browser. Available on <a href="https://github.com/sstephenson/stitch">github</a></li>
+<li><a href="https://github.com/flatiron/winston#installation">winston</a>: A multi-transport async logging library for node.js. Available on <a href="https://github.com/flatiron/winston#installation">github</a>.</li>
+<li><a href="https://github.com/mishoo/UglifyJS">uglify-js</a> JavaScript parser / mangler / compressor / beautifier library for NodeJS. Available on <a href="https://github.com/mishoo/UglifyJS">github</a></li>
+</ul>
+
+<h2 id="file-directory-structure">File Directory Structure</h2>
+
+<p>The file directory consists of two parts</p>
+
+<ul>
+<li>backend-, server related files are stored in the following directory 
+
+<ul>
+<li> <code>root</code> directory itself contains of
+
+<ul>
+<li>the <code>index.js</code> file which will initialize the <code>Node.js</code> server application</li>
+<li>the <code>cloudburoApp.js</code> file which bundles the CommonJS modules which makes up the application in a minified single javascript file. </li>
+<li>the <code>modelLoader.coffee</code> file which loads the server side moongoose model of the application and injects the necessary event handlers.</li>
+</ul></li>
+<li><code>root/node_modules</code> contains all <code>Node.js</code> modules required by the server itsself, as for example <code>express, mongoose, mongodb, stitch, backbone, underscore</code> etc. These modules are managed via the <a href="https://npmjs.org/">Node Package Modules</a> mechanism.</li>
+<li><code>server_models</code>directory contains all Mongoose based business concept object models of the Cloudburo App platform, as for example the models necessary to persists objects like <code>Customer</code>, <code>Service</code>, <code>Product</code>, <code>User</code>and so on.<br></li>
+</ul></li>
+<li>frontend-, browser related files are stored in <code>root/app</code> directory</li>
+</ul>
+
+<h3 id="index.js">index.js</h3>
+
+<p>The <code>index.js</code> contains the code for the Node.js configuration it consists of the following main blocks</p>
+
+<ol>
+<li>Creating the Stitch package of the client side java script application, which will be transferred to the client during the initial web page opening</li>
+<li>Setting up the <code>Node.js</code> Server and connecting to the cloud based MongoDB instance.</li>
+<li>Loading all backend business domain model objects - which are based on mongoose - of the cloudburo app platform and bridge them to the corresponding Backbone frontend business domain model objects</li>
+</ol>
+
+<h2 id="model-loader">Model Loader</h2>
+
+<h3 id="generic-loading-mechanism-for-backend-business-domain-model">Generic loading mechanism for backend business domain model</h3>
+
+<p>The model loader will dynamically auto load the server models which are stored in the <code>server_models</code> directory.</p>
+<pre class="highlight coffeescript"><code><span class="nx">modelLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="nx">require</span><span class="p">(</span><span class="s">"./modelLoader"</span><span class="p">))();</span>
+<span class="nx">modelLoader</span><span class="p">.</span><span class="na">autoload</span><span class="p">(</span><span class="nx">nodeserv</span><span class="p">,</span><span class="nx">db</span><span class="p">,</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span><span class="s">"server_models"</span><span class="p">));</span> 
+</code></pre>
+
+<p>The server models are defining the mongoose schema for the business domain model objects they are responsible for. </p>
+<pre class="highlight coffeescript"><code><span class="nx">module</span><span class="p">.</span><span class="na">exports</span> <span class="o">=</span> <span class="k">class</span> <span class="nx">ServiceTemplateModel</span> <span class="k">extends</span> <span class="nx">BaseModel</span>
+    <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="o">-&gt;</span>
+        <span class="k">super</span>  <span class="s">'serviceTemplateModel'</span><span class="p">,</span><span class="s">'ServiceTemplateModel'</span><span class="p">,</span>
+                <span class="k">new</span> <span class="nx">mongoose</span><span class="p">.</span><span class="na">Schema</span>
+                <span class="na">name</span><span class="o">:</span>  <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
+                <span class="na">type</span><span class="o">:</span> <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
+                <span class="na">category</span><span class="o">:</span>  <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">}</span>
+                <span class="na">prize</span><span class="o">:</span>  <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">}</span>
+                <span class="na">duration</span><span class="o">:</span>  <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">}</span>
+    <span class="na">newInstance</span><span class="o">:</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="o">-&gt;</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">ServiceTemplateModel</span> <span class="nx">props</span>
+</code></pre>
+
+<p>Each server model extends the <code>BaseModel</code></p>
+<pre class="highlight coffeescript"><code><span class="nx">module</span><span class="p">.</span><span class="na">exports</span> <span class="o">=</span> <span class="k">class</span> <span class="nx">BaseModel</span>
+    <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="vi">@</span><span class="na">modelName</span><span class="p">,</span><span class="vi">@</span><span class="na">dbModelName</span><span class="p">,</span><span class="vi">@</span><span class="na">schema</span><span class="p">,</span><span class="nx">props</span><span class="p">)</span> <span class="o">-&gt;</span>
+        <span class="vi">@</span><span class="na">dbModel</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="na">model</span><span class="p">(</span><span class="vi">@</span><span class="na">dbModelName</span><span class="p">,</span> <span class="vi">@</span><span class="na">schema</span><span class="p">)</span>
+        <span class="vi">@</span><span class="na">model</span> <span class="o">=</span> <span class="k">new</span> <span class="vi">@</span><span class="na">dbModel</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span>
+        <span class="vi">@</span><span class="na">schema</span><span class="p">.</span><span class="na">virtual</span><span class="p">(</span><span class="s">'id'</span><span class="p">).</span><span class="na">get</span> <span class="o">-&gt;</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">_id</span>
+
+        <span class="vi">@</span><span class="na">schema</span><span class="p">.</span><span class="na">methods</span><span class="p">.</span><span class="na">toBackbone</span> <span class="o">=</span> <span class="o">-&gt;</span>
+                <span class="nx">obj</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">toObject</span><span class="p">();</span>
+                <span class="nx">obj</span><span class="p">.</span><span class="na">id</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">.</span><span class="na">_id</span><span class="p">;</span>
+                <span class="k">return</span> <span class="nx">obj</span><span class="p">;</span>
+
+    <span class="na">getModelName</span><span class="o">:</span> <span class="o">-&gt;</span> <span class="vi">@</span><span class="na">modelName</span>
+    <span class="na">getDBModel</span><span class="o">:</span> <span class="o">-&gt;</span>  <span class="vi">@</span><span class="na">dbModel</span> 
+    <span class="na">getDBSchema</span><span class="o">:</span> <span class="o">-&gt;</span> <span class="vi">@</span><span class="na">schema</span>
+    <span class="na">save</span><span class="o">:</span> <span class="o">-&gt;</span> <span class="vi">@</span><span class="na">model</span><span class="p">.</span><span class="na">save</span><span class="p">()</span>
+</code></pre>
+
+<p>The model loader will load each model module dynamically out of <code>server_models</code> directory, creates the relevant moongoose object and passes it over to the BackBoneBridge (see below the expose operation)</p>
+<pre class="highlight coffeescript"><code><span class="nx">files</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="na">readdirSync</span> <span class="nx">modelpath</span>
+
+<span class="nx">modelNames</span> <span class="o">=</span> <span class="nx">_und</span><span class="p">.</span><span class="na">map</span> <span class="nx">files</span><span class="p">,</span> <span class="p">(</span><span class="nx">f</span><span class="p">)</span> <span class="o">=&gt;</span> 
+  <span class="nx">path</span><span class="p">.</span><span class="na">basename</span> <span class="nx">f</span>
+
+<span class="nx">bridge</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="nx">require</span><span class="p">(</span><span class="s">"./backboneBridge"</span><span class="p">))()</span>
+
+<span class="nx">_und</span><span class="p">.</span><span class="na">each</span> <span class="nx">modelNames</span><span class="p">,</span> <span class="p">(</span><span class="nx">modelName</span><span class="p">)</span> <span class="o">-&gt;</span>     
+  <span class="nx">modelC</span> <span class="o">=</span> <span class="nx">require</span> <span class="nx">modelpath</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span> <span class="nx">modelName</span> 
+  <span class="nx">util</span><span class="p">.</span><span class="na">inspect</span><span class="p">(</span><span class="nx">modelC</span><span class="p">,</span><span class="no">true</span><span class="p">,</span><span class="no">true</span><span class="p">)</span>
+  <span class="k">if</span> <span class="nx">modelName</span> <span class="o">!=</span> <span class="s">"baseModel.coffee"</span>
+     <span class="nx">model</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">modelC</span><span class="p">()</span>        
+     <span class="vi">@</span><span class="na">expose</span><span class="p">(</span><span class="nx">model</span><span class="p">,</span><span class="nx">serv</span><span class="p">)</span>
+</code></pre>
+
+<h3 id="generic-approach-to-bridge-frontend-backbone-business-domain-models">Generic approach to bridge frontend Backbone business domain models</h3>
+
+<p>The <code>expose</code> function will take care that backend requests triggered by  frontend Backbone based business object domain models are dispatched to the corresponding Mongoose based business object domain model which will handle the request in interaction with the database. 
+For each server model a set of request handler will be created. In case the server model name is <code>customerModel.coffee</code> the URL path name will be the file name (without Model.coffee extension) plus an &rsquo;s&#39; for the plural, e.g <code>customers</code>. The following request handlers are created for each server model:</p>
+
+<ol>
+<li>get a list of a business domain objects (<code>/customers</code>), GET request</li>
+<li>update a business domain object (<code>/customers/&lt;id&gt;</code>), PUT request</li>
+<li>delete a business domain object (<code>/customers/&lt;id&gt;</code>), DELETE request</li>
+<li>create a new business domain object (<code>/customers/&lt;id&gt;</code>), POST request</li>
+</ol>
+
+<p>The expose function looks like the following</p>
+<pre class="highlight coffeescript"><code>    <span class="na">expose</span> <span class="o">:</span> <span class="p">(</span><span class="nx">model</span><span class="p">,</span> <span class="nx">serv</span><span class="p">)</span><span class="o">-&gt;</span>
+        <span class="nx">collection</span> <span class="o">=</span> <span class="nx">model</span><span class="p">.</span><span class="na">getModelName</span><span class="p">()</span><span class="o">+</span><span class="s">'s'</span>
+
+        <span class="nx">serv</span><span class="p">.</span><span class="na">get</span> <span class="s">'/'</span><span class="o">+</span><span class="nx">collection</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">-&gt;</span>
+               <span class="nx">model</span><span class="p">.</span><span class="na">getDBModel</span><span class="p">().</span><span class="na">find</span><span class="p">({},</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">docs</span><span class="p">)</span> <span class="o">-&gt;</span> 
+             <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="no">null</span>
+               <span class="nx">res</span><span class="p">.</span><span class="na">json</span> <span class="nx">err</span><span class="p">,</span> <span class="mi">500</span>
+            <span class="k">else</span>
+              <span class="nx">res</span><span class="p">.</span><span class="na">send</span><span class="p">(</span><span class="nx">docs</span><span class="p">))</span>
+
+       <span class="nx">serv</span><span class="p">.</span><span class="na">put</span> <span class="s">'/'</span><span class="o">+</span><span class="nx">collection</span><span class="o">+</span><span class="s">'/:id'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">-&gt;</span>
+         <span class="nx">conditions</span>  <span class="o">=</span> <span class="p">{</span> <span class="na">_id</span><span class="o">:</span> <span class="nx">req</span><span class="p">.</span><span class="na">params</span><span class="p">.</span><span class="na">id</span> <span class="p">}</span>
+         <span class="nx">doc</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="na">body</span>
+         <span class="k">delete</span> <span class="nx">doc</span><span class="p">.</span><span class="na">_id</span>
+         <span class="nx">model</span><span class="p">.</span><span class="na">getDBModel</span><span class="p">().</span><span class="na">update</span> <span class="nx">conditions</span><span class="p">,</span> <span class="nx">doc</span><span class="p">,{},</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">numAffected</span><span class="p">)</span> <span class="o">-&gt;</span> 
+           <span class="k">if</span> <span class="nx">err</span> <span class="o">==</span> <span class="no">null</span> 
+             <span class="nx">res</span><span class="p">.</span><span class="na">json</span>  <span class="mi">200</span>
+           <span class="k">else</span>
+             <span class="nx">res</span><span class="p">.</span><span class="na">json</span> <span class="nx">err</span><span class="p">,</span> <span class="mi">500</span>
+
+       <span class="nx">serv</span><span class="p">.</span><span class="na">del</span> <span class="s">'/'</span><span class="o">+</span><span class="nx">collection</span><span class="o">+</span><span class="s">'/:id'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">-&gt;</span>
+         <span class="nx">conditions</span>  <span class="o">=</span> <span class="p">{</span> <span class="na">_id</span><span class="o">:</span> <span class="nx">req</span><span class="p">.</span><span class="na">params</span><span class="p">.</span><span class="na">id</span> <span class="p">}</span>
+         <span class="nx">model</span><span class="p">.</span><span class="na">getDBModel</span><span class="p">().</span><span class="na">remove</span> <span class="nx">conditions</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">numAffected</span><span class="p">)</span> <span class="o">-&gt;</span> 
+            <span class="k">if</span> <span class="nx">err</span> <span class="o">==</span> <span class="no">null</span> 
+             <span class="nx">res</span><span class="p">.</span><span class="na">json</span>  <span class="mi">200</span>
+           <span class="k">else</span>
+             <span class="nx">res</span><span class="p">.</span><span class="na">json</span> <span class="nx">err</span><span class="p">,</span> <span class="mi">500</span>    
+
+       <span class="nx">serv</span><span class="p">.</span><span class="na">post</span> <span class="s">'/'</span><span class="o">+</span><span class="nx">collection</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">-&gt;</span>
+         <span class="nx">conditions</span>  <span class="o">=</span> <span class="p">{</span> <span class="na">_id</span><span class="o">:</span> <span class="nx">req</span><span class="p">.</span><span class="na">params</span><span class="p">.</span><span class="na">id</span> <span class="p">}</span>
+         <span class="nx">doc</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="na">body</span>
+         <span class="nx">obj</span> <span class="o">=</span> <span class="nx">model</span><span class="p">.</span><span class="na">newInstance</span> <span class="nx">doc</span> 
+         <span class="nx">obj</span><span class="p">.</span><span class="na">save</span><span class="p">()</span>  
+         <span class="nx">res</span><span class="p">.</span><span class="na">send</span>  <span class="nx">obj</span><span class="p">.</span><span class="na">model</span>
+</code></pre>
+<hr>
+            <p class="text-center">
+              ©2015 - <a href="/">Dev@Cloudburo</a><br /><span class="small">Powered by<a href="https://cloudburo.net/docs/products.html"> Cloudburo Curation Engine</a></span>
+            </p>
+          </hr>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/all.js" type="text/javascript"></script>
+  </body>
+</html>
