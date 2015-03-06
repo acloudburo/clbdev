@@ -62,8 +62,18 @@ Slim::Engine.set_default_options :shortcut => {
 }
 
 # Markdown settings 
-set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true, :with_toc_data => true
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true, :smartypants => true, :with_toc_data => true
 set :markdown_engine, :redcarpet
+
+# Talfco added: https://forum.middlemanapp.com/t/generate-inpage-navigation-nice-api-documentation/1002
+helpers do
+  def table_of_contents(resource)
+    content = File.read(resource.source_file)
+    toc_renderer = Redcarpet::Render::HTML_TOC.new
+    markdown = Redcarpet::Markdown.new(toc_renderer, nesting_level: 2) # nesting_level is optional
+    markdown.render(content)
+  end
+end
 
 # Per-page layout changes:
 #
@@ -181,3 +191,6 @@ end
 
 # Activate Bootstrap Helper
 activate :bh
+
+# Activate Code Highlighting
+activate :syntax
