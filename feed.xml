@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html"/>
     <id>http://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html</id>
     <published>2015-01-31T07:04:36Z</published>
-    <updated>2015-03-06T15:56:11+00:00</updated>
+    <updated>2015-03-06T23:09:10+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -24,27 +24,7 @@
     
     &lt;p&gt;Google’s venture capital arm released a new do-it-yourself guide for startups looking to run a &amp;quot;design sprint&amp;quot; — Google Ventures’ name for its well-known five-day prototyping process.
     Google Ventures has long preached the concept and has publicly detailed its various stages, from idea development and prototyping to user testing. With today’s release, however, the design sprint guide gets a lot more formal, and sets the stage for Google Ventures’ plan to publish its techniques in book form
-    &lt;a href="http://venturebeat.com/2015/01/30/google-ventures-releases-new-diy-guide-to-help-startups-design-better-products/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Google Ventures releases new DIY guide to help startups design better products</title>
-    <link rel="alternate" href="http://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups-design-better-products.html"/>
-    <id>http://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups-design-better-products.html</id>
-    <published>2015-01-31T07:04:36Z</published>
-    <updated>2015-03-06T15:44:28+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt;      Interesting new DIY Guide by Google, which helps startups to design better products.&lt;/p&gt;
-    
-    &lt;p&gt;Google’s venture capital arm released a new do-it-yourself guide for startups looking to run a &amp;quot;design sprint&amp;quot; — Google Ventures’ name for its well-known five-day prototyping process.
-    Google Ventures has long preached the concept and has publicly detailed its various stages, from idea development and prototyping to user testing. With today’s release, however, the design sprint guide gets a lot more formal, and sets the stage for Google Ventures’ plan to publish its techniques in book form
-    &lt;a href="http://venturebeat.com/2015/01/30/google-ventures-releases-new-diy-guide-to-help-startups-design-better-products/"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    &lt;a href="http://www.gv.com/sprint/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
@@ -282,6 +262,39 @@
     &lt;/blockquote&gt;
     
     &lt;p&gt;The Manifesto is maintained and managed in github and can be found &lt;a href="http://www.reactivemanifesto.org/"&gt;here&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Fullstack Developer</title>
+    <link rel="alternate" href="http://dev.cloudburo.net/2014/04/16/fullstack-developer.html"/>
+    <id>http://dev.cloudburo.net/2014/04/16/fullstack-developer.html</id>
+    <published>2014-04-16T18:20:31Z</published>
+    <updated>2015-03-06T15:44:11+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;An &lt;a href="http://http//www.huffingtonpost.com/mike-loukides/fullstack-developer-is-a-_b_5134310.html"&gt;interesting article&lt;/a&gt; in Huffington Post calls for action by developers to broaden their range, in order to get a &amp;quot;Full Stack Developer&amp;quot;. The article provides an overview and various definitions of this new tech role and comes to the conclusion: &lt;/p&gt;
+    
+    &lt;blockquote&gt;
+    &lt;p&gt;What&amp;#39;s really needed isn&amp;#39;t someone who can replace all the specializations that the silos represented, but someone who can work across those specializations, someone who can work productively with people on other parts of the team.&lt;/p&gt;
+    &lt;/blockquote&gt;
+    
+    &lt;p&gt;Exposing yourself to new ideas and try to get an understanding of the whole stack is key&lt;/p&gt;
+    
+    &lt;blockquote&gt;
+    &lt;p&gt;Full-stack development is about exposing yourself to a broad range of ideas. This is a theme we&amp;#39;ll see repeatedly in the coming years. Being a full-stack developer isn&amp;#39;t about jumping
+    immediately from working on the Hadoop cluster to the Java middleware to the JavaScript that runs in the browser. Specialization exists for a reason. But developers who understand the whole stack are going to build better applications.&lt;/p&gt;
+    &lt;/blockquote&gt;
+    
+    &lt;p&gt;A strategy which personally drives my daily work, as well as my spare time development work. &lt;/p&gt;
+    
+    &lt;blockquote&gt;
+    &lt;p&gt;... being a full-stack developer is a tall order, but it&amp;#39;s as much aspirational as anything else. &lt;/p&gt;
+    &lt;/blockquote&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
