@@ -5,10 +5,28 @@
   <id>http://dev.cloudburo.net</id>
   <link href="http://dev.cloudburo.net"/>
   <link href="http://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-01-31T07:04:36Z</updated>
+  <updated>2015-03-07T02:00:00Z</updated>
   <author>
     <name>Felix Küstahler</name>
   </author>
+  <entry>
+    <title>Bad Practices Building Microservices</title>
+    <link rel="alternate" href="http://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html"/>
+    <id>http://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html</id>
+    <published>2015-03-07T02:00:00Z</published>
+    <updated>2015-03-07T14:06:13+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;dummy&gt;      Coming from the Java Pattern world with it’s established Anti-Pattern, it’s quite useful for the new Microservice Architecture to understand Bad Principles. Vladimir Khorikov list some for a start in a InfoQ article. Helpful for starters in the area to understand some traps in the area (would conclude that some of „Bad Principles&amp;quot; are also valid also SOA based architectures).&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/01/bad-practices-microservices?utm_campaign=infoq_content&amp;amp;amp;utm_source=infoq&amp;amp;amp;utm_medium=feed&amp;amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Google Ventures releases new DIY guide to help startups</title>
     <link rel="alternate" href="http://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html"/>
@@ -262,39 +280,6 @@
     &lt;/blockquote&gt;
     
     &lt;p&gt;The Manifesto is maintained and managed in github and can be found &lt;a href="http://www.reactivemanifesto.org/"&gt;here&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Fullstack Developer</title>
-    <link rel="alternate" href="http://dev.cloudburo.net/2014/04/16/fullstack-developer.html"/>
-    <id>http://dev.cloudburo.net/2014/04/16/fullstack-developer.html</id>
-    <published>2014-04-16T18:20:31Z</published>
-    <updated>2015-03-06T15:44:11+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;An &lt;a href="http://http//www.huffingtonpost.com/mike-loukides/fullstack-developer-is-a-_b_5134310.html"&gt;interesting article&lt;/a&gt; in Huffington Post calls for action by developers to broaden their range, in order to get a &amp;quot;Full Stack Developer&amp;quot;. The article provides an overview and various definitions of this new tech role and comes to the conclusion: &lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;What&amp;#39;s really needed isn&amp;#39;t someone who can replace all the specializations that the silos represented, but someone who can work across those specializations, someone who can work productively with people on other parts of the team.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;Exposing yourself to new ideas and try to get an understanding of the whole stack is key&lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;Full-stack development is about exposing yourself to a broad range of ideas. This is a theme we&amp;#39;ll see repeatedly in the coming years. Being a full-stack developer isn&amp;#39;t about jumping
-    immediately from working on the Hadoop cluster to the Java middleware to the JavaScript that runs in the browser. Specialization exists for a reason. But developers who understand the whole stack are going to build better applications.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;A strategy which personally drives my daily work, as well as my spare time development work. &lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;... being a full-stack developer is a tall order, but it&amp;#39;s as much aspirational as anything else. &lt;/p&gt;
-    &lt;/blockquote&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>

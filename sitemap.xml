@@ -73,6 +73,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>http://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html</loc>
+    <lastmod>2015-03-07</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>http://dev.cloudburo.net/docs/vision.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.9</priority>
@@ -256,6 +262,18 @@
     <loc>http://dev.cloudburo.net/2015.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2015/03.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2015/03/07.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
