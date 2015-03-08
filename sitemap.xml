@@ -67,6 +67,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>http://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html</loc>
+    <lastmod>2015-03-08</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>http://dev.cloudburo.net/2014/03/09/the-passion-of-the-explorer.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.7</priority>
@@ -274,6 +280,12 @@
     <loc>http://dev.cloudburo.net/2015/03.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2015/03/08.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
