@@ -5,10 +5,33 @@
   <id>http://dev.cloudburo.net</id>
   <link href="http://dev.cloudburo.net"/>
   <link href="http://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-03-08T06:25:06Z</updated>
+  <updated>2015-03-16T06:36:00Z</updated>
   <author>
     <name>Felix Küstahler</name>
   </author>
+  <entry>
+    <title>Uber Unveils its Realtime Market Platform</title>
+    <link rel="alternate" href="http://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html"/>
+    <id>http://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html</id>
+    <published>2015-03-16T06:36:00Z</published>
+    <updated>2015-03-16T19:55:16+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt;
+      Interesting article by Matt Ranney, Chief Systems Architect at Uber which gives an overview of their dispatch system for matching drivers&amp;nbsp;and riders. 
+     &lt;br&gt; He outlines the architectural principles that underpin the implementation, which gives an view how they approached the &amp;nbsp;problem. You can find the article in the link below. 
+     &lt;br&gt; Very innovative&amp;nbsp;is their approach to data center failure: 
+     &lt;br&gt; 
+     &lt;i&gt;&amp;quot;Uber&amp;#39;s approach to data center failure is ingenious. No data is replicated across data centers, as that puts a lot of constraints on availability and consistency. Uber uses the driver&amp;#39;s phones to distribute the data. Given that the driver&amp;#39;s phones post location updates to the server every four seconds, the server periodically replies with an encrypted state digest. If a data center fails the driver will contact a new data center to post a location update. The new data center doesn&amp;#39;t know anything about this particular driver so it asks for the state digest and picks up from there.&amp;quot;&lt;/i&gt;&lt;br&gt;
+    &lt;/body&gt;
+    &lt;a href="http://www.infoq.com/news/2015/03/uber-realtime-market-platform?utm_campaign=infoq_content&amp;amp;amp;utm_source=infoq&amp;amp;amp;utm_medium=feed&amp;amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Knowledge is Personal</title>
     <link rel="alternate" href="http://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html"/>
@@ -241,68 +264,6 @@
     &lt;p&gt;Having reached this point the bank is looking forward for a fruitful and long lasting partnership with its customer.&lt;/p&gt;
     
     &lt;p&gt;This concludes this blog entry, how are you modelling the customer, user or partner in your conceptual models? Any comments appreciated.&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>The Big Shift</title>
-    <link rel="alternate" href="http://dev.cloudburo.net/2014/10/19/the-big-shift.html"/>
-    <id>http://dev.cloudburo.net/2014/10/19/the-big-shift.html</id>
-    <published>2014-10-19T23:35:00Z</published>
-    <updated>2015-03-06T15:44:11+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;I came recently across the Shift Index study and the discussion resulted out of this research work done by consultancy company Deloitte.&lt;/p&gt;
-    
-    &lt;p&gt;Goal of the study is to measure the forces of the long term changes that impact our economic. It’s an excellent and well written inspiring research study which helps you to understand the transformation process of our current business world.&lt;/p&gt;
-    
-    &lt;!--more--&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;The Shift Index tracks 25 metrics in nine categories across three sets of main indicators: Foundations, which set the stage for major change; Flows of resources, such as knowledge, which allow businesses to enhance productivity; and Impacts, which help gauge progress at an economy-wide level. Together these indicators represent phases of transformation in the Big Shift taking place in the global business environment.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;&lt;a href="http://blogs.hbr.org/bigshift/2009/06/measuring-the-big-shift.html"&gt;via Measuring The Big Shift -  - John Hagel III and John Seely Brown - Harvard Business Review&lt;/a&gt;&lt;/p&gt;
-    
-    &lt;p&gt;Obviously a major trend is the conversion from a push model (product focused business)  to a pull model (service oriented business). The inherent differences are nicely outlined in the report as follows&lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;A product conception for revenues means that the big money comes from The Sale, when the customer buys the product. A large lump sum of money is paid at that point, and then the customer uses that product as he or she wishes. A product-focused business spends relatively little time or money with the customer after that, until the time comes for the next sale. This is the Push approach to business.&lt;/p&gt;
-    
-    &lt;p&gt;Things are different in a service-oriented company. The sale of the product is merely the inauguration of the customer relationship, with many subsequent interactions to follow. And the service-oriented company may offer to transfer the product to the customer in return for a stream of payments, instead of one initial sum. The company and customer remain engaged throughout the stream of payments&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;So the key point here is constant engagement with the customer, who has the possibility to pull services with minimal upfront investment and check their quality in a fully operational mode. Any overselling done beforehand by the company will be uncovered quickly and result in an exit of the customer.&lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;In this way, a fixed cost is converted to a variable cost.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;A key indicator the reports is measuring in order identify the economy shift is the return on assets (ROA). It shows the persistent decline in firm performance, manifested in declining asset profitability. It’s a downward trend due to the deterioration of fundamental firm performance. In order to shift away from this downward trend the economy will has to absorb three wave of changes and innovations.&lt;/p&gt;
-    
-    &lt;ul&gt;
-    &lt;li&gt;&lt;p&gt;The first, the &lt;strong&gt;Foundation&lt;/strong&gt; wave, involves changes to the fundamentals of our business landscape catalyzed by the emergence and spread of digital technology infrastructure and reinforced by long-term public policy shifts toward economic liberalization.&lt;/p&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;p&gt;The second, the &lt;strong&gt;Flow&lt;/strong&gt; wave, focuses on the key drivers of performance in a world increasingly shaped by digital infrastructure. This second wave looks at the flows of knowledge, capital, and talent enabled by the foundational advances, as well as the amplifiers of these flows.&lt;/p&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;p&gt;The third, the &lt;strong&gt;Impact&lt;/strong&gt; wave, centers on the consequences of the Big Shift. Given the time it will take for the first two waves to play out and manifest themselves, this third wave provides an even greater lagging indicator. While current trends in firm performance indicate sustained deterioration, we expect, over time, that performance will improve as firms begin to figure out how to participate in and harness knowledge flows. Doing so will require significant institutional innovations, not just changes in practices, resulting in value creation through increasing returns performance improvement.&lt;/p&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    
-    &lt;p&gt;It’s a move from scalable efficiency to scalable as firms used digital infrastructure to create environments where performance improvement accelerates as more participants join.&lt;/p&gt;
-    
-    &lt;p&gt;A nice follow up on the base of the Shift Index can be found in the confusedofcalcutta blog which brings the waves into the context of the Social enterprise.&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://confusedofcalcutta.com/2012/05/30/thinking-about-the-big-shift-and-the-social-enterprise/"&gt;Thinking about the Big Shift and the Social Enterprise – confused of calcutta&lt;/a&gt;&lt;/p&gt;
-    
-    &lt;ul&gt;
-    &lt;li&gt;&lt;p&gt;The &lt;strong&gt;Concept&lt;/strong&gt; of the Social Enterprise is underpinned by the cloud: a public digital infrastructure based on open standards, scalable and elastic. In effect, it represents the Foundation “wave” of the Big Shift.&lt;/p&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;p&gt;The &lt;strong&gt;Core&lt;/strong&gt; of the Social Enterprise is connectivity, bringing about collaboration and co-creation; customers, staff, partners and products are all connected, using common “language”, facilitating the transformation of the organization from experience-based to learning-based, from stocks-based to flows-based. In effect, this represents the Flows “wave” of the Big Shift.&lt;/p&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;p&gt;The &lt;strong&gt;Construct&lt;/strong&gt; of the Social Enterprise is institutional innovation: innovation in engagement, in sales, in marketing, in service, in product engineering and design. The scalability and flexibility of the infrastructure, combined with the ease of identification and access to the right resources at the right time, allow the enterprise to find areas of high growth potential simply, effectively and affordably.&lt;/p&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    
-    &lt;p&gt;Overall very profound and mind opening reading about the current economic transformation process.&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>

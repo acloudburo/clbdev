@@ -25,6 +25,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>http://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html</loc>
+    <lastmod>2015-03-16</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>http://dev.cloudburo.net/2014/07/27/the-reactive-manifesto.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.7</priority>
@@ -241,6 +247,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>http://dev.cloudburo.net/tags/microservice.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>http://dev.cloudburo.net/tags/architecture.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.9</priority>
@@ -265,12 +277,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://dev.cloudburo.net/tags/microservice.html</loc>
-    <lastmod>2015-03-06</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>http://dev.cloudburo.net/2015.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>1.0</priority>
@@ -280,6 +286,12 @@
     <loc>http://dev.cloudburo.net/2015/03.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2015/03/16.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
