@@ -36,6 +36,38 @@
 &lt;/div&gt;</content>
   </entry>
   <entry>
+    <title>Microservice Competencies by Martin Fowler</title>
+    <link rel="alternate" href="http://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html"/>
+    <id>http://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html</id>
+    <published>2015-03-15T09:22:29Z</published>
+    <updated>2015-03-18T22:07:26+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt;
+      There is a quite a hype in the Mircoservice architecture style, so it’s good that one of the well-known architecture heavy-weight&amp;nbsp;is listing&amp;nbsp;&amp;nbsp;some important competencies necessary to successfully work with this style.&amp;nbsp; 
+     &lt;br&gt; Martin Fowler outlines in this article the trade-offs and operational consequences of a micro service&amp;nbsp;architecture : 
+     &lt;br&gt; 
+     &lt;i&gt;In particular with microservices there are serious consequences for operations, who now have to handle an ecosystem of small services rather than a single, well-defined monolith. Consequently if you don&amp;#39;t have certain baseline competencies, you shouldn&amp;#39;t consider using the microservice style.&lt;/i&gt; 
+     &lt;br&gt; 
+     &lt;ul&gt; 
+      &lt;li&gt;Rapid Provisioning&lt;/li&gt; 
+      &lt;li&gt;Basic Monitoring&lt;/li&gt; 
+      &lt;li&gt;Rapid Application Deployment&lt;/li&gt; 
+     &lt;/ul&gt; 
+     &lt;br&gt; will be key.&amp;nbsp; 
+     &lt;br&gt; 
+     &lt;i&gt;With this kind of setup in place, you&amp;#39;re ready for a first system using a handful of microservices. Deploy this system and use it in production, expect to learn a lot about keeping it healthy and ensuring the devops collaboration is working well. Give yourself time to do this, learn from it, and grow more capability before you ramp up your number of services.&lt;/i&gt; 
+     &lt;br&gt;&lt;br&gt;
+    &lt;/body&gt;
+    &lt;a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
     <title>Knowledge is Personal</title>
     <link rel="alternate" href="http://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html"/>
     <id>http://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html</id>
@@ -134,139 +166,6 @@
     &lt;p&gt;Companies don&amp;#39;t necessarily deal in things, but they deal in knowledge, worthwile read.&lt;/p&gt;
     
     &lt;p&gt;&lt;iframe src="http://www.slideshare.net/slideshow/embed_code/27110077?rel=0" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt; &lt;strong&gt; &lt;a href="https://www.slideshare.net/Achievers/the-future-of-work-27110077" title="The Future of Work" target="_blank"&gt;The Future of Work&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="http://www.slideshare.net/Achievers" target="_blank"&gt;Achievers&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>User, Customer, Partner some thoughts about terminology in banking</title>
-    <link rel="alternate" href="http://dev.cloudburo.net/2014/10/21/user-customer-partner.html"/>
-    <id>http://dev.cloudburo.net/2014/10/21/user-customer-partner.html</id>
-    <published>2014-10-21T15:45:00Z</published>
-    <updated>2015-03-06T15:44:11+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;There is an entertaining debate kicked off by @Jack &amp;quot;Jack Dorsey&amp;quot; (Twitter  and Square founder) on a business concept term level, which resulted in a follow up by @davewiner &amp;quot;Dave Winer&amp;quot;&amp;quot; (pioneered the development of weblogs, syndication (RSS), podcasting and others). &lt;/p&gt;
-    
-    &lt;!--more--&gt;
-    
-    &lt;p&gt;In short the social web icon Jack Dorsey  was challenging in his tumblr blog the core concept &lt;em&gt;user&lt;/em&gt;, as nicely formulated by Dave&lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;Why do we use that awful U-word to describe our users&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;According to Jack the term &lt;em&gt;user&lt;/em&gt; is too passive and abstract for describing the clientele of Square&lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;The entire technology industry uses the word “user” to describe its customers. While it might be convenient, “users” is a rather passive and abstract word. No one wants to be thought of as a “user” (or “consumer” for that matter). I certainly don’t. And I wouldn’t consider my mom a “user” either, she’s my mom. The word “user” abstracts the actual individual. This may seem like a small and insignificant detail that doesn’t matter, but the vernacular and words we use here at Square set a very strong and subtle tone for everything we do. So let’s now part ways with our industry and rethink this.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;(via &lt;a href="http://jacks.tumblr.com/post/33785796042/lets-reconsider-our-users"&gt;Let&amp;#39;s reconsider our &amp;quot;users&amp;quot; - Jack&amp;#39;s&lt;/a&gt;)&lt;/p&gt;
-    
-    &lt;p&gt;So he asks for a mind shift in his company and to switch to the term &lt;em&gt;customer&lt;/em&gt;&lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;At Square we’re removing the term “users” from our vocabulary, replacing it with “customers”, and the more specific “buyers”, and “sellers.” The word customer, given its history, immediately sets a high bar on the level of service we must provide, or risk losing their attention or business. Below is a letter I sent the team after that Board meeting explaining why. It’s a start (we’re not done yet).&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;Well that&amp;#39;s a statement, which got challenged by Dave. &lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;It&amp;#39;s hard to even formulate the question without sounding stupid. And every time the discussion comes up, it lasts a while before everyone gives up because there really aren&amp;#39;t any better words, and this is the word everyone uses so what are you going to do.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;which continues&lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;Hey I called my second company UserLand Software, because I wanted to be clear who we were focused on. The idea was we would make a wonderful playground that we, as users, would love to er ahem -- use. And we&amp;#39;d make it easy enough to develop apps inside the land that developers and users would find they became the same people. Software made by users for users. This was a good idea, I felt.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;(via &lt;a href="http://threads2.scripting.com/2012/october/aboutCallingUsersUsers#daveWiner"&gt;Thread: Let&amp;#39;s call them users&lt;/a&gt;)&lt;/p&gt;
-    
-    &lt;p&gt;Well to be honest both side have their points and the debate could go on definitely for some time. It remembers me at my endless discussions at UBS  when we were ( well we are still aligning it) working out a global business concept model in the area of static client data and aligning the different views of the topic by regional wealth management units of Switzerland, APAC, Americas as well as the diametral view of the global acting investment bank unit. &lt;/p&gt;
-    
-    &lt;p&gt;Let me give you an overview how a classic financial institution is modeling this business concept (which yet will give you another view on these concepts)&lt;/p&gt;
-    
-    &lt;p&gt;First of all I take here the radical target view that the business model of a classic bank at the end isn&amp;#39;t really different than that of any new social stylish company.  Currently there is a big shift in todays enterprises from a push model to a pull one which holds true for banks as well (if the current big player in banking will be enough fast to convert to this new model is questionable and time will show us who will survive) . Refer to my earlier  &lt;a href="http://cloudburo.github.com/blog/2012/10/16/the-big-shift/"&gt;Blog entry&lt;/a&gt;, where I describe this trend in more detail (based on the research paper by John Hagel) &lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;Things are different in a service-oriented company. The sale of the product is merely the inauguration of the customer relationship, with many subsequent interactions to follow. And the service-oriented company may offer to transfer the product to the customer in return for a stream of payments, instead of one initial sum. The company and customer remain engaged throughout the stream of payments.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;So a bank is a classical service oriented company which is approaching customers over various channels in order to sell services which are packaged into banking products. Not the selling of the product is in the center but to establish a long lasting relationship. &lt;/p&gt;
-    
-    &lt;p&gt;First of all we start with the concept  &lt;strong&gt;Party&lt;/strong&gt;:&lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;A &lt;strong&gt;Party&lt;/strong&gt;  is a person or group of persons that compose a single entity which can be identified as one for the purposes of the law. &lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;So any person with which a bank deals and interacts is a &lt;strong&gt;Party&lt;/strong&gt;.&lt;/p&gt;
-    
-    &lt;p&gt;The bank itself will be named in this context the &lt;strong&gt;Legal Entity&lt;/strong&gt;&lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;A &lt;strong&gt;Legal Entity&lt;/strong&gt; is an association, corporation, partnership, proprietorship, trust, or individual that has legal standing in the eyes of law. A legal entity has legal capacity to enter into agreements or contracts, assume obligations, incur and pay debts, sue and be sued in its own right, and to be held responsible for its actions.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;A legal entity is a key concept taken into consideration that a multinational bank consists of a tremendous amount of independent legal entities (within a country itself as well as globally), which must be correctly identified in the business modeling. As the definition is outlining, legal entity would also be the correct concept in a micro business with one individual. From a business purpose he has the legal capacity to open up a startup business (but a minor wouldn&amp;#39;t have this capacity on its own).&lt;/p&gt;
-    
-    &lt;p&gt;From a birds eye view a bank or enterprise is made up of a collection of &lt;strong&gt;Legal Entities&lt;/strong&gt; which are in &lt;strong&gt;Business Relationships&lt;/strong&gt; with  &lt;strong&gt;Parties&lt;/strong&gt;. &lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;A &lt;strong&gt;Business Relationship&lt;/strong&gt; is expressing the relationship between a &lt;strong&gt;Party&lt;/strong&gt; and a &lt;strong&gt;Legal Entity&lt;/strong&gt; which are doing any kind of business.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;On that level a party can be anything, it could be&lt;/p&gt;
-    
-    &lt;ul&gt;
-    &lt;li&gt;The &lt;em&gt;real estate company&lt;/em&gt; which is renting out office space to the bank&lt;/li&gt;
-    &lt;li&gt;The &lt;em&gt;third party financial company&lt;/em&gt; which issues some instruments packaged into a banking product and sold to its customers&lt;/li&gt;
-    &lt;li&gt;The &lt;em&gt;bank customer&lt;/em&gt; which is opening up a banking account and purchases some services&lt;/li&gt;
-    &lt;li&gt;But also the &lt;em&gt;cleaning company&lt;/em&gt; which takes care that the office got cleaned on a periodical base.&lt;/li&gt;
-    &lt;/ul&gt;
-    
-    &lt;p&gt;It&amp;#39;s clear that the concept of  &lt;strong&gt;Party&lt;/strong&gt; is too coarse grain to express the customer which is buying products from us and which is highly valuable  (it&amp;#39;s on the same level as the concept user used in the new social business).&lt;/p&gt;
-    
-    &lt;p&gt;What we introduced is the concept of &lt;strong&gt;Partner&lt;/strong&gt;&lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;A &lt;strong&gt;Partner&lt;/strong&gt; is a &lt;strong&gt;Party&lt;/strong&gt; which is any kind of relationship with a &lt;strong&gt;Legal Entity&lt;/strong&gt; concerning our service- or product offering.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;So a &lt;strong&gt;Partner&lt;/strong&gt; is really a &lt;strong&gt;Party&lt;/strong&gt; which is important for our core business and therefore we should treat and act with him as any of persons with whom were in any kind of &lt;strong&gt;Partnership&lt;/strong&gt;.&lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;A &lt;strong&gt;Partnership&lt;/strong&gt; is an arrangement where parties agree to cooperate to advance their mutual interests.&lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;&lt;em&gt;Advance their mutual interests&lt;/em&gt; (that one of the bank and the one of the customer) should be the ultimate target to achieve, which will  result in a hopefully long lasting relationship and finally generate earnings for both sides.&lt;/p&gt;
-    
-    &lt;p&gt;We differentiate the following Partners.&lt;/p&gt;
-    
-    &lt;ul&gt;
-    &lt;li&gt;A &lt;strong&gt;Partner&lt;/strong&gt; which expresses interest to enter into a &lt;strong&gt;Banking Relationship&lt;/strong&gt; with one &lt;strong&gt;Legal Entity&lt;/strong&gt; in order to be advised and/or to buy products of the bank (a so called &lt;strong&gt;Prospect&lt;/strong&gt;) &lt;/li&gt;
-    &lt;li&gt;A &lt;strong&gt;Partner&lt;/strong&gt; which is in a &lt;strong&gt;Banking Relationship&lt;/strong&gt; and which is advised and/or bought banking products. At the end this the so-called &lt;strong&gt;Customer&lt;/strong&gt;. &lt;/li&gt;
-    &lt;li&gt;A &lt;strong&gt;Partner&lt;/strong&gt; which is in a relationship with another &lt;strong&gt;Partner&lt;/strong&gt; which has a &lt;strong&gt;Banking Relationship&lt;/strong&gt; with the bank. This  &lt;strong&gt;Partner to Partner Relationship&lt;/strong&gt; is another important concept which is used to express relationships like &lt;strong&gt;Power of Attorney&lt;/strong&gt;, &lt;strong&gt;Beneficial Owner&lt;/strong&gt; etc. &lt;/li&gt;
-    &lt;/ul&gt;
-    
-    &lt;p&gt;&lt;img alt="Concepts" src="images/coreconcepts.png" /&gt;&lt;/p&gt;
-    
-    &lt;p&gt;In order to complete the picture we have to define the incarnation  of a Banking Relationship more precisely.&lt;/p&gt;
-    
-    &lt;blockquote&gt;
-    &lt;p&gt;A &lt;strong&gt;Banking Relationship&lt;/strong&gt; between a &lt;strong&gt;Partner&lt;/strong&gt; and &lt;strong&gt;Legal Entity&lt;/strong&gt; will be created as soon as the &lt;strong&gt;Partner&lt;/strong&gt; will sign a &lt;strong&gt;Banking Agreement&lt;/strong&gt; (or more) in order to benefit and purchase services by the bank. &lt;/p&gt;
-    &lt;/blockquote&gt;
-    
-    &lt;p&gt;By signing a &lt;strong&gt;Banking Agreement&lt;/strong&gt; an on-boarding will take place, which results in diligence verification checks of the Partner. The importance and complexity of such &amp;quot;Know Your Customers&amp;quot; (KYC) checks  is growing rapidly in relation with the number of new legal and regulatory intoruced in the financial market. This on-boarding will result in some kind of signed physical or electronically signed form(s) which are an integral part of the newly created &lt;strong&gt;Banking Relationship&lt;/strong&gt;.&lt;/p&gt;
-    
-    &lt;p&gt;Having reached this point the bank is looking forward for a fruitful and long lasting partnership with its customer.&lt;/p&gt;
-    
-    &lt;p&gt;This concludes this blog entry, how are you modelling the customer, user or partner in your conceptual models? Any comments appreciated.&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
