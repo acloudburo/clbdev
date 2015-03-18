@@ -40,7 +40,7 @@
     <link rel="alternate" href="http://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html"/>
     <id>http://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html</id>
     <published>2015-03-15T09:22:29Z</published>
-    <updated>2015-03-18T22:07:26+00:00</updated>
+    <updated>2015-03-18T23:00:51+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -50,7 +50,9 @@
       There is a quite a hype in the Mircoservice architecture style, so it’s good that one of the well-known architecture heavy-weight&amp;nbsp;is listing&amp;nbsp;&amp;nbsp;some important competencies necessary to successfully work with this style.&amp;nbsp; 
      &lt;br&gt; Martin Fowler outlines in this article the trade-offs and operational consequences of a micro service&amp;nbsp;architecture : 
      &lt;br&gt; 
+     &lt;br&gt; 
      &lt;i&gt;In particular with microservices there are serious consequences for operations, who now have to handle an ecosystem of small services rather than a single, well-defined monolith. Consequently if you don&amp;#39;t have certain baseline competencies, you shouldn&amp;#39;t consider using the microservice style.&lt;/i&gt; 
+     &lt;br&gt; 
      &lt;br&gt; 
      &lt;ul&gt; 
       &lt;li&gt;Rapid Provisioning&lt;/li&gt; 
@@ -58,6 +60,7 @@
       &lt;li&gt;Rapid Application Deployment&lt;/li&gt; 
      &lt;/ul&gt; 
      &lt;br&gt; will be key.&amp;nbsp; 
+     &lt;br&gt; 
      &lt;br&gt; 
      &lt;i&gt;With this kind of setup in place, you&amp;#39;re ready for a first system using a handful of microservices. Deploy this system and use it in production, expect to learn a lot about keeping it healthy and ensuring the devops collaboration is working well. Give yourself time to do this, learn from it, and grow more capability before you ramp up your number of services.&lt;/i&gt; 
      &lt;br&gt;&lt;br&gt;
