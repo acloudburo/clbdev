@@ -5,98 +5,16 @@
   <id>http://dev.cloudburo.net</id>
   <link href="http://dev.cloudburo.net"/>
   <link href="http://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-03-21T10:25:08Z</updated>
+  <updated>2015-03-16T06:36:00Z</updated>
   <author>
     <name>Felix Küstahler</name>
   </author>
-  <entry>
-    <title>AWS Docker Small Hints #1: Amazon Elastic Beanstalk - High Level Concepts</title>
-    <link rel="alternate" href="http://dev.cloudburo.net/2015/03/21/aws-docker-small-hints-1-amazon-elastic-beanstalk-high-level-concepts.html"/>
-    <id>http://dev.cloudburo.net/2015/03/21/aws-docker-small-hints-1-amazon-elastic-beanstalk-high-level-concepts.html</id>
-    <published>2015-03-21T10:25:08Z</published>
-    <updated>2015-03-21T11:15:39+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/2a86af971f134a9e2fbd2c7a4ca91115.png" /&gt;&lt;img class="pull-left img-responsive img-thumbnail article" src="/images/95051bbe9efdb4532199204d0f61fd2e.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt;
-      Cloud Platforms are normally highly generic and configurable and it’s easy to loose overview, what can be configured or modified where. So I assembled some of the main high level concepts for AWS Elastic Beanstalk. 
-     &lt;b&gt;&lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt; 
-     &lt;b&gt;&lt;span style="font-size: 24px;"&gt;Level 0: Concepts&lt;/span&gt;&lt;/b&gt; 
-     &lt;b&gt;&lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt; Elastic Beanstalk is structured around the 3 high level concepts. 
-     &lt;br&gt; 
-     &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt; 
-     &lt;i&gt;&lt;span style="font-size: 18px;"&gt;A&amp;nbsp;&lt;b&gt;Version&lt;/b&gt; of an (&lt;b&gt;Docker)&lt;/b&gt;&amp;nbsp;&lt;b&gt;Application&lt;/b&gt; is running in one &lt;b&gt;Environment&lt;/b&gt;&lt;/span&gt;&lt;/i&gt; 
-     &lt;br&gt; Elastic Beanstalk allows you to&amp;nbsp;run in parallel 
-     &lt;br&gt; 
-     &lt;b&gt;Multiple Versions&lt;/b&gt; of 
-     &lt;b&gt;multiple (Docker) Applications&lt;/b&gt; in 
-     &lt;b&gt;multiple Environments&lt;/b&gt; 
-     &lt;br&gt; The Dashboard will show you all deployed 
-     &lt;b&gt;Applications&lt;/b&gt; which can be running in multiple&amp;nbsp; 
-     &lt;b&gt;Environments&lt;/b&gt;. 
-     &lt;br&gt; In the screenshot below we have one Docker Application „ 
-     &lt;i&gt;curationApp“&lt;/i&gt; which has to two environments&amp;nbsp;„ 
-     &lt;i&gt;curationApp-prod&lt;/i&gt;“ and „ 
-     &lt;i&gt;curationApp-test&amp;quot;&lt;/i&gt; 
-     &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
-     &lt;b&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt; &lt;/b&gt; 
-     &lt;b&gt;&lt;br&gt;&lt;/b&gt; An 
-     &lt;b&gt;Environment&lt;/b&gt; may run one of your released docker&amp;nbsp;Application Versions. You could now „ 
-     &lt;i&gt;Deploy&lt;/i&gt;“ one of your versions to one of your Environments. 
-     &lt;br&gt; In the example below the environment &amp;quot; 
-     &lt;i&gt;curationApp-prod&amp;quot;&lt;/i&gt; is running Version 0.0.5. 
-     &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
-     &lt;b&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/22c0aadeda311a7a7ede6ab4973ba58d.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt; &lt;/b&gt; 
-     &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
-     &lt;b&gt;&lt;span style="font-size: 24px;"&gt;Level 1: Concepts&lt;/span&gt;&lt;br&gt;&lt;/b&gt; 
-     &lt;b&gt;&lt;br&gt;&lt;/b&gt; By selecting an 
-     &lt;b&gt;Environment&lt;/b&gt; you will see the Dashboard of the running 
-     &lt;b&gt;Application Version&lt;/b&gt;&amp;nbsp;which is configured on a AWS 
-     &lt;b&gt;Solution Stack&lt;/b&gt;. 
-     &lt;br&gt; In our example below this a Docker solution running on Amazon Linux. 
-     &lt;br&gt; A running Environment has a 
-     &lt;b&gt;Health Status&lt;/b&gt; and an associated&amp;nbsp; 
-     &lt;b&gt;Configuration.&lt;/b&gt; 
-     &lt;br&gt; It’s processing can be checked via 
-     &lt;b&gt;Logs&lt;/b&gt;, 
-     &lt;b&gt;Realtime Monitors, Events&lt;/b&gt; or 
-     &lt;b&gt;Alarms.&lt;/b&gt; 
-     &lt;b&gt;&lt;br&gt;&lt;/b&gt; Furthermore an Environment may be complemented with&amp;nbsp; 
-     &lt;b&gt;Tags&lt;/b&gt;.&amp;nbsp; 
-     &lt;br&gt; 
-     &lt;b&gt;Configuration&lt;/b&gt;, 
-     &lt;b&gt;Alarms&lt;/b&gt; and 
-     &lt;b&gt;Tags&lt;/b&gt; may be maintained a set according to your needs. 
-     &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
-     &lt;b&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt; &lt;br&gt;&lt;/b&gt; 
-     &lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;br&gt;
-    &lt;/body&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
   <entry>
     <title>Uber Unveils its Realtime Market Platform</title>
     <link rel="alternate" href="http://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html"/>
     <id>http://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html</id>
     <published>2015-03-16T06:36:00Z</published>
-    <updated>2015-03-16T20:19:22+00:00</updated>
+    <updated>2015-03-21T13:31:02+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -105,7 +23,7 @@
     &lt;p&gt;&lt;dummy&gt;      &lt;body&gt;
       Interesting article by Matt Ranney, Chief Systems Architect at Uber which gives an overview of their dispatch system for matching drivers&amp;nbsp;and riders. 
      &lt;br&gt; He outlines the architectural principles that underpin the implementation, which gives an view how they approached the &amp;nbsp;problem. You can find the article in the link below. 
-     &lt;br&gt; Very innovative&amp;nbsp;is their approach to data center failure: 
+     &lt;br&gt; Very interesting approach to data center failure: 
      &lt;br&gt; 
      &lt;br&gt; 
      &lt;i&gt;&amp;quot;Uber&amp;#39;s approach to data center failure is ingenious. No data is replicated across data centers, as that puts a lot of constraints on availability and consistency. Uber uses the driver&amp;#39;s phones to distribute the data. Given that the driver&amp;#39;s phones post location updates to the server every four seconds, the server periodically replies with an encrypted state digest. If a data center fails the driver will contact a new data center to post a location update. The new data center doesn&amp;#39;t know anything about this particular driver so it asks for the state digest and picks up from there.&amp;quot;&lt;/i&gt; 
@@ -231,6 +149,26 @@
     &lt;p&gt;Google’s venture capital arm released a new do-it-yourself guide for startups looking to run a &amp;quot;design sprint&amp;quot; — Google Ventures’ name for its well-known five-day prototyping process.
     Google Ventures has long preached the concept and has publicly detailed its various stages, from idea development and prototyping to user testing. With today’s release, however, the design sprint guide gets a lot more formal, and sets the stage for Google Ventures’ plan to publish its techniques in book form
     &lt;a href="http://www.gv.com/sprint/"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>The Future Of Work</title>
+    <link rel="alternate" href="http://dev.cloudburo.net/2014/11/10/the-future-of-work.html"/>
+    <id>http://dev.cloudburo.net/2014/11/10/the-future-of-work.html</id>
+    <published>2014-11-10T11:48:00Z</published>
+    <updated>2015-03-06T15:44:11+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;An nice food for tought presentation which outlines the importance of leveraging internal and external talents in future working models, which are increasingly digital.&lt;/p&gt;
+    
+    &lt;p&gt;Companies don&amp;#39;t necessarily deal in things, but they deal in knowledge, worthwile read.&lt;/p&gt;
+    
+    &lt;p&gt;&lt;iframe src="http://www.slideshare.net/slideshow/embed_code/27110077?rel=0" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt; &lt;strong&gt; &lt;a href="https://www.slideshare.net/Achievers/the-future-of-work-27110077" title="The Future of Work" target="_blank"&gt;The Future of Work&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="http://www.slideshare.net/Achievers" target="_blank"&gt;Achievers&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
