@@ -67,6 +67,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>http://dev.cloudburo.net/2015/03/21/aws-docker-small-hints-1-amazon-elastic-beanstalk-high-level-concepts.html</loc>
+    <lastmod>2015-03-21</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>http://dev.cloudburo.net/2014/01/18/the-death-of-corporation.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.7</priority>
@@ -277,6 +283,18 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>http://dev.cloudburo.net/tags/docker.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/tags/aws.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>http://dev.cloudburo.net/tags/inspiration.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.9</priority>
@@ -292,6 +310,12 @@
     <loc>http://dev.cloudburo.net/2015/03.html</loc>
     <lastmod>2015-03-06</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://dev.cloudburo.net/2015/03/21.html</loc>
+    <lastmod>2015-03-06</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

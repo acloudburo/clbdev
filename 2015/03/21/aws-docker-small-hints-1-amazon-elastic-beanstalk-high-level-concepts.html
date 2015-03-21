@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
-    <title>Dev@Cloudburo</title>
+    <title>Dev@Cloudburo | AWS Docker Small Hints #1: Amazon Elastic Beanstalk - High Level Concepts</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../js/ie8.js" type="text/javascript"></script><![endif]--><link href="../css/all.css" media="screen" rel="stylesheet" type="text/css" /><script type="text/javascript">
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js" type="text/javascript"></script><![endif]--><link href="../../../css/all.css" media="screen" rel="stylesheet" type="text/css" /><script type="text/javascript">
       (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
     </script>
     <link href="/favicon.png" rel="icon" type="image/png" />
@@ -101,51 +101,87 @@
       <div class="row">
         <div class="col-lg-9 col-md-9">
           <h1>
-            Articles tagged 'inspiration'
+            AWS Docker Small Hints #1: Amazon Elastic Beanstalk - High Level Concepts
           </h1>
-          <ul>
-            <h2>
-              <a href="/2015/03/08/knowledge-is-personal.html">Knowledge is Personal</a>
-            </h2>
-            <p>
-              <small class="label label-default">inspiration</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Mar  8
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><dummy>       
-                 <span style=""><span style=""><span style="font-size: 100%;">A very intelligent and insightful article</span><span style="font-size: 100%;"> about</span><span style="font-size: 100%;"> Knowledge and the question if its tran</span><span style="font-size: 100%;">sferrable. <a href="http://jarche.com/about/" rel="nofollow">Harol</a></span><span style="font-size: 100%;"><a href="http://jarche.com/about/" rel="nofollow">d Arche</a> comes to the co</span><span style="font-size: 100%;">nclusion it isn’t.</span></span></span> 
-                 <span style=""><span style=""><br></span></span> 
-                 <span style=""><span style=""><br></span></span> 
-                 <span style=""><i>A big conceit of the knowledge management (KM) field is that knowledge...</i></span></dummy></p>
+          <small class="label label-default">docker</small>
+          <small class="label label-default">aws</small>
+          <hr />
+          <p>
+            <span class="glyphicon glyphicon-time"></span> Posted on Mar 21
+          </p>
+          <hr />
+          <div class="row">
+            <img class="pull-left img-responsive img-thumbnail article" src="/images/2a86af971f134a9e2fbd2c7a4ca91115.png" /><img class="pull-left img-responsive img-thumbnail article" src="/images/95051bbe9efdb4532199204d0f61fd2e.png" />
+            <div class="article">
+              <p><dummy>      <body>
+                Cloud Platforms are normally highly generic and configurable and it’s easy to loose overview, what can be configured or modified where. So I assembled some of the main high level concepts for AWS Elastic Beanstalk. 
+               <b><span style="font-size: 24px;"><br></span></b> 
+               <b><span style="font-size: 24px;">Level 0: Concepts</span></b> 
+               <b><span style="font-size: 24px;"><br></span></b> Elastic Beanstalk is structured around the 3 high level concepts. 
+               <br> 
+               <span style="font-size: 18px;"><br></span> 
+               <i><span style="font-size: 18px;">A&nbsp;<b>Version</b> of an (<b>Docker)</b>&nbsp;<b>Application</b> is running in one <b>Environment</b></span></i> 
+               <br> Elastic Beanstalk allows you to&nbsp;run in parallel 
+               <br> 
+               <b>Multiple Versions</b> of 
+               <b>multiple (Docker) Applications</b> in 
+               <b>multiple Environments</b> 
+               <br> The Dashboard will show you all deployed 
+               <b>Applications</b> which can be running in multiple&nbsp; 
+               <b>Environments</b>. 
+               <br> In the screenshot below we have one Docker Application „ 
+               <i>curationApp“</i> which has to two environments&nbsp;„ 
+               <i>curationApp-prod</i>“ and „ 
+               <i>curationApp-test&quot;</i> 
+               <b><br></b> 
+               <b> </p>
+              
             </div>
-            </div><a class="btn btn-primary" href="/2015/03/08/knowledge-is-personal.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-            <h2>
-              <a href="/2014/03/09/the-passion-of-the-explorer.html">The Passion of the Explorer</a>
-            </h2>
-            <p>
-              <small class="label label-default">inspiration</small>
-              <small class="label label-default">futureWork</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Mar  9
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p>John Hagel belongs to one of my favourite thinkers and source of inspiration about the future of a global connected community and the big shift. See my recent <a href="http://cloudburo.github.com/blog/2012/10/16/the-big-shift/">blog article</a> to this topic.</p>
-                
-                <p>In this short video he talks about what is a...</p>
+            <div class="article">
+              <p><dummy> </b> 
+               <b><br></b> An 
+               <b>Environment</b> may run one of your released docker&nbsp;Application Versions. You could now „ 
+               <i>Deploy</i>“ one of your versions to one of your Environments. 
+               <br> In the example below the environment &quot; 
+               <i>curationApp-prod&quot;</i> is running Version 0.0.5. 
+               <b><br></b> 
+               <b> </p>
+              
             </div>
-            </div><a class="btn btn-primary" href="/2014/03/09/the-passion-of-the-explorer.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-          </ul>
+            <img class="pull-left img-responsive img-thumbnail article" src="/images/22c0aadeda311a7a7ede6ab4973ba58d.png" />
+            <div class="article">
+              <p><dummy> </b> 
+               <b><br></b> 
+               <b><span style="font-size: 24px;">Level 1: Concepts</span><br></b> 
+               <b><br></b> By selecting an 
+               <b>Environment</b> you will see the Dashboard of the running 
+               <b>Application Version</b>&nbsp;which is configured on a AWS 
+               <b>Solution Stack</b>. 
+               <br> In our example below this a Docker solution running on Amazon Linux. 
+               <br> A running Environment has a 
+               <b>Health Status</b> and an associated&nbsp; 
+               <b>Configuration.</b> 
+               <br> It’s processing can be checked via 
+               <b>Logs</b>, 
+               <b>Realtime Monitors, Events</b> or 
+               <b>Alarms.</b> 
+               <b><br></b> Furthermore an Environment may be complemented with&nbsp; 
+               <b>Tags</b>.&nbsp; 
+               <br> 
+               <b>Configuration</b>, 
+               <b>Alarms</b> and 
+               <b>Tags</b> may be maintained a set according to your needs. 
+               <b><br></b> 
+               <b> </p>
+              
+            </div>
+            <div class="article">
+              <p><dummy> <br></b> 
+               <b><br></b><br>
+              </body></p>
+              
+            </div>
+          </div>
           <hr />
           <aside>
             <h3>
@@ -250,6 +286,6 @@
         </div>
       </div>
     </div>
-    <script src="../js/all.js" type="text/javascript"></script>
+    <script src="../../../js/all.js" type="text/javascript"></script>
   </body>
 </html>
