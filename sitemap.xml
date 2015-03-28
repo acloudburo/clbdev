@@ -271,6 +271,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/03/28/a-modern-microservices-architecture-by-git.html</loc>
+    <lastmod>2015-03-28</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//tags/personaldata.html</loc>
     <lastmod>2015-03-28</lastmod>
     <priority>0.9</priority>
@@ -340,6 +346,12 @@
     <loc>https://dev.cloudburo.net//2015/03.html</loc>
     <lastmod>2015-03-28</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/03/28.html</loc>
+    <lastmod>2015-03-28</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

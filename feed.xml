@@ -5,10 +5,34 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-03-16T07:36:00Z</updated>
+  <updated>2015-03-28T10:06:18Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>A Modern Microservices Architecture By GIT</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-git.html"/>
+    <id>https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-git.html</id>
+    <published>2015-03-28T10:06:18Z</published>
+    <updated>2015-03-28T22:21:16+01:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt; 
+     &lt;a href="http://www.yonigoldberg.com/" rel="nofollow"&gt;Yoni Goldberg&lt;/a&gt;&amp;nbsp;explains in a presentation at the&amp;nbsp; 
+     &lt;a href="http://qconlondon.com/" rel="nofollow"&gt;QCon London&lt;/a&gt; conference describing the challenges they encountered moving to a microservices architecture. 
+     &lt;br&gt; 
+     &lt;i&gt;After living with micro services for three years at Gilt we can see advantages in team ownership, boundaries defined by APIs and complex problems broken down into small ones. Challenges still exists in tooling, integration environments and monitoring&lt;/i&gt; 
+     &lt;br&gt; The article will explain how they moved from Ruby on Rails, over to the JVM with macro- and micro services, which solved 99% of their scaling&amp;nbsp;but left some of the problems developers experienced with the new services being semi-monolithic and lacking&amp;nbsp;clear ownership of code. The tackled the problem by increasing the number of micro services. 
+     &lt;br&gt; Go on read the full article&amp;nbsp;on the below link.&lt;br&gt;
+    &lt;/body&gt;
+    &lt;a href="http://www.infoq.com/news/2015/03/microservices-architecture-gilt?utm_campaign=infoq_content&amp;amp;amp;utm_source=infoq&amp;amp;amp;utm_medium=feed&amp;amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Uber Unveils its Realtime Market Platform</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html"/>
@@ -196,26 +220,6 @@
     &lt;p&gt;&lt;dummy&gt;&lt;br&gt;
     &lt;/body&gt;
     &lt;a href="http://www.gv.com/sprint/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>The Future Of Work</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2014/11/10/the-future-of-work.html"/>
-    <id>https://dev.cloudburo.net/2014/11/10/the-future-of-work.html</id>
-    <published>2014-11-10T11:48:00Z</published>
-    <updated>2015-03-28T09:52:47+01:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;An nice food for tought presentation which outlines the importance of leveraging internal and external talents in future working models, which are increasingly digital.&lt;/p&gt;
-    
-    &lt;p&gt;Companies don&amp;#39;t necessarily deal in things, but they deal in knowledge, worthwile read.&lt;/p&gt;
-    
-    &lt;p&gt;&lt;iframe src="http://www.slideshare.net/slideshow/embed_code/27110077?rel=0" width="512" height="421" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt; &lt;strong&gt; &lt;a href="https://www.slideshare.net/Achievers/the-future-of-work-27110077" title="The Future of Work" target="_blank"&gt;The Future of Work&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="http://www.slideshare.net/Achievers" target="_blank"&gt;Achievers&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
