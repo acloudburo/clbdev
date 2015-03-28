@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Dev@Cloudburo</title>
-  <subtitle>Developer Blog of Cloudburo</subtitle>
-  <id>http://dev.cloudburo.net</id>
-  <link href="http://dev.cloudburo.net"/>
-  <link href="http://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-03-16T06:36:00Z</updated>
+  <title>dev@cloudburo</title>
+  <subtitle>Cloudburo Developer Blog</subtitle>
+  <id>https://dev.cloudburo.net/</id>
+  <link href="https://dev.cloudburo.net/"/>
+  <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
+  <updated>2015-03-16T07:36:00Z</updated>
   <author>
-    <name>Felix Küstahler</name>
+    <name>Felix Kuestahler</name>
   </author>
   <entry>
     <title>Uber Unveils its Realtime Market Platform</title>
-    <link rel="alternate" href="http://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html"/>
-    <id>http://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html</id>
-    <published>2015-03-16T06:36:00Z</published>
-    <updated>2015-03-21T16:17:19+00:00</updated>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html"/>
+    <id>https://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html</id>
+    <published>2015-03-16T07:36:00Z</published>
+    <updated>2015-03-28T11:56:30+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -37,10 +37,10 @@
   </entry>
   <entry>
     <title>Microservice Competencies by Martin Fowler</title>
-    <link rel="alternate" href="http://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html"/>
-    <id>http://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html</id>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html"/>
+    <id>https://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html</id>
     <published>2015-03-15T09:22:29Z</published>
-    <updated>2015-03-18T23:00:51+00:00</updated>
+    <updated>2015-03-28T09:52:47+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -72,10 +72,10 @@
   </entry>
   <entry>
     <title>Knowledge is Personal</title>
-    <link rel="alternate" href="http://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html"/>
-    <id>http://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html</id>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html"/>
+    <id>https://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html</id>
     <published>2015-03-08T06:25:06Z</published>
-    <updated>2015-03-08T21:03:33+00:00</updated>
+    <updated>2015-03-28T09:52:47+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -115,10 +115,10 @@
   </entry>
   <entry>
     <title>Bad Practices Building Microservices</title>
-    <link rel="alternate" href="http://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html"/>
-    <id>http://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html</id>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html"/>
+    <id>https://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html</id>
     <published>2015-03-07T02:00:00Z</published>
-    <updated>2015-03-07T15:31:07+00:00</updated>
+    <updated>2015-03-28T09:52:47+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -135,10 +135,10 @@
   </entry>
   <entry>
     <title>Google Ventures releases new DIY guide to help startups</title>
-    <link rel="alternate" href="http://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html"/>
-    <id>http://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html</id>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html"/>
+    <id>https://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html</id>
     <published>2015-01-31T07:04:36Z</published>
-    <updated>2015-03-06T23:09:10+00:00</updated>
+    <updated>2015-03-28T09:52:47+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -155,10 +155,10 @@
   </entry>
   <entry>
     <title>The Future Of Work</title>
-    <link rel="alternate" href="http://dev.cloudburo.net/2014/11/10/the-future-of-work.html"/>
-    <id>http://dev.cloudburo.net/2014/11/10/the-future-of-work.html</id>
+    <link rel="alternate" href="https://dev.cloudburo.net/2014/11/10/the-future-of-work.html"/>
+    <id>https://dev.cloudburo.net/2014/11/10/the-future-of-work.html</id>
     <published>2014-11-10T11:48:00Z</published>
-    <updated>2015-03-06T15:44:11+00:00</updated>
+    <updated>2015-03-28T09:52:47+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
