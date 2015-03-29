@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-git.html"/>
     <id>https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-git.html</id>
     <published>2015-03-28T10:06:18Z</published>
-    <updated>2015-03-28T22:43:08+01:00</updated>
+    <updated>2015-03-28T23:04:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -38,7 +38,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html"/>
     <id>https://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html</id>
     <published>2015-03-16T07:36:00Z</published>
-    <updated>2015-03-28T18:52:39+01:00</updated>
+    <updated>2015-03-28T23:04:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -64,7 +64,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html"/>
     <id>https://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html</id>
     <published>2015-03-15T09:22:29Z</published>
-    <updated>2015-03-28T09:52:47+01:00</updated>
+    <updated>2015-03-28T23:04:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -99,7 +99,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html"/>
     <id>https://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html</id>
     <published>2015-03-08T07:25:06Z</published>
-    <updated>2015-03-28T21:47:58+01:00</updated>
+    <updated>2015-03-28T23:04:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -142,7 +142,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html</id>
     <published>2015-03-07T02:00:00Z</published>
-    <updated>2015-03-28T09:52:47+01:00</updated>
+    <updated>2015-03-28T23:04:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -161,61 +161,24 @@
     <title>Google Ventures releases new DIY guide to help startups</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html"/>
     <id>https://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html</id>
-    <published>2015-01-31T08:04:36Z</published>
-    <updated>2015-03-28T20:19:17+01:00</updated>
+    <published>2015-01-31T07:04:36Z</published>
+    <updated>2015-03-29T07:10:01+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/638f4c499860193be540c5b5915c6302.gif" /&gt;&lt;img class="pull-left img-responsive img-thumbnail article" src="/images/7f14bbf0b0c13fca3af83ff82c0b71ca.gif" /&gt;&lt;img class="pull-left img-responsive img-thumbnail article" src="/images/009b06f38695de0d0d383c24bf894a9e.gif" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt; 
-     &lt;b&gt;Interesting new DIY Guide by Google, which helps startups to design better products.&lt;/b&gt; 
-     &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
-     &lt;b&gt;Google’s venture capital arm &lt;a href="http://www.gv.com/sprint/" rel="nofollow"&gt;released a new&amp;nbsp;do-it-yourself guide&lt;/a&gt; for startups looking to run a &amp;quot;design sprint&amp;quot; — Google Ventures’ name for its well-known&amp;nbsp;five-day prototyping process.&lt;/b&gt; 
-     &lt;br&gt; 
-     &lt;b&gt;Google Ventures has long preached the concept and has publicly detailed its&amp;nbsp;various stages, from idea development and prototyping to user testing. With today’s release, however, the design sprint guide gets a lot more formal, and sets the stage for Google Ventures’ plan to publish its techniques in book form&lt;/b&gt; 
-     &lt;br&gt; (something the company also 
-     &lt;a href="http://www.gv.com/sprint/" rel="nofollow"&gt;announced today&lt;/a&gt;). 
-     &lt;br&gt; Originally inspired by IDEO, Google Ventures design partner 
-     &lt;a href="http://www.gv.com/team/jake-knapp" rel="nofollow"&gt;Jake Knapp&lt;/a&gt;&amp;nbsp;began conducting these design sprints years ago with portfolio companies. At one point, 
-     &lt;a href="http://thenextweb.com/google/2013/03/15/how-google-ventures-instills-design-into-the-heart-of-its-portfolio-companies/" rel="nofollow"&gt;I even sat in on one&lt;/a&gt;. 
-     &lt;br&gt; 
-     &lt;br&gt; 
-     &lt;br&gt; 
-     &lt;br&gt; 
-     &lt;br&gt; 
-     &lt;br&gt; 
-     &lt;a href="http://feeds.feedburner.com/~ff/Venturebeat?a=hSxpUEFEq54:lD775chlXbE:yIl2AUoC8zA" rel="nofollow"&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt; &lt;/a&gt; 
-     &lt;a href="http://feeds.feedburner.com/~ff/Venturebeat?a=hSxpUEFEq54:lD775chlXbE:qj6IDK7rITs" rel="nofollow"&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/1df4af0e6e8f900d91267ca68edfd555.gif" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt; &lt;/a&gt; 
-     &lt;a href="http://feeds.feedburner.com/~ff/Venturebeat?a=hSxpUEFEq54:lD775chlXbE:V_sGLiPBpWU" rel="nofollow"&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt; &lt;/a&gt; 
-     &lt;a href="http://feeds.feedburner.com/~ff/Venturebeat?a=hSxpUEFEq54:lD775chlXbE:I9og5sOYxJI" rel="nofollow"&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/6621861144996e1e26fd57559afb0a14.gif" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt; &lt;/a&gt; 
-     &lt;a href="http://feeds.feedburner.com/~ff/Venturebeat?a=hSxpUEFEq54:lD775chlXbE:D7DqB2pKExk" rel="nofollow"&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt; &lt;/a&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
   &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/325472601571f31e1bf00674c368d335.gif" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt;
+      Interesting new DIY Guide by Google, which helps startups to design better products. 
+     &lt;br&gt; Google’s venture capital arm 
+     &lt;a href="http://www.gv.com/sprint/" rel="nofollow"&gt;released a new&amp;nbsp;do-it-yourself guide&lt;/a&gt; for startups looking to run a &amp;quot;design sprint&amp;quot; — Google Ventures’ name for its well-known&amp;nbsp;five-day prototyping process. 
+     &lt;br&gt; Google Ventures has long preached the concept and has publicly detailed its&amp;nbsp;various stages, from idea development and prototyping to user testing. With today’s release, however, the design sprint guide gets a lot more formal, and sets the stage for Google Ventures’ plan to publish its techniques in book for 
+     &lt;br&gt; Originally inspired by IDEO, Google Ventures design partner 
+     &lt;a href="http://www.gv.com/team/jake-knapp" rel="nofollow"&gt;Jake Knapp&lt;/a&gt;&amp;nbsp;began conducting these design sprints years ago with portfolio companies. 
+     &lt;br&gt; &lt;/p&gt;
+    
+  &lt;/div&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;dummy&gt;&lt;br&gt;
     &lt;/body&gt;
