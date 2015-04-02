@@ -43,12 +43,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net//2015/03/28/a-modern-microservices-architecture-by-git.html</loc>
-    <lastmod>2015-03-28</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net//2014/10/21/user-customer-partner.html</loc>
     <lastmod>2015-03-28</lastmod>
     <priority>0.7</priority>
@@ -266,7 +260,7 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net//menu2.html</loc>
-    <lastmod>2015-03-28</lastmod>
+    <lastmod>2015-04-02</lastmod>
     <priority>1.0</priority>
     <changefreq>daily</changefreq>
   </url>
