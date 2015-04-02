@@ -5,10 +5,39 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-03-28T10:06:18Z</updated>
+  <updated>2015-04-02T02:01:39Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>A Service is a Logical Construct Built by Microservices</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html"/>
+    <id>https://dev.cloudburo.net/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html</id>
+    <published>2015-04-02T02:01:39Z</published>
+    <updated>2015-04-02T14:32:34+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt; 
+     &lt;br&gt; This is a very interesting article&amp;nbsp;by 
+     &lt;a href="http://www.infoq.com/author/Jan-Stenberg" rel="nofollow"&gt;Jan Stenberg&lt;/a&gt;, which shows how a Service and Microservice are interrelated.&amp;nbsp; He is building services around business capabilities,&amp;nbsp;&amp;nbsp;a strategy which we are following within UBS&amp;nbsp;AG as well in order to organize the interfaces on the large-scale business domain landscape. The importance of the Business Capabilities emerged in the recent year in the Business Architecture space&amp;nbsp;and is helping us a lot in&amp;nbsp;discussion with the business and their strategic planning. 
+     &lt;i&gt;A service is a logical construct owning a business capability and made up of internal autonomous components or microservices that together fulfil all responsibilities of the service&lt;/i&gt; The article exploits some work in context of technical authority and shows four rules for defining a service 
+     &lt;ul&gt; 
+      &lt;li&gt;&lt;i&gt;Is the technical authority for a given business capability.&lt;/i&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;i&gt;Is the owner of all the data and business rules that support this business capability wherever it is needed.&lt;/i&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;i&gt;Forms a single source of truth for that capability.&lt;/i&gt;&lt;/li&gt; 
+      &lt;li&gt;&lt;i&gt;Ensures we can maintain autonomy and encapsulation.&lt;/i&gt;&lt;/li&gt; 
+     &lt;/ul&gt; Some findings which we also apply in our day2day integration architecture work. The full article is worth a read and can be found here: 
+     &lt;br&gt; 
+     &lt;br&gt;&lt;br&gt;
+    &lt;/body&gt;
+    &lt;a href="http://www.infoq.com/news/2015/03/microservices-logical-services?utm_campaign=infoq_content&amp;amp;amp;utm_source=infoq&amp;amp;amp;utm_medium=feed&amp;amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>A Modern Microservices Architecture By GIT</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-git.html"/>
@@ -153,30 +182,6 @@
     &lt;p&gt;Sometimes its more helpful to understand some traps in a area. Part of its finding could be used as well for SOA based architectures. E.g. the bad principle to establish integration libraries instead of providing a clean interface which can be used and integrated by the consumer. Client libraries are nice and convenient but will get hard to maintain over time, due to extensions to various languages, versions etc. So keep it simple go for a clean interface in REST or SOAP style and leave the client bindings to the consumer.&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/01/bad-practices-microservices?utm_campaign=infoq_content&amp;amp;amp;utm_source=infoq&amp;amp;amp;utm_medium=feed&amp;amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Google Ventures releases new DIY guide to help startups</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html"/>
-    <id>https://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html</id>
-    <published>2015-01-31T07:04:36Z</published>
-    <updated>2015-03-29T12:55:10+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt;
-      Interesting new DIY Guide by Google, which helps startups to design better products. 
-     &lt;br&gt; Google’s venture capital arm 
-     &lt;a href="http://www.gv.com/sprint/" rel="nofollow"&gt;released a new&amp;nbsp;do-it-yourself guide&lt;/a&gt; for startups looking to run a &amp;quot;design sprint&amp;quot; — Google Ventures’ name for its well-known&amp;nbsp;five-day prototyping process. 
-     &lt;br&gt; Google Ventures has long preached the concept and has publicly detailed its&amp;nbsp;various stages, from idea development and prototyping to user testing. With today’s release, however, the design sprint guide gets a lot more formal, and sets the stage for Google Ventures’ plan to publish its techniques in book for 
-     &lt;br&gt; Originally inspired by IDEO, Google Ventures design partner 
-     &lt;a href="http://www.gv.com/team/jake-knapp" rel="nofollow"&gt;Jake Knapp&lt;/a&gt;&amp;nbsp;began conducting these design sprints years ago with portfolio companies.&lt;br&gt;
-    &lt;/body&gt;
-    &lt;a href="http://www.gv.com/sprint/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
