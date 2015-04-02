@@ -103,6 +103,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/03/28/a-modern-microservices-architecture-by-gilt.html</loc>
+    <lastmod>2015-04-02</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2015/03/07/bad-practices-building-microservices.html</loc>
     <lastmod>2015-03-28</lastmod>
     <priority>0.7</priority>

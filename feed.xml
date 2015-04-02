@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html</id>
     <published>2015-04-02T02:01:39Z</published>
-    <updated>2015-04-02T14:32:34+00:00</updated>
+    <updated>2015-04-02T15:47:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -22,8 +22,11 @@
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;dummy&gt;      &lt;body&gt; 
      &lt;br&gt; This is a very interesting article&amp;nbsp;by 
-     &lt;a href="http://www.infoq.com/author/Jan-Stenberg" rel="nofollow"&gt;Jan Stenberg&lt;/a&gt;, which shows how a Service and Microservice are interrelated.&amp;nbsp; He is building services around business capabilities,&amp;nbsp;&amp;nbsp;a strategy which we are following within UBS&amp;nbsp;AG as well in order to organize the interfaces on the large-scale business domain landscape. The importance of the Business Capabilities emerged in the recent year in the Business Architecture space&amp;nbsp;and is helping us a lot in&amp;nbsp;discussion with the business and their strategic planning. 
-     &lt;i&gt;A service is a logical construct owning a business capability and made up of internal autonomous components or microservices that together fulfil all responsibilities of the service&lt;/i&gt; The article exploits some work in context of technical authority and shows four rules for defining a service 
+     &lt;a href="http://www.infoq.com/author/Jan-Stenberg" rel="nofollow"&gt;Jan Stenberg&lt;/a&gt;, which shows how a Service and Microservice are interrelated.&amp;nbsp; 
+     &lt;br&gt; He is building services around business capabilities,&amp;nbsp;&amp;nbsp;a strategy which we are following within UBS&amp;nbsp;AG as well in order to organize the interfaces on the large-scale business domain landscape. The importance of the Business Capabilities emerged in the recent year in the Business Architecture space&amp;nbsp;and is helping us a lot in&amp;nbsp;discussion with the business and their strategic planning. 
+     &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
+     &lt;i&gt;A service is a logical construct owning a business capability and made up of internal autonomous components or microservices that together fulfil all responsibilities of the service&lt;/i&gt; 
+     &lt;br&gt; The article exploits some work in context of technical authority and shows four rules for defining a service 
      &lt;ul&gt; 
       &lt;li&gt;&lt;i&gt;Is the technical authority for a given business capability.&lt;/i&gt;&lt;/li&gt; 
       &lt;li&gt;&lt;i&gt;Is the owner of all the data and business rules that support this business capability wherever it is needed.&lt;/i&gt;&lt;/li&gt; 
@@ -52,6 +55,30 @@
     &lt;p&gt;&lt;dummy&gt;      &lt;body&gt; 
      &lt;a href="http://www.yonigoldberg.com/" rel="nofollow"&gt;Yoni Goldberg&lt;/a&gt;&amp;nbsp;explains in a presentation at the&amp;nbsp; 
      &lt;a href="http://qconlondon.com/" rel="nofollow"&gt;QCon London&lt;/a&gt; conference&amp;nbsp; the challenges they encountered moving to a microservices architecture. 
+     &lt;br&gt; 
+     &lt;i&gt;After living with micro services for three years at Gilt we can see advantages in team ownership, boundaries defined by APIs and complex problems broken down into small ones. Challenges still exists in tooling, integration environments and monitoring&lt;/i&gt; 
+     &lt;br&gt; The article&amp;nbsp; explains how they moved from Ruby on Rails, over to the JVM with macro- and micro services, which solved 99% of their scaling&amp;nbsp;but left some of the problems developers experienced with the new services being semi-monolithic and lacking&amp;nbsp;clear ownership of code. The tackled the problem by increasing the number of micro services. 
+     &lt;br&gt; Go on read the full article&amp;nbsp;on the below link.&lt;br&gt;
+    &lt;/body&gt;
+    &lt;a href="http://www.infoq.com/news/2015/03/microservices-architecture-gilt?utm_campaign=infoq_content&amp;amp;amp;utm_source=infoq&amp;amp;amp;utm_medium=feed&amp;amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>A Modern Microservices Architecture By Gilt</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-gilt.html"/>
+    <id>https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-gilt.html</id>
+    <published>2015-03-28T09:06:18Z</published>
+    <updated>2015-04-02T15:47:14+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt; 
+     &lt;a href="http://www.yonigoldberg.com/" rel="nofollow"&gt;Yoni Goldberg&lt;/a&gt;&amp;nbsp;explains in a presentation at the&amp;nbsp; 
+     &lt;a href="http://qconlondon.com/" rel="nofollow"&gt;QCon London&lt;/a&gt; conference&amp;nbsp; the challenges they encountered moving to a micro-services architecture. 
      &lt;br&gt; 
      &lt;i&gt;After living with micro services for three years at Gilt we can see advantages in team ownership, boundaries defined by APIs and complex problems broken down into small ones. Challenges still exists in tooling, integration environments and monitoring&lt;/i&gt; 
      &lt;br&gt; The article&amp;nbsp; explains how they moved from Ruby on Rails, over to the JVM with macro- and micro services, which solved 99% of their scaling&amp;nbsp;but left some of the problems developers experienced with the new services being semi-monolithic and lacking&amp;nbsp;clear ownership of code. The tackled the problem by increasing the number of micro services. 
@@ -162,26 +189,6 @@
      &lt;span style=""&gt;&lt;span style=""&gt;The full article worth a read.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;
     &lt;/body&gt;
     &lt;a href="http://jarche.com/2014/12/knowledge-is-personal/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Bad Practices Building Microservices</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html"/>
-    <id>https://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html</id>
-    <published>2015-03-07T02:00:00Z</published>
-    <updated>2015-03-28T23:04:18+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt;      Valdimir Khorikov lists in a InfoQ article some bad principles in context of the Microservice Architecture. Outlining bad principle instead of good one is really helpful, something what got established as well in the Java world with its concept of Anti-Pattern.&lt;/p&gt;
-    
-    &lt;p&gt;Sometimes its more helpful to understand some traps in a area. Part of its finding could be used as well for SOA based architectures. E.g. the bad principle to establish integration libraries instead of providing a clean interface which can be used and integrated by the consumer. Client libraries are nice and convenient but will get hard to maintain over time, due to extensions to various languages, versions etc. So keep it simple go for a clean interface in REST or SOAP style and leave the client bindings to the consumer.&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/01/bad-practices-microservices?utm_campaign=infoq_content&amp;amp;amp;utm_source=infoq&amp;amp;amp;utm_medium=feed&amp;amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
