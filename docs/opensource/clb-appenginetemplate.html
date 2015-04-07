@@ -28,10 +28,22 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
+                  <a href="/tags/microservice.html">microservice (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
                   <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
                 </li>
                 <li>
                   <a href="/tags/personaldata.html">personalData (2)</a>
@@ -40,22 +52,10 @@
                   <a href="/tags/api.html">api (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (4)</a>
-                </li>
-                <li>
                   <a href="/tags/modeling.html">modeling (1)</a>
                 </li>
                 <li>
                   <a href="/tags/banking.html">banking (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
                 </li>
               </ul>
             </li>
@@ -138,21 +138,21 @@
 <li><strong>com.cloudburo.clb-test</strong>: Are our testing libraries which mainly are managing test data loads from csv files.</li>
 </ul>
 
-<h3 id="source-location">Source Location</h3>
+<h3>Source Location</h3>
 
 <p>Fork me on GitHub: <a href="https://github.com/talfco/clb-appEngineTemplate">https://github.com/talfco/clb-appEngineTemplate</a></p>
 
-<h3 id="release-information">Release Information</h3>
+<h3>Release Information</h3>
 
 <p>The Skeleton is actually work in progress and used as base for testing out quickly REST interface extensions. The template is used as base for our Acceleo based code generators, which will automate the REST backend implementation.</p>
 
-<h3 id=" references-to-other-cloudburo-open-source-work"> References to other Cloudburo Open Source Work</h3>
+<h3> References to other Cloudburo Open Source Work</h3>
 
 <ul>
 <li>The template is making use of the Cloudburo testing utilities <a href="https://github.com/talfco/clb-test">https://github.com/talfco/clb-test</a>.</li>
 </ul>
 
-<h3 id="base-of-skeleton">Base of Skeleton</h3>
+<h3>Base of Skeleton</h3>
 
 <p>The Cloudburo skeleton is based on the <strong>Skeleton Application of Google</strong>, which is released under Apache License Version 2:</p>
 
@@ -166,21 +166,25 @@ Copyright &copy; 2010-2012 Google Inc.</p>
 <p>Requires <a href="http://maven.apache.org">Apache Maven</a> 3.0 or greater, and JDK 6+ in order to run.</p>
 
 <p>To build, run</p>
-<pre class="highlight plaintext"><code>mvn package
+
+<pre><code>mvn package
 </code></pre>
 
 <p>Building will run the tests, but to explicitly run tests you can use the test target</p>
-<pre class="highlight plaintext"><code>mvn test
+
+<pre><code>mvn test
 </code></pre>
 
 <p>To start the app, use the <a href="http://code.google.com/p/appengine-maven-plugin/">App Engine Maven Plugin</a> that is already included in this demo.  Just run the command.</p>
-<pre class="highlight plaintext"><code>mvn appengine:devserver
+
+<pre><code>mvn appengine:devserver
 </code></pre>
 
 <p>For further information, consult the <a href="https://developers.google.com/appengine/docs/java/overview">Java App Engine</a> documentation.</p>
 
 <p>To see all the available goals for the App Engine plugin, run</p>
-<pre class="highlight plaintext"><code>mvn help:describe -Dplugin=appengine
+
+<pre><code>mvn help:describe -Dplugin=appengine
 </code></pre>
 <hr>
             <p class="text-center">

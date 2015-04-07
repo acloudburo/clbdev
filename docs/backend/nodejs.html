@@ -28,10 +28,22 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
+                  <a href="/tags/microservice.html">microservice (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
                   <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
                 </li>
                 <li>
                   <a href="/tags/personaldata.html">personalData (2)</a>
@@ -40,22 +52,10 @@
                   <a href="/tags/api.html">api (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (4)</a>
-                </li>
-                <li>
                   <a href="/tags/modeling.html">modeling (1)</a>
                 </li>
                 <li>
                   <a href="/tags/banking.html">banking (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
                 </li>
               </ul>
             </li>
@@ -128,19 +128,19 @@
           </ul>
           </li>
           </ul>
-          <p>The Node.js based HTTP server is one of the runtime container used by the Cloudburo deployment strategy. <a href="http://http://nodejs.org/&amp;quot;">Node.js</a> is a platform built on <a href="http://code.google.com/p/v8/">Chrome&rsquo;s</a> JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
+          <p>The Node.js based HTTP server is one of the runtime container used by the Cloudburo deployment strategy. <a href="http://http://nodejs.org/%22">Node.js</a> is a platform built on <a href="http://code.google.com/p/v8/">Chrome&rsquo;s</a> JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
 
-<h2 id="npm-node-modules">NPM Node Modules</h2>
+<h2>NPM Node Modules</h2>
 
 <p>Beside the node.js core server application a set of NPM packaged libraries are used, part of them are also used within the frontend based application (as for example &lsquo;underscore&rsquo; or &lsquo;coffee script&rsquo;)</p>
 
-<h3 id="clouburo-provided-modules">Clouburo provided Modules</h3>
+<h3>Clouburo provided Modules</h3>
 
 <ul>
 <li><a href="https://github.com/talfco/clb-modelloader">clb-modelloader</a>  is a small utility which is loading moongoose model definition files from a file directory location into a nodejs server instance and automatically creates corresponding request handlers</li>
 </ul>
 
-<h3 id="third-party-provided-modules">Third party provided Modules</h3>
+<h3>Third party provided Modules</h3>
 
 <ul>
 <li><a href="http://documentcloud.github.com/underscore/">underscore</a> is a utility-belt library for JavaScript that provides a lot of the functional programming support that you would expect in Prototype.js (or Ruby), but without extending any of the built-in JavaScript objects. It&rsquo;s the tie to go along with jQuery&rsquo;s tux, and Backbone.js&rsquo;s suspenders. Available on <a href="https://github.com/documentcloud/underscore/">github</a>.</li>
@@ -153,7 +153,7 @@
 <li><a href="https://github.com/mishoo/UglifyJS">uglify-js</a> JavaScript parser / mangler / compressor / beautifier library for NodeJS. Available on <a href="https://github.com/mishoo/UglifyJS">github</a></li>
 </ul>
 
-<h2 id="file-directory-structure">File Directory Structure</h2>
+<h2>File Directory Structure</h2>
 
 <p>The file directory consists of two parts</p>
 
@@ -174,7 +174,7 @@
 <li>frontend-, browser related files are stored in <code>root/app</code> directory</li>
 </ul>
 
-<h3 id="index.js">index.js</h3>
+<h3>index.js</h3>
 
 <p>The <code>index.js</code> contains the code for the Node.js configuration it consists of the following main blocks</p>
 
@@ -184,64 +184,68 @@
 <li>Loading all backend business domain model objects - which are based on mongoose - of the cloudburo app platform and bridge them to the corresponding Backbone frontend business domain model objects</li>
 </ol>
 
-<h2 id="model-loader">Model Loader</h2>
+<h2>Model Loader</h2>
 
-<h3 id="generic-loading-mechanism-for-backend-business-domain-model">Generic loading mechanism for backend business domain model</h3>
+<h3>Generic loading mechanism for backend business domain model</h3>
 
 <p>The model loader will dynamically auto load the server models which are stored in the <code>server_models</code> directory.</p>
-<pre class="highlight coffeescript"><code><span class="nx">modelLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="nx">require</span><span class="p">(</span><span class="s">"./modelLoader"</span><span class="p">))();</span>
-<span class="nx">modelLoader</span><span class="p">.</span><span class="na">autoload</span><span class="p">(</span><span class="nx">nodeserv</span><span class="p">,</span><span class="nx">db</span><span class="p">,</span> <span class="nx">path</span><span class="p">.</span><span class="na">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span><span class="s">"server_models"</span><span class="p">));</span> 
+
+<pre><code class="coffeescript">modelLoader = new (require(&quot;./modelLoader&quot;))();
+modelLoader.autoload(nodeserv,db, path.join(__dirname,&quot;server_models&quot;)); 
 </code></pre>
 
 <p>The server models are defining the mongoose schema for the business domain model objects they are responsible for. </p>
-<pre class="highlight coffeescript"><code><span class="nx">module</span><span class="p">.</span><span class="na">exports</span> <span class="o">=</span> <span class="k">class</span> <span class="nx">ServiceTemplateModel</span> <span class="k">extends</span> <span class="nx">BaseModel</span>
-    <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="o">-&gt;</span>
-        <span class="k">super</span>  <span class="s">'serviceTemplateModel'</span><span class="p">,</span><span class="s">'ServiceTemplateModel'</span><span class="p">,</span>
-                <span class="k">new</span> <span class="nx">mongoose</span><span class="p">.</span><span class="na">Schema</span>
-                <span class="na">name</span><span class="o">:</span>  <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
-                <span class="na">type</span><span class="o">:</span> <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
-                <span class="na">category</span><span class="o">:</span>  <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">}</span>
-                <span class="na">prize</span><span class="o">:</span>  <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">}</span>
-                <span class="na">duration</span><span class="o">:</span>  <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">}</span>
-    <span class="na">newInstance</span><span class="o">:</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="o">-&gt;</span>
-        <span class="k">return</span> <span class="k">new</span> <span class="nx">ServiceTemplateModel</span> <span class="nx">props</span>
+
+<pre><code class="coffeescript">module.exports = class ServiceTemplateModel extends BaseModel
+    constructor: (props) -&gt;
+        super  &#39;serviceTemplateModel&#39;,&#39;ServiceTemplateModel&#39;,
+                new mongoose.Schema
+                name:  { type: String, default: &#39;&#39; }
+                type: { type: Number, default: &#39;&#39; }
+                category:  { type: String}
+                prize:  { type: String}
+                duration:  { type: String}
+    newInstance: (props) -&gt;
+        return new ServiceTemplateModel props
 </code></pre>
 
 <p>Each server model extends the <code>BaseModel</code></p>
-<pre class="highlight coffeescript"><code><span class="nx">module</span><span class="p">.</span><span class="na">exports</span> <span class="o">=</span> <span class="k">class</span> <span class="nx">BaseModel</span>
-    <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="vi">@</span><span class="na">modelName</span><span class="p">,</span><span class="vi">@</span><span class="na">dbModelName</span><span class="p">,</span><span class="vi">@</span><span class="na">schema</span><span class="p">,</span><span class="nx">props</span><span class="p">)</span> <span class="o">-&gt;</span>
-        <span class="vi">@</span><span class="na">dbModel</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="na">model</span><span class="p">(</span><span class="vi">@</span><span class="na">dbModelName</span><span class="p">,</span> <span class="vi">@</span><span class="na">schema</span><span class="p">)</span>
-        <span class="vi">@</span><span class="na">model</span> <span class="o">=</span> <span class="k">new</span> <span class="vi">@</span><span class="na">dbModel</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span>
-        <span class="vi">@</span><span class="na">schema</span><span class="p">.</span><span class="na">virtual</span><span class="p">(</span><span class="s">'id'</span><span class="p">).</span><span class="na">get</span> <span class="o">-&gt;</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">_id</span>
 
-        <span class="vi">@</span><span class="na">schema</span><span class="p">.</span><span class="na">methods</span><span class="p">.</span><span class="na">toBackbone</span> <span class="o">=</span> <span class="o">-&gt;</span>
-                <span class="nx">obj</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">toObject</span><span class="p">();</span>
-                <span class="nx">obj</span><span class="p">.</span><span class="na">id</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">.</span><span class="na">_id</span><span class="p">;</span>
-                <span class="k">return</span> <span class="nx">obj</span><span class="p">;</span>
+<pre><code class="coffeescript">module.exports = class BaseModel
+    constructor: (@modelName,@dbModelName,@schema,props) -&gt;
+        @dbModel = mongoose.model(@dbModelName, @schema)
+        @model = new @dbModel(props)
+        @schema.virtual(&#39;id&#39;).get -&gt; return this._id
 
-    <span class="na">getModelName</span><span class="o">:</span> <span class="o">-&gt;</span> <span class="vi">@</span><span class="na">modelName</span>
-    <span class="na">getDBModel</span><span class="o">:</span> <span class="o">-&gt;</span>  <span class="vi">@</span><span class="na">dbModel</span> 
-    <span class="na">getDBSchema</span><span class="o">:</span> <span class="o">-&gt;</span> <span class="vi">@</span><span class="na">schema</span>
-    <span class="na">save</span><span class="o">:</span> <span class="o">-&gt;</span> <span class="vi">@</span><span class="na">model</span><span class="p">.</span><span class="na">save</span><span class="p">()</span>
+        @schema.methods.toBackbone = -&gt;
+                obj = this.toObject();
+                obj.id = obj._id;
+                return obj;
+
+    getModelName: -&gt; @modelName
+    getDBModel: -&gt;  @dbModel 
+    getDBSchema: -&gt; @schema
+    save: -&gt; @model.save()
 </code></pre>
 
 <p>The model loader will load each model module dynamically out of <code>server_models</code> directory, creates the relevant moongoose object and passes it over to the BackBoneBridge (see below the expose operation)</p>
-<pre class="highlight coffeescript"><code><span class="nx">files</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="na">readdirSync</span> <span class="nx">modelpath</span>
 
-<span class="nx">modelNames</span> <span class="o">=</span> <span class="nx">_und</span><span class="p">.</span><span class="na">map</span> <span class="nx">files</span><span class="p">,</span> <span class="p">(</span><span class="nx">f</span><span class="p">)</span> <span class="o">=&gt;</span> 
-  <span class="nx">path</span><span class="p">.</span><span class="na">basename</span> <span class="nx">f</span>
+<pre><code class="coffeescript">files = fs.readdirSync modelpath
 
-<span class="nx">bridge</span> <span class="o">=</span> <span class="k">new</span> <span class="p">(</span><span class="nx">require</span><span class="p">(</span><span class="s">"./backboneBridge"</span><span class="p">))()</span>
+modelNames = _und.map files, (f) =&gt; 
+  path.basename f
 
-<span class="nx">_und</span><span class="p">.</span><span class="na">each</span> <span class="nx">modelNames</span><span class="p">,</span> <span class="p">(</span><span class="nx">modelName</span><span class="p">)</span> <span class="o">-&gt;</span>     
-  <span class="nx">modelC</span> <span class="o">=</span> <span class="nx">require</span> <span class="nx">modelpath</span> <span class="o">+</span> <span class="s">"/"</span> <span class="o">+</span> <span class="nx">modelName</span> 
-  <span class="nx">util</span><span class="p">.</span><span class="na">inspect</span><span class="p">(</span><span class="nx">modelC</span><span class="p">,</span><span class="no">true</span><span class="p">,</span><span class="no">true</span><span class="p">)</span>
-  <span class="k">if</span> <span class="nx">modelName</span> <span class="o">!=</span> <span class="s">"baseModel.coffee"</span>
-     <span class="nx">model</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">modelC</span><span class="p">()</span>        
-     <span class="vi">@</span><span class="na">expose</span><span class="p">(</span><span class="nx">model</span><span class="p">,</span><span class="nx">serv</span><span class="p">)</span>
+bridge = new (require(&quot;./backboneBridge&quot;))()
+
+_und.each modelNames, (modelName) -&gt;     
+  modelC = require modelpath + &quot;/&quot; + modelName 
+  util.inspect(modelC,true,true)
+  if modelName != &quot;baseModel.coffee&quot;
+     model = new modelC()        
+     @expose(model,serv)
 </code></pre>
 
-<h3 id="generic-approach-to-bridge-frontend-backbone-business-domain-models">Generic approach to bridge frontend Backbone business domain models</h3>
+<h3>Generic approach to bridge frontend Backbone business domain models</h3>
 
 <p>The <code>expose</code> function will take care that backend requests triggered by  frontend Backbone based business object domain models are dispatched to the corresponding Mongoose based business object domain model which will handle the request in interaction with the database. 
 For each server model a set of request handler will be created. In case the server model name is <code>customerModel.coffee</code> the URL path name will be the file name (without Model.coffee extension) plus an &rsquo;s&#39; for the plural, e.g <code>customers</code>. The following request handlers are created for each server model:</p>
@@ -254,40 +258,41 @@ For each server model a set of request handler will be created. In case the serv
 </ol>
 
 <p>The expose function looks like the following</p>
-<pre class="highlight coffeescript"><code>    <span class="na">expose</span> <span class="o">:</span> <span class="p">(</span><span class="nx">model</span><span class="p">,</span> <span class="nx">serv</span><span class="p">)</span><span class="o">-&gt;</span>
-        <span class="nx">collection</span> <span class="o">=</span> <span class="nx">model</span><span class="p">.</span><span class="na">getModelName</span><span class="p">()</span><span class="o">+</span><span class="s">'s'</span>
 
-        <span class="nx">serv</span><span class="p">.</span><span class="na">get</span> <span class="s">'/'</span><span class="o">+</span><span class="nx">collection</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">-&gt;</span>
-               <span class="nx">model</span><span class="p">.</span><span class="na">getDBModel</span><span class="p">().</span><span class="na">find</span><span class="p">({},</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">docs</span><span class="p">)</span> <span class="o">-&gt;</span> 
-             <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="no">null</span>
-               <span class="nx">res</span><span class="p">.</span><span class="na">json</span> <span class="nx">err</span><span class="p">,</span> <span class="mi">500</span>
-            <span class="k">else</span>
-              <span class="nx">res</span><span class="p">.</span><span class="na">send</span><span class="p">(</span><span class="nx">docs</span><span class="p">))</span>
+<pre><code class="coffeescript">    expose : (model, serv)-&gt;
+        collection = model.getModelName()+&#39;s&#39;
 
-       <span class="nx">serv</span><span class="p">.</span><span class="na">put</span> <span class="s">'/'</span><span class="o">+</span><span class="nx">collection</span><span class="o">+</span><span class="s">'/:id'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">-&gt;</span>
-         <span class="nx">conditions</span>  <span class="o">=</span> <span class="p">{</span> <span class="na">_id</span><span class="o">:</span> <span class="nx">req</span><span class="p">.</span><span class="na">params</span><span class="p">.</span><span class="na">id</span> <span class="p">}</span>
-         <span class="nx">doc</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="na">body</span>
-         <span class="k">delete</span> <span class="nx">doc</span><span class="p">.</span><span class="na">_id</span>
-         <span class="nx">model</span><span class="p">.</span><span class="na">getDBModel</span><span class="p">().</span><span class="na">update</span> <span class="nx">conditions</span><span class="p">,</span> <span class="nx">doc</span><span class="p">,{},</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">numAffected</span><span class="p">)</span> <span class="o">-&gt;</span> 
-           <span class="k">if</span> <span class="nx">err</span> <span class="o">==</span> <span class="no">null</span> 
-             <span class="nx">res</span><span class="p">.</span><span class="na">json</span>  <span class="mi">200</span>
-           <span class="k">else</span>
-             <span class="nx">res</span><span class="p">.</span><span class="na">json</span> <span class="nx">err</span><span class="p">,</span> <span class="mi">500</span>
+        serv.get &#39;/&#39;+collection, (req, res) -&gt;
+               model.getDBModel().find({}, (err, docs) -&gt; 
+             if err != null
+               res.json err, 500
+            else
+              res.send(docs))
 
-       <span class="nx">serv</span><span class="p">.</span><span class="na">del</span> <span class="s">'/'</span><span class="o">+</span><span class="nx">collection</span><span class="o">+</span><span class="s">'/:id'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">-&gt;</span>
-         <span class="nx">conditions</span>  <span class="o">=</span> <span class="p">{</span> <span class="na">_id</span><span class="o">:</span> <span class="nx">req</span><span class="p">.</span><span class="na">params</span><span class="p">.</span><span class="na">id</span> <span class="p">}</span>
-         <span class="nx">model</span><span class="p">.</span><span class="na">getDBModel</span><span class="p">().</span><span class="na">remove</span> <span class="nx">conditions</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">numAffected</span><span class="p">)</span> <span class="o">-&gt;</span> 
-            <span class="k">if</span> <span class="nx">err</span> <span class="o">==</span> <span class="no">null</span> 
-             <span class="nx">res</span><span class="p">.</span><span class="na">json</span>  <span class="mi">200</span>
-           <span class="k">else</span>
-             <span class="nx">res</span><span class="p">.</span><span class="na">json</span> <span class="nx">err</span><span class="p">,</span> <span class="mi">500</span>    
+       serv.put &#39;/&#39;+collection+&#39;/:id&#39;, (req, res) -&gt;
+         conditions  = { _id: req.params.id }
+         doc = req.body
+         delete doc._id
+         model.getDBModel().update conditions, doc,{}, (err, numAffected) -&gt; 
+           if err == null 
+             res.json  200
+           else
+             res.json err, 500
 
-       <span class="nx">serv</span><span class="p">.</span><span class="na">post</span> <span class="s">'/'</span><span class="o">+</span><span class="nx">collection</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">-&gt;</span>
-         <span class="nx">conditions</span>  <span class="o">=</span> <span class="p">{</span> <span class="na">_id</span><span class="o">:</span> <span class="nx">req</span><span class="p">.</span><span class="na">params</span><span class="p">.</span><span class="na">id</span> <span class="p">}</span>
-         <span class="nx">doc</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="na">body</span>
-         <span class="nx">obj</span> <span class="o">=</span> <span class="nx">model</span><span class="p">.</span><span class="na">newInstance</span> <span class="nx">doc</span> 
-         <span class="nx">obj</span><span class="p">.</span><span class="na">save</span><span class="p">()</span>  
-         <span class="nx">res</span><span class="p">.</span><span class="na">send</span>  <span class="nx">obj</span><span class="p">.</span><span class="na">model</span>
+       serv.del &#39;/&#39;+collection+&#39;/:id&#39;, (req, res) -&gt;
+         conditions  = { _id: req.params.id }
+         model.getDBModel().remove conditions, (err, numAffected) -&gt; 
+            if err == null 
+             res.json  200
+           else
+             res.json err, 500    
+
+       serv.post &#39;/&#39;+collection, (req, res) -&gt;
+         conditions  = { _id: req.params.id }
+         doc = req.body
+         obj = model.newInstance doc 
+         obj.save()  
+         res.send  obj.model
 </code></pre>
 <hr>
             <p class="text-center">

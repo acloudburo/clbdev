@@ -28,10 +28,22 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
+                  <a href="/tags/microservice.html">microservice (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
                   <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
                 </li>
                 <li>
                   <a href="/tags/personaldata.html">personalData (2)</a>
@@ -40,22 +52,10 @@
                   <a href="/tags/api.html">api (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (4)</a>
-                </li>
-                <li>
                   <a href="/tags/modeling.html">modeling (1)</a>
                 </li>
                 <li>
                   <a href="/tags/banking.html">banking (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
                 </li>
               </ul>
             </li>
@@ -126,7 +126,7 @@
           </ul>
           </li>
           </ul>
-          <h2 id="introduction">Introduction</h2>
+          <h2>Introduction</h2>
 
 <p><a href="https://developers.google.com/appengine/docs/whatisgoogleappengine">Google App Engine</a> is a Platform as a Service (PaaS) offering that lets you build and run applications on Google’s infrastructure. Google App Engine supports apps written in a variety of programming languages, Cloudburo is using the Java implementation.</p>
 
@@ -152,9 +152,9 @@
 <li>Google App Engine comes with a <a href="https://developers.google.com/appengine/downloads">full blown SDK</a> for Java, which allows to emulate all of the App Engine services on your local computer. </li>
 </ul>
 
-<h2 id="application-layering">Application Layering</h2>
+<h2>Application Layering</h2>
 
-<h3 id="google-services">Google Services</h3>
+<h3>Google Services</h3>
 
 <p>As described above the infrastructure foundation layer is the Google App Engine PaaS, with the following services</p>
 
@@ -165,17 +165,17 @@
 <li><a href="https://developers.google.com/appengine/docs/java/users/">Users</a>: App Engine applications can authenticate users using any one of three methods: Google Accounts, accounts on your own Google Apps domains, or OpenID identifiers</li>
 </ul>
 
-<h3 id="google-objectify">Google Objectify</h3>
+<h3>Google Objectify</h3>
 
 <p><a href="https://code.google.com/p/objectify-appengine/">Ojectify</a> is a Java data access API specifically designed for the Google App Engine datastore. It occupies a &ldquo;middle ground&rdquo;; easier to use and more transparent than JDO or JPA, but significantly more convenient than the Low-Level API. Objectify is designed to make novices immediately productive yet also expose the full power of the GAE datastore. It&rsquo;s a open source library (MIT License).</p>
 
 <p>The Cloudburo code generator will generate entity object based on the Objectify library and will integrate to the REST API interface via the google GSON library.</p>
 
-<h3 id="google-gson">Google GSON</h3>
+<h3>Google GSON</h3>
 
 <p><a href="https://code.google.com/p/google-gson/">Gson</a> is a Java library that can be used to convert Java Objects into their JSON representation. It can also be used to convert a JSON string to an equivalent Java object. Gson can work with arbitrary Java objects including pre-existing objects that you do not have source-code of. It&rsquo;s a open source library (Apache License 2.0)</p>
 
-<h3 id="cloudburo-appengine-backend-library">Cloudburo AppEngine Backend Library</h3>
+<h3>Cloudburo AppEngine Backend Library</h3>
 
 <p>This is our provided utility library for a Google App Engine Java REST backend. The API specification which is implemented can be found here</p>
 
@@ -184,9 +184,9 @@
 <p>More Documentation can be found in Open Source section of the documentation:
 <a href="http://cloudburo.github.com/docs/opensource/clb-appenginebackend">http://cloudburo.github.com/docs/opensource/clb-appenginebackend/</a></p>
 
-<h2 id="remarks">Remarks</h2>
+<h2>Remarks</h2>
 
-<h3 id="google-appengine-and-utf-8">Google AppEngine and UTF-8</h3>
+<h3>Google AppEngine and UTF-8</h3>
 
 <p>The Cloudburo App is using the <a href="http://en.wikipedia.org/wiki/UTF-8">UTF-8</a> characters which can represent every character in the Unicode character set. Server developers as well as me were confronted with the problem that the local test AppEngine instance is supporting by default UTF-8 but the cloud base production environment may not by default.</p>
 
@@ -199,11 +199,12 @@
 
 <p>The solution is that you must call <code>request.setCharacterEncoding(&quot;utf-8&quot;)</code> <em>before</em> you call request.getParameter().  The easiest way is with a servlet filter that
 executes early. Now there are posts which claim that this is not working with appengine. Therefore the AppEngin Backend Library <code>RestAPIServlet</code> will take care of that, be ensuring input request and output response are correctly setting the character set. Something like:</p>
-<pre class="highlight java"><code>    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">doGet</span><span class="p">(</span><span class="n">HttpServletRequest</span> <span class="n">req</span><span class="o">,</span> <span class="n">HttpServletResponse</span> <span class="n">resp</span><span class="o">)</span> 
-      <span class="kd">throws</span> <span class="n">IOException</span><span class="o">,</span> <span class="n">ServletException</span> <span class="o">{</span>
-      <span class="n">req</span><span class="o">.</span><span class="na">setCharacterEncoding</span><span class="o">(</span><span class="s">"UTF-8"</span><span class="o">);</span>
-      <span class="n">resp</span><span class="o">.</span><span class="na">setCharacterEncoding</span><span class="o">(</span><span class="s">"UTF-8"</span><span class="o">);</span>
-      <span class="o">...</span>
+
+<pre><code class="java">    protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
+      throws IOException, ServletException {
+      req.setCharacterEncoding(&quot;UTF-8&quot;);
+      resp.setCharacterEncoding(&quot;UTF-8&quot;);
+      ...
 </code></pre>
 <hr>
             <p class="text-center">

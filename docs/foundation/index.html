@@ -28,10 +28,22 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
+                  <a href="/tags/microservice.html">microservice (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
                   <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
                 </li>
                 <li>
                   <a href="/tags/personaldata.html">personalData (2)</a>
@@ -40,22 +52,10 @@
                   <a href="/tags/api.html">api (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (4)</a>
-                </li>
-                <li>
                   <a href="/tags/modeling.html">modeling (1)</a>
                 </li>
                 <li>
                   <a href="/tags/banking.html">banking (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
                 </li>
               </ul>
             </li>
@@ -233,7 +233,7 @@
           </ul>
           </li>
           </ul>
-          <h2 id="introduction">Introduction</h2>
+          <h2>Introduction</h2>
 
 <p>The Foundation Chapter will describe the foundation of the Cloudburo App Platform. It will introduce the major elements (principles, concepts, frameworks, libraries, tools &hellip;) of the platform in order to bootstrap a cloud based service delivery business which includes</p>
 
@@ -246,9 +246,9 @@
 
 <p>It&rsquo;s the nucleus for building up the platform.</p>
 
-<h2 id="architecture">Architecture</h2>
+<h2>Architecture</h2>
 
-<h3 id="principles">Principles</h3>
+<h3>Principles</h3>
 
 <p>The architecture of the Cloudburo Platform is heavily influenced by <a href="http://www.reactivemanifesto.org/">Reacive Manifesto</a>, which are nicely summarized by the following </p>
 
@@ -267,9 +267,9 @@
 <li><em>Use Metadata and Generate</em>. Structure and standardize the code, use meta data as source for code generators instead of reimplementing and copying code.</li>
 </ul>
 
-<h3 id="concepts">Concepts</h3>
+<h3>Concepts</h3>
 
-<h4 id="domain-driven-design-(ddd)">Domain Driven Design (DDD)</h4>
+<h4>Domain Driven Design (DDD)</h4>
 
 <p>We use a <a href="http://en.wikipedia.org/wiki/Domain-driven_design">Domain Driven Design (DDD)</a> approach to shape out the technical foundation of the  platform.  DDD is is an approach to the design of software, based on the two premises:</p>
 
@@ -280,7 +280,7 @@
 
 <p>This is described in the <a href="/docs/model">Business Model</a> chapter.</p>
 
-<h4 id="application-structuring-(spa)">Application Structuring  (SPA)</h4>
+<h4>Application Structuring  (SPA)</h4>
 
 <p>A Cloudburo Platform application is a mix of JavaScript that runs inside a client web browser, as well as JavaScript that runs on the nodejs server inside a Node.js container, which is serving all the supporting HTML fragments, CSS rules, and static assets.</p>
 
@@ -288,11 +288,11 @@
 
 <p>JavaScript is the main asset on client as well as on the server. Concerning the server asset, the Cloudburo App Platform will gather all the Javascript files used by client into one Application file which will be executed within the browser.</p>
 
-<h4 id="templates">Templates</h4>
+<h4>Templates</h4>
 
 <p>HTML GUI Elements (View Panes, Forms, Menu Tabs etc.) are served by the nodjs server as <em>underscore</em> templates, which will attached to the to HTML DOM element and cached during a user session. After arriving of new data in the browser, the relevant tempate will be fetched, compiled with the data set and rendered to the end-user. </p>
 
-<h4 id="code-generation">Code Generation</h4>
+<h4>Code Generation</h4>
 
 <p>The Cloudburo code generator facility is based on the <a href="http://www.papyrusuml.org/">Papyrus UML Modeller</a> in combination with the <a href="http://www.eclipse.org/acceleo/">Acceleo Code Generator</a>.</p>
 
@@ -304,11 +304,11 @@
 
 <p>Rather a powerful toolset which is provided in a fully open source version. </p>
 
-<h2 id="programming-languages">Programming Languages</h2>
+<h2>Programming Languages</h2>
 
 <p>A twin programming language approach consisting of <code>Javascript</code> and <code>Java</code> was chosen.</p>
 
-<h3 id="javascript-/-coffeescript">JavaScript / CoffeeScript</h3>
+<h3>JavaScript / CoffeeScript</h3>
 
 <p>Main development language for the Enduser Application (Frontend and Backend) is <code>JavaScript</code>. I prefer to use <code>CoffeeScript</code> which is a little language that compiles down to JavaScript. The syntax is inspired by Ruby and Python and implements many features from those two languages.</p>
 
@@ -320,12 +320,12 @@
 
 <p>The compiler converts CoffeeScript code into its counterpart JavaScript, there&rsquo;s no interpretation at runtime.</p>
 
-<h3 id="java">Java</h3>
+<h3>Java</h3>
 
 <p>Having a Java developer background going back to version 1.0 which was released in 1995, it was clear for me to use Java as a second programming language for writing code generators and any kind of utility programs required for the platform.
 Java provides a lot of powerful libraries for any kind of utility tasks and it&rsquo;s strong object-oriented language backed by an excellent IDE&rsquo;s (e.g. Eclipse) is an ideal complementing piece to JavaScript, as the main development language.</p>
 
-<h2 id="development-environments-(ide)">Development Environments (IDE)</h2>
+<h2>Development Environments (IDE)</h2>
 
 <p>A cornerstone for a robust and fast development process is a state of the art integrated development environment which bundles and coordinates the various activities.</p>
 
@@ -336,7 +336,7 @@ Java provides a lot of powerful libraries for any kind of utility tasks and it&r
 <li>Textmate which is a lightweigther and more agile editor centric development environment for any other work.</li>
 </ul>
 
-<h3 id="eclipse-ide">Eclipse IDE</h3>
+<h3>Eclipse IDE</h3>
 
 <p>Eclipse IDE is by far one of the most adavanced IDE for any kind of development actitivities. It provides a vast array of plugins for any kind of software lifecycle activities. Especially it provides strong support for a Model Driven Development approach which is one of the principle of the Cloudburo development work. Currenlty I use the following Eclipes setup for my work:</p>
 
@@ -377,7 +377,7 @@ Java provides a lot of powerful libraries for any kind of utility tasks and it&r
 
 <p>A drawback of Eclipse is its quite resource hungry and can consume considerable memory space. Therefore I introduced Textmate as my main development editor, which is far more agile and integrates very nicely in various programming languages and tools.</p>
 
-<h3 id="textmate">Textmate</h3>
+<h3>Textmate</h3>
 
 <p><a href="http://manual.macromates.com/en/preface#philosophy_of_textmate">Textmate</a> as advertised as the <em>the missing editor for the Mac</em> is a very powerful Editor with a huge bundle repository which allows to integrate almost any development language or activity. The philosophy of textmate is following the one of Unix tasks.</p>
 
@@ -388,37 +388,37 @@ Java provides a lot of powerful libraries for any kind of utility tasks and it&r
 
 <p>I use it as a main IDE for doing javascript, coffee-script, HTML, CSS3, template, scripting work. </p>
 
-<h2 id="source-code-management">Source Code Management</h2>
+<h2>Source Code Management</h2>
 
 <p>As a version control system I use the de facto standard for open source application <a href="http://git-scm.com/">GIT</a>, which is complemented by <a href="https://bitbucket.org">Bitbucket</a>  which is a web-based hosting service for projects that use either the Mercurial or Git revision control systems. This allows me to manage a remote copy of my code which I don&rsquo;t make (yet) available via <a href="https://github.com/talfco">my GIT</a> open source account.</p>
 
-<h2 id="build-and-deployment-environment">Build and Deployment Environment</h2>
+<h2>Build and Deployment Environment</h2>
 
-<p>Overall build and deploy is managed by Maven. Details can be found <a href="/docs/foundation/buildanddeploy.html">here</a></p>
+<p>Overall build and deploy is managed by Maven. Details can be found <a href="buildanddeploy.html">here</a></p>
 
-<h2 id="utitilities">Utitilities</h2>
+<h2>Utitilities</h2>
 
-<h3 id="direct-installed-osx-applications">Direct installed OSX Applications</h3>
+<h3>Direct installed OSX Applications</h3>
 
 <ul>
 <li><a href="http://nodejs.org/">Node.js</a> Platfrom. Node.js is a platform built on Chrome&rsquo;s JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</li>
 </ul>
 
-<h3 id="ruby-gems">Ruby Gems</h3>
+<h3>Ruby Gems</h3>
 
 <ul>
 <li><a href="http://jekyllrb.com/">Jekyll</a> Transforms plain text into static websites and blogs. Prerequisite for Octopress Blogging-/Documentation platform</li>
 </ul>
 
-<h3 id="homebrew-(package-manager-osx)">Homebrew (Package Manager OSX)</h3>
+<h3>Homebrew (Package Manager OSX)</h3>
 
 <p><a href="http://brew.sh/">Homebrew</a> is the so-called missing package manager for OS X. Homebrew complements OS X and is based on git and ruby.</p>
 
-<h3 id="npm-(node-package-manager)">NPM (Node Package Manager)</h3>
+<h3>NPM (Node Package Manager)</h3>
 
 <p><a href="https://www.npmjs.org/doc/">NPM</a> is the node.js based package manager and is required for my node deployment platform as well as a package manager for certain utitilities, e.g <code>Bower</code>.</p>
 
-<h3 id="bower">Bower</h3>
+<h3>Bower</h3>
 
 <p>As Package Manager for keeping my frontend and node deployment platform under control, I use the <a href="https://www.npmjs.org/package/bower">Bower</a> package manager.</p>
 
@@ -429,65 +429,65 @@ Java provides a lot of powerful libraries for any kind of utility tasks and it&r
 <li>Ruby</li>
 </ul>
 
-<h3 id="brunch">Brunch</h3>
+<h3>Brunch</h3>
 
 <p>I replaced my earlier <a href="http://incident57.com/codekit/index.php">Codekit</a> build tool with the awesome <a href="http://brunch.io/">Brunch</a> ultra-fast HTML5 build tool. It&rsquo;s very handy in order to build my Single Page Application Bundle (javascripts, underscore templates, less compiles, static assets etc) which will be integrated into the Google App Engine</p>
 
-<h3 id="dash">Dash</h3>
+<h3>Dash</h3>
 
 <p>Invaluable documentation reference help is <a href="http://kapeli.com/dash">Dash</a>. Dash is an API Documentation Browser and Code Snippet Manager. Dash stores snippets of code and instantly searches offline documentation sets for 130+ APIs. </p>
 
-<h3 id="sourcetree">SourceTree</h3>
+<h3>SourceTree</h3>
 
 <p>SourceTree is my most preferred GUI for managing my GIT repositories on a Mac. It&rsquo;s provided as open source application by <a href="http://www.sourcetreeapp.com/">Atlassian</a>.</p>
 
-<h2 id="open-source-libraries">Open Source Libraries</h2>
+<h2>Open Source Libraries</h2>
 
-<h3 id="javascript-browser-libraries">Javascript Browser Libraries</h3>
+<h3>Javascript Browser Libraries</h3>
 
-<h4 id="underscore">Underscore</h4>
+<h4>Underscore</h4>
 
 <p><a href="http://documentcloud.github.io/underscore/">Underscore</a> is a utility-belt library for JavaScript that provides a lot of the functional programming support that you would expect in Prototype.js (or Ruby), but without extending any of the built-in JavaScript objects. It&rsquo;s the tie to go along with jQuery&rsquo;s tux, and Backbone.js&rsquo;s suspenders.</p>
 
-<h4 id="jquery">Jquery</h4>
+<h4>Jquery</h4>
 
 <p><a href="http://jquery.com/">JQuery</a> is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. </p>
 
-<h4 id="backbone">Backbone</h4>
+<h4>Backbone</h4>
 
 <p>This the MVC framework used for Cloudburo Apps. <a href="http://documentcloud.github.io/backbone/">Backbone.js</a> gives structure to web applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface.</p>
 
-<h4 id="bootstrap-from-twitter">Bootstrap from Twitter</h4>
+<h4>Bootstrap from Twitter</h4>
 
 <p>The most popular front-end <a href="https://github.com/twbs/bootstrap">framework</a> for developing responsive, mobile first projects on the web.</p>
 
-<h4 id="xeditable">XEditable</h4>
+<h4>XEditable</h4>
 
 <p>This powerful <a href="http://vitalets.github.io/x-editable/index.html">library</a> allows you to create editable elements on your page. It can be used with any engine (bootstrap, jquery-ui, jquery only) and includes both popup and inline modes.</p>
 
-<h4 id="select2">Select2</h4>
+<h4>Select2</h4>
 
 <p><a href="http://ivaynberg.github.io/select2/">Select2</a> is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results and is integrated into XEdtiable.</p>
 
-<h4 id="datatables">Datatables</h4>
+<h4>Datatables</h4>
 
 <p><a href="http://datatables.net/">DataTables</a> is a plug-in for the jQuery Javascript library. It is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table.</p>
 
-<h4 id="moment">Moment</h4>
+<h4>Moment</h4>
 
 <p>A javascript date <a href="http://momentjs.com/">library</a> for parsing, validating, manipulating, and formatting dates.</p>
 
-<h3 id="javasript-server-libraries">Javasript Server Libraries</h3>
+<h3>Javasript Server Libraries</h3>
 
 <p>These libraries are used for the Node.js implementation.</p>
 
-<h4 id="express">Express</h4>
+<h4>Express</h4>
 
 <p><a href="http://expressjs.com/">Express</a> is a minimal and flexible node.js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications.</p>
 
-<h3 id="miscellaneous">Miscellaneous</h3>
+<h3>Miscellaneous</h3>
 
-<h4 id="reference-data:-country-list">Reference Data: Country List</h4>
+<h4>Reference Data: Country List</h4>
 
 <p>List of all countries with names and ISO 3166-1 codes in all languages and all data formats were provided by <a href="https://github.com/umpirsky/country-list">link</a> by using <a href="http://cldr.unicode.org/">CLDR - Unicode Common Locale Data Repository</a>. (<a href="https://github.com/umpirsky/country-list/blob/master/LICENSE">Licence</a>)</p>
 <hr>

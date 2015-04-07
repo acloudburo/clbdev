@@ -28,10 +28,22 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
+                  <a href="/tags/microservice.html">microservice (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
                   <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
                 </li>
                 <li>
                   <a href="/tags/personaldata.html">personalData (2)</a>
@@ -40,22 +52,10 @@
                   <a href="/tags/api.html">api (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (4)</a>
-                </li>
-                <li>
                   <a href="/tags/modeling.html">modeling (1)</a>
                 </li>
                 <li>
                   <a href="/tags/banking.html">banking (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
                 </li>
               </ul>
             </li>
@@ -162,7 +162,7 @@
           </ul>
           <p>Below you will find the API Documentation.</p>
 
-<h2 id="data-api-documentation">Data API Documentation</h2>
+<h2>Data API Documentation</h2>
 
 <p>The installed request handler will expose a well-defined API to the consumers of the application for transferring and manipulating data of the exposed business domain objects (BDO). </p>
 
@@ -175,31 +175,33 @@
 
 <p>There are minor differences in the two implementation which will be listed in the documentation. </p>
 
-<h3 id="format-and-protocol">Format and Protocol</h3>
+<h3>Format and Protocol</h3>
 
 <p>REST API which is supporting the JSON format via the HTTP protocol. </p>
 
-<h3 id="base-url">Base URL</h3>
+<h3>Base URL</h3>
 
 <p>All URLs referenced have the following format:</p>
-<pre class="highlight plaintext"><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&gt;   
+
+<pre><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&gt;   
 </code></pre>
 
-<h3 id="subresources">Subresources</h3>
+<h3>Subresources</h3>
 
 <p>The model loader will create for each defined a model a subresource which will be make up the next level of the overall URL.</p>
 
-<h4 id="http-get">HTTP GET</h4>
+<h4>HTTP GET</h4>
 
 <p>The following GET operations are supported</p>
 
-<h5 id="returning-a-list-of-objects">Returning a list of objects</h5>
-<pre class="highlight plaintext"><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&gt;/&lt;collection&gt;/`
+<h5>Returning a list of objects</h5>
+
+<pre><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&gt;/&lt;collection&gt;/`
 </code></pre>
 
 <p>For example the above defined moongoose <code>customers</code> collection URL would look like:</p>
 
-<p><img src="../../images/Voila_Capture297.png" /></p>
+<p><img src="/images/Voila_Capture297.png" alt=""></p>
 
 <p><strong>Pagination</strong></p>
 
@@ -222,12 +224,13 @@
 <p><strong>maxRec/limit/offset style (MongoDB)</strong></p>
 
 <p>By default the last JSON record entry will contain additional technical and meta information about the request, necessary for allowing consumers to implement a paging.</p>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-    </span><span class="err">_maxRec</span><span class="p">:</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w">
-    </span><span class="err">_limit</span><span class="p">:</span><span class="w"> </span><span class="s2">"20"</span><span class="p">,</span><span class="w">
-    </span><span class="err">_offset</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
+
+<pre><code>{
+    _maxRec: &quot;3&quot;,
+    _limit: &quot;20&quot;,
+    _offset: &quot;0&quot;
+}
+</code></pre>
 
 <ul>
 <li><code>_maxRec</code> will list the total amount of records in the collection</li>
@@ -236,15 +239,18 @@
 </ul>
 
 <p><em>Pagination Control Parameters</em></p>
-<pre class="highlight plaintext"><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&lt;/&lt;collection&gt;?offset=&lt;number&gt;
+
+<pre><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&lt;/&lt;collection&gt;?offset=&lt;number&gt;
 </code></pre>
 
 <p>Use <code>offset</code> to skip a number of records, as for example with a limit of 20, you would send a first request with <code>offset=0</code> then <code>offset=20</code>, then <code>offset=40</code> etc. until you reached <code>_maxRec</code>.</p>
-<pre class="highlight plaintext"><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&lt;/&lt;collection&gt;?maxRec=&lt;number&gt;
+
+<pre><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&lt;/&lt;collection&gt;?maxRec=&lt;number&gt;
 </code></pre>
 
 <p>By passing in a <code>maxRec</code> parameter (normally the one gotten by an earlier paging requerst), the request handler will by pass the database count objects statement, which results in one db activity less (performance optimization). The passed in number will passed back via <code>_maxRec</code> entry. Normally a consumer will fetch in the first request the <code>_maxRec</code> number and pass it back for the subsequent request, resulting in a faster data access request. </p>
-<pre class="highlight plaintext"><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&lt;/&lt;collection&gt;?limit=&lt;number&gt;
+
+<pre><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&lt;/&lt;collection&gt;?limit=&lt;number&gt;
 </code></pre>
 
 <p>Use <code>limit</code>the restrict the number of records returned. The number must be less than the maximal limit number allowed (currently 20).</p>
@@ -252,33 +258,37 @@
 <p><strong>cursor style (Google AppEngine)</strong></p>
 
 <p>Also here the last JSON record entry will contain additional meta information about the request, allowing for paging. It&rsquo;s the so-called cursor an opaque identifier.</p>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-    </span><span class="err">_cursor</span><span class="p">:</span><span class="w"> </span><span class="s2">"E-ABAIICLGoTY3J5cHRpYy1lcGlzb2RlLTM1NnIVCxIIQ3VzdG9tZXIYgICAgICA6goMFA"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
+
+<pre><code>{
+    _cursor: &quot;E-ABAIICLGoTY3J5cHRpYy1lcGlzb2RlLTM1NnIVCxIIQ3VzdG9tZXIYgICAgICA6goMFA&quot;
+}
+</code></pre>
 
 <p>In the Google AppEngine Backend counting of objects is always inefficient and therefore the cursor style paging is supported. The returend opaque identifier has to be provided as additional query parameter for the subsequent call</p>
 
 <p><em>Pagination Control Parameters</em></p>
-<pre class="highlight plaintext"><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&lt;/&lt;collection&gt;?cursor=&lt;number&gt;
+
+<pre><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&lt;/&lt;collection&gt;?cursor=&lt;number&gt;
 </code></pre>
 
 <p>This allows you to page to arbitrary large collections.</p>
 
 <p><strong>Partial Response</strong></p>
-<pre class="highlight plaintext"><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&lt;/&lt;collection&gt;?fields=&lt;field1&gt;,&lt;field2&gt;
+
+<pre><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&lt;/&lt;collection&gt;?fields=&lt;field1&gt;,&lt;field2&gt;
 </code></pre>
 
 <p>Allows you to return only a partial response by listing the fields you are interested in. By default the <code>_id</code> field will be always included. </p>
 
 <p><strong>Request Sample</strong> </p>
 
-<p><img alt="Pic" src="../../images/Voila_Capture310.png" /></p>
+<p><img src="/images/Voila_Capture310.png" alt="Pic"></p>
 
 <p><strong>Filtered Result Set</strong></p>
 
 <p>It&rsquo;s possible to filter the result set </p>
-<pre class="highlight plaintext"><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&lt;/&lt;collection&gt;?fiter=&lt;fieldName1&gt;:&lt;value1&gt;,&lt;fieldName2&gt;:&lt;value2&gt;,_options:&lt;value&gt;
+
+<pre><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&lt;/&lt;collection&gt;?fiter=&lt;fieldName1&gt;:&lt;value1&gt;,&lt;fieldName2&gt;:&lt;value2&gt;,_options:&lt;value&gt;
 </code></pre>
 
 <p>With the following conventions:</p>
@@ -293,24 +303,27 @@
 </ul></li>
 </ul>
 
-<h5 id="returning-a-dedicated-object">Returning a dedicated object</h5>
-<pre class="highlight plaintext"><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&gt;/&lt;collection&gt;/&lt;id&gt;`
+<h5>Returning a dedicated object</h5>
+
+<pre><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&gt;/&lt;collection&gt;/&lt;id&gt;`
 </code></pre>
 
 <p>Will return the object with the corresponding id.</p>
 
 <p>In case the object doesn&rsquo;t exist an empty response will be returned.</p>
-<pre class="highlight json"><code><span class="p">{}</span><span class="w">
-</span></code></pre>
+
+<pre><code>{}
+</code></pre>
 
 <p><strong>Partial Response</strong></p>
 
 <p>Applies according to the definition as described above in the get list of objects.</p>
 
-<h5 id="returning-a-set-of-dedicated-objects">Returning a set of dedicated objects</h5>
+<h5>Returning a set of dedicated objects</h5>
 
 <p>In case you want to return a set of objects use <code>set</code> request parameter and provide the corresponding identifiers as a comma separated list</p>
-<pre class="highlight plaintext"><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&gt;/&lt;collection&gt;?set=&lt;id1&gt;,&lt;id2&gt;,&lt;id3&gt;`
+
+<pre><code>http(s)://&lt;yourDomainName&gt;/&lt;versionId&gt;/&lt;collection&gt;?set=&lt;id1&gt;,&lt;id2&gt;,&lt;id3&gt;`
 </code></pre>
 
 <p>Will return the object with the corresponding id.</p>
@@ -319,65 +332,72 @@
 
 <p>Applies according to the definition as described above in the get list of objects.</p>
 
-<h4 id="http-put">HTTP PUT</h4>
-<pre class="highlight plaintext"><code>`http(s)://&lt;yourDomainName&gt;/&lt;url&gt;/&lt;versionId&gt;/&lt;collection&gt;/&lt;id&gt;` 
+<h4>HTTP PUT</h4>
+
+<pre><code>`http(s)://&lt;yourDomainName&gt;/&lt;url&gt;/&lt;versionId&gt;/&lt;collection&gt;/&lt;id&gt;` 
 </code></pre>
 
 <p>Changes the attributes of the object associated with the corresponding id. As a reply the updated object will be passed back as a JSON record.</p>
 
 <p><a href="/images/Voila_Capture298.png"></a></p>
 
-<h4 id="http-post">HTTP POST</h4>
-<pre class="highlight plaintext"><code>`http(s)://&lt;yourDomainName&gt;/&lt;url&gt;/&lt;versionId&gt;/&lt;collection&gt;/` 
+<h4>HTTP POST</h4>
+
+<pre><code>`http(s)://&lt;yourDomainName&gt;/&lt;url&gt;/&lt;versionId&gt;/&lt;collection&gt;/` 
 </code></pre>
 
 <p>Creates the object which is passed in. As a reply the the created object will be passed back as a JSON record (including the newly created _id will be passed back.) </p>
 
-<h4 id="http-delete">HTTP DELETE</h4>
-<pre class="highlight plaintext"><code>`http(s)://&lt;yourDomainName&gt;/&lt;url&gt;/&lt;versionId&gt;/&lt;collection&gt;/&lt;id&gt;` 
+<h4>HTTP DELETE</h4>
+
+<pre><code>`http(s)://&lt;yourDomainName&gt;/&lt;url&gt;/&lt;versionId&gt;/&lt;collection&gt;/&lt;id&gt;` 
 </code></pre>
 
 <p>Will delete the corresponding object. As a succesful result the status code 200 will be returned.</p>
 
-<h3 id="status/error-handling">Status/Error Handling</h3>
+<h3>Status/Error Handling</h3>
 
-<h4 id="http-status-code-200---ok">HTTP Status Code 200 - OK</h4>
+<h4>HTTP Status Code 200 - OK</h4>
 
 <p>Will be returned for a succesful action (e.g. new object creation)</p>
 
-<h4 id="http-status-code-400---bad-request">HTTP Status Code 400 - Bad Request</h4>
+<h4>HTTP Status Code 400 - Bad Request</h4>
 
 <p>Will be returned in case the request sent by the consumer was not correct (e.g. wrong parameters)</p>
 
-<h4 id="http-status-code-404---not-found">HTTP Status Code 404 - Not Found</h4>
+<h4>HTTP Status Code 404 - Not Found</h4>
 
 <p>The resource was not found. There is nothing on that endpoint URI. 
 The returned JSON is empty. </p>
-<pre class="highlight plaintext"><code>`{}`
+
+<pre><code>`{}`
 </code></pre>
 
-<h4 id="http-status-code-500---int.-server-error">HTTP Status Code 500 - Int. Server Error</h4>
+<h4>HTTP Status Code 500 - Int. Server Error</h4>
 
 <p>Will be returned in case there is a error in the technical server infrastructure.</p>
 
-<h4 id="error-return-structure">Error Return Structure</h4>
+<h4>Error Return Structure</h4>
 
 <p>In case of an error the following JSON Error structure will be given back together with above defined HTTP Status code.</p>
-<pre class="highlight xml"><code>    {
-    "message":"Bad Request Query Parameter provided to the clb-modelloader API for  \"customers\": \"limit\" parameter is number",
-    "errorCode":"0001",
-    "moreInfo":"http:api.cloudburo.com/errors/0001"
+
+<pre><code class="xml">    {
+    &quot;message&quot;:&quot;Bad Request Query Parameter provided to the clb-modelloader API for  \&quot;customers\&quot;: \&quot;limit\&quot; parameter is number&quot;,
+    &quot;errorCode&quot;:&quot;0001&quot;,
+    &quot;moreInfo&quot;:&quot;http:api.cloudburo.com/errors/0001&quot;
     }
 </code></pre>
 
-<h3 id="date/timestamp-handling">Date/Timestamp Handling</h3>
+<h3>Date/Timestamp Handling</h3>
 
 <p>Any date and timestamp returned by the REST API Layer will follow the rule of the ISO8601 standard. It will be of the following format:</p>
-<pre class="highlight plaintext"><code>yyyy-MM-dd'T'HH:mm:ss.SSSXXX
+
+<pre><code>yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSXXX
 </code></pre>
 
 <p>As for example</p>
-<pre class="highlight plaintext"><code>birthdate: "1964-02-21T00:00:00.000+01:00"
+
+<pre><code>birthdate: &quot;1964-02-21T00:00:00.000+01:00&quot;
 </code></pre>
 <hr>
             <p class="text-center">

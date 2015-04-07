@@ -28,10 +28,22 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
+                  <a href="/tags/microservice.html">microservice (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
                   <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
                 </li>
                 <li>
                   <a href="/tags/personaldata.html">personalData (2)</a>
@@ -40,22 +52,10 @@
                   <a href="/tags/api.html">api (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (4)</a>
-                </li>
-                <li>
                   <a href="/tags/modeling.html">modeling (1)</a>
                 </li>
                 <li>
                   <a href="/tags/banking.html">banking (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
                 </li>
               </ul>
             </li>
@@ -145,7 +145,7 @@
           </ul>
           </li>
           </ul>
-          <h2 id="overview">Overview</h2>
+          <h2>Overview</h2>
 
 <p>The Clouburo Modelloader  <code>clb-modelloader</code> is a small utility which is loading moongoose model definition files from a file directory location into a nodejs server instance and automatically creates corresponding REST request handlers for handling the <em>C</em>reate, <em>R</em>ead, <em>U</em>pdate and <em>D</em>elete (<em>CRUD</em>) operations.</p>
 
@@ -157,48 +157,50 @@
 
 <p>The REST API style offered is following the pragmatic (not dogmatic) REST API design guidelines as outlined in the free <a href="http://apigee.com/about/api-best-practices">eBooks</a> by apigee. </p>
 
-<h2 id="source-location">Source Location</h2>
+<h2>Source Location</h2>
 
 <p>Fork me on GitHub: <a href="https://github.com/talfco/clb-modelloader">https://github.com/talfco/clb-modelloader</a></p>
 
-<h2 id="getting-started">Getting Started</h2>
+<h2>Getting Started</h2>
 
-<h3 id="npm">NPM</h3>
+<h3>NPM</h3>
 
 <p>The library is as NPM module available, you have to run:</p>
-<pre class="highlight plaintext"><code>npm install clb-modelloader
+
+<pre><code>npm install clb-modelloader
 </code></pre>
 
-<h3 id="moongoose-business-object-models">Moongoose Business Object Models</h3>
+<h3>Moongoose Business Object Models</h3>
 
 <p>Put all your moongoose business object model (= collection) into a directory from where they will be loaded into the nodejs application server. The model load will accept either coffee files ending in <code>.coffee</code> or direct java script files endin in <code>.js</code>. A server model file will look like the following:</p>
-<pre class="highlight coffeescript"><code>    <span class="nx">BaseModel</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">"clb-modelloader/BaseModel"</span>
 
-    <span class="nx">module</span><span class="p">.</span><span class="na">exports</span> <span class="o">=</span> <span class="k">class</span> <span class="nx">CustomerModel</span> <span class="k">extends</span> <span class="nx">BaseModel</span>
+<pre><code class="coffeescript">    BaseModel = require &quot;clb-modelloader/BaseModel&quot;
 
-    <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="o">-&gt;</span> 
-      <span class="k">super</span> <span class="s">'Customer'</span><span class="p">,</span><span class="s">'customers'</span><span class="p">,</span> 
-        <span class="na">surname</span> <span class="o">:</span> <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
-        <span class="na">name</span> <span class="o">:</span> <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
-        <span class="na">email</span> <span class="o">:</span> <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
-        <span class="na">address</span> <span class="o">:</span> <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
-        <span class="na">plz</span> <span class="o">:</span> <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
-        <span class="na">location</span> <span class="o">:</span> <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
-        <span class="na">telephone</span> <span class="o">:</span> <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
-        <span class="na">mobile</span> <span class="o">:</span> <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
-        <span class="na">birthdate</span> <span class="o">:</span> <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">Date</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="nb">Date</span><span class="p">.</span><span class="na">now</span> <span class="p">}</span>
-        <span class="na">citizenship</span> <span class="o">:</span> <span class="p">{</span> <span class="na">type</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">default</span><span class="o">:</span> <span class="s">''</span> <span class="p">}</span>
-        <span class="nx">props</span>
+    module.exports = class CustomerModel extends BaseModel
 
-    <span class="na">newInstance</span><span class="o">:</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="o">-&gt;</span>
-      <span class="k">return</span> <span class="k">new</span> <span class="nx">CustomerModel</span> <span class="nx">props</span>
+    constructor: (props) -&gt; 
+      super &#39;Customer&#39;,&#39;customers&#39;, 
+        surname : { type: String, default: &#39;&#39; }
+        name : { type: String, default: &#39;&#39; }
+        email : { type: String, default: &#39;&#39; }
+        address : { type: String, default: &#39;&#39; }
+        plz : { type: String, default: &#39;&#39; }
+        location : { type: String, default: &#39;&#39; }
+        telephone : { type: String, default: &#39;&#39; }
+        mobile : { type: String, default: &#39;&#39; }
+        birthdate : { type: Date, default: Date.now }
+        citizenship : { type: String, default: &#39;&#39; }
+        props
+
+    newInstance: (props) -&gt;
+      return new CustomerModel props
 </code></pre>
 
 <p>You are passing to the super constructor the model name, collection name, as well as the schema attributes. In our sample above this will result in a mongodb collection of the name <code>customers</code>.</p>
 
 <p>You would store this model in under the file name <code>customerModel.coffee</code> and place it for example in the directory <code>server_models</code>.</p>
 
-<h4 id="naming-conventions">Naming Conventions</h4>
+<h4>Naming Conventions</h4>
 
 <p>The following naming conventions should be followed:</p>
 
@@ -215,117 +217,123 @@
 </ul></li>
 </ul>
 
-<h3 id="node.js-server-integration">Node.js Server Integration</h3>
+<h3>Node.js Server Integration</h3>
 
 <p>Within the Node.js server code part you will add something like that into the &lsquo;index.js&rsquo; </p>
-<pre class="highlight javascript"><code>     <span class="nx">ModelLoader</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"clb-modelloader/ModelLoader"</span><span class="p">);</span>
-     <span class="c1">// Winston will handle the logging</span>
-     <span class="nx">winston</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"winston"</span><span class="p">);</span>
 
-     <span class="c1">// … Do the app initialization ...</span>
+<pre><code class="javascript">     ModelLoader = require(&quot;clb-modelloader/ModelLoader&quot;);
+     // Winston will handle the logging
+     winston = require(&quot;winston&quot;);
 
-    <span class="c1">// Load Application Modules pass in</span>
-    <span class="c1">// - MongoDB connection string</span>
-    <span class="c1">// - The version number of your API</span>
-    <span class="c1">// - A winston log object</span>
-    <span class="c1">// - A URL where you would provide API error descriptions</span>
-    <span class="nx">modelLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ModelLoader</span><span class="p">(</span><span class="s2">"mongodb://user:password@myinstance.mongolab.com:29897/mydomain"</span><span class="p">,</span><span class="s2">"v1"</span><span class="p">,</span><span class="nx">winston</span><span class="p">,</span><span class="s2">"http//:api.cloudburo.com/errors/"</span><span class="p">);</span>
-    <span class="c1">// Load all .coffee or .js files in the server_models directory </span>
-    <span class="nx">modelLoader</span><span class="p">.</span><span class="nx">autoload</span><span class="p">(</span><span class="nx">nodeserv</span><span class="p">,</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span><span class="s2">"server_models"</span><span class="p">));</span>
+     // … Do the app initialization ...
+
+    // Load Application Modules pass in
+    // - MongoDB connection string
+    // - The version number of your API
+    // - A winston log object
+    // - A URL where you would provide API error descriptions
+    modelLoader = new ModelLoader(&quot;mongodb://user:password@myinstance.mongolab.com:29897/mydomain&quot;,&quot;v1&quot;,winston,&quot;http//:api.cloudburo.com/errors/&quot;);
+    // Load all .coffee or .js files in the server_models directory 
+    modelLoader.autoload(nodeserv,path.join(__dirname,&quot;server_models&quot;));
 </code></pre>
 
-<h2 id="exposed-json-api">Exposed JSON API</h2>
+<h2>Exposed JSON API</h2>
 
 <p>Refer to the <a href="/docs/opensource/jsonapispec">Cloudburo JSON API Specification</a> for details about the data API specification.</p>
 
-<h2 id="frontend-backbone-integration">Frontend Backbone Integration</h2>
+<h2>Frontend Backbone Integration</h2>
 
-<h3 id="backbone-business-object-models">Backbone Business Object Models</h3>
+<h3>Backbone Business Object Models</h3>
 
-<p>Suppose that your are using the <a href="#">Backbone Framework</a> on your client side (browser), so you have to provide a corresponding Backbone model to the above defined Moongoose Business Object Model.</p>
+<p>Suppose that your are using the <a href="">Backbone Framework</a> on your client side (browser), so you have to provide a corresponding Backbone model to the above defined Moongoose Business Object Model.</p>
 
-<h4 id="backbone-model-file">Backbone Model File</h4>
-<pre class="highlight coffeescript"><code>    <span class="nx">Backbone</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">"vendor/backbone"</span>
-    <span class="nx">module</span><span class="p">.</span><span class="na">exports</span> <span class="o">=</span> <span class="k">class</span> <span class="nx">Customer</span>  <span class="k">extends</span> <span class="nx">Backbone</span><span class="p">.</span><span class="na">Model</span>
+<h4>Backbone Model File</h4>
 
-    <span class="na">idAttribute</span><span class="o">:</span> <span class="s">"_id"</span> 
+<pre><code class="coffeescript">    Backbone = require &quot;vendor/backbone&quot;
+    module.exports = class Customer  extends Backbone.Model
 
-    <span class="na">defaults</span><span class="o">:</span> <span class="o">-&gt;</span>
-      <span class="na">surname</span><span class="o">:</span> <span class="s">""</span>
-      <span class="na">name</span><span class="o">:</span> <span class="s">""</span>
-      <span class="na">email</span><span class="o">:</span> <span class="s">""</span>
-      <span class="na">address</span><span class="o">:</span> <span class="s">""</span>
-      <span class="na">plz</span><span class="o">:</span> <span class="s">""</span>
-      <span class="na">location</span><span class="o">:</span> <span class="s">""</span>
-      <span class="na">telephone</span><span class="o">:</span> <span class="s">""</span>
-      <span class="na">mobile</span><span class="o">:</span> <span class="s">""</span>
-      <span class="na">birthdate</span><span class="o">:</span> <span class="no">null</span>
-      <span class="na">citizenship</span><span class="o">:</span> <span class="s">""</span>
+    idAttribute: &quot;_id&quot; 
+
+    defaults: -&gt;
+      surname: &quot;&quot;
+      name: &quot;&quot;
+      email: &quot;&quot;
+      address: &quot;&quot;
+      plz: &quot;&quot;
+      location: &quot;&quot;
+      telephone: &quot;&quot;
+      mobile: &quot;&quot;
+      birthdate: null
+      citizenship: &quot;&quot;
 </code></pre>
 
 <p>That&rsquo;s the whole Backbone model for our <code>customer</code>. The corresponding collection is even simpler. </p>
 
-<h4 id="backbone-collection-file">Backbone Collection File</h4>
-<pre class="highlight coffeescript"><code>    <span class="nx">Backbone</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">"vendor/backbone"</span>
-    <span class="nx">Customer</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">"./customer"</span>
+<h4>Backbone Collection File</h4>
 
-    <span class="nx">module</span><span class="p">.</span><span class="na">exports</span> <span class="o">=</span> <span class="k">class</span> <span class="nx">Customers</span> <span class="k">extends</span> <span class="nx">Backbone</span><span class="p">.</span><span class="na">Collection</span>
-      <span class="na">model</span><span class="o">:</span> <span class="nx">Customer</span> 
-      <span class="na">url</span><span class="o">:</span><span class="s">'v1/customers'</span>
+<pre><code class="coffeescript">    Backbone = require &quot;vendor/backbone&quot;
+    Customer = require &quot;./customer&quot;
+
+    module.exports = class Customers extends Backbone.Collection
+      model: Customer 
+      url:&#39;v1/customers&#39;
 </code></pre>
 
 <p>Mission completed, moongoose model and corresponding backbone files defined.</p>
 
-<h3 id="backbone-view-integration">Backbone View Integration</h3>
+<h3>Backbone View Integration</h3>
 
 <p>As soon as the user will do a GUI action (e.g. saving a modified record entry, deleting one or creating a new one) you will have to manipulate the underlying Backbone model. In this example there would be a <code>saveToModel</code> function to persists changes in a record. That would look like</p>
-<pre class="highlight coffeescript"><code>    <span class="nb">window</span><span class="p">.</span><span class="na">Backbone</span> <span class="o">=</span>  <span class="nx">require</span> <span class="s">"vendor/backbone"</span>
 
-    <span class="nx">module</span><span class="p">.</span><span class="na">exports</span> <span class="o">=</span> <span class="k">class</span> <span class="nx">RootView</span> <span class="k">extends</span> <span class="nx">Backbone</span><span class="p">.</span><span class="na">View</span>
-    <span class="c1"># Some code …
-</span>
-    <span class="na">getCurrentId</span><span class="o">:</span> <span class="o">-&gt;</span>
-      <span class="k">if</span> <span class="vi">@</span><span class="na">model</span><span class="p">.</span><span class="na">has</span> <span class="s">"_id"</span>
-        <span class="vi">@</span><span class="na">model</span><span class="p">.</span><span class="na">get</span> <span class="s">"_id"</span> 
-      <span class="k">else</span> 
-        <span class="k">return</span> <span class="s">"new"</span> 
+<pre><code class="coffeescript">    window.Backbone =  require &quot;vendor/backbone&quot;
 
-    <span class="c1"># Suppose that saveToModel method is called when a user presses a save button
-</span>    <span class="na">saveToModel</span><span class="o">:</span> <span class="o">-&gt;</span> 
-      <span class="c1"># This will part will be called in case a new record is added
-</span>      <span class="k">if</span> <span class="vi">@</span><span class="na">getCurrentId</span><span class="p">()</span> <span class="o">==</span> <span class="s">"new"</span>
-        <span class="vi">@</span><span class="na">collection</span><span class="p">.</span><span class="na">add</span> <span class="vi">@</span><span class="na">model</span><span class="p">,</span> <span class="na">silent</span><span class="o">:</span><span class="no">true</span>
-        <span class="vi">@</span><span class="na">collection</span><span class="p">.</span><span class="na">trigger</span><span class="p">(</span><span class="s">"reset"</span><span class="p">,</span> <span class="p">{})</span>
+    module.exports = class RootView extends Backbone.View
+    # Some code …
 
-      <span class="vi">@</span><span class="na">model</span><span class="p">.</span><span class="na">save</span><span class="p">({},</span> 
-        <span class="na">success</span><span class="o">:</span> <span class="p">(</span><span class="nx">collection</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="o">=&gt;</span> 
-          <span class="c1"># Some code here, the transfer to the backend moongoose was done transparently 
-</span></code></pre>
+    getCurrentId: -&gt;
+      if @model.has &quot;_id&quot;
+        @model.get &quot;_id&quot; 
+      else 
+        return &quot;new&quot; 
+
+    # Suppose that saveToModel method is called when a user presses a save button
+    saveToModel: -&gt; 
+      # This will part will be called in case a new record is added
+      if @getCurrentId() == &quot;new&quot;
+        @collection.add @model, silent:true
+        @collection.trigger(&quot;reset&quot;, {})
+
+      @model.save({}, 
+        success: (collection, response) =&gt; 
+          # Some code here, the transfer to the backend moongoose was done transparently 
+</code></pre>
 
 <p>In the delete case the code would look like</p>
-<pre class="highlight coffeescript"><code>    <span class="na">deleteRecord</span><span class="o">:</span> <span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="o">=&gt;</span>
-      <span class="vi">@</span><span class="na">close</span><span class="p">()</span>
-      <span class="vi">@</span><span class="na">model</span><span class="p">.</span><span class="na">destroy</span> 
-        <span class="na">success</span><span class="o">:</span> <span class="p">(</span><span class="nx">model</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="o">=&gt;</span>
-        <span class="c1"># Show some completion dialog
-</span></code></pre>
+
+<pre><code class="coffeescript">    deleteRecord: (id) =&gt;
+      @close()
+      @model.destroy 
+        success: (model, response) =&gt;
+        # Show some completion dialog
+</code></pre>
 
 <p>So the data traffic triggered by the Backbone model manipulation will be consumed by our moongoose server side models and executed against the mongodb persistency layer. </p>
 
 <p>This glue code is implemented in the <code>BaseModel</code> class</p>
-<pre class="highlight coffeescript"><code>    <span class="nx">mongoose</span> <span class="o">=</span> <span class="nx">require</span> <span class="s">"mongoose"</span>
 
-    <span class="nx">module</span><span class="p">.</span><span class="na">exports</span> <span class="o">=</span> <span class="k">class</span> <span class="nx">BaseModel</span>
+<pre><code class="coffeescript">    mongoose = require &quot;mongoose&quot;
 
-    <span class="na">constructor</span><span class="o">:</span> <span class="p">(</span><span class="vi">@</span><span class="na">modelName</span><span class="p">,</span><span class="vi">@</span><span class="na">collection</span><span class="p">,</span><span class="vi">@</span><span class="na">schema</span><span class="p">,</span> <span class="nx">props</span><span class="p">)</span> <span class="o">-&gt;</span>
-      <span class="vi">@</span><span class="na">dbModel</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="na">model</span><span class="p">(</span><span class="vi">@</span><span class="na">modelName</span><span class="p">,</span> <span class="vi">@</span><span class="na">schema</span><span class="p">,</span><span class="vi">@</span><span class="na">collection</span><span class="p">)</span>
-      <span class="vi">@</span><span class="na">model</span> <span class="o">=</span> <span class="k">new</span> <span class="vi">@</span><span class="na">dbModel</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span>
-      <span class="vi">@</span><span class="na">schema</span><span class="p">.</span><span class="na">virtual</span><span class="p">(</span><span class="s">'id'</span><span class="p">).</span><span class="na">get</span> <span class="o">-&gt;</span> <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">_id</span>
+    module.exports = class BaseModel
 
-    <span class="vi">@</span><span class="na">schema</span><span class="p">.</span><span class="na">methods</span><span class="p">.</span><span class="na">toBackbone</span> <span class="o">=</span> <span class="o">-&gt;</span>
-      <span class="nx">obj</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">toObject</span><span class="p">();</span>
-      <span class="nx">obj</span><span class="p">.</span><span class="na">id</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">.</span><span class="na">_id</span><span class="p">;</span>
-      <span class="k">return</span> <span class="nx">obj</span><span class="p">;</span>
+    constructor: (@modelName,@collection,@schema, props) -&gt;
+      @dbModel = mongoose.model(@modelName, @schema,@collection)
+      @model = new @dbModel(props)
+      @schema.virtual(&#39;id&#39;).get -&gt; return this._id
+
+    @schema.methods.toBackbone = -&gt;
+      obj = this.toObject();
+      obj.id = obj._id;
+      return obj;
 </code></pre>
 <hr>
             <p class="text-center">

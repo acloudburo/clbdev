@@ -28,10 +28,22 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
+                  <a href="/tags/microservice.html">microservice (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
                   <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
                 </li>
                 <li>
                   <a href="/tags/personaldata.html">personalData (2)</a>
@@ -40,22 +52,10 @@
                   <a href="/tags/api.html">api (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (4)</a>
-                </li>
-                <li>
                   <a href="/tags/modeling.html">modeling (1)</a>
                 </li>
                 <li>
                   <a href="/tags/banking.html">banking (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
                 </li>
               </ul>
             </li>
@@ -107,7 +107,7 @@
           <a href="#maven-repository">Maven Repository</a>
           </li>
           </ul>
-          <h2 id="overview">Overview</h2>
+          <h2>Overview</h2>
 
 <p>The Cloudburo <code>clb-test</code> provides a simple framework to load Test Data from a Excel CSV into your persistens storage layer. It&rsquo;s fully managed by Maven</p>
 
@@ -129,7 +129,8 @@
 </ul>
 
 <p>When executing</p>
-<pre class="highlight plaintext"><code>  mvn test
+
+<pre><code>  mvn test
 </code></pre>
 
 <p>The Test driver will load the testng xml configuration file from the <code>testconfig</code> and loads the <code>testdata</code> into the configured persistency backend (either Google App Engine or Mongo DB) by using the Java test data objects defined in <code>/test/com/cloudburo/test</code>.</p>
@@ -140,14 +141,15 @@
 
 <p>It can be easily extended to your needs. </p>
 
-<h2 id="source-code-location">Source Code Location</h2>
+<h2>Source Code Location</h2>
 
 <p>Fork me on GitHub: <a href="https://github.com/talfco/clb-test">https://github.com/talfco/clb-test</a></p>
 
-<h2 id="maven-repository">Maven Repository</h2>
+<h2>Maven Repository</h2>
 
 <p>Add the following entries to your POM:</p>
-<pre class="highlight plaintext"><code>&lt;repositories&gt;
+
+<pre><code>&lt;repositories&gt;
     &lt;repository&gt;  
         &lt;id&gt;clb-mvnrepo-snapshots&lt;/id&gt;  
         &lt;name&gt;Cloudburo Maven Repo Snapshot on Github&lt;/name&gt;  
@@ -166,7 +168,8 @@
 </code></pre>
 
 <p>And the following dependency (adjust the version number if necessary)</p>
-<pre class="highlight plaintext"><code>&lt;dependency&gt;
+
+<pre><code>&lt;dependency&gt;
     &lt;groupId&gt;com.cloudburo&lt;/groupId&gt;
       &lt;artifactId&gt;clb-test&lt;/artifactId&gt;
     &lt;version&gt;1.0.0&lt;/version&gt;

@@ -28,10 +28,22 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
+                  <a href="/tags/microservice.html">microservice (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
                   <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
                 </li>
                 <li>
                   <a href="/tags/personaldata.html">personalData (2)</a>
@@ -40,22 +52,10 @@
                   <a href="/tags/api.html">api (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (4)</a>
-                </li>
-                <li>
                   <a href="/tags/modeling.html">modeling (1)</a>
                 </li>
                 <li>
                   <a href="/tags/banking.html">banking (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
                 </li>
               </ul>
             </li>
@@ -152,7 +152,7 @@
 
 <p>The goal is to use a standard template offered by Amazon via EC2(refer to <a href="http://cloud-images.ubuntu.com/locator/ec2/">Amazon AMI Locator</a> and have a highly automated deploying process on top of that for installing all required software, as well as the Cloudburo platform and apps.</p>
 
-<h2 id="salt-configuration-mgmt-system">Salt Configuration Mgmt System</h2>
+<h2>Salt Configuration Mgmt System</h2>
 
 <p>For the automation we will take <a href="https://salt.readthedocs.org">Salt</a>. Salt is a</p>
 
@@ -163,34 +163,35 @@
 
 <p>It was developed in order to bring the best solutions found in the world of remote execution together and make them better, faster, and more malleable. Salt accomplishes this through its ability to handle large loads of information, and not just dozens but hundreds and even thousands of individual servers quickly through a simple and manageable interface.</p>
 
-<h2 id="setup-test-deployment-env">Setup Test Deployment Env</h2>
+<h2>Setup Test Deployment Env</h2>
 
 <p>The following setup is done using the Oracle VM VirtualBox Manger on a Max OSX system.</p>
 
-<h3 id="task:-create-ubuntu-guest-system">Task: Create Ubuntu Guest System</h3>
+<h3>Task: Create Ubuntu Guest System</h3>
 
 <p>This is straighforward, download from the Ubuntu Homepage a up-to-date version (ISO format) a Ubuntu Server, e.g. <code>ubuntu-12.10-server-amd64.iso</code>. Create a new guest system in thea  Virtualbox (wizard driven) and do a default installation of the Ubuntu Server (incluede the openssh package as a minimum).</p>
 
 <p>After having completed these steps you have your Ubuntu guest system running which is connected to the Internet only (supposing that you did a default installation), this means the host system (Mac) doesn&rsquo;t know and can&rsquo;t access the guest and vice versa. In order to enable that you have to configure a host to guest network interface.</p>
 
-<h3 id="task:-add-additional-host-only-network">Task: Add Additional Host-only Network</h3>
+<h3>Task: Add Additional Host-only Network</h3>
 
 <p>Go to top menu <em>Virtual Box -&gt; Preferences</em> select the tab <em>Network</em> and add a new <em>Host-only Network</em></p>
 
-<p><img alt="class names" src="../../images/Voila_Capture350.png" /> &ldquo;Screenshot Host-only Network&rdquo; %}</p>
+<p><img src="/images/Voila_Capture350.png" alt="class names"> &ldquo;Screenshot Host-only Network&rdquo; %}</p>
 
-<h3 id="task:-configure-host-to-guest-network-interfaces">Task: Configure host to guest network interfaces</h3>
+<h3>Task: Configure host to guest network interfaces</h3>
 
 <p>Open Virtual Box Settings Menu and select Network tab. Add a second network adapter (Host-only Adapter). Refer to screenshot (in your setup that would <em>Adapter 2</em>, for the <em>Advanced</em>  part take the default). Select the corresponding Host-only Adapter.</p>
 
-<p><img alt="Screenshot Network Setting" src="../../images/Voila_Capture321.png" /></p>
+<p><img src="/images/Voila_Capture321.png" alt="Screenshot Network Setting"></p>
 
 <p>For our example below we have it configured to an adapter called <em>vboxnet1</em>. </p>
 
-<h3 id="task:-enable-ssh-connection-from-host-to-guest">Task: Enable ssh connection from host to guest</h3>
+<h3>Task: Enable ssh connection from host to guest</h3>
 
 <p>My host is a OSX based iMac machine. Having now setup the additional network adapters I could check it&rsquo;s configuration on the host, by running </p>
-<pre class="highlight plaintext"><code>iMac:~ Felix$ ifconfig vboxnet1
+
+<pre><code>iMac:~ Felix$ ifconfig vboxnet1
 vboxnet1: flags=8843&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; mtu 1500
 ether 0a:00:27:00:00:01 
 inet 192.168.57.1 netmask 0xffffff00 broadcast 192.168.57.255
@@ -201,11 +202,13 @@ inet 192.168.57.1 netmask 0xffffff00 broadcast 192.168.57.255
 <p>Obviously this Host-only Adapter <code>vboxnet1</code> cannot be used as access point to the Ubuntu guest system. You have to configure another adapter in the Ubuntu Guest system which is in the <strong>IP range</strong> of the <code>vboxnet1</code>. e.g. you can define for it the IP address <code>192.168.57.10</code>.</p>
 
 <p>Login to the Ubuntu guest system and open the following interface configuration file</p>
-<pre class="highlight plaintext"><code>felix@ubuntumaster:~$ sudo vi /etc/network/interfaces
+
+<pre><code>felix@ubuntumaster:~$ sudo vi /etc/network/interfaces
 </code></pre>
 
 <p>The file will contain something like this</p>
-<pre class="highlight plaintext"><code># This file describes the network interfaces available on your system
+
+<pre><code># This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
 # The loopback network interface
 auto lo
@@ -216,32 +219,37 @@ iface eth0 inet dhcp
 </code></pre>
 
 <p>Now add a new <code>eth1</code>interface definition to the end of the file and save id</p>
-<pre class="highlight plaintext"><code>auto eth1
+
+<pre><code>auto eth1
 iface eth1 inet static
 address 192.168.57.10
 netmask 255.255.255.0
 </code></pre>
 
 <p>Having done that bring up the new interface.</p>
-<pre class="highlight plaintext"><code>felix@ubuntumaster:~$ sudo ifup eth1
+
+<pre><code>felix@ubuntumaster:~$ sudo ifup eth1
 </code></pre>
 
 <p>Now you can directly login from the Mac machine via ssh to the Ubuntu guest system</p>
-<pre class="highlight plaintext"><code>iMac:~ Felix$ ssh felix@192.168.57.10
-felix@192.168.57.10's password: 
+
+<pre><code>iMac:~ Felix$ ssh felix@192.168.57.10
+felix@192.168.57.10&#39;s password: 
 Welcome to Ubuntu 12.10 (GNU/Linux 3.5.0-17-generic x86_64)
 Last login: Sun Feb  3 01:31:12 2013 from 192.168.57.1
 felix@ubuntumaster:~$
 </code></pre>
 
-<h3 id="remark-for-a-redhat-fedora-system">Remark for a RedHat Fedora system</h3>
+<h3>Remark for a RedHat Fedora system</h3>
 
 <p>I did a same setup with a RedHat Enterprise Linux system, where the interfaces are defined a little bit differently. So go to the following directory</p>
-<pre class="highlight plaintext"><code>cd /etc/sysconfig/network-scripts/
+
+<pre><code>cd /etc/sysconfig/network-scripts/
 </code></pre>
 
 <p>Add a new file <em>ifcfg-eth1</em> and put the following content (adjust your ip address to the range of your <em>vboxnet<id></em> range)</p>
-<pre class="highlight plaintext"><code>DEVICE=eth1
+
+<pre><code>DEVICE=eth1
 TYPE=Ethernet
 ONBOOT=Yes
 NM_CONTROLLED=yes
@@ -251,12 +259,13 @@ NETMASK=255.255.255.0
 </code></pre>
 
 <p>Run the following command</p>
-<pre class="highlight plaintext"><code>service network restart
+
+<pre><code>service network restart
 </code></pre>
 
 <p>That&rsquo;s it you should now have a <em>ssh</em> connection to your RedHat VM.</p>
 
-<h2 id="remark-internal-network-setup">Remark Internal Network setup</h2>
+<h2>Remark Internal Network setup</h2>
 
 <p>Similar steps necessary as above described:</p>
 
@@ -266,7 +275,8 @@ NETMASK=255.255.255.0
 <li>Write down each <em>MAC Address</em> shown in the Network Tab window (below Advanced section)</li>
 <li>Configure the network adapter in the VM&rsquo;s, for example for RedHat Fedora it would look like:</li>
 </ul>
-<pre class="highlight plaintext"><code>[felix@localhost network-scripts]$ more ifcfg-eth2
+
+<pre><code>[felix@localhost network-scripts]$ more ifcfg-eth2
 DEVICE=eth2
 HWADDR=08:00:27:FF:80:FD
 TYPE=Ethernet

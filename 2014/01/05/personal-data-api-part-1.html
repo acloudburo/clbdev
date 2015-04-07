@@ -28,10 +28,22 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
+                  <a href="/tags/microservice.html">microservice (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
                   <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
                 </li>
                 <li>
                   <a href="/tags/personaldata.html">personalData (2)</a>
@@ -40,22 +52,10 @@
                   <a href="/tags/api.html">api (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (4)</a>
-                </li>
-                <li>
                   <a href="/tags/modeling.html">modeling (1)</a>
                 </li>
                 <li>
                   <a href="/tags/banking.html">banking (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
                 </li>
               </ul>
             </li>
@@ -111,9 +111,9 @@
               
               <p>The findings are based on my work as a responsible architect for a major program within a large Swiss Bank, where we introduced a private data architecture to mitigate and reduce the operational risk of data leakage which could result in a major reputational damage.</p>
               
-              <h1>Why Personal Data matters</h1>
+              <h1 id="why-personal-data-matters">Why Personal Data matters</h1>
               
-              <p>It&#39;s important to realize that a careful and correct  management and provisioning of Personal Data provides huge opportunities.</p>
+              <p>It&rsquo;s important to realize that a careful and correct  management and provisioning of Personal Data provides huge opportunities.</p>
               
               <p>As the first-phase World Economic Forum report on personal data elaborated, personal data represents an emerging asset class, potentially every bit as valuable as other assets such as traded goods, gold or oil.</p>
               
@@ -128,7 +128,7 @@
               <li> There is also the chance to build the foundation for a personal data management solution which would allow a financial institution to exploit new personal data driven business models with a potential high value proposition.</li>
               </ul>
               
-              <h1>Definition of Personal Data</h1>
+              <h1 id="definition-of-personal-data">Definition of Personal Data</h1>
               
               <p>For a start we define the term <strong>Personal Data</strong>, by using the defintion of the Liberty Guide of Human Rights</p>
               
@@ -138,21 +138,21 @@
               
               <p>(via <a href="http://www.yourrights.org.uk/yourrights/privacy/data-protection/definition-of-personal-data.shtml">Your rights - Definition of Personal Data</a>)</p>
               
-              <p>This general definition is a base for the various country specific data protection acts (DPA) which can and will vary in the interpretation of the term and it&#39;s derived local laws and regulations.</p>
+              <p>This general definition is a base for the various country specific data protection acts (DPA) which can and will vary in the interpretation of the term and it&rsquo;s derived local laws and regulations.</p>
               
               <p>As an example refer to  the DPA of Switzerland which attaches a great deal of importance to protecting personal data, defines the Term, as follows</p>
               
               <blockquote>
-              <p>The Swiss Federal Data Protection Act (DPA) defines personal data as &quot;all information relating to an identified or identifiable person&quot;.</p>
+              <p>The Swiss Federal Data Protection Act (DPA) defines personal data as &ldquo;all information relating to an identified or identifiable person&rdquo;.</p>
               
-              <p>&quot;Person&quot; refers not only to a natural person (individual), but also to a legal entity. The legal form of the entity is not relevant. Accordingly, personal data under the DPA can mean data relating to individuals as well as to partnerships, corporations, associations, cooperatives or any other legal entity. The extension of protection for data relating to legal entities can create difficulties in the context of cross-border data transfers because few other countries provide adequate protection for data relating to legal entities.</p>
+              <p>&ldquo;Person&rdquo; refers not only to a natural person (individual), but also to a legal entity. The legal form of the entity is not relevant. Accordingly, personal data under the DPA can mean data relating to individuals as well as to partnerships, corporations, associations, cooperatives or any other legal entity. The extension of protection for data relating to legal entities can create difficulties in the context of cross-border data transfers because few other countries provide adequate protection for data relating to legal entities.</p>
               
-              <p>A person is &quot;identified&quot; or &quot;identifiable&quot; if the information permits the identification of the person concerned. A person can be identifiable even if the data are stored in an anonymous form, e.g., under a code number, but separate information allows a link to be made between the code and the identity of the person. A person will be deemed not to be identifiable only if the information is anonymous and no link can be established between the anonymous information and the person concerned.</p>
+              <p>A person is &ldquo;identified&rdquo; or &ldquo;identifiable&rdquo; if the information permits the identification of the person concerned. A person can be identifiable even if the data are stored in an anonymous form, e.g., under a code number, but separate information allows a link to be made between the code and the identity of the person. A person will be deemed not to be identifiable only if the information is anonymous and no link can be established between the anonymous information and the person concerned.</p>
               </blockquote>
               
               <p>(via <a href="http://www.dataprotection.ch/en/personal-data.asp">dataprotection.ch - Walder Wyss Ltd.</a>)</p>
               
-              <p>So the term individual (representing a natural person) is expanded to legal entities as well in this definition. Important point in this context is the topic about cross border data transfers due to the fact that other countries may have more relaxed DPA&#39;s concerning legal entities. This fact has to be taken in consideration as well when defining such a data API.</p>
+              <p>So the term individual (representing a natural person) is expanded to legal entities as well in this definition. Important point in this context is the topic about cross border data transfers due to the fact that other countries may have more relaxed DPA&rsquo;s concerning legal entities. This fact has to be taken in consideration as well when defining such a data API.</p>
               
               <p>Two other terms are important in this context the first one, is <strong>Sensitive Personal Data</strong>, which is defined in the Swiss DPA as follows</p>
               
@@ -163,19 +163,19 @@
               <li>criminal or administrative proceedings and penalties.</li>
               </ul>
               
-              <p>The other one  <strong>Financial Personal Data</strong> which may or may not be part of Country&#39;s DPA. For Switzerland the following applies</p>
+              <p>The other one  <strong>Financial Personal Data</strong> which may or may not be part of Country&rsquo;s DPA. For Switzerland the following applies</p>
               
               <blockquote>
-              <p>Financial data are not sensitive personal data under the DPA. Switzerland&#39;s banking secrecy law, however, protects the confidentiality of the existence of the banking relationship, the identity of the bank&#39;s customer and any other information related to the banking relationship.</p>
+              <p>Financial data are not sensitive personal data under the DPA. Switzerland&rsquo;s banking secrecy law, however, protects the confidentiality of the existence of the banking relationship, the identity of the bank&rsquo;s customer and any other information related to the banking relationship.</p>
               </blockquote>
               
               <p>(via <a href="http://www.dataprotection.ch/en/personal-data.asp">dataprotection.ch - Walder Wyss Ltd.</a>)</p>
               
               <p>In our definition (aiming at Financial Services) we will include this kind of Personal Data as well.</p>
               
-              <p>That&#39;s it from a definition point of view concerning Personal Data, let&#39;s look at two additional highly important concepts which are closely related.</p>
+              <p>That&rsquo;s it from a definition point of view concerning Personal Data, let&rsquo;s look at two additional highly important concepts which are closely related.</p>
               
-              <h1>Anonymous and Anonymized Data</h1>
+              <h1 id="anonymous-and-anonymized-data">Anonymous and Anonymized Data</h1>
               
               <p>When we store Personal Data we normally will also include additional <strong>Anonymous Data</strong> of the person which are relevant for our processing systems but which never can be linked back to Personal Data, which would break secrecy, e.g. we want to store </p>
               
@@ -197,12 +197,12 @@
               
               <p>(via <a href="http://www.pohly.com/terms.html">Managed Care and Healthcare Terminology</a>)</p>
               
-              <p>It&#39;s worth to mention that Anonymous Data is often defined as data without any identifier, meaning there is now way back to the Personal Data (e.g. doing a survey with questionnaires not noting down any personal data). In our discussion the Anonymous Data will have a link back to the personal data via an <strong>Internal Processing Identifier</strong> (IPID). This identifer can be used to resolve back to the personal data only by dedicated master systems which are runnig under the jurisidicational legal and regulatory obligations and are protected by the highest security standards in order to ensure privacy. This holds true for the Anonymized Data as well, there is a link back but third party or investigator only have a key which isn&#39;t resolveable in any circumstance. </p>
+              <p>It&rsquo;s worth to mention that Anonymous Data is often defined as data without any identifier, meaning there is now way back to the Personal Data (e.g. doing a survey with questionnaires not noting down any personal data). In our discussion the Anonymous Data will have a link back to the personal data via an <strong>Internal Processing Identifier</strong> (IPID). This identifer can be used to resolve back to the personal data only by dedicated master systems which are runnig under the jurisidicational legal and regulatory obligations and are protected by the highest security standards in order to ensure privacy. This holds true for the Anonymized Data as well, there is a link back but third party or investigator only have a key which isn&rsquo;t resolveable in any circumstance. </p>
               
-              <h1>The Personal Data Halo</h1>
+              <h1 id="the-personal-data-halo">The Personal Data Halo</h1>
               
-              <p>Inspired by the presentation of Sam Ramji from apigee <a href="https://blog.apigee.com/detail/api_strategy_talk_web_2.0/">Amundsen&#39;s Dogs, Information Halos and APIs: The epic story of your API Strategy</a> I will call the bundling of this various concepts into set of API as the <strong>Personal Data Halo</strong>.
-              <img alt="Personal Data Halo" src="../../../images/Voila_Capture340.png" /></p>
+              <p>Inspired by the presentation of Sam Ramji from apigee <a href="https://blog.apigee.com/detail/api_strategy_talk_web_2.0/">Amundsen&rsquo;s Dogs, Information Halos and APIs: The epic story of your API Strategy</a> I will call the bundling of this various concepts into set of API as the <strong>Personal Data Halo</strong>.
+              <img src="/images/Voila_Capture340.png" alt="Personal Data Halo"></p>
               
             </div>
           </div>
@@ -257,10 +257,22 @@
             </h4>
             <ul class="list-unstyled">
               <li>
+                <a href="/tags/microservice.html">microservice</a> (5)
+              </li>
+              <li>
+                <a href="/tags/architecture.html">architecture</a> (4)
+              </li>
+              <li>
+                <a href="/tags/inspiration.html">inspiration</a> (2)
+              </li>
+              <li>
                 <a href="/tags/futurework.html">futureWork</a> (5)
               </li>
               <li>
                 <a href="/tags/shift.html">shift</a> (4)
+              </li>
+              <li>
+                <a href="/tags/startup.html">startup</a> (1)
               </li>
               <li>
                 <a href="/tags/personaldata.html">personalData</a> (2)
@@ -269,22 +281,10 @@
                 <a href="/tags/api.html">api</a> (2)
               </li>
               <li>
-                <a href="/tags/startup.html">startup</a> (1)
-              </li>
-              <li>
-                <a href="/tags/microservice.html">microservice</a> (5)
-              </li>
-              <li>
-                <a href="/tags/architecture.html">architecture</a> (4)
-              </li>
-              <li>
                 <a href="/tags/modeling.html">modeling</a> (1)
               </li>
               <li>
                 <a href="/tags/banking.html">banking</a> (1)
-              </li>
-              <li>
-                <a href="/tags/inspiration.html">inspiration</a> (2)
               </li>
             </ul>
           </div>

@@ -14,31 +14,13 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html</id>
     <published>2015-04-02T02:01:39Z</published>
-    <updated>2015-04-02T16:41:14+00:00</updated>
+    <updated>2015-04-07T21:25:54+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt; 
-     &lt;br&gt; This is a very interesting article&amp;nbsp;by 
-     &lt;a href="http://www.infoq.com/author/Jan-Stenberg" rel="nofollow"&gt;Jan Stenberg&lt;/a&gt;, which shows how a Service and Microservice are interrelated.&amp;nbsp; 
-     &lt;br&gt; He is building services around business capabilities,&amp;nbsp;&amp;nbsp;a strategy which we are following within UBS&amp;nbsp;AG as well in order to organize the interfaces on the large-scale business domain landscape. The importance of the Business Capabilities emerged in the recent year in the Business Architecture space&amp;nbsp;and is helping us a lot in&amp;nbsp;discussion with the business and their strategic planning. 
-     &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
-     &lt;i&gt;A service is a logical construct owning a business capability and made up of internal autonomous components or microservices that together fulfil all responsibilities of the service&lt;/i&gt; 
-     &lt;br&gt; The article exploits some work in context of technical authority and shows four rules for defining a service 
-     &lt;ul&gt; 
-      &lt;li&gt;&lt;i&gt;Is the technical authority for a given business capability.&lt;/i&gt;&lt;/li&gt; 
-      &lt;li&gt;&lt;i&gt;Is the owner of all the data and business rules that support this business capability wherever it is needed.&lt;/i&gt;&lt;/li&gt; 
-      &lt;li&gt;&lt;i&gt;Forms a single source of truth for that capability.&lt;/i&gt;&lt;/li&gt; 
-      &lt;li&gt;&lt;i&gt;Ensures we can maintain autonomy and encapsulation.&lt;/i&gt;&lt;/li&gt; 
-     &lt;/ul&gt; Some findings which we also apply in our day2day integration architecture work. The full article is worth a read and can be found here: 
-     &lt;br&gt; 
-     &lt;br&gt;&lt;br&gt;
-    &lt;/body&gt;
-    &lt;a href="http://www.infoq.com/news/2015/03/microservices-logical-services?utm_campaign=infoq_content&amp;amp;amp;utm_source=infoq&amp;amp;amp;utm_medium=feed&amp;amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
+  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/
+" /&gt;
 &lt;/div&gt;</content>
   </entry>
   <entry>
@@ -46,49 +28,27 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-gilt.html"/>
     <id>https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-gilt.html</id>
     <published>2015-03-28T09:06:18Z</published>
-    <updated>2015-04-02T15:47:14+00:00</updated>
+    <updated>2015-04-07T21:25:54+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt; 
-     &lt;a href="http://www.yonigoldberg.com/" rel="nofollow"&gt;Yoni Goldberg&lt;/a&gt;&amp;nbsp;explains in a presentation at the&amp;nbsp; 
-     &lt;a href="http://qconlondon.com/" rel="nofollow"&gt;QCon London&lt;/a&gt; conference&amp;nbsp; the challenges they encountered moving to a micro-services architecture. 
-     &lt;br&gt; 
-     &lt;i&gt;After living with micro services for three years at Gilt we can see advantages in team ownership, boundaries defined by APIs and complex problems broken down into small ones. Challenges still exists in tooling, integration environments and monitoring&lt;/i&gt; 
-     &lt;br&gt; The article&amp;nbsp; explains how they moved from Ruby on Rails, over to the JVM with macro- and micro services, which solved 99% of their scaling&amp;nbsp;but left some of the problems developers experienced with the new services being semi-monolithic and lacking&amp;nbsp;clear ownership of code. The tackled the problem by increasing the number of micro services. 
-     &lt;br&gt; Go on read the full article&amp;nbsp;on the below link.&lt;br&gt;
-    &lt;/body&gt;
-    &lt;a href="http://www.infoq.com/news/2015/03/microservices-architecture-gilt?utm_campaign=infoq_content&amp;amp;amp;utm_source=infoq&amp;amp;amp;utm_medium=feed&amp;amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
+  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/
+" /&gt;
 &lt;/div&gt;</content>
   </entry>
   <entry>
     <title>Uber Unveils its Realtime Market Platform</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html"/>
     <id>https://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html</id>
-    <published>2015-03-16T07:36:00Z</published>
-    <updated>2015-03-28T23:04:18+00:00</updated>
+    <published>2015-03-16T06:36:00Z</published>
+    <updated>2015-04-07T21:25:53+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt;
-      Interesting article by Matt Ranney, Chief Systems Architect at Uber which gives an overview of their dispatch system for matching drivers&amp;nbsp;and riders. 
-     &lt;br&gt; He outlines the architectural principles that underpin the implementation, which gives an view how they approached the &amp;nbsp;problem. You can find the article in the link below. 
-     &lt;br&gt; Very interesting approach to data center failure: 
-     &lt;br&gt; 
-     &lt;br&gt; 
-     &lt;i&gt;&amp;quot;Uber&amp;#39;s approach to data center failure is ingenious. No data is replicated across data centers, as that puts a lot of constraints on availability and consistency. Uber uses the driver&amp;#39;s phones to distribute the data. Given that the driver&amp;#39;s phones post location updates to the server every four seconds, the server periodically replies with an encrypted state digest. If a data center fails the driver will contact a new data center to post a location update. The new data center doesn&amp;#39;t know anything about this particular driver so it asks for the state digest and picks up from there.&amp;quot;&lt;/i&gt; 
-     &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
-     &lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;br&gt;
-    &lt;/body&gt;
-    &lt;a href="http://www.infoq.com/news/2015/03/uber-realtime-market-platform?utm_campaign=infoq_content&amp;amp;amp;utm_source=infoq&amp;amp;amp;utm_medium=feed&amp;amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
+  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/
+" /&gt;
 &lt;/div&gt;</content>
   </entry>
   <entry>
@@ -96,77 +56,27 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html"/>
     <id>https://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html</id>
     <published>2015-03-15T09:22:29Z</published>
-    <updated>2015-03-28T23:04:18+00:00</updated>
+    <updated>2015-04-07T21:25:53+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt;
-      There is a quite a hype in the Mircoservice architecture style, so it’s good that one of the well-known architecture heavy-weight&amp;nbsp;is listing&amp;nbsp;&amp;nbsp;some important competencies necessary to successfully work with this style.&amp;nbsp; 
-     &lt;br&gt; Martin Fowler outlines in this article the trade-offs and operational consequences of a micro service&amp;nbsp;architecture : 
-     &lt;br&gt; 
-     &lt;br&gt; 
-     &lt;i&gt;In particular with microservices there are serious consequences for operations, who now have to handle an ecosystem of small services rather than a single, well-defined monolith. Consequently if you don&amp;#39;t have certain baseline competencies, you shouldn&amp;#39;t consider using the microservice style.&lt;/i&gt; 
-     &lt;br&gt; 
-     &lt;br&gt; 
-     &lt;ul&gt; 
-      &lt;li&gt;Rapid Provisioning&lt;/li&gt; 
-      &lt;li&gt;Basic Monitoring&lt;/li&gt; 
-      &lt;li&gt;Rapid Application Deployment&lt;/li&gt; 
-     &lt;/ul&gt; 
-     &lt;br&gt; will be key.&amp;nbsp; 
-     &lt;br&gt; 
-     &lt;br&gt; 
-     &lt;i&gt;With this kind of setup in place, you&amp;#39;re ready for a first system using a handful of microservices. Deploy this system and use it in production, expect to learn a lot about keeping it healthy and ensuring the devops collaboration is working well. Give yourself time to do this, learn from it, and grow more capability before you ramp up your number of services.&lt;/i&gt; 
-     &lt;br&gt;&lt;br&gt;
-    &lt;/body&gt;
-    &lt;a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
+  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/
+" /&gt;
 &lt;/div&gt;</content>
   </entry>
   <entry>
     <title>Knowledge is Personal</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html"/>
     <id>https://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html</id>
-    <published>2015-03-08T07:25:06Z</published>
-    <updated>2015-03-28T23:04:18+00:00</updated>
+    <published>2015-03-08T06:25:06Z</published>
+    <updated>2015-04-07T21:25:52+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt;      &lt;body&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;&lt;span style="font-size: 100%;"&gt;A very intelligent and insightful article&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;&amp;nbsp;about&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;&amp;nbsp;Knowledge and the question if its tran&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;sferrable. &lt;a href="http://jarche.com/about/" rel="nofollow"&gt;Harol&lt;/a&gt;&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;&lt;a href="http://jarche.com/about/" rel="nofollow"&gt;d Arche&lt;/a&gt; comes to the co&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;nclusion it isn’t.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-     &lt;span style=""&gt;&lt;i&gt;A big conceit of the knowledge management (KM) field is that knowledge can be transferred, but unlike information or data, it cannot. &lt;b&gt;Knowledge is personal&lt;/b&gt;.&lt;/i&gt;&lt;/span&gt; 
-     &lt;br&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; It’s all about sharing of experiences&amp;nbsp;which are&amp;nbsp;best expressed in stories 
-     &lt;br&gt; 
-     &lt;br&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;&lt;span style=""&gt;&lt;i&gt;&lt;span style="font-size: 100%;"&gt;While knowledge cannot really be transferred, our experiences can be shared&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;. Perhaps that is why we love stories.&lt;/span&gt; &lt;span style="font-size: 100%;"&gt;They are a glimpse into others’ knowledge, more nuanced than any other communication medium&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;.&lt;/span&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 
-     &lt;br&gt; 
-     &lt;br&gt; And he goes on 
-     &lt;br&gt; 
-     &lt;br&gt; 
-     &lt;span style=""&gt;&lt;i&gt;&lt;span style=""&gt;&lt;span style=""&gt;&lt;span style="font-size: 100%;"&gt;Would it not be more effective if we shared knowledge as stories, in education and at work&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;? We hear a lot about the importance of curation in the digital workplace today,&lt;/span&gt; &lt;span style="font-size: 100%;"&gt;but what if our curators were also story tellers&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;? Explicit knowledge (decisions, events, procedures, etc.) is relatively easy to capture, so that is often what gets attention and funding for technologies like document management systems. But stories provide the additional context that makes implicit knowledge stick in our memories&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/i&gt;&lt;/span&gt; 
-     &lt;br&gt; 
-     &lt;br&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;I like especially the differentiation between Explicit- and Implicit knowledge, the later of which is far more difficult to grasp:&amp;nbsp;&lt;/span&gt;&lt;/span&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-     &lt;span style=""&gt;&lt;i&gt;&lt;span style=""&gt;&lt;span style=""&gt;&lt;span style="font-size: 100%;"&gt;Implicit knowledge requires interpretation and engagement to make sense of it. Data and information may be gathered by the organization, but knowledge and stories are personal. Stories can help share implicit knowledge.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/i&gt;&lt;/span&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;Something really to be considered when thinking about future content strategies.&lt;/span&gt;&lt;/span&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-     &lt;span style=""&gt;&lt;span style=""&gt;The full article worth a read.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;
-    &lt;/body&gt;
-    &lt;a href="http://jarche.com/2014/12/knowledge-is-personal/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
+  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/
+" /&gt;
 &lt;/div&gt;</content>
   </entry>
   <entry>
@@ -174,19 +84,13 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html</id>
     <published>2015-03-07T02:00:00Z</published>
-    <updated>2015-03-28T23:04:18+00:00</updated>
+    <updated>2015-04-07T21:25:52+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;dummy&gt;      Valdimir Khorikov lists in a InfoQ article some bad principles in context of the Microservice Architecture. Outlining bad principle instead of good one is really helpful, something what got established as well in the Java world with its concept of Anti-Pattern.&lt;/p&gt;
-    
-    &lt;p&gt;Sometimes its more helpful to understand some traps in a area. Part of its finding could be used as well for SOA based architectures. E.g. the bad principle to establish integration libraries instead of providing a clean interface which can be used and integrated by the consumer. Client libraries are nice and convenient but will get hard to maintain over time, due to extensions to various languages, versions etc. So keep it simple go for a clean interface in REST or SOAP style and leave the client bindings to the consumer.&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/01/bad-practices-microservices?utm_campaign=infoq_content&amp;amp;amp;utm_source=infoq&amp;amp;amp;utm_medium=feed&amp;amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
+  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/
+" /&gt;
 &lt;/div&gt;</content>
   </entry>
 </feed>

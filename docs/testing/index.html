@@ -28,10 +28,22 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
+                  <a href="/tags/microservice.html">microservice (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
                   <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
                 </li>
                 <li>
                   <a href="/tags/personaldata.html">personalData (2)</a>
@@ -40,22 +52,10 @@
                   <a href="/tags/api.html">api (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (4)</a>
-                </li>
-                <li>
                   <a href="/tags/modeling.html">modeling (1)</a>
                 </li>
                 <li>
                   <a href="/tags/banking.html">banking (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
                 </li>
               </ul>
             </li>
@@ -110,7 +110,7 @@
           <a href="#licence-overview">Licence overview</a>
           </li>
           </ul>
-          <h2 id="introduction">Introduction</h2>
+          <h2>Introduction</h2>
 
 <p><strong>Automated Testing</strong> is a key element in a micro IT company with scarce resources.</p>
 
@@ -119,7 +119,7 @@
 <li>Test data is stored in csv file and loaded into the emptied database before a test run is executed. The file handling is delegated to the <a href="http://supercsv.sourceforge.net/">org.supercsv</a> library, which handles the loading of the csv file rows and converts them into our POJO business domain objects (<code>customer</code>,<code>user</code> etc.) which then are loaded into the database-</li>
 </ul>
 
-<h2 id="mongodb-based-pojo-on-the-business-domain-object-level">MongoDB based POJO on the business domain object level</h2>
+<h2>MongoDB based POJO on the business domain object level</h2>
 
 <p>For each business domain object which needs test data a &lsquo;Plain Old Java Object? (POJO) must be defined. The definition of a business domain POJO is straightforward and and requires the following steps </p>
 
@@ -130,52 +130,54 @@
 </ul>
 
 <p>The code sample looks like follows:</p>
-<pre class="highlight java"><code>    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">CustomerDBObject</span> <span class="kd">extends</span> <span class="n">DomainDBObject</span>  <span class="o">{</span>
 
-    <span class="c1">// The CSV Cell Processor</span>
-    <span class="kd">private</span> <span class="kd">static</span> <span class="n">CellProcessor</span><span class="o">[]</span> <span class="n">csvCellProcessor</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CellProcessor</span><span class="o">[]</span> <span class="o">{</span>
-        <span class="k">new</span> <span class="n">StrMinMax</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">40</span><span class="o">),</span>  <span class="c1">// Expect at least a name with 1-40 characters</span>
-        <span class="k">new</span> <span class="n">StrMinMax</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">40</span><span class="o">),</span>  <span class="c1">// Expect at least a surname with 1-40 characters</span>
-        <span class="kc">null</span><span class="o">,</span>
-        <span class="kc">null</span><span class="o">,</span>
-        <span class="kc">null</span><span class="o">,</span>
-        <span class="kc">null</span><span class="o">,</span>
-        <span class="kc">null</span><span class="o">,</span>
-        <span class="kc">null</span><span class="o">,</span>
-        <span class="kc">null</span><span class="o">,</span>
-        <span class="k">new</span> <span class="n">ParseDate</span><span class="o">(</span><span class="s">"dd.MM.yyyy"</span><span class="o">)</span>
-    <span class="o">};</span>
+<pre><code class="java">    public class CustomerDBObject extends DomainDBObject  {
 
-    <span class="kd">public</span>  <span class="n">CellProcessor</span><span class="o">[]</span> <span class="n">getCSVCellProcessor</span><span class="o">()</span> <span class="o">{</span>         <span class="k">return</span> <span class="n">csvCellProcessor</span><span class="o">;</span>
-    <span class="o">}</span>
+    // The CSV Cell Processor
+    private static CellProcessor[] csvCellProcessor = new CellProcessor[] {
+        new StrMinMax(1,40),  // Expect at least a name with 1-40 characters
+        new StrMinMax(1,40),  // Expect at least a surname with 1-40 characters
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        new ParseDate(&quot;dd.MM.yyyy&quot;)
+    };
 
-    <span class="kd">public</span> <span class="n">String</span> <span class="n">getDBCollectionName</span><span class="o">()</span> <span class="o">{</span>
-        <span class="k">return</span> <span class="s">"customers"</span><span class="o">;</span>
-    <span class="o">}</span>
+    public  CellProcessor[] getCSVCellProcessor() {         return csvCellProcessor;
+    }
 
-    <span class="kd">public</span> <span class="kt">void</span> <span class="n">setName</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"name"</span><span class="o">,</span> <span class="n">name</span><span class="o">);</span>
-    <span class="o">}</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="n">getName</span><span class="o">()</span> <span class="o">{</span>
-        <span class="k">return</span> <span class="o">(</span><span class="n">String</span><span class="o">)</span><span class="k">this</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"name"</span><span class="o">);</span>
-    <span class="o">}</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="n">setSurname</span><span class="o">(</span><span class="n">String</span> <span class="n">surname</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"surname"</span><span class="o">,</span> <span class="n">surname</span><span class="o">);</span>
-    <span class="o">}</span>
+    public String getDBCollectionName() {
+        return &quot;customers&quot;;
+    }
+
+    public void setName(String name) {
+        this.put(&quot;name&quot;, name);
+    }
+    public String getName() {
+        return (String)this.get(&quot;name&quot;);
+    }
+    public void setSurname(String surname) {
+        this.put(&quot;surname&quot;, surname);
+    }
 </code></pre>
 
 <p>The <code>DomainDBObject</code>is an abstract class which is inherited from the <code>com.mongodb.BasicDBObject</code> and which will ensure that the busienss domain POJO&rsquo;s  will provide a <code>org.supercsv.cellprocessor.ift.CellProcessor</code>which is required when the test data is loaded from CSV files, as well as the DB collection-/table name.</p>
-<pre class="highlight java"><code>    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">DomainDBObject</span> <span class="kd">extends</span> <span class="n">BasicDBObject</span> <span class="o">{</span>
-        <span class="kd">public</span> <span class="n">CellProcessor</span><span class="o">[]</span> <span class="n">csvCellProcessor</span><span class="o">;</span>
-        <span class="kd">public</span> <span class="kd">abstract</span> <span class="n">CellProcessor</span><span class="o">[]</span>  <span class="n">getCSVCellProcessor</span><span class="o">();</span>
-        <span class="kd">public</span> <span class="kd">abstract</span> <span class="n">String</span> <span class="n">getDBCollectionName</span><span class="o">();</span>
-        <span class="kd">public</span> <span class="n">DomainDBObject</span><span class="o">()</span> <span class="o">{</span>
-            <span class="k">this</span><span class="o">.</span><span class="na">csvCellProcessor</span> <span class="o">=</span> <span class="n">getCSVCellProcessor</span><span class="o">();</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
+
+<pre><code class="java">    public abstract class DomainDBObject extends BasicDBObject {
+        public CellProcessor[] csvCellProcessor;
+        public abstract CellProcessor[]  getCSVCellProcessor();
+        public abstract String getDBCollectionName();
+        public DomainDBObject() {
+            this.csvCellProcessor = getCSVCellProcessor();
+        }
+    }
 </code></pre>
 
-<h2 id="csv-test-data-files-and-generic-loader">CSV test data files and generic loader</h2>
+<h2>CSV test data files and generic loader</h2>
 
 <p>Test data files are defined per business domain POJO type (e.g. <code>com.cloudburo.test.dataobj.CustomerDBObject</code>) and test set (e.g. <code>fullregression</code>), as for example</p>
 
@@ -187,29 +189,31 @@
 <p>The files will be loaded when the corresponding test case is executed (during the test case setup phase)</p>
 
 <p>The CSV data loader part is a generic method, which will make sure that the data are loaded in our  Mongo based POJO domain objects, which can be persisted in the DB in a subsequent processin step.</p>
-<pre class="highlight java"><code>    <span class="kd">public</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">DBObject</span><span class="o">&gt;</span> <span class="n">loadTestDataSet</span><span class="o">(</span><span class="n">String</span> <span class="n">set</span><span class="o">,</span> <span class="n">DomainDBObject</span> <span class="n">dboClass</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
-        <span class="n">List</span><span class="o">&lt;</span><span class="n">DBObject</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">DBObject</span><span class="o">&gt;();</span>
-        <span class="n">ICsvBeanReader</span> <span class="n">inFile</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CsvBeanReader</span><span class="o">(</span><span class="k">new</span> <span class="n">FileReader</span><span class="o">(</span><span class="s">"testdata/"</span><span class="o">+</span><span class="n">dboClass</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">()+</span><span class="s">"-"</span> <span class="o">+</span><span class="n">set</span><span class="o">+</span><span class="s">".csv"</span><span class="o">),</span> <span class="n">CsvPreference</span><span class="o">.</span><span class="na">EXCEL_NORTH_EUROPE_PREFERENCE</span><span class="o">);</span>
-        <span class="k">try</span> <span class="o">{</span>
-          <span class="kd">final</span> <span class="n">String</span><span class="o">[]</span> <span class="n">header</span> <span class="o">=</span> <span class="n">inFile</span><span class="o">.</span><span class="na">getCSVHeader</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
-          <span class="n">DBObject</span> <span class="n">dbo</span><span class="o">;</span>
-          <span class="k">while</span><span class="o">(</span> <span class="o">(</span><span class="n">dbo</span> <span class="o">=</span> <span class="n">inFile</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">dboClass</span><span class="o">.</span><span class="na">getClass</span><span class="o">(),</span> <span class="n">header</span><span class="o">,</span> <span class="n">dboClass</span><span class="o">.</span><span class="na">getCSVCellProcessor</span><span class="o">()))</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">dbo</span><span class="o">);</span>
-          <span class="o">}</span>
-        <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
-          <span class="n">inFile</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
-        <span class="o">}</span>
-        <span class="k">return</span> <span class="n">list</span><span class="o">;</span>
-    <span class="o">}</span> 
+
+<pre><code class="java">    public List&lt;DBObject&gt; loadTestDataSet(String set, DomainDBObject dboClass) throws Exception {
+        List&lt;DBObject&gt; list = new ArrayList&lt;DBObject&gt;();
+        ICsvBeanReader inFile = new CsvBeanReader(new FileReader(&quot;testdata/&quot;+dboClass.getClass().getName()+&quot;-&quot; +set+&quot;.csv&quot;), CsvPreference.EXCEL_NORTH_EUROPE_PREFERENCE);
+        try {
+          final String[] header = inFile.getCSVHeader(true);
+          DBObject dbo;
+          while( (dbo = inFile.read(dboClass.getClass(), header, dboClass.getCSVCellProcessor())) != null) {
+            list.add(dbo);
+          }
+        } finally {
+          inFile.close();
+        }
+        return list;
+    } 
 </code></pre>
 
 <p>The CsvBeanReader will extract each row and create the corresponding DomainDBObject (in this example the <code>CustomerDBObject</code>) and passes in the cell data to the attributes as defined in the header of the file.</p>
-<pre class="highlight plaintext"><code>name;surname;address;plz;location;telephone;mobile;email;citizenship;birthdate
+
+<pre><code>name;surname;address;plz;location;telephone;mobile;email;citizenship;birthdate
 Küstahler;Felix;Zumikerstrasse;8700;Küsnacht;449123567;796249158;talfco@gmx.com;Swiss;17.05.1965
 Meierhans;Albert;Bergstrasse 5;8706;Meilen;449123056;796229108;test@ggaweb.ch;USA;22.08.1996
 </code></pre>
 
-<h2 id="licence-overview">Licence overview</h2>
+<h2>Licence overview</h2>
 
 <ul>
 <li>org.supercsv is licenced as <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache, Licence Version 2.0</a></li>

@@ -28,10 +28,22 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
+                  <a href="/tags/microservice.html">microservice (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
                   <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
                 </li>
                 <li>
                   <a href="/tags/personaldata.html">personalData (2)</a>
@@ -40,22 +52,10 @@
                   <a href="/tags/api.html">api (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (4)</a>
-                </li>
-                <li>
                   <a href="/tags/modeling.html">modeling (1)</a>
                 </li>
                 <li>
                   <a href="/tags/banking.html">banking (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
                 </li>
               </ul>
             </li>
@@ -143,11 +143,11 @@
           </ul>
           </li>
           </ul>
-          <h2 id="introduction">Introduction</h2>
+          <h2>Introduction</h2>
 
 <p>The heart of the software is a UML Design Model, with a primary focus on the domain and domain logic. It introduces business objects - dervied from textual business concept description - as well as other design work products centered around the model. The model itself is interconnected with the code by serving as a base to generate a subset of the configuration- and software artifacts which gets deployed into the cloud infrastructure. </p>
 
-<h2 id="domain-driven-design">Domain Driven Design</h2>
+<h2>Domain Driven Design</h2>
 
 <p>We use a <a href="http://en.wikipedia.org/wiki/Domain-driven_design">Domain Driven Design (DDD)</a> approach to shape out the business foundation of the  platform.  DDD is is an approach to the design of software, based on the two premises:</p>
 
@@ -173,7 +173,7 @@ To be able effectively design you should build your Model and implementation tog
 <li>An <em>Aggregate</em> is a group of associated objects which are considered as one unit with regard to data changes. The Aggregate is demarcated by a boundary which separates the objects inside from those outside. Each Aggregate has one Root. The Root is an Entity, and it is the only object accessible from outside.</li>
 </ul>
 
-<h2 id="uml-design-model">UML Design Model</h2>
+<h2>UML Design Model</h2>
 
 <p>The Domain Model is a UML based model which is an analysis as well as a design model and is a direct connection to the underlying code.   </p>
 
@@ -189,7 +189,7 @@ To be able effectively design you should build your Model and implementation tog
 
 <p>To establish a model which unifies the analysis as well as the design part(Model-driven design) requires a strong toolset, which is fortunately available as Eclipse Open Source Projects.</p>
 
-<p>We are using the <em>Eclipse Modelling</em> Set, which includes the <a href="http://www.papyrusuml.org/">Papyrus UML Modeller</a> complemented by <a href="http://www.eclipse.org/acceleo/">Acceleo Code Generator</a> and includes EMF, UML, OCL features which are required to describe the model in its necessary details. Refer to the <a href="/docs/foundation/">Foundation Chapter</a> for more details about the toolset.</p>
+<p>We are using the <em>Eclipse Modelling</em> Set, which includes the <a href="http://www.papyrusuml.org/">Papyrus UML Modeller</a> complemented by <a href="http://www.eclipse.org/acceleo/">Acceleo Code Generator</a> and includes EMF, UML, OCL features which are required to describe the model in its necessary details. Refer to the <a href="/docs/foundation/index.html">Foundation Chapter</a> for more details about the toolset.</p>
 
 <p>The model itself is expressed by a set of diagrams, which are means of communication and explanation. It&rsquo;s important to understand that they show design constraints and show conceptually important parts of the object model. But they are not design specifications in every detail.</p>
 
@@ -197,11 +197,11 @@ To be able effectively design you should build your Model and implementation tog
 
 <p>As for example in the following diagram attribute <em>name</em> of the business object <em>Customer</em> has some stereotypes attached (representd by <em>&lt;&lt;&hellip;&gt;&gt;</em> markers). </p>
 
-<p><img alt="Business Object with Stereotypes" src="../../images/Voila_Capture356.png" /></p>
+<p><img src="/images/Voila_Capture356.png" alt="Business Object with Stereotypes"></p>
 
 <p>Going to the detail view will show the textual definition and configuration of the dedicated items.</p>
 
-<p><img alt="Stereotype Definitions" src="../../images/Voila_Capture355.png" />  </p>
+<p><img src="/images/Voila_Capture355.png" alt="Stereotype Definitions">  </p>
 
 <p>As an example</p>
 
@@ -210,33 +210,33 @@ To be able effectively design you should build your Model and implementation tog
 <li>the <em>List</em> stereotype is used to define if a certain attribute is used in list view of the Business Object and its positioning. In this example the attribute is part of the list view element shown on the <em>TitleLine</em> </li>
 </ul>
 
-<h2 id="business-object-model-diagram">Business Object Model Diagram</h2>
+<h2>Business Object Model Diagram</h2>
 
 <p>The Business Object Diagram shows objects of importance to a business and documents the relationships between them in terms of responsibilities and behavior. Its emphasizes the roles performed in the business area and their active responsibilities. </p>
 
-<p><img alt="Business Object Model" src="../../images/Voila_Capture354.png" /></p>
+<p><img src="/images/Voila_Capture354.png" alt="Business Object Model"></p>
 
-<h3 id="code-generation-aspects">Code Generation Aspects</h3>
+<h3>Code Generation Aspects</h3>
 
-<h4 id="attribute-handling">Attribute Handling</h4>
+<h4>Attribute Handling</h4>
 
 <p>In general the generator differentiates the following attribute types</p>
 
-<h5 id="primitive">Primitive</h5>
+<h5>Primitive</h5>
 
 <p>Will  result in simple attributes in the generated artifacts (javascript backbone models/views, templates, java objective classes etc.).</p>
 
-<h5 id="data-type-&quot;referencedata&quot;-(value-object)">Data Type &ldquo;referenceData&rdquo; (Value Object)</h5>
+<h5>Data Type &ldquo;referenceData&rdquo; (Value Object)</h5>
 
 <p>Data Type attributes with the Stereotype <code>referenceData</code> will be based on name/value list which are fetched by a client from static JSON Files. In the DDD language they are called <em>Value Object</em></p>
 
 <p>As an example the following <code>country</code> list</p>
 
-<p><img alt="Country JSON" src="../../images/Voila_Capture359.png" /></p>
+<p><img src="/images/Voila_Capture359.png" alt="Country JSON"></p>
 
 <p>is the source of data, modelled in the following data type:</p>
 
-<p><img alt="ReferenceData DataType" src="../../images/Voila_Capture360.png" /></p>
+<p><img src="/images/Voila_Capture360.png" alt="ReferenceData DataType"></p>
 
 <p>The stereotype <code>referenceData</code> has a property <code>refCode</code> which will provide the information how to fetch the data for the specific ReferenceData DataType,</p>
 
@@ -248,27 +248,27 @@ To be able effectively design you should build your Model and implementation tog
 
 <p>( /images/Voila_Capture361.png  [ReferenceData DataType] %}</p>
 
-<h5 id="enumeration">Enumeration</h5>
+<h5>Enumeration</h5>
 
 <p>Enumeration will be mapped to choices and will be visualized as select values.</p>
 
-<h5 id="toone-association-(identity-object)">ToOne Association (Identity Object)</h5>
+<h5>ToOne Association (Identity Object)</h5>
 
 <p>In case we are referencing via a class attribute exactly one other Class Object (which has an identity and a lifecycle, called in DDD an Identity Object) we can generate a simple attribute in the code artefacts.</p>
 
 <p><a href="/images/Voila_Capture358.png">One To One Object Associations2</a></p>
 
-<h5 id="tomany-association">ToMany Association</h5>
+<h5>ToMany Association</h5>
 
 <p>These class attributes are reflecting an endpoint of a navigable association. It&rsquo;s navigable due to the fact that member end of the association is owned by the classifier (aka the class).</p>
 
-<p><img alt="One To Many Associations" src="../../images/Voila_Capture357.png" /> </p>
+<p><img src="/images/Voila_Capture357.png" alt="One To Many Associations"> </p>
 
 <ul>
 <li>E.g. the association member end <code>serviceConfig</code> is owned by the classifier <code>ProductType</code> and therefore represented as class attribute in the UML class. A product type may include one to many serviceConfig(s) and therefore will be handled specially in the generator.</li>
 </ul>
 
-<h4 id="modeling-persistency-functionality">Modeling Persistency Functionality</h4>
+<h4>Modeling Persistency Functionality</h4>
 
 <p>The Business Objects will be stored in a <a href="https://en.wikipedia.org/wiki/NoSQL">NoSQL</a> datastore, which is suited for data that is modeled documents  other that the tabluar relations used in relational databases.</p>
 
@@ -291,9 +291,9 @@ To be able effectively design you should build your Model and implementation tog
 
 <p>As an example the below screenshot shows you the generated AppEngine <a href="https://code.google.com/p/objectify-appengine/">Objectify</a> Entity (Backend Java Class). It&rsquo;s class structuring represents the above JSON structure. Such a Entity class object can be transformed from-/to JSON by simply using the Google <a href="https://code.google.com/p/google-gson/">GSON</a> library. </p>
 
-<p><img alt="Objectify Entity Class" src="../../images/Voila_Capture363.png" /></p>
+<p><img src="/images/Voila_Capture363.png" alt="Objectify Entity Class"></p>
 
-<h4 id="modeling-visualization-functionality">Modeling Visualization Functionality</h4>
+<h4>Modeling Visualization Functionality</h4>
 <hr>
             <p class="text-center">
               ©2015  <a href="/">dev@cloudburo</a> <br /><span class="small">Powered by<a href="https://cloudburo.net/docs/products.html"> Cloudburo Curation Engine</a></span>

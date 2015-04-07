@@ -28,10 +28,22 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
+                  <a href="/tags/microservice.html">microservice (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
                   <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (1)</a>
                 </li>
                 <li>
                   <a href="/tags/personaldata.html">personalData (2)</a>
@@ -40,22 +52,10 @@
                   <a href="/tags/api.html">api (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (4)</a>
-                </li>
-                <li>
                   <a href="/tags/modeling.html">modeling (1)</a>
                 </li>
                 <li>
                   <a href="/tags/banking.html">banking (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
                 </li>
               </ul>
             </li>
@@ -117,13 +117,13 @@
           </ul>
           </li>
           </ul>
-          <h2 id="maven">Maven</h2>
+          <h2>Maven</h2>
 
-<h3 id="parent-pom-configuration">Parent POM Configuration</h3>
+<h3>Parent POM Configuration</h3>
 
 <p>The project <code>clb-appPlatform</code> consists of the Parent POM which will build the overall Clouburo App Platform via Maven <a href="http://maven.apache.org/guides/introduction/introduction-to-the-pom.html#Project_Aggregation">Project Aggregation</a></p>
 
-<h4 id="deploy-management">Deploy Management</h4>
+<h4>Deploy Management</h4>
 
 <p>The release and deploy management to Github/Bitbucket is managed by the <a href="http://synergian.github.io/wagon-git/">wagon-git</a> Maven plugin.</p>
 
@@ -138,7 +138,8 @@
 </ul>
 
 <p>The <code>distributionManagement</code> element in the POM will define the target for the <code>deploy</code> and <code>site-deploy</code> commands. </p>
-<pre class="highlight plaintext"><code>&lt;distributionManagement&gt;
+
+<pre><code>&lt;distributionManagement&gt;
     &lt;repository&gt;
         &lt;id&gt;clb-mvnrelease&lt;/id&gt;
         &lt;name&gt;Cloudburo Bitbucket Maven Release&lt;/name&gt;
@@ -156,10 +157,11 @@
 &lt;/distributionManagement&gt;
 </code></pre>
 
-<h4 id="referencing-repositories-for-consuming">Referencing Repositories for Consuming</h4>
+<h4>Referencing Repositories for Consuming</h4>
 
 <p>Having public, as well as private repositories to reference for consuming there are 4 entries in the <code>repositories</code> element of the POM</p>
-<pre class="highlight plaintext"><code>&lt;repositories&gt;
+
+<pre><code>&lt;repositories&gt;
     &lt;repository&gt;
         &lt;id&gt;clb-mvnrepo-snapshot&lt;/id&gt;
         &lt;name&gt;Cloudburo Public Maven Snapshot Repo on Github&lt;/name&gt;
@@ -187,7 +189,7 @@
 &lt;/repositories&gt;
 </code></pre>
 
-<h3 id="remarks">Remarks</h3>
+<h3>Remarks</h3>
 
 <p>In case you are running in deploy issues, follow these steps:</p>
 
