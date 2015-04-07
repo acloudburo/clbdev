@@ -104,8 +104,42 @@
           </p>
           <hr />
           <div class="row">
-            <img class="pull-left img-responsive img-thumbnail article" src="/images/
-          " />
+            <div class="article">
+              <p><span/><br>
+                <div>
+                  Interesting article by Matt Ranney, Chief Systems Architect at Uber which gives an overview of their dispatch system for matching drivers&nbsp;and riders. 
+                </div> 
+                <div> 
+                 <br> 
+                </div> 
+                <div>
+                  He outlines the architectural principles that underpin the implementation, which gives an view how they approached the &nbsp;problem. You can find the article in the link below. 
+                </div> 
+                <div> 
+                 <br> 
+                </div> 
+                <div>
+                  Very interesting approach to data center failure: 
+                </div> 
+                <div> 
+                 <br> 
+                </div> 
+                <div> 
+                 <br> 
+                </div> 
+                <div> 
+                 <i>&ldquo;Uber&rsquo;s approach to data center failure is ingenious. No data is replicated across data centers, as that puts a lot of constraints on availability and consistency. Uber uses the driver&rsquo;s phones to distribute the data. Given that the driver&rsquo;s phones post location updates to the server every four seconds, the server periodically replies with an encrypted state digest. If a data center fails the driver will contact a new data center to post a location update. The new data center doesn&rsquo;t know anything about this particular driver so it asks for the state digest and picks up from there.&rdquo;</i> 
+                </div> 
+                <div> 
+                 <i><br></i> 
+                </div> 
+                <div> 
+                 <i><br></i> 
+                </div></p>
+              
+              <p><a href="http://www.infoq.com/news/2015/03/uber-realtime-market-platform?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global">Link</a></p>
+              
+            </div>
           </div>
           <hr />
           <aside>
