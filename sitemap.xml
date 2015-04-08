@@ -73,6 +73,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html</loc>
+    <lastmod>2015-04-08</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html</loc>
     <lastmod>2015-04-07</lastmod>
     <priority>0.7</priority>
@@ -319,6 +325,18 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//tags/gradle.html</loc>
+    <lastmod>2015-04-07</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//tags/smallhints.html</loc>
+    <lastmod>2015-04-07</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//tags/personaldata.html</loc>
     <lastmod>2015-04-07</lastmod>
     <priority>0.9</priority>
@@ -352,6 +370,12 @@
     <loc>https://dev.cloudburo.net//2015/04.html</loc>
     <lastmod>2015-04-07</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/04/08.html</loc>
+    <lastmod>2015-04-07</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

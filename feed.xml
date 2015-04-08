@@ -5,10 +5,87 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-04-02T02:01:39Z</updated>
+  <updated>2015-04-08T08:38:00Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>Gradle Small Hints #1 - Zipping up a file tree</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html"/>
+    <id>https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html</id>
+    <published>2015-04-08T08:38:00Z</published>
+    <updated>2015-04-08T21:44:09+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
+    Don’t know but&amp;nbsp; took me some time to figure out how to ZIP up a project directory required for my AWS Elastic Beanstalk Deployment. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
+    The task will collect all relevant files for my project directory (which contains the docker configuration) and writes it into the build directly. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+task myZip(type: Zip) {
+   from ('.')
+   include '**/*.groovy'
+   include '**/*.config'
+   include '*'
+   exclude '.gradle'
+   exclude '.settings'
+   exclude 'bin'
+   exclude 'build'
+   exclude 'logs'
+   exclude 'src/test'
+   exclude '.classpath'
+   exclude '.project'
+   into '.'
+   destinationDir(file("build")) 
+  } 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+
+&lt;p&gt;&lt;div&gt;
+    Or also possible 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+task dockerZip(type: Zip) { 
+    from fileTree(dir: '.', 
+    includes: ['**/*.groovy', '**/*.config','*'], 
+    excludes: ['.gradle','.settings','bin','build','logs','src/test','.classpath','.project']) 
+    into '.'
+   destinationDir(file("build")) 
+  } 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style="font-size: 11px;"&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
+  &lt;/div&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>A Service is a Logical Construct Built by Microservices</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html"/>
@@ -332,26 +409,6 @@
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://jarche.com/2014/12/knowledge-is-personal/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Bad Practices Building Microservices</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html"/>
-    <id>https://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html</id>
-    <published>2015-03-07T02:00:00Z</published>
-    <updated>2015-04-07T22:57:09+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;      Valdimir Khorikov lists in a InfoQ article some bad principles in context of the Microservice Architecture. Outlining bad principle instead of good one is really helpful, something what got established as well in the Java world with its concept of Anti-Pattern.&lt;/p&gt;
-    
-    &lt;p&gt;Sometimes its more helpful to understand some traps in a area. Part of its finding could be used as well for SOA based architectures. E.g. the bad principle to establish integration libraries instead of providing a clean interface which can be used and integrated by the consumer. Client libraries are nice and convenient but will get hard to maintain over time, due to extensions to various languages, versions etc. So keep it simple go for a clean interface in REST or SOAP style and leave the client bindings to the consumer.&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/01/bad-practices-microservices?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
