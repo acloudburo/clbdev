@@ -49,6 +49,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html</loc>
+    <lastmod>2015-04-09</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2015/03/28/a-modern-microservices-architecture-by-gilt.html</loc>
     <lastmod>2015-04-07</lastmod>
     <priority>0.7</priority>
@@ -289,6 +295,24 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//tags/docker.html</loc>
+    <lastmod>2015-04-07</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//tags/aws.html</loc>
+    <lastmod>2015-04-07</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//tags/smallhints.html</loc>
+    <lastmod>2015-04-07</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//tags/microservice.html</loc>
     <lastmod>2015-04-07</lastmod>
     <priority>0.9</priority>
@@ -331,12 +355,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net//tags/smallhints.html</loc>
-    <lastmod>2015-04-07</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net//tags/personaldata.html</loc>
     <lastmod>2015-04-07</lastmod>
     <priority>0.9</priority>
@@ -370,6 +388,12 @@
     <loc>https://dev.cloudburo.net//2015/04.html</loc>
     <lastmod>2015-04-07</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/04/09.html</loc>
+    <lastmod>2015-04-07</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

@@ -5,10 +5,215 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-04-08T08:38:00Z</updated>
+  <updated>2015-04-09T06:25:00Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>Docker Small Hints #1:  High Level Concepts Elastic Beanstalk</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html"/>
+    <id>https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html</id>
+    <published>2015-04-09T06:25:00Z</published>
+    <updated>2015-04-09T06:35:13+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
+      &lt;div&gt;
+        Cloud Platforms are normally highly generic and configurable and it’s easy to loose overview, what can be configured or modified where. So I assembled some of the main high level concepts for AWS Elastic Beanstalk.&amp;nbsp; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;span style="font-size: 24px;"&gt;Level 0: Concepts&lt;/span&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Elastic Beanstalk is structured around the 3 high level concepts. 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;i&gt;&lt;span style="font-size: 18px;"&gt;A&amp;nbsp;&lt;b&gt;Version&lt;/b&gt; of an (&lt;b&gt;Docker)&lt;/b&gt;&amp;nbsp;&lt;b&gt;Application&lt;/b&gt; is running in one &lt;b&gt;Environment&lt;/b&gt;&lt;/span&gt;&lt;/i&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Elastic Beanstalk allows you to&amp;nbsp;run in parallel 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;Multiple Versions&lt;/b&gt; of 
+       &lt;b&gt;multiple (Docker) Applications&lt;/b&gt; in 
+       &lt;b&gt;multiple Environments&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        The Dashboard will show you all deployed 
+       &lt;b&gt;Applications&lt;/b&gt; which can be running in multiple&amp;nbsp; 
+       &lt;b&gt;Environments&lt;/b&gt;. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        In the screenshot below we have one Docker Application „ 
+       &lt;i&gt;curationApp“&lt;/i&gt; which has to two environments&amp;nbsp;„ 
+       &lt;i&gt;curationApp-prod&lt;/i&gt;“ and „ 
+       &lt;i&gt;curationApp-test&amp;quot;&lt;/i&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt; &lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/95051bbe9efdb4532199204d0f61fd2e.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        An 
+       &lt;b&gt;Environment&lt;/b&gt; may run one of your released docker&amp;nbsp;Application Versions. You could now „ 
+       &lt;i&gt;Deploy&lt;/i&gt;“ one of your versions to one of your Environments. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        In the example below the environment &amp;ldquo; 
+       &lt;i&gt;curationApp-prod&amp;rdquo;&lt;/i&gt; is running Version 0.0.5. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt; &lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/22c0aadeda311a7a7ede6ab4973ba58d.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;span style="font-size: 24px;"&gt;Level 1: Concepts&lt;/span&gt;&lt;br&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        By selecting an 
+       &lt;b&gt;Environment&lt;/b&gt; you will see the Dashboard of the running 
+       &lt;b&gt;Application Version&lt;/b&gt;&amp;nbsp;which is configured on a AWS 
+       &lt;b&gt;Solution Stack&lt;/b&gt;. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        In our example below this a Docker solution running on Amazon Linux. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        A running Environment has a 
+       &lt;b&gt;Health Status&lt;/b&gt; and an associated&amp;nbsp; 
+       &lt;b&gt;Configuration.&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        It’s processing can be checked via 
+       &lt;b&gt;Logs&lt;/b&gt;, 
+       &lt;b&gt;Realtime Monitors, Events&lt;/b&gt; or 
+       &lt;b&gt;Alarms.&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Furthermore an Environment may be complemented with&amp;nbsp; 
+       &lt;b&gt;Tags&lt;/b&gt;.&amp;nbsp; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;Configuration&lt;/b&gt;, 
+       &lt;b&gt;Alarms&lt;/b&gt; and 
+       &lt;b&gt;Tags&lt;/b&gt; may be maintained a set according to your needs. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt; &lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/2a86af971f134a9e2fbd2c7a4ca91115.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;span style="font-size: 24px;"&gt;&lt;b&gt;Main Workflow&lt;/b&gt;&lt;/span&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;b&gt;&lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        The Main Workflow consists of the following step: 
+      &lt;/div&gt; 
+      &lt;ul&gt; 
+       &lt;li&gt;&lt;b&gt;Baseline&lt;/b&gt;&amp;nbsp;your Docker Application Directory&lt;/li&gt; 
+       &lt;li&gt;&lt;b&gt;Create&lt;/b&gt; an new &lt;b&gt;Application Version ZIP File&lt;/b&gt; of your Docker Application Directory of the Baseline&lt;/li&gt; 
+       &lt;li&gt;&lt;b&gt;Transfer&lt;/b&gt; the &lt;b&gt;Application Version ZIP File&lt;/b&gt; to your Amazon &lt;b&gt;S3&lt;/b&gt;&lt;/li&gt; 
+       &lt;li&gt;&lt;b&gt;Configure&lt;/b&gt; &amp;nbsp;an &lt;b&gt;Beanstalk&lt;/b&gt; &lt;b&gt;Application Version Beanstalk&lt;/b&gt; item&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/li&gt; 
+       &lt;li&gt;&lt;b&gt;Deploy&lt;/b&gt; the new &lt;b&gt;Beanstalk&lt;/b&gt;&amp;nbsp;&lt;b&gt;Application Version&lt;/b&gt; to a&amp;nbsp;&lt;b&gt;Beanstalk&amp;nbsp;Environment&amp;nbsp;&lt;/b&gt;&lt;/li&gt; 
+       &lt;li&gt;The Deploy will &lt;b&gt;Restart and Reconfigure&lt;/b&gt; the Environment&lt;/li&gt; 
+      &lt;/ul&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Gradle Small Hints #1 - Zipping up a file tree</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html"/>
@@ -293,122 +498,6 @@ task dockerZip(type: Zip) {
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Knowledge is Personal</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html"/>
-    <id>https://dev.cloudburo.net/2015/03/08/knowledge-is-personal.html</id>
-    <published>2015-03-08T06:25:06Z</published>
-    <updated>2015-04-07T22:57:12+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
-      &lt;div style=""&gt; 
-       &lt;div style=""&gt; 
-        &lt;div style=""&gt; 
-         &lt;div style=""&gt; 
-          &lt;div style=""&gt; 
-           &lt;div style=""&gt; 
-            &lt;div style=""&gt; 
-             &lt;div style=""&gt; 
-              &lt;div style=""&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;&lt;span style="font-size: 100%;"&gt;A very intelligent and insightful article&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;&amp;nbsp;about&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;&amp;nbsp;Knowledge and the question if its tran&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;sferrable. &lt;a href="http://jarche.com/about/" rel="nofollow"&gt;Harol&lt;/a&gt;&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;&lt;a href="http://jarche.com/about/" rel="nofollow"&gt;d Arche&lt;/a&gt; comes to the co&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;nclusion it isn’t.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-              &lt;/div&gt; 
-             &lt;/div&gt; 
-             &lt;div style=""&gt; 
-              &lt;div style=""&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;i&gt;A big conceit of the knowledge management (KM) field is that knowledge can be transferred, but unlike information or data, it cannot. &lt;b&gt;Knowledge is personal&lt;/b&gt;.&lt;/i&gt;&lt;/span&gt; 
-                &lt;br&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt;
-                 It’s all about sharing of experiences&amp;nbsp;which are&amp;nbsp;best expressed in stories 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;br&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;br&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;&lt;span style=""&gt;&lt;i&gt;&lt;span style="font-size: 100%;"&gt;While knowledge cannot really be transferred, our experiences can be shared&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;. Perhaps that is why we love stories.&lt;/span&gt; &lt;span style="font-size: 100%;"&gt;They are a glimpse into others’ knowledge, more nuanced than any other communication medium&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;.&lt;/span&gt;&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 
-                &lt;br&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;br&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt;
-                 And he goes on 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;br&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;br&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;i&gt;&lt;span style=""&gt;&lt;span style=""&gt;&lt;span style="font-size: 100%;"&gt;Would it not be more effective if we shared knowledge as stories, in education and at work&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;? We hear a lot about the importance of curation in the digital workplace today,&lt;/span&gt; &lt;span style="font-size: 100%;"&gt;but what if our curators were also story tellers&lt;/span&gt;&lt;span style="font-size: 100%;"&gt;? Explicit knowledge (decisions, events, procedures, etc.) is relatively easy to capture, so that is often what gets attention and funding for technologies like document management systems. But stories provide the additional context that makes implicit knowledge stick in our memories&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/i&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;br&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;br&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;I like especially the differentiation between Explicit- and Implicit knowledge, the later of which is far more difficult to grasp:&amp;nbsp;&lt;/span&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;i&gt;&lt;span style=""&gt;&lt;span style=""&gt;&lt;span style="font-size: 100%;"&gt;Implicit knowledge requires interpretation and engagement to make sense of it. Data and information may be gathered by the organization, but knowledge and stories are personal. Stories can help share implicit knowledge.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/i&gt;&lt;/span&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;Something really to be considered when thinking about future content strategies.&lt;/span&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-               &lt;div&gt; 
-                &lt;span style=""&gt;&lt;span style=""&gt;The full article worth a read.&lt;/span&gt;&lt;/span&gt; 
-               &lt;/div&gt; 
-              &lt;/div&gt; 
-             &lt;/div&gt; 
-             &lt;div style=""&gt;&lt;/div&gt; 
-            &lt;/div&gt; 
-           &lt;/div&gt; 
-          &lt;/div&gt; 
-         &lt;/div&gt; 
-        &lt;/div&gt; 
-       &lt;/div&gt; 
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://jarche.com/2014/12/knowledge-is-personal/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
