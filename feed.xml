@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html"/>
     <id>https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html</id>
     <published>2015-04-09T06:25:00Z</published>
-    <updated>2015-04-09T08:46:13+00:00</updated>
+    <updated>2015-04-10T09:29:49+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -150,7 +150,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html"/>
     <id>https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html</id>
     <published>2015-04-08T08:38:00Z</published>
-    <updated>2015-04-08T21:44:09+00:00</updated>
+    <updated>2015-04-10T09:25:32+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -227,7 +227,7 @@ task dockerZip(type: Zip) {
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html</id>
     <published>2015-04-02T02:01:39Z</published>
-    <updated>2015-04-07T22:57:14+00:00</updated>
+    <updated>2015-04-10T09:25:32+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -285,7 +285,7 @@ task dockerZip(type: Zip) {
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-gilt.html"/>
     <id>https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-gilt.html</id>
     <published>2015-03-28T09:06:18Z</published>
-    <updated>2015-04-07T22:57:13+00:00</updated>
+    <updated>2015-04-10T09:25:32+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -325,7 +325,7 @@ task dockerZip(type: Zip) {
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html"/>
     <id>https://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html</id>
     <published>2015-03-16T06:36:00Z</published>
-    <updated>2015-04-07T22:57:13+00:00</updated>
+    <updated>2015-04-10T09:25:32+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -373,7 +373,7 @@ task dockerZip(type: Zip) {
     <link rel="alternate" href="https://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html"/>
     <id>https://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html</id>
     <published>2015-03-15T09:22:29Z</published>
-    <updated>2015-04-07T22:57:12+00:00</updated>
+    <updated>2015-04-10T09:25:32+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
