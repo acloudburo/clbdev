@@ -103,6 +103,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/04/13/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</loc>
+    <lastmod>2015-04-13</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2014/01/25/personal-data-api-part-2.html</loc>
     <lastmod>2015-04-10</lastmod>
     <priority>0.7</priority>
@@ -397,6 +403,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/04/13.html</loc>
+    <lastmod>2015-04-10</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2015/04/09.html</loc>
     <lastmod>2015-04-10</lastmod>
     <priority>0.8</priority>
@@ -566,6 +578,18 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net//page/2/</loc>
+    <lastmod>2015-04-10</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//page/3/</loc>
+    <lastmod>2015-04-10</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/page/2.html</loc>
     <lastmod>2015-04-10</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>

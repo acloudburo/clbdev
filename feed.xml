@@ -5,10 +5,66 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-04-09T06:25:00Z</updated>
+  <updated>2015-04-13T06:05:00Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>Docker Small Hints #2: Controlling Cloud Costs using Alarms in AWS</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/13/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html"/>
+    <id>https://dev.cloudburo.net/2015/04/13/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</id>
+    <published>2015-04-13T06:05:00Z</published>
+    <updated>2015-04-13T19:48:43+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/757bd37198cd347fe51640ac3bec9e06.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
+      &lt;div&gt;
+        In order not to wake up one morning with a high AWS Cloud bill, it’s advisable to set a BillingAlarm which will notify you when your environments are starting charging more than you expect. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        In the sample below I will get an Email when the Estimated Charges for 6 hours is passing 10 USD.&amp;nbsp; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        It will allow you to react in time in&amp;nbsp;case some of your instances will&amp;nbsp;go out of&amp;nbsp;your expected bound.&amp;nbsp; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Docker Small Hints #1:  High Level Concepts Elastic Beanstalk</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html"/>
@@ -364,71 +420,6 @@ task dockerZip(type: Zip) {
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/03/uber-realtime-market-platform?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Microservice Competencies by Martin Fowler</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html"/>
-    <id>https://dev.cloudburo.net/2015/03/15/microservice-competencies-by-martin-fowler.html</id>
-    <published>2015-03-15T09:22:29Z</published>
-    <updated>2015-04-10T10:20:22+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
-      &lt;div&gt;
-        There is a quite a hype in the Mircoservice architecture style, so it’s good that one of the well-known architecture heavy-weight&amp;nbsp;is listing&amp;nbsp;&amp;nbsp;some important competencies necessary to successfully work with this style.&amp;nbsp; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Martin Fowler outlines in this article the trade-offs and operational consequences of a micro service&amp;nbsp;architecture : 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;i&gt;In particular with microservices there are serious consequences for operations, who now have to handle an ecosystem of small services rather than a single, well-defined monolith. Consequently if you don&amp;rsquo;t have certain baseline competencies, you shouldn&amp;rsquo;t consider using the microservice style.&lt;/i&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;Rapid Provisioning&lt;/li&gt; 
-       &lt;li&gt;Basic Monitoring&lt;/li&gt; 
-       &lt;li&gt;Rapid Application Deployment&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        will be key.&amp;nbsp; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;i&gt;With this kind of setup in place, you&amp;rsquo;re ready for a first system using a handful of microservices. Deploy this system and use it in production, expect to learn a lot about keeping it healthy and ensuring the devops collaboration is working well. Give yourself time to do this, learn from it, and grow more capability before you ramp up your number of services.&lt;/i&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
