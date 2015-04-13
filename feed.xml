@@ -14,12 +14,11 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/13/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html"/>
     <id>https://dev.cloudburo.net/2015/04/13/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</id>
     <published>2015-04-13T06:05:00Z</published>
-    <updated>2015-04-13T19:48:43+00:00</updated>
+    <updated>2015-04-13T20:42:20+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/757bd37198cd347fe51640ac3bec9e06.png" /&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;&lt;br&gt;
       &lt;div&gt;
@@ -37,6 +36,7 @@
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/757bd37198cd347fe51640ac3bec9e06.png" /&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt; 
       &lt;/div&gt; 
