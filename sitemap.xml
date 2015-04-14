@@ -49,6 +49,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html</loc>
+    <lastmod>2015-04-14</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html</loc>
     <lastmod>2015-04-10</lastmod>
     <priority>0.7</priority>
@@ -307,6 +313,18 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//tags/gradle.html</loc>
+    <lastmod>2015-04-10</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//tags/smallhints.html</loc>
+    <lastmod>2015-04-10</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//tags/docker.html</loc>
     <lastmod>2015-04-10</lastmod>
     <priority>0.9</priority>
@@ -314,12 +332,6 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net//tags/aws.html</loc>
-    <lastmod>2015-04-10</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net//tags/smallhints.html</loc>
     <lastmod>2015-04-10</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
@@ -361,12 +373,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net//tags/gradle.html</loc>
-    <lastmod>2015-04-10</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net//tags/personaldata.html</loc>
     <lastmod>2015-04-10</lastmod>
     <priority>0.9</priority>
@@ -400,6 +406,12 @@
     <loc>https://dev.cloudburo.net//2015/04.html</loc>
     <lastmod>2015-04-10</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/04/14.html</loc>
+    <lastmod>2015-04-10</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
