@@ -139,15 +139,15 @@
   <div>
     Clone the 
    <i><span style="">snapshots</span></i> and 
-   <i><span style="">releases</span></i> branches of your Maven Repository to the local manchine. You will publish the artifacts of your&nbsp;project which you build into this target directory. 
+   <i><span style="">releases</span></i> branches of your Maven Repository to the local machine. You will publish the artifacts of your&nbsp;project which you build into this target directory. 
   </div> 
   <div> 
    <br> 
   </div> 
   <div></p>
 <pre class="highlight shell"><code>
-<span class="gp">$ </span>git clone -b releases  https://github.com/talfco/clb_mvnrepo.git clb_mvnrepo_releases 
-  <span class="nv">$ </span>git clone -b snapshots https://github.com/talfco/clb_mvnrepo.git clb_mvnrepo_snapshots 
+git clone -b releases  https://github.com/talfco/clb_mvnrepo.git clb_mvnrepo_releases 
+  git clone -b snapshots https://github.com/talfco/clb_mvnrepo.git clb_mvnrepo_snapshots 
 
 </code></pre>
 
@@ -168,101 +168,100 @@
   <div> 
    <br> 
   </div> 
-  <div> 
-   <span style="font-size: 12px;"><span style="">
-&ldquo;` </span></span> </p>
+  <div></p>
+<pre class="highlight plaintext"><code>
+apply plugin: 'groovy' 
+  apply plugin: 'maven-publish' 
 
-<p>apply plugin: &lsquo;groovy&rsquo; 
-  apply plugin: &lsquo;maven-publish&rsquo; </p>
-<pre class="highlight plaintext"><code>&lt;div&gt; 
-   &lt;span style="font-size: 12px;"&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
+</code></pre>
+
+<div> 
+   <br> 
+  </div> 
+
+<p><div>
     Additionally add the publishing configuration which points to your local Maven repository clone to your 
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;build.gradle&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style="font-size: 12px;"&gt;&lt;br&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style="font-size: 12px;"&gt;&lt;span style=""&gt;
-``` &lt;/span&gt;&lt;/span&gt; 
-   &lt;span style="font-size: 12px;"&gt;&lt;br&gt;&lt;/span&gt; 
+   <b><i><span style="">build.gradle</span></i></b> 
+  </div> 
+  <div> 
+   <i><span style=""><br></span></i> 
+  </div> 
+  <div> 
+   <span style=""><i>
+&ldquo;` </i></span> </p>
 
-publishing { 
+<p>publishing { 
        publications { 
             maven(MavenPublication) { 
-                 groupId "com.cloudburo" 
-                 artifactId 'clb-gradleTask' 
-                 version '1.1.0' 
+                 groupId &quot;com.cloudburo&rdquo; 
+                 artifactId &lsquo;clb-gradleTask&rsquo; 
+                 version &lsquo;1.1.0&rsquo; 
                  from components.java 
             } 
        } 
        repositories { 
             maven { 
-                url "/Users/Felix/Dev/clb_mvnrepo_releases" 
+                url &ldquo;/Users/Felix/Dev/clb_mvnrepo_releases&rdquo; 
             } 
        } 
-  } 
-
-</code></pre>
-
-<div> 
-   <span style="font-size: 12px;"><span style=""><br></span></span> 
-  </div> 
-
-<p><div>
+  } </p>
+<pre class="highlight plaintext"><code>&lt;div&gt; 
+   &lt;span style="font-size: 12px;"&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
     Depending on the version number of 
-   <i><b><span style="">1.1.0</span></b></i> or 
-   <i><b><span style="">1.1.0-SNAPSHOT</span></b></i> configure the publishing configuration for the 
-   <i><b><span style="">releases</span></b></i> or 
-   <i><b><span style="">snapshots</span></b></i> local GIT clone directory. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
-  <div>
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;1.1.0&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; or 
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;1.1.0-SNAPSHOT&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; configure the publishing configuration for the 
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;releases&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; or 
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;snapshots&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; local GIT clone directory. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
     The 
-   <i><b><span style="">gradle publish</span></b></i> command will build your project and deploy it to&nbsp;your 
-   <i><b><span style="">clb_mvnrepo</span></b></i> directory. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
-  <div>
-    Having published it&nbsp;into your publish directory, commit&nbsp;and push via the git commands&nbsp;to your&nbsp;Github snapshort/release directory. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
-  <div> 
-   <b><span style="font-size: 24px;">Integrate Released Artifacts</span></b> 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
-  <div>
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;gradle publish&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; command will build your project and deploy it to&amp;nbsp;your 
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;clb_mvnrepo&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; directory. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
+    Having published it&amp;nbsp;into your publish directory, commit&amp;nbsp;and push via the git commands&amp;nbsp;to your&amp;nbsp;Github snapshot/release directory. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;b&gt;&lt;span style="font-size: 24px;"&gt;Integrate Released Artifacts&lt;/span&gt;&lt;/b&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
     You can now reference the released libraries via the following gradle configuration 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
-  <div></p>
-<pre class="highlight plaintext"><code>
-repositories {  
-       mavenCentral()  
-            maven { url 'https://github.com/talfco/clb_mvnrepo/raw/snapshots' } 
-  }  
-  dependencies { 
-       classpath group : 'com.cloudburo' , name : 'clb-gradleTask' , version :  ‚1.1.0' , changing : true } 
-  } 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
 
 </code></pre>
 
-<p></div> 
-  <div> 
-   <span style="font-size: 24px;"><br></span> 
-  </div></p>
+<p>repositories { 
+       mavenCentral() 
+            maven { url &lsquo;<a href="https://github.com/talfco/clb_mvnrepo/raw/snapshots">https://github.com/talfco/clb_mvnrepo/raw/snapshots</a>&rsquo; } 
+  } 
+  dependencies { 
+       classpath group : &lsquo;com.cloudburo&rsquo; , name : &lsquo;clb-gradleTask&rsquo; , version :  ‚1.1.0&#39; } 
+  } </p>
+<pre class="highlight plaintext"><code>
+
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt; 
+  &lt;/div&gt;
+</code></pre>
 
   </div>
 </div>
