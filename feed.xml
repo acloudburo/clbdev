@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html"/>
     <id>https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html</id>
     <published>2015-04-14T08:00:00Z</published>
-    <updated>2015-04-14T21:31:42+00:00</updated>
+    <updated>2015-04-14T21:56:33+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -50,7 +50,7 @@
   &lt;/div&gt; 
   &lt;div&gt;&lt;/p&gt;
 &lt;pre class="highlight shell"&gt;&lt;code&gt;
-git clone -b releases  https://github.com/talfco/clb_mvnrepo.git clb_mvnrepo_releases 
+  git clone -b releases  https://github.com/talfco/clb_mvnrepo.git clb_mvnrepo_releases 
   git clone -b snapshots https://github.com/talfco/clb_mvnrepo.git clb_mvnrepo_snapshots 
 
 &lt;/code&gt;&lt;/pre&gt;
@@ -74,7 +74,7 @@ git clone -b releases  https://github.com/talfco/clb_mvnrepo.git clb_mvnrepo_rel
   &lt;/div&gt; 
   &lt;div&gt;&lt;/p&gt;
 &lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-apply plugin: 'groovy' 
+  apply plugin: 'groovy' 
   apply plugin: 'maven-publish' 
 
 &lt;/code&gt;&lt;/pre&gt;
@@ -88,84 +88,82 @@ apply plugin: 'groovy'
    &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;build.gradle&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; 
   &lt;/div&gt; 
   &lt;div&gt; 
-   &lt;i&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/i&gt; 
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+publishing {
+ publications {
+ maven(MavenPublication) {
+ groupId "com.cloudburo" 
+ artifactId 'clb-gradleTask' 
+ version '1.0.1-SNAPSHOT' 
+ from components.java
+ }
+ }
+ repositories {
+ maven { url "/Users/Felix/Development/workspace-grails/clb_mvnrepo_snapshots" }
+ } 
+  } 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+
+&lt;p&gt;&lt;div&gt;
+    Depending on the version number of 
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;1.1.0&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; or 
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;1.1.0-SNAPSHOT&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; configure the publishing configuration for the 
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;releases&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; or 
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;snapshots&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; local GIT clone directory. 
   &lt;/div&gt; 
   &lt;div&gt; 
-   &lt;span style=""&gt;&lt;i&gt;
-&amp;ldquo;` &lt;/i&gt;&lt;/span&gt; &lt;/p&gt;
-
-&lt;p&gt;publishing { 
-       publications { 
-            maven(MavenPublication) { 
-                 groupId &amp;quot;com.cloudburo&amp;rdquo; 
-                 artifactId &amp;lsquo;clb-gradleTask&amp;rsquo; 
-                 version &amp;lsquo;1.1.0&amp;rsquo; 
-                 from components.java 
-            } 
-       } 
-       repositories { 
-            maven { 
-                url &amp;ldquo;/Users/Felix/Dev/clb_mvnrepo_releases&amp;rdquo; 
-            } 
-       } 
-  } &lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;&amp;lt;div&amp;gt; 
-   &amp;lt;span style="font-size: 12px;"&amp;gt;&amp;lt;span style=""&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt; 
-  &amp;lt;/div&amp;gt; 
-  &amp;lt;div&amp;gt;
-    Depending on the version number of 
-   &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;&amp;lt;span style=""&amp;gt;1.1.0&amp;lt;/span&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; or 
-   &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;&amp;lt;span style=""&amp;gt;1.1.0-SNAPSHOT&amp;lt;/span&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; configure the publishing configuration for the 
-   &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;&amp;lt;span style=""&amp;gt;releases&amp;lt;/span&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; or 
-   &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;&amp;lt;span style=""&amp;gt;snapshots&amp;lt;/span&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; local GIT clone directory. 
-  &amp;lt;/div&amp;gt; 
-  &amp;lt;div&amp;gt; 
-   &amp;lt;br&amp;gt; 
-  &amp;lt;/div&amp;gt; 
-  &amp;lt;div&amp;gt;
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
     The 
-   &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;&amp;lt;span style=""&amp;gt;gradle publish&amp;lt;/span&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; command will build your project and deploy it to&amp;amp;nbsp;your 
-   &amp;lt;i&amp;gt;&amp;lt;b&amp;gt;&amp;lt;span style=""&amp;gt;clb_mvnrepo&amp;lt;/span&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/i&amp;gt; directory. 
-  &amp;lt;/div&amp;gt; 
-  &amp;lt;div&amp;gt; 
-   &amp;lt;br&amp;gt; 
-  &amp;lt;/div&amp;gt; 
-  &amp;lt;div&amp;gt;
-    Having published it&amp;amp;nbsp;into your publish directory, commit&amp;amp;nbsp;and push via the git commands&amp;amp;nbsp;to your&amp;amp;nbsp;Github snapshot/release directory. 
-  &amp;lt;/div&amp;gt; 
-  &amp;lt;div&amp;gt; 
-   &amp;lt;br&amp;gt; 
-  &amp;lt;/div&amp;gt; 
-  &amp;lt;div&amp;gt; 
-   &amp;lt;b&amp;gt;&amp;lt;span style="font-size: 24px;"&amp;gt;Integrate Released Artifacts&amp;lt;/span&amp;gt;&amp;lt;/b&amp;gt; 
-  &amp;lt;/div&amp;gt; 
-  &amp;lt;div&amp;gt; 
-   &amp;lt;br&amp;gt; 
-  &amp;lt;/div&amp;gt; 
-  &amp;lt;div&amp;gt;
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;gradle publish&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; command will build your project and deploy it to&amp;nbsp;your 
+   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;clb_mvnrepo&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; directory. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
+    Having published it&amp;nbsp;into your publish directory, commit&amp;nbsp;and push via the git commands&amp;nbsp;to your&amp;nbsp;Github snapshot/release directory. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;b&gt;&lt;span style="font-size: 24px;"&gt;Integrate Released Artifacts&lt;/span&gt;&lt;/b&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
     You can now reference the released libraries via the following gradle configuration 
-  &amp;lt;/div&amp;gt; 
-  &amp;lt;div&amp;gt; 
-   &amp;lt;br&amp;gt; 
-  &amp;lt;/div&amp;gt; 
-  &amp;lt;div&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;repositories { 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+  repositories { 
        mavenCentral() 
-            maven { url &amp;lsquo;&lt;a href="https://github.com/talfco/clb_mvnrepo/raw/snapshots"&gt;https://github.com/talfco/clb_mvnrepo/raw/snapshots&lt;/a&gt;&amp;rsquo; } 
+            maven { url 'https://github.com/talfco/clb_mvnrepo/raw/snapshots' } 
   } 
   dependencies { 
-       classpath group : &amp;lsquo;com.cloudburo&amp;rsquo; , name : &amp;lsquo;clb-gradleTask&amp;rsquo; , version :  ‚1.1.0&amp;#39; } 
-  } &lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+       classpath group : 'com.cloudburo' , name : 'clb-gradleTask' , version :  ‚1.1.0' } 
+  } 
 
-  &amp;lt;/div&amp;gt; 
-  &amp;lt;div&amp;gt; 
-   &amp;lt;span style="font-size: 24px;"&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/span&amp;gt; 
-  &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt; 
+  &lt;/div&gt;&lt;/p&gt;
 
   &lt;/div&gt;
 &lt;/div&gt;</content>
