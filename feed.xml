@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html"/>
     <id>https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html</id>
     <published>2015-04-17T11:53:00Z</published>
-    <updated>2015-04-17T12:40:47+00:00</updated>
+    <updated>2015-04-17T16:27:10+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -41,13 +41,13 @@
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt; 
-       &lt;span style=" font-size: 13px;"&gt;&lt;i&gt;&amp;ldquo;Did you try the &amp;lsquo;refresh dependencies&amp;rsquo; option in the Grails menu (accesible if you right click on your project)?&lt;/i&gt;&lt;/span&gt; 
+       &lt;span style=""&gt;&lt;i&gt;&amp;ldquo;Did you try the &amp;lsquo;refresh dependencies&amp;rsquo; option in the Grails menu (accesible if you right click on your project)?&lt;/i&gt;&lt;/span&gt; 
       &lt;/div&gt; 
       &lt;div&gt; 
-       &lt;span style=" font-size: 13px;"&gt;&lt;i&gt;Just running the &amp;quot;grails refresh-dependencies&amp;rdquo; command itself isn&amp;rsquo;t sufficient to let the IDE pick up on dependency changes. You have to make the IDE itself &amp;lsquo;refresh&amp;rsquo; its dependencies.&lt;/i&gt;&lt;/span&gt; 
+       &lt;span style=""&gt;&lt;i&gt;Just running the &amp;quot;grails refresh-dependencies&amp;rdquo; command itself isn&amp;rsquo;t sufficient to let the IDE pick up on dependency changes. You have to make the IDE itself &amp;lsquo;refresh&amp;rsquo; its dependencies.&lt;/i&gt;&lt;/span&gt; 
       &lt;/div&gt; 
       &lt;div&gt; 
-       &lt;span style=" font-size: 13px;"&gt;&lt;i&gt;This is because The IDE and the command line tooling use seperate infrastructure for compiling your code. The IDE menu &amp;lsquo;refresh dependencies&amp;rsquo; is supposed to synch-up both worlds with eachother. Typically you have to do this if you made changes to the project dependencies by editing your project&amp;rsquo;s config files.&amp;ldquo;&lt;/i&gt;&lt;/span&gt; 
+       &lt;span style=""&gt;&lt;i&gt;This is because The IDE and the command line tooling use seperate infrastructure for compiling your code. The IDE menu &amp;lsquo;refresh dependencies&amp;rsquo; is supposed to synch-up both worlds with eachother. Typically you have to do this if you made changes to the project dependencies by editing your project&amp;rsquo;s config files.&amp;ldquo;&lt;/i&gt;&lt;/span&gt; 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -67,7 +67,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html"/>
     <id>https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html</id>
     <published>2015-04-14T08:00:00Z</published>
-    <updated>2015-04-14T21:56:33+00:00</updated>
+    <updated>2015-04-17T16:16:28+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -226,7 +226,7 @@ publishing {
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/13/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html"/>
     <id>https://dev.cloudburo.net/2015/04/13/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</id>
     <published>2015-04-13T06:05:00Z</published>
-    <updated>2015-04-13T20:42:20+00:00</updated>
+    <updated>2015-04-17T16:16:28+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -282,7 +282,7 @@ publishing {
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html"/>
     <id>https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html</id>
     <published>2015-04-09T06:25:00Z</published>
-    <updated>2015-04-10T10:20:22+00:00</updated>
+    <updated>2015-04-17T16:16:28+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -418,7 +418,7 @@ publishing {
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html"/>
     <id>https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html</id>
     <published>2015-04-08T08:38:00Z</published>
-    <updated>2015-04-10T10:20:22+00:00</updated>
+    <updated>2015-04-17T16:16:28+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -495,7 +495,7 @@ task dockerZip(type: Zip) {
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html</id>
     <published>2015-04-02T02:01:39Z</published>
-    <updated>2015-04-10T10:20:22+00:00</updated>
+    <updated>2015-04-17T16:16:28+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
