@@ -5,10 +5,74 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-04-14T08:00:00Z</updated>
+  <updated>2015-04-17T11:53:00Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>Grails Small Hints #1 - Refresh Dependencies in Grails STS Tool Suite</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html"/>
+    <id>https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html</id>
+    <published>2015-04-17T11:53:00Z</published>
+    <updated>2015-04-17T12:16:25+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
+      &lt;div&gt;
+        Adding dependencies in the Grails STS Tool Suite is sometimes painful, due to&amp;nbsp;the fact that changes in the BuildConfig.groovy is not taken over immediately. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        It resulted in long session try to run grails refresh-dependencies, rebuild the whole project or trying to fix it by restarting STS. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        This doesn’t really worked out until I found the following thread 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;a href="http://forum.spring.io/forum/spring-projects/springsource-tool-suite/121171-problem-with-dependencies-in-sts-grails" rel="nofollow"&gt;&lt;a href="http://forum.spring.io/forum/spring-projects/springsource-tool-suite/121171-problem-with-dependencies-in-sts-grails"&gt;http://forum.spring.io/forum/spring-projects/springsource-tool-suite/121171-problem-with-dependencies-in-sts-grails&lt;/a&gt;&lt;/a&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;span style=" font-size: 13px;"&gt;&lt;i&gt;&amp;ldquo;Did you try the &amp;lsquo;refresh dependencies&amp;rsquo; option in the Grails menu (accesible if you right click on your project)?&lt;/i&gt;&lt;/span&gt; 
+       &lt;div&gt; 
+        &lt;br style=" font-size: 13px;"&gt; 
+       &lt;/div&gt; 
+       &lt;div&gt; 
+        &lt;span style=" font-size: 13px;"&gt;&lt;i&gt;Just running the &amp;quot;grails refresh-dependencies&amp;rdquo; command itself isn&amp;rsquo;t sufficient to let the IDE pick up on dependency changes. You have to make the IDE itself &amp;lsquo;refresh&amp;rsquo; its dependencies.&lt;/i&gt;&lt;/span&gt; 
+       &lt;/div&gt; 
+       &lt;div&gt; 
+        &lt;br style=" font-size: 13px;"&gt; 
+       &lt;/div&gt; 
+       &lt;div&gt; 
+        &lt;span style=" font-size: 13px;"&gt;&lt;i&gt;This is because The IDE and the command line tooling use seperate infrastructure for compiling your code. The IDE menu &amp;lsquo;refresh dependencies&amp;rsquo; is supposed to synch-up both worlds with eachother. Typically you have to do this if you made changes to the project dependencies by editing your project&amp;rsquo;s config files.&amp;ldquo;&lt;/i&gt;&lt;/span&gt; 
+       &lt;/div&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        &amp;nbsp; 
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Gradle Small Hints #2 - Deploy and Integrate Maven Artifacts on Github</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html"/>
@@ -491,46 +555,6 @@ task dockerZip(type: Zip) {
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/03/microservices-logical-services?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>A Modern Microservices Architecture By Gilt</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-gilt.html"/>
-    <id>https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-gilt.html</id>
-    <published>2015-03-28T09:06:18Z</published>
-    <updated>2015-04-10T10:20:22+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
-      &lt;div&gt; 
-       &lt;a href="http://www.yonigoldberg.com/" rel="nofollow"&gt;Yoni Goldberg&lt;/a&gt;&amp;nbsp;explains in a presentation at the&amp;nbsp; 
-       &lt;a href="http://qconlondon.com/" rel="nofollow"&gt;QCon London&lt;/a&gt; conference&amp;nbsp; the challenges they encountered moving to a micro-services architecture. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;i&gt;After living with micro services for three years at Gilt we can see advantages in team ownership, boundaries defined by APIs and complex problems broken down into small ones. Challenges still exists in tooling, integration environments and monitoring&lt;/i&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The article&amp;nbsp; explains how they moved from Ruby on Rails, over to the JVM with macro- and micro services, which solved 99% of their scaling&amp;nbsp;but left some of the problems developers experienced with the new services being semi-monolithic and lacking&amp;nbsp;clear ownership of code. The tackled the problem by increasing the number of micro services. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Go on read the full article&amp;nbsp;on the below link. 
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/03/microservices-architecture-gilt?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
