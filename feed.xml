@@ -5,16 +5,33 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-04-17T11:53:00Z</updated>
+  <updated>2015-04-20T06:03:25Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>The Benefits of Microservices</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/20/the-benefits-of-microservices.html"/>
+    <id>https://dev.cloudburo.net/2015/04/20/the-benefits-of-microservices.html</id>
+    <published>2015-04-20T06:03:25Z</published>
+    <updated>2015-04-20T06:03:26+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;      During the online panel Exploring the Uncharted Territory of Microservices organized by XebiaLabs, the following participants discussed the benefits of microservices: Gene Kim, author, researcher and former CTO at Tripwire, moderator; Gary Gruver, President at Practical Large Scale Agile LLC and former Director of Engineering for the LaserJet Enterprise at HP; Randy Shoup is Consulting CTO at Randy Shoup Consulting and former Director of Engineering for Cloud Computing at Google; Andrew Phillips is VP Product Management at XebiaLabs. The following infoq article extracted the main ideas, paraphrasing them in a short form.
+    &lt;a href="http://www.infoq.com/news/2015/03/benefits-microservices?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Grails Small Hints #1 - Refresh Dependencies in Grails STS Tool Suite</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html"/>
     <id>https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html</id>
     <published>2015-04-17T11:53:00Z</published>
-    <updated>2015-04-17T16:27:10+00:00</updated>
+    <updated>2015-04-19T21:54:23+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -67,7 +84,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html</id>
     <published>2015-04-17T10:24:00Z</published>
-    <updated>2015-04-17T23:00:36+00:00</updated>
+    <updated>2015-04-19T21:54:23+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -84,7 +101,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html"/>
     <id>https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html</id>
     <published>2015-04-14T08:00:00Z</published>
-    <updated>2015-04-17T16:16:28+00:00</updated>
+    <updated>2015-04-19T21:54:23+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -243,7 +260,7 @@ publishing {
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/13/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html"/>
     <id>https://dev.cloudburo.net/2015/04/13/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</id>
     <published>2015-04-13T06:05:00Z</published>
-    <updated>2015-04-17T16:16:28+00:00</updated>
+    <updated>2015-04-19T21:54:23+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -299,7 +316,7 @@ publishing {
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html"/>
     <id>https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html</id>
     <published>2015-04-09T06:25:00Z</published>
-    <updated>2015-04-17T16:16:28+00:00</updated>
+    <updated>2015-04-19T21:54:23+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -427,83 +444,6 @@ publishing {
        &lt;li&gt;The Deploy will &lt;b&gt;Restart and Reconfigure&lt;/b&gt; the Environment&lt;/li&gt; 
       &lt;/ul&gt;&lt;/p&gt;
     
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Gradle Small Hints #1 - Zipping up a file tree</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html"/>
-    <id>https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html</id>
-    <published>2015-04-08T08:38:00Z</published>
-    <updated>2015-04-17T16:16:28+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    Don’t know but&amp;nbsp; took me some time to figure out how to ZIP up a project directory required for my AWS Elastic Beanstalk Deployment. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    The task will collect all relevant files for my project directory (which contains the docker configuration) and writes it into the build directly. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-task myZip(type: Zip) {
-   from ('.')
-   include '**/*.groovy'
-   include '**/*.config'
-   include '*'
-   exclude '.gradle'
-   exclude '.settings'
-   exclude 'bin'
-   exclude 'build'
-   exclude 'logs'
-   exclude 'src/test'
-   exclude '.classpath'
-   exclude '.project'
-   into '.'
-   destinationDir(file("build")) 
-  } 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-
-&lt;p&gt;&lt;div&gt;
-    Or also possible 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-task dockerZip(type: Zip) { 
-    from fileTree(dir: '.', 
-    includes: ['**/*.groovy', '**/*.config','*'], 
-    excludes: ['.gradle','.settings','bin','build','logs','src/test','.classpath','.project']) 
-    into '.'
-   destinationDir(file("build")) 
-  } 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style="font-size: 11px;"&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-  &lt;/div&gt;&lt;/p&gt;
-
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
