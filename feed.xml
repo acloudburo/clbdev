@@ -5,125 +5,16 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-04-20T07:18:16Z</updated>
+  <updated>2015-04-17T11:53:00Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
-  <entry>
-    <title>Phil Calcado on Lessons Learnt During SoundCloud's Microservice Migration</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/20/phil-calcado-on-lessons-learnt-during-soundcloud-s-microservice-migration.html"/>
-    <id>https://dev.cloudburo.net/2015/04/20/phil-calcado-on-lessons-learnt-during-soundcloud-s-microservice-migration.html</id>
-    <published>2015-04-20T07:18:16Z</published>
-    <updated>2015-04-20T21:04:01+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        At 
-       &lt;a href="http://qconlondon.com/" rel="nofollow"&gt;QCon London&lt;/a&gt; 2015 
-       &lt;a href="https://www.linkedin.com/in/pcalcado" rel="nofollow"&gt;Phil Calcado&lt;/a&gt; shared lessons learnt&amp;nbsp;from 
-       &lt;a href="https://soundcloud.com/" rel="nofollow"&gt;SoundCloud’s&lt;/a&gt; move from a monolithic to micro services architecture. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The article is very practical written,&amp;nbsp; introducing best partices about the topic as well as states fundamental capabilities in context of a micro service platform, as for example&amp;nbsp; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;rapid provisioning,&lt;/li&gt; 
-       &lt;li&gt;basic monitoring and&lt;/li&gt; 
-       &lt;li&gt;rapid application deployment.&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        He states as a core lesson 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;&lt;i&gt;the need to standards monitoring dashboards&lt;/i&gt;&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        due to the fact that it can be difficult to&amp;nbsp;determine what has broken in a distributed&amp;nbsp;micro service architecture. An experience which I encounter as well even with a small startup docker environment. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Currently I standardize my docker runtime monitoring needs around the 
-       &lt;a href="https://logentries.com/" rel="nofollow"&gt;logentries.com&lt;/a&gt;&amp;nbsp;platform, which provides an easy to use and powerful Log Management and Realtime Analytics solution. For micro companies in the bootstrap-/development mode it&amp;nbsp;offers a free tier, which allows you to gain knowledge and experience. It’s clear&amp;nbsp;for&amp;nbsp;me when going live I will switch over to a paid plan to contribute to this neat service.&amp;nbsp; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Integration of the the log entries remote&amp;nbsp;output appender into my java-/groovy based curation Bot via the log4j library was straightforward. Below you see a screenshot of the aggregated log data. Via tags (in the example „Exception“, „Warning“) -&amp;nbsp;which can be configured for log entries messages -&amp;nbsp;it’s quite easy to get a quick dashboard&amp;nbsp;overview of any kind of problems. &amp;ldquo;Live Tail&amp;rdquo; feature&amp;nbsp;is&amp;nbsp; handy in case you restart the Beanstalk docker application. During the reconfiguration and restart process the Beanstalk Log feature isn’t available. I now can switch to Logentries and&amp;nbsp;watch „live“ the startup process. It will allows me to detect startup problems early. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/6a2d24224414a16a0fa998a65b83130b.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Another finding by Phil which will be instrumental when you go for production is the capability&amp;nbsp; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;&lt;i&gt;to expose the application’s operational functionality in a standard way, allowing monitoring data to be easily accessed essential. As well as providing the capability to shut-down an application, or exposing the ability to trip downstream circuit-breakers.&amp;nbsp;&lt;/i&gt;&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        This is something I have still to address and it will allow me to look deeper in the AWS Elastibeanstalk Worker configuration, which I want to use to address this point. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The full article can be found here: 
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/03/soundcloud-microservices?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global&amp;amp;utm_reader=feedly"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
   <entry>
     <title>Grails Small Hints #1 - Refresh Dependencies in Grails STS Tool Suite</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html"/>
     <id>https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html</id>
     <published>2015-04-17T11:53:00Z</published>
-    <updated>2015-04-20T21:04:01+00:00</updated>
+    <updated>2015-04-21T18:39:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -536,6 +427,83 @@ publishing {
        &lt;li&gt;The Deploy will &lt;b&gt;Restart and Reconfigure&lt;/b&gt; the Environment&lt;/li&gt; 
       &lt;/ul&gt;&lt;/p&gt;
     
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Gradle Small Hints #1 - Zipping up a file tree</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html"/>
+    <id>https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html</id>
+    <published>2015-04-08T08:38:00Z</published>
+    <updated>2015-04-20T21:04:01+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
+    Don’t know but&amp;nbsp; took me some time to figure out how to ZIP up a project directory required for my AWS Elastic Beanstalk Deployment. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
+    The task will collect all relevant files for my project directory (which contains the docker configuration) and writes it into the build directly. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+task myZip(type: Zip) {
+   from ('.')
+   include '**/*.groovy'
+   include '**/*.config'
+   include '*'
+   exclude '.gradle'
+   exclude '.settings'
+   exclude 'bin'
+   exclude 'build'
+   exclude 'logs'
+   exclude 'src/test'
+   exclude '.classpath'
+   exclude '.project'
+   into '.'
+   destinationDir(file("build")) 
+  } 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+
+&lt;p&gt;&lt;div&gt;
+    Or also possible 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+task dockerZip(type: Zip) { 
+    from fileTree(dir: '.', 
+    includes: ['**/*.groovy', '**/*.config','*'], 
+    excludes: ['.gradle','.settings','bin','build','logs','src/test','.classpath','.project']) 
+    into '.'
+   destinationDir(file("build")) 
+  } 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style="font-size: 11px;"&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
+  &lt;/div&gt;&lt;/p&gt;
+
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
