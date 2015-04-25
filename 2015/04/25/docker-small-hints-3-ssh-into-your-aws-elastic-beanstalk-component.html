@@ -206,8 +206,8 @@ iMac:~ Felix$ eb ssh --setup
   WARNING: Uploaded SSH public key for "aws-eb" into EC2 for region us-west-2. 
   INFO: Environment update is starting.                              
  INFO: Updating environment curationApp-prod's configuration settings.
- INFO: Created Auto Scaling launch configuration named: awseb-e-mm3rxjxrn3-stack-AWSEBAutoScalingLaunchConfiguration-1D8ET9F9BZ592
- INFO: Deleted Auto Scaling launch configuration named: awseb-e-mm3rxjxrn3-stack-AWSEBAutoScalingLaunchConfiguration-8JDT6IAKL1QQ 
+ INFO: Created Auto Scaling launch configuration named: awseb-e-...-stack-AWSEBAutoScalingLaunchConfiguration-1D8ET9F9BZ592
+ INFO: Deleted Auto Scaling launch configuration named: awseb-e-...-stack-AWSEBAutoScalingLaunchConfiguration-8JDT6IAKL1QQ 
   INFO: Successfully deployed new configuration to environment.  
 
 </code></pre>
@@ -222,10 +222,10 @@ iMac:~ Felix$ eb ssh --setup
    <i>eb ssh</i> command. 
   </div> 
   <div> 
-   <br> 
+   <span style="font-size: 18px;"><br></span> 
   </div> 
   <div> 
-   <span style="font-size: 18px;"><b>Looking at the details the configuration triangle</b></span> 
+   <span style="font-size: 18px;"><b>Looking at the details of the configuration triangle</b></span> 
   </div> 
   <div> 
    <br> 
@@ -313,13 +313,13 @@ iMac:~ Felix$ eb ssh --setup
        <br> 
       </div> 
       <div>
-        So now we have a (1) EC2 Instance configured with a (2) Security Group&nbsp;for SSH inbound traffic&nbsp;and we have a (3) Public/Private key pair (3) which allows us to authenticate ourselves.&nbsp; 
+        So now we have (1) a EC2 Instance configured with (2) a &nbsp;Security Group&nbsp;for SSH inbound traffic&nbsp;and we have (3) a Public/Private key pair&nbsp; which allows us to authenticate ourselves.&nbsp; 
       </div> 
       <div> 
        <br> 
       </div> 
       <div>
-        The&nbsp;missing combination of (2) Security Group with (3) Key Pair can be found in the Elastic Beanstalk Dashboard in the Server Configuration. You can see here the Security Group as well as the drop box EC2 key pair, which ties the relevant Key Pair to the configuration. 
+        The&nbsp;missing combination of (2) Security Group with (3) Key Pair can be found in the Elastic Beanstalk Dashboard via Server Configuration tab. You can see here the Security Group as well as the drop box EC2 key pair, which ties the relevant Key Pair to the configuration. 
       </div> 
       <div></p>
     
