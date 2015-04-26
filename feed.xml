@@ -14,13 +14,13 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"/>
     <id>https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html</id>
     <published>2015-04-25T12:25:42Z</published>
-    <updated>2015-04-25T12:58:23+00:00</updated>
+    <updated>2015-04-26T09:44:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
   &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    Was quite a hassle in the past to setup, luckly this got simplified. With the 
+    Was quite a hassle in the past to setup SSH connectivity into your Elastic Beanstalk instance, luckly this got simplified. With the 
    &lt;i&gt;eb&lt;/i&gt;&amp;nbsp;Version 3&amp;nbsp;command tool you get all the necessary support.&amp;nbsp; 
   &lt;/div&gt; 
   &lt;div&gt; 
@@ -41,7 +41,7 @@
   &lt;/div&gt; 
   &lt;div&gt;
     Run 
-   &lt;i&gt;&amp;nbsp;eb ini&lt;/i&gt;t, which will configure the eb command line to one of your running 
+   &lt;i&gt;&amp;nbsp;eb init&lt;/i&gt;, which will configure the eb command line to one of your running 
    &lt;i&gt;eb&lt;/i&gt; instances. 
   &lt;/div&gt; 
   &lt;div&gt; 
@@ -68,12 +68,12 @@ iMac:~ Felix$ eb init
   &lt;/div&gt; 
 
 &lt;p&gt;&lt;div&gt;
-    Now you have to configure your EB&amp;nbsp;Environment&amp;nbsp;to allow ssh inbound traffic. You have to call 
-   &lt;i&gt;eb ssh&amp;nbsp;—setup&lt;/i&gt;. Be&amp;nbsp;aware that will result in a re-creation of your environment. 
+    Now configure your EB&amp;nbsp;Environment&amp;nbsp;to allow ssh inbound traffic, via&amp;nbsp;&amp;nbsp; 
+   &lt;i&gt;eb ssh&amp;nbsp;—setup&lt;/i&gt; command. Be&amp;nbsp;aware that will result in a re-creation of your EB environment. 
   &lt;/div&gt; 
   &lt;div&gt;
-    Amongst others the command will create&amp;nbsp;the&amp;nbsp;public/private keypair which is put&amp;nbsp;under the default name 
-   &lt;i&gt;aws-eb&lt;/i&gt;&amp;nbsp;into your 
+    Amongst others the command will create&amp;nbsp;the&amp;nbsp;public/private keypair as well which is put&amp;nbsp;under the default name 
+   &lt;i&gt;aws-eb&lt;/i&gt;&amp;nbsp;into your local &amp;nbsp; 
    &lt;i&gt;.ssh&lt;/i&gt; directory 
   &lt;/div&gt; 
   &lt;div&gt; 
@@ -109,7 +109,7 @@ iMac:~ Felix$ eb ssh --setup
    &lt;/div&gt; 
   &lt;/div&gt; 
   &lt;div&gt;
-    You are now read to connect with 
+    You are now read to connect with the &amp;nbsp; 
    &lt;i&gt;eb ssh&lt;/i&gt; command. 
   &lt;/div&gt; 
   &lt;div&gt; 
@@ -122,13 +122,13 @@ iMac:~ Felix$ eb ssh --setup
    &lt;br&gt; 
   &lt;/div&gt; 
   &lt;div&gt;
-    Memorize the following picture, which shows you major concepts of a EC2 setup.&amp;nbsp;&amp;nbsp;AWS EC2 is the underlying Linux Container Infrastructure on top of which your EB managed&amp;nbsp;Docker Applications&amp;nbsp;will run. 
+    Memorize the following picture, which shows you the major concepts of a EC2 setup.&amp;nbsp;&amp;nbsp;AWS EC2 is the underlying Linux Container Infrastructure on top of which your EB managed&amp;nbsp;Docker Applications&amp;nbsp;will run. 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; 
   &lt;/div&gt; 
   &lt;div&gt;
-    You Docker Container will run within on EC2 instance, represented by the orange Instance box. For each EB Docker instance there will be one Instance instantiated. 
+    You Docker Container will run within one EC2 instance, represented by the orange Instance box. For each EB Docker Instance there will be one EC2 Instance instantiated. 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;div&gt; 
@@ -149,12 +149,12 @@ iMac:~ Felix$ eb ssh --setup
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        The EC2 instance will have Security Groups to control the access. There&amp;nbsp;is a Security Group for each&amp;nbsp; EB-Instance you are running, which by default allows inbound access from the http port. The security group is now extended to allow SSH inbound traffic. 
+        The EC2 instance will have Security Groups to control the access. There&amp;nbsp;is a Security Group for each&amp;nbsp; EB-Instance you are running, which by default allows inbound access from the http port. This security group is now extended to allow SSH inbound traffic. 
       &lt;/div&gt; 
       &lt;div&gt;
-        There will be a &amp;nbsp;security group name will contains&amp;nbsp;the substring 
-       &lt;i&gt;AWSEBSecurityGroup&amp;nbsp;(The substring&amp;nbsp;&lt;/i&gt; is also&amp;nbsp;attached as the value of the Security Group tag with the name&amp;nbsp; 
-       &lt;i&gt;aws:cloudformation:logical-id&lt;/i&gt;) 
+        In the dashboard you will see a &amp;nbsp;Security Group Name which contains&amp;nbsp;the substring 
+       &lt;i&gt;AWSEBSecurityGroup&amp;nbsp;(&lt;/i&gt;this value is also a tag value of the group for tag name&amp;nbsp; 
+       &lt;i&gt;aws:cloudformation:logical-id&lt;/i&gt;&amp;nbsp;(Tab Tags)) 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -171,7 +171,7 @@ iMac:~ Felix$ eb ssh --setup
       &lt;/div&gt; 
       &lt;div&gt;
         This Security Group 
-       &lt;i&gt;&lt;em&gt;ASWEBSecurityGroup&lt;/em&gt;&lt;/i&gt; is the configured Security Group of your EC2 docker instance running the EB environment. You would find the link in the column security group when click on Instances in the Dashboard 
+       &lt;i&gt;&lt;em&gt;ASWEBSecurityGroup&lt;/em&gt;&lt;/i&gt; is the configured Security Group of your EC2 docker instance running the EB environment. You would find the link in the column security group when click on Instances (left hand menu) in the Dashboard 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -187,8 +187,8 @@ iMac:~ Felix$ eb ssh --setup
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        As mentioned above a&amp;nbsp;Key Pair was created for with the default name 
-       &lt;i&gt;aws_eb&lt;/i&gt;&amp;nbsp;you will see that as well in the dashboard. The eb setup command made sure that it was downloaded to your local .ssh directory. 
+        As mentioned above a&amp;nbsp;Key Pair was created with the default name 
+       &lt;i&gt;aws_eb&lt;/i&gt;&amp;nbsp;(left hand menu Key Pairs). The eb setup command made sure that this key pair was downloaded to your local .ssh directory. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -210,7 +210,7 @@ iMac:~ Felix$ eb ssh --setup
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        The&amp;nbsp;missing combination of (2) Security Group with (3) Key Pair can be found in the Elastic Beanstalk Dashboard via Server Configuration tab. You can see here the Security Group as well as the drop box EC2 key pair, which ties the relevant Key Pair to the configuration. 
+        The&amp;nbsp;missing combination of (2) Security Group with (3) Key Pair can be found in the Elastic Beanstalk Dashboard via the Server Configuration tab. You can see here the Security Group as well as the drop box EC2 key pair, which ties the relevant Key Pair to the configuration. That’s it. 
       &lt;/div&gt; 
       &lt;div&gt;&lt;/p&gt;
     
@@ -246,7 +246,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html"/>
     <id>https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html</id>
     <published>2015-04-24T05:01:26Z</published>
-    <updated>2015-04-25T09:11:56+00:00</updated>
+    <updated>2015-04-26T09:13:26+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -388,7 +388,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html"/>
     <id>https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html</id>
     <published>2015-04-21T07:44:40Z</published>
-    <updated>2015-04-25T09:11:56+00:00</updated>
+    <updated>2015-04-26T09:13:26+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -568,7 +568,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html"/>
     <id>https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html</id>
     <published>2015-04-17T11:53:00Z</published>
-    <updated>2015-04-25T09:11:56+00:00</updated>
+    <updated>2015-04-26T09:13:26+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -621,7 +621,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html</id>
     <published>2015-04-17T10:24:00Z</published>
-    <updated>2015-04-25T09:11:56+00:00</updated>
+    <updated>2015-04-26T09:13:26+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -638,7 +638,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html"/>
     <id>https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html</id>
     <published>2015-04-14T08:00:00Z</published>
-    <updated>2015-04-25T09:11:56+00:00</updated>
+    <updated>2015-04-26T09:13:26+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>

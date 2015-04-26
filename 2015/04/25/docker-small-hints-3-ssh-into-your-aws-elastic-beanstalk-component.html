@@ -129,7 +129,7 @@
           </p>
           <hr /><div class="row">
   <div class="article"><p><span/>      <div>
-    Was quite a hassle in the past to setup, luckly this got simplified. With the 
+    Was quite a hassle in the past to setup SSH connectivity into your Elastic Beanstalk instance, luckly this got simplified. With the 
    <i>eb</i>&nbsp;Version 3&nbsp;command tool you get all the necessary support.&nbsp; 
   </div> 
   <div> 
@@ -150,7 +150,7 @@
   </div> 
   <div>
     Run 
-   <i>&nbsp;eb ini</i>t, which will configure the eb command line to one of your running 
+   <i>&nbsp;eb init</i>, which will configure the eb command line to one of your running 
    <i>eb</i> instances. 
   </div> 
   <div> 
@@ -177,12 +177,12 @@ iMac:~ Felix$ eb init
   </div> 
 
 <p><div>
-    Now you have to configure your EB&nbsp;Environment&nbsp;to allow ssh inbound traffic. You have to call 
-   <i>eb ssh&nbsp;—setup</i>. Be&nbsp;aware that will result in a re-creation of your environment. 
+    Now configure your EB&nbsp;Environment&nbsp;to allow ssh inbound traffic, via&nbsp;&nbsp; 
+   <i>eb ssh&nbsp;—setup</i> command. Be&nbsp;aware that will result in a re-creation of your EB environment. 
   </div> 
   <div>
-    Amongst others the command will create&nbsp;the&nbsp;public/private keypair which is put&nbsp;under the default name 
-   <i>aws-eb</i>&nbsp;into your 
+    Amongst others the command will create&nbsp;the&nbsp;public/private keypair as well which is put&nbsp;under the default name 
+   <i>aws-eb</i>&nbsp;into your local &nbsp; 
    <i>.ssh</i> directory 
   </div> 
   <div> 
@@ -218,7 +218,7 @@ iMac:~ Felix$ eb ssh --setup
    </div> 
   </div> 
   <div>
-    You are now read to connect with 
+    You are now read to connect with the &nbsp; 
    <i>eb ssh</i> command. 
   </div> 
   <div> 
@@ -231,13 +231,13 @@ iMac:~ Felix$ eb ssh --setup
    <br> 
   </div> 
   <div>
-    Memorize the following picture, which shows you major concepts of a EC2 setup.&nbsp;&nbsp;AWS EC2 is the underlying Linux Container Infrastructure on top of which your EB managed&nbsp;Docker Applications&nbsp;will run. 
+    Memorize the following picture, which shows you the major concepts of a EC2 setup.&nbsp;&nbsp;AWS EC2 is the underlying Linux Container Infrastructure on top of which your EB managed&nbsp;Docker Applications&nbsp;will run. 
   </div> 
   <div> 
    <br> 
   </div> 
   <div>
-    You Docker Container will run within on EC2 instance, represented by the orange Instance box. For each EB Docker instance there will be one Instance instantiated. 
+    You Docker Container will run within one EC2 instance, represented by the orange Instance box. For each EB Docker Instance there will be one EC2 Instance instantiated. 
   </div> 
   <div> 
    <div> 
@@ -258,12 +258,12 @@ iMac:~ Felix$ eb ssh --setup
        <br> 
       </div> 
       <div>
-        The EC2 instance will have Security Groups to control the access. There&nbsp;is a Security Group for each&nbsp; EB-Instance you are running, which by default allows inbound access from the http port. The security group is now extended to allow SSH inbound traffic. 
+        The EC2 instance will have Security Groups to control the access. There&nbsp;is a Security Group for each&nbsp; EB-Instance you are running, which by default allows inbound access from the http port. This security group is now extended to allow SSH inbound traffic. 
       </div> 
       <div>
-        There will be a &nbsp;security group name will contains&nbsp;the substring 
-       <i>AWSEBSecurityGroup&nbsp;(The substring&nbsp;</i> is also&nbsp;attached as the value of the Security Group tag with the name&nbsp; 
-       <i>aws:cloudformation:logical-id</i>) 
+        In the dashboard you will see a &nbsp;Security Group Name which contains&nbsp;the substring 
+       <i>AWSEBSecurityGroup&nbsp;(</i>this value is also a tag value of the group for tag name&nbsp; 
+       <i>aws:cloudformation:logical-id</i>&nbsp;(Tab Tags)) 
       </div> 
       <div> 
        <br> 
@@ -280,7 +280,7 @@ iMac:~ Felix$ eb ssh --setup
       </div> 
       <div>
         This Security Group 
-       <i><em>ASWEBSecurityGroup</em></i> is the configured Security Group of your EC2 docker instance running the EB environment. You would find the link in the column security group when click on Instances in the Dashboard 
+       <i><em>ASWEBSecurityGroup</em></i> is the configured Security Group of your EC2 docker instance running the EB environment. You would find the link in the column security group when click on Instances (left hand menu) in the Dashboard 
       </div> 
       <div> 
        <br> 
@@ -296,8 +296,8 @@ iMac:~ Felix$ eb ssh --setup
        <br> 
       </div> 
       <div>
-        As mentioned above a&nbsp;Key Pair was created for with the default name 
-       <i>aws_eb</i>&nbsp;you will see that as well in the dashboard. The eb setup command made sure that it was downloaded to your local .ssh directory. 
+        As mentioned above a&nbsp;Key Pair was created with the default name 
+       <i>aws_eb</i>&nbsp;(left hand menu Key Pairs). The eb setup command made sure that this key pair was downloaded to your local .ssh directory. 
       </div> 
       <div> 
        <br> 
@@ -319,7 +319,7 @@ iMac:~ Felix$ eb ssh --setup
        <br> 
       </div> 
       <div>
-        The&nbsp;missing combination of (2) Security Group with (3) Key Pair can be found in the Elastic Beanstalk Dashboard via Server Configuration tab. You can see here the Security Group as well as the drop box EC2 key pair, which ties the relevant Key Pair to the configuration. 
+        The&nbsp;missing combination of (2) Security Group with (3) Key Pair can be found in the Elastic Beanstalk Dashboard via the Server Configuration tab. You can see here the Security Group as well as the drop box EC2 key pair, which ties the relevant Key Pair to the configuration. That’s it. 
       </div> 
       <div></p>
     
