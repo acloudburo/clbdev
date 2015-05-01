@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"/>
     <id>https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html</id>
     <published>2015-04-25T12:25:42Z</published>
-    <updated>2015-04-26T09:44:29+00:00</updated>
+    <updated>2015-05-01T18:52:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -246,7 +246,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html"/>
     <id>https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html</id>
     <published>2015-04-24T05:01:26Z</published>
-    <updated>2015-04-26T09:13:26+00:00</updated>
+    <updated>2015-05-01T18:52:41+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -388,7 +388,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html"/>
     <id>https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html</id>
     <published>2015-04-21T07:44:40Z</published>
-    <updated>2015-04-26T09:13:26+00:00</updated>
+    <updated>2015-05-01T18:52:41+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -568,7 +568,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html"/>
     <id>https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html</id>
     <published>2015-04-17T11:53:00Z</published>
-    <updated>2015-04-26T09:13:26+00:00</updated>
+    <updated>2015-05-01T18:52:41+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -621,7 +621,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html</id>
     <published>2015-04-17T10:24:00Z</published>
-    <updated>2015-04-26T09:13:26+00:00</updated>
+    <updated>2015-05-01T18:52:41+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -638,7 +638,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html"/>
     <id>https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html</id>
     <published>2015-04-14T08:00:00Z</published>
-    <updated>2015-04-26T09:13:26+00:00</updated>
+    <updated>2015-05-01T18:52:41+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
