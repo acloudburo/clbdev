@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"/>
     <id>https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html</id>
     <published>2015-04-25T12:25:42Z</published>
-    <updated>2015-05-01T18:52:56+00:00</updated>
+    <updated>2015-05-01T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -27,8 +27,8 @@
    &lt;br&gt; 
   &lt;/div&gt; 
   &lt;div&gt;
-    First of all install the 
-   &lt;i&gt;eb cli&lt;/i&gt;&amp;nbsp;interface, as shown here 
+    First install the&amp;nbsp; 
+   &lt;i&gt;eb cli&lt;/i&gt;&amp;nbsp;interface, as described here 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; 
@@ -51,9 +51,8 @@
 &lt;pre class="highlight plaintext"&gt;&lt;code&gt;
 iMac:~ Felix$ eb init 
   Select a default region
- 1) us-east-1 : US East (N. Virginia)
- 2) us-west-1 : US West (N. California)
- 3) us-west-2 : US West (Oregon) 
+ 1) us-east-1 : US East (N. Virginia) 
+  2) us-west-1 : US West (N. California) 
   ... 
   (default is 3): 
   Select an application to use 
@@ -83,17 +82,15 @@ iMac:~ Felix$ eb init
    &lt;div&gt;&lt;/p&gt;
 &lt;pre class="highlight plaintext"&gt;&lt;code&gt;
 iMac:~ Felix$ eb ssh --setup
- WARNING: You are about to setup SSH for environment "curationApp-prod". If you continue, your existing instances will have to be **terminated** and new instances will be created. The environment will be temporarily unavailable.
- To confirm, type the environment name: curationApp-prod
-
- Type a keypair name.
+ WARNING: You are about to setup SSH for environment "curationApp-prod". If you continue, your existing instances will have to be **terminated** and new instances will be created. The environment will be temporarily unavailable. 
+  To confirm, type the environment name: curationApp-prod 
+  Type a keypair name.
  (Default is aws-eb):
  Generating public/private rsa key pair. 
-  ... 
-  Your identification has been saved in /Users/Felix/.ssh/aws-eb.
- Your public key has been saved in /Users/Felix/.ssh/aws-eb.pub.
- The key fingerprint is: 
-  ... 
+   ... 
+
+  Your identification has been saved in /Users/Felix/.ssh/aws-eb. 
+   ... 
   WARNING: Uploaded SSH public key for "aws-eb" into EC2 for region us-west-2. 
   INFO: Environment update is starting.                              
  INFO: Updating environment curationApp-prod's configuration settings.

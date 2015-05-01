@@ -136,8 +136,8 @@
    <br> 
   </div> 
   <div>
-    First of all install the 
-   <i>eb cli</i>&nbsp;interface, as shown here 
+    First install the&nbsp; 
+   <i>eb cli</i>&nbsp;interface, as described here 
   </div> 
   <div> 
    <br> 
@@ -160,9 +160,8 @@
 <pre class="highlight plaintext"><code>
 iMac:~ Felix$ eb init 
   Select a default region
- 1) us-east-1 : US East (N. Virginia)
- 2) us-west-1 : US West (N. California)
- 3) us-west-2 : US West (Oregon) 
+ 1) us-east-1 : US East (N. Virginia) 
+  2) us-west-1 : US West (N. California) 
   ... 
   (default is 3): 
   Select an application to use 
@@ -192,17 +191,15 @@ iMac:~ Felix$ eb init
    <div></p>
 <pre class="highlight plaintext"><code>
 iMac:~ Felix$ eb ssh --setup
- WARNING: You are about to setup SSH for environment "curationApp-prod". If you continue, your existing instances will have to be **terminated** and new instances will be created. The environment will be temporarily unavailable.
- To confirm, type the environment name: curationApp-prod
-
- Type a keypair name.
+ WARNING: You are about to setup SSH for environment "curationApp-prod". If you continue, your existing instances will have to be **terminated** and new instances will be created. The environment will be temporarily unavailable. 
+  To confirm, type the environment name: curationApp-prod 
+  Type a keypair name.
  (Default is aws-eb):
  Generating public/private rsa key pair. 
-  ... 
-  Your identification has been saved in /Users/Felix/.ssh/aws-eb.
- Your public key has been saved in /Users/Felix/.ssh/aws-eb.pub.
- The key fingerprint is: 
-  ... 
+   ... 
+
+  Your identification has been saved in /Users/Felix/.ssh/aws-eb. 
+   ... 
   WARNING: Uploaded SSH public key for "aws-eb" into EC2 for region us-west-2. 
   INFO: Environment update is starting.                              
  INFO: Updating environment curationApp-prod's configuration settings.
