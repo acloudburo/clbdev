@@ -5,10 +5,27 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-04-25T12:25:42Z</updated>
+  <updated>2015-05-06T05:54:45Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>Amazon CTO Werner Vogels Shares Nine Patterns of Cloud Adoption</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html"/>
+    <id>https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html</id>
+    <published>2015-05-06T05:54:45Z</published>
+    <updated>2015-05-06T17:54:45+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;       At the Amazon Web Services AWS Summit London keynote, Werner Vogels shared nine patterns of cloud adoption that AWS have observed from its customer base over the past nine years of operation. Vogels suggested that the ease of operation, low cost and additional value-add business services provided by cloud vendors mean that organisations must embrace the cloud in order to stay competitive. Vogels, CTO of Amazon, began the keynote by stating that “cloud has become the new normal”, and cited an increasing number of companies that are developing for, or migrating to, cloud-based platforms.
+    &lt;a href="http://www.infoq.com/news/2015/04/vogels-patterns-cloud-adoption?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Docker Small Hints #3: SSH into your AWS Elastic Beanstalk Component</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"/>
@@ -627,165 +644,6 @@ iMac:~ Felix$ eb ssh --setup
     &lt;p&gt;&lt;span/&gt;      During the online panel Exploring the Uncharted Territory of Microservices organized by XebiaLabs, the following participants discussed the benefits of microservices: Gene Kim, author, researcher and former CTO at Tripwire, moderator; Gary Gruver, President at Practical Large Scale Agile LLC and former Director of Engineering for the LaserJet Enterprise at HP; Randy Shoup is Consulting CTO at Randy Shoup Consulting and former Director of Engineering for Cloud Computing at Google; Andrew Phillips is VP Product Management at XebiaLabs. The following infoq article extracted the main ideas, paraphrasing them in a short form.
     &lt;a href="http://www.infoq.com/news/2015/03/benefits-microservices?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Gradle Small Hints #2 - Deploy and Integrate Maven Artifacts on Github</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html"/>
-    <id>https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html</id>
-    <published>2015-04-14T08:00:00Z</published>
-    <updated>2015-05-01T18:52:41+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    The following steps are necessary to deploy and integrate artifacts in a Maven repository hosted on Github: 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    Assumption is that you have a 
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;clb_mvnrepo&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; Github repository which manages your Maven Repository in a 
-   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;releases&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; and 
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;snapshots&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; branch. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style="font-size: 24px;"&gt;&lt;b&gt;Build and Deploy&lt;/b&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    Clone the 
-   &lt;i&gt;&lt;span style=""&gt;snapshots&lt;/span&gt;&lt;/i&gt; and 
-   &lt;i&gt;&lt;span style=""&gt;releases&lt;/span&gt;&lt;/i&gt; branches of your Maven Repository to the local machine. You will publish the artifacts of your&amp;nbsp;project which you build into this target directory. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight shell"&gt;&lt;code&gt;
-  git clone -b releases  https://github.com/talfco/clb_mvnrepo.git clb_mvnrepo_releases 
-  git clone -b snapshots https://github.com/talfco/clb_mvnrepo.git clb_mvnrepo_snapshots 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-
-&lt;p&gt;&lt;div&gt;
-    In the&amp;nbsp; 
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;build.gradle&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; File of your project add the following entries: 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    At the top of the file add the&amp;nbsp;maven publish plugin 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-  apply plugin: 'groovy' 
-  apply plugin: 'maven-publish' 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-
-&lt;p&gt;&lt;div&gt;
-    Additionally add the publishing configuration which points to your local Maven repository clone to your 
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;build.gradle&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-publishing {
- publications {
- maven(MavenPublication) {
- groupId "com.cloudburo" 
- artifactId 'clb-gradleTask' 
- version '1.0.1-SNAPSHOT' 
- from components.java
- }
- }
- repositories {
- maven { url "/Users/Felix/Development/workspace-grails/clb_mvnrepo_snapshots" }
- } 
-  } 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-
-&lt;p&gt;&lt;div&gt;
-    Depending on the version number of 
-   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;1.1.0&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; or 
-   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;1.1.0-SNAPSHOT&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; configure the publishing configuration for the 
-   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;releases&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; or 
-   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;snapshots&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; local GIT clone directory. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    The 
-   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;gradle publish&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; command will build your project and deploy it to&amp;nbsp;your 
-   &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;clb_mvnrepo&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; directory. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    Having published it&amp;nbsp;into your publish directory, commit&amp;nbsp;and push via the git commands&amp;nbsp;to your&amp;nbsp;Github snapshot/release directory. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;b&gt;&lt;span style="font-size: 24px;"&gt;Integrate Released Artifacts&lt;/span&gt;&lt;/b&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    You can now reference the released libraries via the following gradle configuration 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-  repositories { 
-       mavenCentral() 
-            maven { url 'https://github.com/talfco/clb_mvnrepo/raw/snapshots' } 
-  } 
-  dependencies { 
-       classpath group : 'com.cloudburo' , name : 'clb-gradleTask' , version :  ‚1.1.0' } 
-  } 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt; 
-  &lt;/div&gt;&lt;/p&gt;
-
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
