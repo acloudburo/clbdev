@@ -5,10 +5,68 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-05-06T05:54:45Z</updated>
+  <updated>2015-05-07T08:57:51Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>Micro Business Quick Tips #3: Are These 4 Common Legal Mistakes Putting Your Content at Risk?</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html"/>
+    <id>https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html</id>
+    <published>2015-05-07T08:57:51Z</published>
+    <updated>2015-05-07T20:57:52+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        This is an interesting article which outlines some legal stuff you should consider when publishing content. As they state 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;i&gt;&amp;ldquo;If you’re doing it right, your digital media business is probably an intellectual property factory. Smart small businesses have a content creation conveyor belt and publish new content all day everyday, from ebooks to infographics. And while there is a lot of talk about the benefits of creating content, there is very little talk about protecting it&amp;rdquo;&lt;/i&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Make sure that you don’t make the following 4 mistakes: 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;ul&gt; 
+       &lt;li&gt;Mistake #1: Not copyrighting your content&lt;/li&gt; 
+       &lt;li&gt;Mistake #2: Not posting terms and conditions on your website&amp;nbsp;&lt;/li&gt; 
+       &lt;li&gt;Mistake #3: Failing to use technology to police your work&lt;/li&gt; 
+       &lt;li&gt;Mistake #4: Not having a solid contract with your clients&lt;/li&gt; 
+      &lt;/ul&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Read the details here:&amp;nbsp; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="http://www.copyblogger.com/protect-your-content/"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Amazon CTO Werner Vogels Shares Nine Patterns of Cloud Adoption</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html"/>
@@ -626,23 +684,6 @@ iMac:~ Felix$ eb ssh --setup
       &lt;div&gt;
         &amp;nbsp; 
       &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>The Benefits of Microservices</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html"/>
-    <id>https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html</id>
-    <published>2015-04-17T10:24:00Z</published>
-    <updated>2015-05-01T18:52:41+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;      During the online panel Exploring the Uncharted Territory of Microservices organized by XebiaLabs, the following participants discussed the benefits of microservices: Gene Kim, author, researcher and former CTO at Tripwire, moderator; Gary Gruver, President at Practical Large Scale Agile LLC and former Director of Engineering for the LaserJet Enterprise at HP; Randy Shoup is Consulting CTO at Randy Shoup Consulting and former Director of Engineering for Cloud Computing at Google; Andrew Phillips is VP Product Management at XebiaLabs. The following infoq article extracted the main ideas, paraphrasing them in a short form.
-    &lt;a href="http://www.infoq.com/news/2015/03/benefits-microservices?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
