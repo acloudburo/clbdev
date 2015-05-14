@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html"/>
     <id>https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html</id>
     <published>2015-05-07T08:57:51Z</published>
-    <updated>2015-05-07T20:57:52+00:00</updated>
+    <updated>2015-05-14T07:54:22+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -72,7 +72,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html"/>
     <id>https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html</id>
     <published>2015-05-06T05:54:45Z</published>
-    <updated>2015-05-06T17:54:45+00:00</updated>
+    <updated>2015-05-14T07:54:22+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -89,7 +89,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"/>
     <id>https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html</id>
     <published>2015-04-25T12:25:42Z</published>
-    <updated>2015-05-01T19:03:56+00:00</updated>
+    <updated>2015-05-14T07:54:41+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -175,17 +175,57 @@ iMac:~ Felix$ eb ssh --setup
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;/div&gt; 
-   &lt;div&gt; 
+&lt;div&gt; 
     &lt;br&gt; 
    &lt;/div&gt; 
-  &lt;/div&gt; 
+
+&lt;p&gt;&lt;/div&gt; 
   &lt;div&gt;
-    You are now read to connect with the &amp;nbsp; 
+    You are now ready to connect with the &amp;nbsp; 
    &lt;i&gt;eb ssh&lt;/i&gt; command. 
   &lt;/div&gt; 
   &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+iMac: ~ Felix$ eb ssh 
+  INFO: Attempting to open port 22. 
+  INFO: SSH port 22 open. 
+         __|  __|_  )
+        _|  (     /   Amazon Linux AMI 
+        ___|\___|___| 
+  [ec2-user ~]$  
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt; 
    &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+
+&lt;p&gt;&lt;div&gt;
+    Log files of your instances can be found in the 
+   &lt;span style=""&gt;/var/log&lt;/span&gt; directory. &amp;nbsp;The log file of your en-docker instance you will find in the following subdirectory. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+[ec2-user ~]$ cd  /var/log/eb-docker/containers/eb-current-app 
+  [ec2-user eb-current-app]$ ls -l  
+  insgesamt 136
+ -rw-r--r-- 1 root root 67113425 14. Mai 06:34 894d84f26a6a-stdouterr.log 
+  drwxr-xr-x 2 root root     4096 14. Mai 06:01 rotated 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt; 
+  &lt;div&gt;
+    &amp;nbsp; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;span style="font-size: 18px;"&gt;&lt;b&gt;Looking at the details of the configuration triangle&lt;/b&gt;&lt;/span&gt; 
@@ -318,7 +358,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html"/>
     <id>https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html</id>
     <published>2015-04-24T05:01:26Z</published>
-    <updated>2015-05-01T18:52:41+00:00</updated>
+    <updated>2015-05-14T07:54:22+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -460,7 +500,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html"/>
     <id>https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html</id>
     <published>2015-04-21T07:44:40Z</published>
-    <updated>2015-05-01T18:52:41+00:00</updated>
+    <updated>2015-05-14T07:54:22+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -640,7 +680,7 @@ iMac:~ Felix$ eb ssh --setup
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html"/>
     <id>https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html</id>
     <published>2015-04-17T11:53:00Z</published>
-    <updated>2015-05-01T18:52:41+00:00</updated>
+    <updated>2015-05-14T07:54:22+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>

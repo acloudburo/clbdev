@@ -201,17 +201,57 @@ iMac:~ Felix$ eb ssh --setup
 
 </code></pre>
 
-<p></div> 
-   <div> 
+<div> 
     <br> 
    </div> 
-  </div> 
+
+<p></div> 
   <div>
-    You are now read to connect with the &nbsp; 
+    You are now ready to connect with the &nbsp; 
    <i>eb ssh</i> command. 
   </div> 
   <div> 
+   <br> 
+  </div> 
+  <div></p>
+<pre class="highlight plaintext"><code>
+iMac: ~ Felix$ eb ssh 
+  INFO: Attempting to open port 22. 
+  INFO: SSH port 22 open. 
+         __|  __|_  )
+        _|  (     /   Amazon Linux AMI 
+        ___|\___|___| 
+  [ec2-user ~]$  
+
+</code></pre>
+
+<div> 
    <span style="font-size: 18px;"><br></span> 
+  </div> 
+
+<p><div>
+    Log files of your instances can be found in the 
+   <span style="">/var/log</span> directory. &nbsp;The log file of your en-docker instance you will find in the following subdirectory. 
+  </div> 
+  <div> 
+   <br> 
+  </div> 
+  <div></p>
+<pre class="highlight plaintext"><code>
+[ec2-user ~]$ cd  /var/log/eb-docker/containers/eb-current-app 
+  [ec2-user eb-current-app]$ ls -l  
+  insgesamt 136
+ -rw-r--r-- 1 root root 67113425 14. Mai 06:34 894d84f26a6a-stdouterr.log 
+  drwxr-xr-x 2 root root     4096 14. Mai 06:01 rotated 
+
+</code></pre>
+
+<p></div> 
+  <div>
+    &nbsp; 
+  </div> 
+  <div> 
+   <br> 
   </div> 
   <div> 
    <span style="font-size: 18px;"><b>Looking at the details of the configuration triangle</b></span> 
