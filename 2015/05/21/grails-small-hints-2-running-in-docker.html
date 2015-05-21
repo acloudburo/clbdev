@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
-    <title>dev@cloudburo | Docker Small Hints #1:  High Level Concepts Elastic Beanstalk</title>
+    <title>dev@cloudburo | Grails Small Hints #2 - Running in Docker</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js" type="text/javascript"></script><![endif]--><link href="../../../css/all.css" media="screen" rel="stylesheet" type="text/css" /><script type="text/javascript">
       (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
@@ -110,142 +110,77 @@
       <div class="row">
         <div class="col-lg-9 col-md-9">
           <h1>
-            Docker Small Hints #1:  High Level Concepts Elastic Beanstalk
+            Grails Small Hints #2 - Running in Docker
           </h1>
-          <small class="label label-default">docker</small>
-          <small class="label label-default">aws</small>
           <small class="label label-default">smallhints</small>
+          <small class="label label-default">grails</small>
           <hr />
           <p>
-            <span class="glyphicon glyphicon-time"></span> Posted on Apr  9
+            <span class="glyphicon glyphicon-time"></span> Posted on May 21
           </p>
-          <hr />
-          <div class="row">
-            <div class="article">
-              <p><span/><br>
-                <div>
-                  Cloud Platforms are normally highly generic and configurable and it’s easy to loose overview, what can be configured or modified where. So I assembled some of the main high level concepts for AWS Elastic Beanstalk.&nbsp; 
-                 <div> 
-                  <br> 
-                 </div> 
-                 <b><span style="font-size:24px;">Level 0: Concepts</span></b> 
-                 <div> 
-                  <br> 
-                 </div>Elastic Beanstalk is structured around the 3 high level concepts. 
-                 <div> 
-                  <br> 
-                 </div> 
-                 <i><span style="font-size:18px;">A&nbsp;</span></i> 
-                 <i><span style="font-size:18px;"><b>Version</b></span></i> 
-                 <i><span style="font-size:18px;"> of an (</span></i> 
-                 <i><span style="font-size:18px;"><b>Docker)</b></span></i> 
-                 <i><span style="font-size:18px;">&nbsp;</span></i> 
-                 <i><span style="font-size:18px;"><b>Application</b></span></i> 
-                 <i><span style="font-size:18px;"> is running in one </span></i> 
-                 <i><span style="font-size:18px;"><b>Environment</b></span></i> 
-                 <div> 
-                  <br> 
-                 </div>Elastic Beanstalk allows you to&nbsp;run in parallel 
-                 <div> 
-                  <br> 
-                 </div> 
-                 <i><b>Multiple Versions</b></i> 
-                 <i> of </i> 
-                 <i><b>multiple (Docker) Applications</b></i> 
-                 <i> in </i> 
-                 <i><b>multiple Environments</b></i> 
-                 <div> 
-                  <br> 
-                 </div> 
-                 <div> 
-                  <br> 
-                 </div>The Dashboard will show you all deployed 
-                 <b>Applications</b> which can be running in multiple&nbsp; 
-                 <b>Environments</b>. 
-                 <div> 
-                  <br> 
-                 </div>In the screenshot below we have one Docker Application „ 
-                 <i>curationApp“</i> which has to two environments&nbsp;„ 
-                 <i>curationApp-prod</i>“ and „ 
-                 <i>curationApp-test&quot;</i> 
-                 <br> 
-                </div> </p>
-              
-            </div>
-            <img class="img-responsive img-thumbnail article" src="/images/95051bbe9efdb4532199204d0f61fd2e.png" />
-            <div class="article">
-              <p><span/> 
-                <div> 
-                 <br>An 
-                 <b>Environment</b> may run one of your released docker&nbsp;Application Versions. You could now „ 
-                 <i>Deploy</i>“ one of your versions to one of your Environments. 
-                 <div> 
-                  <br> 
-                 </div>In the example below the environment &ldquo; 
-                 <i>curationApp-prod&rdquo;</i> is running Version 0.0.5. 
-                </div> </p>
-              
-            </div>
-            <img class="img-responsive img-thumbnail article" src="/images/22c0aadeda311a7a7ede6ab4973ba58d.png" />
-            <div class="article">
-              <p><span/> 
-                <div> 
-                 <br> 
-                 <b><span style="font-size:24px;">Level 1: Concepts</span></b> 
-                 <div> 
-                  <br> 
-                 </div>By selecting an 
-                 <b>Environment</b> you will see the Dashboard of the running 
-                 <b>Application Version</b>&nbsp;which is configured on a AWS 
-                 <b>Solution Stack</b>. 
-                 <div> 
-                  <br> 
-                 </div>In our example below this a Docker solution running on Amazon Linux. 
-                 <div> 
-                  <br> 
-                 </div>A running Environment has a 
-                 <b>Health Status</b> and an associated&nbsp; 
-                 <b>Configuration.</b> 
-                 <div> 
-                  <br> 
-                 </div>It’s processing can be checked via 
-                 <b>Logs</b>, 
-                 <b>Realtime Monitors, Events</b> or 
-                 <b>Alarms.</b> 
-                 <div> 
-                  <br> 
-                 </div>Furthermore an Environment may be complemented with&nbsp; 
-                 <b>Tags</b>.&nbsp; 
-                 <div> 
-                  <br> 
-                 </div> 
-                 <b>Configuration</b>, 
-                 <b>Alarms</b> and 
-                 <b>Tags</b> may be maintained a set according to your needs. 
-                </div> </p>
-              
-            </div>
-            <img class="img-responsive img-thumbnail article" src="/images/2a86af971f134a9e2fbd2c7a4ca91115.png" />
-            <div class="article">
-              <p><span/> 
-                <div> 
-                 <br> 
-                 <span style="font-size:24px;"><b>Main Workflow</b></span> 
-                 <div> 
-                  <br> 
-                 </div>The Main Workflow consists of the following step: 
-                </div> 
-                <ul> 
-                 <li><b>Baseline</b>&nbsp;your Docker Application Directory (e.g. checkin to git)</li> 
-                 <li><b>Create</b> an new <b>Application Version ZIP File</b> of your baselined Docker Application </li> 
-                 <li><b>Transfer</b> the <b>Application Version ZIP File</b> to your Amazon <b>S3</b></li> 
-                 <li><b>Configure</b> &nbsp;an <b>Beanstalk</b> <b>Application Version</b> item<b>&nbsp;</b></li> 
-                 <li><b>Deploy</b> the new <b>Beanstalk</b>&nbsp;<b>Application Version</b> to a&nbsp;<b>Beanstalk&nbsp;Environment&nbsp;</b></li> 
-                 <li>The Deploy will <b>Restart and Reconfigure</b> the Environment</li> 
-                </ul></p>
-              
-            </div>
-          </div>
+          <hr /><div class="row">
+  <div class="article"><p><span/></p>
+
+<p><div>
+    There is a out-of-the-box docker-grails instance provided, which  you can find  here 
+  </div> 
+  <div> 
+   <br> 
+  </div> 
+  <div> 
+   <a href="https://github.com/onesysadmin/docker-grails" rel="nofollow"><a href="https://github.com/onesysadmin/docker-grails">https://github.com/onesysadmin/docker-grails</a></a> 
+  </div> 
+  <div> 
+   <br> 
+  </div> 
+  <div>
+    In order to attach your local development directory 
+   <span style=""><span style="font-size: 14px;"><span style=""><span style="">/Users/Felix/Development/workspace-grails/clb-platform</span></span></span></span> 
+   <code style=" font-size: 13.3333339691162px;"><span style="font-size: 13.3333339691162px;"><span style="">to the inter</span><span style=""><span style="">nal</span> <span style="">/app</span> <span style="">directory run it as follows</span></span></span></code> 
+  </div> 
+  <div> 
+   <span style="font-size: 13px;"><span style=""><br></span></span> 
+  </div> 
+  <div> 
+   <span style=""><span style="font-size: 14px;"><span style=""><code style=""><span style="">docker run -i -t -p 8080:8080 --rm -v</span></code></span> <span style=""><span style="">/Users/Felix/Development/workspace-grails/clb-platform</span></span><span style=""><code style=""><span style=""><span style="">:/app</span> onesysadmin/grails grails</span></code></span></span></span> 
+  </div> 
+  <div> 
+   <span style=""><span style=""><br></span></span> 
+  </div> 
+  <div> 
+   <span style="">You will find the IP address in the docker startup message</span> 
+  </div> 
+  <div> 
+   <span style=""><br></span> 
+  </div> 
+  <div> 
+   <span style=""><span style="">To connect the Docker client to the Docker daemon, please set:</span></span> 
+  </div> 
+  <div> 
+   <span style=""><span style="">export DOCKER_CERT_PATH=/Users/Felix/.boot2docker/certs/boot2docker-vm</span></span> 
+  </div> 
+  <div> 
+   <span style=""><span style="">export DOCKER_TLS_VERIFY=1</span></span> 
+  </div> 
+  <div> 
+   <span style=""><span style="">export DOCKER_HOST=tcp://192.168.59.103:2376</span></span> 
+  </div> 
+  <div> 
+   <span style=""><br></span> 
+  </div> 
+  <div> 
+   <span style="">For example</span> 
+  </div> 
+  <div> 
+   <span style=""><span style=""><br></span></span> 
+  </div> 
+  <div> 
+   <a href="http://192.168.59.103:8080/clb-platform/curationApp/detail" rel="nofollow"><a href="http://192.168.59.103:8080/clb-platform/curationApp/detail">http://192.168.59.103:8080/clb-platform/curationApp/detail</a></a> 
+   <br> 
+  </div></p>
+
+  </div>
+</div>
           <hr />
           <div id="disqus_thread"></div>
           <script type="text/javascript">

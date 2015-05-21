@@ -5,16 +5,89 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-05-07T08:57:51Z</updated>
+  <updated>2015-05-21T05:00:38Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>Grails Small Hints #2 - Running in Docker</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/05/21/grails-small-hints-2-running-in-docker.html"/>
+    <id>https://dev.cloudburo.net/2015/05/21/grails-small-hints-2-running-in-docker.html</id>
+    <published>2015-05-21T05:00:38Z</published>
+    <updated>2015-05-21T05:00:39+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div&gt;
+    There is a out-of-the-box docker-grails instance provided, which  you can find  here 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;a href="https://github.com/onesysadmin/docker-grails" rel="nofollow"&gt;&lt;a href="https://github.com/onesysadmin/docker-grails"&gt;https://github.com/onesysadmin/docker-grails&lt;/a&gt;&lt;/a&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
+    In order to attach your local development directory 
+   &lt;span style=""&gt;&lt;span style="font-size: 14px;"&gt;&lt;span style=""&gt;&lt;span style=""&gt;/Users/Felix/Development/workspace-grails/clb-platform&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 
+   &lt;code style=" font-size: 13.3333339691162px;"&gt;&lt;span style="font-size: 13.3333339691162px;"&gt;&lt;span style=""&gt;to the inter&lt;/span&gt;&lt;span style=""&gt;&lt;span style=""&gt;nal&lt;/span&gt; &lt;span style=""&gt;/app&lt;/span&gt; &lt;span style=""&gt;directory run it as follows&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style="font-size: 13px;"&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;&lt;span style="font-size: 14px;"&gt;&lt;span style=""&gt;&lt;code style=""&gt;&lt;span style=""&gt;docker run -i -t -p 8080:8080 --rm -v&lt;/span&gt;&lt;/code&gt;&lt;/span&gt; &lt;span style=""&gt;&lt;span style=""&gt;/Users/Felix/Development/workspace-grails/clb-platform&lt;/span&gt;&lt;/span&gt;&lt;span style=""&gt;&lt;code style=""&gt;&lt;span style=""&gt;&lt;span style=""&gt;:/app&lt;/span&gt; onesysadmin/grails grails&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;You will find the IP address in the docker startup message&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;&lt;span style=""&gt;To connect the Docker client to the Docker daemon, please set:&lt;/span&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;&lt;span style=""&gt;export DOCKER_CERT_PATH=/Users/Felix/.boot2docker/certs/boot2docker-vm&lt;/span&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;&lt;span style=""&gt;export DOCKER_TLS_VERIFY=1&lt;/span&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;&lt;span style=""&gt;export DOCKER_HOST=tcp://192.168.59.103:2376&lt;/span&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;For example&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;a href="http://192.168.59.103:8080/clb-platform/curationApp/detail" rel="nofollow"&gt;&lt;a href="http://192.168.59.103:8080/clb-platform/curationApp/detail"&gt;http://192.168.59.103:8080/clb-platform/curationApp/detail&lt;/a&gt;&lt;/a&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Micro Business Quick Tips #3: Are These 4 Common Legal Mistakes Putting Your Content at Risk?</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html"/>
     <id>https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html</id>
     <published>2015-05-07T08:57:51Z</published>
-    <updated>2015-05-14T07:54:22+00:00</updated>
+    <updated>2015-05-14T22:22:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -72,7 +145,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html"/>
     <id>https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html</id>
     <published>2015-05-06T05:54:45Z</published>
-    <updated>2015-05-14T07:54:22+00:00</updated>
+    <updated>2015-05-14T22:22:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -89,7 +162,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"/>
     <id>https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html</id>
     <published>2015-04-25T12:25:42Z</published>
-    <updated>2015-05-14T07:54:41+00:00</updated>
+    <updated>2015-05-14T22:22:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -358,7 +431,7 @@ iMac: ~ Felix$ eb ssh
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html"/>
     <id>https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html</id>
     <published>2015-04-24T05:01:26Z</published>
-    <updated>2015-05-14T07:54:22+00:00</updated>
+    <updated>2015-05-14T22:22:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -500,7 +573,7 @@ iMac: ~ Felix$ eb ssh
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html"/>
     <id>https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html</id>
     <published>2015-04-21T07:44:40Z</published>
-    <updated>2015-05-14T07:54:22+00:00</updated>
+    <updated>2015-05-14T22:22:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -670,59 +743,6 @@ iMac: ~ Felix$ eb ssh
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;span style=""&gt;&lt;i&gt;And overnight, the bad guys who have used email spoofing to forge emails and launch phishing attempts pretending to come from a Yahoo Mail account were nearly stopped in their tracks.&lt;/i&gt;&lt;/span&gt; 
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Grails Small Hints #1 - Refresh Dependencies in Grails STS Tool Suite</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html"/>
-    <id>https://dev.cloudburo.net/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html</id>
-    <published>2015-04-17T11:53:00Z</published>
-    <updated>2015-05-14T07:54:22+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
-      &lt;div&gt;
-        Adding dependencies in the Grails STS Tool Suite is sometimes painful, due to&amp;nbsp;the fact that changes in the BuildConfig.groovy is not taken over immediately. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        It resulted in long session try to run grails refresh-dependencies, rebuild the whole project or trying to fix it by restarting STS. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        This doesn’t really worked out until I found the following 
-       &lt;a href="http://forum.spring.io/forum/spring-projects/springsource-tool-suite/121171-problem-with-dependencies-in-sts-grails" rel="nofollow"&gt;forum.spring.io Thread&lt;/a&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style=""&gt;&lt;i&gt;&amp;ldquo;Did you try the &amp;lsquo;refresh dependencies&amp;rsquo; option in the Grails menu (accesible if you right click on your project)?&lt;/i&gt;&lt;/span&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style=""&gt;&lt;i&gt;Just running the &amp;quot;grails refresh-dependencies&amp;rdquo; command itself isn&amp;rsquo;t sufficient to let the IDE pick up on dependency changes. You have to make the IDE itself &amp;lsquo;refresh&amp;rsquo; its dependencies.&lt;/i&gt;&lt;/span&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style=""&gt;&lt;i&gt;This is because The IDE and the command line tooling use seperate infrastructure for compiling your code. The IDE menu &amp;lsquo;refresh dependencies&amp;rsquo; is supposed to synch-up both worlds with eachother. Typically you have to do this if you made changes to the project dependencies by editing your project&amp;rsquo;s config files.&amp;ldquo;&lt;/i&gt;&lt;/span&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        &amp;nbsp; 
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
