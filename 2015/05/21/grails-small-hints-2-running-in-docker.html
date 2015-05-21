@@ -119,64 +119,68 @@
             <span class="glyphicon glyphicon-time"></span> Posted on May 21
           </p>
           <hr /><div class="row">
-  <div class="article"><p><span/></p>
+  <div class="article"><p><span/>      <div> 
+   <div>
+     There is a out-of-the-box docker-grails instance provided, which  you can find  here 
+   </div> 
+   <div> 
+    <br> 
+   </div> 
+   <div> 
+    <a href="https://github.com/onesysadmin/docker-grails" rel="nofollow"><a href="https://github.com/onesysadmin/docker-grails">https://github.com/onesysadmin/docker-grails</a></a> 
+   </div> 
+   <div> 
+    <br> 
+   </div> 
+   <div>
+     In order to attach your local development directory &ldquo;&hellip;/workspace-grails/clb-platform&rdquo; to the internal /app directory run it as follows 
+   </div> 
+   <div> 
+    <br> 
+   </div> 
+   <div></p>
+<pre class="highlight plaintext"><code>
+docker run -i -t -p 8080:8080 --rm -v /Users/Felix/Development/workspace-grails/clb-platform:/app onesysadmin/grails grails 
+
+</code></pre>
+
+<div> 
+    <br> 
+   </div> 
 
 <p><div>
-    There is a out-of-the-box docker-grails instance provided, which  you can find  here 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
-  <div> 
-   <a href="https://github.com/onesysadmin/docker-grails" rel="nofollow"><a href="https://github.com/onesysadmin/docker-grails">https://github.com/onesysadmin/docker-grails</a></a> 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
-  <div>
-    In order to attach your local development directory 
-   <span style=""><span style="font-size: 14px;"><span style=""><span style="">/Users/Felix/Development/workspace-grails/clb-platform</span></span></span></span> 
-   <code style=" font-size: 13.3333339691162px;"><span style="font-size: 13.3333339691162px;"><span style="">to the inter</span><span style=""><span style="">nal</span> <span style="">/app</span> <span style="">directory run it as follows</span></span></span></code> 
-  </div> 
-  <div> 
-   <span style="font-size: 13px;"><span style=""><br></span></span> 
-  </div> 
-  <div> 
-   <span style=""><span style="font-size: 14px;"><span style=""><code style=""><span style="">docker run -i -t -p 8080:8080 --rm -v</span></code></span> <span style=""><span style="">/Users/Felix/Development/workspace-grails/clb-platform</span></span><span style=""><code style=""><span style=""><span style="">:/app</span> onesysadmin/grails grails</span></code></span></span></span> 
-  </div> 
-  <div> 
-   <span style=""><span style=""><br></span></span> 
-  </div> 
-  <div> 
-   <span style="">You will find the IP address in the docker startup message</span> 
-  </div> 
-  <div> 
-   <span style=""><br></span> 
-  </div> 
-  <div> 
-   <span style=""><span style="">To connect the Docker client to the Docker daemon, please set:</span></span> 
-  </div> 
-  <div> 
-   <span style=""><span style="">export DOCKER_CERT_PATH=/Users/Felix/.boot2docker/certs/boot2docker-vm</span></span> 
-  </div> 
-  <div> 
-   <span style=""><span style="">export DOCKER_TLS_VERIFY=1</span></span> 
-  </div> 
-  <div> 
-   <span style=""><span style="">export DOCKER_HOST=tcp://192.168.59.103:2376</span></span> 
-  </div> 
-  <div> 
-   <span style=""><br></span> 
-  </div> 
-  <div> 
-   <span style="">For example</span> 
-  </div> 
-  <div> 
-   <span style=""><span style=""><br></span></span> 
-  </div> 
-  <div> 
-   <a href="http://192.168.59.103:8080/clb-platform/curationApp/detail" rel="nofollow"><a href="http://192.168.59.103:8080/clb-platform/curationApp/detail">http://192.168.59.103:8080/clb-platform/curationApp/detail</a></a> 
-   <br> 
+     You will find the IP address in the docker startup message 
+   </div> 
+   <div> 
+    <br> 
+   </div> 
+   <div>
+     To connect the Docker client to the Docker daemon, please set: 
+   </div> 
+   <div> 
+    <br> 
+   </div> 
+   <div></p>
+<pre class="highlight plaintext"><code>
+export DOCKER_CERT_PATH=/Users/Felix/.boot2docker/certs/boot2docker-vm 
+  export DOCKER_TLS_VERIFY=1 
+  export DOCKER_HOST=tcp://192.168.59.103:2376 
+
+</code></pre>
+
+<p></div> 
+   <div> 
+    <br> 
+   </div> 
+   <div>
+     For example 
+   </div> 
+   <div> 
+    <br> 
+   </div> 
+   <div> 
+    <a href="http://192.168.59.103:8080/clb-platform/curationApp/detail" rel="nofollow"><a href="http://192.168.59.103:8080/clb-platform/curationApp/detail">http://192.168.59.103:8080/clb-platform/curationApp/detail</a></a> 
+   </div> 
   </div></p>
 
   </div>

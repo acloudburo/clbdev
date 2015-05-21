@@ -14,69 +14,73 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/21/grails-small-hints-2-running-in-docker.html"/>
     <id>https://dev.cloudburo.net/2015/05/21/grails-small-hints-2-running-in-docker.html</id>
     <published>2015-05-21T05:00:38Z</published>
-    <updated>2015-05-21T05:00:39+00:00</updated>
+    <updated>2015-05-21T05:54:09+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt; 
+   &lt;div&gt;
+     There is a out-of-the-box docker-grails instance provided, which  you can find  here 
+   &lt;/div&gt; 
+   &lt;div&gt; 
+    &lt;br&gt; 
+   &lt;/div&gt; 
+   &lt;div&gt; 
+    &lt;a href="https://github.com/onesysadmin/docker-grails" rel="nofollow"&gt;&lt;a href="https://github.com/onesysadmin/docker-grails"&gt;https://github.com/onesysadmin/docker-grails&lt;/a&gt;&lt;/a&gt; 
+   &lt;/div&gt; 
+   &lt;div&gt; 
+    &lt;br&gt; 
+   &lt;/div&gt; 
+   &lt;div&gt;
+     In order to attach your local development directory &amp;ldquo;&amp;hellip;/workspace-grails/clb-platform&amp;rdquo; to the internal /app directory run it as follows 
+   &lt;/div&gt; 
+   &lt;div&gt; 
+    &lt;br&gt; 
+   &lt;/div&gt; 
+   &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+docker run -i -t -p 8080:8080 --rm -v /Users/Felix/Development/workspace-grails/clb-platform:/app onesysadmin/grails grails 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt; 
+    &lt;br&gt; 
+   &lt;/div&gt; 
 
 &lt;p&gt;&lt;div&gt;
-    There is a out-of-the-box docker-grails instance provided, which  you can find  here 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;a href="https://github.com/onesysadmin/docker-grails" rel="nofollow"&gt;&lt;a href="https://github.com/onesysadmin/docker-grails"&gt;https://github.com/onesysadmin/docker-grails&lt;/a&gt;&lt;/a&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    In order to attach your local development directory 
-   &lt;span style=""&gt;&lt;span style="font-size: 14px;"&gt;&lt;span style=""&gt;&lt;span style=""&gt;/Users/Felix/Development/workspace-grails/clb-platform&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 
-   &lt;code style=" font-size: 13.3333339691162px;"&gt;&lt;span style="font-size: 13.3333339691162px;"&gt;&lt;span style=""&gt;to the inter&lt;/span&gt;&lt;span style=""&gt;&lt;span style=""&gt;nal&lt;/span&gt; &lt;span style=""&gt;/app&lt;/span&gt; &lt;span style=""&gt;directory run it as follows&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style="font-size: 13px;"&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;&lt;span style="font-size: 14px;"&gt;&lt;span style=""&gt;&lt;code style=""&gt;&lt;span style=""&gt;docker run -i -t -p 8080:8080 --rm -v&lt;/span&gt;&lt;/code&gt;&lt;/span&gt; &lt;span style=""&gt;&lt;span style=""&gt;/Users/Felix/Development/workspace-grails/clb-platform&lt;/span&gt;&lt;/span&gt;&lt;span style=""&gt;&lt;code style=""&gt;&lt;span style=""&gt;&lt;span style=""&gt;:/app&lt;/span&gt; onesysadmin/grails grails&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;You will find the IP address in the docker startup message&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;&lt;span style=""&gt;To connect the Docker client to the Docker daemon, please set:&lt;/span&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;&lt;span style=""&gt;export DOCKER_CERT_PATH=/Users/Felix/.boot2docker/certs/boot2docker-vm&lt;/span&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;&lt;span style=""&gt;export DOCKER_TLS_VERIFY=1&lt;/span&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;&lt;span style=""&gt;export DOCKER_HOST=tcp://192.168.59.103:2376&lt;/span&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;For example&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;a href="http://192.168.59.103:8080/clb-platform/curationApp/detail" rel="nofollow"&gt;&lt;a href="http://192.168.59.103:8080/clb-platform/curationApp/detail"&gt;http://192.168.59.103:8080/clb-platform/curationApp/detail&lt;/a&gt;&lt;/a&gt; 
-   &lt;br&gt; 
+     You will find the IP address in the docker startup message 
+   &lt;/div&gt; 
+   &lt;div&gt; 
+    &lt;br&gt; 
+   &lt;/div&gt; 
+   &lt;div&gt;
+     To connect the Docker client to the Docker daemon, please set: 
+   &lt;/div&gt; 
+   &lt;div&gt; 
+    &lt;br&gt; 
+   &lt;/div&gt; 
+   &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+export DOCKER_CERT_PATH=/Users/Felix/.boot2docker/certs/boot2docker-vm 
+  export DOCKER_TLS_VERIFY=1 
+  export DOCKER_HOST=tcp://192.168.59.103:2376 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt; 
+   &lt;div&gt; 
+    &lt;br&gt; 
+   &lt;/div&gt; 
+   &lt;div&gt;
+     For example 
+   &lt;/div&gt; 
+   &lt;div&gt; 
+    &lt;br&gt; 
+   &lt;/div&gt; 
+   &lt;div&gt; 
+    &lt;a href="http://192.168.59.103:8080/clb-platform/curationApp/detail" rel="nofollow"&gt;&lt;a href="http://192.168.59.103:8080/clb-platform/curationApp/detail"&gt;http://192.168.59.103:8080/clb-platform/curationApp/detail&lt;/a&gt;&lt;/a&gt; 
+   &lt;/div&gt; 
   &lt;/div&gt;&lt;/p&gt;
 
   &lt;/div&gt;
