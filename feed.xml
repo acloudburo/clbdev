@@ -5,10 +5,52 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-05-21T05:00:38Z</updated>
+  <updated>2015-05-25T07:13:55Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>Large-scale cluster management at Google with Borg</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html"/>
+    <id>https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html</id>
+    <published>2015-05-25T07:13:55Z</published>
+    <updated>2015-05-25T07:13:56+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Research@google published a new very interesting paper about their architecture of Borg at an ACM venue. It’s the underlying architecture for Kubernetes, so a very interesting read. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Abstract of the document: 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;span style=" font-size: 13px;"&gt;&lt;i&gt;Google&amp;rsquo;s Borg system is a cluster manager that runs hundreds of thousands of jobs, from many thousands of different applications, across a number of clusters each with up to tens of thousands of machines. It achieves high utilization by combining admission control, efficient task-packing, over-commitment, and machine sharing with process-level performance isolation. It supports high-availability applications with runtime features that minimize fault-recovery time, and scheduling policies that reduce the probability of correlated failures. Borg simplifies life for its users by offering a declarative job specification language, name service integration, real-time job monitoring, and tools to analyze and simulate system behavior.&lt;/i&gt;&lt;/span&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;i&gt;&lt;span style="font-size: 13px;"&gt;&lt;span style=""&gt;&lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/i&gt; 
+      &lt;/div&gt; 
+      &lt;div style=" font-size: 13px;"&gt; 
+       &lt;div&gt; 
+        &lt;i&gt;We present a summary of the Borg system architecture and features, important design decisions, a quantitative analysis of some of its policy decisions, and a qualitative examination of lessons learned from a decade of operational experience with it.&lt;/i&gt; 
+       &lt;/div&gt; 
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="http://research.google.com/pubs/pub43438.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Grails Small Hints #2 - Running in Docker</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/21/grails-small-hints-2-running-in-docker.html"/>
@@ -567,186 +609,6 @@ iMac: ~ Felix$ eb ssh
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Micro Business Quick Tips #1: Get a bullet proof E-Mail setup (SPF, DKIM, DMARC)</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html"/>
-    <id>https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html</id>
-    <published>2015-04-21T07:44:40Z</published>
-    <updated>2015-05-14T22:22:14+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
-      &lt;div&gt;
-        In the current world of spammers, intruders and fake emails, it is vital to get a bullet proof setup for your E-Mail&amp;nbsp;deliveries. It took me some time to sort it out, but&amp;nbsp;at the end not more than three steps are necessary to get an authenticated email setup&amp;nbsp;with less spam risk&amp;nbsp;and&amp;nbsp;with better reputation, which reduces&amp;nbsp;the risk that&amp;nbsp;&amp;nbsp;your emails&amp;nbsp;are put into the spam folder by your client or prospects. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;1. Get a own Domain with an associated Email Address&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Using email addresses of a free mail provider isn’t a good idea when you start your business. Especially when you want&amp;nbsp; to use third party providers for&amp;nbsp;certain email based services over time. E.g. you could&amp;nbsp;use 
-       &lt;a href="https://mailchimp.com" rel="nofollow"&gt;Mailchimp&lt;/a&gt; to send out a Email Newsletter on behalf of you. 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The reason why you want your own domain based (and controlled) email address is that you want to decouple you from any DMARC policy decisions of the free email provider on its email domain.&amp;nbsp; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        DMARC is a global initiative (you will see later how you can benefit from it, a&amp;nbsp;primer can be found 
-       &lt;a href="https://wordtothewise.com/2014/04/brief-dmarc-primer/" rel="nofollow"&gt;here&lt;/a&gt;) to reduce or stop fraudulent emails. All the big free email provider are participating and they may decide to strengthen the DMARC authentication policy. This will result in&amp;nbsp;rejecting emails that claim to come for example from&amp;nbsp;yahoo.com but actually originate at a non-Yahoo server. 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        This is a pattern definitely used by spammers, but for example also by Mailchimp when it will send out emails on behalf of your company (read the full story 
-       &lt;a href="https://blog.mailchimp.com/yahoo-changes-may-affect-your-deliverability/" rel="nofollow"&gt;here&lt;/a&gt;). Therefore&amp;nbsp;get your own domain&amp;nbsp;with its email address (&lt;a href="mailto:myname@mydomain.com"&gt;myname@mydomain.com&lt;/a&gt;)&amp;nbsp;in order to keep it&amp;nbsp;under your control how you want to handle Emails sent on behalf of you by a untrusted or unknown source. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;2. Setup Email Authentication in your DNS records&amp;nbsp;&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        In order to ensure effective email delivery it’s highly recommended that you setup email authentication in your DNS records.&amp;nbsp;By having purchased a own domain you also will get the possibility to adjust your DNS records (again you are in control). Depending where your purchased a domain the way how you update the records may vary. Search for DNS on the support page of your domain provider. 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Email Authentication requires not only modification of the client side (by you adding DNS records) as well as Email provider which supports the 
-       &lt;a href="http://www.openspf.org/" rel="nofollow"&gt;SPF&lt;/a&gt; and 
-       &lt;a href="http://www.dkim.org/info/dkim-faq.html" rel="nofollow"&gt;DKIM&lt;/a&gt; on the server side. This is either the Email service provided with your domain&amp;nbsp;or you go for one with the necessary support (you then have to modify the MX records of your DNS records to point to this new Email provider). Check the support pages of your domain email provider for keywords like&amp;nbsp;SPF, DKIM to get an understanding what is supported. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        For example I purchased a 
-       &lt;a href="https://www.google.com/work/apps/business/" rel="nofollow"&gt;Google Apps for Work&lt;/a&gt; account which comes with a very strong Gmail based E-Mail service offering. It can host all my different Email Addresses of all my different domains (around 10)&amp;nbsp; and&amp;nbsp; allows the setup of &amp;nbsp; SPF/DKIM Email Authentication. The offering is overall very powerful (it introduces any kind of email relaying, rerouting etc. in case you run some other email account&amp;nbsp;as well) and allows you to centralize all your Email handling.&amp;nbsp; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        In my DNS record of of my&amp;nbsp; 
-       &lt;i&gt;cloudburo.net&lt;/i&gt;&amp;nbsp;domain - which was purchased by another vendor - I had to reroute the mail traffic to the google email host environment (in DNS these are MX records). As you can see this a set of servers which will handle the traffic. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/cc04a82d31aae919cef08f1f3da39820.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        To get SPF and DKIM on your side established&amp;nbsp; you have to create DNS records for 
-       &lt;a href="http://www.microsoft.com/mscorp/safety/technologies/senderid/default.mspx" rel="nofollow"&gt;SenderID&lt;/a&gt; and 
-       &lt;a href="http://www.dkim.org/info/dkim-faq.html" rel="nofollow"&gt;DKIM&lt;/a&gt; on your own domain. 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Major ISP’s will use this DNS entries to verify your identity and track reputation. So it will ensure that your Emails will&amp;nbsp;not land in the spam folder of your customers. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        An example here the SPF DNS record entry which is used for my domain cloudburo.net. It&amp;nbsp; defines that emails sent from 
-       &lt;i&gt;&amp;lt;name&amp;gt;@cloudburo.net&lt;/i&gt; may be coming from servers of 
-       &lt;i&gt;google.com&lt;/i&gt; (as explained above I host&amp;nbsp;my emails with 
-       &lt;i&gt;google&lt;/i&gt;), as well as from 
-       &lt;i&gt;mtasv.net&lt;/i&gt; (this are the servers of Mailchimp which I use&amp;nbsp;for newsletter distribution). 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/acc5ef067f49560caa27dbbf5e93b669.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;3. Start Monitoring your Email Traffic via a DMARC report&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Having SPF and DKIM established you now can benefit from DMARC reporting to check unauthenticated usage of your domain email. You could even introduce a reject policy that is something I didn’t investigated it (definitely the large ISPs are starting to change their strategy as explained later) 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;&lt;a href="http://dmarc.org/" style="text-decoration: none; color: rgb(69, 81, 163); font-family: open_sansregular; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;" rel="nofollow"&gt;&lt;br&gt;&lt;/a&gt;&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;i&gt;&lt;b&gt;&lt;span style=""&gt;DMARC&lt;/span&gt;&lt;span style=""&gt;&lt;i&gt;&amp;nbsp;stands for Domain-based Message Authentication, Reporting and Conformance. What DMARC does is allow domain owners to publish policy statements in DNS telling receiver domains what to do with messages that do not authenticate. In addition, DMARC introduces the concept of “domain alignment.” What this means is that the authentication has to be from the same domain (or a sub-domain) as the address in the header-from: line. The idea behind DMARC is that organizational owners can use SPF and DKIM authentication to authenticate their actual domain in the header-from line. This moves authentication from a important but behind the scenes technology out to an end user visible technology.&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;&lt;/i&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        An excellent free reporting is provided by Postmark ( 
-       &lt;a href="https://dmarc.postmarkapp.com/" rel="nofollow"&gt;&lt;a href="https://dmarc.postmarkapp.com/"&gt;https://dmarc.postmarkapp.com/&lt;/a&gt;&lt;/a&gt;). By registering with them and again adding an additional DNS record for your domain, you will be delivered with a weekly DMARC report. Postmark will process reports from major ISPs about your domain’s DMARC alignment and turn the into beautiful, human-readable weekly email digests. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        An example report is shown below, it shows two untrusted sources. A short lookup revealed that the IP addresses from mtasv.net belong to a third party provider which is used by me to send out Emails on behalf of me (actually it’s the very useful Postmark&amp;nbsp;Transaction&amp;nbsp;Email&amp;nbsp;service which is integrated into applications of me). By checking their Web page I found the instruction how I could align these IP address with the DMARC policy (as you could think of by extending the DNS record). 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        You should now be well &amp;nbsp;set up&amp;nbsp;of with your Micro-Business to handle Email traffic in a spam-free manner and a high confidence that the&amp;nbsp;email is reaching your end-user&amp;nbsp;and not his spam folder. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/f3590a9af71c30a37847ee71a091421d.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Read the following 
-       &lt;a href="http://yahoo.tumblr.com/post/82426971544/an-update-on-our-dmarc-policy-to-protect-our-users" rel="nofollow"&gt;article&lt;/a&gt; by Yahoo which explains why the changed from one day to another to the hard DMARC policy. A journey to a spam free world. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;div style=""&gt; 
-        &lt;div&gt; 
-         &lt;i&gt;In Friday afternoon last week, Yahoo made a simple change to its DMARC policy from “report” to “reject”. In other words, we requested that all other mail services reject emails claiming to come from a Yahoo user, but not signed by Yahoo.&amp;nbsp; Y&lt;/i&gt; 
-         &lt;span style=""&gt;&lt;i&gt;ahoo is the first major email provider in the world to adopt this aggressive level of DMARC policy on behalf of our users.&lt;/i&gt;&lt;/span&gt; 
-        &lt;/div&gt; 
-       &lt;/div&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style=""&gt;&lt;i&gt;And overnight, the bad guys who have used email spoofing to forge emails and launch phishing attempts pretending to come from a Yahoo Mail account were nearly stopped in their tracks.&lt;/i&gt;&lt;/span&gt; 
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;

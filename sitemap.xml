@@ -319,6 +319,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/05/25/large-scale-cluster-management-at-google-with-borg.html</loc>
+    <lastmod>2015-05-25</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2014/01/25/personal-data-api-part-2.html</loc>
     <lastmod>2015-05-14</lastmod>
     <priority>0.7</priority>
@@ -490,6 +496,12 @@
     <loc>https://dev.cloudburo.net//2015/05.html</loc>
     <lastmod>2015-05-14</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/05/25.html</loc>
+    <lastmod>2015-05-14</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -733,7 +745,19 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//page/4/</loc>
+    <lastmod>2015-05-14</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2015/page/2.html</loc>
+    <lastmod>2015-05-14</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/page/3.html</loc>
     <lastmod>2015-05-14</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>
