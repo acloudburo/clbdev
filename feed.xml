@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html"/>
     <id>https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html</id>
     <published>2015-05-25T07:13:55Z</published>
-    <updated>2015-05-25T07:13:56+00:00</updated>
+    <updated>2015-05-25T08:38:43+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -23,7 +23,7 @@
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;div&gt;
-        Research@google published a new very interesting paper about their architecture of Borg at an ACM venue. It’s the underlying architecture for Kubernetes, so a very interesting read. 
+        Research@google published a new very interesting paper about their architecture of Borg at an ACM venue. It’s the underlying architecture for Kubernetes and provides a lot of insights. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -32,18 +32,16 @@
         Abstract of the document: 
       &lt;/div&gt; 
       &lt;div&gt; 
-       &lt;br&gt; 
+       &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
       &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style=" font-size: 13px;"&gt;&lt;i&gt;Google&amp;rsquo;s Borg system is a cluster manager that runs hundreds of thousands of jobs, from many thousands of different applications, across a number of clusters each with up to tens of thousands of machines. It achieves high utilization by combining admission control, efficient task-packing, over-commitment, and machine sharing with process-level performance isolation. It supports high-availability applications with runtime features that minimize fault-recovery time, and scheduling policies that reduce the probability of correlated failures. Borg simplifies life for its users by offering a declarative job specification language, name service integration, real-time job monitoring, and tools to analyze and simulate system behavior.&lt;/i&gt;&lt;/span&gt; 
+      &lt;div style=""&gt; 
+       &lt;i&gt;Google&amp;rsquo;s Borg system is a cluster manager that runs hundreds of thousands of jobs, from many thousands of different applications, across a number of clusters each with up to tens of thousands of machines. It achieves high utilization by combining admission control, efficient task-packing, over-commitment, and machine sharing with process-level performance isolation. It supports high-availability applications with runtime features that minimize fault-recovery time, and scheduling policies that reduce the probability of correlated failures. Borg simplifies life for its users by offering a declarative job specification language, name service integration, real-time job monitoring, and tools to analyze and simulate system behavior.&lt;/i&gt; 
       &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;i&gt;&lt;span style="font-size: 13px;"&gt;&lt;span style=""&gt;&lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/i&gt; 
+      &lt;div style=""&gt; 
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
       &lt;/div&gt; 
-      &lt;div style=" font-size: 13px;"&gt; 
-       &lt;div&gt; 
-        &lt;i&gt;We present a summary of the Borg system architecture and features, important design decisions, a quantitative analysis of some of its policy decisions, and a qualitative examination of lessons learned from a decade of operational experience with it.&lt;/i&gt; 
-       &lt;/div&gt; 
+      &lt;div style=""&gt; 
+       &lt;i&gt;We present a summary of the Borg system architecture and features, important design decisions, a quantitative analysis of some of its policy decisions, and a qualitative examination of lessons learned from a decade of operational experience with it.&lt;/i&gt; 
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://research.google.com/pubs/pub43438.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
