@@ -5,10 +5,48 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-05-25T07:13:55Z</updated>
+  <updated>2015-05-27T08:46:21Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>Docker Small Hints #4: Cleaning up your local zombie docker images</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html"/>
+    <id>https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html</id>
+    <published>2015-05-27T08:46:21Z</published>
+    <updated>2015-05-27T20:46:21+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        The following commands I found very useful to get rid of zombie docker objects/images, which are accumulated over testing time. If you don’t remove them from time,  it can happen that your local docker environment runs out of space. Or you get some weird FileSystem errors during your docker build. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;span style=""&gt;&amp;lt;clbcode&amp;gt;&lt;/span&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;span style=""&gt;docker ps -a -q | xargs -n 1 docker rm&lt;/span&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;span style=""&gt;docker images -q &amp;ndash;filter &amp;ldquo;dangling=true&amp;rdquo; | xargs docker rmi&lt;/span&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;span style=""&gt;docker images&lt;/span&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;span style=""&gt;&amp;lt;/clbcode&amp;gt;&lt;/span&gt; 
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Large-scale cluster management at Google with Borg</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html"/>
@@ -459,148 +497,6 @@ iMac: ~ Felix$ eb ssh
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Micro Business Quick Tips #2: Google Apps Email setup for a new domain</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html"/>
-    <id>https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html</id>
-    <published>2015-04-24T05:01:26Z</published>
-    <updated>2015-05-14T22:22:14+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
-      &lt;div&gt;
-        Assumption is&amp;nbsp;that&amp;nbsp; 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;you have a Google Business Account&lt;/li&gt; 
-       &lt;li&gt;you purchased a new domain, e.g. &lt;span style=""&gt;curation.space&lt;/span&gt;&lt;/li&gt; 
-       &lt;li&gt;you want to route emails to the new domain&amp;nbsp;&lt;span style=""&gt;&amp;lt;anyname&amp;gt;@curation.space&lt;/span&gt;&amp;nbsp;to your primary Gmail account&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Necessary Steps 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Go to the Google Admin Console ( 
-       &lt;a href="https://admin.google.com" rel="nofollow"&gt;&lt;a href="https://admin.google.com"&gt;https://admin.google.com&lt;/a&gt;&lt;/a&gt;) 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;&lt;u&gt;1. Add the Domain on the Google Admin Console&lt;/u&gt;&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        On the Domain Page add your new Domain: 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/0eb35bda154e50b99c048c274f9127e0.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;b&gt;2. Add a TXT Record on your DNS Server&lt;/b&gt;&lt;/u&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Google will provide a TXT record which&amp;nbsp; has to be added onto the DNS server, in our example of 
-       &lt;span style=""&gt;curation.space&lt;/span&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;b&gt;3. Add MX Records on&amp;nbsp; your&amp;nbsp;DNS Server&lt;/b&gt;&lt;/u&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Remove the MX records of the old provider and add the new one as listed by Google 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style=""&gt;&lt;span style=""&gt;&lt;span style=""&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/cc1e141a70bba6d8a622f5057c4bb651.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/u&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;b&gt;4. Add SPF Record on your DNS Server&lt;/b&gt;&lt;/u&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Refer to the discussion about SPF, DKIM, DMARC in the following 
-       &lt;a href="http://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html" rel="nofollow"&gt;blog entry&lt;/a&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style=""&gt;&lt;span style=" font-size: 14px;"&gt;v=spf1 include:&lt;a href="http://_spf.google.com" rel="nofollow"&gt;_spf.google.com&lt;/a&gt; ~all&lt;/span&gt;&lt;/span&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;b&gt;5. Add an Email Alias for the User on the Google Admin Console&lt;/b&gt;&lt;/u&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Make sure to add an email alias to your user in the google admin 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/72a2130bfe765dbf5973630a268d79ff.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;br&gt;&lt;/u&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/u&gt; 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
