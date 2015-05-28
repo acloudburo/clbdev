@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html"/>
     <id>https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html</id>
     <published>2015-05-27T08:46:21Z</published>
-    <updated>2015-05-28T16:02:26+00:00</updated>
+    <updated>2015-05-28T18:25:55+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -28,36 +28,13 @@
    &lt;/div&gt; 
    &lt;div&gt;&lt;/p&gt;
 &lt;pre class="highlight shell"&gt;&lt;code&gt;
-docker ps -a -q | xargs -n 1 docker rm 
+  docker ps -a -q | xargs -n 1 docker rm 
   docker images -q --filter &lt;span class="s2"&gt;"dangling=true"&lt;/span&gt; | xargs docker rmi 
   docker images 
 
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;/div&gt; 
-  &lt;/div&gt; Conflicting modification on 28. Mai 2015 18:02:01: 
-  &lt;div&gt; 
-   &lt;div style=""&gt;
-     The following commands I found very useful to get rid of zombie docker objects/images, which are accumulated over testing time. If you don’t remove them from time to time,  it can happen that your local docker environment runs out of space. Or you get some weird FileSystem errors during your docker build. 
-   &lt;/div&gt; 
-   &lt;div style=""&gt; 
-    &lt;br&gt; 
-   &lt;/div&gt; 
-   &lt;div style=""&gt;
-     &amp;lt;code&amp;gt; shell 
-   &lt;/div&gt; 
-   &lt;div style=""&gt;
-     docker ps -a -q | xargs -n 1 docker rm 
-   &lt;/div&gt; 
-   &lt;div style=""&gt;
-     docker images -q &amp;ndash;filter &amp;ldquo;dangling=true&amp;rdquo; | xargs docker rmi 
-   &lt;/div&gt; 
-   &lt;div style=""&gt;
-     docker images 
-   &lt;/div&gt; 
-   &lt;div style=""&gt;
-     &amp;lt;/code&amp;gt; 
-   &lt;/div&gt; 
   &lt;/div&gt;&lt;/p&gt;
 
   &lt;/div&gt;
