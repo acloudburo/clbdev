@@ -118,26 +118,37 @@
           <p>
             <span class="glyphicon glyphicon-time"></span> Posted on May 27
           </p>
-          <hr /><div class="row">
-  <div class="article"><p><span/>      <div>
-    The following commands I found very useful to get rid of zombie docker objects/images, which are accumulated over testing time. If you don’t remove them from time to time,  it can happen that your local docker environment runs out of space. Or you get some weird FileSystem errors during your docker build. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
-  <div></p>
-<pre class="highlight shell"><code>
-docker ps -a -q | xargs -n 1 docker rm 
-  docker images -q --filter <span class="s2">"dangling=true"</span> | xargs docker rmi 
-
-  docker images 
-
-</code></pre>
-
-<p></div></p>
-
-  </div>
-</div>
+          <hr />
+          <div class="row">
+            <div class="article">
+              <p><span/></p>
+              
+              <p><div> 
+                 <div style="">
+                   The following commands I found very useful to get rid of zombie docker objects/images, which are accumulated over testing time. If you don’t remove them from time to time,  it can happen that your local docker environment runs out of space. Or you get some weird FileSystem errors during your docker build. 
+                 </div> 
+                 <div style=""> 
+                  <br> 
+                 </div> 
+                 <div style="">
+                   &lt;code&gt; shell 
+                 </div> 
+                 <div style="">
+                   docker ps -a -q | xargs -n 1 docker rm 
+                 </div> 
+                 <div style="">
+                   docker images -q &ndash;filter &ldquo;dangling=true&rdquo; | xargs docker rmi 
+                 </div> 
+                 <div style="">
+                   docker images 
+                 </div> 
+                 <div style="">
+                   &lt;/code&gt; 
+                 </div> 
+                </div></p>
+              
+            </div>
+          </div>
           <hr />
           <div id="disqus_thread"></div>
           <script type="text/javascript">
