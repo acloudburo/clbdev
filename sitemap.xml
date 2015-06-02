@@ -325,6 +325,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/06/02/haben-hunde-ein-schlechtes-gewissen.html</loc>
+    <lastmod>2015-06-02</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2015/05/25/large-scale-cluster-management-at-google-with-borg.html</loc>
     <lastmod>2015-05-25</lastmod>
     <priority>0.7</priority>
@@ -496,6 +502,18 @@
     <loc>https://dev.cloudburo.net//2015.html</loc>
     <lastmod>2015-05-14</lastmod>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/06.html</loc>
+    <lastmod>2015-05-14</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/06/02.html</loc>
+    <lastmod>2015-05-14</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
