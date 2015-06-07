@@ -31,10 +31,10 @@
                   <a href="/tags/gradle.html">gradle (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/smallhints.html">smallhints (8)</a>
+                  <a href="/tags/smallhints.html">smallhints (9)</a>
                 </li>
                 <li>
-                  <a href="/tags/docker.html">docker (5)</a>
+                  <a href="/tags/docker.html">docker (6)</a>
                 </li>
                 <li>
                   <a href="/tags/quicktips.html">quicktips (3)</a>
@@ -79,7 +79,7 @@
                   <a href="/tags/architecture.html">architecture (7)</a>
                 </li>
                 <li>
-                  <a href="/tags/aws.html">aws (5)</a>
+                  <a href="/tags/aws.html">aws (6)</a>
                 </li>
                 <li>
                   <a href="/tags/googleapps.html">googleapps (1)</a>
@@ -122,50 +122,51 @@
           <hr />
           <div class="row">
             <div class="article">
-              <p><span/><br>
-                <div>
-                  Cloud Platforms are normally highly generic and configurable and it’s easy to loose overview, what can be configured or modified where. So I assembled some of the main high level concepts for AWS Elastic Beanstalk.&nbsp; 
+              <p><span/></p>
+              
+              <p><div>
+                  Cloud Platforms are normally highly generic and configurable and it’s easy to loose overview, what can be configured or modified where. So I assembled some of the main high level concepts for AWS Elastic Beanstalk.<br>
                  <div> 
                   <br> 
                  </div> 
                  <b><span style="font-size:24px;">Level 0: Concepts</span></b> 
                  <div> 
                   <br> 
-                 </div>Elastic Beanstalk is structured around the 3 high level concepts. 
+                 </div> Elastic Beanstalk is structured around the 3 high level concepts. 
                  <div> 
                   <br> 
                  </div> 
-                 <i><span style="font-size:18px;">A&nbsp;</span></i> 
+                 <i><span style="font-size:18px;">A </span></i> 
                  <i><span style="font-size:18px;"><b>Version</b></span></i> 
-                 <i><span style="font-size:18px;"> of an (</span></i> 
+                 <i><span style="font-size:18px;">of an (</span></i> 
                  <i><span style="font-size:18px;"><b>Docker)</b></span></i> 
-                 <i><span style="font-size:18px;">&nbsp;</span></i> 
+                 <i><span style="font-size:18px;"> </span></i> 
                  <i><span style="font-size:18px;"><b>Application</b></span></i> 
-                 <i><span style="font-size:18px;"> is running in one </span></i> 
+                 <i><span style="font-size:18px;">is running in one</span></i> 
                  <i><span style="font-size:18px;"><b>Environment</b></span></i> 
                  <div> 
                   <br> 
-                 </div>Elastic Beanstalk allows you to&nbsp;run in parallel 
+                 </div> Elastic Beanstalk allows you to run in parallel 
                  <div> 
                   <br> 
                  </div> 
                  <i><b>Multiple Versions</b></i> 
-                 <i> of </i> 
+                 <i>of</i> 
                  <i><b>multiple (Docker) Applications</b></i> 
-                 <i> in </i> 
+                 <i>in</i> 
                  <i><b>multiple Environments</b></i> 
                  <div> 
                   <br> 
                  </div> 
                  <div> 
                   <br> 
-                 </div>The Dashboard will show you all deployed 
-                 <b>Applications</b> which can be running in multiple&nbsp; 
+                 </div> The Dashboard will show you all deployed 
+                 <b>Applications</b> which can be running in multiple<br>
                  <b>Environments</b>. 
                  <div> 
                   <br> 
-                 </div>In the screenshot below we have one Docker Application „ 
-                 <i>curationApp“</i> which has to two environments&nbsp;„ 
+                 </div> In the screenshot below we have one Docker Application „ 
+                 <i>curationApp“</i> which has to two environments „ 
                  <i>curationApp-prod</i>“ and „ 
                  <i>curationApp-test&quot;</i> 
                  <br> 
@@ -176,12 +177,12 @@
             <div class="article">
               <p><span/> 
                 <div> 
-                 <br>An 
-                 <b>Environment</b> may run one of your released docker&nbsp;Application Versions. You could now „ 
+                 <br> An 
+                 <b>Environment</b> may run one of your released docker Application Versions. You could now „ 
                  <i>Deploy</i>“ one of your versions to one of your Environments. 
                  <div> 
                   <br> 
-                 </div>In the example below the environment &ldquo; 
+                 </div> In the example below the environment &ldquo; 
                  <i>curationApp-prod&rdquo;</i> is running Version 0.0.5. 
                 </div> </p>
               
@@ -194,53 +195,88 @@
                  <b><span style="font-size:24px;">Level 1: Concepts</span></b> 
                  <div> 
                   <br> 
-                 </div>By selecting an 
+                 </div> By selecting an 
                  <b>Environment</b> you will see the Dashboard of the running 
-                 <b>Application Version</b>&nbsp;which is configured on a AWS 
+                 <b>Application Version</b> which is configured on a AWS 
                  <b>Solution Stack</b>. 
                  <div> 
                   <br> 
-                 </div>In our example below this a Docker solution running on Amazon Linux. 
+                 </div> In our example below this a Docker solution running on Amazon Linux. 
                  <div> 
                   <br> 
-                 </div>A running Environment has a 
-                 <b>Health Status</b> and an associated&nbsp; 
+                 </div> A running Environment has a 
+                 <b>Health Status</b> and an associated<br>
                  <b>Configuration.</b> 
-                 <div> 
-                  <br> 
-                 </div>It’s processing can be checked via 
+                </div> 
+                <div> 
+                 <br> 
+                </div> 
+                <div>
+                  It’s exposed to the Internet via a 
+                 <b>Domain Name Endpoint</b>, 
+                 <span style="">&lt;EnvironmentName&gt;-&lt;Id&gt;.elasticbeanstalk.com</span>.<br>
+                </div> 
+                <div> 
+                 <br> 
+                </div> 
+                <div>
+                  It’s processing can be checked via 
                  <b>Logs</b>, 
                  <b>Realtime Monitors, Events</b> or 
                  <b>Alarms.</b> 
+                </div> 
+                <div> 
                  <div> 
                   <br> 
-                 </div>Furthermore an Environment may be complemented with&nbsp; 
-                 <b>Tags</b>.&nbsp; 
+                 </div> Furthermore an Environment may be complemented with<br>
+                 <b>Tags</b>.<br>
                  <div> 
                   <br> 
                  </div> 
                  <b>Configuration</b>, 
                  <b>Alarms</b> and 
                  <b>Tags</b> may be maintained a set according to your needs. 
-                </div> </p>
+                </div> 
+                <div></p>
               
             </div>
             <img class="img-responsive img-thumbnail article" src="/images/2a86af971f134a9e2fbd2c7a4ca91115.png" />
             <div class="article">
               <p><span/> 
+                </div> 
+                <div>
+                  An 
+                 <b>Environment</b> maps to a 
+                 <b>EC2 Instance</b> (orange box) which is running an Amazon Linux version, on a Docker container infrastructure.<br>
+                </div> 
                 <div> 
                  <br> 
+                </div> 
+                <div></p>
+              
+            </div>
+            <img class="img-responsive img-thumbnail article" src="/images/820746984edb2ecb86de31973a2d854e.png" />
+            <div class="article">
+              <p><span/> 
+                </div> 
+                <div> 
+                 <br> 
+                </div> 
+                <div> 
+                 <br> 
+                </div> 
+                <div> 
                  <span style="font-size:24px;"><b>Main Workflow</b></span> 
                  <div> 
                   <br> 
-                 </div>The Main Workflow consists of the following step: 
+                 </div> The Main Workflow consists of the following step: 
                 </div> 
                 <ul> 
-                 <li><b>Baseline</b>&nbsp;your Docker Application Directory (e.g. checkin to git)</li> 
-                 <li><b>Create</b> an new <b>Application Version ZIP File</b> of your baselined Docker Application </li> 
+                 <li><b>Baseline</b> your Docker Application Directory (e.g. checkin to git)</li> 
+                 <li><b>Create</b> an new <b>Application Version ZIP File</b> of your baselined Docker Application</li> 
                  <li><b>Transfer</b> the <b>Application Version ZIP File</b> to your Amazon <b>S3</b></li> 
-                 <li><b>Configure</b> &nbsp;an <b>Beanstalk</b> <b>Application Version</b> item<b>&nbsp;</b></li> 
-                 <li><b>Deploy</b> the new <b>Beanstalk</b>&nbsp;<b>Application Version</b> to a&nbsp;<b>Beanstalk&nbsp;Environment&nbsp;</b></li> 
+                 <li><b>Configure</b>  an <b>Beanstalk</b> <b>Application Version</b> item<b> </b></li> 
+                 <li><b>Deploy</b> the new <b>Beanstalk</b> <b>Application Version</b> to a <b>Beanstalk Environment </b></li> 
                  <li>The Deploy will <b>Restart and Reconfigure</b> the Environment</li> 
                 </ul></p>
               
@@ -279,6 +315,9 @@
             </h3>
             <ol>
               <li>
+                <a href="/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html">Docker Small Hints #2: Controlling Cloud Costs using Alarms in AWS</a> <span>Jun  7</span> 
+              </li>
+              <li>
                 <a href="/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html">Docker Small Hints #4: Cleaning up your local zombie docker images</a> <span>May 27</span> 
               </li>
               <li>
@@ -305,9 +344,6 @@
               <li>
                 <a href="/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html">Grails Small Hints #1 - Refresh Dependencies in Grails STS Tool Suite</a> <span>Apr 17</span> 
               </li>
-              <li>
-                <a href="/2015/04/17/the-benefits-of-microservices.html">The Benefits of Microservices</a> <span>Apr 17</span> 
-              </li>
             </ol>
           </aside>
           <hr>
@@ -326,10 +362,10 @@
                 <a href="/tags/gradle.html">gradle</a> (2)
               </li>
               <li>
-                <a href="/tags/smallhints.html">smallhints</a> (8)
+                <a href="/tags/smallhints.html">smallhints</a> (9)
               </li>
               <li>
-                <a href="/tags/docker.html">docker</a> (5)
+                <a href="/tags/docker.html">docker</a> (6)
               </li>
               <li>
                 <a href="/tags/quicktips.html">quicktips</a> (3)
@@ -374,7 +410,7 @@
                 <a href="/tags/architecture.html">architecture</a> (7)
               </li>
               <li>
-                <a href="/tags/aws.html">aws</a> (5)
+                <a href="/tags/aws.html">aws</a> (6)
               </li>
               <li>
                 <a href="/tags/googleapps.html">googleapps</a> (1)
@@ -387,7 +423,7 @@
             </h4>
             <ol>
               <li>
-                <a href="/2015.html">2015</a> (22)
+                <a href="/2015.html">2015</a> (23)
               </li>
               <li>
                 <a href="/2014.html">2014</a> (10)

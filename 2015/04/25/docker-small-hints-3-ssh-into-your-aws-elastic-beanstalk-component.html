@@ -31,10 +31,10 @@
                   <a href="/tags/gradle.html">gradle (2)</a>
                 </li>
                 <li>
-                  <a href="/tags/smallhints.html">smallhints (8)</a>
+                  <a href="/tags/smallhints.html">smallhints (9)</a>
                 </li>
                 <li>
-                  <a href="/tags/docker.html">docker (5)</a>
+                  <a href="/tags/docker.html">docker (6)</a>
                 </li>
                 <li>
                   <a href="/tags/quicktips.html">quicktips (3)</a>
@@ -79,7 +79,7 @@
                   <a href="/tags/architecture.html">architecture (7)</a>
                 </li>
                 <li>
-                  <a href="/tags/aws.html">aws (5)</a>
+                  <a href="/tags/aws.html">aws (6)</a>
                 </li>
                 <li>
                   <a href="/tags/googleapps.html">googleapps (1)</a>
@@ -122,27 +122,27 @@
           <hr /><div class="row">
   <div class="article"><p><span/>      <div>
     Was quite a hassle in the past to setup SSH connectivity into your Elastic Beanstalk instance, luckly this got simplified. With the 
-   <i>eb</i>&nbsp;Version 3&nbsp;command tool you get all the necessary support.&nbsp; 
+   <i>eb</i> Version 3 command tool you get all the necessary support.<br>
   </div> 
   <div> 
    <br> 
   </div> 
   <div>
-    First install the&nbsp; 
-   <i>eb cli</i>&nbsp;interface, as described here 
+    First install the<br>
+   <i>eb cli</i> interface, as described here 
   </div> 
   <div> 
    <br> 
   </div> 
   <div> 
-   <a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-getting-set-up.html" rel="nofollow"><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-getting-set-up.html">http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-getting-set-up.html</a></a> 
+   <a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-getting-set-up.html"><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-getting-set-up.html">http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-getting-set-up.html</a></a> 
   </div> 
   <div> 
    <br> 
   </div> 
   <div>
     Run 
-   <i>&nbsp;eb init</i>, which will configure the eb command line to one of your running 
+   <i> eb init</i>, which will configure the eb command line to one of your running 
    <i>eb</i> instances. 
   </div> 
   <div> 
@@ -168,12 +168,12 @@ iMac:~ Felix$ eb init
   </div> 
 
 <p><div>
-    Now configure your EB&nbsp;Environment&nbsp;to allow ssh inbound traffic, via&nbsp;&nbsp; 
-   <i>eb ssh&nbsp;—setup</i> command. Be&nbsp;aware that will result in a re-creation of your EB environment. 
+    Now configure your EB Environment to allow ssh inbound traffic, via<br>
+   <i>eb ssh —setup</i> command. Be aware that will result in a re-creation of your EB environment. 
   </div> 
   <div>
-    Amongst others the command will create&nbsp;the&nbsp;public/private keypair as well which is put&nbsp;under the default name 
-   <i>aws-eb</i>&nbsp;into your local &nbsp; 
+    Amongst others the command will create the public/private keypair as well which is put under the default name 
+   <i>aws-eb</i> into your local<br>
    <i>.ssh</i> directory 
   </div> 
   <div> 
@@ -207,7 +207,7 @@ iMac:~ Felix$ eb ssh --setup
 
 <p></div> 
   <div>
-    You are now ready to connect with the &nbsp; 
+    You are now ready to connect with the<br>
    <i>eb ssh</i> command. 
   </div> 
   <div> 
@@ -231,7 +231,7 @@ iMac: ~ Felix$ eb ssh
 
 <p><div>
     Log files of your instances can be found in the 
-   <span style="">/var/log</span> directory. &nbsp;The log file of your en-docker instance you will find in the following subdirectory. 
+   <span style="">/var/log</span> directory.  The log file of your en-docker instance you will find in the following subdirectory. 
   </div> 
   <div> 
    <br> 
@@ -247,9 +247,9 @@ iMac: ~ Felix$ eb ssh
 </code></pre>
 
 <p></div> 
-  <div>
-    &nbsp; 
-  </div> 
+  <div></p>
+
+<p></div> 
   <div> 
    <br> 
   </div> 
@@ -260,7 +260,7 @@ iMac: ~ Felix$ eb ssh
    <br> 
   </div> 
   <div>
-    Memorize the following picture, which shows you the major concepts of a EC2 setup.&nbsp;&nbsp;AWS EC2 is the underlying Linux Container Infrastructure on top of which your EB managed&nbsp;Docker Applications&nbsp;will run. 
+    Memorize the following picture, which shows you the major concepts of a EC2 setup.  AWS EC2 is the underlying Linux Container Infrastructure on top of which your EB managed Docker Applications will run. 
   </div> 
   <div> 
    <br> 
@@ -287,12 +287,12 @@ iMac: ~ Felix$ eb ssh
        <br> 
       </div> 
       <div>
-        The EC2 instance will have Security Groups to control the access. There&nbsp;is a Security Group for each&nbsp; EB-Instance you are running, which by default allows inbound access from the http port. This security group is now extended to allow SSH inbound traffic. 
+        The EC2 instance will have Security Groups to control the access. There is a Security Group for each  EB-Instance you are running, which by default allows inbound access from the http port. This security group is now extended to allow SSH inbound traffic. 
       </div> 
       <div>
-        In the dashboard you will see a &nbsp;Security Group Name which contains&nbsp;the substring 
-       <i>AWSEBSecurityGroup&nbsp;(</i>this value is also a tag value of the group for tag name&nbsp; 
-       <i>aws:cloudformation:logical-id</i>&nbsp;(Tab Tags)) 
+        In the dashboard you will see a  Security Group Name which contains the substring 
+       <i>AWSEBSecurityGroup (</i>this value is also a tag value of the group for tag name<br>
+       <i>aws:cloudformation:logical-id</i> (Tab Tags)) 
       </div> 
       <div> 
        <br> 
@@ -325,8 +325,8 @@ iMac: ~ Felix$ eb ssh
        <br> 
       </div> 
       <div>
-        As mentioned above a&nbsp;Key Pair was created with the default name 
-       <i>aws_eb</i>&nbsp;(left hand menu Key Pairs). The eb setup command made sure that this key pair was downloaded to your local .ssh directory. 
+        As mentioned above a Key Pair was created with the default name 
+       <i>aws_eb</i> (left hand menu Key Pairs). The eb setup command made sure that this key pair was downloaded to your local .ssh directory. 
       </div> 
       <div> 
        <br> 
@@ -342,13 +342,13 @@ iMac: ~ Felix$ eb ssh
        <br> 
       </div> 
       <div>
-        So now we have (1) a EC2 Instance configured with (2) a &nbsp;Security Group&nbsp;for SSH inbound traffic&nbsp;and we have (3) a Public/Private key pair&nbsp; which allows us to authenticate ourselves.&nbsp; 
+        So now we have (1) a EC2 Instance configured with (2) a  Security Group for SSH inbound traffic and we have (3) a Public/Private key pair  which allows us to authenticate ourselves.<br>
       </div> 
       <div> 
        <br> 
       </div> 
       <div>
-        The&nbsp;missing combination of (2) Security Group with (3) Key Pair can be found in the Elastic Beanstalk Dashboard via the Server Configuration tab. You can see here the Security Group as well as the drop box EC2 key pair, which ties the relevant Key Pair to the configuration. That’s it. 
+        The missing combination of (2) Security Group with (3) Key Pair can be found in the Elastic Beanstalk Dashboard via the Server Configuration tab. You can see here the Security Group as well as the drop box EC2 key pair, which ties the relevant Key Pair to the configuration. That’s it. 
       </div> 
       <div></p>
     
@@ -411,6 +411,9 @@ iMac: ~ Felix$ eb ssh
             </h3>
             <ol>
               <li>
+                <a href="/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html">Docker Small Hints #2: Controlling Cloud Costs using Alarms in AWS</a> <span>Jun  7</span> 
+              </li>
+              <li>
                 <a href="/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html">Docker Small Hints #4: Cleaning up your local zombie docker images</a> <span>May 27</span> 
               </li>
               <li>
@@ -437,9 +440,6 @@ iMac: ~ Felix$ eb ssh
               <li>
                 <a href="/2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html">Grails Small Hints #1 - Refresh Dependencies in Grails STS Tool Suite</a> <span>Apr 17</span> 
               </li>
-              <li>
-                <a href="/2015/04/17/the-benefits-of-microservices.html">The Benefits of Microservices</a> <span>Apr 17</span> 
-              </li>
             </ol>
           </aside>
           <hr>
@@ -458,10 +458,10 @@ iMac: ~ Felix$ eb ssh
                 <a href="/tags/gradle.html">gradle</a> (2)
               </li>
               <li>
-                <a href="/tags/smallhints.html">smallhints</a> (8)
+                <a href="/tags/smallhints.html">smallhints</a> (9)
               </li>
               <li>
-                <a href="/tags/docker.html">docker</a> (5)
+                <a href="/tags/docker.html">docker</a> (6)
               </li>
               <li>
                 <a href="/tags/quicktips.html">quicktips</a> (3)
@@ -506,7 +506,7 @@ iMac: ~ Felix$ eb ssh
                 <a href="/tags/architecture.html">architecture</a> (7)
               </li>
               <li>
-                <a href="/tags/aws.html">aws</a> (5)
+                <a href="/tags/aws.html">aws</a> (6)
               </li>
               <li>
                 <a href="/tags/googleapps.html">googleapps</a> (1)
@@ -519,7 +519,7 @@ iMac: ~ Felix$ eb ssh
             </h4>
             <ol>
               <li>
-                <a href="/2015.html">2015</a> (22)
+                <a href="/2015.html">2015</a> (23)
               </li>
               <li>
                 <a href="/2014.html">2014</a> (10)
