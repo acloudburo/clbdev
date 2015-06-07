@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html"/>
     <id>https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html</id>
     <published>2015-05-27T08:46:21Z</published>
-    <updated>2015-05-28T18:25:55+00:00</updated>
+    <updated>2015-06-07T15:26:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -45,7 +45,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html"/>
     <id>https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html</id>
     <published>2015-05-25T07:13:55Z</published>
-    <updated>2015-05-25T08:38:43+00:00</updated>
+    <updated>2015-06-07T15:26:37+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -85,7 +85,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/21/grails-small-hints-2-running-in-docker.html"/>
     <id>https://dev.cloudburo.net/2015/05/21/grails-small-hints-2-running-in-docker.html</id>
     <published>2015-05-21T05:00:38Z</published>
-    <updated>2015-05-21T05:54:09+00:00</updated>
+    <updated>2015-06-07T15:26:36+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -98,7 +98,7 @@
     &lt;br&gt; 
    &lt;/div&gt; 
    &lt;div&gt; 
-    &lt;a href="https://github.com/onesysadmin/docker-grails" rel="nofollow"&gt;&lt;a href="https://github.com/onesysadmin/docker-grails"&gt;https://github.com/onesysadmin/docker-grails&lt;/a&gt;&lt;/a&gt; 
+    &lt;a href="https://github.com/onesysadmin/docker-grails"&gt;&lt;a href="https://github.com/onesysadmin/docker-grails"&gt;https://github.com/onesysadmin/docker-grails&lt;/a&gt;&lt;/a&gt; 
    &lt;/div&gt; 
    &lt;div&gt; 
     &lt;br&gt; 
@@ -150,7 +150,7 @@ export DOCKER_CERT_PATH=/Users/Felix/.boot2docker/certs/boot2docker-vm
     &lt;br&gt; 
    &lt;/div&gt; 
    &lt;div&gt; 
-    &lt;a href="http://192.168.59.103:8080/clb-platform/curationApp/detail" rel="nofollow"&gt;&lt;a href="http://192.168.59.103:8080/clb-platform/curationApp/detail"&gt;http://192.168.59.103:8080/clb-platform/curationApp/detail&lt;/a&gt;&lt;/a&gt; 
+    &lt;a href="http://192.168.59.103:8080/clb-platform/curationApp/detail"&gt;&lt;a href="http://192.168.59.103:8080/clb-platform/curationApp/detail"&gt;http://192.168.59.103:8080/clb-platform/curationApp/detail&lt;/a&gt;&lt;/a&gt; 
    &lt;/div&gt; 
   &lt;/div&gt;&lt;/p&gt;
 
@@ -162,7 +162,7 @@ export DOCKER_CERT_PATH=/Users/Felix/.boot2docker/certs/boot2docker-vm
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html"/>
     <id>https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html</id>
     <published>2015-05-07T08:57:51Z</published>
-    <updated>2015-05-14T22:22:14+00:00</updated>
+    <updated>2015-06-07T15:26:35+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -190,7 +190,7 @@ export DOCKER_CERT_PATH=/Users/Felix/.boot2docker/certs/boot2docker-vm
       &lt;/div&gt; 
       &lt;ul&gt; 
        &lt;li&gt;Mistake #1: Not copyrighting your content&lt;/li&gt; 
-       &lt;li&gt;Mistake #2: Not posting terms and conditions on your website&amp;nbsp;&lt;/li&gt; 
+       &lt;li&gt;Mistake #2: Not posting terms and conditions on your website &lt;/li&gt; 
        &lt;li&gt;Mistake #3: Failing to use technology to police your work&lt;/li&gt; 
        &lt;li&gt;Mistake #4: Not having a solid contract with your clients&lt;/li&gt; 
       &lt;/ul&gt; 
@@ -198,7 +198,7 @@ export DOCKER_CERT_PATH=/Users/Felix/.boot2docker/certs/boot2docker-vm
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        Read the details here:&amp;nbsp; 
+        Read the details here:&lt;br&gt;
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -220,7 +220,7 @@ export DOCKER_CERT_PATH=/Users/Felix/.boot2docker/certs/boot2docker-vm
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html"/>
     <id>https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html</id>
     <published>2015-05-06T05:54:45Z</published>
-    <updated>2015-05-14T22:22:14+00:00</updated>
+    <updated>2015-06-07T15:26:42+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -237,7 +237,7 @@ export DOCKER_CERT_PATH=/Users/Felix/.boot2docker/certs/boot2docker-vm
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"/>
     <id>https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html</id>
     <published>2015-04-25T12:25:42Z</published>
-    <updated>2015-05-14T22:22:14+00:00</updated>
+    <updated>2015-06-07T15:17:23+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
