@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html"/>
     <id>https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html</id>
     <published>2015-07-05T09:41:00Z</published>
-    <updated>2015-07-05T09:41:01+00:00</updated>
+    <updated>2015-07-06T21:56:27+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -27,22 +27,23 @@
        &lt;a href="http://realfavicongenerator.net/"&gt;following free favicon pictures generator&lt;/a&gt; incredibly useful. It generates favicon pictures and HTML code that work on all major browsers and platforms. 
       &lt;/div&gt; 
       &lt;div&gt; 
-       &lt;p style=" font-size: 14px;"&gt;Instead of giving you a single favicon.ico file, RealFaviconGenerator generates all the pictures and HTML code you need to get a cool, mobile- and tablet-ready favicon. Your favicon will be perfect for:&lt;/p&gt; 
+       &lt;br&gt; 
       &lt;/div&gt; 
-      &lt;ul style=" font-size: 14px;"&gt; 
-       &lt;li style=""&gt;PC and Mac, as usual&lt;/li&gt; 
-       &lt;li style=""&gt;iPhone and iPad&lt;/li&gt; 
-       &lt;li style=""&gt;Android phones and tablets&lt;/li&gt; 
-       &lt;li style=""&gt;Windows 8 tablets&lt;/li&gt; 
-       &lt;li style=""&gt;And more&amp;hellip;&lt;/li&gt; 
+      &lt;div&gt;
+        Instead of giving you a single favicon.ico file, RealFaviconGenerator generates all the pictures and HTML code you need to get a cool, mobile- and tablet-ready favicon. Your favicon will be perfect for: 
+      &lt;/div&gt; 
+      &lt;ul&gt; 
+       &lt;li&gt;PC and Mac, as usual&lt;/li&gt; 
+       &lt;li&gt;iPhone and iPad&lt;/li&gt; 
+       &lt;li&gt;Android phones and tablets&lt;/li&gt; 
+       &lt;li&gt;Windows 8 tablets&lt;/li&gt; 
+       &lt;li&gt;And more&amp;hellip;&lt;/li&gt; 
       &lt;/ul&gt; 
-      &lt;div style=""&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt;
-         So have a look. 
-       &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        So have a look. 
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
