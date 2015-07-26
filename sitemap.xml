@@ -265,6 +265,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html</loc>
+    <lastmod>2015-07-26</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2015/04/17/the-benefits-of-microservices.html</loc>
     <lastmod>2015-06-17</lastmod>
     <priority>0.7</priority>
@@ -520,6 +526,12 @@
     <loc>https://dev.cloudburo.net//2015/07.html</loc>
     <lastmod>2015-06-17</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/07/26.html</loc>
+    <lastmod>2015-06-17</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
