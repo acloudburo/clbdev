@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html"/>
     <id>https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html</id>
     <published>2015-07-28T10:16:46Z</published>
-    <updated>2015-07-28T22:16:55+00:00</updated>
+    <updated>2015-07-28T22:26:55+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -233,13 +233,13 @@
     &lt;p&gt;&lt;span/&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        Having done that I will now receive timely  an Email when my microservice is hanging or inactive for more than some minutes. It allows me to timely restart or investigate the problem which results in a better service level for my clients. 
+        Having done that I will now receive an email when my microservice is hanging or inactive for more than some minutes. It allows me to timely restart or investigate the problem which results in a better service level for my clients. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        It a next article I will investigate in the possibilities to automate the creation of CloudWatch Alarms during my EB Environment creation step. 
+        In a next article I will investigate in the possibilities to automate the creation of CloudWatch Alarms during my EB Environment creation step. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
