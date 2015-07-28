@@ -241,6 +241,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html</loc>
+    <lastmod>2015-07-28</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2014/01/25/personal-data-api-part-2.html</loc>
     <lastmod>2015-07-28</lastmod>
     <priority>0.7</priority>
@@ -526,6 +532,12 @@
     <loc>https://dev.cloudburo.net//2015/07.html</loc>
     <lastmod>2015-07-28</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/07/28.html</loc>
+    <lastmod>2015-07-28</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

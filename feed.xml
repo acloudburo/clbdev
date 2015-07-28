@@ -5,10 +5,262 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-07-26T11:18:54Z</updated>
+  <updated>2015-07-28T10:16:46Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>Docker Small Hints #5: Using Cloudwatch Alarms for monitoring AWS Elastic Beanstalk Docker Instances</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html"/>
+    <id>https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html</id>
+    <published>2015-07-28T10:16:46Z</published>
+    <updated>2015-07-28T22:16:55+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        My first docker based 
+       &lt;a href="https://curation.cloudburo.net/"&gt;content curation microservice&lt;/a&gt; is in early beta mode and is working reliably for a longer period of time now. The last deployment of the application was up and working for 46 days without any major operational incident. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Suddenly the Micro-service stopped to generate blog entries out of Evernote Notes. I wasn’t monitoring this constellation up until now and detected it just about 4 hours later. Not very good when you want to go live. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        So time to start monitoring such kind of incidents by using CloudWatch and start sending out alarm emails in order to be capable to keep the service live all the time. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Elastic Beanstalk automatically uses&lt;br&gt;
+       &lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatch.html"&gt;Amazon CloudWatch&lt;/a&gt; to help you  monitor your application and environment status.  The Amazon CloudWatch console gives you an overview of all of your resources as well as your alarms.&lt;br&gt;
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/c4254846da654fcf8f562b647a640a54.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        In order to handle this new kind of incidents it’s necessary to create a new alarm which detects the pattern, but &amp;hellip; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        … first the root cause analysis must be done, what the heck stopped to work as expected. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        My primary monitoring application for the java based micro service is 
+       &lt;a href="https://logentries.com/"&gt;logentries.com&lt;/a&gt;. The java/groovy application on the EB Docker instance will send various kind of log information (via log4j  to the logentries log management and analytics application. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        As one can see in the below 24 hours log, everthing seems find up around 10:00 where no micro service log entries were shown anymore. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/ad9e91d21c0ec36e7aa2f399178f089a.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        That means something stopped working on the Amazon Docker instance, which wasn’t detected by AWS EB manager itself. E.g. in case my Microservice App would memory leaked over time and crash at one time, the AWS EB manager would detect that an restarted it automatically  (making the application available again after some minutes). Such an incident wouldn’t result in the above pattern. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        So I had to go on and check the AWS EB Docker instance logs directly (refer to the 
+       &lt;a href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"&gt;following article&lt;/a&gt; how to achieve that).  A first glance  showed me that the java based microservice application was still running (on top of the list, consuming the major part of the memory). No restart or anything else happened, uptime was 46 days. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/71b4a9fbe17004641f16073d2c17628a.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        So let’s check then the application log of the eb docker container, which can be found in the /var/log/… directory. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/5dc5c78335f67a3340f824951697f0e4.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Counter checking with the last message received by logentries, it lead to the conclusion, that they local log is in sync with the logentries remote one. So the java process stopped working at that point in time and wasn’t producing any log events anymore. So we have to establish a monitoring strategy which is capable of identifying our hanging micro service process. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Time to define an AWS Cloudwatch Alert which will allows me to detect this inactivity/hanging process behavior. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Looking at the EB Monitoring in the Dashboard shows me that such an incident would result in &amp;ldquo;Max Network In“ flow of a small amount of KB’s (refer to the 
+       &lt;a href="https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html"&gt;following article&lt;/a&gt; to understand the high level EB concepts). This seems to be the strongest signal for such a behaviour. Using the low CPU Utilization as a signal, seems not advisable, due to the fact that this threshold could shift in case of auto scaling scenarios. 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/8bd6de153b5e793c550b2185ba7f8d94.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Just to be sure I checked  the graph over a two weeks period of time. It shows me that this seems a good signal for a hanging microservice java process. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/813200dfe04e9b01b5d13837ee10ca7f.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Now let’s create an Alarm then, which is straightforward and easy and can be done on the EB Monitoring site directly. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/0f96def25c50580998ff55218391d961.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Let’s go back to the Dashboard to see if the Alarm is, correctly shown. Yes it got triggered. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/e63d6ee6edc3c73364addaae60b2cffb.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        The Alarm Dashboard shows the existing Alarm, very nice. It will be also visible on the Cloudwatch Dashboard site. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/4a88ab998c68e7eee4fbe76c2c0a418d.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        I also get notified via Email by the AWS Notification service to subscribe for the topic.&lt;br&gt;
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/513a3b55b0b3186a6c20103e82000aa9.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Having done that I will now receive timely  an Email when my microservice is hanging or inactive for more than some minutes. It allows me to timely restart or investigate the problem which results in a better service level for my clients. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        It a next article I will investigate in the possibilities to automate the creation of CloudWatch Alarms during my EB Environment creation step. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/3c1663d43864486db5b237ca1a1546e0.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Launching a New Product? These 5 Tips Will Get You the Testimonials You Need</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html"/>
@@ -247,46 +499,6 @@
 &lt;p&gt;&lt;/div&gt; 
   &lt;/div&gt;&lt;/p&gt;
 
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Large-scale cluster management at Google with Borg</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html"/>
-    <id>https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html</id>
-    <published>2015-05-25T07:13:55Z</published>
-    <updated>2015-07-28T14:58:48+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Research@google published a new very interesting paper about their architecture of Borg at an ACM venue. It’s the underlying architecture for Kubernetes and provides a lot of insights. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Abstract of the document: 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style=""&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-      &lt;/div&gt; 
-      &lt;div style=""&gt; 
-       &lt;i&gt;Google&amp;rsquo;s Borg system is a cluster manager that runs hundreds of thousands of jobs, from many thousands of different applications, across a number of clusters each with up to tens of thousands of machines. It achieves high utilization by combining admission control, efficient task-packing, over-commitment, and machine sharing with process-level performance isolation. It supports high-availability applications with runtime features that minimize fault-recovery time, and scheduling policies that reduce the probability of correlated failures. Borg simplifies life for its users by offering a declarative job specification language, name service integration, real-time job monitoring, and tools to analyze and simulate system behavior.&lt;/i&gt; 
-      &lt;/div&gt; 
-      &lt;div style=""&gt; 
-       &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
-      &lt;/div&gt; 
-      &lt;div style=""&gt; 
-       &lt;i&gt;We present a summary of the Borg system architecture and features, important design decisions, a quantitative analysis of some of its policy decisions, and a qualitative examination of lessons learned from a decade of operational experience with it.&lt;/i&gt; 
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://research.google.com/pubs/pub43438.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
