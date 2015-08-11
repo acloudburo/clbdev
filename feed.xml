@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html"/>
     <id>https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html</id>
     <published>2015-08-11T09:53:31Z</published>
-    <updated>2015-08-11T21:53:36+00:00</updated>
+    <updated>2015-08-11T22:07:17+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -30,14 +30,14 @@
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        In this article I will drill down a little bit how to provide you some ideas to configure your 
-       &lt;a href="http://logentries.com"&gt;logentries&lt;/a&gt; engine. 
+        In this article I will drill down and give  you some ideas how to configure your 
+       &lt;a href="http://logentries.com/"&gt;logentries&lt;/a&gt; engine. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        As one can see in the following example the Cloudwatch Alarm was sending out an Alarm at 11:20 about inactivity of the microservice, which was released 5 minutes later afterwards.&lt;br&gt;
+        As one can see in the following example the Cloudwatch Alarm was sending out an Alarm at 11:20 about inactivity of the microservice, which was released 5 minutes later again.&lt;br&gt;
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -53,13 +53,13 @@
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        So it seems that this was a false alarm, so normally a first check I will then do in my logentries management instance. 
+        So it seems that this was a false alarm. For the root cause analysis I normally check first then my logentries management instance. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        One powerful feature of logentries is to define any kind of tag  for a text pattern in your log events. 
+        One powerful feature of logentries is to define any kind of tag  for a text pattern in your log event stream. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
