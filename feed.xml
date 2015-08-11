@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html"/>
     <id>https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html</id>
     <published>2015-07-28T10:16:46Z</published>
-    <updated>2015-07-28T22:26:55+00:00</updated>
+    <updated>2015-08-11T20:07:58+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -24,7 +24,7 @@
     
     &lt;p&gt;&lt;div&gt;
         My first docker based 
-       &lt;a href="https://curation.cloudburo.net/"&gt;content curation microservice&lt;/a&gt; is in early beta mode and is working reliably for a longer period of time now. The last deployment of the application was up and working for 46 days without any major operational incident. 
+       &lt;a href="https://curation.cloudburo.net/"&gt;content curation microservice&lt;/a&gt; is in early beta mode and is working reliably for a longer period of time now. The last deployment of the application was up and running for 46 days without any major operational incident. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -36,7 +36,7 @@
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        So time to start monitoring such kind of incidents by using CloudWatch and start sending out alarm emails in order to be capable to keep the service live all the time. 
+        So time to start monitoring such kind of incidents by using  CloudWatch and start sending out alarm emails in order to be capable to keep the service live all the time. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -72,7 +72,7 @@
       &lt;/div&gt; 
       &lt;div&gt;
         My primary monitoring application for the java based micro service is 
-       &lt;a href="https://logentries.com/"&gt;logentries.com&lt;/a&gt;. The java/groovy application on the EB Docker instance will send various kind of log information (via log4j  to the logentries log management and analytics application. 
+       &lt;a href="https://logentries.com/"&gt;logentries.com&lt;/a&gt;. The java/groovy application on the EB Docker instance will send various kind of log information (via log4j  to the logentries log management and analytics application). 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -94,7 +94,7 @@
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        That means something stopped working on the Amazon Docker instance, which wasn’t detected by AWS EB manager itself. E.g. in case my Microservice App would memory leaked over time and crash at one time, the AWS EB manager would detect that an restarted it automatically  (making the application available again after some minutes). Such an incident wouldn’t result in the above pattern. 
+        That means something stopped working on the Amazon Docker instance, which wasn’t detected by AWS EB manager itself. E.g. in case my Microservice App would memory leaked over time and crash at one time, the AWS EB manager would detect that an restart the microservice automatically  (making the application available again after some minutes). Such an incident wouldn’t result in the above pattern. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -133,7 +133,7 @@
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        Counter checking with the last message received by logentries, it lead to the conclusion, that they local log is in sync with the logentries remote one. So the java process stopped working at that point in time and wasn’t producing any log events anymore. So we have to establish a monitoring strategy which is capable of identifying our hanging micro service process. 
+        Counter checking with the last message received by logentries, it lead to the conclusion, that the local log is in sync with the logentries remote one. So the java process stopped working at that point in time and wasn’t producing any log events anymore. So we have to establish a monitoring strategy which is capable of identifying our hanging micro service process. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -266,7 +266,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html"/>
     <id>https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html</id>
     <published>2015-07-26T11:18:54Z</published>
-    <updated>2015-07-28T15:09:22+00:00</updated>
+    <updated>2015-08-08T15:08:46+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -351,7 +351,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html"/>
     <id>https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html</id>
     <published>2015-07-05T09:41:00Z</published>
-    <updated>2015-07-28T14:58:48+00:00</updated>
+    <updated>2015-08-08T15:08:46+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -391,7 +391,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/06/10/a-nice-introduction-to-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/06/10/a-nice-introduction-to-microservices.html</id>
     <published>2015-06-10T08:53:32Z</published>
-    <updated>2015-07-28T14:58:48+00:00</updated>
+    <updated>2015-08-08T15:08:46+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -413,7 +413,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html"/>
     <id>https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</id>
     <published>2015-06-07T04:05:06Z</published>
-    <updated>2015-07-28T14:58:48+00:00</updated>
+    <updated>2015-08-08T15:08:46+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -476,7 +476,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html"/>
     <id>https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html</id>
     <published>2015-05-27T08:46:21Z</published>
-    <updated>2015-07-28T14:58:48+00:00</updated>
+    <updated>2015-08-08T15:08:46+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
