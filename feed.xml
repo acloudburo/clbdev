@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html"/>
     <id>https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html</id>
     <published>2015-08-11T09:53:31Z</published>
-    <updated>2015-08-11T22:07:17+00:00</updated>
+    <updated>2015-08-12T20:13:58+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -45,7 +45,7 @@
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/89c5f4669587c8561551f12bc761870b.png" /&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/0ddb572232295e371a5ff2b5145ac5e2.png" /&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt; 
       &lt;/div&gt; 
@@ -132,7 +132,13 @@
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        This concludes the article which  give you some hints how to use the logentries management solution in combination with tags in order to get a quick overview about the state of your microservice. Carefully tagging your logentries allows you to get an overview in a very short period of time. 
+        This concludes the article which  give you some hints how to use the logentries management solution in combination with tags in order to get a quick overview about the state of your microservice. Carefully tagging your logentries allows you to get an overview of the health and status of your application in a very short period of time. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        This blog is managed fully out of Evernote by using the Cloudburo Curation Platform. Interested - head over to &lt;a href="https://cloudburo.net/docs/products.html"&gt;https://cloudburo.net/docs/products.html&lt;/a&gt;. 
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
