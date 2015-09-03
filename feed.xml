@@ -5,16 +5,72 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-08-11T09:53:31Z</updated>
+  <updated>2015-09-03T05:41:56Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>Micro Business Quick Tips #2: Build a Business Without Employees</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/09/03/micro-business-quick-tips-2-build-a-business-without-employees.html"/>
+    <id>https://dev.cloudburo.net/2015/09/03/micro-business-quick-tips-2-build-a-business-without-employees.html</id>
+    <published>2015-09-03T05:41:56Z</published>
+    <updated>2015-09-03T17:41:57+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        A helpful article by 
+       &lt;a href="http://www.entrepreneur.com/article/249868"&gt;enterpreneur.com&lt;/a&gt; which outlines some basics of How to build a Seven-Figure Business Without Employees. As the article states 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;i&gt;The good news is that my lack of interest in such pursuits (… being famous and glamorous …  hasn&amp;rsquo;t been a hindrance in building a seven figure-business, in a rather short period of time, with a single co-founder and no employees &amp;ndash; which can be operated from anywhere in the world with an Internet connection. As a matter of fact, I’m typing this at a cafe in Copenhagen, Denmark, and will be meandering through Europe for at least the next five weeks &amp;ndash; yet sales will continue to grow and the business won&amp;rsquo;t miss a step. I&amp;rsquo;m not bragging, just validating.&lt;/i&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        The replicable model comes with three simple key points 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;ul&gt; 
+       &lt;li&gt;Start Simple: As for example &amp;ldquo;&lt;i&gt;you should avoid, at least at the beginning, from overcomplicating your sales pipeline with wholesale or retail scenarios and instead focus on taking your product direct to the consumer.&lt;/i&gt;&amp;rdquo;&lt;/li&gt; 
+       &lt;li&gt;Automate Early: Front to back from sales channel up to the inbound-support requests.&lt;/li&gt; 
+       &lt;li&gt;Leverage Outsourcing: Here the statement is quite bold &lt;i&gt;&amp;ldquo;I’ve even written a few, but here we’re focusing on building a business that doesn’t require employees &amp;ndash; so we’re going to outsource it all.&amp;rdquo;&lt;/i&gt;&lt;/li&gt; 
+      &lt;/ul&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Three points which we consider at Cloudburo.com as well when building up our first subscription based product centered around content marketing. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        The 
+       &lt;a href="https://cloudburo.net/docs/products.html"&gt;Cloudburo Curation Platform&lt;/a&gt; will help you to establish your content online presence via a highly optimized and easy workflow to support you in establishing a web presence of the various content types. 
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="http://www.entrepreneur.com/article/249868"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Docker Small Hints #6: Using Cloudwatch in combination with Log Entries Management Solution</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html"/>
     <id>https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html</id>
     <published>2015-08-11T09:53:31Z</published>
-    <updated>2015-08-12T21:58:04+00:00</updated>
+    <updated>2015-08-15T08:23:21+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -149,7 +205,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html"/>
     <id>https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html</id>
     <published>2015-07-28T10:16:46Z</published>
-    <updated>2015-08-11T20:07:58+00:00</updated>
+    <updated>2015-08-15T08:23:21+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -401,7 +457,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html"/>
     <id>https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html</id>
     <published>2015-07-26T11:18:54Z</published>
-    <updated>2015-08-08T15:08:46+00:00</updated>
+    <updated>2015-08-15T08:23:21+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -486,7 +542,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html"/>
     <id>https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html</id>
     <published>2015-07-05T09:41:00Z</published>
-    <updated>2015-08-08T15:08:46+00:00</updated>
+    <updated>2015-08-15T08:23:21+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -526,7 +582,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/06/10/a-nice-introduction-to-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/06/10/a-nice-introduction-to-microservices.html</id>
     <published>2015-06-10T08:53:32Z</published>
-    <updated>2015-08-08T15:08:46+00:00</updated>
+    <updated>2015-08-15T08:23:21+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -539,69 +595,6 @@
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://nginx.com/blog/introduction-to-microservices/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Docker Small Hints #2: Controlling Cloud Costs using Alarms in AWS</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html"/>
-    <id>https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</id>
-    <published>2015-06-07T04:05:06Z</published>
-    <updated>2015-08-08T15:08:46+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        In order not to wake up one morning with a high AWS Cloud bill, it’s advisable to set a BillingAlarm which will notify you when your environments are starting charging more than you expect. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        In the sample below I will get an Email when the Estimated Charges for 6 hours is passing 10 USD.&lt;br&gt;
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/757bd37198cd347fe51640ac3bec9e06.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        It will allow you to react in time in case some of your instances will go out of your expected bound.&lt;br&gt;
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
