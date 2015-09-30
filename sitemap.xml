@@ -277,6 +277,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/09/30/micro-business-quick-tips-3-visualizing-your-business-model-with-canvas.html</loc>
+    <lastmod>2015-09-30</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html</loc>
     <lastmod>2015-09-09</lastmod>
     <priority>0.7</priority>
@@ -556,6 +562,12 @@
     <loc>https://dev.cloudburo.net//2015/09.html</loc>
     <lastmod>2015-09-09</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/09/30.html</loc>
+    <lastmod>2015-09-09</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -889,6 +901,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//page/5/</loc>
+    <lastmod>2015-09-09</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2015/page/2.html</loc>
     <lastmod>2015-09-09</lastmod>
     <priority>0.8</priority>
@@ -896,6 +914,12 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net//2015/page/3.html</loc>
+    <lastmod>2015-09-09</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/page/4.html</loc>
     <lastmod>2015-09-09</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>
