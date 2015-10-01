@@ -397,6 +397,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net//2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html</loc>
+    <lastmod>2015-10-01</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net//2015/04/17/grails-small-hints-1-refresh-dependencies-in-grails-sts-tool-suite.html</loc>
     <lastmod>2015-09-09</lastmod>
     <priority>0.7</priority>
@@ -556,6 +562,18 @@
     <loc>https://dev.cloudburo.net//2015.html</loc>
     <lastmod>2015-09-09</lastmod>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/10.html</loc>
+    <lastmod>2015-09-09</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2015/10/01.html</loc>
+    <lastmod>2015-09-09</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
