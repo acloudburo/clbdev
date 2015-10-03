@@ -144,7 +144,6 @@
   </span><span class="err">type:</span><span class="w"> </span><span class="err">'singleton'</span><span class="w"> 
   </span><span class="err">singletonSpace:</span><span class="w"> </span><span class="err">'sitename'</span><span class="w"> 
   </span><span class="err">initfunc:</span><span class="w"> </span><span class="err">'Extension.getSiteName'</span><span class="w"> 
-  </span><span class="err">header:</span><span class="w"> </span><span class="kc">true</span><span class="w"> 
   </span><span class="p">}</span><span class="w"> 
 
 </span></code></pre>
@@ -183,11 +182,10 @@
   <div> 
    <br> 
   </div> 
-  <div> 
-   <div></p>
+  <div></p>
 <pre class="highlight coffeescript"><code>
 <span class="na">executeFunctionByName</span> <span class="o">:</span> <span class="p">(</span><span class="nx">functionName</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="o">-&gt;</span> 
-   <span class="nx">args</span> <span class="o">=</span> <span class="na">Array</span><span class="o">::</span><span class="nx">slice</span><span class="p">.</span><span class="na">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> 
+  <span class="nx">args</span> <span class="o">=</span> <span class="na">Array</span><span class="o">::</span><span class="nx">slice</span><span class="p">.</span><span class="na">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> 
   <span class="nx">namespaces</span> <span class="o">=</span> <span class="nx">functionName</span><span class="p">.</span><span class="na">split</span><span class="p">(</span><span class="s">'.'</span><span class="p">)</span> 
   <span class="nx">func</span> <span class="o">=</span> <span class="nx">namespaces</span><span class="p">.</span><span class="na">pop</span><span class="p">()</span> 
   <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span> 
@@ -196,7 +194,6 @@
   <span class="nx">i</span><span class="o">++</span> 
   <span class="nx">value</span> <span class="o">=</span> <span class="nx">context</span><span class="p">[</span><span class="nx">func</span><span class="p">].</span><span class="na">apply</span> <span class="nx">context</span><span class="p">,</span> <span class="nx">args</span> 
   <span class="k">return</span> <span class="nx">value</span> 
-
 
 </code></pre>
 
