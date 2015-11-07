@@ -5,16 +5,51 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-10-03T12:07:50Z</updated>
+  <updated>2015-11-07T10:47:46Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>DMARC: How to monitor and secure your email</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html"/>
+    <id>https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html</id>
+    <published>2015-11-07T10:47:46Z</published>
+    <updated>2015-11-07T22:47:47+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        In my blog article „ 
+       &lt;a href="https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html"&gt;Get a bullet proof email set up for spf-dkim-dmarc&lt;/a&gt;&amp;ldquo;, I explained how to setup your email account in order to be protected against spammer. 
+       &lt;span style="color: rgb(0, 0, 0);"&gt;I was following mainly the advices of postmark, which did an excellent job in this area.&lt;/span&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        In the meantime they published an introduction blog to DMARC which explains in all detail, how the mechanism is working. It’s well written and illustrated and you should take the time to read it, to understand the global approach against spammer. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        The article can be found 
+       &lt;a href="https://postmarkapp.com/guides/dmarc?utm_medium=email&amp;amp;utm_campaign=DMARC+guide++100+DMARC+compliant+Postmark+customers&amp;amp;utm_content=DMARC+guide++100+DMARC+compliant+Postmark+customers+CID_590f9f6996154b221bfa4ea877e09279&amp;amp;utm_source=campaignmonitor&amp;amp;utm_term=httpspostmarkappcomguidesdmarc"&gt;here&lt;/a&gt;. 
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Meteor Small Hints #1: Execute a function by name which works on client and server</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html"/>
     <id>https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html</id>
     <published>2015-10-03T12:07:50Z</published>
-    <updated>2015-10-03T13:27:24+00:00</updated>
+    <updated>2015-10-29T21:43:47+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -183,7 +218,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html</id>
     <published>2015-10-01T08:42:00Z</published>
-    <updated>2015-10-08T22:11:30+00:00</updated>
+    <updated>2015-10-29T21:43:47+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -287,7 +322,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html</id>
     <published>2015-10-01T07:26:35Z</published>
-    <updated>2015-10-08T22:11:34+00:00</updated>
+    <updated>2015-10-29T21:43:47+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -401,7 +436,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"/>
     <id>https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html</id>
     <published>2015-09-30T06:31:36Z</published>
-    <updated>2015-10-08T22:11:26+00:00</updated>
+    <updated>2015-10-29T21:43:47+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -535,7 +570,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/09/29/micro-business-quick-tips-3-rechtssicherheit-bei-der-eroffnung-eines-onlineshops.html"/>
     <id>https://dev.cloudburo.net/2015/09/29/micro-business-quick-tips-3-rechtssicherheit-bei-der-eroffnung-eines-onlineshops.html</id>
     <published>2015-09-29T10:32:56Z</published>
-    <updated>2015-10-02T11:38:49+00:00</updated>
+    <updated>2015-10-29T21:43:47+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -615,62 +650,6 @@
       &lt;div&gt; 
        &lt;br&gt; 
       &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Micro Business Quick Tips #2: Build a Business Without Employees</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/09/03/micro-business-quick-tips-2-build-a-business-without-employees.html"/>
-    <id>https://dev.cloudburo.net/2015/09/03/micro-business-quick-tips-2-build-a-business-without-employees.html</id>
-    <published>2015-09-03T05:41:56Z</published>
-    <updated>2015-10-02T11:38:49+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        A helpful article by 
-       &lt;a href="http://www.entrepreneur.com/article/249868"&gt;enterpreneur.com&lt;/a&gt; which outlines some basics of How to build a Seven-Figure Business Without Employees. As the article states 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;i&gt;The good news is that my lack of interest in such pursuits (… being famous and glamorous …)  hasn&amp;rsquo;t been a hindrance in building a seven figure-business, in a rather short period of time, with a single co-founder and no employees &amp;ndash; which can be operated from anywhere in the world with an Internet connection. As a matter of fact, I’m typing this at a cafe in Copenhagen, Denmark, and will be meandering through Europe for at least the next five weeks &amp;ndash; yet sales will continue to grow and the business won&amp;rsquo;t miss a step. I&amp;rsquo;m not bragging, just validating.&lt;/i&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The replicable model comes with three simple key points 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;Start Simple: As for example &amp;ldquo;&lt;i&gt;you should avoid, at least at the beginning, from overcomplicating your sales pipeline with wholesale or retail scenarios and instead focus on taking your product direct to the consumer.&lt;/i&gt;&amp;rdquo;&lt;/li&gt; 
-       &lt;li&gt;Automate Early: Front to back from sales channel up to the inbound-support requests.&lt;/li&gt; 
-       &lt;li&gt;Leverage Outsourcing: Here the statement is quite bold &lt;i&gt;&amp;ldquo;I’ve even written a few, but here we’re focusing on building a business that doesn’t require employees &amp;ndash; so we’re going to outsource it all.&amp;rdquo;&lt;/i&gt;&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Three points which we consider at Cloudburo.com as well when building up our first subscription based product centered around content marketing. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The 
-       &lt;a href="https://cloudburo.net/docs/products.html"&gt;Cloudburo Curation Platform&lt;/a&gt; will help you to establish your content online presence via a highly optimized and easy workflow to support you in establishing a web presence of the various content types. 
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.entrepreneur.com/article/249868"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
