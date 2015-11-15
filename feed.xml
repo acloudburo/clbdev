@@ -14,13 +14,13 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
     <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
     <published>2015-11-15T12:07:50Z</published>
-    <updated>2015-11-15T14:42:58+01:00</updated>
+    <updated>2015-11-15T14:06:57+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
   &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    There are various problem reported with AWS CLI on El Capitan. For example I got problems with the s3 command. 
+    There are various problem reported with AWS CLI on El Capitan. For example I got problems with the s3 command (as well as the EB CLI). 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; 
@@ -65,7 +65,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html"/>
     <id>https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html</id>
     <published>2015-11-07T10:47:46Z</published>
-    <updated>2015-11-15T14:42:58+01:00</updated>
+    <updated>2015-11-14T10:26:12+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -100,7 +100,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html"/>
     <id>https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html</id>
     <published>2015-10-03T12:07:50Z</published>
-    <updated>2015-11-15T14:42:58+01:00</updated>
+    <updated>2015-11-14T10:26:12+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -269,7 +269,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html</id>
     <published>2015-10-01T08:42:00Z</published>
-    <updated>2015-11-15T14:42:58+01:00</updated>
+    <updated>2015-11-14T10:26:12+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -373,7 +373,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html</id>
     <published>2015-10-01T07:26:35Z</published>
-    <updated>2015-11-15T14:42:58+01:00</updated>
+    <updated>2015-11-14T10:26:12+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -487,7 +487,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"/>
     <id>https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html</id>
     <published>2015-09-30T06:31:36Z</published>
-    <updated>2015-11-15T14:42:58+01:00</updated>
+    <updated>2015-11-14T10:26:12+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
