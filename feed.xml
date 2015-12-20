@@ -5,16 +5,256 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-11-15T12:07:50Z</updated>
+  <updated>2015-12-20T05:48:53Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>The Anatomy of a EB based Microservice - AWS Security Configuration</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
+    <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
+    <published>2015-12-20T05:48:53Z</published>
+    <updated>2015-12-20T21:19:38+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
+        Our microservice(s) will managed by the 
+       &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html?console_help=true"&gt;AWS Elastic Beanstalk&lt;/a&gt; Docker service. With Elastic Beanstalk, you can quickly deploy and manage applications in the AWS cloud without worrying about the infrastructure that runs those applications. AWS Elastic Beanstalk reduces management complexity without restricting choice or control. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Nevertheless quite some configuration is still required, which should be standardized in order to allow to automate these steps. One aspect to consider is the Security configuration of your EB instances which are steering the mircoservices. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Standardize the necessary roles and policies from the beginning (amongst other by using a naming scheme) which will help you during the automation of the tasks. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        It&amp;rsquo;s important that you understand the major concepts in context of the AWS Identity and Access Management (IAM capability): 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;ul&gt; 
+       &lt;li&gt;&lt;strong&gt;&lt;a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html"&gt;IAM Policies&lt;/a&gt;,&lt;/strong&gt; which are documents that formally states on or more permissions. In its most basic sense a policy lets you specify 
+        &lt;ul&gt; 
+         &lt;li&gt;Actions: What actions you will allow of a dedicated AWS service.&lt;/li&gt; 
+         &lt;li&gt;Resources: Which resources you allow the action on.&lt;/li&gt; 
+         &lt;li&gt;Effect: What the effect will be when the user requests access - either allow or deny.&lt;br&gt;&lt;/li&gt; 
+        &lt;/ul&gt;&lt;/li&gt; 
+       &lt;li&gt;&lt;strong&gt;&lt;a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id.html"&gt;IAM Identities&lt;/a&gt;&lt;/strong&gt;&lt;span&gt;,which are the identities for which a&lt;/span&gt; formally documented policies can be allocated to. An identity can be&lt;br&gt; 
+        &lt;ul&gt; 
+         &lt;li&gt;An &lt;strong&gt;IAM user&lt;/strong&gt; is an entity that you create in AWS. The IAM user represents the person or service who uses the IAM user to interact with AWS.&lt;br&gt;&lt;/li&gt; 
+         &lt;li&gt;An &lt;strong&gt;IAM group&lt;/strong&gt; is a collection of IAM users. You can use groups to specify permissions for a collection of users, which can make those permissions easier to manage for those users.&lt;br&gt;&lt;/li&gt; 
+         &lt;li&gt;An &lt;strong&gt;IAM role&lt;/strong&gt; is very similar to a user, in that it is an identity with permission policies that determine what the identity can and cannot do in AWS. However, a role does not have any credentials (password or access keys) associated with it. Instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it.&lt;/li&gt; 
+        &lt;/ul&gt;&lt;/li&gt; 
+      &lt;/ul&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;span style="font-size: 18px;"&gt;&lt;strong&gt;EB required IAM roles&lt;/strong&gt;&lt;/span&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        An EB environment requires two 
+       &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;IAM roles&lt;/a&gt; for correct functioning. These are 
+      &lt;/div&gt; 
+      &lt;ul&gt; 
+       &lt;li&gt;EB Service Role&lt;/li&gt; 
+       &lt;li&gt;EB Instance Profile Role&lt;/li&gt; 
+      &lt;/ul&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;strong&gt;Service Role&lt;/strong&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        A Service Role grants the EB i 
+       &lt;span&gt;nstance access to use other AWS services on your behalf.&lt;/span&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        We create a policy which is globally defined and can be integrated in any microservice EB environment. 
+      &lt;/div&gt; 
+      &lt;ul&gt; 
+       &lt;li&gt;We call it &lt;span style=""&gt;CLB.EB.serviceRolePolicy&lt;/span&gt;&lt;br&gt;&lt;/li&gt; 
+       &lt;li&gt;&lt;span&gt;The &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;link&lt;/a&gt;, will explain the policy document content&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/li&gt; 
+      &lt;/ul&gt; 
+      &lt;div&gt; 
+       &lt;span&gt;Having done that we create now a Service Role. We decide here to define a role on a microservice level to be flexible for the future.&lt;/span&gt; 
+      &lt;/div&gt; 
+      &lt;ul&gt; 
+       &lt;li&gt;&lt;span&gt;We call it &lt;span style=""&gt;&amp;lt;microserviceName&amp;gt;Service&lt;/span&gt;&lt;/span&gt;&lt;/li&gt; 
+       &lt;li&gt;&lt;span&gt;We attach the policy to the role&lt;/span&gt;&lt;/li&gt; 
+      &lt;/ul&gt; 
+      &lt;div&gt; 
+       &lt;span&gt; &lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/7e7f6d9a7e2e17f98d208019929faf2f.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;span&gt; &lt;/span&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;strong&gt;Instance Profile Role&lt;/strong&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        An Instance Profile Role grants the EB instance permission to call AWS services for features including enhanced health reporting and container management. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        We create policy which is which is globally defined and can be integrated in any microservice EB environment. 
+       &lt;ul&gt; 
+        &lt;li&gt;We call it &lt;span style=""&gt;CLB.EB.instanceProfilePolicy&lt;/span&gt;&lt;br&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;span&gt;The &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;link&lt;/a&gt;, will explain the policy document content, it will contain policies for&lt;/span&gt;&lt;br&gt; 
+         &lt;ul&gt; 
+          &lt;li&gt;&lt;span&gt;Write logs to Amazon Simple Storage Service&lt;/span&gt;&lt;/li&gt; 
+          &lt;li&gt;&lt;span&gt;Coordinate container deployments with Amazon EC2 Container Service in multicontainer Docker environments&lt;/span&gt;&lt;/li&gt; 
+          &lt;li&gt;&lt;span&gt;In worker environments, read from an Amazon Simple Queue Service (Amazon SQS) queue&lt;/span&gt;&lt;/li&gt; 
+          &lt;li&gt;&lt;span&gt;In worker environments, perform leader election with Amazon DynamoDB&lt;/span&gt;&lt;/li&gt; 
+          &lt;li&gt;&lt;span&gt;In worker environments, publish instance health metrics to Amazon CloudWatch&lt;/span&gt;&lt;/li&gt; 
+         &lt;/ul&gt;&lt;/li&gt; 
+       &lt;/ul&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;div&gt; 
+        &lt;span&gt;Having done that we create now a Instance Profile Role. We decide here to define a role on a microservice level to be flexible for the future.&lt;/span&gt; 
+       &lt;/div&gt; 
+       &lt;ul&gt; 
+        &lt;li&gt;&lt;span&gt;We call it &lt;span style=""&gt;&amp;lt;microserviceName&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt; 
+        &lt;li&gt;&lt;span&gt;We attach the Instance Profile default policy to the role&lt;/span&gt;&lt;/li&gt; 
+       &lt;/ul&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/091d4cc071175aacfa7a15532a5e874f.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+        &lt;br&gt; 
+       &lt;/div&gt; 
+       &lt;div&gt;
+         So now we have defined two roles with the necessary policies, which must be configured to our EB environment template which is used as a configuration for each EB instance. 
+       &lt;/div&gt; 
+       &lt;div&gt; 
+        &lt;br&gt; 
+       &lt;/div&gt; 
+       &lt;div&gt;
+         Each instance created by EB will have this IAM roles allocated and obviously your IAM Roles will have multiple policies attached dependent on your microservice integration into the AWS ecosystem. 
+       &lt;/div&gt; 
+       &lt;div&gt; 
+        &lt;br&gt; 
+       &lt;/div&gt; 
+       &lt;div&gt; 
+        &lt;strong&gt;Allocate the two roles to your EB environment configuration&lt;/strong&gt; 
+        &lt;br&gt; 
+       &lt;/div&gt; 
+       &lt;div&gt; 
+        &lt;strong&gt;&lt;br&gt;&lt;/strong&gt; 
+       &lt;/div&gt; 
+       &lt;div&gt;
+         The Instance Profile Role will be allocated in the EB Dashboard as part of the &amp;ldquo;Instances&amp;rdquo; tab. 
+       &lt;/div&gt; 
+       &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/e6b6f61b152241e1036e293064f71741.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+       &lt;/div&gt; 
+       &lt;div&gt;
+         The Service Role will be allocated in the EB Dashboard as part of the &amp;ldquo;Health&amp;rdquo; tab. 
+        &lt;br&gt; 
+       &lt;/div&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/81d1d8d8ac5efc608430de34fb53b08e.png" /&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt;In case you are automating the environment creation process with the help of the 
+   &lt;a href="https://aws.amazon.com/cli/"&gt; AWS Command Line Interface&lt;/a&gt; (CLI) you should include the following option settings, which are passed as part of the &amp;ndash;option-settings parameter 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
+&lt;/span&gt;&lt;span class="s2"&gt;"Namespace"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"aws:autoscaling:launchconfiguration"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+&lt;/span&gt;&lt;span class="s2"&gt;"OptionName"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"IamInstanceProfile"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+&lt;/span&gt;&lt;span class="s2"&gt;"Value"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"curationPlatform"&lt;/span&gt;&lt;span class="w"&gt; 
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
+&lt;/span&gt;&lt;span class="s2"&gt;"Namespace"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"aws:elasticbeanstalk:environment"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+&lt;/span&gt;&lt;span class="s2"&gt;"OptionName"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"ServiceRole"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+&lt;/span&gt;&lt;span class="s2"&gt;"Value"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"curationPlatformService"&lt;/span&gt;&lt;span class="w"&gt; 
+&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+
+
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Problems with AWS CLI on Mac OSX El Capitan</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
     <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
     <published>2015-11-15T12:07:50Z</published>
-    <updated>2015-11-23T08:40:16+00:00</updated>
+    <updated>2015-12-20T21:16:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -65,7 +305,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html"/>
     <id>https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html</id>
     <published>2015-11-07T10:47:46Z</published>
-    <updated>2015-11-18T22:24:52+00:00</updated>
+    <updated>2015-12-20T21:16:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -100,7 +340,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html"/>
     <id>https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html</id>
     <published>2015-10-03T12:07:50Z</published>
-    <updated>2015-11-14T10:26:12+00:00</updated>
+    <updated>2015-12-20T21:16:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -269,7 +509,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html</id>
     <published>2015-10-01T08:42:00Z</published>
-    <updated>2015-11-14T10:26:12+00:00</updated>
+    <updated>2015-12-20T21:16:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -373,7 +613,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html</id>
     <published>2015-10-01T07:26:35Z</published>
-    <updated>2015-11-14T10:26:12+00:00</updated>
+    <updated>2015-12-20T21:16:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -477,140 +717,6 @@ sudo pip install awscli --ignore-installed
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;span style="font-size: 12px;"&gt;&lt;i&gt;By the way, this blog is fully managed by the &lt;a href="https://cloudburo.net/docs/products.html"&gt;Cloudburo Curation Platform&lt;/a&gt; which helps you to establish your content online presence via a highly optimized and easy workflow driven out of Evernote’s One Workspace solution. Ideally suited for startups, small and medium enterprises (SME) in facilitating their content marketing strategy.&lt;/i&gt;&lt;/span&gt; 
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Micro Business Quick Tips #4: Visualizing your Business Model with Canvas</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"/>
-    <id>https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html</id>
-    <published>2015-09-30T06:31:36Z</published>
-    <updated>2015-11-14T10:26:12+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        This is the 
-       &lt;b&gt;first article&lt;/b&gt; out of a series how to bootstrap your company to sell a first product. 
-      &lt;/div&gt; 
-      &lt;ol&gt; 
-       &lt;li&gt;First article introduces &amp;ldquo;&lt;a href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"&gt;Visualizing your Business Model with Canvas&lt;/a&gt;&amp;rdquo;&lt;/li&gt; 
-       &lt;li&gt;Second article will cover &amp;ldquo;&lt;a href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"&gt;Using Product Canvas to create and define new Products&lt;/a&gt;&amp;rdquo;&lt;/li&gt; 
-       &lt;li&gt;Third article introduces “&lt;a href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"&gt;The Business Model Canvas Playground for Free&lt;/a&gt;&amp;ldquo;&lt;/li&gt; 
-      &lt;/ol&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        For young startup founders having a bright idea it’s important that they understand and define the underlying Business Model which drives their Product or Service offering. A Business- or Operating model may be abstract or difficult to grasp in the beginning, especially for unexperienced entrepreneurs which are bootstrapping their first company. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Luckily the Swiss guy 
-       &lt;a href="http://alexosterwalder.com/"&gt;Alex Osterwalder&lt;/a&gt; invented the 
-       &lt;a href="http://businessmodelgeneration.com/canvas/bmc"&gt;Business Model Canvas&lt;/a&gt; approach which is easy to use strategic management and entrepreneurial tool. It condenses your business model visually onto one page and allows you to describe, design, challenge, invent and pivot your business model. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Assembling the startup team (get all the various disciplines together) around a visual business model diagram on a flip-board and interactively discuss and shape out the 9 basic building blocks of your business model is an excellent and agile way to get clarity about your initial company setup. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The following video gives a short two minute intro to the 9 building blocks of the Business Model Canvas approach. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        &lt;div class="responsive-video"&gt;&lt;iframe src="https://www.youtube.com/embed/QoAOzMTLP5s?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Well potentially still a little bit abstract, luckily there are some good examples which will map the canvas approach to some real life examples. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Strategyzer - the company co-founded by Alex Osterwalder - released a set of mini video tutorials (six in total), which describes the approach in an animated series „ 
-       &lt;a href="https://www.youtube.com/playlist?list=PLBh9h0LWoawphbpUvC1DofjagNqG1Qdf3"&gt;From Idea to Business&lt;/a&gt;“. It’s worth to spend around 15 minutes to get a better understanding of the approach. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Episode 2 of series „Visualizing Your Business Model“ is introducing the concept via the company „Cheap Flights“ and explains the 9 ingredients of the approach: 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;Value Proposition&lt;/li&gt; 
-       &lt;li&gt;Customer Segments&lt;/li&gt; 
-       &lt;li&gt;Customer Relationships&lt;/li&gt; 
-       &lt;li&gt;Channels&lt;/li&gt; 
-       &lt;li&gt;Revenue Streams&lt;/li&gt; 
-       &lt;li&gt;Key Activities&lt;/li&gt; 
-       &lt;li&gt;Key Resources&lt;/li&gt; 
-       &lt;li&gt;Key Partnerships&lt;/li&gt; 
-       &lt;li&gt;Cost Structures&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        &lt;div class="responsive-video"&gt;&lt;iframe src="https://www.youtube.com/embed/wlKP-BaC0jA?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        There is always the danger to fall in love with your first „cool“ idea and not spend time in prototype multiple business model options. Episode 3 is introducing you to this concept. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        &lt;div class="responsive-video"&gt;&lt;iframe src="https://www.youtube.com/embed/iA5MVUNkSkM?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Needless to say that the approach is backed by a very 
-       &lt;a href="http://businessmodelgeneration.com/book"&gt;nice „visual“ book&lt;/a&gt;, which is a source of inspirations for young entrepreneurs. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Additional Links: 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;Interested in a German introduction ? Head over to startwerk.de which gives you an &lt;a href="http://www.startplatz.de/startup-wiki/business-model-canvas/"&gt;introduction of the nine building blocks&lt;/a&gt; in German.&lt;/li&gt; 
-       &lt;li&gt;Refer also to our &lt;a href="https://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html"&gt;blog entry about the DYI Ventures&lt;/a&gt; approach from Google, which describes a five day sprint to establish an initial product.&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style="font-size: 12px;"&gt;&lt;i&gt;By the way, this blog is fully managed by the &lt;a href="https://cloudburo.net/docs/products.html"&gt;Cloudburo Curation Platform&lt;/a&gt; which helps you to establish your content online presence via a highly optimized and easy workflow driven out of Evernote’s One Workspace solution. Ideally suited for startups, small and medium enterprises (SME) in facilitating their content marketing strategy. &lt;/i&gt;&lt;/span&gt; 
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
