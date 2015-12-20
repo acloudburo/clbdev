@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
     <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
     <published>2015-12-20T05:48:53Z</published>
-    <updated>2015-12-20T21:19:38+00:00</updated>
+    <updated>2015-12-20T21:35:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -208,7 +208,8 @@
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt;In case you are automating the environment creation process with the help of the 
-   &lt;a href="https://aws.amazon.com/cli/"&gt; AWS Command Line Interface&lt;/a&gt; (CLI) you should include the following option settings, which are passed as part of the &amp;ndash;option-settings parameter 
+   &lt;a href="https://aws.amazon.com/cli/"&gt; AWS Command Line Interface&lt;/a&gt; (CLI) you should include the following option settings, which are passed as part of the - 
+   &lt;span style=""&gt;-option-settings&lt;/span&gt; parameter 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; 
@@ -254,7 +255,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
     <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
     <published>2015-11-15T12:07:50Z</published>
-    <updated>2015-12-20T21:16:07+00:00</updated>
+    <updated>2015-12-20T21:34:10+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -305,7 +306,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html"/>
     <id>https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html</id>
     <published>2015-11-07T10:47:46Z</published>
-    <updated>2015-12-20T21:16:07+00:00</updated>
+    <updated>2015-12-20T21:34:10+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -340,7 +341,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html"/>
     <id>https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html</id>
     <published>2015-10-03T12:07:50Z</published>
-    <updated>2015-12-20T21:16:07+00:00</updated>
+    <updated>2015-12-20T21:34:10+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -509,7 +510,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html</id>
     <published>2015-10-01T08:42:00Z</published>
-    <updated>2015-12-20T21:16:07+00:00</updated>
+    <updated>2015-12-20T21:34:10+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -613,7 +614,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html</id>
     <published>2015-10-01T07:26:35Z</published>
-    <updated>2015-12-20T21:16:07+00:00</updated>
+    <updated>2015-12-20T21:34:10+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
