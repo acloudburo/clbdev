@@ -129,7 +129,7 @@
           <hr /><div class="row">
   <div class="article">
     <p><span/>      <div>
-        Our microservice(s) will managed by the 
+        Our microservice(s) will be managed by the 
        <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html?console_help=true">AWS Elastic Beanstalk</a> Docker service. With Elastic Beanstalk, you can quickly deploy and manage applications in the AWS cloud without worrying about the infrastructure that runs those applications. AWS Elastic Beanstalk reduces management complexity without restricting choice or control. 
       </div> 
       <div> 
@@ -204,14 +204,14 @@
         We create a policy which is globally defined and can be integrated in any microservice EB environment. 
       </div> 
       <ul> 
-       <li>We call it <span style="">TST.EB.serviceRolePolicy</span><br></li> 
-       <li>The <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance">link</a>, will explain the policy document content<br></li> 
+       <li>We call it <i><span style="">TST.EB.serviceRolePolicy</span></i></li> 
+       <li>The <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance">link</a>, will explain the policy document content</li> 
       </ul> 
       <div>
         Having done that we create now a Service Role. We decide here to define a role on a microservice level to be flexible for the future. 
       </div> 
       <ul> 
-       <li>We call it <span style="">tst.&lt;microserviceName&gt;Service</span></li> 
+       <li>We call it <i><span style="">tst.&lt;microserviceName&gt;Service</span></i></li> 
        <li>We attach the policy to the role</li> 
       </ul> 
       <div> 
@@ -243,7 +243,7 @@
         We create policy which is which is globally defined and can be integrated in any microservice EB environment. 
       </div> 
       <ul> 
-       <li>We call it <span style="">TST.EB.instanceProfilePolicy</span><br></li> 
+       <li>We call it <i><span style="">TST.EB.instanceProfilePolicy</span></i><br></li> 
        <li>The <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance">link</a>, will explain the policy document content, it will contain policies for<br> 
         <ul> 
          <li>Write logs to Amazon Simple Storage Service</li> 
@@ -257,7 +257,7 @@
         Having done that we create now a Instance Profile Role. We decide here to define a role on a microservice level to be flexible for the future. 
       </div> 
       <ul> 
-       <li>We call it <span style="">tst.&lt;microserviceName&gt;</span></li> 
+       <li>We call it <i><span style="">tst.&lt;microserviceName&gt;</span></i></li> 
        <li>We attach the Instance Profile default policy to the role</li> 
       </ul> 
       <div> 
@@ -311,8 +311,8 @@
   </div> 
   <div> 
    <br> In case you are automating the environment creation process with the help of the 
-   <a href="https://aws.amazon.com/cli/">AWS Command Line Interface</a> (CLI) you should include the following option settings, which are passed as part of the - 
-   <span style="">-option-settings</span> parameter 
+   <a href="https://aws.amazon.com/cli/">AWS Command Line Interface</a> (CLI) you should include the following option settings, which are passed as part of the 
+   <i>-<span style="">-option-settings</span></i> parameter 
   </div> 
   <div> 
    <br> 
@@ -321,13 +321,13 @@
 <pre class="highlight json"><code><span class="w">
 </span><span class="p">{</span><span class="w"> 
  </span><span class="s2">"Namespace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aws:autoscaling:launchconfiguration"</span><span class="p">,</span><span class="w"> 
- </span><span class="s2">"OptionName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IamInstanceProfile"</span><span class="p">,</span><span class="w"> 
- </span><span class="s2">"Value"</span><span class="p">:</span><span class="w"> </span><span class="err">„tst.curationPlatform</span><span class="s2">" 
- }, 
- { 
- "</span><span class="err">Namespace</span><span class="s2">": "</span><span class="err">aws:elasticbeanstalk:environment</span><span class="s2">", 
- "</span><span class="err">OptionName</span><span class="s2">": "</span><span class="err">ServiceRole</span><span class="s2">", 
- "</span><span class="err">Value</span><span class="s2">": „tst.curationPlatformService"</span><span class="w"> 
+  </span><span class="s2">"OptionName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IamInstanceProfile"</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"Value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tst.curationPlatform"</span><span class="w"> 
+  </span><span class="p">}</span><span class="err">,</span><span class="w"> 
+ </span><span class="p">{</span><span class="w"> 
+ </span><span class="s2">"Namespace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aws:elasticbeanstalk:environment"</span><span class="p">,</span><span class="w"> 
+ </span><span class="s2">"OptionName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ServiceRole"</span><span class="p">,</span><span class="w"> 
+ </span><span class="s2">"Value"</span><span class="p">:</span><span class="w"> </span><span class="err">„tst.curationPlatformService"</span><span class="w"> 
  </span><span class="p">}</span><span class="err">,</span><span class="w"> 
 
 
@@ -364,19 +364,14 @@
   </div> 
   <div>
     So we will call our key 
-   <span style="">tst_ms_&lt;microserviceName&gt;.</span> 
+   <span style=""><i>tst_ms_&lt;microserviceName&gt;</i>.</span> 
   </div> 
   <div> 
    <span style=""><br></span> 
   </div> 
   <div>
     As a key user(s) we assign the role of 
-   <span style="">tst.curationPlatform</span>, i.e. our Elastic Beanstalk Microservice will be able to encrypt and decrypt sensitive data at rest (= in our S3 buckets). 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
-  <div> 
+   <i><span style="">tst.curationPlatform</span></i>, i.e. our Elastic Beanstalk Microservice will be able to encrypt and decrypt sensitive data at rest (= in our S3 buckets). 
   </div> 
   <div> 
    <br> 

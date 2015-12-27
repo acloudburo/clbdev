@@ -14,14 +14,14 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
     <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
     <published>2015-12-20T05:48:53Z</published>
-    <updated>2015-12-27T00:34:31+00:00</updated>
+    <updated>2015-12-27T08:04:19+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-        Our microservice(s) will managed by the 
+        Our microservice(s) will be managed by the 
        &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html?console_help=true"&gt;AWS Elastic Beanstalk&lt;/a&gt; Docker service. With Elastic Beanstalk, you can quickly deploy and manage applications in the AWS cloud without worrying about the infrastructure that runs those applications. AWS Elastic Beanstalk reduces management complexity without restricting choice or control. 
       &lt;/div&gt; 
       &lt;div&gt; 
@@ -96,14 +96,14 @@
         We create a policy which is globally defined and can be integrated in any microservice EB environment. 
       &lt;/div&gt; 
       &lt;ul&gt; 
-       &lt;li&gt;We call it &lt;span style=""&gt;TST.EB.serviceRolePolicy&lt;/span&gt;&lt;br&gt;&lt;/li&gt; 
-       &lt;li&gt;The &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;link&lt;/a&gt;, will explain the policy document content&lt;br&gt;&lt;/li&gt; 
+       &lt;li&gt;We call it &lt;i&gt;&lt;span style=""&gt;TST.EB.serviceRolePolicy&lt;/span&gt;&lt;/i&gt;&lt;/li&gt; 
+       &lt;li&gt;The &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;link&lt;/a&gt;, will explain the policy document content&lt;/li&gt; 
       &lt;/ul&gt; 
       &lt;div&gt;
         Having done that we create now a Service Role. We decide here to define a role on a microservice level to be flexible for the future. 
       &lt;/div&gt; 
       &lt;ul&gt; 
-       &lt;li&gt;We call it &lt;span style=""&gt;tst.&amp;lt;microserviceName&amp;gt;Service&lt;/span&gt;&lt;/li&gt; 
+       &lt;li&gt;We call it &lt;i&gt;&lt;span style=""&gt;tst.&amp;lt;microserviceName&amp;gt;Service&lt;/span&gt;&lt;/i&gt;&lt;/li&gt; 
        &lt;li&gt;We attach the policy to the role&lt;/li&gt; 
       &lt;/ul&gt; 
       &lt;div&gt; 
@@ -135,7 +135,7 @@
         We create policy which is which is globally defined and can be integrated in any microservice EB environment. 
       &lt;/div&gt; 
       &lt;ul&gt; 
-       &lt;li&gt;We call it &lt;span style=""&gt;TST.EB.instanceProfilePolicy&lt;/span&gt;&lt;br&gt;&lt;/li&gt; 
+       &lt;li&gt;We call it &lt;i&gt;&lt;span style=""&gt;TST.EB.instanceProfilePolicy&lt;/span&gt;&lt;/i&gt;&lt;br&gt;&lt;/li&gt; 
        &lt;li&gt;The &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;link&lt;/a&gt;, will explain the policy document content, it will contain policies for&lt;br&gt; 
         &lt;ul&gt; 
          &lt;li&gt;Write logs to Amazon Simple Storage Service&lt;/li&gt; 
@@ -149,7 +149,7 @@
         Having done that we create now a Instance Profile Role. We decide here to define a role on a microservice level to be flexible for the future. 
       &lt;/div&gt; 
       &lt;ul&gt; 
-       &lt;li&gt;We call it &lt;span style=""&gt;tst.&amp;lt;microserviceName&amp;gt;&lt;/span&gt;&lt;/li&gt; 
+       &lt;li&gt;We call it &lt;i&gt;&lt;span style=""&gt;tst.&amp;lt;microserviceName&amp;gt;&lt;/span&gt;&lt;/i&gt;&lt;/li&gt; 
        &lt;li&gt;We attach the Instance Profile default policy to the role&lt;/li&gt; 
       &lt;/ul&gt; 
       &lt;div&gt; 
@@ -203,8 +203,8 @@
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; In case you are automating the environment creation process with the help of the 
-   &lt;a href="https://aws.amazon.com/cli/"&gt;AWS Command Line Interface&lt;/a&gt; (CLI) you should include the following option settings, which are passed as part of the - 
-   &lt;span style=""&gt;-option-settings&lt;/span&gt; parameter 
+   &lt;a href="https://aws.amazon.com/cli/"&gt;AWS Command Line Interface&lt;/a&gt; (CLI) you should include the following option settings, which are passed as part of the 
+   &lt;i&gt;-&lt;span style=""&gt;-option-settings&lt;/span&gt;&lt;/i&gt; parameter 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; 
@@ -213,13 +213,13 @@
 &lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
  &lt;/span&gt;&lt;span class="s2"&gt;"Namespace"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"aws:autoscaling:launchconfiguration"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
- &lt;/span&gt;&lt;span class="s2"&gt;"OptionName"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"IamInstanceProfile"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
- &lt;/span&gt;&lt;span class="s2"&gt;"Value"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;„tst.curationPlatform&lt;/span&gt;&lt;span class="s2"&gt;" 
- }, 
- { 
- "&lt;/span&gt;&lt;span class="err"&gt;Namespace&lt;/span&gt;&lt;span class="s2"&gt;": "&lt;/span&gt;&lt;span class="err"&gt;aws:elasticbeanstalk:environment&lt;/span&gt;&lt;span class="s2"&gt;", 
- "&lt;/span&gt;&lt;span class="err"&gt;OptionName&lt;/span&gt;&lt;span class="s2"&gt;": "&lt;/span&gt;&lt;span class="err"&gt;ServiceRole&lt;/span&gt;&lt;span class="s2"&gt;", 
- "&lt;/span&gt;&lt;span class="err"&gt;Value&lt;/span&gt;&lt;span class="s2"&gt;": „tst.curationPlatformService"&lt;/span&gt;&lt;span class="w"&gt; 
+  &lt;/span&gt;&lt;span class="s2"&gt;"OptionName"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"IamInstanceProfile"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+  &lt;/span&gt;&lt;span class="s2"&gt;"Value"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"tst.curationPlatform"&lt;/span&gt;&lt;span class="w"&gt; 
+  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+ &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
+ &lt;/span&gt;&lt;span class="s2"&gt;"Namespace"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"aws:elasticbeanstalk:environment"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+ &lt;/span&gt;&lt;span class="s2"&gt;"OptionName"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"ServiceRole"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+ &lt;/span&gt;&lt;span class="s2"&gt;"Value"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;„tst.curationPlatformService"&lt;/span&gt;&lt;span class="w"&gt; 
  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
 
 
@@ -256,19 +256,14 @@
   &lt;/div&gt; 
   &lt;div&gt;
     So we will call our key 
-   &lt;span style=""&gt;tst_ms_&amp;lt;microserviceName&amp;gt;.&lt;/span&gt; 
+   &lt;span style=""&gt;&lt;i&gt;tst_ms_&amp;lt;microserviceName&amp;gt;&lt;/i&gt;.&lt;/span&gt; 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
   &lt;/div&gt; 
   &lt;div&gt;
     As a key user(s) we assign the role of 
-   &lt;span style=""&gt;tst.curationPlatform&lt;/span&gt;, i.e. our Elastic Beanstalk Microservice will be able to encrypt and decrypt sensitive data at rest (= in our S3 buckets). 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
+   &lt;i&gt;&lt;span style=""&gt;tst.curationPlatform&lt;/span&gt;&lt;/i&gt;, i.e. our Elastic Beanstalk Microservice will be able to encrypt and decrypt sensitive data at rest (= in our S3 buckets). 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; 
