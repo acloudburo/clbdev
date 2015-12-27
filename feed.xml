@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
     <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
     <published>2015-12-20T05:48:53Z</published>
-    <updated>2015-12-20T21:35:03+00:00</updated>
+    <updated>2015-12-27T00:34:31+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -51,13 +51,13 @@
          &lt;li&gt;Actions: What actions you will allow of a dedicated AWS service.&lt;/li&gt; 
          &lt;li&gt;Resources: Which resources you allow the action on.&lt;/li&gt; 
          &lt;li&gt;Effect: What the effect will be when the user requests access - either allow or deny.&lt;br&gt;&lt;/li&gt; 
-        &lt;/ul&gt;&lt;/li&gt; 
-       &lt;li&gt;&lt;strong&gt;&lt;a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id.html"&gt;IAM Identities&lt;/a&gt;&lt;/strong&gt;&lt;span&gt;,which are the identities for which a&lt;/span&gt; formally documented policies can be allocated to. An identity can be&lt;br&gt; 
+        &lt;/ul&gt; &lt;/li&gt; 
+       &lt;li&gt;&lt;strong&gt;&lt;a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id.html"&gt;IAM Identities&lt;/a&gt;&lt;/strong&gt;,which are the identities for which a formally documented policies can be allocated to. An identity can be&lt;br&gt; 
         &lt;ul&gt; 
          &lt;li&gt;An &lt;strong&gt;IAM user&lt;/strong&gt; is an entity that you create in AWS. The IAM user represents the person or service who uses the IAM user to interact with AWS.&lt;br&gt;&lt;/li&gt; 
          &lt;li&gt;An &lt;strong&gt;IAM group&lt;/strong&gt; is a collection of IAM users. You can use groups to specify permissions for a collection of users, which can make those permissions easier to manage for those users.&lt;br&gt;&lt;/li&gt; 
          &lt;li&gt;An &lt;strong&gt;IAM role&lt;/strong&gt; is very similar to a user, in that it is an identity with permission policies that determine what the identity can and cannot do in AWS. However, a role does not have any credentials (password or access keys) associated with it. Instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it.&lt;/li&gt; 
-        &lt;/ul&gt;&lt;/li&gt; 
+        &lt;/ul&gt; &lt;/li&gt; 
       &lt;/ul&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -87,8 +87,7 @@
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        A Service Role grants the EB i 
-       &lt;span&gt;nstance access to use other AWS services on your behalf.&lt;/span&gt; 
+        A Service Role grants the EB instance access to use other AWS services on your behalf. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -97,26 +96,27 @@
         We create a policy which is globally defined and can be integrated in any microservice EB environment. 
       &lt;/div&gt; 
       &lt;ul&gt; 
-       &lt;li&gt;We call it &lt;span style=""&gt;CLB.EB.serviceRolePolicy&lt;/span&gt;&lt;br&gt;&lt;/li&gt; 
-       &lt;li&gt;&lt;span&gt;The &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;link&lt;/a&gt;, will explain the policy document content&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/li&gt; 
+       &lt;li&gt;We call it &lt;span style=""&gt;TST.EB.serviceRolePolicy&lt;/span&gt;&lt;br&gt;&lt;/li&gt; 
+       &lt;li&gt;The &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;link&lt;/a&gt;, will explain the policy document content&lt;br&gt;&lt;/li&gt; 
       &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;span&gt;Having done that we create now a Service Role. We decide here to define a role on a microservice level to be flexible for the future.&lt;/span&gt; 
+      &lt;div&gt;
+        Having done that we create now a Service Role. We decide here to define a role on a microservice level to be flexible for the future. 
       &lt;/div&gt; 
       &lt;ul&gt; 
-       &lt;li&gt;&lt;span&gt;We call it &lt;span style=""&gt;&amp;lt;microserviceName&amp;gt;Service&lt;/span&gt;&lt;/span&gt;&lt;/li&gt; 
-       &lt;li&gt;&lt;span&gt;We attach the policy to the role&lt;/span&gt;&lt;/li&gt; 
+       &lt;li&gt;We call it &lt;span style=""&gt;tst.&amp;lt;microserviceName&amp;gt;Service&lt;/span&gt;&lt;/li&gt; 
+       &lt;li&gt;We attach the policy to the role&lt;/li&gt; 
       &lt;/ul&gt; 
       &lt;div&gt; 
-       &lt;span&gt; &lt;/p&gt;
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/7e7f6d9a7e2e17f98d208019929faf2f.png" /&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/f8d95ed7ff125aa60aba4aa0236d5b45.png" /&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt; 
+    &lt;p&gt;&lt;span/&gt; 
       &lt;/div&gt; 
       &lt;div&gt; 
-       &lt;span&gt; &lt;/span&gt; 
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt; 
@@ -133,36 +133,39 @@
       &lt;/div&gt; 
       &lt;div&gt;
         We create policy which is which is globally defined and can be integrated in any microservice EB environment. 
-       &lt;ul&gt; 
-        &lt;li&gt;We call it &lt;span style=""&gt;CLB.EB.instanceProfilePolicy&lt;/span&gt;&lt;br&gt;&lt;/li&gt; 
-        &lt;li&gt;&lt;span&gt;The &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;link&lt;/a&gt;, will explain the policy document content, it will contain policies for&lt;/span&gt;&lt;br&gt; 
-         &lt;ul&gt; 
-          &lt;li&gt;&lt;span&gt;Write logs to Amazon Simple Storage Service&lt;/span&gt;&lt;/li&gt; 
-          &lt;li&gt;&lt;span&gt;Coordinate container deployments with Amazon EC2 Container Service in multicontainer Docker environments&lt;/span&gt;&lt;/li&gt; 
-          &lt;li&gt;&lt;span&gt;In worker environments, read from an Amazon Simple Queue Service (Amazon SQS) queue&lt;/span&gt;&lt;/li&gt; 
-          &lt;li&gt;&lt;span&gt;In worker environments, perform leader election with Amazon DynamoDB&lt;/span&gt;&lt;/li&gt; 
-          &lt;li&gt;&lt;span&gt;In worker environments, publish instance health metrics to Amazon CloudWatch&lt;/span&gt;&lt;/li&gt; 
-         &lt;/ul&gt;&lt;/li&gt; 
-       &lt;/ul&gt; 
       &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;div&gt; 
-        &lt;span&gt;Having done that we create now a Instance Profile Role. We decide here to define a role on a microservice level to be flexible for the future.&lt;/span&gt; 
-       &lt;/div&gt; 
-       &lt;ul&gt; 
-        &lt;li&gt;&lt;span&gt;We call it &lt;span style=""&gt;&amp;lt;microserviceName&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt; 
-        &lt;li&gt;&lt;span&gt;We attach the Instance Profile default policy to the role&lt;/span&gt;&lt;/li&gt; 
-       &lt;/ul&gt; 
+      &lt;ul&gt; 
+       &lt;li&gt;We call it &lt;span style=""&gt;TST.EB.instanceProfilePolicy&lt;/span&gt;&lt;br&gt;&lt;/li&gt; 
+       &lt;li&gt;The &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;link&lt;/a&gt;, will explain the policy document content, it will contain policies for&lt;br&gt; 
+        &lt;ul&gt; 
+         &lt;li&gt;Write logs to Amazon Simple Storage Service&lt;/li&gt; 
+         &lt;li&gt;Coordinate container deployments with Amazon EC2 Container Service in multicontainer Docker environments&lt;/li&gt; 
+         &lt;li&gt;In worker environments, read from an Amazon Simple Queue Service (Amazon SQS) queue&lt;/li&gt; 
+         &lt;li&gt;In worker environments, perform leader election with Amazon DynamoDB&lt;/li&gt; 
+         &lt;li&gt;In worker environments, publish instance health metrics to Amazon CloudWatch&lt;/li&gt; 
+        &lt;/ul&gt; &lt;/li&gt; 
+      &lt;/ul&gt; 
+      &lt;div&gt;
+        Having done that we create now a Instance Profile Role. We decide here to define a role on a microservice level to be flexible for the future. 
       &lt;/div&gt; 
+      &lt;ul&gt; 
+       &lt;li&gt;We call it &lt;span style=""&gt;tst.&amp;lt;microserviceName&amp;gt;&lt;/span&gt;&lt;/li&gt; 
+       &lt;li&gt;We attach the Instance Profile default policy to the role&lt;/li&gt; 
+      &lt;/ul&gt; 
       &lt;div&gt; 
-       &lt;div&gt;&lt;/p&gt;
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/091d4cc071175aacfa7a15532a5e874f.png" /&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/7e0fc0c501d8124e474caa2e8f0836e8.png" /&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
        &lt;div&gt;
          So now we have defined two roles with the necessary policies, which must be configured to our EB environment template which is used as a configuration for each EB instance. 
        &lt;/div&gt; 
@@ -185,30 +188,22 @@
        &lt;div&gt;
          The Instance Profile Role will be allocated in the EB Dashboard as part of the &amp;ldquo;Instances&amp;rdquo; tab. 
        &lt;/div&gt; 
-       &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/e6b6f61b152241e1036e293064f71741.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt;
-         The Service Role will be allocated in the EB Dashboard as part of the &amp;ldquo;Health&amp;rdquo; tab. 
-        &lt;br&gt; 
-       &lt;/div&gt; 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
       &lt;/div&gt; 
+      &lt;div&gt;
+        The Service Role will be allocated in the EB Dashboard as part of the &amp;ldquo;Health&amp;rdquo; tab. 
+      &lt;/div&gt; 
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/81d1d8d8ac5efc608430de34fb53b08e.png" /&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/8b3214495d802368ea57173314bea657.png" /&gt;
   &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt; 
   &lt;/div&gt; 
   &lt;div&gt; 
-   &lt;br&gt;In case you are automating the environment creation process with the help of the 
-   &lt;a href="https://aws.amazon.com/cli/"&gt; AWS Command Line Interface&lt;/a&gt; (CLI) you should include the following option settings, which are passed as part of the - 
+   &lt;br&gt; In case you are automating the environment creation process with the help of the 
+   &lt;a href="https://aws.amazon.com/cli/"&gt;AWS Command Line Interface&lt;/a&gt; (CLI) you should include the following option settings, which are passed as part of the - 
    &lt;span style=""&gt;-option-settings&lt;/span&gt; parameter 
   &lt;/div&gt; 
   &lt;div&gt; 
@@ -217,15 +212,15 @@
   &lt;div&gt;&lt;/p&gt;
 &lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="w"&gt;
 &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="s2"&gt;"Namespace"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"aws:autoscaling:launchconfiguration"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="s2"&gt;"OptionName"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"IamInstanceProfile"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="s2"&gt;"Value"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"curationPlatform"&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="s2"&gt;"Namespace"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"aws:elasticbeanstalk:environment"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="s2"&gt;"OptionName"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"ServiceRole"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="s2"&gt;"Value"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"curationPlatformService"&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+ &lt;/span&gt;&lt;span class="s2"&gt;"Namespace"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"aws:autoscaling:launchconfiguration"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+ &lt;/span&gt;&lt;span class="s2"&gt;"OptionName"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"IamInstanceProfile"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+ &lt;/span&gt;&lt;span class="s2"&gt;"Value"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;„tst.curationPlatform&lt;/span&gt;&lt;span class="s2"&gt;" 
+ }, 
+ { 
+ "&lt;/span&gt;&lt;span class="err"&gt;Namespace&lt;/span&gt;&lt;span class="s2"&gt;": "&lt;/span&gt;&lt;span class="err"&gt;aws:elasticbeanstalk:environment&lt;/span&gt;&lt;span class="s2"&gt;", 
+ "&lt;/span&gt;&lt;span class="err"&gt;OptionName&lt;/span&gt;&lt;span class="s2"&gt;": "&lt;/span&gt;&lt;span class="err"&gt;ServiceRole&lt;/span&gt;&lt;span class="s2"&gt;", 
+ "&lt;/span&gt;&lt;span class="err"&gt;Value&lt;/span&gt;&lt;span class="s2"&gt;": „tst.curationPlatformService"&lt;/span&gt;&lt;span class="w"&gt; 
+ &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
 
 
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -235,12 +230,45 @@
    &lt;br&gt; 
   &lt;/div&gt; 
   &lt;div&gt; 
-   &lt;br&gt; 
-   &lt;br&gt; 
+   &lt;span style="font-size: 18px;"&gt;&lt;b&gt;IAM Encryption Key&lt;/b&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;b&gt;&lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
+    Beside the two roles, we will define an Encryption Key provided by the 
+   &lt;a href="http://docs.aws.amazon.com/kms/latest/developerguide/overview.html"&gt;AWS Key Management Service&lt;/a&gt; (KMS). The AWS Key Management Service (AWS KMS) is a managed service that makes it easy for you to create and control the encryption keys used to encrypt your data. 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
+    Again an Encryption Key is provided per region, where the EB instance will run. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
    &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
+    From a naming point of view we will not code the region postfix, due to the fact that you can define the same encryption key on a per region level. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
+    So we will call our key 
+   &lt;span style=""&gt;tst_ms_&amp;lt;microserviceName&amp;gt;.&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
+    As a key user(s) we assign the role of 
+   &lt;span style=""&gt;tst.curationPlatform&lt;/span&gt;, i.e. our Elastic Beanstalk Microservice will be able to encrypt and decrypt sensitive data at rest (= in our S3 buckets). 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; 
@@ -255,7 +283,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
     <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
     <published>2015-11-15T12:07:50Z</published>
-    <updated>2015-12-20T21:34:10+00:00</updated>
+    <updated>2015-12-20T22:43:30+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -306,7 +334,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html"/>
     <id>https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html</id>
     <published>2015-11-07T10:47:46Z</published>
-    <updated>2015-12-20T21:34:10+00:00</updated>
+    <updated>2015-12-20T22:43:30+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -341,7 +369,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html"/>
     <id>https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html</id>
     <published>2015-10-03T12:07:50Z</published>
-    <updated>2015-12-20T21:34:10+00:00</updated>
+    <updated>2015-12-20T22:43:30+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -510,7 +538,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html</id>
     <published>2015-10-01T08:42:00Z</published>
-    <updated>2015-12-20T21:34:10+00:00</updated>
+    <updated>2015-12-20T22:43:30+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -614,7 +642,7 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html</id>
     <published>2015-10-01T07:26:35Z</published>
-    <updated>2015-12-20T21:34:10+00:00</updated>
+    <updated>2015-12-20T22:43:30+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
