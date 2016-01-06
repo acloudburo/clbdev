@@ -166,6 +166,8 @@
          <li>An <strong>IAM group</strong> is a collection of IAM users. You can use groups to specify permissions for a collection of users, which can make those permissions easier to manage for those users.<br></li> 
          <li>An <strong>IAM role</strong> is very similar to a user, in that it is an identity with permission policies that determine what the identity can and cannot do in AWS. However, a role does not have any credentials (password or access keys) associated with it. Instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it.</li> 
         </ul> </li> 
+       <li>KMS Encryption Key, which is a AWS managed and controlled encryption key provided as part of the AWS Key Management System</li> 
+       <li>EC2 Key Pair, which allows you to establish a SSH remote connection to your EB instance.</li> 
       </ul> 
       <div> 
        <br> 
@@ -338,7 +340,7 @@
    <br> 
   </div> 
   <div> 
-   <span style="font-size: 18px;"><b>IAM Encryption Key</b></span> 
+   <span style="font-size: 18px;"><b>KMS Encryption Key</b></span> 
   </div> 
   <div> 
    <b><span style="font-size: 18px;"><br></span></b> 
@@ -372,6 +374,25 @@
   <div>
     As a key user(s) we assign the role of 
    <i><span style="">tst.curationPlatform</span></i>, i.e. our Elastic Beanstalk Microservice will be able to encrypt and decrypt sensitive data at rest (= in our S3 buckets). 
+  </div> 
+  <div> 
+   <br> 
+  </div> 
+  <div> 
+   <b><span style="font-size: 18px;">EC2 Key Pair to Enable Remote Login</span></b> 
+  </div> 
+  <div> 
+   <br> 
+  </div> 
+  <div>
+    In order to enable remote login into your Elastic Beanstalk Environment you have to create a EC2 key pair and configure it into your EB configuration. 
+  </div> 
+  <div> 
+   <br> 
+  </div> 
+  <div>
+    You can find the description 
+   <a href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html">Docker Small Hints #3: SSH into your AWS Elastic Beanstalk Component</a> 
   </div> 
   <div> 
    <br> 

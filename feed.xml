@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
     <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
     <published>2015-12-20T05:48:53Z</published>
-    <updated>2016-01-04T18:33:29+00:00</updated>
+    <updated>2016-01-06T20:43:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -58,6 +58,8 @@
          &lt;li&gt;An &lt;strong&gt;IAM group&lt;/strong&gt; is a collection of IAM users. You can use groups to specify permissions for a collection of users, which can make those permissions easier to manage for those users.&lt;br&gt;&lt;/li&gt; 
          &lt;li&gt;An &lt;strong&gt;IAM role&lt;/strong&gt; is very similar to a user, in that it is an identity with permission policies that determine what the identity can and cannot do in AWS. However, a role does not have any credentials (password or access keys) associated with it. Instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it.&lt;/li&gt; 
         &lt;/ul&gt; &lt;/li&gt; 
+       &lt;li&gt;KMS Encryption Key, which is a AWS managed and controlled encryption key provided as part of the AWS Key Management System&lt;/li&gt; 
+       &lt;li&gt;EC2 Key Pair, which allows you to establish a SSH remote connection to your EB instance.&lt;/li&gt; 
       &lt;/ul&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -230,7 +232,7 @@
    &lt;br&gt; 
   &lt;/div&gt; 
   &lt;div&gt; 
-   &lt;span style="font-size: 18px;"&gt;&lt;b&gt;IAM Encryption Key&lt;/b&gt;&lt;/span&gt; 
+   &lt;span style="font-size: 18px;"&gt;&lt;b&gt;KMS Encryption Key&lt;/b&gt;&lt;/span&gt; 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;b&gt;&lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt; 
@@ -264,6 +266,25 @@
   &lt;div&gt;
     As a key user(s) we assign the role of 
    &lt;i&gt;&lt;span style=""&gt;tst.curationPlatform&lt;/span&gt;&lt;/i&gt;, i.e. our Elastic Beanstalk Microservice will be able to encrypt and decrypt sensitive data at rest (= in our S3 buckets). 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;b&gt;&lt;span style="font-size: 18px;"&gt;EC2 Key Pair to Enable Remote Login&lt;/span&gt;&lt;/b&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
+    In order to enable remote login into your Elastic Beanstalk Environment you have to create a EC2 key pair and configure it into your EB configuration. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;
+    You can find the description 
+   &lt;a href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"&gt;Docker Small Hints #3: SSH into your AWS Elastic Beanstalk Component&lt;/a&gt; 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; 
