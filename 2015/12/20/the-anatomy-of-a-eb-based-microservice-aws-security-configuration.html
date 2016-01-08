@@ -28,43 +28,37 @@
               <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="/tags/startup.html">startup (8)</a>
-                </li>
-                <li>
                   <a href="/tags/quicktips.html">quicktips (12)</a>
                 </li>
                 <li>
-                  <a href="/tags/deutsch.html">deutsch (1)</a>
+                  <a href="/tags/bootstrap.html">bootstrap (1)</a>
                 </li>
                 <li>
-                  <a href="/tags/microservice.html">microservice (11)</a>
+                  <a href="/tags/docker.html">docker (8)</a>
                 </li>
                 <li>
                   <a href="/tags/aws.html">aws (9)</a>
                 </li>
                 <li>
-                  <a href="/tags/futurework.html">futureWork (5)</a>
+                  <a href="/tags/smallhints.html">smallhints (11)</a>
                 </li>
                 <li>
-                  <a href="/tags/shift.html">shift (4)</a>
+                  <a href="/tags/microservice.html">microservice (11)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/legal.html">legal (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/futurework.html">futureWork (5)</a>
                 </li>
                 <li>
                   <a href="/tags/architecture.html">architecture (8)</a>
                 </li>
                 <li>
-                  <a href="/tags/personaldata.html">personalData (2)</a>
-                </li>
-                <li>
-                  <a href="/tags/api.html">api (2)</a>
-                </li>
-                <li>
-                  <a href="/tags/smallhints.html">smallhints (11)</a>
-                </li>
-                <li>
-                  <a href="/tags/grails.html">grails (2)</a>
-                </li>
-                <li>
-                  <a href="/tags/docker.html">docker (8)</a>
+                  <a href="/tags/startup.html">startup (8)</a>
                 </li>
                 <li>
                   <a href="/tags/gradle.html">gradle (2)</a>
@@ -76,19 +70,25 @@
                   <a href="/tags/banking.html">banking (1)</a>
                 </li>
                 <li>
-                  <a href="/tags/legal.html">legal (1)</a>
+                  <a href="/tags/personaldata.html">personalData (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/api.html">api (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/meteor.html">meteor (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/grails.html">grails (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/shift.html">shift (4)</a>
                 </li>
                 <li>
                   <a href="/tags/googleapps.html">googleapps (1)</a>
                 </li>
                 <li>
-                  <a href="/tags/bootstrap.html">bootstrap (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
-                </li>
-                <li>
-                  <a href="/tags/meteor.html">meteor (1)</a>
+                  <a href="/tags/deutsch.html">deutsch (1)</a>
                 </li>
               </ul>
             </li>
@@ -159,13 +159,13 @@
          <li>Actions: What actions you will allow of a dedicated AWS service.</li> 
          <li>Resources: Which resources you allow the action on.</li> 
          <li>Effect: What the effect will be when the user requests access - either allow or deny.<br></li> 
-        </ul> </li> 
+        </ul></li> 
        <li><strong><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id.html">IAM Identities</a></strong>,which are the identities for which a formally documented policies can be allocated to. An identity can be<br> 
         <ul> 
          <li>An <strong>IAM user</strong> is an entity that you create in AWS. The IAM user represents the person or service who uses the IAM user to interact with AWS.<br></li> 
          <li>An <strong>IAM group</strong> is a collection of IAM users. You can use groups to specify permissions for a collection of users, which can make those permissions easier to manage for those users.<br></li> 
          <li>An <strong>IAM role</strong> is very similar to a user, in that it is an identity with permission policies that determine what the identity can and cannot do in AWS. However, a role does not have any credentials (password or access keys) associated with it. Instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it.</li> 
-        </ul> </li> 
+        </ul></li> 
        <li>KMS Encryption Key, which is a AWS managed and controlled encryption key provided as part of the AWS Key Management System</li> 
        <li>EC2 Key Pair, which allows you to establish a SSH remote connection to your EB instance.</li> 
       </ul> 
@@ -206,14 +206,14 @@
         We create a policy which is globally defined and can be integrated in any microservice EB environment. 
       </div> 
       <ul> 
-       <li>We call it <i><span style="">TST.EB.serviceRolePolicy</span></i></li> 
+       <li>We call it <em><span style="">TST.EB.serviceRolePolicy</span></em></li> 
        <li>The <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance">link</a>, will explain the policy document content</li> 
       </ul> 
       <div>
         Having done that we create now a Service Role. We decide here to define a role on a microservice level to be flexible for the future. 
       </div> 
       <ul> 
-       <li>We call it <i><span style="">tst.&lt;microserviceName&gt;Service</span></i></li> 
+       <li>We call it <em><span style="">tst.&lt;microserviceName&gt;Service</span></em></li> 
        <li>We attach the policy to the role</li> 
       </ul> 
       <div> 
@@ -245,7 +245,7 @@
         We create policy which is which is globally defined and can be integrated in any microservice EB environment. 
       </div> 
       <ul> 
-       <li>We call it <i><span style="">TST.EB.instanceProfilePolicy</span></i><br></li> 
+       <li>We call it <em><span style="">TST.EB.instanceProfilePolicy</span></em><br></li> 
        <li>The <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance">link</a>, will explain the policy document content, it will contain policies for<br> 
         <ul> 
          <li>Write logs to Amazon Simple Storage Service</li> 
@@ -253,13 +253,13 @@
          <li>In worker environments, read from an Amazon Simple Queue Service (Amazon SQS) queue</li> 
          <li>In worker environments, perform leader election with Amazon DynamoDB</li> 
          <li>In worker environments, publish instance health metrics to Amazon CloudWatch</li> 
-        </ul> </li> 
+        </ul></li> 
       </ul> 
       <div>
         Having done that we create now a Instance Profile Role. We decide here to define a role on a microservice level to be flexible for the future. 
       </div> 
       <ul> 
-       <li>We call it <i><span style="">tst.&lt;microserviceName&gt;</span></i></li> 
+       <li>We call it <em><span style="">tst.&lt;microserviceName&gt;</span></em></li> 
        <li>We attach the Instance Profile default policy to the role</li> 
       </ul> 
       <div> 
@@ -312,9 +312,9 @@
   <div class="article"><p><span/> 
   </div> 
   <div> 
-   <br> In case you are automating the environment creation process with the help of the 
+   <br>In case you are automating the environment creation process with the help of the 
    <a href="https://aws.amazon.com/cli/">AWS Command Line Interface</a> (CLI) you should include the following option settings, which are passed as part of the 
-   <i>-<span style="">-option-settings</span></i> parameter 
+   <em>-<span style="">-option-settings</span></em> parameter 
   </div> 
   <div> 
    <br> 
@@ -322,15 +322,15 @@
   <div></p>
 <pre class="highlight json"><code><span class="w">
 </span><span class="p">{</span><span class="w"> 
- </span><span class="s2">"Namespace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aws:autoscaling:launchconfiguration"</span><span class="p">,</span><span class="w"> 
+</span><span class="s2">"Namespace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aws:autoscaling:launchconfiguration"</span><span class="p">,</span><span class="w"> 
   </span><span class="s2">"OptionName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IamInstanceProfile"</span><span class="p">,</span><span class="w"> 
   </span><span class="s2">"Value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tst.curationPlatform"</span><span class="w"> 
   </span><span class="p">}</span><span class="err">,</span><span class="w"> 
- </span><span class="p">{</span><span class="w"> 
- </span><span class="s2">"Namespace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aws:elasticbeanstalk:environment"</span><span class="p">,</span><span class="w"> 
- </span><span class="s2">"OptionName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ServiceRole"</span><span class="p">,</span><span class="w"> 
- </span><span class="s2">"Value"</span><span class="p">:</span><span class="w"> </span><span class="err">„tst.curationPlatformService"</span><span class="w"> 
- </span><span class="p">}</span><span class="err">,</span><span class="w"> 
+</span><span class="p">{</span><span class="w"> 
+</span><span class="s2">"Namespace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aws:elasticbeanstalk:environment"</span><span class="p">,</span><span class="w"> 
+</span><span class="s2">"OptionName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ServiceRole"</span><span class="p">,</span><span class="w"> 
+</span><span class="s2">"Value"</span><span class="p">:</span><span class="w"> </span><span class="err">„tst.curationPlatformService"</span><span class="w"> 
+</span><span class="p">}</span><span class="err">,</span><span class="w"> 
 
 
 </span></code></pre>
@@ -340,10 +340,10 @@
    <br> 
   </div> 
   <div> 
-   <span style="font-size: 18px;"><b>KMS Encryption Key</b></span> 
+   <span style="font-size: 18px;"><strong>KMS Encryption Key</strong></span> 
   </div> 
   <div> 
-   <b><span style="font-size: 18px;"><br></span></b> 
+   <strong><span style="font-size: 18px;"><br></span></strong> 
   </div> 
   <div>
     Beside the two roles, we will define an Encryption Key provided by the 
@@ -366,20 +366,20 @@
   </div> 
   <div>
     So we will call our key 
-   <span style=""><i>tst_ms_&lt;microserviceName&gt;</i>.</span> 
+   <span style=""><em>tst_ms_&lt;microserviceName&gt;</em>.</span> 
   </div> 
   <div> 
    <span style=""><br></span> 
   </div> 
   <div>
     As a key user(s) we assign the role of 
-   <i><span style="">tst.curationPlatform</span></i>, i.e. our Elastic Beanstalk Microservice will be able to encrypt and decrypt sensitive data at rest (= in our S3 buckets). 
+   <em><span style="">tst.curationPlatform</span></em>, i.e. our Elastic Beanstalk Microservice will be able to encrypt and decrypt sensitive data at rest (= in our S3 buckets). 
   </div> 
   <div> 
    <br> 
   </div> 
   <div> 
-   <b><span style="font-size: 18px;">EC2 Key Pair to Enable Remote Login</span></b> 
+   <strong><span style="font-size: 18px;">EC2 Key Pair to Enable Remote Login</span></strong> 
   </div> 
   <div> 
    <br> 
@@ -478,43 +478,37 @@
             </h4>
             <ul class="list-unstyled">
               <li>
-                <a href="/tags/startup.html">startup</a> (8)
-              </li>
-              <li>
                 <a href="/tags/quicktips.html">quicktips</a> (12)
               </li>
               <li>
-                <a href="/tags/deutsch.html">deutsch</a> (1)
+                <a href="/tags/bootstrap.html">bootstrap</a> (1)
               </li>
               <li>
-                <a href="/tags/microservice.html">microservice</a> (11)
+                <a href="/tags/docker.html">docker</a> (8)
               </li>
               <li>
                 <a href="/tags/aws.html">aws</a> (9)
               </li>
               <li>
-                <a href="/tags/futurework.html">futureWork</a> (5)
+                <a href="/tags/smallhints.html">smallhints</a> (11)
               </li>
               <li>
-                <a href="/tags/shift.html">shift</a> (4)
+                <a href="/tags/microservice.html">microservice</a> (11)
+              </li>
+              <li>
+                <a href="/tags/inspiration.html">inspiration</a> (2)
+              </li>
+              <li>
+                <a href="/tags/legal.html">legal</a> (1)
+              </li>
+              <li>
+                <a href="/tags/futurework.html">futureWork</a> (5)
               </li>
               <li>
                 <a href="/tags/architecture.html">architecture</a> (8)
               </li>
               <li>
-                <a href="/tags/personaldata.html">personalData</a> (2)
-              </li>
-              <li>
-                <a href="/tags/api.html">api</a> (2)
-              </li>
-              <li>
-                <a href="/tags/smallhints.html">smallhints</a> (11)
-              </li>
-              <li>
-                <a href="/tags/grails.html">grails</a> (2)
-              </li>
-              <li>
-                <a href="/tags/docker.html">docker</a> (8)
+                <a href="/tags/startup.html">startup</a> (8)
               </li>
               <li>
                 <a href="/tags/gradle.html">gradle</a> (2)
@@ -526,19 +520,25 @@
                 <a href="/tags/banking.html">banking</a> (1)
               </li>
               <li>
-                <a href="/tags/legal.html">legal</a> (1)
+                <a href="/tags/personaldata.html">personalData</a> (2)
+              </li>
+              <li>
+                <a href="/tags/api.html">api</a> (2)
+              </li>
+              <li>
+                <a href="/tags/meteor.html">meteor</a> (1)
+              </li>
+              <li>
+                <a href="/tags/grails.html">grails</a> (2)
+              </li>
+              <li>
+                <a href="/tags/shift.html">shift</a> (4)
               </li>
               <li>
                 <a href="/tags/googleapps.html">googleapps</a> (1)
               </li>
               <li>
-                <a href="/tags/bootstrap.html">bootstrap</a> (1)
-              </li>
-              <li>
-                <a href="/tags/inspiration.html">inspiration</a> (2)
-              </li>
-              <li>
-                <a href="/tags/meteor.html">meteor</a> (1)
+                <a href="/tags/deutsch.html">deutsch</a> (1)
               </li>
             </ul>
           </div>
