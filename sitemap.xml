@@ -374,7 +374,7 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net//2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</loc>
-    <lastmod>2016-01-08</lastmod>
+    <lastmod>2016-02-27</lastmod>
     <priority>0.7</priority>
     <changefreq>daily</changefreq>
   </url>
@@ -969,6 +969,30 @@
   <url>
     <loc>https://dev.cloudburo.net//2014/01/05.html</loc>
     <lastmod>2016-01-08</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//page/2/</loc>
+    <lastmod>2016-02-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//page/3/</loc>
+    <lastmod>2016-02-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//page/4/</loc>
+    <lastmod>2016-02-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//page/5/</loc>
+    <lastmod>2016-02-27</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
