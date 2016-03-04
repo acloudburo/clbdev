@@ -5,10 +5,109 @@
   <id>https://dev.cloudburo.net/</id>
   <link href="https://dev.cloudburo.net/"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2015-12-20T17:48:53Z</updated>
+  <updated>2016-03-04T06:38:48Z</updated>
   <author>
     <name>Felix Kuestahler</name>
   </author>
+  <entry>
+    <title>Rodrigue Schaefer : From monolith to microservices at Zalanod</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalanod.html"/>
+    <id>https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalanod.html</id>
+    <published>2016-03-04T06:38:48Z</published>
+    <updated>2016-03-04T06:38:50+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        At the 
+       &lt;a href="http://microxchg.io/2016/index.html"&gt;Microxchg 2016&lt;/a&gt; conference in Berlin, Rodrigue Schaefer did an interesting presentation how they introduced microservices at Zalando. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Main driver was an organisational change centred around autonomy of teams. As he stated 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        - We want Autonomous team to deliver amazing products efficiently at scale 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        - We want them to be independent, without having to look left and right 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        By changing the organisation, the tech landscape of applications tied into a monolith architecture didn&amp;rsquo;t fit anymore. Team autonomy results in a change of the landscape to Microservices. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        It means also a shift from Control to Trust. He coined the term &amp;ldquo;Radical Agility&amp;rdquo;, a concept which is based on three principles glued together by trust. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/a9e22bc1b3a4936e8a2f01d31d245e50.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        - 
+       &lt;b&gt;Autonomy&lt;/b&gt;, a team can define its own delivery process or tech stack. A team is cross-functional and can do everything from having an idea, developing it, testing and deploying it, bringing it live and operating it. It has full control over its delivery (DevOps) 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        - 
+       &lt;b&gt;Purpose&lt;/b&gt;, means to give the team something so everyone goes in a similar direction (the company wants at that time). By having a clear purpose of each team, there is a strategic alignment. 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        - 
+       &lt;b&gt;Mastery&lt;/b&gt;, means to give the engineers a chance to get better in an area where they want to get better. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        He mentioned an interesting detail about a change in process, which is common in today&amp;rsquo;s large organisations. Using of shared libraries across different microservices were banned. A ll teams are forced to open source and play by the company established rules. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Finally, testing services across teams is done by a cross-functional business assurance unit. 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        Check out the full speech here 
+      &lt;/div&gt; 
+      &lt;div&gt; 
+       &lt;br&gt; 
+      &lt;/div&gt; 
+      &lt;div&gt;
+        &amp;lt;youtube&amp;gt;I9zpROdDf48&amp;lt;/youtube&amp;gt; 
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="http://www.infoq.com/news/2016/02/Monolith-Microservices-Zalando?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>The Anatomy of a EB based Microservice - AWS Security Configuration</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
@@ -645,120 +744,6 @@ sudo pip install awscli --ignore-installed
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;i&gt;&lt;span style="font-size: 12px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/i&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style="font-size: 12px;"&gt;&lt;i&gt;By the way, this blog is fully managed by the &lt;a href="https://cloudburo.net/docs/products.html"&gt;Cloudburo Curation Platform&lt;/a&gt; which helps you to establish your content online presence via a highly optimized and easy workflow driven out of Evernote’s One Workspace solution. Ideally suited for startups, small and medium enterprises (SME) in facilitating their content marketing strategy.&lt;/i&gt;&lt;/span&gt; 
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Micro-Business Quick Tips #5 - Using Product Canvas to create and define new Products</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"/>
-    <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html</id>
-    <published>2015-10-01T07:26:35Z</published>
-    <updated>2016-01-08T22:23:48+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        This is the 
-       &lt;b&gt;second article&lt;/b&gt; out of a series how to bootstrap your company to sell a first product. 
-      &lt;/div&gt; 
-      &lt;ol&gt; 
-       &lt;li&gt;First article introduces &amp;ldquo;&lt;a href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"&gt;Visualizing your Business Model with Canvas&lt;/a&gt;&amp;rdquo;&lt;/li&gt; 
-       &lt;li&gt;Second article will cover &amp;ldquo;&lt;a href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"&gt;Using Product Canvas to create and define new Products&lt;/a&gt;&amp;rdquo;&lt;/li&gt; 
-       &lt;li&gt;Third article introduces “&lt;a href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"&gt;The Business Model Canvas Playground for Free&lt;/a&gt;&amp;ldquo;&lt;/li&gt; 
-      &lt;/ol&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Ok, I assume as a brand-new startup-founder, you followed the steps, as outlined in 
-       &lt;a href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"&gt;Quick Tip #4&lt;/a&gt; and worked out - potentially iteratively with multiple business model prototype sessions - your target business model by using the Canvas Visualizing Approach. You should have a basic understanding about your target business model be it from a value proposition-, a customer segment, a sales channel point of view or any other of the 9 building blocks topics. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        It’s time now to focus on your first product or service you will offer and starting shaping out the details. Also here - as with Alexander Osterwalder and his Business Model Canvas - a Swiss guy called Roman Pichler, worked out a visualized Canvas based approach, simply called „ 
-       &lt;a href="http://www.romanpichler.com/tools/product-canvas/"&gt;Product Canvas&lt;/a&gt;“. It’s a more Product-/Design focused approach which complements quite well with the Business Model Canvas. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Simply said, it help product owners (you) and his team to create new products and brings together the key pieces of information necessary for a new product creation and describes 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;the users and customer with their needs&lt;/li&gt; 
-       &lt;li&gt;the products functionality and design as well as &lt;/li&gt; 
-       &lt;li&gt;the user interaction.&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Again a collaborative tool, which helps teams to capture more easily ideas, identify problems and helping in the design and shaping out the product. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The 
-       &lt;a href="http://www.romanpichler.com/blog/the-product-canvas/"&gt;Roman Pichler’s blog article will give you a step by step introduction to the Product Canvas Approach&lt;/a&gt;. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The following Canvas Samples (as published on Roman Pichler’s blog, all the credits goes to him) is an excellent sample, how a Canvas (for a Dance App) could look like 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/43d1f8c478f9dae97463a61c72ae46a5.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The 
-       &lt;a href="http://www.romanpichler.com/tools/product-canvas/"&gt;Product Canvas Template can be downloaded&lt;/a&gt; from Roman Pichler’s Web page. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        If you are new to the approach I propose that you walk through the tutorial 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt; 
-      &lt;div&gt;
-        &lt;iframe src="//www.slideshare.net/slideshow/embed_code/key/43UsRPRpkIUL6X" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt; &lt;strong&gt; &lt;a href="//www.slideshare.net/romanpichler/the-product-canvas-tutorial-v10" title="The Product Canvas Tutorial V1.0" target="_blank"&gt;The Product Canvas Tutorial V1.0&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="//www.slideshare.net/romanpichler" target="_blank"&gt;Roman Pichler&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        That’s it for today, in the next quick tip I will introduce a tool which allows you to sketch out Business Model- as well as Product Canvas electronically. Not always the best approach (a flip-board with a A0 paper and people assembled around may be more efficient) but it can be used in a day2day manner in case you are working on some new product definitions. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;span style="font-size: 12px;"&gt;&lt;i&gt;By the way, this blog is fully managed by the &lt;a href="https://cloudburo.net/docs/products.html"&gt;Cloudburo Curation Platform&lt;/a&gt; which helps you to establish your content online presence via a highly optimized and easy workflow driven out of Evernote’s One Workspace solution. Ideally suited for startups, small and medium enterprises (SME) in facilitating their content marketing strategy.&lt;/i&gt;&lt;/span&gt; 
