@@ -10,11 +10,11 @@
     <name>Felix Kuestahler</name>
   </author>
   <entry>
-    <title>Rodrigue Schaefer : From monolith to microservices at Zalanod</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalanod.html"/>
-    <id>https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalanod.html</id>
+    <title>Rodrigue Schaefer : From monolith to microservices at Zalando</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
+    <id>https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
     <published>2016-03-04T06:38:48Z</published>
-    <updated>2016-03-04T06:38:50+00:00</updated>
+    <updated>2016-03-04T07:04:55+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -100,7 +100,7 @@
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        &amp;lt;youtube&amp;gt;I9zpROdDf48&amp;lt;/youtube&amp;gt; 
+        &lt;div class="responsive-video"&gt;&lt;iframe src="https://www.youtube.com/embed/I9zpROdDf48?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; 
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://www.infoq.com/news/2016/02/Monolith-Microservices-Zalando?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;

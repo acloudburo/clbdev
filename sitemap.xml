@@ -307,12 +307,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net//2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalanod.html</loc>
-    <lastmod>2016-03-04</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net//2015/03/15/microservice-competencies-by-martin-fowler.html</loc>
     <lastmod>2016-01-08</lastmod>
     <priority>0.7</priority>
@@ -435,6 +429,12 @@
   <url>
     <loc>https://dev.cloudburo.net//2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</loc>
     <lastmod>2016-01-08</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net//2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</loc>
+    <lastmod>2016-03-04</lastmod>
     <priority>0.7</priority>
     <changefreq>daily</changefreq>
   </url>
