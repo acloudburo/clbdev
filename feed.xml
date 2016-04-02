@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>dev@cloudburo</title>
-  <subtitle>Cloudburo Developer Blog</subtitle>
-  <id>https://dev.cloudburo.net/</id>
-  <link href="https://dev.cloudburo.net/"/>
-  <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
+  <subtitle></subtitle>
+  <id>https://clbdev.dev.cloudburo.net</id>
+  <link href="https://clbdev.dev.cloudburo.net"/>
+  <link href="https://clbdev.dev.cloudburo.net/feed.xml" rel="self"/>
   <updated>2016-03-04T06:38:48Z</updated>
   <author>
-    <name>Felix Kuestahler</name>
+    <name>Felix Küstahler</name>
   </author>
   <entry>
     <title>Rodrigue Schaefer : From monolith to microservices at Zalando</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
-    <id>https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
+    <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
+    <id>https://clbdev.dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
     <published>2016-03-04T06:38:48Z</published>
-    <updated>2016-03-19T10:02:56+00:00</updated>
+    <updated>2016-04-02T14:23:10+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -117,10 +117,10 @@
   </entry>
   <entry>
     <title>The Anatomy of a EB based Microservice - AWS Security Configuration</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
-    <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
+    <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
+    <id>https://clbdev.dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
     <published>2015-12-20T17:48:53Z</published>
-    <updated>2016-02-27T11:17:54+00:00</updated>
+    <updated>2016-04-02T14:23:10+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -402,10 +402,10 @@
   </entry>
   <entry>
     <title>Problems with AWS CLI on Mac OSX El Capitan</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
-    <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
+    <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
+    <id>https://clbdev.dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
     <published>2015-11-15T12:07:50Z</published>
-    <updated>2016-01-08T22:23:48+00:00</updated>
+    <updated>2016-04-02T14:23:10+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -453,10 +453,10 @@ sudo pip install awscli --ignore-installed
   </entry>
   <entry>
     <title>DMARC: How to monitor and secure your email</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html"/>
-    <id>https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html</id>
+    <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html"/>
+    <id>https://clbdev.dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html</id>
     <published>2015-11-07T10:47:46Z</published>
-    <updated>2016-01-08T22:23:48+00:00</updated>
+    <updated>2016-04-02T14:23:10+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -488,10 +488,10 @@ sudo pip install awscli --ignore-installed
   </entry>
   <entry>
     <title>Meteor Small Hints #1: Execute a function by name which works on client and server</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html"/>
-    <id>https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html</id>
+    <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html"/>
+    <id>https://clbdev.dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html</id>
     <published>2015-10-03T12:07:50Z</published>
-    <updated>2016-01-08T22:23:48+00:00</updated>
+    <updated>2016-04-02T14:23:10+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -657,10 +657,10 @@ sudo pip install awscli --ignore-installed
   </entry>
   <entry>
     <title>Micro-Business Quick Tips #6 - The Business Model Canvas Playground for Free</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"/>
-    <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html</id>
+    <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"/>
+    <id>https://clbdev.dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html</id>
     <published>2015-10-01T08:42:00Z</published>
-    <updated>2016-01-08T22:23:48+00:00</updated>
+    <updated>2016-04-02T14:23:10+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>

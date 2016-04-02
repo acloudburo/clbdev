@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://dev.cloudburo.net//sitemap.xml
+Sitemap: https://clbdev.dev.cloudburo.net/sitemap.xml
