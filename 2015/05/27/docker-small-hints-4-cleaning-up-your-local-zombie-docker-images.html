@@ -143,10 +143,11 @@
    <div> 
     <br> 
    </div> 
-   <div></p>
+  </div> 
+  <div></p>
 <pre class="highlight shell"><code>
   docker ps -a -q | xargs -n 1 docker rm 
-  docker images -q --filter <span class="s2">"dangling=true"</span> | xargs docker rmi 
+   docker images -q --filter <span class="s2">"dangling=true"</span> | xargs docker rmi 
   docker images 
 
 </code></pre>
