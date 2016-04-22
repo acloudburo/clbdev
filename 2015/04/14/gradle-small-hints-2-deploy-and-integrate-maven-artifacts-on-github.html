@@ -209,18 +209,18 @@
   </div> 
   <div></p>
 <pre class="highlight plaintext"><code>
-publishing {
-   publications {
-     maven(MavenPublication) {
-       groupId "com.cloudburo" 
-       artifactId 'clb-gradleTask' 
-       version '1.0.1-SNAPSHOT' 
-       from components.java
-     }
-   }
-   repositories {
-     maven { url "/Users/Felix/Development/workspace-grails/clb_mvnrepo_snapshots" }
-   } 
+  publishing { 
+    publications { 
+      maven(MavenPublication) { 
+        groupId "com.cloudburo" 
+        artifactId 'clb-gradleTask' 
+        version '1.0.1-SNAPSHOT' 
+        from components.java 
+      } 
+    } 
+    repositories { 
+      maven { url "/Users/Felix/Development/workspace-grails/clb_mvnrepo_snapshots"} 
+    } 
   } 
 
 </code></pre>
@@ -229,7 +229,10 @@ publishing {
    <br> 
   </div> 
 
-<p><div>
+<p><div> 
+   <br> 
+  </div> 
+  <div>
     Depending on the version number of 
    <i><b><span style="">1.1.0</span></b></i> or 
    <i><b><span style="">1.1.0-SNAPSHOT</span></b></i> configure the publishing configuration for the 
@@ -253,7 +256,7 @@ publishing {
   <div> 
    <br> 
   </div> 
-  <div style=""> 
+  <div style=" color: rgb(44, 62, 80); background-color: rgb(255, 255, 255);"> 
    <div> 
     <span style="font-size: 24px;"><b>Integrate Released Artifacts</b></span> 
    </div> 
@@ -269,7 +272,7 @@ publishing {
    </div> 
    <div></p>
 <pre class="highlight plaintext"><code>
-repositories { 
+  repositories { 
     mavenCentral() 
     maven { url 'https://github.com/talfco/clb_mvnrepo/raw/snapshots' } 
   } 
@@ -285,11 +288,11 @@ repositories {
    </div> 
   </div> 
   <div> 
-   <div style=""> 
+   <div style=" color: rgb(44, 62, 80); background-color: rgb(255, 255, 255);"> 
     <br style=""> 
    </div> 
   </div> 
-  <div style=" font-size: 18px;"> 
+  <div style=" font-size: 18px; background-color: rgb(255, 255, 255);"> 
    <div> 
     <span style="font-size: 24px;"><br></span> 
    </div> 
