@@ -557,100 +557,117 @@ sudo pip install awscli --ignore-installed
     <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html"/>
     <id>https://clbdev.dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html</id>
     <published>2015-10-03T12:07:50Z</published>
-    <updated>2016-04-22T13:04:49+00:00</updated>
+    <updated>2016-04-24T00:00:47+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
   &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
     Calling a function by name in Meteor gave me at the beginning some headache concerning the passed context. 
-   &lt;br&gt;I.e.  the helper function which manages the 
+   &lt;br&gt; I.e.  the helper function which manages the 
    &lt;i&gt;function by name&lt;/i&gt; execution, must work on the client, as well as server side, due to the fact that a Meteor method may be configured for both sides. 
    &lt;br&gt;&lt;br&gt;
-   &lt;br&gt;In my code I have a configuration object which has as an attribute initfunc, which defines a function which should be called in an initalization process. 
-   &lt;div&gt; 
-    &lt;br&gt; 
-   &lt;/div&gt;
-&amp;ldquo;`&lt;br&gt;
-   &lt;br&gt;{&lt;br&gt;
-   &lt;br&gt;      name: &amp;lsquo;SiteName&amp;rsquo;&lt;br&gt;
-   &lt;br&gt;      type: &amp;lsquo;singleton&amp;rsquo; 
-   &lt;br&gt;      singletonSpace: &amp;lsquo;sitename&amp;rsquo;&lt;br&gt;
-   &lt;br&gt;      initfunc: &amp;lsquo;Extension.getSiteName&amp;rsquo; 
-   &lt;br&gt; } 
-   &lt;br&gt;&amp;lt;/code&amp;gt; 
-   &lt;div&gt; 
-    &lt;br&gt; &lt;/p&gt;
+  &lt;/div&gt; 
+  &lt;div&gt;
+    In my code I have a configuration object which has as an attribute initfunc, which defines a function which should be called in an initalization process. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="w"&gt;
+  &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;  
+       &lt;/span&gt;&lt;span class="err"&gt;name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;'SiteName'&lt;/span&gt;&lt;span class="w"&gt;  
+       &lt;/span&gt;&lt;span class="err"&gt;type:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;'singleton'&lt;/span&gt;&lt;span class="w"&gt; 
+       &lt;/span&gt;&lt;span class="err"&gt;singletonSpace:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;'sitename'&lt;/span&gt;&lt;span class="w"&gt;  
+       &lt;/span&gt;&lt;span class="err"&gt;initfunc:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;'Extension.getSiteName'&lt;/span&gt;&lt;span class="w"&gt; 
+   &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
 
-&lt;p&gt;&lt;code&gt; coffee 
-getDefaultFeatureValue: (name) -&amp;gt; 
-    configFeature = this.getConfigFeature name 
-    if configFeature.initfunc != undefined 
-         Plattform.executeFunctionByName configFeature.initfunc window 
-    else 
-          configFeature.init &lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;&amp;lt;div&amp;gt; 
-    &amp;lt;br&amp;gt; 
-   &amp;lt;/div&amp;gt;As one can see I pass to the executeFunctionByName the function name, as well as the global window variable as context. The execute function is looking like that. 
-   &amp;lt;div&amp;gt; 
-    &amp;lt;br&amp;gt; 
-   &amp;lt;/div&amp;gt;
-```  coffee 
-   &amp;lt;br&amp;gt;executeFunctionByName : (functionName, context) -&amp;amp;gt; 
-   &amp;lt;br&amp;gt;     args = Array::slice.call(arguments, 2) 
-   &amp;lt;br&amp;gt;     namespaces = functionName.split('.') 
-   &amp;lt;br&amp;gt;     func = namespaces.pop() 
-   &amp;lt;br&amp;gt;     i = 0 
-   &amp;lt;br&amp;gt;     while i &amp;amp;lt; namespaces.length 
-   &amp;lt;br&amp;gt;            context = context[namespaces[i]] 
-   &amp;lt;br&amp;gt;             i++ 
-   &amp;lt;br&amp;gt;     value = context[func].apply context, args 
-   &amp;lt;br&amp;gt;     return value 
-   &amp;lt;br&amp;gt;&amp;amp;lt;/code&amp;amp;gt;  
-   &amp;lt;div&amp;gt; 
-    &amp;lt;br&amp;gt; 
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
+&lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
 
-The problem was that the global variable window is only defined on the browser. The variable isn’t available in the NodeJS server part and you have to use the global variable.  
-
-&amp;lt;code&amp;gt; coffee 
-Plattform.executeFunctionByName configFeature.initfunc global 
+&lt;p&gt;&lt;div&gt;
+    The initfunc will be used in the following method call, e.g. 
+  &lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;br&gt; 
+  &lt;/div&gt; 
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
+  &lt;span class="na"&gt;getDefaultFeatureValue&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
+     &lt;span class="nx"&gt;configFeature&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;getConfigFeature&lt;/span&gt; &lt;span class="nx"&gt;name&lt;/span&gt; 
+     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;configFeature&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;initfunc&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="no"&gt;undefined&lt;/span&gt; 
+          &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;executeFunctionByName&lt;/span&gt; &lt;span class="nx"&gt;configFeature&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;initfunc&lt;/span&gt; &lt;span class="nb"&gt;window&lt;/span&gt; 
+     &lt;span class="k"&gt;else&lt;/span&gt; 
+            &lt;span class="nx"&gt;configFeature&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;init&lt;/span&gt; 
 
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;div&gt; 
-    &lt;br&gt; 
-   &lt;/div&gt;I extended the code, so that the caller may not provide the context (in case he wants to call the function in a global context). The function itself will look then for a global context (the typeof code part in the beginning) 
    &lt;div&gt; 
     &lt;br&gt; 
-   &lt;/div&gt;
-&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;    &lt;span class="na"&gt;executeFunctionByName&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;functionName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;typeof&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;'undefined'&lt;/span&gt; 
-   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;        &lt;span class="k"&gt;if&lt;/span&gt;  &lt;span class="k"&gt;typeof&lt;/span&gt; &lt;span class="nx"&gt;global&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;'undefined'&lt;/span&gt; 
-   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;          &lt;span class="nx"&gt;context&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;window&lt;/span&gt; 
-   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;        &lt;span class="k"&gt;else&lt;/span&gt; 
-   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;          &lt;span class="nx"&gt;context&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;global&lt;/span&gt; 
+   &lt;/div&gt; As one can see I pass to the executeFunctionByName the function name, as well as the global window variable as context. The execute function is looking like that. 
+   &lt;div&gt; 
+    &lt;br&gt; 
+   &lt;/div&gt; 
+&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="na"&gt;executeFunctionByName&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;functionName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
    &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;      &lt;span class="nx"&gt;args&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="na"&gt;Array&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="nx"&gt;slice&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;arguments&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
    &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;      &lt;span class="nx"&gt;namespaces&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;functionName&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'.'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
    &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;      &lt;span class="nx"&gt;func&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;namespaces&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;pop&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
    &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;      &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; 
    &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;      &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;namespaces&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;length&lt;/span&gt; 
-   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;        &lt;span class="nx"&gt;context&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;namespaces&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; 
-   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;        &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;             &lt;span class="nx"&gt;context&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;namespaces&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;              &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt; 
    &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;      &lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;func&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="na"&gt;apply&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;args&lt;/span&gt; 
    &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt; 
-   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;code&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;  
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;code&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;  
    &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;div&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; 
     &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; 
 
 
-&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;code&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nx"&gt;coffee&lt;/span&gt; 
-&lt;span class="na"&gt;getDefaultFeatureValue&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-    &lt;span class="nx"&gt;configFeature&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;getConfigFeature&lt;/span&gt; &lt;span class="nx"&gt;name&lt;/span&gt; 
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;configFeature&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;initfunc&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="no"&gt;undefined&lt;/span&gt; 
-      &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;executeFunctionByName&lt;/span&gt; &lt;span class="nx"&gt;configFeature&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;initfunc&lt;/span&gt;  
-    &lt;span class="k"&gt;else&lt;/span&gt; 
-      &lt;span class="nx"&gt;configFeature&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;init&lt;/span&gt; 
+ &lt;span class="nx"&gt;The&lt;/span&gt; &lt;span class="nx"&gt;problem&lt;/span&gt; &lt;span class="nx"&gt;was&lt;/span&gt; &lt;span class="nx"&gt;that&lt;/span&gt; &lt;span class="nx"&gt;the&lt;/span&gt; &lt;span class="nx"&gt;global&lt;/span&gt; &lt;span class="nx"&gt;variable&lt;/span&gt; &lt;span class="nb"&gt;window&lt;/span&gt; &lt;span class="o"&gt;is&lt;/span&gt; &lt;span class="nx"&gt;only&lt;/span&gt; &lt;span class="nx"&gt;defined&lt;/span&gt; &lt;span class="no"&gt;on&lt;/span&gt; &lt;span class="nx"&gt;the&lt;/span&gt; &lt;span class="nx"&gt;browser&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="na"&gt;The&lt;/span&gt; &lt;span class="nx"&gt;variable&lt;/span&gt; &lt;span class="nx"&gt;isn&lt;/span&gt;&lt;span class="err"&gt;’&lt;/span&gt;&lt;span class="nx"&gt;t&lt;/span&gt; &lt;span class="nx"&gt;available&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;the&lt;/span&gt; &lt;span class="nx"&gt;NodeJS&lt;/span&gt; &lt;span class="nx"&gt;server&lt;/span&gt; &lt;span class="nx"&gt;part&lt;/span&gt; &lt;span class="o"&gt;and&lt;/span&gt; &lt;span class="nx"&gt;you&lt;/span&gt; &lt;span class="nx"&gt;have&lt;/span&gt; &lt;span class="nx"&gt;to&lt;/span&gt; &lt;span class="nx"&gt;use&lt;/span&gt; &lt;span class="nx"&gt;the&lt;/span&gt; &lt;span class="nx"&gt;global&lt;/span&gt; &lt;span class="nx"&gt;variable&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;  
+
+ &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;code&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nx"&gt;coffee&lt;/span&gt; 
+ &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;executeFunctionByName&lt;/span&gt; &lt;span class="nx"&gt;configFeature&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;initfunc&lt;/span&gt; &lt;span class="nx"&gt;global&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt; 
+    &lt;br&gt; 
+   &lt;/div&gt; I extended the code, so that the caller may not provide the context (in case he wants to call the function in a global context). The function itself will look then for a global context (the typeof code part in the beginning) 
+   &lt;div&gt; 
+    &lt;br&gt; 
+   &lt;/div&gt; 
+&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;     &lt;span class="na"&gt;executeFunctionByName&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;functionName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;       &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;typeof&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;'undefined'&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;         &lt;span class="k"&gt;if&lt;/span&gt;  &lt;span class="k"&gt;typeof&lt;/span&gt; &lt;span class="nx"&gt;global&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;'undefined'&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;           &lt;span class="nx"&gt;context&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;window&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;         &lt;span class="k"&gt;else&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;           &lt;span class="nx"&gt;context&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;global&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;       &lt;span class="nx"&gt;args&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="na"&gt;Array&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="nx"&gt;slice&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;arguments&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;       &lt;span class="nx"&gt;namespaces&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;functionName&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'.'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;       &lt;span class="nx"&gt;func&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;namespaces&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;pop&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;       &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;       &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="nx"&gt;namespaces&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;length&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;         &lt;span class="nx"&gt;context&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;namespaces&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;         &lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;       &lt;span class="nx"&gt;value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;func&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="na"&gt;apply&lt;/span&gt; &lt;span class="nx"&gt;context&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;args&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;       &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;value&lt;/span&gt; 
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;lt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;code&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="nx"&gt;gt&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;  
+   &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;div&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; 
+    &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;br&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; 
+
+
+ &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;code&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nx"&gt;coffee&lt;/span&gt; 
+ &lt;span class="na"&gt;getDefaultFeatureValue&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
+     &lt;span class="nx"&gt;configFeature&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;getConfigFeature&lt;/span&gt; &lt;span class="nx"&gt;name&lt;/span&gt; 
+     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;configFeature&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;initfunc&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="no"&gt;undefined&lt;/span&gt; 
+       &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;executeFunctionByName&lt;/span&gt; &lt;span class="nx"&gt;configFeature&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;initfunc&lt;/span&gt;  
+     &lt;span class="k"&gt;else&lt;/span&gt; 
+       &lt;span class="nx"&gt;configFeature&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;init&lt;/span&gt; 
 
 &lt;/code&gt;&lt;/pre&gt;
 

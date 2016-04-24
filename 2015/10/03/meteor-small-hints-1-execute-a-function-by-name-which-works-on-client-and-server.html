@@ -138,93 +138,110 @@
           <hr /><div class="row">
   <div class="article"><p><span/>      <div>
     Calling a function by name in Meteor gave me at the beginning some headache concerning the passed context. 
-   <br>I.e.  the helper function which manages the 
+   <br> I.e.  the helper function which manages the 
    <i>function by name</i> execution, must work on the client, as well as server side, due to the fact that a Meteor method may be configured for both sides. 
    <br><br>
-   <br>In my code I have a configuration object which has as an attribute initfunc, which defines a function which should be called in an initalization process. 
-   <div> 
-    <br> 
-   </div>
-&ldquo;`<br>
-   <br>{<br>
-   <br>      name: &lsquo;SiteName&rsquo;<br>
-   <br>      type: &lsquo;singleton&rsquo; 
-   <br>      singletonSpace: &lsquo;sitename&rsquo;<br>
-   <br>      initfunc: &lsquo;Extension.getSiteName&rsquo; 
-   <br> } 
-   <br>&lt;/code&gt; 
-   <div> 
-    <br> </p>
+  </div> 
+  <div>
+    In my code I have a configuration object which has as an attribute initfunc, which defines a function which should be called in an initalization process. 
+  </div> 
+  <div> 
+   <br> 
+  </div> 
+  <div></p>
+<pre class="highlight json"><code><span class="w">
+  </span><span class="p">{</span><span class="w">  
+       </span><span class="err">name</span><span class="p">:</span><span class="w"> </span><span class="err">'SiteName'</span><span class="w">  
+       </span><span class="err">type:</span><span class="w"> </span><span class="err">'singleton'</span><span class="w"> 
+       </span><span class="err">singletonSpace:</span><span class="w"> </span><span class="err">'sitename'</span><span class="w">  
+       </span><span class="err">initfunc:</span><span class="w"> </span><span class="err">'Extension.getSiteName'</span><span class="w"> 
+   </span><span class="p">}</span><span class="w"> 
 
-<p><code> coffee 
-getDefaultFeatureValue: (name) -&gt; 
-    configFeature = this.getConfigFeature name 
-    if configFeature.initfunc != undefined 
-         Plattform.executeFunctionByName configFeature.initfunc window 
-    else 
-          configFeature.init </p>
-<pre class="highlight plaintext"><code>&lt;div&gt; 
-    &lt;br&gt; 
-   &lt;/div&gt;As one can see I pass to the executeFunctionByName the function name, as well as the global window variable as context. The execute function is looking like that. 
-   &lt;div&gt; 
-    &lt;br&gt; 
-   &lt;/div&gt;
-```  coffee 
-   &lt;br&gt;executeFunctionByName : (functionName, context) -&amp;gt; 
-   &lt;br&gt;     args = Array::slice.call(arguments, 2) 
-   &lt;br&gt;     namespaces = functionName.split('.') 
-   &lt;br&gt;     func = namespaces.pop() 
-   &lt;br&gt;     i = 0 
-   &lt;br&gt;     while i &amp;lt; namespaces.length 
-   &lt;br&gt;            context = context[namespaces[i]] 
-   &lt;br&gt;             i++ 
-   &lt;br&gt;     value = context[func].apply context, args 
-   &lt;br&gt;     return value 
-   &lt;br&gt;&amp;lt;/code&amp;gt;  
-   &lt;div&gt; 
-    &lt;br&gt; 
+</span></code></pre>
 
+<div> 
+   <br> 
+  </div> 
 
-The problem was that the global variable window is only defined on the browser. The variable isn’t available in the NodeJS server part and you have to use the global variable.  
-
-&lt;code&gt; coffee 
-Plattform.executeFunctionByName configFeature.initfunc global 
+<p><div>
+    The initfunc will be used in the following method call, e.g. 
+  </div> 
+  <div> 
+   <br> 
+  </div> 
+  <div></p>
+<pre class="highlight coffeescript"><code>
+  <span class="na">getDefaultFeatureValue</span><span class="o">:</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="o">-&gt;</span> 
+     <span class="nx">configFeature</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">getConfigFeature</span> <span class="nx">name</span> 
+     <span class="k">if</span> <span class="nx">configFeature</span><span class="p">.</span><span class="na">initfunc</span> <span class="o">!=</span> <span class="no">undefined</span> 
+          <span class="nx">Plattform</span><span class="p">.</span><span class="na">executeFunctionByName</span> <span class="nx">configFeature</span><span class="p">.</span><span class="na">initfunc</span> <span class="nb">window</span> 
+     <span class="k">else</span> 
+            <span class="nx">configFeature</span><span class="p">.</span><span class="na">init</span> 
 
 </code></pre>
 
 <div> 
-    <br> 
-   </div>I extended the code, so that the caller may not provide the context (in case he wants to call the function in a global context). The function itself will look then for a global context (the typeof code part in the beginning) 
    <div> 
     <br> 
-   </div>
-<pre class="highlight coffeescript"><code>   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>    <span class="na">executeFunctionByName</span> <span class="o">:</span> <span class="p">(</span><span class="nx">functionName</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span> 
-   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>      <span class="k">if</span> <span class="k">typeof</span> <span class="nx">context</span> <span class="o">==</span> <span class="s">'undefined'</span> 
-   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>        <span class="k">if</span>  <span class="k">typeof</span> <span class="nx">global</span> <span class="o">==</span> <span class="s">'undefined'</span> 
-   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>          <span class="nx">context</span> <span class="o">=</span> <span class="nb">window</span> 
-   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>        <span class="k">else</span> 
-   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>          <span class="nx">context</span> <span class="o">=</span> <span class="nx">global</span> 
+   </div> As one can see I pass to the executeFunctionByName the function name, as well as the global window variable as context. The execute function is looking like that. 
+   <div> 
+    <br> 
+   </div> 
+<pre class="highlight coffeescript"><code>   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span> <span class="na">executeFunctionByName</span> <span class="o">:</span> <span class="p">(</span><span class="nx">functionName</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span> 
    <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>      <span class="nx">args</span> <span class="o">=</span> <span class="na">Array</span><span class="o">::</span><span class="nx">slice</span><span class="p">.</span><span class="na">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> 
    <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>      <span class="nx">namespaces</span> <span class="o">=</span> <span class="nx">functionName</span><span class="p">.</span><span class="na">split</span><span class="p">(</span><span class="s">'.'</span><span class="p">)</span> 
    <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>      <span class="nx">func</span> <span class="o">=</span> <span class="nx">namespaces</span><span class="p">.</span><span class="na">pop</span><span class="p">()</span> 
    <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>      <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span> 
    <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>      <span class="k">while</span> <span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">namespaces</span><span class="p">.</span><span class="na">length</span> 
-   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>        <span class="nx">context</span> <span class="o">=</span> <span class="nx">context</span><span class="p">[</span><span class="nx">namespaces</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> 
-   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>        <span class="nx">i</span><span class="o">++</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>             <span class="nx">context</span> <span class="o">=</span> <span class="nx">context</span><span class="p">[</span><span class="nx">namespaces</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>              <span class="nx">i</span><span class="o">++</span> 
    <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>      <span class="nx">value</span> <span class="o">=</span> <span class="nx">context</span><span class="p">[</span><span class="nx">func</span><span class="p">].</span><span class="na">apply</span> <span class="nx">context</span><span class="p">,</span> <span class="nx">args</span> 
    <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>      <span class="k">return</span> <span class="nx">value</span> 
-   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">/</span><span class="nx">code</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span>  
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">/</span><span class="nx">code</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span>  
    <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span> 
     <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span> 
 
 
-<span class="o">&lt;</span><span class="nx">code</span><span class="o">&gt;</span> <span class="nx">coffee</span> 
-<span class="na">getDefaultFeatureValue</span><span class="o">:</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="o">-&gt;</span> 
-    <span class="nx">configFeature</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">getConfigFeature</span> <span class="nx">name</span> 
-    <span class="k">if</span> <span class="nx">configFeature</span><span class="p">.</span><span class="na">initfunc</span> <span class="o">!=</span> <span class="no">undefined</span> 
-      <span class="nx">Plattform</span><span class="p">.</span><span class="na">executeFunctionByName</span> <span class="nx">configFeature</span><span class="p">.</span><span class="na">initfunc</span>  
-    <span class="k">else</span> 
-      <span class="nx">configFeature</span><span class="p">.</span><span class="na">init</span> 
+ <span class="nx">The</span> <span class="nx">problem</span> <span class="nx">was</span> <span class="nx">that</span> <span class="nx">the</span> <span class="nx">global</span> <span class="nx">variable</span> <span class="nb">window</span> <span class="o">is</span> <span class="nx">only</span> <span class="nx">defined</span> <span class="no">on</span> <span class="nx">the</span> <span class="nx">browser</span><span class="p">.</span> <span class="na">The</span> <span class="nx">variable</span> <span class="nx">isn</span><span class="err">’</span><span class="nx">t</span> <span class="nx">available</span> <span class="k">in</span> <span class="nx">the</span> <span class="nx">NodeJS</span> <span class="nx">server</span> <span class="nx">part</span> <span class="o">and</span> <span class="nx">you</span> <span class="nx">have</span> <span class="nx">to</span> <span class="nx">use</span> <span class="nx">the</span> <span class="nx">global</span> <span class="nx">variable</span><span class="p">.</span>  
+
+ <span class="o">&lt;</span><span class="nx">code</span><span class="o">&gt;</span> <span class="nx">coffee</span> 
+ <span class="nx">Plattform</span><span class="p">.</span><span class="na">executeFunctionByName</span> <span class="nx">configFeature</span><span class="p">.</span><span class="na">initfunc</span> <span class="nx">global</span> 
+
+</code></pre>
+
+<div> 
+    <br> 
+   </div> I extended the code, so that the caller may not provide the context (in case he wants to call the function in a global context). The function itself will look then for a global context (the typeof code part in the beginning) 
+   <div> 
+    <br> 
+   </div> 
+<pre class="highlight coffeescript"><code>   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>     <span class="na">executeFunctionByName</span> <span class="o">:</span> <span class="p">(</span><span class="nx">functionName</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="o">-&amp;</span><span class="nx">gt</span><span class="p">;</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>       <span class="k">if</span> <span class="k">typeof</span> <span class="nx">context</span> <span class="o">==</span> <span class="s">'undefined'</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>         <span class="k">if</span>  <span class="k">typeof</span> <span class="nx">global</span> <span class="o">==</span> <span class="s">'undefined'</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>           <span class="nx">context</span> <span class="o">=</span> <span class="nb">window</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>         <span class="k">else</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>           <span class="nx">context</span> <span class="o">=</span> <span class="nx">global</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>       <span class="nx">args</span> <span class="o">=</span> <span class="na">Array</span><span class="o">::</span><span class="nx">slice</span><span class="p">.</span><span class="na">call</span><span class="p">(</span><span class="nx">arguments</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>       <span class="nx">namespaces</span> <span class="o">=</span> <span class="nx">functionName</span><span class="p">.</span><span class="na">split</span><span class="p">(</span><span class="s">'.'</span><span class="p">)</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>       <span class="nx">func</span> <span class="o">=</span> <span class="nx">namespaces</span><span class="p">.</span><span class="na">pop</span><span class="p">()</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>       <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>       <span class="k">while</span> <span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">namespaces</span><span class="p">.</span><span class="na">length</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>         <span class="nx">context</span> <span class="o">=</span> <span class="nx">context</span><span class="p">[</span><span class="nx">namespaces</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>         <span class="nx">i</span><span class="o">++</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>       <span class="nx">value</span> <span class="o">=</span> <span class="nx">context</span><span class="p">[</span><span class="nx">func</span><span class="p">].</span><span class="na">apply</span> <span class="nx">context</span><span class="p">,</span> <span class="nx">args</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>       <span class="k">return</span> <span class="nx">value</span> 
+   <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">/</span><span class="nx">code</span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span>  
+   <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span> 
+    <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span> 
+
+
+ <span class="o">&lt;</span><span class="nx">code</span><span class="o">&gt;</span> <span class="nx">coffee</span> 
+ <span class="na">getDefaultFeatureValue</span><span class="o">:</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="o">-&gt;</span> 
+     <span class="nx">configFeature</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">getConfigFeature</span> <span class="nx">name</span> 
+     <span class="k">if</span> <span class="nx">configFeature</span><span class="p">.</span><span class="na">initfunc</span> <span class="o">!=</span> <span class="no">undefined</span> 
+       <span class="nx">Plattform</span><span class="p">.</span><span class="na">executeFunctionByName</span> <span class="nx">configFeature</span><span class="p">.</span><span class="na">initfunc</span>  
+     <span class="k">else</span> 
+       <span class="nx">configFeature</span><span class="p">.</span><span class="na">init</span> 
 
 </code></pre>
 
