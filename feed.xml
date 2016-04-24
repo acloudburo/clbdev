@@ -14,12 +14,11 @@
     <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
     <id>https://clbdev.dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
     <published>2016-04-24T13:06:12Z</published>
-    <updated>2016-04-24T13:06:14+00:00</updated>
+    <updated>2016-04-24T14:16:27+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/c3e6af765a9f71b2d13940d2498d83b2.png" /&gt;
   &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
     This is a condensed tutorial which was initially described in 
    &lt;a href="https://github.com/meteor-useraccounts/core/issues/95"&gt;here&lt;/a&gt;. 
@@ -35,7 +34,7 @@
   &lt;/div&gt; 
   &lt;div&gt;
     This requires that I can provide to the signup route an additional parameter 
-   &lt;span style=""&gt;reg_code&lt;/span&gt;, which will store the information for which product the new user wants to subscribe. 
+   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;, which will store the information for which product the new user wants to subscribe. 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; 
@@ -48,9 +47,9 @@
   &lt;/div&gt; 
   &lt;div&gt;
     First extend the 
-   &lt;span style=""&gt;AccountsTemplates&lt;/span&gt; configuration in the 
-   &lt;span style=""&gt;both&lt;/span&gt; directory with the 
-   &lt;span style=""&gt;AccountsTemplates.addField&lt;/span&gt; operation, for example 
+   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;AccountsTemplates&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; configuration in the 
+   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;both&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; directory with the 
+   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;AccountsTemplates.addField&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; operation, for example 
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; 
@@ -109,6 +108,7 @@
   &lt;div&gt;&lt;/p&gt;
 
   &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/c3e6af765a9f71b2d13940d2498d83b2.png" /&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt; 
       &lt;/div&gt; 
@@ -116,8 +116,8 @@
        &lt;br&gt; 
       &lt;/div&gt; 
       &lt;div&gt;
-        As well as an hidden form element 
-       &lt;span style=""&gt;at-field-reg_code&lt;/span&gt;. 
+        The form will have as well a hidden form element 
+       &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;at-field-reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
@@ -125,7 +125,7 @@
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/7a4c3b62df8868c9d36e31d5bb552dd1.png" /&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/7a4c3b62df8868c9d36e31d5bb552dd1.png" /&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt; 
       &lt;/div&gt; 
@@ -141,7 +141,7 @@
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/4e4a66ef39a30f5f84571124f134d700.png" /&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/4e4a66ef39a30f5f84571124f134d700.png" /&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt; 
       &lt;/div&gt; 
@@ -150,7 +150,7 @@
       &lt;/div&gt; 
       &lt;div&gt;
         An can be easily retrieved via 
-       &lt;span style=""&gt;Meteor.user().profile.reg_code&lt;/span&gt; for further processing. 
+       &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;Meteor.user().profile.reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; for further processing. 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
