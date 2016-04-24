@@ -481,6 +481,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://clbdev.dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</loc>
+    <lastmod>2016-04-24</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://clbdev.dev.cloudburo.net/tags/personaldata.html</loc>
     <lastmod>2016-04-22</lastmod>
     <priority>0.9</priority>
@@ -616,6 +622,12 @@
     <loc>https://clbdev.dev.cloudburo.net/2016/04.html</loc>
     <lastmod>2016-04-22</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://clbdev.dev.cloudburo.net/2016/04/24.html</loc>
+    <lastmod>2016-04-22</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -1036,6 +1048,12 @@
     <loc>https://clbdev.dev.cloudburo.net/page/5/</loc>
     <lastmod>2016-04-22</lastmod>
     <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://clbdev.dev.cloudburo.net/tags/smallhints/page/2.html</loc>
+    <lastmod>2016-04-22</lastmod>
+    <priority>0.7</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
