@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
     <id>https://clbdev.dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
     <published>2016-05-12T21:14:14Z</published>
-    <updated>2016-05-12T21:14:17+00:00</updated>
+    <updated>2016-05-12T23:08:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -73,9 +73,7 @@
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;a data-toggle="lightbox" href="/images/fa1f9d80fa3e99cfd43cb10f08f2fd30.png
-"&gt;&lt;img class="img-responsive img-thumbnail article" src="/images/tb-fa1f9d80fa3e99cfd43cb10f08f2fd30.png
-" /&gt;&lt;/a&gt;
+  &lt;a data-toggle="lightbox" href="/images/fa1f9d80fa3e99cfd43cb10f08f2fd30.png"&gt;&lt;img class="img-responsive img-thumbnail article" src="/images/tb-fa1f9d80fa3e99cfd43cb10f08f2fd30.png" /&gt;&lt;/a&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div&gt;
@@ -110,9 +108,7 @@
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;a data-toggle="lightbox" href="/images/f1cc61e5c345dcb0403a760325cfe237.png
-"&gt;&lt;img class="img-responsive img-thumbnail article" src="/images/tb-f1cc61e5c345dcb0403a760325cfe237.png
-" /&gt;&lt;/a&gt;
+  &lt;a data-toggle="lightbox" href="/images/f1cc61e5c345dcb0403a760325cfe237.png"&gt;&lt;img class="img-responsive img-thumbnail article" src="/images/tb-f1cc61e5c345dcb0403a760325cfe237.png" /&gt;&lt;/a&gt;
   &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -262,7 +258,7 @@
     <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
     <id>https://clbdev.dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
     <published>2016-04-24T13:06:12Z</published>
-    <updated>2016-05-10T21:36:51+00:00</updated>
+    <updated>2016-05-12T23:08:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -415,7 +411,7 @@
     <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html"/>
     <id>https://clbdev.dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html</id>
     <published>2016-04-21T22:49:36Z</published>
-    <updated>2016-05-10T21:36:51+00:00</updated>
+    <updated>2016-05-12T23:08:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -481,7 +477,7 @@
     <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
     <id>https://clbdev.dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
     <published>2016-03-04T06:38:48Z</published>
-    <updated>2016-05-10T21:36:51+00:00</updated>
+    <updated>2016-05-12T23:08:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -587,7 +583,7 @@
     <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
     <id>https://clbdev.dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
     <published>2015-12-20T17:48:53Z</published>
-    <updated>2016-05-10T21:36:51+00:00</updated>
+    <updated>2016-05-12T23:08:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -872,7 +868,7 @@
     <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
     <id>https://clbdev.dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
     <published>2015-11-15T12:07:50Z</published>
-    <updated>2016-05-10T21:36:51+00:00</updated>
+    <updated>2016-05-12T23:08:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
