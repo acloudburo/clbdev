@@ -5,10 +5,60 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2016-05-12T21:14:14Z</updated>
+  <updated>2016-05-13T23:04:33Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>How We Built an Ecommerce Business from Scratch and Generated $922.16 in Revenue in 3 Days</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
+    <id>https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html</id>
+    <published>2016-05-13T23:04:33Z</published>
+    <updated>2016-05-13T23:04:34+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;      Shopify has an execellent blog when it comes down to tips for startups or micro enterprises. There advices are always very practical oriented.&lt;br/&gt;
+    &lt;br/&gt;
+    Richard Lazazzera presented a nice article “how build an ecommerce business from scratch and see how many sales we could generate in three days”.&lt;br/&gt;
+    &lt;br/&gt;
+    For many entrepreneurs, building their first business can be intimidating. There’s seemingly hundreds of steps, choices and paths to get to the finish line of just launching your business, let alone generating traffic and sales. Richard outlines and describes the following steps in detail:&lt;br/&gt;
+    &lt;br/&gt;
+    Getting Started In most cases, it takes some money to make money.&lt;br/&gt;
+    What Should We Sell?&lt;br/&gt;
+    Determining an Ecommerce Business Model &lt;br/&gt;
+    Finding a High Quality Dropshipper&lt;br/&gt;
+    Broadening Our Product Supplier Search Terms&lt;br/&gt;
+    Ordering a Sample Product to Verify Product&lt;br/&gt;
+    Determining Product Pricing &lt;br/&gt;
+    Creating and Designing a Brand Keeping&lt;br/&gt;
+    Deciding On a Business Name&lt;br/&gt;
+    Designing a Logo That was Simple and Effective&lt;br/&gt;
+    Creating Product Logo&lt;br/&gt;
+    Taking the Product Photography with Our Smartphones&lt;br/&gt;
+    Setting Up Our Shopify Store&lt;br/&gt;
+    Setting up the Product Page&lt;br/&gt;
+    Sales Channels and Marketing Strategies&lt;br/&gt;
+    Personal Outreach to Friends and Family&lt;br/&gt;
+    Product Hunt&lt;br/&gt;
+    Reddit&lt;br/&gt;
+    Instagram&lt;br/&gt;
+    Pinterest&lt;br/&gt;
+    Facebook Paid Advertising&lt;br/&gt;
+    Twitter&lt;br/&gt;
+    Marketing Channel Results - Overview&lt;br/&gt;
+    Overall Setup and Marketing Expenses&lt;br/&gt;
+    Conclusion&lt;br/&gt;
+    An astonishing list of activities and findings. Especially the sections about the various Sales Channels and their effectiveness is helpful when you establishing your own business.&lt;br/&gt;
+    &lt;br/&gt;
+    You can find the complete article here:&lt;br/&gt;
+    &lt;a href="https://www.shopify.com/blog/34526469-how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-in-3-days"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>The Anatomy of a EB based Microservice - Github Docker Integration</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
@@ -857,57 +907,6 @@
   &lt;/div&gt; 
   &lt;div&gt; 
    &lt;br&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt;&lt;/p&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Problems with AWS CLI on Mac OSX El Capitan</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
-    <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
-    <published>2015-11-15T12:07:50Z</published>
-    <updated>2016-05-13T12:36:24+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    There are various problem reported with AWS CLI on El Capitan. For example I got problems with the s3 command (as well as the EB CLI). 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    The quickest way is to reinstall the awscli with the option —ignore-installed 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-sudo pip install awscli --ignore-installed 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    That’s it and fixed my problem. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
    &lt;br&gt; 
   &lt;/div&gt;&lt;/p&gt;
 
