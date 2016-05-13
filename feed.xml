@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
     <id>https://clbdev.dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
     <published>2016-05-12T21:14:14Z</published>
-    <updated>2016-05-12T23:08:29+00:00</updated>
+    <updated>2016-05-13T06:01:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -73,7 +73,7 @@
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;a data-toggle="lightbox" href="/images/fa1f9d80fa3e99cfd43cb10f08f2fd30.png"&gt;&lt;img class="img-responsive img-thumbnail article" src="/images/tb-fa1f9d80fa3e99cfd43cb10f08f2fd30.png" /&gt;&lt;/a&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/fa1f9d80fa3e99cfd43cb10f08f2fd30.png" /&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div&gt;
@@ -108,7 +108,7 @@
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;a data-toggle="lightbox" href="/images/f1cc61e5c345dcb0403a760325cfe237.png"&gt;&lt;img class="img-responsive img-thumbnail article" src="/images/tb-f1cc61e5c345dcb0403a760325cfe237.png" /&gt;&lt;/a&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/f1cc61e5c345dcb0403a760325cfe237.png" /&gt;
   &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -150,8 +150,8 @@
 &lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="w"&gt;
   &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
         &lt;/span&gt;&lt;span class="s2"&gt;"https://index.docker.io/v1/"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-                &lt;/span&gt;&lt;span class="s2"&gt;"auth"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;“myauth&lt;/span&gt;&lt;span class="mi"&gt;1245&lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;", 
-                "&lt;/span&gt;&lt;span class="err"&gt;email&lt;/span&gt;&lt;span class="s2"&gt;": “myemail@gmail.com"&lt;/span&gt;&lt;span class="w"&gt; 
+                &lt;/span&gt;&lt;span class="s2"&gt;"auth"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"myauth1245="&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+                &lt;/span&gt;&lt;span class="s2"&gt;"email"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"myemail@gmail.com"&lt;/span&gt;&lt;span class="w"&gt; 
         &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
   &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
 
@@ -182,7 +182,7 @@
   &lt;div&gt;&lt;/p&gt;
 &lt;pre class="highlight plaintext"&gt;&lt;code&gt;
     "Authentication": { 
-      "Bucket": “clb.ms.common.us-west-2", 
+      "Bucket": "clb.ms.common.us-west-2", 
       "Key": "credentials.json" 
     }, 
 
@@ -222,11 +222,11 @@
   &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
     &lt;/span&gt;&lt;span class="s2"&gt;"AWSEBDockerrunVersion"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"1"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
     &lt;/span&gt;&lt;span class="s2"&gt;"Authentication"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="s2"&gt;"Bucket"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;“tst.ms.common.us-west&lt;/span&gt;&lt;span class="mi"&gt;-2&lt;/span&gt;&lt;span class="s2"&gt;", 
-      "&lt;/span&gt;&lt;span class="err"&gt;Key&lt;/span&gt;&lt;span class="s2"&gt;": "&lt;/span&gt;&lt;span class="err"&gt;credentials.json&lt;/span&gt;&lt;span class="s2"&gt;" 
-    }, 
-    "&lt;/span&gt;&lt;span class="err"&gt;Image&lt;/span&gt;&lt;span class="s2"&gt;": { 
-      "&lt;/span&gt;&lt;span class="err"&gt;Name&lt;/span&gt;&lt;span class="s2"&gt;": “dockerhubusername/curationplatform:v1.0.2"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+      &lt;/span&gt;&lt;span class="s2"&gt;"Bucket"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"tst.ms.common.us-west-2"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
+      &lt;/span&gt;&lt;span class="s2"&gt;"Key"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"credentials.json"&lt;/span&gt;&lt;span class="w"&gt; 
+    &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="w"&gt; 
+    &lt;/span&gt;&lt;span class="s2"&gt;"Image"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
+      &lt;/span&gt;&lt;span class="s2"&gt;"Name"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"dockerhubusername/curationplatform:v1.0.2"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
       &lt;/span&gt;&lt;span class="s2"&gt;"Update"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"false"&lt;/span&gt;&lt;span class="w"&gt; 
     &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="w"&gt; 
     &lt;/span&gt;&lt;span class="s2"&gt;"Volumes"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt; 
