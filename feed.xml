@@ -2,19 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>dev@cloudburo</title>
   <subtitle></subtitle>
-  <id>https://clbdev.dev.cloudburo.net</id>
-  <link href="https://clbdev.dev.cloudburo.net"/>
-  <link href="https://clbdev.dev.cloudburo.net/feed.xml" rel="self"/>
+  <id>https://dev.cloudburo.net</id>
+  <link href="https://dev.cloudburo.net"/>
+  <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
   <updated>2016-05-12T21:14:14Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
   <entry>
     <title>The Anatomy of a EB based Microservice - Github Docker Integration</title>
-    <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
-    <id>https://clbdev.dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
+    <id>https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
     <published>2016-05-12T21:14:14Z</published>
-    <updated>2016-05-13T08:29:17+00:00</updated>
+    <updated>2016-05-13T12:36:24+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -255,10 +255,10 @@
   </entry>
   <entry>
     <title>Meteor Small Hints #3: Passing Query Parameters to Signup Route</title>
-    <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
-    <id>https://clbdev.dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
+    <id>https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
     <published>2016-04-24T13:06:12Z</published>
-    <updated>2016-05-12T23:08:06+00:00</updated>
+    <updated>2016-05-13T12:36:24+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -408,10 +408,10 @@
   </entry>
   <entry>
     <title>Meteor Small Hints #2: Calling local methods in a Template</title>
-    <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html"/>
-    <id>https://clbdev.dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html</id>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html"/>
+    <id>https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html</id>
     <published>2016-04-21T22:49:36Z</published>
-    <updated>2016-05-12T23:08:06+00:00</updated>
+    <updated>2016-05-13T12:36:24+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -474,10 +474,10 @@
   </entry>
   <entry>
     <title>Rodrigue Schaefer : From monolith to microservices at Zalando</title>
-    <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
-    <id>https://clbdev.dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
+    <id>https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
     <published>2016-03-04T06:38:48Z</published>
-    <updated>2016-05-12T23:08:06+00:00</updated>
+    <updated>2016-05-13T12:36:24+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -580,10 +580,10 @@
   </entry>
   <entry>
     <title>The Anatomy of a EB based Microservice - AWS Security Configuration</title>
-    <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
-    <id>https://clbdev.dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
+    <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
     <published>2015-12-20T17:48:53Z</published>
-    <updated>2016-05-12T23:08:06+00:00</updated>
+    <updated>2016-05-13T12:36:24+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -865,10 +865,10 @@
   </entry>
   <entry>
     <title>Problems with AWS CLI on Mac OSX El Capitan</title>
-    <link rel="alternate" href="https://clbdev.dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
-    <id>https://clbdev.dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
+    <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
     <published>2015-11-15T12:07:50Z</published>
-    <updated>2016-05-12T23:08:06+00:00</updated>
+    <updated>2016-05-13T12:36:24+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
