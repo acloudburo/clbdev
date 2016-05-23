@@ -5,10 +5,129 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2016-05-13T23:04:33Z</updated>
+  <updated>2016-05-23T17:03:55Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Meteor Small Hints #4: Reading this.params values in the iron-router Data Context</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html"/>
+    <id>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</id>
+    <published>2016-05-23T17:03:55Z</published>
+    <updated>2016-05-23T17:03:56+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
+   &lt;a href="http://iron-meteor.github.io/iron-router"&gt;Iron-router&lt;/a&gt; is a powerful Meteor router that works on the server and browser. 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    In this article we describe how you can read out a query parameter via the data context of the iron-router, which then can be processed later in the  template. In the below example we have outsourced the routing logic for
+   &lt;i&gt;/dashboard&lt;/i&gt; to an iron-router controller file.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
+  &lt;span class="nx"&gt;Router&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;route&lt;/span&gt; &lt;span class="s"&gt;'/dashboard'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"dashboard"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;controller&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'DashboardController'&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    In the URL call we will pass in a query parameter, e.g.
+   &lt;a href="https://bots.cloudburo.net/dashboard?regCode=%E2%80%9CT@myProductName"&gt;&lt;a href="https://bots.cloudburo.net/dashboard?regCode=%E2%80%9CT@myProductName"&gt;https://bots.cloudburo.net/dashboard?regCode=“T@myProductName&lt;/a&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Now in order to retrieve this query parameter - via the
+   &lt;i&gt;this.params&lt;/i&gt; object - in the iron-router data context,
+   &lt;u&gt;&lt;b&gt;you have to use for the data assignment a function&lt;/b&gt;&lt;/u&gt;
+   &lt;i&gt;.&lt;/i&gt;  Trying it without a function call the this.params will not be returned. This took m quite some time to figure out, I always tried it with direct assignment in the data section.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
+  &lt;span class="nx"&gt;exports&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;DashboardController&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;AppController&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;extend&lt;/span&gt; 
+
+
+    &lt;span class="na"&gt;waitOn&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
+      &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;subscribe&lt;/span&gt; &lt;span class="s"&gt;'userData'&lt;/span&gt; 
+      &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;subscribe&lt;/span&gt; &lt;span class="s"&gt;'productTypes'&lt;/span&gt; 
+      &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;subscribe&lt;/span&gt; &lt;span class="s"&gt;'products'&lt;/span&gt; 
+      &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;subscribe&lt;/span&gt; &lt;span class="s"&gt;'productAdmins'&lt;/span&gt; 
+
+
+    &lt;span class="c1"&gt;# Use a function to allocate the data context, when you require this.params values 
+&lt;/span&gt;    &lt;span class="na"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;query&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;query&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regCode&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; 
+        &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Dashboard Controller called with "&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;query&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regCode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+        &lt;span class="nx"&gt;regC&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;query&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regCode&lt;/span&gt; 
+      &lt;span class="k"&gt;else&lt;/span&gt; 
+        &lt;span class="nx"&gt;regC&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;undefined&lt;/span&gt; 
+      &lt;span class="nx"&gt;templateData&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 
+        &lt;span class="na"&gt;productTypes&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;ProductTypes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;find&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
+        &lt;span class="na"&gt;productAdmins&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;ProductAdmins&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;find&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
+        &lt;span class="na"&gt;currencySymbol&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;getCurrencySymbol&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
+        &lt;span class="na"&gt;products&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;Products&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;find&lt;/span&gt;&lt;span class="p"&gt;({})&lt;/span&gt; 
+        &lt;span class="na"&gt;regCode&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;regC&lt;/span&gt; 
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;templateData&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    In the template itself I can reference directly the
+   &lt;i&gt;regCode&lt;/i&gt; value
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
+  &lt;span class="nx"&gt;Template&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;dashboard&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;rendered&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
+      &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;debug&lt;/span&gt; &lt;span class="s"&gt;"Template.dashboard.rendered"&lt;/span&gt; 
+      &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'.statusicon'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="na"&gt;tooltip&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt; 
+      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regCode&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; 
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;Products&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;find&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="na"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="na"&gt;length&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; 
+          &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"A new client from subscriber page - regCode: "&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regCode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+          &lt;span class="nx"&gt;splits&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regCode&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"@"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+          &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;splits&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;length&lt;/span&gt;  &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; 
+            &lt;span class="nx"&gt;productType&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;ProductTypes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;findOne&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;splits&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; 
+            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;productType&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; 
+              &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;splits&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;"T"&lt;/span&gt; 
+                &lt;span class="nx"&gt;testProduct&lt;/span&gt; &lt;span class="nx"&gt;productType&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;_id&lt;/span&gt; 
+              &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;splits&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;"S"&lt;/span&gt; 
+                &lt;span class="nx"&gt;buyProduct&lt;/span&gt; &lt;span class="nx"&gt;productType&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;_id&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 11px;"&gt;&lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>How We Built an Ecommerce Business from Scratch and Generated $922.16 in Revenue in 3 Days</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
@@ -658,291 +777,6 @@
     
     &lt;p&gt;&lt;a href="http://www.infoq.com/news/2016/02/Monolith-Microservices-Zalando?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>The Anatomy of a EB based Microservice - AWS Security Configuration</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
-    <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
-    <published>2015-12-20T17:48:53Z</published>
-    <updated>2016-05-13T12:36:24+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-        Our microservice(s) will be managed by the 
-       &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html?console_help=true"&gt;AWS Elastic Beanstalk&lt;/a&gt; Docker service. With Elastic Beanstalk, you can quickly deploy and manage applications in the AWS cloud without worrying about the infrastructure that runs those applications. AWS Elastic Beanstalk reduces management complexity without restricting choice or control. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Nevertheless quite some configuration is still required, which should be standardized in order to allow to automate these steps. One aspect to consider is the Security configuration of your EB instances which are steering the mircoservices. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Standardize the necessary roles and policies from the beginning (amongst other by using a naming scheme) which will help you during the automation of the tasks. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        It&amp;rsquo;s important that you understand the major concepts in context of the AWS Identity and Access Management (IAM capability): 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;&lt;strong&gt;&lt;a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html"&gt;IAM Policies&lt;/a&gt;,&lt;/strong&gt; which are documents that formally states on or more permissions. In its most basic sense a policy lets you specify 
-        &lt;ul&gt; 
-         &lt;li&gt;Actions: What actions you will allow of a dedicated AWS service.&lt;/li&gt; 
-         &lt;li&gt;Resources: Which resources you allow the action on.&lt;/li&gt; 
-         &lt;li&gt;Effect: What the effect will be when the user requests access - either allow or deny.&lt;br&gt;&lt;/li&gt; 
-        &lt;/ul&gt;&lt;/li&gt; 
-       &lt;li&gt;&lt;strong&gt;&lt;a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id.html"&gt;IAM Identities&lt;/a&gt;&lt;/strong&gt;,which are the identities for which a formally documented policies can be allocated to. An identity can be&lt;br&gt; 
-        &lt;ul&gt; 
-         &lt;li&gt;An &lt;strong&gt;IAM user&lt;/strong&gt; is an entity that you create in AWS. The IAM user represents the person or service who uses the IAM user to interact with AWS.&lt;br&gt;&lt;/li&gt; 
-         &lt;li&gt;An &lt;strong&gt;IAM group&lt;/strong&gt; is a collection of IAM users. You can use groups to specify permissions for a collection of users, which can make those permissions easier to manage for those users.&lt;br&gt;&lt;/li&gt; 
-         &lt;li&gt;An &lt;strong&gt;IAM role&lt;/strong&gt; is very similar to a user, in that it is an identity with permission policies that determine what the identity can and cannot do in AWS. However, a role does not have any credentials (password or access keys) associated with it. Instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it.&lt;/li&gt; 
-        &lt;/ul&gt;&lt;/li&gt; 
-       &lt;li&gt;KMS Encryption Key, which is a AWS managed and controlled encryption key provided as part of the AWS Key Management System&lt;/li&gt; 
-       &lt;li&gt;EC2 Key Pair, which allows you to establish a SSH remote connection to your EB instance.&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style="font-size: 18px;"&gt;&lt;strong&gt;EB required IAM roles&lt;/strong&gt;&lt;/span&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        An EB environment requires two 
-       &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;IAM roles&lt;/a&gt; for correct functioning. These are 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;EB Service Role&lt;/li&gt; 
-       &lt;li&gt;EB Instance Profile Role&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;strong&gt;Service Role&lt;/strong&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        A Service Role grants the EB instance access to use other AWS services on your behalf. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        We create a policy which is globally defined and can be integrated in any microservice EB environment. 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;We call it &lt;em&gt;&lt;span style=""&gt;TST.EB.serviceRolePolicy&lt;/span&gt;&lt;/em&gt;&lt;/li&gt; 
-       &lt;li&gt;The &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;link&lt;/a&gt;, will explain the policy document content&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt;
-        Having done that we create now a Service Role. We decide here to define a role on a microservice level to be flexible for the future. 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;We call it &lt;em&gt;&lt;span style=""&gt;tst.&amp;lt;microserviceName&amp;gt;Service&lt;/span&gt;&lt;/em&gt;&lt;/li&gt; 
-       &lt;li&gt;We attach the policy to the role&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/f8d95ed7ff125aa60aba4aa0236d5b45.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;strong&gt;Instance Profile Role&lt;/strong&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        An Instance Profile Role grants the EB instance permission to call AWS services for features including enhanced health reporting and container management. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        We create policy which is which is globally defined and can be integrated in any microservice EB environment. 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;We call it &lt;em&gt;&lt;span style=""&gt;TST.EB.instanceProfilePolicy&lt;/span&gt;&lt;/em&gt;&lt;br&gt;&lt;/li&gt; 
-       &lt;li&gt;The &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;link&lt;/a&gt;, will explain the policy document content, it will contain policies for&lt;br&gt; 
-        &lt;ul&gt; 
-         &lt;li&gt;Write logs to Amazon Simple Storage Service&lt;/li&gt; 
-         &lt;li&gt;Coordinate container deployments with Amazon EC2 Container Service in multicontainer Docker environments&lt;/li&gt; 
-         &lt;li&gt;In worker environments, read from an Amazon Simple Queue Service (Amazon SQS) queue&lt;/li&gt; 
-         &lt;li&gt;In worker environments, perform leader election with Amazon DynamoDB&lt;/li&gt; 
-         &lt;li&gt;In worker environments, publish instance health metrics to Amazon CloudWatch&lt;/li&gt; 
-        &lt;/ul&gt;&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt;
-        Having done that we create now a Instance Profile Role. We decide here to define a role on a microservice level to be flexible for the future. 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;We call it &lt;em&gt;&lt;span style=""&gt;tst.&amp;lt;microserviceName&amp;gt;&lt;/span&gt;&lt;/em&gt;&lt;/li&gt; 
-       &lt;li&gt;We attach the Instance Profile default policy to the role&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/7e0fc0c501d8124e474caa2e8f0836e8.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;div&gt;
-         So now we have defined two roles with the necessary policies, which must be configured to our EB environment template which is used as a configuration for each EB instance. 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt;
-         Each instance created by EB will have this IAM roles allocated and obviously your IAM Roles will have multiple policies attached dependent on your microservice integration into the AWS ecosystem. 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;strong&gt;Allocate the two roles to your EB environment configuration&lt;/strong&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;strong&gt;&lt;br&gt;&lt;/strong&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt;
-         The Instance Profile Role will be allocated in the EB Dashboard as part of the &amp;ldquo;Instances&amp;rdquo; tab. 
-       &lt;/div&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The Service Role will be allocated in the EB Dashboard as part of the &amp;ldquo;Health&amp;rdquo; tab. 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/8b3214495d802368ea57173314bea657.png" /&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt;In case you are automating the environment creation process with the help of the 
-   &lt;a href="https://aws.amazon.com/cli/"&gt;AWS Command Line Interface&lt;/a&gt; (CLI) you should include the following option settings, which are passed as part of the 
-   &lt;em&gt;-&lt;span style=""&gt;-option-settings&lt;/span&gt;&lt;/em&gt; parameter 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="s2"&gt;"Namespace"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"aws:autoscaling:launchconfiguration"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-  &lt;/span&gt;&lt;span class="s2"&gt;"OptionName"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"IamInstanceProfile"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-  &lt;/span&gt;&lt;span class="s2"&gt;"Value"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"tst.curationPlatform"&lt;/span&gt;&lt;span class="w"&gt; 
-  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="s2"&gt;"Namespace"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"aws:elasticbeanstalk:environment"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="s2"&gt;"OptionName"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"ServiceRole"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="s2"&gt;"Value"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;„tst.curationPlatformService"&lt;/span&gt;&lt;span class="w"&gt; 
-&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-
-
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style="font-size: 18px;"&gt;&lt;strong&gt;KMS Encryption Key&lt;/strong&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;strong&gt;&lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/strong&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    Beside the two roles, we will define an Encryption Key provided by the 
-   &lt;a href="http://docs.aws.amazon.com/kms/latest/developerguide/overview.html"&gt;AWS Key Management Service&lt;/a&gt; (KMS). The AWS Key Management Service (AWS KMS) is a managed service that makes it easy for you to create and control the encryption keys used to encrypt your data. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    Again an Encryption Key is provided per region, where the EB instance will run. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    From a naming point of view we will not code the region postfix, due to the fact that you can define the same encryption key on a per region level. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    So we will call our key 
-   &lt;span style=""&gt;&lt;em&gt;tst_ms_&amp;lt;microserviceName&amp;gt;&lt;/em&gt;.&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    As a key user(s) we assign the role of 
-   &lt;em&gt;&lt;span style=""&gt;tst.curationPlatform&lt;/span&gt;&lt;/em&gt;, i.e. our Elastic Beanstalk Microservice will be able to encrypt and decrypt sensitive data at rest (= in our S3 buckets). 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;strong&gt;&lt;span style="font-size: 18px;"&gt;EC2 Key Pair to Enable Remote Login&lt;/span&gt;&lt;/strong&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    In order to enable remote login into your Elastic Beanstalk Environment you have to create a EC2 key pair and configure it into your EB configuration. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    You can find the description 
-   &lt;a href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"&gt;Docker Small Hints #3: SSH into your AWS Elastic Beanstalk Component&lt;/a&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt;&lt;/p&gt;
-
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
