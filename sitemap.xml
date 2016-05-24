@@ -361,12 +361,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/2015/05/21/grails-small-hints-2-running-in-docker.html</loc>
-    <lastmod>2016-05-23</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html</loc>
     <lastmod>2016-05-23</lastmod>
     <priority>0.7</priority>
@@ -836,12 +830,6 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/2015/05/25.html</loc>
-    <lastmod>2016-05-23</lastmod>
-    <priority>0.8</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/2015/05/21.html</loc>
     <lastmod>2016-05-23</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>
