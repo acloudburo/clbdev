@@ -216,7 +216,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
     <id>https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
     <published>2016-05-12T21:14:14Z</published>
-    <updated>2016-06-01T11:11:13+00:00</updated>
+    <updated>2016-06-01T11:35:33+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -460,46 +460,46 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
     <id>https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
     <published>2016-04-24T13:06:12Z</published>
-    <updated>2016-06-01T11:11:02+00:00</updated>
+    <updated>2016-06-01T14:38:04+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
   &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    This is a condensed tutorial which was initially described in 
-   &lt;a href="https://github.com/meteor-useraccounts/core/issues/95"&gt;here&lt;/a&gt;. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
+    This is a condensed tutorial which was initially described in
+   &lt;a href="https://github.com/meteor-useraccounts/core/issues/95"&gt;here&lt;/a&gt;.
+  &lt;/div&gt;
   &lt;div&gt;
-    I have a  use case, where a new user will subscribe for one of my products, via a landing page. What I want to do is to route the registration via the normal Meteor Accounts sign up route. After having successfully registered for an account, I will manage the various set-up steps as post-process steps. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
+   &lt;br&gt;
+  &lt;/div&gt;
   &lt;div&gt;
-    This requires that I can provide to the signup route an additional parameter 
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;, which will store the information for which product the new user wants to subscribe. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
+    I have a  use case, where a new user will subscribe for one of my products, via a landing page. What I want to do is to route the registration via the normal Meteor Accounts sign up route. After having successfully registered for an account, I will manage the various set-up steps as post-process steps.
+  &lt;/div&gt;
   &lt;div&gt;
-    This can be solved quite easily: 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
+   &lt;br&gt;
+  &lt;/div&gt;
   &lt;div&gt;
-    First extend the 
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;AccountsTemplates&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; configuration in the 
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;both&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; directory with the 
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;AccountsTemplates.addField&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; operation, for example 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
+    This requires that I can provide to the signup route an additional parameter
+   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;, which will store the information for which product the new user wants to subscribe.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    This can be solved quite easily:
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    First extend the
+   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;AccountsTemplates&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; configuration in the
+   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;both&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; directory with the
+   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;AccountsTemplates.addField&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; operation, for example
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
   &lt;div&gt;&lt;/p&gt;
 &lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
   &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configure&lt;/span&gt; 
@@ -525,84 +525,81 @@
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
 
 &lt;p&gt;&lt;div&gt;
-    Having done that you could call now the sign-up URL with the following parameter 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
+    Having done that you could call now the sign-up URL with the following parameter
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
   &lt;div&gt;&lt;/p&gt;
 &lt;pre class="highlight plaintext"&gt;&lt;code&gt;
   http://localhost:3000/sign-up?email=felix@example.com&amp;amp;reg_code=123 
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
+&lt;p&gt;&lt;/div&gt;
   &lt;div&gt;
-    This will route you to the sign-up form already filled with the Email address. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    This will route you to the sign-up form already filled with the Email address.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
   &lt;div&gt;&lt;/p&gt;
 
   &lt;/div&gt;
   &lt;img class="img-responsive img-thumbnail article" src="/images/c3e6af765a9f71b2d13940d2498d83b2.png" /&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div&gt;
-        The form will have as well a hidden form element 
-       &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;at-field-reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The form will have as well a hidden form element
+       &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;at-field-reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;img class="img-responsive img-thumbnail article" src="/images/7a4c3b62df8868c9d36e31d5bb552dd1.png" /&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div&gt;
-        After registering of the user, the information will be available as  of the users profile configuration 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        After registering of the user, the information will be available as  of the users profile configuration
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;img class="img-responsive img-thumbnail article" src="/images/4e4a66ef39a30f5f84571124f134d700.png" /&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div&gt;
-        An can be easily retrieved via 
-       &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;Meteor.user().profile.reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; for further processing. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        An can be easily retrieved via
+       &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;Meteor.user().profile.reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; for further processing.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;

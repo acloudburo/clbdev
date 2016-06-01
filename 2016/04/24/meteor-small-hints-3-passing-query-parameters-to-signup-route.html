@@ -134,40 +134,40 @@
           </p>
           <hr /><div class="row">
   <div class="article"><p><span/>      <div>
-    This is a condensed tutorial which was initially described in 
-   <a href="https://github.com/meteor-useraccounts/core/issues/95">here</a>. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+    This is a condensed tutorial which was initially described in
+   <a href="https://github.com/meteor-useraccounts/core/issues/95">here</a>.
+  </div>
   <div>
-    I have a  use case, where a new user will subscribe for one of my products, via a landing page. What I want to do is to route the registration via the normal Meteor Accounts sign up route. After having successfully registered for an account, I will manage the various set-up steps as post-process steps. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+   <br>
+  </div>
   <div>
-    This requires that I can provide to the signup route an additional parameter 
-   <b><i><span style="">reg_code</span></i></b>, which will store the information for which product the new user wants to subscribe. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+    I have a  use case, where a new user will subscribe for one of my products, via a landing page. What I want to do is to route the registration via the normal Meteor Accounts sign up route. After having successfully registered for an account, I will manage the various set-up steps as post-process steps.
+  </div>
   <div>
-    This can be solved quite easily: 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+   <br>
+  </div>
   <div>
-    First extend the 
-   <b><i><span style="">AccountsTemplates</span></i></b> configuration in the 
-   <b><i><span style="">both</span></i></b> directory with the 
-   <b><i><span style="">AccountsTemplates.addField</span></i></b> operation, for example 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+    This requires that I can provide to the signup route an additional parameter
+   <b><i><span style="">reg_code</span></i></b>, which will store the information for which product the new user wants to subscribe.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    This can be solved quite easily:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    First extend the
+   <b><i><span style="">AccountsTemplates</span></i></b> configuration in the
+   <b><i><span style="">both</span></i></b> directory with the
+   <b><i><span style="">AccountsTemplates.addField</span></i></b> operation, for example
+  </div>
+  <div>
+   <br>
+  </div>
   <div></p>
 <pre class="highlight coffeescript"><code>
   <span class="nx">AccountsTemplates</span><span class="p">.</span><span class="na">configure</span> 
@@ -193,84 +193,81 @@
 
 </code></pre>
 
-<div> 
-   <br> 
-  </div> 
+<div>
+   <br>
+  </div>
 
 <p><div>
-    Having done that you could call now the sign-up URL with the following parameter 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+    Having done that you could call now the sign-up URL with the following parameter
+  </div>
+  <div>
+   <br>
+  </div>
   <div></p>
 <pre class="highlight plaintext"><code>
   http://localhost:3000/sign-up?email=felix@example.com&amp;reg_code=123 
 
 </code></pre>
 
-<p></div> 
-  <div> 
-   <br> 
-  </div> 
+<p></div>
   <div>
-    This will route you to the sign-up form already filled with the Email address. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+   <br>
+  </div>
+  <div>
+    This will route you to the sign-up form already filled with the Email address.
+  </div>
+  <div>
+   <br>
+  </div>
   <div></p>
 
   </div>
   <img class="img-responsive img-thumbnail article" src="/images/c3e6af765a9f71b2d13940d2498d83b2.png" />
   <div class="article">
-    <p><span/> 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+    <p><span/>        </div>
       <div>
-        The form will have as well a hidden form element 
-       <b><i><span style="">at-field-reg_code</span></i></b>. 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+       <br>
+      </div>
+      <div>
+        The form will have as well a hidden form element
+       <b><i><span style="">at-field-reg_code</span></i></b>.
+      </div>
+      <div>
+       <br>
+      </div>
       <div></p>
     
   </div>
   <img class="img-responsive img-thumbnail article" src="/images/7a4c3b62df8868c9d36e31d5bb552dd1.png" />
   <div class="article">
-    <p><span/> 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+    <p><span/>        </div>
       <div>
-        After registering of the user, the information will be available as  of the users profile configuration 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+       <br>
+      </div>
+      <div>
+        After registering of the user, the information will be available as  of the users profile configuration
+      </div>
+      <div>
+       <br>
+      </div>
       <div></p>
     
   </div>
   <img class="img-responsive img-thumbnail article" src="/images/4e4a66ef39a30f5f84571124f134d700.png" />
   <div class="article">
-    <p><span/> 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+    <p><span/>        </div>
       <div>
-        An can be easily retrieved via 
-       <b><i><span style="">Meteor.user().profile.reg_code</span></i></b> for further processing. 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
-      <div> 
-       <br> 
+       <br>
+      </div>
+      <div>
+        An can be easily retrieved via
+       <b><i><span style="">Meteor.user().profile.reg_code</span></i></b> for further processing.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <br>
       </div></p>
     
   </div>
