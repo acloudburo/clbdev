@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
     <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
     <published>2016-06-09T21:14:47Z</published>
-    <updated>2016-06-09T21:34:35+00:00</updated>
+    <updated>2016-06-09T21:54:23+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -38,7 +38,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        For example refer to the following Google Trend graph, which shows how the search keyword spiked in the last months.
+        For example refer to the following Google Trend graph, which shows how the search keyword  Chatbots spiked in the last months in 2016.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -47,11 +47,25 @@
     
     &lt;p&gt;&lt;/div&gt;
       &lt;div&gt;
-        &lt;script type="text/javascript" src="//www.google.ch/trends/embed.js?hl=en-GB&amp;amp;q=chatbot&amp;amp;date=today+12-m&amp;amp;cmpt=q&amp;amp;tz=Etc/GMT-2&amp;amp;tz=Etc/GMT-2&amp;amp;content=1&amp;amp;cid=TIMESERIES_GRAPH_0&amp;amp;export=5&amp;amp;w=500&amp;amp;h=330"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="//www.google.ch/trends/embed.js?hl=en-GB&amp;amp;q=chatbots&amp;amp;date=1/2016+12m&amp;amp;cmpt=q&amp;amp;tz=Etc/GMT-2&amp;amp;tz=Etc/GMT-2&amp;amp;content=1&amp;amp;cid=TIMESERIES_GRAPH_0&amp;amp;export=5&amp;amp;w=500&amp;amp;h=330"&gt;&lt;/script&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Forbes is even asking if
+       &lt;a href="http://www.forbes.com/sites/parmyolson/2016/05/09/could-chat-bots-replace-human-jobs-facebook"&gt;ChatBots could replace Human Jobs&lt;/a&gt; or VentureBeat is talking from the
+       &lt;a href="http://venturebeat.com/2016/05/22/this-is-the-start-of-the-post-app-era/"&gt;Start of the Post App Era&lt;/a&gt;, which handed over to the Bot Era.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        But let’s look first at the bot type categorisation which will help to better understand the topic.
+      &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
@@ -83,6 +97,12 @@
       &lt;/div&gt;
       &lt;div&gt;
         You can find all the details in the Venturebeat article.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;span style="font-size: 11px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px;"&gt;&lt;i&gt;BTW: This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://venturebeat.com/2016/05/21/the-5-branches-of-conversational-commerce-a-guide-for-the-bot-curious/"&gt;Link&lt;/a&gt;&lt;/p&gt;
