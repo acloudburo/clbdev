@@ -5,16 +5,88 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2016-05-23T17:03:55Z</updated>
+  <updated>2016-06-09T21:14:47Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>A categorisation of bots used for conversational commerce</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
+    <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
+    <published>2016-06-09T21:14:47Z</published>
+    <updated>2016-06-09T21:14:47+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Chat Bots, as the new way to engage with your clients, it’s a trending concept and approach in 2016.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        For example refer to the following Google Trend graph, which shows how the search keyword spiked in the last months.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &amp;lt;htmlembed&amp;gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &amp;lt;script type=&amp;ldquo;text/javascript&amp;rdquo; src=&amp;ldquo;//&lt;a href="http://www.google.ch/trends/embed.js?hl=en-GB&amp;amp;amp;q=chatbot&amp;amp;amp;date=today+12-m&amp;amp;amp;cmpt=q&amp;amp;amp;tz=Etc/GMT-2&amp;amp;amp;tz=Etc/GMT-2&amp;amp;amp;content=1&amp;amp;amp;cid=TIMESERIES_GRAPH_0&amp;amp;amp;export=5&amp;amp;amp;w=500&amp;amp;amp;h=330%22&amp;amp;gt;&amp;amp;lt;/script"&gt;www.google.ch/trends/embed.js?hl=en-GB&amp;amp;amp;q=chatbot&amp;amp;amp;date=today+12-m&amp;amp;amp;cmpt=q&amp;amp;amp;tz=Etc/GMT-2&amp;amp;amp;tz=Etc/GMT-2&amp;amp;amp;content=1&amp;amp;amp;cid=TIMESERIES_GRAPH_0&amp;amp;amp;export=5&amp;amp;amp;w=500&amp;amp;amp;h=330&amp;rdquo;&amp;amp;gt;&amp;amp;lt;/script&lt;/a&gt;&amp;gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &amp;lt;htmlembed&amp;gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In the e-commerce sector, they are using the term
+       &lt;i&gt;conversational commerce bots&lt;/i&gt;. The
+       &lt;a href="http://venturebeat.com/2016/05/21/the-5-branches-of-conversational-commerce-a-guide-for-the-bot-curious/"&gt;Venturebeat article&lt;/a&gt; by Jeff Lawson of Twilio introduces a nice categorisation of the various bot types which can be used in commerce.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        First of all the term conversational commerce is defined as
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;A future of technology driven by messaging (and voice) interactions that transcend current communication modalities.&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Jeff Lawson counts five different trends converging on conversational commerce:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;p&gt;1. Advanced notifications&lt;br&gt; 2. Bots&lt;br&gt; 3. Chat in apps&lt;br&gt; 4. Apps in chat&lt;br&gt; 5. Humans chatting with each other&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You can find all the details in the Venturebeat article.
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="http://venturebeat.com/2016/05/21/the-5-branches-of-conversational-commerce-a-guide-for-the-bot-curious/"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Meteor Small Hints #4: Reading this.params values in the iron-router Data Context</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html"/>
     <id>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</id>
     <published>2016-05-23T17:03:55Z</published>
-    <updated>2016-06-01T11:11:02+00:00</updated>
+    <updated>2016-06-05T11:37:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -133,7 +205,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
     <id>https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html</id>
     <published>2016-05-13T23:04:33Z</published>
-    <updated>2016-06-01T11:11:02+00:00</updated>
+    <updated>2016-06-05T11:37:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -216,7 +288,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
     <id>https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
     <published>2016-05-12T21:14:14Z</published>
-    <updated>2016-06-01T11:35:33+00:00</updated>
+    <updated>2016-06-05T11:37:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -460,7 +532,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
     <id>https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
     <published>2016-04-24T13:06:12Z</published>
-    <updated>2016-06-01T14:38:04+00:00</updated>
+    <updated>2016-06-05T11:37:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -610,7 +682,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html"/>
     <id>https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html</id>
     <published>2016-04-21T22:49:36Z</published>
-    <updated>2016-06-01T11:11:02+00:00</updated>
+    <updated>2016-06-05T11:37:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -668,112 +740,6 @@
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Rodrigue Schaefer : From monolith to microservices at Zalando</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
-    <id>https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
-    <published>2016-03-04T06:38:48Z</published>
-    <updated>2016-06-01T11:11:02+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        At the 
-       &lt;a href="http://microxchg.io/2016/index.html"&gt;Microxchg 2016&lt;/a&gt; conference in Berlin, Rodrigue Schaefer did an interesting presentation how they introduced microservices at Zalando. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The main driver was an organisational change centred around autonomy of teams. As he stated 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        - We want Autonomous team to deliver amazing products efficiently at scale 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        - We want them to be independent, without having to look left and right 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        By changing the organisation, the tech landscape of applications tied into a monolith architecture didn&amp;rsquo;t fit anymore. Team autonomy results in a change of the landscape to Microservices. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        It means also a shift from Control to Trust. He coined the term &amp;ldquo;Radical Agility&amp;rdquo;, a concept which is based on three principles glued together by trust. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/a9e22bc1b3a4936e8a2f01d31d245e50.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        - 
-       &lt;b&gt;Autonomy&lt;/b&gt;, a team can define its own delivery process or tech stack. A team is cross-functional and can do everything from having an idea, developing it, testing and deploying it, bringing it live and operating it. It has full control over its delivery (DevOps) 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        - 
-       &lt;b&gt;Purpose&lt;/b&gt;, means to give the team something so everyone goes in a similar direction (the company wants at that time). By having a clear purpose of each team, there is a strategic alignment. 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        - 
-       &lt;b&gt;Mastery&lt;/b&gt;, means to give the engineers a chance to get better in an area where they want to get better. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        He mentioned an interesting detail about a change in process, which is common in today&amp;rsquo;s large organisations. Using of shared libraries across different microservices were banned. All teams are forced to open source and play by the company established rules. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Finally, testing services across teams are done by a cross-functional business assurance unit. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Check out the full speech here 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        &lt;div class="responsive-video"&gt;&lt;iframe src="https://www.youtube.com/embed/I9zpROdDf48?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Also refer to the following article, which addresses the autonomy, small team approach: 
-       &lt;a href="https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html"&gt;&lt;a href="https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html"&gt;https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html&lt;/a&gt;&lt;/a&gt; 
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.infoq.com/news/2016/02/Monolith-Microservices-Zalando?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
