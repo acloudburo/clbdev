@@ -5,16 +5,69 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2016-06-09T21:14:47Z</updated>
+  <updated>2016-06-21T22:17:15Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>A Terminology Guide to DAOs, DACs, DAs and More</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html"/>
+    <id>https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html</id>
+    <published>2016-06-21T22:17:15Z</published>
+    <updated>2016-06-21T22:17:15+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Due to the recent DAO hack in the Ethereum blockchain network (which resulted in the stealing of around 50 millions), I was starting to dig a little bit deeper into this new technology approach.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The topic is quite complex and overloaded with different terms and abbreviations, which makes it difficult to understand in the beginning. Therefore I’m quite pleased that Ethereum blog, released a “Incomplete Terminology Guide” around the topic of “decentralised autonomous entities”, which is a popular topic in the digital consensus space (yet a new term for crypto-currency 2.0). It introduces concise definitions of the important concepts and helps in establishing a basic understanding. The article can be found
+       &lt;a href="https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide/"&gt;here&lt;/a&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;/div&gt;
+      &lt;div&gt;
+        By the way one of the most easy to read articles about the DAO hack, complemented with a lot of details and facts, can be found  in
+       &lt;a href="https://medium.com/@pullnews/understanding-the-dao-hack-for-journalists-2312dd43e993#.6usjlleot"&gt;Understanding the DAO Hack for Journalists&lt;/a&gt; on Medium. It’s aimed at Journalists, which ensures that the topic is not too technical overloaded.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        If you want to understand the details (as well a quite readable intro is provided) refer to the following technical paper “
+       &lt;a href="https://docs.google.com/document/d/10kTyCmGPhvZy94F7VWyS-dQ4lsBacR2dUgGTtV98C40/mobilebasic#heading=h.e437su2ytbf9"&gt;A Call for a temporary Moratorium on The DAO&lt;/a&gt;”, which is outlining the inherent problems in The DAO Smart Contract solution around three weeks before the Hack happened. I have to re-read the article from time to time to incrementally improve my understanding in the topic domain.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Facit: Every revolutionary as well evolutionary step is not easy to achieve and there are pushback and failures. For the new kid on the block “blockchain”, it’s the second pushback after the MtGox Bitcoin disaster last year. Hopefully the “lessons are learnt” and we will in the mid-term achieve the vision of decentralised autonomous entities.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px;"&gt;&lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>A categorisation of bots used for conversational commerce</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
     <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
     <published>2016-06-09T21:14:47Z</published>
-    <updated>2016-06-09T22:34:22+00:00</updated>
+    <updated>2016-06-16T19:07:35+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -124,7 +177,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html"/>
     <id>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</id>
     <published>2016-05-23T17:03:55Z</published>
-    <updated>2016-06-05T11:37:14+00:00</updated>
+    <updated>2016-06-16T19:07:35+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -243,7 +296,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
     <id>https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html</id>
     <published>2016-05-13T23:04:33Z</published>
-    <updated>2016-06-05T11:37:14+00:00</updated>
+    <updated>2016-06-16T19:07:35+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -326,7 +379,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
     <id>https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
     <published>2016-05-12T21:14:14Z</published>
-    <updated>2016-06-05T11:37:14+00:00</updated>
+    <updated>2016-06-16T19:07:35+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -570,7 +623,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
     <id>https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
     <published>2016-04-24T13:06:12Z</published>
-    <updated>2016-06-05T11:37:14+00:00</updated>
+    <updated>2016-06-16T19:07:35+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -712,72 +765,6 @@
        &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Meteor Small Hints #2: Calling local methods in a Template</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html"/>
-    <id>https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html</id>
-    <published>2016-04-21T22:49:36Z</published>
-    <updated>2016-06-05T11:37:14+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    At the end it is straightforward but took me some time to figure out, how to call local methods in a Meteor template file.&lt;br&gt;
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    Just add the local methods without any scope at the beginning. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
-  &lt;span class="nx"&gt;isStep1OK&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-    &lt;span class="nx"&gt;Meteor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;user&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="na"&gt;emails&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="na"&gt;verified&lt;/span&gt; 
-
-
-  &lt;span class="nx"&gt;getStepStatus1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;isStep1OK&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt; 
-     &lt;span class="s"&gt;"glyphicon glyphicon-ok-sign icon-success"&lt;/span&gt; 
-    &lt;span class="k"&gt;else&lt;/span&gt; 
-      &lt;span class="s"&gt;"glyphicon glyphicon-minus-sign icon-failure"&lt;/span&gt; 
-
-
-  &lt;span class="nx"&gt;getStepStatus2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-    &lt;span class="s"&gt;"glyphicon glyphicon-minus-sign icon-failure"&lt;/span&gt; 
-
-
-  &lt;span class="nx"&gt;getStepStatus3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-    &lt;span class="s"&gt;"glyphicon glyphicon-minus-sign icon-failure"&lt;/span&gt; 
-
-
-  &lt;span class="nx"&gt;Template&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;curationLanding&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;helpers&lt;/span&gt; 
-
-
-    &lt;span class="na"&gt;getStepStatus&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;step&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-      &lt;span class="k"&gt;switch&lt;/span&gt; &lt;span class="nx"&gt;step&lt;/span&gt; 
-        &lt;span class="k"&gt;when&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt; &lt;span class="nx"&gt;getStepStatus1&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-        &lt;span class="k"&gt;when&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt; &lt;span class="nx"&gt;getStepStatus2&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-        &lt;span class="k"&gt;when&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt; &lt;span class="nx"&gt;getStepStatus3&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-
-
-    &lt;span class="na"&gt;getStepStatus1Text&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;isStep1OK&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt; 
-        &lt;span class="nx"&gt;TAPi18n&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;__&lt;/span&gt; &lt;span class="s"&gt;"landingStep1OK"&lt;/span&gt; 
-      &lt;span class="k"&gt;else&lt;/span&gt; 
-        &lt;span class="nx"&gt;TAPi18n&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;__&lt;/span&gt; &lt;span class="s"&gt;"landingStep1NOK"&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
