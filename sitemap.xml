@@ -505,6 +505,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html</loc>
+    <lastmod>2016-07-18</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/personaldata.html</loc>
     <lastmod>2016-06-16</lastmod>
     <priority>0.9</priority>
@@ -640,6 +646,18 @@
     <loc>https://dev.cloudburo.net/2016.html</loc>
     <lastmod>2016-06-16</lastmod>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2016/07.html</loc>
+    <lastmod>2016-06-16</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2016/07/18.html</loc>
+    <lastmod>2016-06-16</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -1114,6 +1132,12 @@
     <loc>https://dev.cloudburo.net/page/6/</loc>
     <lastmod>2016-06-16</lastmod>
     <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/smallhints/page/2.html</loc>
+    <lastmod>2016-06-16</lastmod>
+    <priority>0.7</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

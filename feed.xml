@@ -5,10 +5,140 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2016-06-21T22:17:15Z</updated>
+  <updated>2016-07-18T16:06:09Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Meteor Small Hints #5: Server Code Fragments executed twice on Startup</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html"/>
+    <id>https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html</id>
+    <published>2016-07-18T16:06:09Z</published>
+    <updated>2016-07-18T16:06:10+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
+    Recently I got confused with my Meteor application, by having the server code executed twice at startup. So the code was initialising my application twice, as well as duplicated for example my Slack Sysadmin Bot running as part of the instance.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    I was first thinking that it has something to do with my IntelliJ Webstorm IDE running in debug mode, but also the local test-, as well the my Modulus remote environment was showing the same symptom.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    After some hours of debugging I luckily found the following
+   &lt;a href="https://github.com/Differential/meteor-workers/issues/9"&gt;Github issue entry&lt;/a&gt; which showed me the right direction.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    As part of my application I introduced
+   &lt;a href="https://github.com/Differential/meteor-workers"&gt;Differential meteor-workers&lt;/a&gt;, which allows to spawn headless worker meteor processes to work on async jobs. For example, passing a message to my Slack SysAdmin Bot is done via Job.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
+  &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;SlackSysAdminBotJob&lt;/span&gt; &lt;span class="k"&gt;extends&lt;/span&gt; &lt;span class="nx"&gt;Job&lt;/span&gt; 
+    &lt;span class="na"&gt;setupCron&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;parser&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
+      &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;log&lt;/span&gt; &lt;span class="s"&gt;"@SlackSysAdminJob.setupCron Called"&lt;/span&gt; 
+    &lt;span class="na"&gt;handleJob&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
+      &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;debug&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"SlackSysAdminBotJob.handleJob with bot “+slackSysAdminBot) 
+      if @params.action == "&lt;/span&gt;&lt;span class="nx"&gt;sendMessage&lt;/span&gt;&lt;span class="s"&gt;" 
+        slackSysAdminBot.postTo @params.name, @params.text 
+
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    Such a async Job can be easily triggered, like shown here (which will hand the work over to a worker process.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
+    &lt;span class="nx"&gt;Job&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;push&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;SlackSysAdminBotJob&lt;/span&gt; 
+          &lt;span class="na"&gt;action&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"sendMessage"&lt;/span&gt; 
+         &lt;span class="na"&gt;slackSysAdminBot&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;myBot&lt;/span&gt; 
+          &lt;span class="na"&gt;text&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nx"&gt;txt&lt;/span&gt; 
+          &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;channel&lt;/span&gt; 
+        &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;error&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;job&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
+          &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;error&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; 
+            &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;error&lt;/span&gt; &lt;span class="s"&gt;"sendSlackSystemInfoMessage: error occured: "&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;error&lt;/span&gt; 
+          &lt;span class="k"&gt;else&lt;/span&gt; 
+            &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;debug&lt;/span&gt; &lt;span class="s"&gt;"Slack SysadminBot Message sent: "&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;JSON&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;stringify&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;job&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    Now introducing the Differential async worker resulted in the problem, that not only the master process, BUT also the worker process will be initialised with each Server startup code fragment. Which is not what we want.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    So I had to extend each server Meter.startup code fragment by introducing an “isCLusterMaster” check
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
+  &lt;span class="nx"&gt;exports&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Plattform&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 
+      &lt;span class="na"&gt;isClusterMaster&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;Meteor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;isServer&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nx"&gt;Npm&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'cluster'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="na"&gt;isMaster&lt;/span&gt; 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    As for example:
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
+  &lt;span class="nx"&gt;Meteor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;startup&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;isClusterMaster&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
+      &lt;span class="nx"&gt;Accounts&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;emailTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;from&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;  &lt;span class="nx"&gt;TAPi18n&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;__&lt;/span&gt; &lt;span class="s"&gt;"registrationFrom"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;postProcess&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'sprintf'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;sprintf&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt; 
+        &lt;span class="nx"&gt;Meteor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;settings&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;public&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;companyShortName&lt;/span&gt; 
+        &lt;span class="nx"&gt;Meteor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;settings&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;public&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;companySupportEmail&lt;/span&gt; &lt;span class="p"&gt;]&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Now the startup initialization will be only executed on the master in the cluster and not each worker process.
+  &lt;/div&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>A Terminology Guide to DAOs, DACs, DAs and More</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html"/>
@@ -615,156 +745,6 @@
    &lt;br&gt;
   &lt;/div&gt;&lt;/p&gt;
 
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Meteor Small Hints #3: Passing Query Parameters to Signup Route</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
-    <id>https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
-    <published>2016-04-24T13:06:12Z</published>
-    <updated>2016-06-16T19:07:35+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    This is a condensed tutorial which was initially described in
-   &lt;a href="https://github.com/meteor-useraccounts/core/issues/95"&gt;here&lt;/a&gt;.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    I have a  use case, where a new user will subscribe for one of my products, via a landing page. What I want to do is to route the registration via the normal Meteor Accounts sign up route. After having successfully registered for an account, I will manage the various set-up steps as post-process steps.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    This requires that I can provide to the signup route an additional parameter
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;, which will store the information for which product the new user wants to subscribe.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    This can be solved quite easily:
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    First extend the
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;AccountsTemplates&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; configuration in the
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;both&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; directory with the
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;AccountsTemplates.addField&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; operation, for example
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configure&lt;/span&gt; 
-    &lt;span class="na"&gt;sendVerificationEmail&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="no"&gt;true&lt;/span&gt; 
-    &lt;span class="na"&gt;enablePasswordChange&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="no"&gt;true&lt;/span&gt; 
-    &lt;span class="na"&gt;showForgotPasswordLink&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="no"&gt;true&lt;/span&gt; 
-
-
-  &lt;span class="c1"&gt;# Configure the routes 
-&lt;/span&gt;  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'signIn'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'signUp'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'ensureSignedIn'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'verifyEmail'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'changePwd'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'forgotPwd'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'resetPwd'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-
-
-  &lt;span class="c1"&gt;# Add the new field 
-&lt;/span&gt;  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;addField&lt;/span&gt; 
-    &lt;span class="na"&gt;_id&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'reg_code'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-    &lt;span class="na"&gt;type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'hidden'&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-    Having done that you could call now the sign-up URL with the following parameter
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-  http://localhost:3000/sign-up?email=felix@example.com&amp;amp;reg_code=123 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    This will route you to the sign-up form already filled with the Email address.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/c3e6af765a9f71b2d13940d2498d83b2.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The form will have as well a hidden form element
-       &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;at-field-reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/7a4c3b62df8868c9d36e31d5bb552dd1.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        After registering of the user, the information will be available as  of the users profile configuration
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/4e4a66ef39a30f5f84571124f134d700.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        An can be easily retrieved via
-       &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;Meteor.user().profile.reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; for further processing.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
