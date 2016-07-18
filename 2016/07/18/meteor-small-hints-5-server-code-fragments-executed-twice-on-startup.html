@@ -170,7 +170,7 @@
   <span class="k">class</span> <span class="vi">@</span><span class="na">SlackSysAdminBotJob</span> <span class="k">extends</span> <span class="nx">Job</span> 
     <span class="na">handleJob</span><span class="o">:</span> <span class="p">()</span><span class="o">-&gt;</span> 
       <span class="k">if</span> <span class="vi">@</span><span class="na">params</span><span class="p">.</span><span class="na">action</span> <span class="o">==</span> <span class="s">"sendMessage"</span> 
-        <span class="nx">slackSysAdminBot</span><span class="p">.</span><span class="na">postTo</span> <span class="vi">@</span><span class="na">params</span><span class="p">.</span><span class="na">name</span><span class="p">,</span> <span class="vi">@</span><span class="na">params</span><span class="p">.</span><span class="na">text</span> 
+        <span class="vi">@</span><span class="na">params</span><span class="p">.</span><span class="na">bot</span><span class="p">.</span><span class="na">postTo</span> <span class="vi">@</span><span class="na">params</span><span class="p">.</span><span class="na">name</span><span class="p">,</span> <span class="vi">@</span><span class="na">params</span><span class="p">.</span><span class="na">text</span> 
 
 </code></pre>
 
@@ -188,15 +188,12 @@
 <pre class="highlight coffeescript"><code>
     <span class="nx">Job</span><span class="p">.</span><span class="na">push</span> <span class="k">new</span> <span class="nx">SlackSysAdminBotJob</span> 
           <span class="na">action</span><span class="o">:</span> <span class="s">"sendMessage"</span> 
-          <span class="na">slackSysAdminBot</span><span class="o">:</span> <span class="nx">myBot</span> 
+          <span class="na">slackBot</span><span class="o">:</span> <span class="nx">myBot</span> 
           <span class="na">text</span><span class="o">:</span><span class="nx">txt</span> 
           <span class="na">name</span><span class="o">:</span> <span class="nx">channel</span> 
         <span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">job</span><span class="p">)</span> <span class="o">-&gt;</span> 
-          <span class="k">if</span> <span class="nx">error</span><span class="o">?</span> 
-            <span class="nx">Plattform</span><span class="p">.</span><span class="na">error</span> <span class="s">"sendSlackSystemInfoMessage: error occured: "</span><span class="o">+</span><span class="nx">error</span> 
-          <span class="k">else</span> 
-            <span class="nx">Plattform</span><span class="p">.</span><span class="na">debug</span> <span class="s">"Slack SysadminBot Message sent: "</span><span class="o">+</span><span class="nx">JSON</span><span class="p">.</span><span class="na">stringify</span><span class="p">(</span><span class="nx">job</span><span class="p">)</span> 
-
+           <span class="c1"># Check it 
+</span>
 </code></pre>
 
 <div>
@@ -210,7 +207,8 @@
    <br>
   </div>
   <div>
-    So I had to extend each server Meter.startup code fragment by introducing an “isCLusterMaster” check
+    So I had to extend each server Meter.startup code fragment by introducing an
+   <i>isClusterMaster</i> check
   </div>
   <div>
    <br>
