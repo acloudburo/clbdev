@@ -168,14 +168,11 @@
   <div></p>
 <pre class="highlight coffeescript"><code>
   <span class="k">class</span> <span class="vi">@</span><span class="na">SlackSysAdminBotJob</span> <span class="k">extends</span> <span class="nx">Job</span> 
-    <span class="na">setupCron</span><span class="o">:</span> <span class="p">(</span><span class="nx">parser</span><span class="p">)</span> <span class="o">-&gt;</span> 
-      <span class="nx">Plattform</span><span class="p">.</span><span class="na">log</span> <span class="s">"@SlackSysAdminJob.setupCron Called"</span> 
     <span class="na">handleJob</span><span class="o">:</span> <span class="p">()</span><span class="o">-&gt;</span> 
-      <span class="nx">Plattform</span><span class="p">.</span><span class="na">debug</span><span class="p">(</span><span class="s">"SlackSysAdminBotJob.handleJob with bot “+slackSysAdminBot) 
-      if @params.action == "</span><span class="nx">sendMessage</span><span class="s">" 
-        slackSysAdminBot.postTo @params.name, @params.text 
+      <span class="k">if</span> <span class="vi">@</span><span class="na">params</span><span class="p">.</span><span class="na">action</span> <span class="o">==</span> <span class="s">"sendMessage"</span> 
+        <span class="nx">slackSysAdminBot</span><span class="p">.</span><span class="na">postTo</span> <span class="vi">@</span><span class="na">params</span><span class="p">.</span><span class="na">name</span><span class="p">,</span> <span class="vi">@</span><span class="na">params</span><span class="p">.</span><span class="na">text</span> 
 
-</span></code></pre>
+</code></pre>
 
 <div>
    <br>
@@ -191,7 +188,7 @@
 <pre class="highlight coffeescript"><code>
     <span class="nx">Job</span><span class="p">.</span><span class="na">push</span> <span class="k">new</span> <span class="nx">SlackSysAdminBotJob</span> 
           <span class="na">action</span><span class="o">:</span> <span class="s">"sendMessage"</span> 
-         <span class="na">slackSysAdminBot</span><span class="o">:</span> <span class="nx">myBot</span> 
+          <span class="na">slackSysAdminBot</span><span class="o">:</span> <span class="nx">myBot</span> 
           <span class="na">text</span><span class="o">:</span><span class="nx">txt</span> 
           <span class="na">name</span><span class="o">:</span> <span class="nx">channel</span> 
         <span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">job</span><span class="p">)</span> <span class="o">-&gt;</span> 
@@ -242,10 +239,8 @@
 <pre class="highlight coffeescript"><code>
   <span class="nx">Meteor</span><span class="p">.</span><span class="na">startup</span> <span class="p">()</span> <span class="o">-&gt;</span> 
     <span class="k">if</span> <span class="nx">Plattform</span><span class="p">.</span><span class="na">isClusterMaster</span><span class="p">()</span> 
-      <span class="nx">Accounts</span><span class="p">.</span><span class="na">emailTemplates</span><span class="p">.</span><span class="na">from</span> <span class="o">=</span>  <span class="nx">TAPi18n</span><span class="p">.</span><span class="na">__</span> <span class="s">"registrationFrom"</span><span class="p">,</span> <span class="na">postProcess</span><span class="o">:</span> <span class="s">'sprintf'</span><span class="p">,</span> <span class="na">sprintf</span><span class="o">:</span> <span class="p">[</span> 
-        <span class="nx">Meteor</span><span class="p">.</span><span class="na">settings</span><span class="p">.</span><span class="na">public</span><span class="p">.</span><span class="na">companyShortName</span> 
-        <span class="nx">Meteor</span><span class="p">.</span><span class="na">settings</span><span class="p">.</span><span class="na">public</span><span class="p">.</span><span class="na">companySupportEmail</span> <span class="p">]</span> 
-
+      <span class="c1"># The startup code 
+</span>
 </code></pre>
 
 <p></div>
@@ -253,7 +248,10 @@
    <br>
   </div>
   <div>
-    Now the startup initialization will be only executed on the master in the cluster and not each worker process.
+    Now the startup initialization will be only executed on the master in the cluster and not for each worker process.
+  </div>
+  <div>
+   <br>
   </div></p>
 
   </div>
