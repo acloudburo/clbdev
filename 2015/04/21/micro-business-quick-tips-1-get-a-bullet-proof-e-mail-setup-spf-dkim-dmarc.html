@@ -43,9 +43,6 @@
                   <a href="/tags/blockchain.html">blockchain (1)</a>
                 </li>
                 <li>
-                  <a href="/tags/bootstrap.html">bootstrap (1)</a>
-                </li>
-                <li>
                   <a href="/tags/bots.html">bots (1)</a>
                 </li>
                 <li>
@@ -91,7 +88,7 @@
                   <a href="/tags/smallhints.html">smallhints (13)</a>
                 </li>
                 <li>
-                  <a href="/tags/startup.html">startup (9)</a>
+                  <a href="/tags/startup.html">startup (10)</a>
                 </li>
               </ul>
             </li>
@@ -118,8 +115,8 @@
           <h1>
             Micro Business Quick Tips #1: Get a bullet proof E-Mail setup (SPF, DKIM, DMARC)
           </h1>
+          <small class="label label-default">startup</small>
           <small class="label label-default">quicktips</small>
-          <small class="label label-default">bootstrap</small>
           <hr />
           <p>
             <span class="glyphicon glyphicon-time"></span> Posted on Apr 21
@@ -127,170 +124,174 @@
           <hr />
           <div class="row">
             <div class="article">
-              <p><span/><br>
+              <p><span/></p>
+              
+              <p><div>
+                  In the current world of spammers, intruders and fake emails, it is vital to get a bullet proof setup for your E-Mail deliveries. It took me some time to sort it out, but at the end not more than three steps are necessary to get an authenticated email setup with less spam risk and with better reputation, which reduces the risk that  your emails are put into the spam folder by your client or prospects.
+                </div>
                 <div>
-                  In the current world of spammers, intruders and fake emails, it is vital to get a bullet proof setup for your E-Mail&nbsp;deliveries. It took me some time to sort it out, but&nbsp;at the end not more than three steps are necessary to get an authenticated email setup&nbsp;with less spam risk&nbsp;and&nbsp;with better reputation, which reduces&nbsp;the risk that&nbsp;&nbsp;your emails&nbsp;are put into the spam folder by your client or prospects. 
-                </div> 
-                <div> 
-                 <br> 
-                </div> 
-                <div> 
-                 <b>1. Get a own Domain with an associated Email Address</b> 
-                </div> 
-                <div> 
-                 <b><br></b> 
-                </div> 
+                 <br>
+                </div>
                 <div>
-                  Using email addresses of a free mail provider isn’t a good idea when you start your business. Especially when you want&nbsp; to use third party providers for&nbsp;certain email based services over time. E.g. you could&nbsp;use 
-                 <a href="https://mailchimp.com" rel="nofollow">Mailchimp</a> to send out a Email Newsletter on behalf of you. 
-                </div> 
+                 <b>1. Get a own Domain with an associated Email Address</b>
+                </div>
                 <div>
-                  The reason why you want your own domain based (and controlled) email address is that you want to decouple you from any DMARC policy decisions of the free email provider on its email domain.&nbsp; 
-                </div> 
+                 <b><br></b>
+                </div>
                 <div>
-                  DMARC is a global initiative (you will see later how you can benefit from it, a&nbsp;primer can be found 
-                 <a href="https://wordtothewise.com/2014/04/brief-dmarc-primer/" rel="nofollow">here</a>) to reduce or stop fraudulent emails. All the big free email provider are participating and they may decide to strengthen the DMARC authentication policy. This will result in&nbsp;rejecting emails that claim to come for example from&nbsp;yahoo.com but actually originate at a non-Yahoo server. 
-                </div> 
+                  Using email addresses of a free mail provider isn’t a good idea when you start your business. Especially when you want  to use third party providers for certain email based services over time. E.g. you could use
+                 <a href="https://mailchimp.com">Mailchimp</a> to send out a Email Newsletter on behalf of you.
+                </div>
                 <div>
-                  This is a pattern definitely used by spammers, but for example also by Mailchimp when it will send out emails on behalf of your company (read the full story 
-                 <a href="https://blog.mailchimp.com/yahoo-changes-may-affect-your-deliverability/" rel="nofollow">here</a>). Therefore&nbsp;get your own domain&nbsp;with its email address (<a href="mailto:myname@mydomain.com">myname@mydomain.com</a>)&nbsp;in order to keep it&nbsp;under your control how you want to handle Emails sent on behalf of you by a untrusted or unknown source. 
-                </div> 
-                <div> 
-                 <br> 
-                </div> 
-                <div> 
-                 <b>2. Setup Email Authentication in your DNS records&nbsp;</b> 
-                </div> 
-                <div> 
-                 <b><br></b> 
-                </div> 
+                  The reason why you want your own domain based (and controlled) email address is that you want to decouple you from any DMARC policy decisions of the free email provider on its email domain. 
+                </div>
                 <div>
-                  In order to ensure effective email delivery it’s highly recommended that you setup email authentication in your DNS records.&nbsp;By having purchased a own domain you also will get the possibility to adjust your DNS records (again you are in control). Depending where your purchased a domain the way how you update the records may vary. Search for DNS on the support page of your domain provider. 
-                </div> 
+                  DMARC is a global initiative (you will see later how you can benefit from it, a primer can be found
+                 <a href="https://wordtothewise.com/2014/04/brief-dmarc-primer/">here</a>) to reduce or stop fraudulent emails. All the big free email provider are participating and they may decide to strengthen the DMARC authentication policy. This will result in rejecting emails that claim to come for example from yahoo.com but actually originate at a non-Yahoo server.
+                </div>
                 <div>
-                  Email Authentication requires not only modification of the client side (by you adding DNS records) as well as Email provider which supports the 
-                 <a href="http://www.openspf.org/" rel="nofollow">SPF</a> and 
-                 <a href="http://www.dkim.org/info/dkim-faq.html" rel="nofollow">DKIM</a> on the server side. This is either the Email service provided with your domain&nbsp;or you go for one with the necessary support (you then have to modify the MX records of your DNS records to point to this new Email provider). Check the support pages of your domain email provider for keywords like&nbsp;SPF, DKIM to get an understanding what is supported. 
-                </div> 
-                <div> 
-                 <br> 
-                </div> 
+                  This is a pattern definitely used by spammers, but for example also by Mailchimp when it will send out emails on behalf of your company (read the full story
+                 <a href="https://blog.mailchimp.com/yahoo-changes-may-affect-your-deliverability/">here</a>). Therefore get your own domain with its email address (<a href="mailto:myname@mydomain.com">myname@mydomain.com</a>) in order to keep it under your control how you want to handle Emails sent on behalf of you by a untrusted or unknown source.
+                </div>
                 <div>
-                  For example I purchased a 
-                 <a href="https://www.google.com/work/apps/business/" rel="nofollow">Google Apps for Work</a> account which comes with a very strong Gmail based E-Mail service offering. It can host all my different Email Addresses of all my different domains (around 10)&nbsp; and&nbsp; allows the setup of &nbsp; SPF/DKIM Email Authentication. The offering is overall very powerful (it introduces any kind of email relaying, rerouting etc. in case you run some other email account&nbsp;as well) and allows you to centralize all your Email handling.&nbsp; 
-                </div> 
+                 <br>
+                </div>
                 <div>
-                  In my DNS record of of my&nbsp; 
-                 <i>cloudburo.net</i>&nbsp;domain - which was purchased by another vendor - I had to reroute the mail traffic to the google email host environment (in DNS these are MX records). As you can see this a set of servers which will handle the traffic. 
-                </div> 
-                <div> 
-                 <br> 
-                </div> 
+                 <b>2. Setup Email Authentication in your DNS records </b>
+                </div>
+                <div>
+                 <b><br></b>
+                </div>
+                <div>
+                  In order to ensure effective email delivery it’s highly recommended that you setup email authentication in your DNS records. By having purchased a own domain you also will get the possibility to adjust your DNS records (again you are in control). Depending where your purchased a domain the way how you update the records may vary. Search for DNS on the support page of your domain provider.
+                </div>
+                <div>
+                  Email Authentication requires not only modification of the client side (by you adding DNS records) as well as Email provider which supports the
+                 <a href="http://www.openspf.org/">SPF</a> and
+                 <a href="http://www.dkim.org/info/dkim-faq.html">DKIM</a> on the server side. This is either the Email service provided with your domain or you go for one with the necessary support (you then have to modify the MX records of your DNS records to point to this new Email provider). Check the support pages of your domain email provider for keywords like SPF, DKIM to get an understanding what is supported.
+                </div>
+                <div>
+                 <br>
+                </div>
+                <div>
+                  For example I purchased a
+                 <a href="https://www.google.com/work/apps/business/">Google Apps for Work</a> account which comes with a very strong Gmail based E-Mail service offering. It can host all my different Email Addresses of all my different domains (around 10)  and  allows the setup of   SPF/DKIM Email Authentication. The offering is overall very powerful (it introduces any kind of email relaying, rerouting etc. in case you run some other email account as well) and allows you to centralize all your Email handling. 
+                </div>
+                <div>
+                  In my DNS record of of my 
+                 <i>cloudburo.net</i> domain - which was purchased by another vendor - I had to reroute the mail traffic to the google email host environment (in DNS these are MX records). As you can see this a set of servers which will handle the traffic.
+                </div>
+                <div>
+                 <br>
+                </div>
                 <div></p>
               
             </div>
             <img class="img-responsive img-thumbnail article" src="/images/cc04a82d31aae919cef08f1f3da39820.png" />
             <div class="article">
-              <p><span/> 
-                </div> 
-                <div> 
-                 <br> 
-                </div> 
+              <p><span/>        </div>
                 <div>
-                  To get SPF and DKIM on your side established&nbsp; you have to create DNS records for 
-                 <a href="http://www.microsoft.com/mscorp/safety/technologies/senderid/default.mspx" rel="nofollow">SenderID</a> and 
-                 <a href="http://www.dkim.org/info/dkim-faq.html" rel="nofollow">DKIM</a> on your own domain. 
-                </div> 
+                 <br>
+                </div>
                 <div>
-                  Major ISP’s will use this DNS entries to verify your identity and track reputation. So it will ensure that your Emails will&nbsp;not land in the spam folder of your customers. 
-                </div> 
-                <div> 
-                 <br> 
-                </div> 
+                  To get SPF and DKIM on your side established  you have to create DNS records for
+                 <a href="http://wiht.link/sender-id">Sender-ID</a> and
+                 <a href="http://www.dkim.org/info/dkim-faq.html">DKIM</a> on your own domain.
+                </div>
                 <div>
-                  An example here the SPF DNS record entry which is used for my domain cloudburo.net. It&nbsp; defines that emails sent from 
-                 <i>&lt;name&gt;@cloudburo.net</i> may be coming from servers of 
-                 <i>google.com</i> (as explained above I host&nbsp;my emails with 
-                 <i>google</i>), as well as from 
-                 <i>mtasv.net</i> (this are the servers of Mailchimp which I use&nbsp;for newsletter distribution). 
-                </div> 
-                <div> 
-                 <br> 
-                </div> 
+                  Major ISP’s will use this DNS entries to verify your identity and track reputation. So it will ensure that your Emails will not land in the spam folder of your customers.
+                </div>
+                <div>
+                 <br>
+                </div>
+                <div>
+                  An example here the SPF DNS record entry which is used for my domain cloudburo.net. It  defines that emails sent from
+                 <i>&lt;name&gt;@cloudburo.net</i> may be coming from servers of
+                 <i>google.com</i> (as explained above I host my emails with
+                 <i>google</i>), as well as from
+                 <i>mtasv.net</i> (this are the servers of Mailchimp which I use for newsletter distribution).
+                </div>
+                <div>
+                 <br>
+                </div>
                 <div></p>
               
             </div>
             <img class="img-responsive img-thumbnail article" src="/images/acc5ef067f49560caa27dbbf5e93b669.png" />
             <div class="article">
-              <p><span/> 
-                </div> 
-                <div> 
-                 <br> 
-                </div> 
-                <div> 
-                 <b>3. Start Monitoring your Email Traffic via a DMARC report</b> 
-                </div> 
-                <div> 
-                 <b><br></b> 
-                </div> 
+              <p><span/>        </div>
                 <div>
-                  Having SPF and DKIM established you now can benefit from DMARC reporting to check unauthenticated usage of your domain email. You could even introduce a reject policy that is something I didn’t investigated it (definitely the large ISPs are starting to change their strategy as explained later) 
-                </div> 
-                <div> 
-                 <b><a href="http://dmarc.org/" style="text-decoration: none; color: rgb(69, 81, 163); font-family: open_sansregular; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;" rel="nofollow"><br></a></b> 
-                </div> 
-                <div> 
-                 <i><b><span style="">DMARC</span><span style=""><i>&nbsp;stands for Domain-based Message Authentication, Reporting and Conformance. What DMARC does is allow domain owners to publish policy statements in DNS telling receiver domains what to do with messages that do not authenticate. In addition, DMARC introduces the concept of “domain alignment.” What this means is that the authentication has to be from the same domain (or a sub-domain) as the address in the header-from: line. The idea behind DMARC is that organizational owners can use SPF and DKIM authentication to authenticate their actual domain in the header-from line. This moves authentication from a important but behind the scenes technology out to an end user visible technology.</i></span></b></i> 
-                </div> 
-                <div> 
-                 <b><br></b> 
-                </div> 
+                 <br>
+                </div>
                 <div>
-                  An excellent free reporting is provided by Postmark ( 
-                 <a href="https://dmarc.postmarkapp.com/" rel="nofollow"><a href="https://dmarc.postmarkapp.com/">https://dmarc.postmarkapp.com/</a></a>). By registering with them and again adding an additional DNS record for your domain, you will be delivered with a weekly DMARC report. Postmark will process reports from major ISPs about your domain’s DMARC alignment and turn the into beautiful, human-readable weekly email digests. 
-                </div> 
-                <div> 
-                 <br> 
-                </div> 
+                 <b>3. Start Monitoring your Email Traffic via a DMARC report</b>
+                </div>
                 <div>
-                  An example report is shown below, it shows two untrusted sources. A short lookup revealed that the IP addresses from mtasv.net belong to a third party provider which is used by me to send out Emails on behalf of me (actually it’s the very useful Postmark&nbsp;Transaction&nbsp;Email&nbsp;service which is integrated into applications of me). By checking their Web page I found the instruction how I could align these IP address with the DMARC policy (as you could think of by extending the DNS record). 
-                </div> 
-                <div> 
-                 <br> 
-                </div> 
+                 <b><br></b>
+                </div>
                 <div>
-                  You should now be well &nbsp;set up&nbsp;of with your Micro-Business to handle Email traffic in a spam-free manner and a high confidence that the&nbsp;email is reaching your end-user&nbsp;and not his spam folder. 
-                </div> 
-                <div> 
-                 <br> 
-                </div> 
+                  Having SPF and DKIM established you now can benefit from DMARC reporting to check unauthenticated usage of your domain email. You could even introduce a reject policy that is something I didn’t investigated it (definitely the large ISPs are starting to change their strategy as explained later)
+                </div>
+                <div>
+                 <b><a style="text-decoration: none; color: rgb(69, 81, 163); font-size: 16px;" href="http://dmarc.org/"><br></a></b>
+                </div>
+                <div>
+                 <i><b><span style="color: rgb(69, 81, 163);">DMARC</span><span style="color: rgb(47, 48, 76);"><i> stands for Domain-based Message Authentication, Reporting and Conformance. What DMARC does is allow domain owners to publish policy statements in DNS telling receiver domains what to do with messages that do not authenticate. In addition, DMARC introduces the concept of “domain alignment.” What this means is that the authentication has to be from the same domain (or a sub-domain) as the address in the header-from: line. The idea behind DMARC is that organizational owners can use SPF and DKIM authentication to authenticate their actual domain in the header-from line. This moves authentication from a important but behind the scenes technology out to an end user visible technology.</i></span></b></i>
+                </div>
+                <div>
+                 <b><br></b>
+                </div>
+                <div>
+                  An excellent free reporting is provided by Postmark (
+                 <a href="https://dmarc.postmarkapp.com/"><a href="https://dmarc.postmarkapp.com/">https://dmarc.postmarkapp.com/</a></a>). By registering with them and again adding an additional DNS record for your domain, you will be delivered with a weekly DMARC report. Postmark will process reports from major ISPs about your domain’s DMARC alignment and turn the into beautiful, human-readable weekly email digests.
+                </div>
+                <div>
+                 <br>
+                </div>
+                <div>
+                  An example report is shown below, it shows two untrusted sources. A short lookup revealed that the IP addresses from mtasv.net belong to a third party provider which is used by me to send out Emails on behalf of me (actually it’s the very useful Postmark Transaction Email service which is integrated into applications of me). By checking their Web page I found the instruction how I could align these IP address with the DMARC policy (as you could think of by extending the DNS record).
+                </div>
+                <div>
+                 <br>
+                </div>
+                <div>
+                  You should now be well  set up of with your Micro-Business to handle Email traffic in a spam-free manner and a high confidence that the email is reaching your end-user and not his spam folder.
+                </div>
+                <div>
+                 <br>
+                </div>
                 <div></p>
               
             </div>
             <img class="img-responsive img-thumbnail article" src="/images/f3590a9af71c30a37847ee71a091421d.png" />
             <div class="article">
-              <p><span/> 
-                </div> 
-                <div> 
-                 <br> 
-                </div> 
+              <p><span/>        </div>
                 <div>
-                  Read the following 
-                 <a href="http://yahoo.tumblr.com/post/82426971544/an-update-on-our-dmarc-policy-to-protect-our-users" rel="nofollow">article</a> by Yahoo which explains why the changed from one day to another to the hard DMARC policy. A journey to a spam free world. 
-                </div> 
-                <div> 
-                 <div> 
-                  <br> 
-                 </div> 
-                 <div style=""> 
-                  <div> 
-                   <i>In Friday afternoon last week, Yahoo made a simple change to its DMARC policy from “report” to “reject”. In other words, we requested that all other mail services reject emails claiming to come from a Yahoo user, but not signed by Yahoo.&nbsp; Y</i> 
-                   <span style=""><i>ahoo is the first major email provider in the world to adopt this aggressive level of DMARC policy on behalf of our users.</i></span> 
-                  </div> 
-                 </div> 
-                </div> 
-                <div> 
-                 <span style=""><i>And overnight, the bad guys who have used email spoofing to forge emails and launch phishing attempts pretending to come from a Yahoo Mail account were nearly stopped in their tracks.</i></span> 
+                 <br>
+                </div>
+                <div>
+                  Read the following
+                 <a href="http://yahoo.tumblr.com/post/82426971544/an-update-on-our-dmarc-policy-to-protect-our-users">article</a> by Yahoo which explains why the changed from one day to another to the hard DMARC policy. A journey to a spam free world.
+                </div>
+                <div>
+                 <div>
+                  <br>
+                 </div>
+                 <div style="color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);">
+                  <div>
+                   <i>In Friday afternoon last week, Yahoo made a simple change to its DMARC policy from “report” to “reject”. In other words, we requested that all other mail services reject emails claiming to come from a Yahoo user, but not signed by Yahoo.  Y</i>
+                   <span style="color: rgb(68, 68, 68);"><i>ahoo is the first major email provider in the world to adopt this aggressive level of DMARC policy on behalf of our users.</i></span>
+                  </div>
+                 </div>
+                </div>
+                <div>
+                 <span style="color: rgb(68, 68, 68);"><i>And overnight, the bad guys who have used email spoofing to forge emails and launch phishing attempts pretending to come from a Yahoo Mail account were nearly stopped in their tracks.</i></span>
+                </div>
+                <div>
+                 <i><span style="color: rgb(68, 68, 68);"><br></span></i>
+                </div>
+                <div>
+                 <i><span style="color: rgb(68, 68, 68);"><br></span></i>
                 </div></p>
               
             </div>
@@ -387,9 +388,6 @@
                 <a href="/tags/blockchain.html">blockchain</a> (1)
               </li>
               <li>
-                <a href="/tags/bootstrap.html">bootstrap</a> (1)
-              </li>
-              <li>
                 <a href="/tags/bots.html">bots</a> (1)
               </li>
               <li>
@@ -435,7 +433,7 @@
                 <a href="/tags/smallhints.html">smallhints</a> (13)
               </li>
               <li>
-                <a href="/tags/startup.html">startup</a> (9)
+                <a href="/tags/startup.html">startup</a> (10)
               </li>
             </ul>
           </div>
