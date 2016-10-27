@@ -85,199 +85,197 @@
           <div class="entry-description"><div class="row">
   <div class="article">
     <p><span/>      <div>
-        Our microservice(s) will be managed by the 
-       <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html?console_help=true">AWS Elastic Beanstalk</a> Docker service. With Elastic Beanstalk, you can quickly deploy and manage applications in the AWS cloud without worrying about the infrastructure that runs those applications. AWS Elastic Beanstalk reduces management complexity without restricting choice or control. 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+        Our microservice(s) will be managed by the
+       <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html?console_help=true">AWS Elastic Beanstalk</a> Docker service. With Elastic Beanstalk, you can quickly deploy and manage applications in the AWS cloud without worrying about the infrastructure that runs those applications. AWS Elastic Beanstalk reduces management complexity without restricting choice or control.
+      </div>
       <div>
-        Nevertheless quite some configuration is still required, which should be standardized in order to allow to automate these steps. One aspect to consider is the Security configuration of your EB instances which are steering the mircoservices. 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+       <br>
+      </div>
       <div>
-        Standardize the necessary roles and policies from the beginning (amongst other by using a naming scheme) which will help you during the automation of the tasks. 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+        Nevertheless quite some configuration is still required, which should be standardized in order to allow to automate these steps. One aspect to consider is the Security configuration of your EB instances which are steering the mircoservices.
+      </div>
       <div>
-        It&rsquo;s important that you understand the major concepts in context of the AWS Identity and Access Management (IAM capability): 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
-      <ul> 
-       <li><strong><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html">IAM Policies</a>,</strong> which are documents that formally states on or more permissions. In its most basic sense a policy lets you specify 
-        <ul> 
-         <li>Actions: What actions you will allow of a dedicated AWS service.</li> 
-         <li>Resources: Which resources you allow the action on.</li> 
-         <li>Effect: What the effect will be when the user requests access - either allow or deny.<br></li> 
-        </ul></li> 
-       <li><strong><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id.html">IAM Identities</a></strong>,which are the identities for which a formally documented policies can be allocated to. An identity can be<br> 
-        <ul> 
-         <li>An <strong>IAM user</strong> is an entity that you create in AWS. The IAM user represents the person or service who uses the IAM user to interact with AWS.<br></li> 
-         <li>An <strong>IAM group</strong> is a collection of IAM users. You can use groups to specify permissions for a collection of users, which can make those permissions easier to manage for those users.<br></li> 
-         <li>An <strong>IAM role</strong> is very similar to a user, in that it is an identity with permission policies that determine what the identity can and cannot do in AWS. However, a role does not have any credentials (password or access keys) associated with it. Instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it.</li> 
-        </ul></li> 
-       <li>KMS Encryption Key, which is a AWS managed and controlled encryption key provided as part of the AWS Key Management System</li> 
-       <li>EC2 Key Pair, which allows you to establish a SSH remote connection to your EB instance.</li> 
-      </ul> 
-      <div> 
-       <br> 
-      </div> 
-      <div> 
-       <span style="font-size: 18px;"><strong>EB required IAM roles</strong></span> 
-       <br> 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+       <br>
+      </div>
       <div>
-        An EB environment requires two 
-       <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance">IAM roles</a> for correct functioning. These are 
-      </div> 
-      <ul> 
-       <li>EB Service Role</li> 
-       <li>EB Instance Profile Role</li> 
-      </ul> 
-      <div> 
-       <br> 
-      </div> 
-      <div> 
-       <strong>Service Role</strong> 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+        Standardize the necessary roles and policies from the beginning (amongst other by using a naming scheme) which will help you during the automation of the tasks.
+      </div>
       <div>
-        A Service Role grants the EB instance access to use other AWS services on your behalf. 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+       <br>
+      </div>
       <div>
-        We create a policy which is globally defined and can be integrated in any microservice EB environment. 
-      </div> 
-      <ul> 
-       <li>We call it <em><span style="">TST.EB.serviceRolePolicy</span></em></li> 
-       <li>The <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance">link</a>, will explain the policy document content</li> 
-      </ul> 
+        It&rsquo;s important that you understand the major concepts in context of the AWS Identity and Access Management (IAM capability):
+      </div>
       <div>
-        Having done that we create now a Service Role. We decide here to define a role on a microservice level to be flexible for the future. 
-      </div> 
-      <ul> 
-       <li>We call it <em><span style="">tst.&lt;microserviceName&gt;Service</span></em></li> 
-       <li>We attach the policy to the role</li> 
-      </ul> 
-      <div> 
-       <br> 
-      </div> 
+       <br>
+      </div>
+      <ul>
+       <li><strong><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html">IAM Policies</a>,</strong> which are documents that formally states on or more permissions. In its most basic sense a policy lets you specify
+        <ul>
+         <li>Actions: What actions you will allow of a dedicated AWS service.</li>
+         <li>Resources: Which resources you allow the action on.</li>
+         <li>Effect: What the effect will be when the user requests access - either allow or deny.<br></li>
+        </ul></li>
+       <li><strong><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id.html">IAM Identities</a></strong>,which are the identities for which a formally documented policies can be allocated to. An identity can be<br>
+        <ul>
+         <li>An <strong>IAM user</strong> is an entity that you create in AWS. The IAM user represents the person or service who uses the IAM user to interact with AWS.<br></li>
+         <li>An <strong>IAM group</strong> is a collection of IAM users. You can use groups to specify permissions for a collection of users, which can make those permissions easier to manage for those users.<br></li>
+         <li>An <strong>IAM role</strong> is very similar to a user, in that it is an identity with permission policies that determine what the identity can and cannot do in AWS. However, a role does not have any credentials (password or access keys) associated with it. Instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it.</li>
+        </ul></li>
+       <li>KMS Encryption Key, which is a AWS managed and controlled encryption key provided as part of the AWS Key Management System</li>
+       <li>EC2 Key Pair, which allows you to establish a SSH remote connection to your EB instance.</li>
+      </ul>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 18px;"><strong>EB required IAM roles</strong></span>
+       <br>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        An EB environment requires two
+       <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance">IAM roles</a> for correct functioning. These are
+      </div>
+      <ul>
+       <li>EB Service Role</li>
+       <li>EB Instance Profile Role</li>
+      </ul>
+      <div>
+       <br>
+      </div>
+      <div>
+       <strong>Service Role</strong>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        A Service Role grants the EB instance access to use other AWS services on your behalf.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        We create a policy which is globally defined and can be integrated in any microservice EB environment.
+      </div>
+      <ul>
+       <li>We call it <em><span style="">TST.EB.serviceRolePolicy</span></em></li>
+       <li>The <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance">link</a>, will explain the policy document content</li>
+      </ul>
+      <div>
+        Having done that we create now a Service Role. We decide here to define a role on a microservice level to be flexible for the future.
+      </div>
+      <ul>
+       <li>We call it <em><span style="">tst.&lt;microserviceName&gt;Service</span></em></li>
+       <li>We attach the policy to the role</li>
+      </ul>
+      <div>
+       <br>
+      </div>
       <div></p>
     
   </div>
   <img class="img-responsive img-thumbnail article" src="/images/f8d95ed7ff125aa60aba4aa0236d5b45.png" />
   <div class="article">
-    <p><span/> 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
-      <div> 
-       <strong>Instance Profile Role</strong> 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+    <p><span/>        </div>
+      <div></p>
+    
+    <p><br>
+      </div>
       <div>
-        An Instance Profile Role grants the EB instance permission to call AWS services for features including enhanced health reporting and container management. 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+       <strong>Instance Profile Role</strong>
+      </div>
       <div>
-        We create policy which is which is globally defined and can be integrated in any microservice EB environment. 
-      </div> 
-      <ul> 
-       <li>We call it <em><span style="">TST.EB.instanceProfilePolicy</span></em><br></li> 
-       <li>The <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance">link</a>, will explain the policy document content, it will contain policies for<br> 
-        <ul> 
-         <li>Write logs to Amazon Simple Storage Service</li> 
-         <li>Coordinate container deployments with Amazon EC2 Container Service in multicontainer Docker environments</li> 
-         <li>In worker environments, read from an Amazon Simple Queue Service (Amazon SQS) queue</li> 
-         <li>In worker environments, perform leader election with Amazon DynamoDB</li> 
-         <li>In worker environments, publish instance health metrics to Amazon CloudWatch</li> 
-        </ul></li> 
-      </ul> 
+       <br>
+      </div>
       <div>
-        Having done that we create now a Instance Profile Role. We decide here to define a role on a microservice level to be flexible for the future. 
-      </div> 
-      <ul> 
-       <li>We call it <em><span style="">tst.&lt;microserviceName&gt;</span></em></li> 
-       <li>We attach the Instance Profile default policy to the role</li> 
-      </ul> 
-      <div> 
-       <br> 
-      </div> 
+        An Instance Profile Role grants the EB instance permission to call AWS services for features including enhanced health reporting and container management.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        We create policy which is which is globally defined and can be integrated in any microservice EB environment.
+      </div>
+      <ul>
+       <li>We call it <em><span style="">TST.EB.instanceProfilePolicy</span></em><br></li>
+       <li>The <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance">link</a>, will explain the policy document content, it will contain policies for<br>
+        <ul>
+         <li>Write logs to Amazon Simple Storage Service</li>
+         <li>Coordinate container deployments with Amazon EC2 Container Service in multicontainer Docker environments</li>
+         <li>In worker environments, read from an Amazon Simple Queue Service (Amazon SQS) queue</li>
+         <li>In worker environments, perform leader election with Amazon DynamoDB</li>
+         <li>In worker environments, publish instance health metrics to Amazon CloudWatch</li>
+        </ul></li>
+      </ul>
+      <div>
+        Having done that we create now a Instance Profile Role. We decide here to define a role on a microservice level to be flexible for the future.
+      </div>
+      <ul>
+       <li>We call it  <em><span style="">tst.&lt;microserviceName&gt;</span></em></li>
+       <li>We attach the Instance Profile default policy to the role</li>
+      </ul>
+      <div>
+       <br>
+      </div>
       <div></p>
     
   </div>
   <img class="img-responsive img-thumbnail article" src="/images/7e0fc0c501d8124e474caa2e8f0836e8.png" />
   <div class="article">
-    <p><span/> 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
-      <div> 
-       <div>
-         So now we have defined two roles with the necessary policies, which must be configured to our EB environment template which is used as a configuration for each EB instance. 
-       </div> 
-       <div> 
-        <br> 
-       </div> 
-       <div>
-         Each instance created by EB will have this IAM roles allocated and obviously your IAM Roles will have multiple policies attached dependent on your microservice integration into the AWS ecosystem. 
-       </div> 
-       <div> 
-        <br> 
-       </div> 
-       <div> 
-        <strong>Allocate the two roles to your EB environment configuration</strong> 
-        <br> 
-       </div> 
-       <div> 
-        <strong><br></strong> 
-       </div> 
-       <div>
-         The Instance Profile Role will be allocated in the EB Dashboard as part of the &ldquo;Instances&rdquo; tab. 
-       </div> 
-      </div> 
-      <div> 
-       <br> 
-      </div> 
+    <p><span/>        </div>
       <div>
-        The Service Role will be allocated in the EB Dashboard as part of the &ldquo;Health&rdquo; tab. 
-      </div> 
+       <br>
+      </div>
+      <div>
+       <div>
+         So now we have defined two roles with the necessary policies, which must be configured to our EB environment template which is used as a configuration for each EB instance.
+       </div>
+       <div>
+        <br>
+       </div>
+       <div>
+         Each instance created by EB will have this IAM roles allocated and obviously your IAM Roles will have multiple policies attached dependent on your microservice integration into the AWS ecosystem.
+       </div>
+       <div>
+        <br>
+       </div>
+       <div>
+        <strong>Allocate the two roles to your EB environment configuration</strong>
+        <br>
+       </div>
+       <div>
+        <strong><br></strong>
+       </div>
+       <div>
+         The Instance Profile Role will be allocated in the EB Dashboard as part of the &ldquo;Instances&rdquo; tab.
+       </div>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The Service Role  will be allocated in the EB Dashboard as part of the &ldquo;Health&rdquo; tab.
+      </div>
       <div></p>
     
   </div>
   <img class="img-responsive img-thumbnail article" src="/images/8b3214495d802368ea57173314bea657.png" />
-  <div class="article"><p><span/> 
-  </div> 
-  <div> 
-   <br>In case you are automating the environment creation process with the help of the 
-   <a href="https://aws.amazon.com/cli/">AWS Command Line Interface</a> (CLI) you should include the following option settings, which are passed as part of the 
-   <em>-<span style="">-option-settings</span></em> parameter 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+  <div class="article"><p><span/>        </div>
+  <div>
+   <br>In case you are automating the environment creation process with the help of the
+   <a href="https://aws.amazon.com/cli/">AWS Command Line Interface</a> (CLI) you should include the following option settings, which are passed as part of the
+   <em>-<span style="">-option-settings</span></em> parameter
+  </div>
+  <div>
+   <br>
+  </div>
   <div></p>
 <pre class="highlight json"><code><span class="w">
-</span><span class="p">{</span><span class="w"> 
+  </span><span class="p">{</span><span class="w"> 
 </span><span class="s2">"Namespace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aws:autoscaling:launchconfiguration"</span><span class="p">,</span><span class="w"> 
   </span><span class="s2">"OptionName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IamInstanceProfile"</span><span class="p">,</span><span class="w"> 
   </span><span class="s2">"Value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tst.curationPlatform"</span><span class="w"> 
@@ -291,68 +289,68 @@
 
 </span></code></pre>
 
-<p></div> 
-  <div> 
-   <br> 
-  </div> 
-  <div> 
-   <span style="font-size: 18px;"><strong>KMS Encryption Key</strong></span> 
-  </div> 
-  <div> 
-   <strong><span style="font-size: 18px;"><br></span></strong> 
-  </div> 
+<p></div>
   <div>
-    Beside the two roles, we will define an Encryption Key provided by the 
-   <a href="http://docs.aws.amazon.com/kms/latest/developerguide/overview.html">AWS Key Management Service</a> (KMS). The AWS Key Management Service (AWS KMS) is a managed service that makes it easy for you to create and control the encryption keys used to encrypt your data. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+   <br>
+  </div>
   <div>
-    Again an Encryption Key is provided per region, where the EB instance will run. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+   <span style="font-size: 18px;"><strong>KMS Encryption Key</strong></span>
+  </div>
   <div>
-    From a naming point of view we will not code the region postfix, due to the fact that you can define the same encryption key on a per region level. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+   <strong><span style="font-size: 18px;"><br></span></strong>
+  </div>
   <div>
-    So we will call our key 
-   <span style=""><em>tst_ms_&lt;microserviceName&gt;</em>.</span> 
-  </div> 
-  <div> 
-   <span style=""><br></span> 
-  </div> 
+    Beside the two roles, we will define an Encryption Key provided by the
+   <a href="http://docs.aws.amazon.com/kms/latest/developerguide/overview.html">AWS Key Management Service</a> (KMS). The AWS Key Management Service (AWS KMS) is a managed service that makes it easy for you to create and control the encryption keys used to encrypt your data.
+  </div>
   <div>
-    As a key user(s) we assign the role of 
+   <br>
+  </div>
+  <div>
+    Again an Encryption Key is provided per region, where the EB instance will run.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    From a naming point of view we will not code the region postfix, due to the fact that you can define the same encryption key on a per region level.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    So we will call our key
+   <span style=""><em>tst_ms_&lt;microserviceName&gt;</em>.</span>
+  </div>
+  <div>
+   <span style=""><br></span>
+  </div>
+  <div>
+    As a key user(s) we assign the role of
    <em><span style="">tst.curationPlatform</span></em>, i.e. our Elastic Beanstalk Microservice will be able to encrypt and decrypt sensitive data at rest (= in our S3 buckets). 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
-  <div> 
-   <strong><span style="font-size: 18px;">EC2 Key Pair to Enable Remote Login</span></strong> 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+  </div>
   <div>
-    In order to enable remote login into your Elastic Beanstalk Environment you have to create a EC2 key pair and configure it into your EB configuration. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+   <br>
+  </div>
+  <div>
+   <strong><span style="font-size: 18px;">EC2 Key Pair to Enable Remote Login</span></strong>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    In order to enable remote login into your Elastic Beanstalk Environment you have to create a EC2 key pair and configure it into your EB configuration.
+  </div>
+  <div>
+   <br>
+  </div>
   <div>
     You can find the description 
-   <a href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html">Docker Small Hints #3: SSH into your AWS Elastic Beanstalk Component</a> 
-  </div> 
-  <div> 
-   <br> 
-   <br> 
+   <a href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html">Docker Small Hints #3: SSH into your AWS Elastic Beanstalk Component</a>
+  </div>
+  <div>
+   <br>
+   <br>
   </div></p>
 
   </div>
