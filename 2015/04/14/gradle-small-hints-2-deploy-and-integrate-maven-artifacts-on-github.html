@@ -84,34 +84,34 @@
           </header>
           <div class="entry-description"><div class="row">
   <div class="article"><p><span/>      <div>
-    The following steps are necessary to deploy and integrate artifacts in a Maven repository hosted on Github: 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+    The following steps are necessary to deploy and integrate artifacts in a Maven repository hosted on Github:
+  </div>
   <div>
-    Assumption is that you have a 
-   <b><i><span style="">clb_mvnrepo</span></i></b> Github repository which manages your Maven Repository in a 
-   <i><b><span style="">releases</span></b></i> and 
-   <b><i><span style="">snapshots</span></i></b> branch. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
-  <div> 
-   <span style="font-size: 24px;"><b>Build and Deploy</b></span> 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+   <br>
+  </div>
   <div>
-    Clone the 
-   <i><span style="">snapshots</span></i> and 
-   <i><span style="">releases</span></i> branches of your Maven Repository to the local machine. You will publish the artifacts of your project which you build into this target directory. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+    Assumption is that you have a
+   <b><i><span style="">clb_mvnrepo</span></i></b> Github repository which manages your Maven Repository in a
+   <i><b><span style="">releases</span></b></i> and
+   <b><i><span style="">snapshots</span></i></b> branch.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 24px;"><b>Build and Deploy</b></span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    Clone the
+   <i><span style="">snapshots</span></i> and
+   <i><span style="">releases</span></i> branches of your Maven Repository to the local machine. You will publish the artifacts of your project which you build into this target directory.
+  </div>
+  <div>
+   <br>
+  </div>
   <div></p>
 <pre class="highlight shell"><code>
   git clone -b releases  https://github.com/talfco/clb_mvnrepo.git clb_mvnrepo_releases 
@@ -119,23 +119,23 @@
 
 </code></pre>
 
-<div> 
-   <br> 
-  </div> 
+<div>
+   <br>
+  </div>
 
 <p><div>
-    In the<br>
-   <b><i><span style="">build.gradle</span></i></b> File of your project add the following entries: 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+    In the 
+   <b><i><span style="">build.gradle</span></i></b> File of your project add the following entries:
+  </div>
   <div>
-    At the top of the file add the maven publish plugin 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+   <br>
+  </div>
+  <div>
+    At the top of the file add the maven publish plugin
+  </div>
+  <div>
+   <br>
+  </div>
   <div></p>
 <pre class="highlight plaintext"><code>
   apply plugin: 'groovy' 
@@ -143,17 +143,17 @@
 
 </code></pre>
 
-<div> 
-   <br> 
-  </div> 
+<div>
+   <br>
+  </div>
 
 <p><div>
-    Additionally add the publishing configuration which points to your local Maven repository clone to your 
-   <b><i><span style="">build.gradle</span></i></b> 
-  </div> 
-  <div> 
-   <i><b><span style=""><br></span></b></i> 
-  </div> 
+    Additionally add the publishing configuration which points to your local Maven repository clone to your
+   <b><i><span style="">build.gradle</span></i></b>
+  </div>
+  <div>
+   <i><b><span style=""><br></span></b></i>
+  </div>
   <div></p>
 <pre class="highlight plaintext"><code>
   publishing { 
@@ -172,51 +172,51 @@
 
 </code></pre>
 
-<div> 
-   <br> 
-  </div> 
+<div>
+   <br>
+  </div>
 
-<p><div> 
-   <br> 
-  </div> 
+<p><div>
+   <br>
+  </div>
   <div>
-    Depending on the version number of 
-   <i><b><span style="">1.1.0</span></b></i> or 
-   <i><b><span style="">1.1.0-SNAPSHOT</span></b></i> configure the publishing configuration for the 
-   <i><b><span style="">releases</span></b></i> or 
-   <i><b><span style="">snapshots</span></b></i> local GIT clone directory. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+    Depending on the version number of
+   <i><b><span style="">1.1.0</span></b></i> or
+   <i><b><span style="">1.1.0-SNAPSHOT</span></b></i> configure the publishing configuration for the
+   <i><b><span style="">releases</span></b></i> or
+   <i><b><span style="">snapshots</span></b></i> local GIT clone directory.
+  </div>
   <div>
-    The 
-   <i><b><span style="">gradle publish</span></b></i> command will build your project and deploy it to your 
-   <i><b><span style="">clb_mvnrepo</span></b></i> directory. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
+   <br>
+  </div>
   <div>
-    Having published it into your publish directory, commit and push via the git commands to your Github snapshot/release directory. 
-  </div> 
-  <div> 
-   <br> 
-  </div> 
-  <div style=" color: rgb(44, 62, 80); background-color: rgb(255, 255, 255);"> 
-   <div> 
-    <span style="font-size: 24px;"><b>Integrate Released Artifacts</b></span> 
-   </div> 
-   <div> 
-    <br> 
-   </div> 
+    The
+   <i><b><span style="">gradle publish</span></b></i> command will build your project and deploy it to your
+   <i><b><span style="">clb_mvnrepo</span></b></i> directory.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    Having published it into your publish directory, commit and push via the git commands to your Github snapshot/release directory.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div style=" color: rgb(44, 62, 80); background-color: rgb(255, 255, 255);">
    <div>
-     You can now reference the released libraries via the following gradle configuration, assuming you released 
-    <i><b>clb-gradleTask</b></i> library 
-   </div> 
-   <div> 
-    <br> 
-   </div> 
+    <span style="font-size: 24px;"><b>Integrate Released Artifacts</b></span>
+   </div>
+   <div>
+    <br>
+   </div>
+   <div>
+     You can now reference the released libraries via the following gradle configuration, assuming you released
+    <i><b>clb-gradleTask</b></i> library
+   </div>
+   <div>
+    <br>
+   </div>
    <div></p>
 <pre class="highlight plaintext"><code>
   repositories { 
@@ -229,23 +229,23 @@
 
 </code></pre>
 
-<p></div> 
-   <div> 
-    <br> 
-   </div> 
-  </div> 
-  <div> 
-   <div style=" color: rgb(44, 62, 80); background-color: rgb(255, 255, 255);"> 
-    <br style=""> 
-   </div> 
-  </div> 
-  <div style=" font-size: 18px; background-color: rgb(255, 255, 255);"> 
-   <div> 
-    <span style="font-size: 24px;"><br></span> 
-   </div> 
-  </div> 
-  <div> 
-   <span style="font-size: 24px;"><br></span> 
+<p></div>
+   <div>
+    <br>
+   </div>
+  </div>
+  <div>
+   <div style=" color: rgb(44, 62, 80); background-color: rgb(255, 255, 255);">
+    <br style="">
+   </div>
+  </div>
+  <div style=" font-size: 18px; background-color: rgb(255, 255, 255);">
+   <div>
+    <span style="font-size: 24px;"><br></span>
+   </div>
+  </div>
+  <div>
+   <span style="font-size: 24px;"><br></span>
   </div></p>
 
   </div>
