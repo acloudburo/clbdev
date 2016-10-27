@@ -1,0 +1,1 @@
+$(function(){var s=$("#togglesidebar"),l=$("#primary"),a=$("#secondary");s.on("click",function(){l.hasClass("col-sm-9")?(l.removeClass("col-sm-9"),l.addClass("col-sm-12"),a.css("display","none")):(l.removeClass("col-sm-12"),l.addClass("col-sm-9"),a.css("display","inline-block"))})});
