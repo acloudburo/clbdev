@@ -5,10 +5,108 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2016-07-18T16:06:09Z</updated>
+  <updated>2016-11-22T22:15:39Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Blockchain Governance System Introduction</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html"/>
+    <id>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</id>
+    <published>2016-11-22T22:15:39Z</published>
+    <updated>2016-11-22T22:15:39+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Josh Stark provides in
+       &lt;a href="http://www.coindesk.com/making-sense-blockchain-governance-applications/"&gt;this article&lt;/a&gt; an excellent introduction to the topic of Blockchain Governance Applications.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        It starts with a simple definition of the term “Governance”
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;This is what I mean by &amp;ldquo;governance&amp;rdquo; for the purposes of this article – the processes and systems used to facilitate decision-making in any organization.&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        This decision making process requires some basic technologies, which are provided in this context by the blockchain technology. Amongst others these are
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;First, it requires a way to record a set of rules. Rules like who gets to vote, who gets to sit in parliament or who has commit access to a codebase&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;Second, there must be a way for people to interact with the rules.&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;Third, governance systems require a way to enforce the rules.&lt;br&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;The article introduces a simple example of a voting system used by an NGO and then applies the blockchain technology to provide a Governance Application solution to the use case. This illustration process is very helpful in getting a quick and easy to understand overview of this rather complex domain.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The benefits of the blockchain in the above example are
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;First, blockchains are ideal for recording information in a way that can be later verified as authoritative. &lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;Second, blockchains provide a new way for people to interact with the rules directly. Some blockchains allow users to create logical scripts that are executed by the blockchain itself (smart contract code), which are executing the agreed rule.&lt;/li&gt;
+        &lt;li&gt;Having the rule express as executable code in the blockchain itself we have already achieved our third requirement – enforcement. When the rule is expressed as executable code, the rule can be enforced at the same time it is exercised.&lt;br&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        These three blockchain features are the foundation of any bitcoin governance system.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The author then goes on a introduces the bigger picture as well outlines various existing use cases. You can find the full article
+       &lt;a href="http://www.coindesk.com/making-sense-blockchain-governance-applications/"&gt;here&lt;/a&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Meteor Small Hints #5: Server Code Fragments executed twice on Startup</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html"/>
@@ -488,250 +586,6 @@
     
     &lt;p&gt;&lt;a href="https://www.shopify.com/blog/34526469-how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-in-3-days"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>The Anatomy of a EB based Microservice - Github Docker Integration</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
-    <id>https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
-    <published>2016-05-12T21:14:14Z</published>
-    <updated>2016-10-26T16:07:06+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-        The article describes the fundamental steps for the base setup of the Amazon Elastic Beanstalk Runtime Configuration.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        For handling S3 based configuration aspects of our Microservices we will setup a bucket, which holds any kind of file required by our Microservices.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In order to be fit for grow we will introduce a naming convention from start. An asset/configuration item required for our microservice ecosystem, will start with „
-       &lt;span style=""&gt;TST&lt;/span&gt;“, you should follow a similar strategy in your area. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;strong&gt;&lt;br&gt;&lt;/strong&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;&lt;strong&gt;Setup&lt;span style="font-size: 18px;"&gt; &lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;up a S3 Bucket for our Microservices&lt;/strong&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;We will call our Amazon S3 Bucket, using &lt;span style=""&gt;ms&lt;/span&gt; as an acronym for &lt;span style=""&gt;microservice&lt;/span&gt;.
-        &lt;ul&gt;
-         &lt;li&gt;&lt;span style=""&gt;tst.ms.common.&amp;lt;region&amp;gt;&lt;/span&gt;&lt;/li&gt;
-         &lt;li&gt;The bucket will hold any data which is common to all our microservices.&lt;/li&gt;
-        &lt;/ul&gt; &lt;/li&gt;
-       &lt;li&gt;Be aware of that the S3 Bucket must &lt;span style="text-decoration: underline;"&gt;be in the same region&lt;/span&gt; as your Elastic Beanstalk Instance, therefore we append the region postfix, e.g. &lt;span style=""&gt;tst.ms.common.us-west-2.&lt;/span&gt;&lt;/li&gt;
-       &lt;li&gt;With the region postfix, we can easily introduce the same bucket in other regions - in case we want to replicate our installations cross-region - following a clean and easy to understand name scheme.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;&lt;strong&gt;Create an IAM Policy for the S3 Bucket Access&lt;/strong&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;strong&gt;&lt;br&gt;&lt;/strong&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;We create now an Amazon AWS Identity and Access Management(IAM) Policy, which is a read policy, which will be attached to any of our running microservices:
-        &lt;ul&gt;
-         &lt;li&gt;IAM Policy: &lt;span style=""&gt;TST.S3.Read.clb_ms_common&lt;/span&gt;&lt;/li&gt;
-         &lt;li&gt;We will include here any common buckets of the various regions, for now we have only one&lt;/li&gt;
-        &lt;/ul&gt; &lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/fa1f9d80fa3e99cfd43cb10f08f2fd30.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;&lt;strong&gt;Allocate the policy to your  IAM Role&lt;/strong&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Having defined a read policy, we have to attach now the police to our
-       &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;Elastic Beanstalk instance profile&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Refer to the following article, 
-       &lt;a href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"&gt;The Anatomy of a EB based Microservice - AWS Security Configuration&lt;/a&gt;, which describes how to setup an EB instance profile.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        We will attach to the role the above created the bucket read policy.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/f1cc61e5c345dcb0403a760325cfe237.png" /&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    So we have now a common bucket ready in our Elastic Beanstalk region,  which is attached with read-rights to our EB instance configuration.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Now head over to your EB project which contains the EB Docker configuration.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 18px;"&gt;&lt;strong&gt;Storing your dockerhub credentials required to access your private Github docker account&lt;/strong&gt;&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    The common bucket will be used for storing your dockerhub credentials in order to allow EB to pull your private docker image. In case you are working with a public docker image this step is not required.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;ul&gt;
-   &lt;li&gt;As a first step store your github credentials in the common bucket, as for example in the file &lt;span style=""&gt;tst.ms.common.us-west-2&lt;/span&gt;/&lt;span style=""&gt;credentials.json&lt;/span&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-        &lt;/span&gt;&lt;span class="s2"&gt;"https://index.docker.io/v1/"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-                &lt;/span&gt;&lt;span class="s2"&gt;"auth"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"myauth1245="&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-                &lt;/span&gt;&lt;span class="s2"&gt;"email"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"myemail@gmail.com"&lt;/span&gt;&lt;span class="w"&gt; 
-        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
-  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
-
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;ul&gt;
-   &lt;li&gt;You docker sensitive access data is now available to EB in a encrypted manner and secured at rest.&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;b&gt;&lt;span style="font-size: 18px;"&gt;Configure the docker file in your Elastic Beanstalk Directory&lt;/span&gt;&lt;/b&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;ul&gt;
-   &lt;li&gt;Add the following entry to your &lt;span style=""&gt;Dockerrun.aws.json. &lt;/span&gt;The file describes your &lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_image.html"&gt;EB single container docker configuration&lt;/a&gt; and the entry will tell EB where to find your authentication information to access your private docker hub repository.&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-    "Authentication": { 
-      "Bucket": "clb.ms.common.us-west-2", 
-      "Key": "credentials.json" 
-    }, 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;ul&gt;
-   &lt;li&gt;Finally add an entry where to find the docker image to the &lt;span style=""&gt;Dockerrun.aws.json&lt;/span&gt; file&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-    "Image": { 
-      "Name": „&amp;lt;dockerhubUsername&amp;gt;/curationplatform:v1.0.2", 
-      "Update": "true" 
-    }, 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;ul&gt;
-   &lt;li&gt;The overall Dockerrun.aws.json file will look like as following and EB will load your application from a private dockerhub repository.&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="s2"&gt;"AWSEBDockerrunVersion"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"1"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="s2"&gt;"Authentication"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="s2"&gt;"Bucket"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"tst.ms.common.us-west-2"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="s2"&gt;"Key"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"credentials.json"&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="s2"&gt;"Image"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="s2"&gt;"Name"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"dockerhubusername/curationplatform:v1.0.2"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="s2"&gt;"Update"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"false"&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="s2"&gt;"Volumes"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-        &lt;/span&gt;&lt;span class="s2"&gt;"HostDirectory"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"/var/log"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-        &lt;/span&gt;&lt;span class="s2"&gt;"ContainerDirectory"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"/home/app/log"&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="s2"&gt;"Ports"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt; 
-       &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-         &lt;/span&gt;&lt;span class="s2"&gt;"ContainerPort"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"80"&lt;/span&gt;&lt;span class="w"&gt; 
-       &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
-     &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="s2"&gt;"Logging"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"/var/log/docker.log"&lt;/span&gt;&lt;span class="w"&gt; 
-  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
-
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;&lt;/p&gt;
-
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
