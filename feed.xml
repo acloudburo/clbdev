@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html"/>
     <id>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</id>
     <published>2016-11-22T22:15:39Z</published>
-    <updated>2016-11-23T06:04:43+00:00</updated>
+    <updated>2016-11-23T16:58:47+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -42,12 +42,17 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        This decision making process requires some basic technologies, which are provided in this context by the blockchain technology. Amongst others these are
+        This decision making process requires some basic technologies, which are provided in this context by the blockchain technology.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;
+        Amongst others these are
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
       &lt;div&gt;
        &lt;ul&gt;
         &lt;li&gt;First, it requires a way to record a set of rules. Rules like who gets to vote, who gets to sit in parliament or who has commit access to a codebase.&lt;br&gt;&lt;/li&gt;
@@ -67,7 +72,6 @@
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
       &lt;div&gt;
        &lt;ul&gt;
         &lt;li&gt;First, blockchains are ideal for recording information in a way that can be later verified as authoritative. &lt;br&gt;&lt;/li&gt;
