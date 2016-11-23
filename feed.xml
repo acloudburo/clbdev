@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html"/>
     <id>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</id>
     <published>2016-11-22T22:15:39Z</published>
-    <updated>2016-11-22T22:20:31+00:00</updated>
+    <updated>2016-11-23T06:04:43+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -50,7 +50,7 @@
       &lt;div&gt;&lt;/div&gt;
       &lt;div&gt;
        &lt;ul&gt;
-        &lt;li&gt;First, it requires a way to record a set of rules. Rules like who gets to vote, who gets to sit in parliament or who has commit access to a codebase&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;First, it requires a way to record a set of rules. Rules like who gets to vote, who gets to sit in parliament or who has commit access to a codebase.&lt;br&gt;&lt;/li&gt;
         &lt;li&gt;Second, there must be a way for people to interact with the rules.&lt;br&gt;&lt;/li&gt;
         &lt;li&gt;Third, governance systems require a way to enforce the rules.&lt;br&gt;&lt;/li&gt;
        &lt;/ul&gt;
