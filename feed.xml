@@ -5,16 +5,67 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2016-11-22T22:15:39Z</updated>
+  <updated>2016-11-28T21:33:21Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>The Twelve Factor App Methodology for Building SAAS</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"/>
+    <id>https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html</id>
+    <published>2016-11-28T21:33:21Z</published>
+    <updated>2016-11-28T21:33:22+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Deliver applications as “Software-As-A-Service” in a Cloud Platform requires to take some principles into consideration, which were not immediately obvious when coming from a class development environment.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The
+       &lt;a href="http://12factor.net"&gt;12factor.net&lt;/a&gt; Web page provides the so-called twelve-factor app methodology for building software-as-a-service apps. It can be applied to apps written in any language and using any combination of backing service.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        It’s centred around the core principles of
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;Use &lt;b&gt;declarative&lt;/b&gt; formats for setup automation, to minimize time and cost for new developers joining the project;&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;Have a &lt;b&gt;clean contrac&lt;/b&gt;t with the underlying operating system, offering maximum portability between execution environments;&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;Are suitable for &lt;b&gt;deployment&lt;/b&gt; on modern cloud platforms, obviating the need for servers and systems administration;&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Minimize divergence&lt;/b&gt; between development and production, enabling continuous deployment for maximum agility;&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;And can &lt;b&gt;scale up&lt;/b&gt; without significant changes to tooling, architecture, or development practices.&lt;br&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;Use it as your guiding cookbook when starting newly with writing software-as-a-service apps.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Blockchain Governance System Introduction</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html"/>
     <id>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</id>
     <published>2016-11-22T22:15:39Z</published>
-    <updated>2016-11-23T16:58:47+00:00</updated>
+    <updated>2016-11-27T21:51:45+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -123,7 +174,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html"/>
     <id>https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html</id>
     <published>2016-07-18T16:06:09Z</published>
-    <updated>2016-10-26T16:07:08+00:00</updated>
+    <updated>2016-11-27T21:51:45+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -249,7 +300,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html"/>
     <id>https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html</id>
     <published>2016-06-21T22:17:15Z</published>
-    <updated>2016-10-26T16:07:08+00:00</updated>
+    <updated>2016-11-27T21:51:45+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -302,7 +353,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
     <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
     <published>2016-06-09T21:14:47Z</published>
-    <updated>2016-10-27T18:03:00+00:00</updated>
+    <updated>2016-11-27T21:51:45+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -403,7 +454,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html"/>
     <id>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</id>
     <published>2016-05-23T17:03:55Z</published>
-    <updated>2016-10-26T16:07:07+00:00</updated>
+    <updated>2016-11-27T21:51:45+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -514,89 +565,6 @@
    &lt;span style="font-size: 11px;"&gt;&lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
   &lt;/div&gt;&lt;/p&gt;
 
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>How We Built an Ecommerce Business from Scratch and Generated $922.16 in Revenue in 3 Days</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
-    <id>https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html</id>
-    <published>2016-05-13T23:04:33Z</published>
-    <updated>2016-10-07T08:02:35+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Shopify has an execellent blog when it comes down to tips for startups or micro enterprises. There advices are always very practical oriented.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Richard Lazazzera presented a nice article “how build an ecommerce business from scratch and see how many sales we could generate in three days”.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        For many entrepreneurs, building their first business can be intimidating. There’s seemingly hundreds of steps, choices and paths to get to the finish line of just launching your business, let alone generating traffic and sales. Richard outlines and describes the following steps in detail:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;Getting Started In most cases, it takes some money to make money.&lt;/li&gt;
-       &lt;li&gt;What Should We Sell?&lt;/li&gt;
-       &lt;li&gt;Determining an Ecommerce Business Model &lt;/li&gt;
-       &lt;li&gt;Finding a High Quality Dropshipper&lt;/li&gt;
-       &lt;li&gt;Broadening Our Product Supplier Search Terms&lt;/li&gt;
-       &lt;li&gt;Ordering a Sample Product to Verify Product&lt;/li&gt;
-       &lt;li&gt;Determining Product Pricing &lt;/li&gt;
-       &lt;li&gt;Creating and Designing a Brand Keeping&lt;/li&gt;
-       &lt;li&gt;Deciding On a Business Name&lt;/li&gt;
-       &lt;li&gt;Designing a Logo That was Simple and Effective&lt;/li&gt;
-       &lt;li&gt;Creating Product Logo&lt;/li&gt;
-       &lt;li&gt;Taking the Product Photography with Our Smartphones&lt;/li&gt;
-       &lt;li&gt;Setting Up Our Shopify Store&lt;/li&gt;
-       &lt;li&gt;Setting up the Product Page&lt;/li&gt;
-       &lt;li&gt;Sales Channels and Marketing Strategies&lt;/li&gt;
-       &lt;li&gt;Personal Outreach to Friends and Family&lt;/li&gt;
-       &lt;li&gt;Product Hunt&lt;/li&gt;
-       &lt;li&gt;Reddit&lt;/li&gt;
-       &lt;li&gt;Instagram&lt;/li&gt;
-       &lt;li&gt;Pinterest&lt;/li&gt;
-       &lt;li&gt;Facebook Paid Advertising&lt;/li&gt;
-       &lt;li&gt;Twitter&lt;/li&gt;
-       &lt;li&gt;Marketing Channel Results - Overview&lt;/li&gt;
-       &lt;li&gt;Overall Setup and Marketing Expenses&lt;/li&gt;
-       &lt;li&gt;Conclusion&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        An astonishing list of activities and findings. Especially the sections about the various Sales Channels and their effectiveness is helpful when you establishing your own business.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        You can find the complete article
-       &lt;a href="https://www.shopify.com/blog/34526469-how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-in-3-days"&gt;here&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="https://www.shopify.com/blog/34526469-how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-in-3-days"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
