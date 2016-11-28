@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"/>
     <id>https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html</id>
     <published>2016-11-28T21:33:21Z</published>
-    <updated>2016-11-28T21:36:26+00:00</updated>
+    <updated>2016-11-28T21:39:12+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -58,6 +58,13 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;a href="http://12factor.net"&gt;&lt;b&gt;Check it out here&lt;/b&gt;&lt;/a&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
