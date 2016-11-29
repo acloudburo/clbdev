@@ -5,10 +5,88 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2016-11-28T21:33:21Z</updated>
+  <updated>2016-11-29T21:48:26Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>The 5 pillars of the AWS Architecture Framework</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html"/>
+    <id>https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html</id>
+    <published>2016-11-29T21:48:26Z</published>
+    <updated>2016-11-29T21:48:26+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Recently I published an article about the
+       &lt;a href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"&gt;Twelve Factor App Methodology for SAAS&lt;/a&gt;, which can be applied for any programming language.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In case you decide to go with
+       &lt;a href="http://aws.amazon.com"&gt;aws.amazon.com&lt;/a&gt; you can complement the methodology with
+       &lt;a href="http://d0.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf"&gt;AWS Architecture Framework&lt;/a&gt;, which provides you with a solid architectural foundation for building these new kind of applications. The white paper got recently updated (November 2016) an addresses general design principles, as well as specific best practices and guidance in five conceptual areas that AWS defines as the pillars of the Well-Architected Framework.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;ol&gt;
+        &lt;li&gt;&lt;b&gt;Security&lt;/b&gt;: The ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Reliability&lt;/b&gt;:  The ability of a system to recover from infrastructure or service failures, dynamically acquire computing resources to meet demand, and mitigate disruptions such as misconfigurations or transient network issues.&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Performance Efficiency: &lt;/b&gt;The ability to use computing resources efficiently to meet system requirements, and to maintain that efficiency as demand changes and technologies evolve.&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Cost Optimization&lt;/b&gt;: The ability to avoid or eliminate unneeded cost or suboptimal resources.   &lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Operational Excellence: &lt;/b&gt;The ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.&lt;br&gt;&lt;/li&gt;
+       &lt;/ol&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        When architecting solutions you make trade-offs between pillars based upon your business context, these business decisions can drive your engineering priorities. 
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The paper will help you to make the right decisions in context of application requirements and is a guiding light in the sometimes complex AWS ecosystems
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You can find the full white paper:
+       &lt;b&gt;&lt;a href="http://d0.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf"&gt;Here&lt;/a&gt;.&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        My articles to the usage of the Amazon cloud you will find under the tag
+       &lt;a href="https://dev.cloudburo.net/tags/aws.html"&gt;aws&lt;/a&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>The Twelve Factor App Methodology for Building SAAS</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"/>
@@ -459,125 +537,6 @@
     
     &lt;p&gt;&lt;a href="http://venturebeat.com/2016/05/21/the-5-branches-of-conversational-commerce-a-guide-for-the-bot-curious/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Meteor Small Hints #4: Reading this.params values in the iron-router Data Context</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html"/>
-    <id>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</id>
-    <published>2016-05-23T17:03:55Z</published>
-    <updated>2016-11-27T21:51:45+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-   &lt;a href="http://iron-meteor.github.io/iron-router"&gt;Iron-router&lt;/a&gt; is a powerful Meteor router that works on the server and browser. 
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    In this article we describe how you can read out a query parameter via the data context of the iron-router, which then can be processed later in the  template. In the below example we have outsourced the routing logic for
-   &lt;i&gt;/dashboard&lt;/i&gt; to an iron-router controller file.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
-  &lt;span class="nx"&gt;Router&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;route&lt;/span&gt; &lt;span class="s"&gt;'/dashboard'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"dashboard"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;controller&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'DashboardController'&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-    In the URL call we will pass in a query parameter, e.g.
-   &lt;a href="https://bots.cloudburo.net/dashboard?regCode=%E2%80%9CT@myProductName"&gt;&lt;a href="https://bots.cloudburo.net/dashboard?regCode=%E2%80%9CT@myProductName"&gt;https://bots.cloudburo.net/dashboard?regCode=“T@myProductName&lt;/a&gt;&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Now in order to retrieve this query parameter - via the
-   &lt;i&gt;this.params&lt;/i&gt; object - in the iron-router data context,
-   &lt;u&gt;&lt;b&gt;you have to use for the data assignment a function&lt;/b&gt;&lt;/u&gt;
-   &lt;i&gt;.&lt;/i&gt;  Trying it without a function call the this.params will not be returned. This took m quite some time to figure out, I always tried it with direct assignment in the data section.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
-  &lt;span class="nx"&gt;exports&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;DashboardController&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;AppController&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;extend&lt;/span&gt; 
-
-
-    &lt;span class="na"&gt;waitOn&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-      &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;subscribe&lt;/span&gt; &lt;span class="s"&gt;'userData'&lt;/span&gt; 
-      &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;subscribe&lt;/span&gt; &lt;span class="s"&gt;'productTypes'&lt;/span&gt; 
-      &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;subscribe&lt;/span&gt; &lt;span class="s"&gt;'products'&lt;/span&gt; 
-      &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;subscribe&lt;/span&gt; &lt;span class="s"&gt;'productAdmins'&lt;/span&gt; 
-
-
-    &lt;span class="c1"&gt;# Use a function to allocate the data context, when you require this.params values 
-&lt;/span&gt;    &lt;span class="na"&gt;data&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;query&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;query&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regCode&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; 
-        &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Dashboard Controller called with "&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;query&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regCode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-        &lt;span class="nx"&gt;regC&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;query&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regCode&lt;/span&gt; 
-      &lt;span class="k"&gt;else&lt;/span&gt; 
-        &lt;span class="nx"&gt;regC&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;undefined&lt;/span&gt; 
-      &lt;span class="nx"&gt;templateData&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 
-        &lt;span class="na"&gt;productTypes&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;ProductTypes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;find&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-        &lt;span class="na"&gt;productAdmins&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;ProductAdmins&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;find&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-        &lt;span class="na"&gt;currencySymbol&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;getCurrencySymbol&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-        &lt;span class="na"&gt;products&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;Products&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;find&lt;/span&gt;&lt;span class="p"&gt;({})&lt;/span&gt; 
-        &lt;span class="na"&gt;regCode&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;regC&lt;/span&gt; 
-      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;templateData&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-    In the template itself I can reference directly the
-   &lt;i&gt;regCode&lt;/i&gt; value
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
-  &lt;span class="nx"&gt;Template&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;dashboard&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;rendered&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-      &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;debug&lt;/span&gt; &lt;span class="s"&gt;"Template.dashboard.rendered"&lt;/span&gt; 
-      &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'.statusicon'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="na"&gt;tooltip&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt; 
-      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regCode&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; 
-        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;Products&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;find&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="na"&gt;fetch&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="na"&gt;length&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; 
-          &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"A new client from subscriber page - regCode: "&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regCode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-          &lt;span class="nx"&gt;splits&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;regCode&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"@"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-          &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;splits&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;length&lt;/span&gt;  &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; 
-            &lt;span class="nx"&gt;productType&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;ProductTypes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;findOne&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;splits&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; 
-            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;productType&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; 
-              &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;splits&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;"T"&lt;/span&gt; 
-                &lt;span class="nx"&gt;testProduct&lt;/span&gt; &lt;span class="nx"&gt;productType&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;_id&lt;/span&gt; 
-              &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;splits&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;"S"&lt;/span&gt; 
-                &lt;span class="nx"&gt;buyProduct&lt;/span&gt; &lt;span class="nx"&gt;productType&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;_id&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 11px;"&gt;&lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
-  &lt;/div&gt;&lt;/p&gt;
-
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>

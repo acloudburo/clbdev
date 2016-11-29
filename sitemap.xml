@@ -235,6 +235,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html</loc>
+    <lastmod>2016-11-29</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>0.7</priority>
@@ -658,6 +664,12 @@
     <loc>https://dev.cloudburo.net/2016/11.html</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2016/11/29.html</loc>
+    <lastmod>2016-11-27</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
