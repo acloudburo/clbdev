@@ -5,10 +5,78 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2016-11-29T21:48:26Z</updated>
+  <updated>2016-11-30T22:56:42Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Blockchain Smart Signatures Explained</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html"/>
+    <id>https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html</id>
+    <published>2016-11-30T22:56:42Z</published>
+    <updated>2016-11-30T22:56:42+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Christopher Allen provides all the time very profound blog articles in the context of blockchain, identity and authorization topics.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The Smart Signatures white paper from Rebooting the Web of Trust conference is giving an excellent and easy to understand introduction to the topic of Smart Signatures.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Out of the abstract of the paper, Smart Signatures are defined as follows.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Traditional cryptographic signature systems are based on &lt;b&gt;strictly-defined &lt;/b&gt;authentication and authorization mechanisms that &lt;b&gt;assume a single private key&lt;/b&gt; can be used to produce a given signature and that a single public key can be used to verify it. Given the evident limitations of this design, we propose an alternative with more powerful capabilties, based on the ability to &lt;b&gt;explicitly outline&lt;/b&gt; and fully &lt;b&gt;program conditions for verification&lt;/b&gt;. These conditions would then be used to determine when a signature or set of signatures can be considered valid.&lt;/i&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        This requirement of explicitly define authorization rules for the (multiple) signature(s) check is a core principle of the blockchain aka bitcoin, and an invention which enhancing authorisation strategies dramatically.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The authors will describe the topic of Smart Signatures in context of the Bitcoin Script language and provides various use cases and implementation statuses.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You can find the white paper
+       &lt;a href="https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust/blob/master/final-documents/smart-signatures.pdf"&gt;&lt;b&gt;here&lt;/b&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>The 5 pillars of the AWS Architecture Framework</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html"/>
@@ -435,107 +503,6 @@
       &lt;div&gt;
        &lt;span style="font-size: 11px;"&gt;&lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>A categorisation of bots used for conversational commerce</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
-    <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
-    <published>2016-06-09T21:14:47Z</published>
-    <updated>2016-11-27T21:51:45+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-       &lt;div&gt;
-        &lt;b&gt;Chat Bots&lt;/b&gt;, as the new way to engage with your clients, it’s a trending concept and approach in 2016.
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-         Forbes is even asking if
-        &lt;a href="http://www.forbes.com/sites/parmyolson/2016/05/09/could-chat-bots-replace-human-jobs-facebook"&gt;ChatBots could replace Human Jobs&lt;/a&gt; or VentureBeat is talking from the
-        &lt;a href="http://venturebeat.com/2016/05/22/this-is-the-start-of-the-post-app-era/"&gt;Start of the Post App Era&lt;/a&gt;, which handed over to the Bot Era.
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div&gt;
-         For example refer to the following Google Trend graph, which shows how the search keyword  Chatbots spiked in the last months in 2016.
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-       &lt;div&gt;
-         &lt;script type="text/javascript" src="//www.google.ch/trends/embed.js?hl=en-GB&amp;amp;q=chatbots&amp;amp;date=1/2016+12m&amp;amp;cmpt=q&amp;amp;tz=Etc/GMT-2&amp;amp;tz=Etc/GMT-2&amp;amp;content=1&amp;amp;cid=TIMESERIES_GRAPH_0&amp;amp;export=5&amp;amp;w=500&amp;amp;h=330"&gt;&lt;/script&gt;
-       &lt;/div&gt;
-       &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div&gt;
-         But let’s look first at the bot type categorisation which will help to better understand the topic.
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-         In the e-commerce sector, they are using the term
-        &lt;i&gt;conversational commerce bots&lt;/i&gt;. The
-        &lt;a href="http://venturebeat.com/2016/05/21/the-5-branches-of-conversational-commerce-a-guide-for-the-bot-curious/"&gt;Venturebeat article&lt;/a&gt; by Jeff Lawson of Twilio introduces a nice categorisation of the various bot types which can be used in commerce.
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-         First of all the term conversational commerce is defined as
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;i&gt;A future of technology driven by messaging (and voice) interactions that transcend current communication modalities.&lt;/i&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-         Jeff Lawson counts five different trends converging on conversational commerce:
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;p&gt;1. Advanced notifications&lt;br&gt; 2. Bots&lt;br&gt; 3. Chat in apps&lt;br&gt; 4. Apps in chat&lt;br&gt; 5. Humans chatting with each other&lt;/p&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-         You can find all the details in the Venturebeat article.
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;i&gt;&lt;span style="font-size: 11px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/i&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;span style="font-size: 11px;"&gt;&lt;i&gt;BTW: This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://venturebeat.com/2016/05/21/the-5-branches-of-conversational-commerce-a-guide-for-the-bot-curious/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
