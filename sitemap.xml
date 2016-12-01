@@ -637,13 +637,19 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/tags/modeling.html</loc>
+    <loc>https://dev.cloudburo.net/tags/banking.html</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/tags/banking.html</loc>
+    <loc>https://dev.cloudburo.net/tags/personaldata.html</loc>
+    <lastmod>2016-11-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/modeling.html</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
