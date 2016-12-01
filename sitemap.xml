@@ -421,6 +421,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html</loc>
+    <lastmod>2016-12-01</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>0.7</priority>
@@ -664,6 +670,18 @@
     <loc>https://dev.cloudburo.net/2016.html</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2016/12.html</loc>
+    <lastmod>2016-11-27</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2016/12/01.html</loc>
+    <lastmod>2016-11-27</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
