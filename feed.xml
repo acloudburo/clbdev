@@ -255,7 +255,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html"/>
     <id>https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html</id>
     <published>2016-11-29T21:48:26Z</published>
-    <updated>2016-11-29T21:48:26+00:00</updated>
+    <updated>2016-12-03T11:35:34+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -306,6 +306,13 @@
       &lt;div&gt;
         You can find the full white paper:
        &lt;b&gt;&lt;a href="http://d0.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf"&gt;Here&lt;/a&gt;.&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Update 2.12.2016: Werner Vogels CTO of Amazon AWS is providing an introduction to the topic, you can find his page
+       &lt;a href="https://www.youtube.com/watch?v=ZDScBNahsL4"&gt;&lt;b&gt;here&lt;/b&gt;&lt;/a&gt;.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;b&gt;&lt;br&gt;&lt;/b&gt;
