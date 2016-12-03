@@ -333,7 +333,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"/>
     <id>https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html</id>
     <published>2016-11-28T21:33:21Z</published>
-    <updated>2016-11-28T21:39:12+00:00</updated>
+    <updated>2016-12-03T11:32:44+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -371,6 +371,13 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;Use it as your guiding cookbook when starting newly with writing software-as-a-service apps.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Update 2.12.2016: Werner Vogels CTO of Amazon was mentioning the company in his key speech at the
+       &lt;a href="https://www.youtube.com/watch?v=ZDScBNahsL4"&gt;AWS re:Invent 2016&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
