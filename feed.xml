@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html"/>
     <id>https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html</id>
     <published>2016-12-05T06:18:54Z</published>
-    <updated>2016-12-05T06:18:55+00:00</updated>
+    <updated>2016-12-05T06:36:31+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -23,7 +23,7 @@
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;div&gt;
-        AWS re:Invent 2016 keynote was give of Werner Vogels.
+        AWS re:Invent 2016 keynote was given by Werner Vogels.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -35,7 +35,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        The first 10 Minutes are quite interesting to understand why AWS is positioning itself as the first customer-centric IT company (which I would agree). It gives some insights about their positioning and what’s in the DNA about serving their customers.
+        The first 10 Minutes are quite interesting to understand why AWS is positioning itself as the first customer-centric IT company (which I would agree). It outlines their positioning and describes what’s in the DNA about serving their customers.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -49,13 +49,13 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        He will drill down into newly introduced topic of Operational Excellence and how they can support this framework pillar with their tooling and services. 
+        He will drill down into the newly introduced AWS Architecture Framework topic of Operational Excellence and how they can support this framework pillar with their tooling and services. 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Security plays are role in the presentation by introducing the “Security by Design Concept”, as well as an introduction and statistics about DDoS Attacks and how to protect against them.
+        Security plays a role in the presentation. Vogels covers the “Security by Design Concept”, as well as provides an overview and statistics about DDoS Attacks and how to protect against them.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -71,7 +71,6 @@
         &lt;iframe src="https://www.youtube.com/embed/ZDScBNahsL4?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
        &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
