@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
-    <title>dev@cloudburo | Uber Unveils its Realtime Market Platform</title>
+    <title>dev@cloudburo | AWS re:Invent 2016 Keynote of Werner Vogels</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js" type="text/javascript"></script><![endif]--><link href="../../../css/all.css" media="screen" rel="stylesheet" type="text/css" /><script type="text/javascript">
       (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
@@ -84,48 +84,70 @@
         <section class="post">
           <header class="entry-header">
             <h2 class="entry-title">
-              <a href="/2015/03/16/uber-unveils-its-realtime-market-platform.html">Uber Unveils its Realtime Market Platform</a>
+              <a href="/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html">AWS re:Invent 2016 Keynote of Werner Vogels</a>
             </h2>
             <p class="entry-meta">
-              Posted on  16.Mar 2015 | Tags <a class="label label-primary" href="/tags/microservice.html">microservice</a> <a class="label label-primary" href="/tags/architecture.html">architecture</a> 
+              Posted on  05.Dec 2016 | Tags <a class="label label-primary" href="/tags/architecture.html">architecture</a> <a class="label label-primary" href="/tags/aws.html">aws</a> 
             </p>
           </header>
           <div class="entry-description">
             <div class="row">
               <div class="article">
-                <p><span/><br>
-                  <div>
-                    Interesting article by Matt Ranney, Chief Systems Architect at Uber which gives an overview of their dispatch system for matching drivers&nbsp;and riders. 
-                  </div> 
-                  <div> 
-                   <br> 
-                  </div> 
-                  <div>
-                    He outlines the architectural principles that underpin the implementation, which gives an view how they approached the &nbsp;problem. You can find the article in the link below. 
-                  </div> 
-                  <div> 
-                   <br> 
-                  </div> 
-                  <div>
-                    Very interesting approach to data center failure: 
-                  </div> 
-                  <div> 
-                   <br> 
-                  </div> 
-                  <div> 
-                   <br> 
-                  </div> 
-                  <div> 
-                   <i>&ldquo;Uber&rsquo;s approach to data center failure is ingenious. No data is replicated across data centers, as that puts a lot of constraints on availability and consistency. Uber uses the driver&rsquo;s phones to distribute the data. Given that the driver&rsquo;s phones post location updates to the server every four seconds, the server periodically replies with an encrypted state digest. If a data center fails the driver will contact a new data center to post a location update. The new data center doesn&rsquo;t know anything about this particular driver so it asks for the state digest and picks up from there.&rdquo;</i> 
-                  </div> 
-                  <div> 
-                   <i><br></i> 
-                  </div> 
-                  <div> 
-                   <i><br></i> 
-                  </div></p>
+                <p><span/></p>
                 
-                <p><a href="http://www.infoq.com/news/2015/03/uber-realtime-market-platform?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=global">Link</a></p>
+                <p><div>
+                    AWS re:Invent 2016 keynote was give of Werner Vogels.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    It’s a worthwhile watch and gives some interesting CTO insights to AWS.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The first 10 Minutes are quite interesting to understand why AWS is positioning itself as the first customer-centric IT company (which I would agree). It gives some insights about their positioning and what’s in the DNA about serving their customers.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Later in the speech Werner Vogels introduces the Twelve Factor App Methodology (
+                   <a href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html">refer to my article</a>), as well as the enhanced AWS Architecture Framework (
+                   <a href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html">refer to my article</a>). 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    He will drill down into newly introduced topic of Operational Excellence and how they can support this framework pillar with their tooling and services. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Security plays are role in the presentation by introducing the “Security by Design Concept”, as well as an introduction and statistics about DDoS Attacks and how to protect against them.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Very helpful as well is the drill down in their Data Architecture primitives and how to glue them all together with Amazon Glue.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <div class="responsive-video">
+                    <iframe src="https://www.youtube.com/embed/ZDScBNahsL4?rel=0" frameborder="0" allowfullscreen></iframe>
+                   </div>
+                  </div>
+                  <div></div>
+                  <div>
+                   <br>
+                  </div></p>
                 
               </div>
             </div>

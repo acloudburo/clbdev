@@ -5,10 +5,80 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2016-12-01T22:20:29Z</updated>
+  <updated>2016-12-05T06:18:54Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>AWS re:Invent 2016 Keynote of Werner Vogels</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html"/>
+    <id>https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html</id>
+    <published>2016-12-05T06:18:54Z</published>
+    <updated>2016-12-05T06:18:55+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        AWS re:Invent 2016 keynote was give of Werner Vogels.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        It’s a worthwhile watch and gives some interesting CTO insights to AWS.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The first 10 Minutes are quite interesting to understand why AWS is positioning itself as the first customer-centric IT company (which I would agree). It gives some insights about their positioning and what’s in the DNA about serving their customers.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Later in the speech Werner Vogels introduces the Twelve Factor App Methodology (
+       &lt;a href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"&gt;refer to my article&lt;/a&gt;), as well as the enhanced AWS Architecture Framework (
+       &lt;a href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html"&gt;refer to my article&lt;/a&gt;). 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        He will drill down into newly introduced topic of Operational Excellence and how they can support this framework pillar with their tooling and services. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Security plays are role in the presentation by introducing the “Security by Design Concept”, as well as an introduction and statistics about DDoS Attacks and how to protect against them.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Very helpful as well is the drill down in their Data Architecture primitives and how to glue them all together with Amazon Glue.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;div class="responsive-video"&gt;
+        &lt;iframe src="https://www.youtube.com/embed/ZDScBNahsL4?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>The Human Being(s) and We (as a Bank) #1 - Relationship</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html"/>
@@ -512,132 +582,6 @@
        &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Meteor Small Hints #5: Server Code Fragments executed twice on Startup</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html"/>
-    <id>https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html</id>
-    <published>2016-07-18T16:06:09Z</published>
-    <updated>2016-11-27T21:51:45+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    Recently I got confused with my Meteor application, by having the server code executed twice at startup. So the code was initialising my application twice, as well as duplicated for example my Slack Sysadmin Bot running as part of the instance.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    I was first thinking that it has something to do with my IntelliJ Webstorm IDE running in debug mode, but also the local test-, as well the my Modulus remote environment was showing the same symptom.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    After some hours of debugging I luckily found the following
-   &lt;a href="https://github.com/Differential/meteor-workers/issues/9"&gt;Github issue entry&lt;/a&gt; which showed me the right direction.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    As part of my application I introduced
-   &lt;a href="https://github.com/Differential/meteor-workers"&gt;Differential meteor-workers&lt;/a&gt;, which allows to spawn headless worker meteor processes to work on async jobs. For example, passing a message to my Slack SysAdmin Bot is done via Job.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
-  &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;SlackSysAdminBotJob&lt;/span&gt; &lt;span class="k"&gt;extends&lt;/span&gt; &lt;span class="nx"&gt;Job&lt;/span&gt; 
-    &lt;span class="na"&gt;handleJob&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;action&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;"sendMessage"&lt;/span&gt; 
-        &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;bot&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;postTo&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="vi"&gt;@&lt;/span&gt;&lt;span class="na"&gt;params&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;text&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-    Such a async Job can be easily triggered, like shown here (which will hand the work over to a worker process.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
-    &lt;span class="nx"&gt;Job&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;push&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;SlackSysAdminBotJob&lt;/span&gt; 
-          &lt;span class="na"&gt;action&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;"sendMessage"&lt;/span&gt; 
-          &lt;span class="na"&gt;slackBot&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;myBot&lt;/span&gt; 
-          &lt;span class="na"&gt;text&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nx"&gt;txt&lt;/span&gt; 
-          &lt;span class="na"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;channel&lt;/span&gt; 
-        &lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;error&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;job&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-           &lt;span class="c1"&gt;# Check it 
-&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-    Now introducing the Differential async worker resulted in the problem, that not only the master process, BUT also the worker process will be initialised with each Server startup code fragment. Which is not what we want.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    So I had to extend each server Meter.startup code fragment by introducing an
-   &lt;i&gt;isClusterMaster&lt;/i&gt; check
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
-  &lt;span class="nx"&gt;exports&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;Plattform&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; 
-      &lt;span class="na"&gt;isClusterMaster&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;Meteor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;isServer&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nx"&gt;Npm&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'cluster'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="na"&gt;isMaster&lt;/span&gt; 
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-    As for example:
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
-  &lt;span class="nx"&gt;Meteor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;startup&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nx"&gt;Plattform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;isClusterMaster&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-      &lt;span class="c1"&gt;# The startup code 
-&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Now the startup initialization will be only executed on the master in the cluster and not for each worker process.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;&lt;/p&gt;
-
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>

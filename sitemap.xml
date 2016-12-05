@@ -265,6 +265,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html</loc>
+    <lastmod>2016-12-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>0.7</priority>
@@ -676,6 +682,12 @@
     <loc>https://dev.cloudburo.net/2016/12.html</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2016/12/05.html</loc>
+    <lastmod>2016-11-27</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
