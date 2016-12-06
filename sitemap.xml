@@ -355,6 +355,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html</loc>
+    <lastmod>2016-12-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>0.7</priority>
@@ -637,13 +643,13 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/tags/googleapps.html</loc>
+    <loc>https://dev.cloudburo.net/tags/banking.html</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/tags/banking.html</loc>
+    <loc>https://dev.cloudburo.net/tags/googleapps.html</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
@@ -682,6 +688,12 @@
     <loc>https://dev.cloudburo.net/2016/12.html</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2016/12/06.html</loc>
+    <lastmod>2016-11-27</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -1208,6 +1220,12 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/page/6/</loc>
+    <lastmod>2016-11-27</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/page/7/</loc>
     <lastmod>2016-11-27</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>
