@@ -1,5 +1,5 @@
-<!doctype html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
@@ -9,607 +9,408 @@
       (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
     </script>
     <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle collapsed" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">dev@cloudburo</a>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
         </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="/menu1.html"> About  </a>
-            </li>
-            <li>
-              <a href="/menu2.html"> Contact  </a>
-            </li>
-            <li class="dropdown">
-              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li>
-                  <a href="/tags/api.html">api (2)</a>
-                </li>
-                <li>
-                  <a href="/tags/architecture.html">architecture (14)</a>
-                </li>
-                <li>
-                  <a href="/tags/aws.html">aws (12)</a>
-                </li>
-                <li>
-                  <a href="/tags/banking.html">banking (3)</a>
-                </li>
-                <li>
-                  <a href="/tags/blockchain.html">blockchain (4)</a>
-                </li>
-                <li>
-                  <a href="/tags/bots.html">bots (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/deutsch.html">deutsch (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/docker.html">docker (9)</a>
-                </li>
-                <li>
-                  <a href="/tags/futurework.html">futureWork (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/googleapps.html">googleapps (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/gradle.html">gradle (2)</a>
-                </li>
-                <li>
-                  <a href="/tags/inspiration.html">inspiration (2)</a>
-                </li>
-                <li>
-                  <a href="/tags/legal.html">legal (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/meteor.html">meteor (5)</a>
-                </li>
-                <li>
-                  <a href="/tags/microservice.html">microservice (13)</a>
-                </li>
-                <li>
-                  <a href="/tags/modeling.html">modeling (1)</a>
-                </li>
-                <li>
-                  <a href="/tags/personaldata.html">personalData (3)</a>
-                </li>
-                <li>
-                  <a href="/tags/quicktips.html">quicktips (14)</a>
-                </li>
-                <li>
-                  <a href="/tags/shift.html">shift (4)</a>
-                </li>
-                <li>
-                  <a href="/tags/smallhints.html">smallhints (13)</a>
-                </li>
-                <li>
-                  <a href="/tags/startup.html">startup (10)</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">By Year <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li>
-                  <a href="/2016.html">2016 (16)</a>
-                </li>
-                <li>
-                  <a href="/2015.html">2015 (35)</a>
-                </li>
-                <li>
-                  <a href="/2014.html">2014 (10)</a>
-                </li>
-              </ul>
-            </li>
-            <ul class="list-unstyled list-inline nav navbar-nav navbar-right"></ul>
-            <li><a href="https://twitter.com/talfco">
-                        <i class="fa fa-lg fa-inverse fa-twitter-square"></i></a>
-            </li>
-            <li><a href="https://www.facebook.com/Cloudburonet-897759390318816/">
-                        <i class="fa fa-lg fa-inverse fa-facebook-square"></i></a>
-            </li>
-            <li><a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts">
-                        <i class="fa fa-lg fa-inverse fa-google-plus-square"></i></a>
-            </li>
-            <li><a href="https://www.linkedin.com/in/felixk">
-                        <i class="fa fa-lg fa-inverse fa-linkedin-square"></i></a>
-            </li>
-            <li><a href="https://github.com/talfco">
-                        <i class="fa fa-lg fa-inverse fa-github-square"></i></a>
-            </li>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a class="label label-default" href="/tags/api.html">api (2)</a>
+            <a class="label label-default" href="/tags/architecture.html">architecture (14)</a>
+            <a class="label label-default" href="/tags/aws.html">aws (12)</a>
+            <a class="label label-default" href="/tags/banking.html">banking (3)</a>
+            <a class="label label-default" href="/tags/blockchain.html">blockchain (4)</a>
+            <a class="label label-default" href="/tags/bots.html">bots (1)</a>
+            <a class="label label-default" href="/tags/deutsch.html">deutsch (1)</a>
+            <a class="label label-default" href="/tags/docker.html">docker (9)</a>
+            <a class="label label-default" href="/tags/futurework.html">futureWork (5)</a>
+            <a class="label label-default" href="/tags/googleapps.html">googleapps (1)</a>
+            <a class="label label-default" href="/tags/gradle.html">gradle (2)</a>
+            <a class="label label-default" href="/tags/inspiration.html">inspiration (2)</a>
+            <a class="label label-default" href="/tags/legal.html">legal (1)</a>
+            <a class="label label-default" href="/tags/meteor.html">meteor (5)</a>
+            <a class="label label-default" href="/tags/microservice.html">microservice (13)</a>
+            <a class="label label-default" href="/tags/modeling.html">modeling (1)</a>
+            <a class="label label-default" href="/tags/personaldata.html">personalData (3)</a>
+            <a class="label label-default" href="/tags/quicktips.html">quicktips (14)</a>
+            <a class="label label-default" href="/tags/shift.html">shift (4)</a>
+            <a class="label label-default" href="/tags/smallhints.html">smallhints (13)</a>
+            <a class="label label-default" href="/tags/startup.html">startup (10)</a>
           </ul>
         </div>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9 col-md-9">
-          <h1>
-            Articles tagged 'microservice'
-          </h1>
-          <p>
-            Page 1 of 2
-          </p>
-          <ul>
-            <h2>
-              <a href="/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html">The Twelve Factor App Methodology for Building SAAS</a>
-            </h2>
-            <p>
-              <small class="label label-default">microservice</small>
-              <small class="label label-default">architecture</small>
-              <small class="label label-default">quicktips</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Nov 28
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><span></span></p>
-                
-                <p></p>
-            <div>
-                    Deliver applications as “Software-As-A-Service” in a Cloud Platform requires to take some principles into consideration, which were not immediately obvious when coming from a classic development environment.
-                  </div>
-                 ...</div>
-            </div><a class="btn btn-primary" href="/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-            <h2>
-              <a href="/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html">Rodrigue Schaefer : From monolith to microservices at Zalando</a>
-            </h2>
-            <p>
-              <small class="label label-default">microservice</small>
-              <small class="label label-default">architecture</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Mar  4
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><span></span></p>
-                
-                <p></p>
-            <div>
-                    At the 
-                   <a href="http://microxchg.io/2016/index.html">Microxchg 2016</a> conference in Berlin, Rodrigue Schaefer did an interesting presentation how they introduced microservices at Zalando.
-                  </div>
-                  <div>
-                   <br>
-                  </div>
-                  <div>
-                    The main driver was an organisational...</div>
-            </div>
-            </div><a class="btn btn-primary" href="/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-            <h2>
-              <a href="/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html">The Anatomy of a EB based Microservice - AWS Security Configuration</a>
-            </h2>
-            <p>
-              <small class="label label-default">docker</small>
-              <small class="label label-default">microservice</small>
-              <small class="label label-default">architecture</small>
-              <small class="label label-default">aws</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Dec 20
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><span></span>      </p>
-            <div>
-                    Our microservice(s) will be managed by the
-                   <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html?console_help=true">AWS Elastic Beanstalk</a> Docker service. With Elastic Beanstalk, you can quickly deploy and manage applications in the AWS cloud without worrying about the infrastructure that runs...</div>
-            </div>
-            </div><a class="btn btn-primary" href="/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-            <h2>
-              <a href="/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html">Docker Small Hints #6: Using Cloudwatch in combination with Log Entries Management Solution</a>
-            </h2>
-            <p>
-              <small class="label label-default">docker</small>
-              <small class="label label-default">microservice</small>
-              <small class="label label-default">smallhints</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Aug 11
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><span></span></p>
-                
-                <p></p>
-            <div>
-                    As explained in my last article “ 
-                   <a href="https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html">Using Cloudwatch Alarms for monitoring AWS Elastic Beanstalk Docker Instances</a>“ I set up a Cloudwatch Alarm to detect inactivity/potential hanging scenarios of my micro service. 
-            ...</div>
-            </div>
-            </div><a class="btn btn-primary" href="/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-            <h2>
-              <a href="/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html">Docker Small Hints #5: Using Cloudwatch Alarms for monitoring AWS Elastic Beanstalk Docker Instances</a>
-            </h2>
-            <p>
-              <small class="label label-default">microservice</small>
-              <small class="label label-default">aws</small>
-              <small class="label label-default">quicktips</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Jul 28
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><span></span></p>
-                
-                <p></p>
-            <div>
-                    My first docker based 
-                   <a href="https://curation.cloudburo.net/">content curation microservice</a> is in early beta mode and is working reliably for a longer period of time now. The last deployment of the application was up and running for 46 days without any...</div>
-            </div>
-            </div><a class="btn btn-primary" href="/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-            <h2>
-              <a href="/2015/05/25/large-scale-cluster-management-at-google-with-borg.html">Large-scale cluster management at Google with Borg</a>
-            </h2>
-            <p>
-              <small class="label label-default">docker</small>
-              <small class="label label-default">microservice</small>
-              <small class="label label-default">architecture</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on May 25
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><span></span></p>
-                
-                <p></p>
-            <div>
-                    Research@google published a new very interesting paper about their architecture of Borg at an ACM venue. It’s the underlying architecture for Kubernetes and provides a lot of insights. 
-                  </div> 
-                  <div> 
-                   <br> 
-                  </div> 
-             ...</div>
-            </div><a class="btn btn-primary" href="/2015/05/25/large-scale-cluster-management-at-google-with-borg.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-            <h2>
-              <a href="/2015/04/17/the-benefits-of-microservices.html">The Benefits of Microservices</a>
-            </h2>
-            <p>
-              <small class="label label-default">microservice</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Apr 17
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><span></span>      During the online panel Exploring the Uncharted Territory of Microservices organized by XebiaLabs, the following participants discussed the benefits of microservices: Gene Kim, author, researcher and former CTO at Tripwire, moderator...</p>
-            </div>
-            </div><a class="btn btn-primary" href="/2015/04/17/the-benefits-of-microservices.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-            <h2>
-              <a href="/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html">A Service is a Logical Construct Built by Microservices</a>
-            </h2>
-            <p>
-              <small class="label label-default">microservice</small>
-              <small class="label label-default">architecture</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Apr  2
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><span></span></p>
-                
-                <p></p>
-            <div> 
-                   <br> 
-                  </div> 
-                  <div>
-                    This is a very interesting article by 
-                   <a href="http://www.infoq.com/author/Jan-Stenberg">Jan Stenberg</a>, which shows how a Service and Microservice are interrelated.<br>
-                  </div> 
-                  <div> 
-                   <br> 
-                  </div> 
-                  <div>
-                    He is building services around...</div>
-            </div>
-            </div><a class="btn btn-primary" href="/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-            <h2>
-              <a href="/2015/03/28/a-modern-microservices-architecture-by-gilt.html">A Modern Microservices Architecture By Gilt</a>
-            </h2>
-            <p>
-              <small class="label label-default">microservice</small>
-              <small class="label label-default">architecture</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Mar 28
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><span></span><br>
-                  </p>
-            <div> 
-                   <a href="http://www.yonigoldberg.com/" rel="nofollow">Yoni Goldberg</a> explains in a presentation at the  
-                   <a href="http://qconlondon.com/" rel="nofollow">QCon London</a> conference  the challenges they encountered moving to a micro-services architecture. 
-                  </div> 
-                  <div> 
-                   <br> 
-                  </div> 
-                  <div> 
-                   <i>After living with micro...</i>
-            </div>
-            </div>
-            </div><a class="btn btn-primary" href="/2015/03/28/a-modern-microservices-architecture-by-gilt.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-            <h2>
-              <a href="/2015/03/16/uber-unveils-its-realtime-market-platform.html">Uber Unveils its Realtime Market Platform</a>
-            </h2>
-            <p>
-              <small class="label label-default">microservice</small>
-              <small class="label label-default">architecture</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Mar 16
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><span></span><br>
-                  </p>
-            <div>
-                    Interesting article by Matt Ranney, Chief Systems Architect at Uber which gives an overview of their dispatch system for matching drivers and riders. 
-                  </div> 
-                  <div> 
-                   <br> 
-                  </div> 
-                  <div>
-                    He outlines the architectural...</div>
-            </div>
-            </div><a class="btn btn-primary" href="/2015/03/16/uber-unveils-its-realtime-market-platform.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-            <h2>
-              <a href="/2015/03/15/microservice-competencies-by-martin-fowler.html">Microservice Competencies by Martin Fowler</a>
-            </h2>
-            <p>
-              <small class="label label-default">microservice</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Mar 15
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><span></span><br>
-                  </p>
-            <div>
-                    There is a quite a hype in the Mircoservice architecture style, so it’s good that one of the well-known architecture heavy-weight is listing  some important competencies necessary to successfully work with this style.  
-               ...</div>
-            </div>
-            </div><a class="btn btn-primary" href="/2015/03/15/microservice-competencies-by-martin-fowler.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
-            <h2>
-              <a href="/2015/03/15/phil-calcado-on-lessons-learnt-during-soundcloud-s-microservice-migration.html">Phil Calcado on Lessons Learnt During SoundCloud's Microservice Migration</a>
-            </h2>
-            <p>
-              <small class="label label-default">microservice</small>
-              <small class="label label-default">architecture</small>
-              <small class="label label-default">aws</small>
-            </p>
-            <hr />
-            <p>
-              <span class="glyphicon glyphicon-time"></span> Posted on Mar 15
-            </p>
-            <hr />
-            <div class="row">
-              <div class="article">
-                <p><span></span><br>
-                  </p>
-            <div> 
-                   <br> 
-                  </div> 
-                  <div>
-                    At 
-                   <a href="http://qconlondon.com/" rel="nofollow">QCon London</a> 2015 
-                   <a href="https://www.linkedin.com/in/pcalcado" rel="nofollow">Phil Calcado</a> shared lessons learnt from 
-                   <a href="https://soundcloud.com/" rel="nofollow">SoundCloud’s</a> move from a monolithic to micro services architecture. 
-                  </div> 
-                  <div> 
-                   <br> 
-                  </div> 
-                  <div>
-                 ...</div>
-            </div>
-            </div><a class="btn btn-primary" href="/2015/03/15/phil-calcado-on-lessons-learnt-during-soundcloud-s-microservice-migration.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <hr />
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a class="label label-primary" href="/2016.html">2016 (16)</a>
+            <a class="label label-primary" href="/2015.html">2015 (35)</a>
+            <a class="label label-primary" href="/2014.html">2014 (10)</a>
           </ul>
-          <p>
-            <a href="/tags/microservice/page/2.html">Next page</a>
-          </p>
-          <hr />
-          <div id="disqus_thread"></div>
-          <script type="text/javascript">
-          //<![CDATA[
-                            var disqus_shortname = 'dev1cloudburo';
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <h2>
+          Articles tagged 'microservice'
+        </h2>
+        <h4>
+          <i class="fa fa-file-text-o"></i>     1 of 2
+        </h4>
+        <ul>
+          <section class="post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html">The Twelve Factor App Methodology for Building SAAS</a>
+              </h2>
+              <p class="entry-meta">
+                Posted on  28.Nov 2016 | Tags <a class="label label-danger" href="/tags/microservice.html">microservice</a> <a class="label label-primary" href="/tags/architecture.html">architecture</a> <a class="label label-primary" href="/tags/quicktips.html">quicktips</a> 
+              </p>
+            </header>
+            <div class="entry-description">
+              <p>
+                Deliver applications as “Software-As-A-Service” in a Cloud Platform requires to take some principles into consideration, which were not immediately obvious when coming from a classic development environment. The 12factor.net Web page provides the so-...         <a href="/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+              </p>
+            </div>
+          </section>
+          <section class="post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html">Rodrigue Schaefer : From monolith to microservices at Zalando</a>
+              </h2>
+              <p class="entry-meta">
+                Posted on  04.Mar 2016 | Tags <a class="label label-danger" href="/tags/microservice.html">microservice</a> <a class="label label-primary" href="/tags/architecture.html">architecture</a> 
+              </p>
+            </header>
+            <div class="entry-description">
+              <p>
+                At the  Microxchg 2016 conference in Berlin, Rodrigue Schaefer did an interesting presentation how they introduced microservices at Zalando. The main driver was an organisational change centred around autonomy of teams. As he stated - We want Autonom...         <a href="/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+              </p>
+            </div>
+          </section>
+          <section class="post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html">The Anatomy of a EB based Microservice - AWS Security Configuration</a>
+              </h2>
+              <p class="entry-meta">
+                Posted on  20.Dec 2015 | Tags <a class="label label-primary" href="/tags/docker.html">docker</a> <a class="label label-danger" href="/tags/microservice.html">microservice</a> <a class="label label-primary" href="/tags/architecture.html">architecture</a> <a class="label label-primary" href="/tags/aws.html">aws</a> 
+              </p>
+            </header>
+            <div class="entry-description">
+              <p>
+                Our microservice(s) will be managed by the AWS Elastic Beanstalk Docker service. With Elastic Beanstalk, you can quickly deploy and manage applications in the AWS cloud without worrying about the infrastructure that runs those applications. AWS Elast...         <a href="/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+              </p>
+            </div>
+          </section>
+          <section class="post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html">Docker Small Hints #6: Using Cloudwatch in combination with Log Entries Management Solution</a>
+              </h2>
+              <p class="entry-meta">
+                Posted on  11.Aug 2015 | Tags <a class="label label-primary" href="/tags/docker.html">docker</a> <a class="label label-danger" href="/tags/microservice.html">microservice</a> <a class="label label-primary" href="/tags/smallhints.html">smallhints</a> 
+              </p>
+            </header>
+            <div class="entry-description">
+              <p><div class="row">
+                  <div class="article">
+                    <p><span></span></p>
                     
-              (function() {
-                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-          //]]>
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-          <script type="text/javascript">
-          //<![CDATA[
-              var disqus_shortname = 'dev1cloudburo';
-              (function () {
-                  var s = document.createElement('script'); s.async = true;
-                  s.type = 'text/javascript';
-                  s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-                  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-              }());
-          //]]>
-          </script>
-          
-          <aside>
-            <h3>
-              Recent Articles
-            </h3>
-            <ol>
-              <li>
-                <a href="/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html">Ireland Banking Crisis in the 1970 - It's all about trust</a> <span>Dec  6</span> 
-              </li>
-              <li>
-                <a href="/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html">AWS re:Invent 2016 Keynote of Werner Vogels</a> <span>Dec  5</span> 
-              </li>
-              <li>
-                <a href="/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html">The Human Being(s) and We (as a Bank) #1 - Relationship</a> <span>Dec  1</span> 
-              </li>
-              <li>
-                <a href="/2016/11/30/blockchain-smart-signatures-explained.html">Blockchain Smart Signatures Explained</a> <span>Nov 30</span> 
-              </li>
-              <li>
-                <a href="/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html">The 5 pillars of the AWS Architecture Framework</a> <span>Nov 29</span> 
-              </li>
-              <li>
-                <a href="/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html">The Twelve Factor App Methodology for Building SAAS</a> <span>Nov 28</span> 
-              </li>
-              <li>
-                <a href="/2016/11/22/blockchain-governance-system-introduction.html">Blockchain Governance System Introduction</a> <span>Nov 22</span> 
-              </li>
-              <li>
-                <a href="/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html">Meteor Small Hints #5: Server Code Fragments executed twice on Startup</a> <span>Jul 18</span> 
-              </li>
-              <li>
-                <a href="/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html">A Terminology Guide to DAOs, DACs, DAs and More</a> <span>Jun 21</span> 
-              </li>
-              <li>
-                <a href="/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html">A categorisation of bots used for conversational commerce</a> <span>Jun  9</span> 
-              </li>
-            </ol>
-          </aside>
-          <hr>
-            <p class="text-center">
-              ©2016 <a href="/">dev@cloudburo</a> <br /><span class="small">Powered by<a href="https://cloudburo.net/docs/products.html"> Cloudburo Curation Engine</a></span>
-            </p>
-          </hr>
-        </div>
-        <div class="col-lg-3 col-md-3">
-          <div class="well">
-            <h4>
-              Categories
-            </h4>
-            <ul class="list-unstyled">
-              <li>
-                <a href="/tags/api.html">api</a> (2)
-              </li>
-              <li>
-                <a href="/tags/architecture.html">architecture</a> (14)
-              </li>
-              <li>
-                <a href="/tags/aws.html">aws</a> (12)
-              </li>
-              <li>
-                <a href="/tags/banking.html">banking</a> (3)
-              </li>
-              <li>
-                <a href="/tags/blockchain.html">blockchain</a> (4)
-              </li>
-              <li>
-                <a href="/tags/bots.html">bots</a> (1)
-              </li>
-              <li>
-                <a href="/tags/deutsch.html">deutsch</a> (1)
-              </li>
-              <li>
-                <a href="/tags/docker.html">docker</a> (9)
-              </li>
-              <li>
-                <a href="/tags/futurework.html">futureWork</a> (5)
-              </li>
-              <li>
-                <a href="/tags/googleapps.html">googleapps</a> (1)
-              </li>
-              <li>
-                <a href="/tags/gradle.html">gradle</a> (2)
-              </li>
-              <li>
-                <a href="/tags/inspiration.html">inspiration</a> (2)
-              </li>
-              <li>
-                <a href="/tags/legal.html">legal</a> (1)
-              </li>
-              <li>
-                <a href="/tags/meteor.html">meteor</a> (5)
-              </li>
-              <li>
-                <a href="/tags/microservice.html">microservice</a> (13)
-              </li>
-              <li>
-                <a href="/tags/modeling.html">modeling</a> (1)
-              </li>
-              <li>
-                <a href="/tags/personaldata.html">personalData</a> (3)
-              </li>
-              <li>
-                <a href="/tags/quicktips.html">quicktips</a> (14)
-              </li>
-              <li>
-                <a href="/tags/shift.html">shift</a> (4)
-              </li>
-              <li>
-                <a href="/tags/smallhints.html">smallhints</a> (13)
-              </li>
-              <li>
-                <a href="/tags/startup.html">startup</a> (10)
-              </li>
-            </ul>
+                    <p></p>
+                <div>
+                        As explained in my last article “ 
+                       <a href="https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html">Using Cloudwatch Alarms for monitoring AWS Elastic Beanstalk Docker Instances</a>“ I set up a Cloudwatch Alarm to detect inactivity/potential hanging scenarios of my micro service. 
+                ...</div>
+                </div>
+                </div>
+                <div class="row">
+                  <a href="/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+              </p>
+            </div>
+          </section>
+          <section class="post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html">Docker Small Hints #5: Using Cloudwatch Alarms for monitoring AWS Elastic Beanstalk Docker Instances</a>
+              </h2>
+              <p class="entry-meta">
+                Posted on  28.Jul 2015 | Tags <a class="label label-danger" href="/tags/microservice.html">microservice</a> <a class="label label-primary" href="/tags/aws.html">aws</a> <a class="label label-primary" href="/tags/quicktips.html">quicktips</a> 
+              </p>
+            </header>
+            <div class="entry-description">
+              <p><div class="row">
+                  <div class="article">
+                    <p><span></span></p>
+                    
+                    <p></p>
+                <div>
+                        My first docker based 
+                       <a href="https://curation.cloudburo.net/">content curation microservice</a> is in early beta mode and is working reliably for a longer period of time now. The last deployment of the application was up and running for 46 days without any...</div>
+                </div>
+                </div>
+                <div class="row">
+                  <a href="/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+              </p>
+            </div>
+          </section>
+          <section class="post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="/2015/05/25/large-scale-cluster-management-at-google-with-borg.html">Large-scale cluster management at Google with Borg</a>
+              </h2>
+              <p class="entry-meta">
+                Posted on  25.May 2015 | Tags <a class="label label-primary" href="/tags/docker.html">docker</a> <a class="label label-danger" href="/tags/microservice.html">microservice</a> <a class="label label-primary" href="/tags/architecture.html">architecture</a> 
+              </p>
+            </header>
+            <div class="entry-description">
+              <p><div class="row">
+                  <div class="article">
+                    <p><span></span></p>
+                    
+                    <p></p>
+                <div>
+                        Research@google published a new very interesting paper about their architecture of Borg at an ACM venue. It’s the underlying architecture for Kubernetes and provides a lot of insights. 
+                      </div> 
+                      <div> 
+                       <br> 
+                      </div> 
+                 ...</div>
+                </div>
+                <div class="row">
+                  <a href="/2015/05/25/large-scale-cluster-management-at-google-with-borg.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+              </p>
+            </div>
+          </section>
+          <section class="post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="/2015/04/17/the-benefits-of-microservices.html">The Benefits of Microservices</a>
+              </h2>
+              <p class="entry-meta">
+                Posted on  17.Apr 2015 | Tags <a class="label label-danger" href="/tags/microservice.html">microservice</a> 
+              </p>
+            </header>
+            <div class="entry-description">
+              <p><div class="row">
+                  <div class="article">
+                    <p><span></span>      During the online panel Exploring the Uncharted Territory of Microservices organized by XebiaLabs, the following participants discussed the benefits of microservices: Gene Kim, author, researcher and former CTO at Tripwire, moderator...</p>
+                </div>
+                </div>
+                <div class="row">
+                  <a href="/2015/04/17/the-benefits-of-microservices.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+              </p>
+            </div>
+          </section>
+          <section class="post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html">A Service is a Logical Construct Built by Microservices</a>
+              </h2>
+              <p class="entry-meta">
+                Posted on  02.Apr 2015 | Tags <a class="label label-danger" href="/tags/microservice.html">microservice</a> <a class="label label-primary" href="/tags/architecture.html">architecture</a> 
+              </p>
+            </header>
+            <div class="entry-description">
+              <p><div class="row">
+                  <div class="article">
+                    <p><span></span></p>
+                    
+                    <p></p>
+                <div> 
+                       <br> 
+                      </div> 
+                      <div>
+                        This is a very interesting article by 
+                       <a href="http://www.infoq.com/author/Jan-Stenberg">Jan Stenberg</a>, which shows how a Service and Microservice are interrelated.<br>
+                      </div> 
+                      <div> 
+                       <br> 
+                      </div> 
+                      <div>
+                        He is building services around...</div>
+                </div>
+                </div>
+                <div class="row">
+                  <a href="/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+              </p>
+            </div>
+          </section>
+          <section class="post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="/2015/03/28/a-modern-microservices-architecture-by-gilt.html">A Modern Microservices Architecture By Gilt</a>
+              </h2>
+              <p class="entry-meta">
+                Posted on  28.Mar 2015 | Tags <a class="label label-danger" href="/tags/microservice.html">microservice</a> <a class="label label-primary" href="/tags/architecture.html">architecture</a> 
+              </p>
+            </header>
+            <div class="entry-description">
+              <p><div class="row">
+                  <div class="article">
+                    <p><span></span><br>
+                      </p>
+                <div> 
+                       <a href="http://www.yonigoldberg.com/" rel="nofollow">Yoni Goldberg</a> explains in a presentation at the  
+                       <a href="http://qconlondon.com/" rel="nofollow">QCon London</a> conference  the challenges they encountered moving to a micro-services architecture. 
+                      </div> 
+                      <div> 
+                       <br> 
+                      </div> 
+                      <div> 
+                       <i>After living with micro...</i>
+                </div>
+                </div>
+                </div>
+                <div class="row">
+                  <a href="/2015/03/28/a-modern-microservices-architecture-by-gilt.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+              </p>
+            </div>
+          </section>
+          <section class="post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="/2015/03/16/uber-unveils-its-realtime-market-platform.html">Uber Unveils its Realtime Market Platform</a>
+              </h2>
+              <p class="entry-meta">
+                Posted on  16.Mar 2015 | Tags <a class="label label-danger" href="/tags/microservice.html">microservice</a> <a class="label label-primary" href="/tags/architecture.html">architecture</a> 
+              </p>
+            </header>
+            <div class="entry-description">
+              <p><div class="row">
+                  <div class="article">
+                    <p><span></span><br>
+                      </p>
+                <div>
+                        Interesting article by Matt Ranney, Chief Systems Architect at Uber which gives an overview of their dispatch system for matching drivers and riders. 
+                      </div> 
+                      <div> 
+                       <br> 
+                      </div> 
+                      <div>
+                        He outlines the architectural...</div>
+                </div>
+                </div>
+                <div class="row">
+                  <a href="/2015/03/16/uber-unveils-its-realtime-market-platform.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+              </p>
+            </div>
+          </section>
+          <section class="post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="/2015/03/15/microservice-competencies-by-martin-fowler.html">Microservice Competencies by Martin Fowler</a>
+              </h2>
+              <p class="entry-meta">
+                Posted on  15.Mar 2015 | Tags <a class="label label-danger" href="/tags/microservice.html">microservice</a> 
+              </p>
+            </header>
+            <div class="entry-description">
+              <p><div class="row">
+                  <div class="article">
+                    <p><span></span><br>
+                      </p>
+                <div>
+                        There is a quite a hype in the Mircoservice architecture style, so it’s good that one of the well-known architecture heavy-weight is listing  some important competencies necessary to successfully work with this style.  
+                   ...</div>
+                </div>
+                </div>
+                <div class="row">
+                  <a href="/2015/03/15/microservice-competencies-by-martin-fowler.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+              </p>
+            </div>
+          </section>
+          <section class="post">
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a href="/2015/03/15/phil-calcado-on-lessons-learnt-during-soundcloud-s-microservice-migration.html">Phil Calcado on Lessons Learnt During SoundCloud's Microservice Migration</a>
+              </h2>
+              <p class="entry-meta">
+                Posted on  15.Mar 2015 | Tags <a class="label label-danger" href="/tags/microservice.html">microservice</a> <a class="label label-primary" href="/tags/architecture.html">architecture</a> <a class="label label-primary" href="/tags/aws.html">aws</a> 
+              </p>
+            </header>
+            <div class="entry-description">
+              <p><div class="row">
+                  <div class="article">
+                    <p><span></span><br>
+                      </p>
+                <div> 
+                       <br> 
+                      </div> 
+                      <div>
+                        At 
+                       <a href="http://qconlondon.com/" rel="nofollow">QCon London</a> 2015 
+                       <a href="https://www.linkedin.com/in/pcalcado" rel="nofollow">Phil Calcado</a> shared lessons learnt from 
+                       <a href="https://soundcloud.com/" rel="nofollow">SoundCloud’s</a> move from a monolithic to micro services architecture. 
+                      </div> 
+                      <div> 
+                       <br> 
+                      </div> 
+                      <div>
+                     ...</div>
+                </div>
+                </div>
+                <div class="row">
+                  <a href="/2015/03/15/phil-calcado-on-lessons-learnt-during-soundcloud-s-microservice-migration.html">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+              </p>
+            </div>
+          </section>
+        </ul>
+        <h3>
+          <a href="/tags/microservice/page/2.html">Next page</a>
+        </h3><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a class="btn btn-twitter" href="https://twitter.com/talfco">
+                <i class="fa fa-twitter"></i></a><a class="btn btn-facebook" href="https://www.facebook.com/Cloudburonet-897759390318816/">
+                <i class="fa fa-facebook"></i></a><a class="btn btn-google-plus" href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts">
+                <i class="fa fa-google-plus"></i></a><a class="btn btn-linkedin" href="https://www.linkedin.com/in/felixk">
+                <i class="fa fa-linkedin"></i></a><a class="btn btn-github" href="https://github.com/talfco">
+                <i class="fa fa-github"></i></a>
           </div>
-          <div class="well">
-            <h4>
-              By year
-            </h4>
-            <ol>
-              <li>
-                <a href="/2016.html">2016</a> (16)
-              </li>
-              <li>
-                <a href="/2015.html">2015</a> (35)
-              </li>
-              <li>
-                <a href="/2014.html">2014</a> (10)
-              </li>
-            </ol>
-          </div>
-        </div>
+          <p>
+            © 2016 All rights reserved 
+          </p>
+        </footer>
       </div>
     </div>
     <script src="../js/all.js" type="text/javascript"></script>
