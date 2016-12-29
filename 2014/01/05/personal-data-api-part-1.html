@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html> 
+<html>
   <head>
     <meta charset="utf-8" />
     <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
@@ -9,236 +9,397 @@
       (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
     </script>
     <link href="/favicon.png" rel="icon" type="image/png" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
-    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
   </head>
   <body>
-    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
-      <aside>
-        <div class="about">
-          <h4>
-            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
-          </h4>
-          <h4>
-            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
-          </h4>
-          <h4>
-            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
-          </h4>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">dev@cloudburo</a>
         </div>
-        <div class="tags">
-          <h4>
-            Categories
-          </h4>
-          <ul class="list-unstyled">
-            <a class="label label-default" href="/tags/api.html">api (2)</a>
-            <a class="label label-default" href="/tags/architecture.html">architecture (14)</a>
-            <a class="label label-default" href="/tags/aws.html">aws (12)</a>
-            <a class="label label-default" href="/tags/banking.html">banking (3)</a>
-            <a class="label label-default" href="/tags/blockchain.html">blockchain (4)</a>
-            <a class="label label-default" href="/tags/bots.html">bots (1)</a>
-            <a class="label label-default" href="/tags/deutsch.html">deutsch (1)</a>
-            <a class="label label-default" href="/tags/docker.html">docker (9)</a>
-            <a class="label label-default" href="/tags/futurework.html">futureWork (5)</a>
-            <a class="label label-default" href="/tags/googleapps.html">googleapps (1)</a>
-            <a class="label label-default" href="/tags/gradle.html">gradle (2)</a>
-            <a class="label label-default" href="/tags/inspiration.html">inspiration (2)</a>
-            <a class="label label-default" href="/tags/legal.html">legal (1)</a>
-            <a class="label label-default" href="/tags/meteor.html">meteor (5)</a>
-            <a class="label label-default" href="/tags/microservice.html">microservice (13)</a>
-            <a class="label label-default" href="/tags/modeling.html">modeling (1)</a>
-            <a class="label label-default" href="/tags/personaldata.html">personalData (3)</a>
-            <a class="label label-default" href="/tags/quicktips.html">quicktips (14)</a>
-            <a class="label label-default" href="/tags/shift.html">shift (4)</a>
-            <a class="label label-default" href="/tags/smallhints.html">smallhints (13)</a>
-            <a class="label label-default" href="/tags/startup.html">startup (10)</a>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/menu1.html"> About  </a>
+            </li>
+            <li>
+              <a href="/menu2.html"> Contact  </a>
+            </li>
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Categories <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/tags/api.html">api (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/architecture.html">architecture (14)</a>
+                </li>
+                <li>
+                  <a href="/tags/aws.html">aws (12)</a>
+                </li>
+                <li>
+                  <a href="/tags/banking.html">banking (3)</a>
+                </li>
+                <li>
+                  <a href="/tags/blockchain.html">blockchain (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/bots.html">bots (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/deutsch.html">deutsch (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/docker.html">docker (9)</a>
+                </li>
+                <li>
+                  <a href="/tags/futurework.html">futureWork (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/googleapps.html">googleapps (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/gradle.html">gradle (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/inspiration.html">inspiration (2)</a>
+                </li>
+                <li>
+                  <a href="/tags/legal.html">legal (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/meteor.html">meteor (5)</a>
+                </li>
+                <li>
+                  <a href="/tags/microservice.html">microservice (13)</a>
+                </li>
+                <li>
+                  <a href="/tags/modeling.html">modeling (1)</a>
+                </li>
+                <li>
+                  <a href="/tags/personaldata.html">personalData (3)</a>
+                </li>
+                <li>
+                  <a href="/tags/quicktips.html">quicktips (14)</a>
+                </li>
+                <li>
+                  <a href="/tags/shift.html">shift (4)</a>
+                </li>
+                <li>
+                  <a href="/tags/smallhints.html">smallhints (13)</a>
+                </li>
+                <li>
+                  <a href="/tags/startup.html">startup (10)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">By Year <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/2016.html">2016 (16)</a>
+                </li>
+                <li>
+                  <a href="/2015.html">2015 (35)</a>
+                </li>
+                <li>
+                  <a href="/2014.html">2014 (10)</a>
+                </li>
+              </ul>
+            </li>
+            <ul class="list-unstyled list-inline nav navbar-nav navbar-right"></ul>
+            <li><a href="https://twitter.com/talfco">
+                        <i class="fa fa-lg fa-inverse fa-twitter-square"></i></a>
+            </li>
+            <li><a href="https://www.facebook.com/Cloudburonet-897759390318816/">
+                        <i class="fa fa-lg fa-inverse fa-facebook-square"></i></a>
+            </li>
+            <li><a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts">
+                        <i class="fa fa-lg fa-inverse fa-google-plus-square"></i></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/felixk">
+                        <i class="fa fa-lg fa-inverse fa-linkedin-square"></i></a>
+            </li>
+            <li><a href="https://github.com/talfco">
+                        <i class="fa fa-lg fa-inverse fa-github-square"></i></a>
+            </li>
           </ul>
         </div>
-        <div class="timeline">
-          <h4>
-            By year
-          </h4>
-          <ul class="list-unstyled">
-            <a class="label label-primary" href="/2016.html">2016 (16)</a>
-            <a class="label label-primary" href="/2015.html">2015 (35)</a>
-            <a class="label label-primary" href="/2014.html">2014 (10)</a>
-          </ul>
-        </div>
-      </aside>
-    </div>
-    <!--/#secondary-->
-    <div class="col-sm-12" id="primary">
-      <div class="content">
-        <header class="header">
-          <hgroup class="pull-left">
-            <h1 class="site-title">
-              <a href="/">dev@cloudburo</a>
-            </h1>
-          </hgroup>
-          <div class="btn btn-primary pull-right" id="togglesidebar">
-            <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-9">
+          <h1>
+            Personal Data API Part 1
+          </h1>
+          <small class="label label-default">personalData</small>
+          <small class="label label-default">api</small>
+          <hr />
+          <p>
+            <span class="glyphicon glyphicon-time"></span> Posted on Jan  5
+          </p>
+          <hr />
+          <div class="row">
+            <div class="article">
+              <p>The goal of this blog series is to position and define a data API for handling Personal Data which can be amongst other used by Financial Institutes to manage this information asset - which is also called the <em>the oil of the information age</em> - in a diligent and secure way.</p>
+              
+              <p>In the current blog (first part) the major concepts and terms around Personal Data are introduced. </p>
+              
+              <p>The findings are based on my work as a responsible architect for a major program within a large Swiss Bank, where we introduced a private data architecture to mitigate and reduce the operational risk of data leakage which could result in a major reputational damage.</p>
+              
+              <h1 id="why-personal-data-matters">Why Personal Data matters</h1>
+              
+              <p>It&rsquo;s important to realize that a careful and correct  management and provisioning of Personal Data provides huge opportunities.</p>
+              
+              <p>As the first-phase World Economic Forum report on personal data elaborated, personal data represents an emerging asset class, potentially every bit as valuable as other assets such as traded goods, gold or oil.</p>
+              
+              <blockquote>
+              <p>As an emerging asset class, personal data currently lacks the rules, norms and frameworks that exist for other assets. The lack of trading rules and policy frameworks for its movement have resulted in a deficit of trust among all stakeholders and could undermine the long-term potential value of personal data. Different jurisdictions are looking to tackle this deficit of trust through different approaches, ranging from fundamental rights-based approaches to harm-minimization approaches.</p>
+              </blockquote>
+              
+              <p>(via <a href="http://www3.weforum.org/docs/WEF_ITTC_PersonalDataNewAsset_Report_2011.pdf">World Economic Forum report on personal data</a>)</p>
+              
+              <ul>
+              <li> By addressing the client data confidentiality problem in your organization you will be capable to manage reputational risk diligently, but </li>
+              <li> There is also the chance to build the foundation for a personal data management solution which would allow a financial institution to exploit new personal data driven business models with a potential high value proposition.</li>
+              </ul>
+              
+              <h1 id="definition-of-personal-data">Definition of Personal Data</h1>
+              
+              <p>For a start we define the term <strong>Personal Data</strong>, by using the defintion of the Liberty Guide of Human Rights</p>
+              
+              <blockquote>
+              <p>Personal data is anything which identifies you as an individual, either on its own or by reference to other information. It can include expressions of opinion about you.</p>
+              </blockquote>
+              
+              <p>(via <a href="http://www.yourrights.org.uk/yourrights/privacy/data-protection/definition-of-personal-data.shtml">Your rights - Definition of Personal Data</a>)</p>
+              
+              <p>This general definition is a base for the various country specific data protection acts (DPA) which can and will vary in the interpretation of the term and it&rsquo;s derived local laws and regulations.</p>
+              
+              <p>As an example refer to  the DPA of Switzerland which attaches a great deal of importance to protecting personal data, defines the Term, as follows</p>
+              
+              <blockquote>
+              <p>The Swiss Federal Data Protection Act (DPA) defines personal data as &ldquo;all information relating to an identified or identifiable person&rdquo;.</p>
+              
+              <p>&ldquo;Person&rdquo; refers not only to a natural person (individual), but also to a legal entity. The legal form of the entity is not relevant. Accordingly, personal data under the DPA can mean data relating to individuals as well as to partnerships, corporations, associations, cooperatives or any other legal entity. The extension of protection for data relating to legal entities can create difficulties in the context of cross-border data transfers because few other countries provide adequate protection for data relating to legal entities.</p>
+              
+              <p>A person is &ldquo;identified&rdquo; or &ldquo;identifiable&rdquo; if the information permits the identification of the person concerned. A person can be identifiable even if the data are stored in an anonymous form, e.g., under a code number, but separate information allows a link to be made between the code and the identity of the person. A person will be deemed not to be identifiable only if the information is anonymous and no link can be established between the anonymous information and the person concerned.</p>
+              </blockquote>
+              
+              <p>(via <a href="http://www.dataprotection.ch/en/personal-data.asp">dataprotection.ch - Walder Wyss Ltd.</a>)</p>
+              
+              <p>So the term individual (representing a natural person) is expanded to legal entities as well in this definition. Important point in this context is the topic about cross border data transfers due to the fact that other countries may have more relaxed DPA&rsquo;s concerning legal entities. This fact has to be taken in consideration as well when defining such a data API.</p>
+              
+              <p>Two other terms are important in this context the first one, is <strong>Sensitive Personal Data</strong>, which is defined in the Swiss DPA as follows</p>
+              
+              <ul>
+              <li>religious, philosophical, political or trade union-related views or activities</li>
+              <li>health, the intimate sphere of the person or racial origin;</li>
+              <li>social assistance measures; or</li>
+              <li>criminal or administrative proceedings and penalties.</li>
+              </ul>
+              
+              <p>The other one  <strong>Financial Personal Data</strong> which may or may not be part of Country&rsquo;s DPA. For Switzerland the following applies</p>
+              
+              <blockquote>
+              <p>Financial data are not sensitive personal data under the DPA. Switzerland&rsquo;s banking secrecy law, however, protects the confidentiality of the existence of the banking relationship, the identity of the bank&rsquo;s customer and any other information related to the banking relationship.</p>
+              </blockquote>
+              
+              <p>(via <a href="http://www.dataprotection.ch/en/personal-data.asp">dataprotection.ch - Walder Wyss Ltd.</a>)</p>
+              
+              <p>In our definition (aiming at Financial Services) we will include this kind of Personal Data as well.</p>
+              
+              <p>That&rsquo;s it from a definition point of view concerning Personal Data, let&rsquo;s look at two additional highly important concepts which are closely related.</p>
+              
+              <h1 id="anonymous-and-anonymized-data">Anonymous and Anonymized Data</h1>
+              
+              <p>When we store Personal Data we normally will also include additional <strong>Anonymous Data</strong> of the person which are relevant for our processing systems but which never can be linked back to Personal Data, which would break secrecy, e.g. we want to store </p>
+              
+              <ul>
+              <li>the customer segment of a person,</li>
+              <li>his classification in context of regulatory obligation (e.g. a Fatca status)</li>
+              <li>or any kind of information which is relevant for our business.</li>
+              </ul>
+              
+              <p>In context of our API discussion we call it also *<em>Blended Data *</em>, i.e. our Personal Data is blended with  Anonymous Data in order that it can be processed and used by other IT systems. Blended Data is about data which is in direct relationship with the  Person, normally known as data out of the domain of Client Relationship Management. </p>
+              
+              <p>On top of that we have <strong>Aggregated Data</strong> which we also call <strong>Stitched Data</strong>, i.e. the blended data set of a person will be extended with additional data ( stitched together) out of another domain (risk domain) in order to do some domain specific analytics or calculation (risk exposure calculations)</p>
+              
+              <p>In case we have Personal Data which have be deidentified, we are using the term <strong>Anonymized Data</strong></p>
+              
+              <blockquote>
+              <p>Previously identifiable data that have been deidentified and for which a code or other link no longer exists. A provider, third party or investigator would not be able to link anonymized information back to a specific individual.</p>
+              </blockquote>
+              
+              <p>(via <a href="http://www.pohly.com/terms.html">Managed Care and Healthcare Terminology</a>)</p>
+              
+              <p>It&rsquo;s worth to mention that Anonymous Data is often defined as data without any identifier, meaning there is now way back to the Personal Data (e.g. doing a survey with questionnaires not noting down any personal data). In our discussion the Anonymous Data will have a link back to the personal data via an <strong>Internal Processing Identifier</strong> (IPID). This identifer can be used to resolve back to the personal data only by dedicated master systems which are runnig under the jurisidicational legal and regulatory obligations and are protected by the highest security standards in order to ensure privacy. This holds true for the Anonymized Data as well, there is a link back but third party or investigator only have a key which isn&rsquo;t resolveable in any circumstance. </p>
+              
+              <h1 id="the-personal-data-halo">The Personal Data Halo</h1>
+              
+              <p>Inspired by the presentation of Sam Ramji from apigee <a href="https://blog.apigee.com/detail/api_strategy_talk_web_2.0/">Amundsen&rsquo;s Dogs, Information Halos and APIs: The epic story of your API Strategy</a> I will call the bundling of this various concepts into set of API as the <strong>Personal Data Halo</strong>.
+              <img src="/images/Voila_Capture340.png" alt="Personal Data Halo"></p>
+              
+            </div>
           </div>
-        </header>
-        <section class="post">
-          <header class="entry-header">
-            <h2 class="entry-title">
-              <a href="/2014/01/05/personal-data-api-part-1.html">Personal Data API Part 1</a>
-            </h2>
-            <p class="entry-meta">
-              Posted on  05.Jan 2014 | Tags <a class="label label-primary" href="/tags/personaldata.html">personalData</a> <a class="label label-primary" href="/tags/api.html">api</a> 
+          <hr />
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          //<![CDATA[
+                            var disqus_shortname = 'dev1cloudburo';
+                    
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          //]]>
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          <script type="text/javascript">
+          //<![CDATA[
+              var disqus_shortname = 'dev1cloudburo';
+              (function () {
+                  var s = document.createElement('script'); s.async = true;
+                  s.type = 'text/javascript';
+                  s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+              }());
+          //]]>
+          </script>
+          
+          <aside>
+            <h3>
+              Recent Articles
+            </h3>
+            <ol>
+              <li>
+                <a href="/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html">Ireland Banking Crisis in the 1970 - It's all about trust</a> <span>Dec  6</span> 
+              </li>
+              <li>
+                <a href="/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html">AWS re:Invent 2016 Keynote of Werner Vogels</a> <span>Dec  5</span> 
+              </li>
+              <li>
+                <a href="/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html">The Human Being(s) and We (as a Bank) #1 - Relationship</a> <span>Dec  1</span> 
+              </li>
+              <li>
+                <a href="/2016/11/30/blockchain-smart-signatures-explained.html">Blockchain Smart Signatures Explained</a> <span>Nov 30</span> 
+              </li>
+              <li>
+                <a href="/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html">The 5 pillars of the AWS Architecture Framework</a> <span>Nov 29</span> 
+              </li>
+              <li>
+                <a href="/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html">The Twelve Factor App Methodology for Building SAAS</a> <span>Nov 28</span> 
+              </li>
+              <li>
+                <a href="/2016/11/22/blockchain-governance-system-introduction.html">Blockchain Governance System Introduction</a> <span>Nov 22</span> 
+              </li>
+              <li>
+                <a href="/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html">Meteor Small Hints #5: Server Code Fragments executed twice on Startup</a> <span>Jul 18</span> 
+              </li>
+              <li>
+                <a href="/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html">A Terminology Guide to DAOs, DACs, DAs and More</a> <span>Jun 21</span> 
+              </li>
+              <li>
+                <a href="/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html">A categorisation of bots used for conversational commerce</a> <span>Jun  9</span> 
+              </li>
+            </ol>
+          </aside>
+          <hr>
+            <p class="text-center">
+              ©2016 <a href="/">dev@cloudburo</a> <br /><span class="small">Powered by<a href="https://cloudburo.net/docs/products.html"> Cloudburo Curation Engine</a></span>
             </p>
-          </header>
-          <div class="entry-description">
-            <div class="row">
-              <div class="article">
-                <p>The goal of this blog series is to position and define a data API for handling Personal Data which can be amongst other used by Financial Institutes to manage this information asset - which is also called the <em>the oil of the information age</em> - in a diligent and secure way.</p>
-                
-                <p>In the current blog (first part) the major concepts and terms around Personal Data are introduced. </p>
-                
-                <p>The findings are based on my work as a responsible architect for a major program within a large Swiss Bank, where we introduced a private data architecture to mitigate and reduce the operational risk of data leakage which could result in a major reputational damage.</p>
-                
-                <h1 id="why-personal-data-matters">Why Personal Data matters</h1>
-                
-                <p>It&rsquo;s important to realize that a careful and correct  management and provisioning of Personal Data provides huge opportunities.</p>
-                
-                <p>As the first-phase World Economic Forum report on personal data elaborated, personal data represents an emerging asset class, potentially every bit as valuable as other assets such as traded goods, gold or oil.</p>
-                
-                <blockquote>
-                <p>As an emerging asset class, personal data currently lacks the rules, norms and frameworks that exist for other assets. The lack of trading rules and policy frameworks for its movement have resulted in a deficit of trust among all stakeholders and could undermine the long-term potential value of personal data. Different jurisdictions are looking to tackle this deficit of trust through different approaches, ranging from fundamental rights-based approaches to harm-minimization approaches.</p>
-                </blockquote>
-                
-                <p>(via <a href="http://www3.weforum.org/docs/WEF_ITTC_PersonalDataNewAsset_Report_2011.pdf">World Economic Forum report on personal data</a>)</p>
-                
-                <ul>
-                <li> By addressing the client data confidentiality problem in your organization you will be capable to manage reputational risk diligently, but </li>
-                <li> There is also the chance to build the foundation for a personal data management solution which would allow a financial institution to exploit new personal data driven business models with a potential high value proposition.</li>
-                </ul>
-                
-                <h1 id="definition-of-personal-data">Definition of Personal Data</h1>
-                
-                <p>For a start we define the term <strong>Personal Data</strong>, by using the defintion of the Liberty Guide of Human Rights</p>
-                
-                <blockquote>
-                <p>Personal data is anything which identifies you as an individual, either on its own or by reference to other information. It can include expressions of opinion about you.</p>
-                </blockquote>
-                
-                <p>(via <a href="http://www.yourrights.org.uk/yourrights/privacy/data-protection/definition-of-personal-data.shtml">Your rights - Definition of Personal Data</a>)</p>
-                
-                <p>This general definition is a base for the various country specific data protection acts (DPA) which can and will vary in the interpretation of the term and it&rsquo;s derived local laws and regulations.</p>
-                
-                <p>As an example refer to  the DPA of Switzerland which attaches a great deal of importance to protecting personal data, defines the Term, as follows</p>
-                
-                <blockquote>
-                <p>The Swiss Federal Data Protection Act (DPA) defines personal data as &ldquo;all information relating to an identified or identifiable person&rdquo;.</p>
-                
-                <p>&ldquo;Person&rdquo; refers not only to a natural person (individual), but also to a legal entity. The legal form of the entity is not relevant. Accordingly, personal data under the DPA can mean data relating to individuals as well as to partnerships, corporations, associations, cooperatives or any other legal entity. The extension of protection for data relating to legal entities can create difficulties in the context of cross-border data transfers because few other countries provide adequate protection for data relating to legal entities.</p>
-                
-                <p>A person is &ldquo;identified&rdquo; or &ldquo;identifiable&rdquo; if the information permits the identification of the person concerned. A person can be identifiable even if the data are stored in an anonymous form, e.g., under a code number, but separate information allows a link to be made between the code and the identity of the person. A person will be deemed not to be identifiable only if the information is anonymous and no link can be established between the anonymous information and the person concerned.</p>
-                </blockquote>
-                
-                <p>(via <a href="http://www.dataprotection.ch/en/personal-data.asp">dataprotection.ch - Walder Wyss Ltd.</a>)</p>
-                
-                <p>So the term individual (representing a natural person) is expanded to legal entities as well in this definition. Important point in this context is the topic about cross border data transfers due to the fact that other countries may have more relaxed DPA&rsquo;s concerning legal entities. This fact has to be taken in consideration as well when defining such a data API.</p>
-                
-                <p>Two other terms are important in this context the first one, is <strong>Sensitive Personal Data</strong>, which is defined in the Swiss DPA as follows</p>
-                
-                <ul>
-                <li>religious, philosophical, political or trade union-related views or activities</li>
-                <li>health, the intimate sphere of the person or racial origin;</li>
-                <li>social assistance measures; or</li>
-                <li>criminal or administrative proceedings and penalties.</li>
-                </ul>
-                
-                <p>The other one  <strong>Financial Personal Data</strong> which may or may not be part of Country&rsquo;s DPA. For Switzerland the following applies</p>
-                
-                <blockquote>
-                <p>Financial data are not sensitive personal data under the DPA. Switzerland&rsquo;s banking secrecy law, however, protects the confidentiality of the existence of the banking relationship, the identity of the bank&rsquo;s customer and any other information related to the banking relationship.</p>
-                </blockquote>
-                
-                <p>(via <a href="http://www.dataprotection.ch/en/personal-data.asp">dataprotection.ch - Walder Wyss Ltd.</a>)</p>
-                
-                <p>In our definition (aiming at Financial Services) we will include this kind of Personal Data as well.</p>
-                
-                <p>That&rsquo;s it from a definition point of view concerning Personal Data, let&rsquo;s look at two additional highly important concepts which are closely related.</p>
-                
-                <h1 id="anonymous-and-anonymized-data">Anonymous and Anonymized Data</h1>
-                
-                <p>When we store Personal Data we normally will also include additional <strong>Anonymous Data</strong> of the person which are relevant for our processing systems but which never can be linked back to Personal Data, which would break secrecy, e.g. we want to store </p>
-                
-                <ul>
-                <li>the customer segment of a person,</li>
-                <li>his classification in context of regulatory obligation (e.g. a Fatca status)</li>
-                <li>or any kind of information which is relevant for our business.</li>
-                </ul>
-                
-                <p>In context of our API discussion we call it also *<em>Blended Data *</em>, i.e. our Personal Data is blended with  Anonymous Data in order that it can be processed and used by other IT systems. Blended Data is about data which is in direct relationship with the  Person, normally known as data out of the domain of Client Relationship Management. </p>
-                
-                <p>On top of that we have <strong>Aggregated Data</strong> which we also call <strong>Stitched Data</strong>, i.e. the blended data set of a person will be extended with additional data ( stitched together) out of another domain (risk domain) in order to do some domain specific analytics or calculation (risk exposure calculations)</p>
-                
-                <p>In case we have Personal Data which have be deidentified, we are using the term <strong>Anonymized Data</strong></p>
-                
-                <blockquote>
-                <p>Previously identifiable data that have been deidentified and for which a code or other link no longer exists. A provider, third party or investigator would not be able to link anonymized information back to a specific individual.</p>
-                </blockquote>
-                
-                <p>(via <a href="http://www.pohly.com/terms.html">Managed Care and Healthcare Terminology</a>)</p>
-                
-                <p>It&rsquo;s worth to mention that Anonymous Data is often defined as data without any identifier, meaning there is now way back to the Personal Data (e.g. doing a survey with questionnaires not noting down any personal data). In our discussion the Anonymous Data will have a link back to the personal data via an <strong>Internal Processing Identifier</strong> (IPID). This identifer can be used to resolve back to the personal data only by dedicated master systems which are runnig under the jurisidicational legal and regulatory obligations and are protected by the highest security standards in order to ensure privacy. This holds true for the Anonymized Data as well, there is a link back but third party or investigator only have a key which isn&rsquo;t resolveable in any circumstance. </p>
-                
-                <h1 id="the-personal-data-halo">The Personal Data Halo</h1>
-                
-                <p>Inspired by the presentation of Sam Ramji from apigee <a href="https://blog.apigee.com/detail/api_strategy_talk_web_2.0/">Amundsen&rsquo;s Dogs, Information Halos and APIs: The epic story of your API Strategy</a> I will call the bundling of this various concepts into set of API as the <strong>Personal Data Halo</strong>.
-                <img src="/images/Voila_Capture340.png" alt="Personal Data Halo"></p>
-                
-              </div>
-            </div>
-            <div class="comments">
-              <div id="disqus_thread">
-                <div id="disqus_thread"></div>
-                <script type="text/javascript">
-                //<![CDATA[
-                                  var disqus_shortname = 'dev1cloudburo';
-                          
-                    (function() {
-                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                    })();
-                //]]>
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-                <script type="text/javascript">
-                //<![CDATA[
-                    var disqus_shortname = 'dev1cloudburo';
-                    (function () {
-                        var s = document.createElement('script'); s.async = true;
-                        s.type = 'text/javascript';
-                        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-                        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-                    }());
-                //]]>
-                </script>
-                
-              </div>
-            </div>
+          </hr>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <div class="well">
+            <h4>
+              Categories
+            </h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="/tags/api.html">api</a> (2)
+              </li>
+              <li>
+                <a href="/tags/architecture.html">architecture</a> (14)
+              </li>
+              <li>
+                <a href="/tags/aws.html">aws</a> (12)
+              </li>
+              <li>
+                <a href="/tags/banking.html">banking</a> (3)
+              </li>
+              <li>
+                <a href="/tags/blockchain.html">blockchain</a> (4)
+              </li>
+              <li>
+                <a href="/tags/bots.html">bots</a> (1)
+              </li>
+              <li>
+                <a href="/tags/deutsch.html">deutsch</a> (1)
+              </li>
+              <li>
+                <a href="/tags/docker.html">docker</a> (9)
+              </li>
+              <li>
+                <a href="/tags/futurework.html">futureWork</a> (5)
+              </li>
+              <li>
+                <a href="/tags/googleapps.html">googleapps</a> (1)
+              </li>
+              <li>
+                <a href="/tags/gradle.html">gradle</a> (2)
+              </li>
+              <li>
+                <a href="/tags/inspiration.html">inspiration</a> (2)
+              </li>
+              <li>
+                <a href="/tags/legal.html">legal</a> (1)
+              </li>
+              <li>
+                <a href="/tags/meteor.html">meteor</a> (5)
+              </li>
+              <li>
+                <a href="/tags/microservice.html">microservice</a> (13)
+              </li>
+              <li>
+                <a href="/tags/modeling.html">modeling</a> (1)
+              </li>
+              <li>
+                <a href="/tags/personaldata.html">personalData</a> (3)
+              </li>
+              <li>
+                <a href="/tags/quicktips.html">quicktips</a> (14)
+              </li>
+              <li>
+                <a href="/tags/shift.html">shift</a> (4)
+              </li>
+              <li>
+                <a href="/tags/smallhints.html">smallhints</a> (13)
+              </li>
+              <li>
+                <a href="/tags/startup.html">startup</a> (10)
+              </li>
+            </ul>
           </div>
-        </section><footer class="footer">
-          <p>
-          </p>
-          <div class="socials-footer"><a class="btn btn-twitter" href="https://twitter.com/talfco">
-                <i class="fa fa-twitter"></i></a><a class="btn btn-facebook" href="https://www.facebook.com/Cloudburonet-897759390318816/">
-                <i class="fa fa-facebook"></i></a><a class="btn btn-google-plus" href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts">
-                <i class="fa fa-google-plus"></i></a><a class="btn btn-linkedin" href="https://www.linkedin.com/in/felixk">
-                <i class="fa fa-linkedin"></i></a><a class="btn btn-github" href="https://github.com/talfco">
-                <i class="fa fa-github"></i></a>
+          <div class="well">
+            <h4>
+              By year
+            </h4>
+            <ol>
+              <li>
+                <a href="/2016.html">2016</a> (16)
+              </li>
+              <li>
+                <a href="/2015.html">2015</a> (35)
+              </li>
+              <li>
+                <a href="/2014.html">2014</a> (10)
+              </li>
+            </ol>
           </div>
-          <p>
-            © 2016 All rights reserved 
-          </p>
-        </footer>
+        </div>
       </div>
     </div>
     <script src="../../../js/all.js" type="text/javascript"></script>
