@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html"/>
     <id>https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html</id>
     <published>2017-01-11T22:31:09Z</published>
-    <updated>2017-01-11T22:38:49+00:00</updated>
+    <updated>2017-01-11T23:09:30+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -23,7 +23,7 @@
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;div&gt;
-        The following slide set I prepared in 2013, mainly to test out the capability of Google Slides, nevertheless it gives you an overview about an implementation strategy chosen in one of largest Swiss Bank in order to standardize the Client Classification in the light of regulatory pressure on financial institutions. The approach allows us to calculate any relevant client classification in real-time for any kind of regulatory requirement (be it FATCA, FIDLEG, EMIR, MIFID-II, VCP etc. etc. - the number of regulatory driven client classification exploded since then and in 2017 we still have to tackle a substantial amount of regulatory CTB projects). 
+        The following slide set I prepared in 2013, mainly to test out the capability of Google Slides. Nevertheless it gives you an overview about an implementation strategy chosen in one of largest Swiss Bank in order to standardize the Client Classification in the light of regulatory pressure on financial institutions. The approach allows us to calculate any relevant client classification in real-time for any kind of regulatory requirement (be it FATCA, FIDLEG, EMIR, MIFID-II, VCP &amp;hellip;). The number of regulatory driven client classifications exploded since then and in 2017 we still have to tackle a substantial amount of regulatory change-the-bank projects. 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
