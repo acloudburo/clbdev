@@ -5,10 +5,53 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2016-12-06T06:34:22Z</updated>
+  <updated>2017-01-11T22:31:09Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Client Classification in Banking</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html"/>
+    <id>https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html</id>
+    <published>2017-01-11T22:31:09Z</published>
+    <updated>2017-01-11T22:31:10+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        The following slide set I prepared in 2013, mainly to test out the capability of Google Slides, nevertheless it gives you an overview about an implementation strategy chosen in one of largest Swiss Bank in order to standardize the Client Classification in the light of regulatory pressure on financial institutions. The approach allows us to calculate any relevant client classification in real-time for any kind of regulatory requirement (be it FATCA, FIDLEG, EMIR, MIFID-II, VCP etc. etc. - the number of regulatory driven client classification exploded since then and in 2017 we still have to tackle a substantial amount of regulatory CTB projects). 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;iframe src="https://docs.google.com/presentation/d/1s7lio1jwI85PLHqwDrk1K9dPdUB4-zp4LQqCEt8GqAY/embed?start=true&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"&gt;&lt;/iframe&gt;&amp;gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Ireland Banking Crisis in the 1970 - It's all about trust</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html"/>
@@ -5051,47 +5094,6 @@ task dockerZip(type: Zip) {
     &lt;p&gt;Sometimes its more helpful to understand some traps in a area. Part of its finding could be used as well for SOA based architectures. E.g. the bad principle to establish integration libraries instead of providing a clean interface which can be used and integrated by the consumer. Client libraries are nice and convenient but will get hard to maintain over time, due to extensions to various languages, versions etc. So keep it simple go for a clean interface in REST or SOAP style and leave the client bindings to the consumer.&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/01/bad-practices-microservices?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Google Ventures releases new DIY guide to help startups</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html"/>
-    <id>https://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html</id>
-    <published>2015-01-31T07:04:36Z</published>
-    <updated>2017-01-03T13:49:38+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
-      &lt;div&gt;
-        Interesting new DIY Guide by Google, which helps startups to design better products. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Google’s venture capital arm 
-       &lt;a href="http://www.gv.com/sprint/" rel="nofollow"&gt;released a new&amp;nbsp;do-it-yourself guide&lt;/a&gt; for startups looking to run a &amp;ldquo;design sprint&amp;rdquo; — Google Ventures’ name for its well-known&amp;nbsp;five-day prototyping process. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Google Ventures has long preached the concept and has publicly detailed its&amp;nbsp;various stages, from idea development and prototyping to user testing. With today’s release, however, the design sprint guide gets a lot more formal, and sets the stage for Google Ventures’ plan to publish its techniques in book for 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Originally inspired by IDEO, Google Ventures design partner 
-       &lt;a href="http://www.gv.com/team/jake-knapp" rel="nofollow"&gt;Jake Knapp&lt;/a&gt;&amp;nbsp;began conducting these design sprints years ago with portfolio companies. 
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.gv.com/sprint/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>

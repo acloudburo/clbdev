@@ -451,6 +451,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html</loc>
+    <lastmod>2017-01-11</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html</loc>
     <lastmod>2017-01-03</lastmod>
     <priority>0.7</priority>
@@ -676,6 +682,24 @@
     <loc>https://dev.cloudburo.net/tags/bots.html</loc>
     <lastmod>2017-01-03</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2017.html</loc>
+    <lastmod>2017-01-03</lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2017/01.html</loc>
+    <lastmod>2017-01-03</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2017/01/11.html</loc>
+    <lastmod>2017-01-03</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
