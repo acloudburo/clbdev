@@ -5,10 +5,92 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2017-01-11T22:31:09Z</updated>
+  <updated>2017-01-30T06:55:41Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Actions on Google - Engage User through the Google Assistant</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html"/>
+    <id>https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html</id>
+    <published>2017-01-30T06:55:41Z</published>
+    <updated>2017-01-30T06:55:41+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        The Google Website “
+       &lt;a href="https://developers.google.com/actions/"&gt;Actiosn on Google&lt;/a&gt;” is a incredible useful resource in context of conversational bots.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As stated on their site
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&amp;ldquo;Actions on Google let you build for the Google Assistant. Your integrations can help you engage users through Google Home today, and in the future, through Pixel, Allo, and many other experiences where the Google Assistant will be available.&amp;rdquo;&lt;/i&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In the section “Design Principles and Methodology” the provide an overview of their recommended design process.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The main steps outlined are
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;Pick the right use cases&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;Create a persona&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;Write dialogs&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;Test it out&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;Build and iterate&lt;br&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The following google developer video gives you an introduction the topic of designing conversational interfaces.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;div class="responsive-video"&gt;
+        &lt;iframe src="https://www.youtube.com/embed/MSUPVbbhIGA?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Client Classification in Banking</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html"/>
@@ -5074,26 +5156,6 @@ task dockerZip(type: Zip) {
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://jarche.com/2014/12/knowledge-is-personal/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Bad Practices Building Microservices</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html"/>
-    <id>https://dev.cloudburo.net/2015/03/07/bad-practices-building-microservices.html</id>
-    <published>2015-03-07T02:00:00Z</published>
-    <updated>2017-01-26T21:24:58+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;      Valdimir Khorikov lists in a InfoQ article some bad principles in context of the Microservice Architecture. Outlining bad principle instead of good one is really helpful, something what got established as well in the Java world with its concept of Anti-Pattern.&lt;/p&gt;
-    
-    &lt;p&gt;Sometimes its more helpful to understand some traps in a area. Part of its finding could be used as well for SOA based architectures. E.g. the bad principle to establish integration libraries instead of providing a clean interface which can be used and integrated by the consumer. Client libraries are nice and convenient but will get hard to maintain over time, due to extensions to various languages, versions etc. So keep it simple go for a clean interface in REST or SOAP style and leave the client bindings to the consumer.&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/01/bad-practices-microservices?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
