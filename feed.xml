@@ -5,10 +5,42 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2017-03-13T21:34:47Z</updated>
+  <updated>2017-03-27T05:38:50Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>An Easy To Understand Introduction to Classification Algorithms</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html"/>
+    <id>https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html</id>
+    <published>2017-03-27T05:38:50Z</published>
+    <updated>2017-03-27T05:38:50+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;div&gt;
+        &lt;p&gt;The Lead Data Scientist at Nielsen published an excellent kickstart article about classification algorithms.&lt;/p&gt;
+        &lt;p&gt;Classification algorithms are one of the first thing you learn about data science.&lt;/p&gt;
+        &lt;p&gt;Instead of using the common lecturer example of email spam filters  to explain the algorithms, Bryan is using a more nerdy and magical example. As he states:&lt;/p&gt;
+        &lt;p&gt;&lt;i&gt;That&amp;rsquo;s right folks! Today we&amp;rsquo;ll be talking about the Sorting Hat from the Harry Potter universe. We&amp;rsquo;ll pull some Harry Potter data from the web, analyze it, and then build a classifier to sort characters into the different houses. Should be fun!&lt;/i&gt;&lt;br&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;p&gt;The sample program is based on Python and you can find the whole tutorial here.&lt;/p&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="http://blog.yhat.com/posts/harry-potter-classification.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Verifiable Data Audit an Innovative Way by DeepMind</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html"/>
@@ -5006,115 +5038,6 @@ task dockerZip(type: Zip) {
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Phil Calcado on Lessons Learnt During SoundCloud's Microservice Migration</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/15/phil-calcado-on-lessons-learnt-during-soundcloud-s-microservice-migration.html"/>
-    <id>https://dev.cloudburo.net/2015/03/15/phil-calcado-on-lessons-learnt-during-soundcloud-s-microservice-migration.html</id>
-    <published>2015-03-15T09:20:37Z</published>
-    <updated>2017-03-05T20:11:33+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        At 
-       &lt;a href="http://qconlondon.com/" rel="nofollow"&gt;QCon London&lt;/a&gt; 2015 
-       &lt;a href="https://www.linkedin.com/in/pcalcado" rel="nofollow"&gt;Phil Calcado&lt;/a&gt; shared lessons learnt&amp;nbsp;from 
-       &lt;a href="https://soundcloud.com/" rel="nofollow"&gt;SoundCloud’s&lt;/a&gt; move from a monolithic to micro services architecture. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The article is very practical written,&amp;nbsp; introducing best partices about the topic as well as states fundamental capabilities in context of a micro service platform, as for example&amp;nbsp; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;rapid provisioning,&lt;/li&gt; 
-       &lt;li&gt;basic monitoring and&lt;/li&gt; 
-       &lt;li&gt;rapid application deployment.&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        He states as a core lesson 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;&lt;i&gt;the need to standards monitoring dashboards&lt;/i&gt;&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        due to the fact that it can be difficult to&amp;nbsp;determine what has broken in a distributed&amp;nbsp;micro service architecture. An experience which I encounter as well even with a small startup docker environment. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Currently I standardize my docker runtime monitoring needs around the 
-       &lt;a href="https://logentries.com/" rel="nofollow"&gt;logentries.com&lt;/a&gt;&amp;nbsp;platform, which provides an easy to use and powerful Log Management and Realtime Analytics solution. For micro companies in the bootstrap-/development mode it&amp;nbsp;offers a free tier, which allows you to gain knowledge and experience. It’s clear&amp;nbsp;for&amp;nbsp;me when going live I will switch over to a paid plan to contribute to this neat service.&amp;nbsp; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Integration of the the log entries remote&amp;nbsp;output appender into my java-/groovy based curation Bot via the log4j library was straightforward. Below you see a screenshot of the aggregated log data. Via tags (in the example „Exception“, „Warning“) -&amp;nbsp;which can be configured for log entries messages -&amp;nbsp;it’s quite easy to get a quick dashboard&amp;nbsp;overview of any kind of problems. &amp;ldquo;Live Tail&amp;rdquo; feature&amp;nbsp;is&amp;nbsp; handy in case you restart the Beanstalk docker application. During the reconfiguration and restart process the Beanstalk Log feature isn’t available. I now can switch to Logentries and&amp;nbsp;watch „live“ the startup process. It will allows me to detect startup problems early. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/6a2d24224414a16a0fa998a65b83130b.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Another finding by Phil which will be instrumental when you go for production is the capability&amp;nbsp; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;&lt;i&gt;to expose the application’s operational functionality in a standard way, allowing monitoring data to be easily accessed essential. As well as providing the capability to shut-down an application, or exposing the ability to trip downstream circuit-breakers.&amp;nbsp;&lt;/i&gt;&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        This is something I have still to address and it will allow me to look deeper in the AWS Elastibeanstalk Worker configuration, which I want to use to address this point. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The full article can be found here: 
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/03/soundcloud-microservices?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global&amp;amp;utm_reader=feedly"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
