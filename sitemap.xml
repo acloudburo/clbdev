@@ -373,6 +373,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html</loc>
+    <lastmod>2017-04-07</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html</loc>
     <lastmod>2017-04-05</lastmod>
     <priority>0.7</priority>
@@ -718,6 +724,18 @@
     <loc>https://dev.cloudburo.net/2017.html</loc>
     <lastmod>2017-04-05</lastmod>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2017/04.html</loc>
+    <lastmod>2017-04-05</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2017/04/07.html</loc>
+    <lastmod>2017-04-05</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
