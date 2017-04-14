@@ -5,10 +5,117 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2017-04-07T15:13:15Z</updated>
+  <updated>2017-04-14T15:10:46Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Reflections On Bootstrapping A Digital Micro Company - Ready to Switch</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html"/>
+    <id>https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html</id>
+    <published>2017-04-14T15:10:46Z</published>
+    <updated>2017-04-14T15:10:47+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/03633c0cb5fa887df52401f8b94640d9.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        When running a micro company as a side-project, you always look out for cost optimized SaaS cloud solutions running you digital application load.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Running your early startup business with a shoestring budget, means you also have to be prepared to move on and switch SaaS providers potentially more often than you want.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As an example: 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        I was running my Meteor-based 
+       &lt;a href="https://bots.cloudburo.net"&gt;Cloudburo Bot Memberzone&lt;/a&gt; Frontend Application first on the Tangible SaaS solution for a very competitive price.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        After some months the SaaS platform was broken out of the company and a small engineer team left Tangible to take over the platform under the name Xervo. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        One of the first step was a price increase of their base offering. It was a fair increase and no reason to move on.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        However some time later they were reaching out to their customers with the information that the service will be shut down within just 24 days.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        That means, you have to react quite quickly and start re-arranging your deployments. 24 days is not much, especially if you are running the micro company as a side-project beside your normal professional work.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Luckily the migration of a Meteor App together with its underlying MongoDB can be quite straightforward, when choosing a experienced SaaS provider.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        I’ve switched over to
+       &lt;a href="https://nodechef.com/meteorhosting"&gt;nodechef&lt;/a&gt; which offers a fully integrated F2B solution. I got a replica of my production app running within 20 minutes and had to invest additional two hours, to reconfigure my domains and doing serveral tests.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        First impression is that, their offering and dashboard seems even superior to the Xervo one on a similar (potential cheaper) price! 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        One finding out of this exercise is the power of Meteor when it comes to deployment. Meteor Apps can be deployed on different SaaS stack within record time, due to their intelligent and “taking care of everything” packaging features. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Stripe Atlas - Get your startup registered within days</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html"/>
@@ -4996,46 +5103,6 @@ task dockerZip(type: Zip) {
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/03/microservices-logical-services?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>A Modern Microservices Architecture By Gilt</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-gilt.html"/>
-    <id>https://dev.cloudburo.net/2015/03/28/a-modern-microservices-architecture-by-gilt.html</id>
-    <published>2015-03-28T09:06:18Z</published>
-    <updated>2017-04-05T21:40:20+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
-      &lt;div&gt; 
-       &lt;a href="http://www.yonigoldberg.com/" rel="nofollow"&gt;Yoni Goldberg&lt;/a&gt;&amp;nbsp;explains in a presentation at the&amp;nbsp; 
-       &lt;a href="http://qconlondon.com/" rel="nofollow"&gt;QCon London&lt;/a&gt; conference&amp;nbsp; the challenges they encountered moving to a micro-services architecture. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;i&gt;After living with micro services for three years at Gilt we can see advantages in team ownership, boundaries defined by APIs and complex problems broken down into small ones. Challenges still exists in tooling, integration environments and monitoring&lt;/i&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The article&amp;nbsp; explains how they moved from Ruby on Rails, over to the JVM with macro- and micro services, which solved 99% of their scaling&amp;nbsp;but left some of the problems developers experienced with the new services being semi-monolithic and lacking&amp;nbsp;clear ownership of code. The tackled the problem by increasing the number of micro services. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Go on read the full article&amp;nbsp;on the below link. 
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.infoq.com/news/2015/03/microservices-architecture-gilt?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
