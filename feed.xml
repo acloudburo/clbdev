@@ -14,12 +14,11 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
     <published>2017-06-18T11:50:25Z</published>
-    <updated>2017-06-18T11:50:27+00:00</updated>
+    <updated>2017-06-18T11:55:42+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/2f32bea7ea20597a6be9cd9278a507c7.png" /&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
@@ -56,6 +55,7 @@
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/2f32bea7ea20597a6be9cd9278a507c7.png" /&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
@@ -76,7 +76,7 @@
       &lt;div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/74e3d491fd229ddf57206f549145b3e5.png" /&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/74e3d491fd229ddf57206f549145b3e5.png" /&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
