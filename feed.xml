@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
     <published>2017-06-18T12:46:32Z</published>
-    <updated>2017-06-18T12:46:39+00:00</updated>
+    <updated>2017-06-18T12:49:26+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -42,7 +42,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;b&gt;How Java Works&lt;/b&gt;
+       &lt;span style=" font-size: 18px;"&gt;How Java Works&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -54,21 +54,19 @@
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
-      &lt;div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&lt;span style=""&gt;Computer program&lt;/span&gt; - A computer program is a set of instructions that tell a computer exactly what to do. The instructions might tell the computer to add up a set of numbers, or compare two numbers and make a decision based on the result, or whatever. But a computer program is simply a set of instructions for the computer, like a recipe is a set of instructions for a cook or musical notes are a set of instructions for a musician. The computer follows your instructions exactly and in the process does something useful &amp;ndash; like balancing a checkbook or displaying a game on the screen or implementing a word processor.&lt;/li&gt;
+       &lt;li&gt;P&lt;span style=""&gt;rogramming language &lt;/span&gt;- In order for a computer to recognize the instructions you give it, those instructions need to be written in a language the computer understands &amp;ndash; a programming language. There are many computer programming languages &amp;ndash; Fortran, Cobol, Basic, Pascal, C, C++, Java, Perl &amp;ndash; just like there are many spoken languages. They all express approximately the same concepts in different ways.&lt;/li&gt;
+       &lt;li&gt;&lt;span style=""&gt;Compiler&lt;/span&gt; - A compiler translates a computer program written in a human-readable computer language (like Java) into a form that a computer can execute. You have probably seen EXE files on your computer. These EXE files are the output of compilers. They contain executables &amp;ndash; machine-readable programs translated from human-readable programs. &lt;/li&gt;
+       &lt;li&gt;&lt;span style=""&gt;Build Process &lt;/span&gt;- When you develop an application in a programming language  (in our case Java) you will have a so-called Build Process which manages various steps. As we will see below, we will use a project management tool which helps us to manage this process. For example the process will&lt;/li&gt;
        &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;Computer program&lt;/b&gt; - A computer program is a set of instructions that tell a computer exactly what to do. The instructions might tell the computer to add up a set of numbers, or compare two numbers and make a decision based on the result, or whatever. But a computer program is simply a set of instructions for the computer, like a recipe is a set of instructions for a cook or musical notes are a set of instructions for a musician. The computer follows your instructions exactly and in the process does something useful &amp;ndash; like balancing a checkbook or displaying a game on the screen or implementing a word processor.&lt;/li&gt;
-        &lt;li&gt;P&lt;b&gt;rogramming language &lt;/b&gt;- In order for a computer to recognize the instructions you give it, those instructions need to be written in a language the computer understands &amp;ndash; a programming language. There are many computer programming languages &amp;ndash; Fortran, Cobol, Basic, Pascal, C, C++, Java, Perl &amp;ndash; just like there are many spoken languages. They all express approximately the same concepts in different ways.&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Compiler&lt;/b&gt; - A compiler translates a computer program written in a human-readable computer language (like Java) into a form that a computer can execute. You have probably seen EXE files on your computer. These EXE files are the output of compilers. They contain executables &amp;ndash; machine-readable programs translated from human-readable programs. &lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Build Process &lt;/b&gt;- When you develop an application in a programming language  (in our case Java) you will have a so-called Build Process which manages various steps. As we will see below, we will use a project management tool which helps us to manage this process. For example the process will&lt;/li&gt;
-        &lt;ul&gt;
-         &lt;li&gt;compiles your Java source code then &lt;/li&gt;
-         &lt;li&gt;runs some test against the code and then&lt;/li&gt;
-         &lt;li&gt;bundles it in a Java JAR file for distribution.&lt;/li&gt;
-        &lt;/ul&gt;
+        &lt;li&gt;compiles your Java source code then &lt;/li&gt;
+        &lt;li&gt;runs some test against the code and then&lt;/li&gt;
+        &lt;li&gt;bundles it in a Java JAR file for distribution.&lt;/li&gt;
        &lt;/ul&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style=" font-size: 18px;"&gt;Using Maven for the Build&lt;/span&gt;
@@ -288,18 +286,16 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;b&gt;Further reading&lt;/b&gt;
+       &lt;span style="font-size: 18px;"&gt;Further reading&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+       &lt;br&gt;
       &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;Read &lt;span style=""&gt;Chapter 1. Dive in A Quick Dip: Breaking the Surface &lt;/span&gt;of the &lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;Head First Java Book&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
       &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;&lt;b style="font-size: 14px;"&gt;&lt;/b&gt;&lt;br&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 11px;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 11px;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
