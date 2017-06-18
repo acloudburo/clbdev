@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Java for Beginners #1 - Prepare an IntelliJ Maven Project</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js" type="text/javascript"></script><![endif]--><link href="../../../css/all.css" media="screen" rel="stylesheet" type="text/css" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a class="label label-default" href="/tags/api.html">api (2)</a>
+            <a class="label label-default" href="/tags/architecture.html">architecture (16)</a>
+            <a class="label label-default" href="/tags/aws.html">aws (12)</a>
+            <a class="label label-default" href="/tags/banking.html">banking (5)</a>
+            <a class="label label-default" href="/tags/blockchain.html">blockchain (5)</a>
+            <a class="label label-default" href="/tags/bots.html">bots (2)</a>
+            <a class="label label-default" href="/tags/datascience.html">datascience (2)</a>
+            <a class="label label-default" href="/tags/deutsch.html">deutsch (1)</a>
+            <a class="label label-default" href="/tags/docker.html">docker (9)</a>
+            <a class="label label-default" href="/tags/futurework.html">futureWork (5)</a>
+            <a class="label label-default" href="/tags/googleapps.html">googleapps (1)</a>
+            <a class="label label-default" href="/tags/gradle.html">gradle (2)</a>
+            <a class="label label-default" href="/tags/inspiration.html">inspiration (3)</a>
+            <a class="label label-default" href="/tags/javatutorial.html">javatutorial (2)</a>
+            <a class="label label-default" href="/tags/legal.html">legal (1)</a>
+            <a class="label label-default" href="/tags/meteor.html">meteor (5)</a>
+            <a class="label label-default" href="/tags/microservice.html">microservice (13)</a>
+            <a class="label label-default" href="/tags/modeling.html">modeling (1)</a>
+            <a class="label label-default" href="/tags/personaldata.html">personalData (3)</a>
+            <a class="label label-default" href="/tags/quicktips.html">quicktips (14)</a>
+            <a class="label label-default" href="/tags/shift.html">shift (4)</a>
+            <a class="label label-default" href="/tags/smallhints.html">smallhints (13)</a>
+            <a class="label label-default" href="/tags/startup.html">startup (11)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a class="label label-primary" href="/2017.html">2017 (9)</a>
+            <a class="label label-primary" href="/2016.html">2016 (16)</a>
+            <a class="label label-primary" href="/2015.html">2015 (35)</a>
+            <a class="label label-primary" href="/2014.html">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html">Java for Beginners #1 - Prepare an IntelliJ Maven Project</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  18.Jun 2017 | Tags <a class="label label-primary" href="/tags/javatutorial.html">javatutorial</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                    In this first session we create a Maven Project in the IntelliJ Integrated Development Environment (IDE) and configure some aspects of the tool, which helps us in our future development work.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The goal of our project is to develop first a standalone Java Application and then an Android App, which allows us to retrieve and visualise  football data from the API of 
+                   <a href="http://www.football-data.org/index"><a href="http://www.football-data.org/index">http://www.football-data.org/index</a></a>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="">The goal of the football-data API is to provide football data of all major european leagues in a machine-readable way. By data I mean fixtures, teams, players, results and more. All this information is provided via an easy-to-use RESTful API in JSON (only) representation.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <b>How Java Works</b>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Some terminology to get you a better start of (taken over from
+                   <a href="http://computer.howstuffworks.com/program1.htm">here</a>).
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <ul>
+                    <li><b>Computer program</b> - A computer program is a set of instructions that tell a computer exactly what to do. The instructions might tell the computer to add up a set of numbers, or compare two numbers and make a decision based on the result, or whatever. But a computer program is simply a set of instructions for the computer, like a recipe is a set of instructions for a cook or musical notes are a set of instructions for a musician. The computer follows your instructions exactly and in the process does something useful &ndash; like balancing a checkbook or displaying a game on the screen or implementing a word processor.</li>
+                    <li>P<b>rogramming language </b>- In order for a computer to recognize the instructions you give it, those instructions need to be written in a language the computer understands &ndash; a programming language. There are many computer programming languages &ndash; Fortran, Cobol, Basic, Pascal, C, C++, Java, Perl &ndash; just like there are many spoken languages. They all express approximately the same concepts in different ways.</li>
+                    <li><b>Compiler</b> - A compiler translates a computer program written in a human-readable computer language (like Java) into a form that a computer can execute. You have probably seen EXE files on your computer. These EXE files are the output of compilers. They contain executables &ndash; machine-readable programs translated from human-readable programs. <br></li>
+                    <li><b>Build Process </b>- When you develop an application in a programming language  (in our case Java) you will have a so-called Build Process which manages various steps. As we will see below, we will use a project management tool which helps us to manage this process. For example the process will</li>
+                    <ul>
+                     <li>compiles your Java source code then </li>
+                     <li>runs some test against the code and then</li>
+                     <li>bundles it in a Java JAR file for distribution.</li>
+                    </ul>
+                   </ul>
+                   <div>
+                    <br>
+                   </div>
+                  </div>
+                  <div>
+                   <span style=" font-size: 18px;">Using Maven for the Build</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    We are setting the project in IntelliJ as an 
+                   <a href="https://maven.apache.org/">Apache Maven Project</a> up. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Maven is a professional software project management tool  and it’s primary goal is to allow a developer to comprehend the complete state of a development effort in the shortest period of time. By using it from the beginning, we can grow our project easily over time. You don’t need to know the all the details from Maven, just follow the setup steps as shown below. Over time we will introduce additional the necessary concept.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    For each Maven Project you have to define a “groupId&quot;, an “artifactId”, as well as a “version” (see details
+                   <a href="https://maven.apache.org/guides/mini/guide-naming-conventions.html">here</a>)
+                  </div>
+                  <ul>
+                   <li><span style="">groupId</span> will identify your project uniquely across all projects.</li>
+                   <li><span style="">artifactId</span> is the name of the jar (the file which holds all the compiled java code) without version.</li>
+                   <li><span style="">version </span>identifies the current version of the jar.</li>
+                  </ul>
+                  <div></p>
+                
+                <p></div>
+                  <div>
+                    When Maven is compiling and building your Java Application, it will bundle the generated the files in jar file by using the above definitions for its file name. So let’s start then and get a IntelliJ Project setup.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style=" font-size: 18px;">Step 1: Create a new Maven Project in IntelliJ IDEA </span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    From the menu select: “File-&gt;New-&gt;Project&quot;
+                  </div>
+                  <div>
+                    You don’t require an archetype, just press “Next&quot;
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/b5b0cbab25e18b36eaf517dd49edc6a3.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    Maven requires the following information (more to it later)
+                  </div>
+                  <ul>
+                   <li>“GroupId”, for example com.&lt;yourName&gt;</li>
+                   <li>“ArtifactId”, in our case “FootballApp”</li>
+                   <li>“Version”, leave it as suggested.</li>
+                  </ul>
+                  <div>
+                    Press “Next&quot;
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/a8fb97fc23db17fc3d7da588c5cbb2c7.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    The IntelliJ “Project name” and “Project location” will shown, leave it as is and Press “Finish&quot;
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/3c1c8202e3bbd49af12cd0ec358fc703.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The Project will now be opened and the Maven “pom.xml” File will be shown.
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/323acc1d8b0077fc7393b914565dfacd.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <span style=" font-size: 18px;">Step 2: Configure the IntelliJ IDEA Project View</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Now we do some IntelliJ Project and View configurations.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    First we open the Event Log. Click on the rectangular icon at the bottom left of the Project Window
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/af4d44b82bf2d02f7cf0f34ad221c2d3.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    A list of possible views will be shown, select the “Event Log”, by clicking on it.
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/b3ccb81b9e87c2b71d3b87f9cdacb445.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The Event Log is now shown at bottom of the Window.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/b0a8a78c69c2ba43c8c95d2f7c654b36.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    A Message is displayed “Maven projects need to be imported …”. 
+                  </div>
+                  <div>
+                    Click on “Enable Auto-Import”, so that any extension of the Maven pom.xml will be automatically imported.
+                  </div>
+                  <div>
+                    After clicking it, the entry is greyed out.
+                  </div>
+                  <div>
+                    You can hide the “Event Log” window by clicking on the icon in the upper right corner of the Event Log Window. But for now leave it open.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/d755aff371a9a5850494fa9dade5b0be.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style=" font-size: 18px;">Step 3: Configure the Auto Build Feature of the Project</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    In order to enable the “
+                   <a href="https://www.jetbrains.com/help/idea/2017.1/problems-tool-window.html">Problems Tool Window</a>” you have to enable the “Make project automatically” option. Select the following menu
+                  </div>
+                  <ul>
+                   <li>&ldquo;IntelliJ IDEA-&gt;Preferences-&gt;Build, Execution, Deployment -&gt;Compiler” on a Mac or</li>
+                   <li>“File-&gt;Settings-&gt;Build, Execution, Deployment-&gt;Compiler” on Windows or Linux.</li>
+                   <li>Click “Build project automatically” to enable it.</li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/19246af83dc49fb57615ad65e486cf98.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    That’s it for today, in the next session, we will write the first program, which will fetch data from the
+                   <a href="http://football-data.org">football-data.org</a> site in a machine-readable format.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <b>Further reading</b>
+                  </div>
+                  <div>
+                   <b><br></b>
+                  </div>
+                  <div>
+                   <ul>
+                    <li><b style="font-size: 14px;"></b><br></li>
+                   </ul>
+                  </div>
+                  <div>
+                   <span style="font-size: 11px;"><br></span>
+                  </div>
+                  <div>
+                   <span style="font-size: 11px;">This blog entry was fully produced within Evernote and published using the </span>
+                   <a style="font-size: 11px;" href="https://publishingbot.cloudburo.net">Cloudburo Publishing Bot</a>
+                   <span style="font-size: 11px;">.</span>
+                  </div></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a class="btn btn-twitter" href="https://twitter.com/talfco">
+                <i class="fa fa-twitter"></i></a><a class="btn btn-facebook" href="https://www.facebook.com/Cloudburonet-897759390318816/">
+                <i class="fa fa-facebook"></i></a><a class="btn btn-google-plus" href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts">
+                <i class="fa fa-google-plus"></i></a><a class="btn btn-linkedin" href="https://www.linkedin.com/in/felixk">
+                <i class="fa fa-linkedin"></i></a><a class="btn btn-github" href="https://github.com/talfco">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2017 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js" type="text/javascript"></script>
+  </body>
+</html>

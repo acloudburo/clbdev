@@ -5,10 +5,311 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2017-06-18T11:50:25Z</updated>
+  <updated>2017-06-18T12:46:32Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Java for Beginners #1 - Prepare an IntelliJ Maven Project</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
+    <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
+    <published>2017-06-18T12:46:32Z</published>
+    <updated>2017-06-18T12:46:39+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        In this first session we create a Maven Project in the IntelliJ Integrated Development Environment (IDE) and configure some aspects of the tool, which helps us in our future development work.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The goal of our project is to develop first a standalone Java Application and then an Android App, which allows us to retrieve and visualise  football data from the API of 
+       &lt;a href="http://www.football-data.org/index"&gt;&lt;a href="http://www.football-data.org/index"&gt;http://www.football-data.org/index&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style=""&gt;The goal of the football-data API is to provide football data of all major european leagues in a machine-readable way. By data I mean fixtures, teams, players, results and more. All this information is provided via an easy-to-use RESTful API in JSON (only) representation.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b&gt;How Java Works&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Some terminology to get you a better start of (taken over from
+       &lt;a href="http://computer.howstuffworks.com/program1.htm"&gt;here&lt;/a&gt;).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;Computer program&lt;/b&gt; - A computer program is a set of instructions that tell a computer exactly what to do. The instructions might tell the computer to add up a set of numbers, or compare two numbers and make a decision based on the result, or whatever. But a computer program is simply a set of instructions for the computer, like a recipe is a set of instructions for a cook or musical notes are a set of instructions for a musician. The computer follows your instructions exactly and in the process does something useful &amp;ndash; like balancing a checkbook or displaying a game on the screen or implementing a word processor.&lt;/li&gt;
+        &lt;li&gt;P&lt;b&gt;rogramming language &lt;/b&gt;- In order for a computer to recognize the instructions you give it, those instructions need to be written in a language the computer understands &amp;ndash; a programming language. There are many computer programming languages &amp;ndash; Fortran, Cobol, Basic, Pascal, C, C++, Java, Perl &amp;ndash; just like there are many spoken languages. They all express approximately the same concepts in different ways.&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Compiler&lt;/b&gt; - A compiler translates a computer program written in a human-readable computer language (like Java) into a form that a computer can execute. You have probably seen EXE files on your computer. These EXE files are the output of compilers. They contain executables &amp;ndash; machine-readable programs translated from human-readable programs. &lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;Build Process &lt;/b&gt;- When you develop an application in a programming language  (in our case Java) you will have a so-called Build Process which manages various steps. As we will see below, we will use a project management tool which helps us to manage this process. For example the process will&lt;/li&gt;
+        &lt;ul&gt;
+         &lt;li&gt;compiles your Java source code then &lt;/li&gt;
+         &lt;li&gt;runs some test against the code and then&lt;/li&gt;
+         &lt;li&gt;bundles it in a Java JAR file for distribution.&lt;/li&gt;
+        &lt;/ul&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style=" font-size: 18px;"&gt;Using Maven for the Build&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        We are setting the project in IntelliJ as an 
+       &lt;a href="https://maven.apache.org/"&gt;Apache Maven Project&lt;/a&gt; up. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Maven is a professional software project management tool  and it’s primary goal is to allow a developer to comprehend the complete state of a development effort in the shortest period of time. By using it from the beginning, we can grow our project easily over time. You don’t need to know the all the details from Maven, just follow the setup steps as shown below. Over time we will introduce additional the necessary concept.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        For each Maven Project you have to define a “groupId&amp;quot;, an “artifactId”, as well as a “version” (see details
+       &lt;a href="https://maven.apache.org/guides/mini/guide-naming-conventions.html"&gt;here&lt;/a&gt;)
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&lt;span style=""&gt;groupId&lt;/span&gt; will identify your project uniquely across all projects.&lt;/li&gt;
+       &lt;li&gt;&lt;span style=""&gt;artifactId&lt;/span&gt; is the name of the jar (the file which holds all the compiled java code) without version.&lt;/li&gt;
+       &lt;li&gt;&lt;span style=""&gt;version &lt;/span&gt;identifies the current version of the jar.&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;/div&gt;
+      &lt;div&gt;
+        When Maven is compiling and building your Java Application, it will bundle the generated the files in jar file by using the above definitions for its file name. So let’s start then and get a IntelliJ Project setup.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style=" font-size: 18px;"&gt;Step 1: Create a new Maven Project in IntelliJ IDEA &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        From the menu select: “File-&amp;gt;New-&amp;gt;Project&amp;quot;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You don’t require an archetype, just press “Next&amp;quot;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/b5b0cbab25e18b36eaf517dd49edc6a3.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Maven requires the following information (more to it later)
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;“GroupId”, for example com.&amp;lt;yourName&amp;gt;&lt;/li&gt;
+       &lt;li&gt;“ArtifactId”, in our case “FootballApp”&lt;/li&gt;
+       &lt;li&gt;“Version”, leave it as suggested.&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+        Press “Next&amp;quot;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/a8fb97fc23db17fc3d7da588c5cbb2c7.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The IntelliJ “Project name” and “Project location” will shown, leave it as is and Press “Finish&amp;quot;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/3c1c8202e3bbd49af12cd0ec358fc703.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The Project will now be opened and the Maven “pom.xml” File will be shown.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/323acc1d8b0077fc7393b914565dfacd.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style=" font-size: 18px;"&gt;Step 2: Configure the IntelliJ IDEA Project View&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Now we do some IntelliJ Project and View configurations.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        First we open the Event Log. Click on the rectangular icon at the bottom left of the Project Window
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/af4d44b82bf2d02f7cf0f34ad221c2d3.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A list of possible views will be shown, select the “Event Log”, by clicking on it.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/b3ccb81b9e87c2b71d3b87f9cdacb445.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The Event Log is now shown at bottom of the Window.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/b0a8a78c69c2ba43c8c95d2f7c654b36.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A Message is displayed “Maven projects need to be imported …”. 
+      &lt;/div&gt;
+      &lt;div&gt;
+        Click on “Enable Auto-Import”, so that any extension of the Maven pom.xml will be automatically imported.
+      &lt;/div&gt;
+      &lt;div&gt;
+        After clicking it, the entry is greyed out.
+      &lt;/div&gt;
+      &lt;div&gt;
+        You can hide the “Event Log” window by clicking on the icon in the upper right corner of the Event Log Window. But for now leave it open.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/d755aff371a9a5850494fa9dade5b0be.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style=" font-size: 18px;"&gt;Step 3: Configure the Auto Build Feature of the Project&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In order to enable the “
+       &lt;a href="https://www.jetbrains.com/help/idea/2017.1/problems-tool-window.html"&gt;Problems Tool Window&lt;/a&gt;” you have to enable the “Make project automatically” option. Select the following menu
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&amp;ldquo;IntelliJ IDEA-&amp;gt;Preferences-&amp;gt;Build, Execution, Deployment -&amp;gt;Compiler” on a Mac or&lt;/li&gt;
+       &lt;li&gt;“File-&amp;gt;Settings-&amp;gt;Build, Execution, Deployment-&amp;gt;Compiler” on Windows or Linux.&lt;/li&gt;
+       &lt;li&gt;Click “Build project automatically” to enable it.&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/19246af83dc49fb57615ad65e486cf98.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        That’s it for today, in the next session, we will write the first program, which will fetch data from the
+       &lt;a href="http://football-data.org"&gt;football-data.org&lt;/a&gt; site in a machine-readable format.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b&gt;Further reading&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;&lt;b style="font-size: 14px;"&gt;&lt;/b&gt;&lt;br&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a style="font-size: 11px;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Java for Beginners - Table of Content and Resources</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
@@ -5068,83 +5369,6 @@ iMac: ~ Felix$ eb ssh
        &lt;li&gt;The Deploy will &lt;b&gt;Restart and Reconfigure&lt;/b&gt; the Environment&lt;/li&gt; 
       &lt;/ul&gt;&lt;/p&gt;
     
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Gradle Small Hints #1 - Zipping up a file tree</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html"/>
-    <id>https://dev.cloudburo.net/2015/04/08/gradle-small-hints-1-zipping-up-a-file-tree.html</id>
-    <published>2015-04-08T08:38:00Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    Don’t know but  took me some time to figure out how to ZIP up a project directory required for my AWS Elastic Beanstalk Deployment. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    The task will collect all relevant files for my project directory (which contains the docker configuration) and writes it into the build directly. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-task myZip(type: Zip) {
-   from ('.')
-   include '**/*.groovy'
-   include '**/*.config'
-   include '*'
-   exclude '.gradle'
-   exclude '.settings'
-   exclude 'bin'
-   exclude 'build'
-   exclude 'logs'
-   exclude 'src/test'
-   exclude '.classpath'
-   exclude '.project'
-   into '.'
-   destinationDir(file("build")) 
-  } 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-
-&lt;p&gt;&lt;div&gt;
-    Or also possible 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-task dockerZip(type: Zip) { 
-    from fileTree(dir: '.', 
-    includes: ['**/*.groovy', '**/*.config','*'], 
-    excludes: ['.gradle','.settings','bin','build','logs','src/test','.classpath','.project']) 
-    into '.'
-   destinationDir(file("build")) 
-  } 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style="font-size: 11px;"&gt;&lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt; 
-  &lt;/div&gt;&lt;/p&gt;
-
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
