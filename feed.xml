@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
     <published>2017-06-18T12:46:32Z</published>
-    <updated>2017-06-18T12:49:26+00:00</updated>
+    <updated>2017-06-18T12:52:20+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -23,6 +23,12 @@
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;The Table of Content of all sessions you can find &lt;a href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"&gt;here&lt;/a&gt;.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
         In this first session we create a Maven Project in the IntelliJ Integrated Development Environment (IDE) and configure some aspects of the tool, which helps us in our future development work.
       &lt;/div&gt;
       &lt;div&gt;
