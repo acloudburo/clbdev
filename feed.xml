@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
     <published>2017-06-18T11:50:25Z</published>
-    <updated>2017-06-18T11:55:42+00:00</updated>
+    <updated>2017-06-18T11:58:48+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -29,28 +29,28 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;b&gt;Table of Content&lt;/b&gt;
+       &lt;span style=" font-size: 18px;"&gt;Table of Content&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
         will come soon
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;b&gt;Prerequisites&lt;/b&gt;
+       &lt;span style=" font-size: 18px;"&gt;Prerequisites&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
         We are referencing to the following book, which is a very good in-depth guide. You should get a copy of it
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
@@ -59,11 +59,9 @@
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
-      &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;&lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;&lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;http://shop.oreilly.com/product/9780596009205.do&lt;/a&gt;&lt;/a&gt;&lt;br&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;&lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;http://shop.oreilly.com/product/9780596009205.do&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
@@ -71,7 +69,7 @@
        &lt;span style="font-size: 14px;"&gt;For developing of the Java Application we are using the excellent integrated development environment IntelliJ IDEA Community edition&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
@@ -81,7 +79,7 @@
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 14px;"&gt;You can download the free community edition &lt;/span&gt;
@@ -89,7 +87,15 @@
        &lt;span style="font-size: 14px;"&gt;.&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a style="font-size: 11px;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
