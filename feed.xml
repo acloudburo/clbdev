@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
     <published>2017-06-18T12:46:32Z</published>
-    <updated>2017-06-19T04:41:44+00:00</updated>
+    <updated>2017-06-19T19:05:31+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -23,13 +23,16 @@
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;The Table of Content of all sessions you can find &lt;a href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"&gt;here&lt;/a&gt;.&lt;/span&gt;
+       &lt;span style="font-size: 14px;"&gt;The Table of Content of all sessions you can find &lt;/span&gt;
+       &lt;a style="font-size: 14px;" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"&gt;here&lt;/a&gt;
+       &lt;span style="font-size: 14px;"&gt;.&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        In this first session we create a Maven Project in the IntelliJ Integrated Development Environment (IDE) and configure some aspects of the tool, which helps us in our future development work.
+        In this first session we create a Maven Project in the
+       &lt;a href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"&gt;IntelliJ Integrated Development Environment (IDE)&lt;/a&gt; and configure some aspects of the tool, which helps us in our future development work.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -88,7 +91,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Maven is a professional software project management tool  and it’s primary goal is to allow a developer to comprehend the complete state of a development effort in the shortest period of time. By using it from the beginning, we can grow our project easily over time. You don’t need to know the all the details from Maven, just follow the setup steps as shown below. Over time we will introduce additional the necessary concept.
+        Maven is a professional software project management tool  and it’s primary goal is to allow a developer to comprehend the complete state of a development effort in the shortest period of time. By using it from the beginning, we can grow our project easily over time. You don’t need to know the all the details from Maven, just follow the setup steps as shown below. Over time we will introduce the necessary concepts of Maven.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -106,7 +109,7 @@
     
     &lt;p&gt;&lt;/div&gt;
       &lt;div&gt;
-        When Maven is compiling and building your Java Application, it will bundle the generated the files in jar file by using the above definitions for its file name. So let’s start then and get a IntelliJ Project setup.
+        When Maven is compiling and building your Java Application, it will bundle the generated the files in a jar file by using the above definitions for its file name. So let’s start then and get an IntelliJ IDEA Project setup.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -137,7 +140,7 @@
         Maven requires the following information (more to it later)
       &lt;/div&gt;
       &lt;ul&gt;
-       &lt;li&gt;“GroupId”, for example com.&amp;lt;yourName&amp;gt;&lt;/li&gt;
+       &lt;li&gt;“GroupId”, for example com.&amp;lt;yourName&amp;gt; (if you own a domain name use this one)&lt;/li&gt;
        &lt;li&gt;“ArtifactId”, in our case “FootballApp”&lt;/li&gt;
        &lt;li&gt;“Version”, leave it as suggested.&lt;/li&gt;
       &lt;/ul&gt;
@@ -168,7 +171,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        The Project will now be opened and the Maven “pom.xml” File will be shown.
+        The Project will now be opened and the Maven “pom.xml” File will be shown. We will explain it in the next session.
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
