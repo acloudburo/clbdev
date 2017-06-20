@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
     <published>2017-06-18T12:46:32Z</published>
-    <updated>2017-06-19T19:05:31+00:00</updated>
+    <updated>2017-06-20T22:15:34+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -23,9 +23,9 @@
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;The Table of Content of all sessions you can find &lt;/span&gt;
-       &lt;a style="font-size: 14px;" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"&gt;here&lt;/a&gt;
-       &lt;span style="font-size: 14px;"&gt;.&lt;/span&gt;
+       &lt;span style="font-size: 14px; font-style: italic;"&gt;The Table of Content of all sessions you can find &lt;/span&gt;
+       &lt;a style="font-size: 14px; font-style: italic;" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"&gt;here&lt;/a&gt;
+       &lt;span style="font-size: 14px; font-style: italic;"&gt;.&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -45,13 +45,13 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style=""&gt;The goal of the football-data API is to provide football data of all major european leagues in a machine-readable way. By data I mean fixtures, teams, players, results and more. All this information is provided via an easy-to-use RESTful API in JSON (only) representation.&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;The goal of the football-data API is to provide football data of all major european leagues in a machine-readable way. By data I mean fixtures, teams, players, results and more. All this information is provided via an easy-to-use RESTful API in JSON (only) representation.&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style=" font-size: 18px;"&gt;How Java Works&lt;/span&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;How Java Works&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -64,10 +64,10 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;ul&gt;
-       &lt;li&gt;&lt;span style=""&gt;Computer program&lt;/span&gt; - A computer program is a set of instructions that tell a computer exactly what to do. The instructions might tell the computer to add up a set of numbers, or compare two numbers and make a decision based on the result, or whatever. But a computer program is simply a set of instructions for the computer, like a recipe is a set of instructions for a cook or musical notes are a set of instructions for a musician. The computer follows your instructions exactly and in the process does something useful &amp;ndash; like balancing a checkbook or displaying a game on the screen or implementing a word processor.&lt;/li&gt;
-       &lt;li&gt;P&lt;span style=""&gt;rogramming language &lt;/span&gt;- In order for a computer to recognize the instructions you give it, those instructions need to be written in a language the computer understands &amp;ndash; a programming language. There are many computer programming languages &amp;ndash; Fortran, Cobol, Basic, Pascal, C, C++, Java, Perl &amp;ndash; just like there are many spoken languages. They all express approximately the same concepts in different ways.&lt;/li&gt;
-       &lt;li&gt;&lt;span style=""&gt;Compiler&lt;/span&gt; - A compiler translates a computer program written in a human-readable computer language (like Java) into a form that a computer can execute. You have probably seen EXE files on your computer. These EXE files are the output of compilers. They contain executables &amp;ndash; machine-readable programs translated from human-readable programs. &lt;/li&gt;
-       &lt;li&gt;&lt;span style=""&gt;Build Process &lt;/span&gt;- When you develop an application in a programming language  (in our case Java) you will have a so-called Build Process which manages various steps. As we will see below, we will use a project management tool which helps us to manage this process. For example the process will&lt;/li&gt;
+       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;Computer program&lt;/span&gt; - A computer program is a set of instructions that tell a computer exactly what to do. The instructions might tell the computer to add up a set of numbers, or compare two numbers and make a decision based on the result, or whatever. But a computer program is simply a set of instructions for the computer, like a recipe is a set of instructions for a cook or musical notes are a set of instructions for a musician. The computer follows your instructions exactly and in the process does something useful &amp;ndash; like balancing a checkbook or displaying a game on the screen or implementing a word processor.&lt;/li&gt;
+       &lt;li&gt;P&lt;span style="font-weight: bold;"&gt;rogramming language &lt;/span&gt;- In order for a computer to recognize the instructions you give it, those instructions need to be written in a language the computer understands &amp;ndash; a programming language. There are many computer programming languages &amp;ndash; Fortran, Cobol, Basic, Pascal, C, C++, Java, Perl &amp;ndash; just like there are many spoken languages. They all express approximately the same concepts in different ways.&lt;/li&gt;
+       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;Compiler&lt;/span&gt; - A compiler translates a computer program written in a human-readable computer language (like Java) into a form that a computer can execute. You have probably seen EXE files on your computer. These EXE files are the output of compilers. They contain executables &amp;ndash; machine-readable programs translated from human-readable programs. &lt;/li&gt;
+       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;Build Process &lt;/span&gt;- When you develop an application in a programming language  (in our case Java) you will have a so-called Build Process which manages various steps. As we will see below, we will use a project management tool which helps us to manage this process. For example the process will&lt;/li&gt;
        &lt;ul&gt;
         &lt;li&gt;compiles your Java source code then &lt;/li&gt;
         &lt;li&gt;runs some test against the code and then&lt;/li&gt;
@@ -78,7 +78,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style=" font-size: 18px;"&gt;Using Maven for the Build&lt;/span&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Using Maven for the Build&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -101,9 +101,9 @@
        &lt;a href="https://maven.apache.org/guides/mini/guide-naming-conventions.html"&gt;here&lt;/a&gt;)
       &lt;/div&gt;
       &lt;ul&gt;
-       &lt;li&gt;&lt;span style=""&gt;groupId&lt;/span&gt; will identify your project uniquely across all projects.&lt;/li&gt;
-       &lt;li&gt;&lt;span style=""&gt;artifactId&lt;/span&gt; is the name of the jar (the file which holds all the compiled java code) without version.&lt;/li&gt;
-       &lt;li&gt;&lt;span style=""&gt;version &lt;/span&gt;identifies the current version of the jar.&lt;/li&gt;
+       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;groupId&lt;/span&gt; will identify your project uniquely across all projects.&lt;/li&gt;
+       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;artifactId&lt;/span&gt; is the name of the jar (the file which holds all the compiled java code) without version.&lt;/li&gt;
+       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;version &lt;/span&gt;identifies the current version of the jar.&lt;/li&gt;
       &lt;/ul&gt;
       &lt;div&gt;&lt;/p&gt;
     
@@ -115,7 +115,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style=" font-size: 18px;"&gt;Step 1: Create a new Maven Project in IntelliJ IDEA &lt;/span&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Step 1: Create a new Maven Project in IntelliJ IDEA &lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -181,7 +181,7 @@
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style=" font-size: 18px;"&gt;Step 2: Configure the IntelliJ IDEA Project View&lt;/span&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Step 2: Configure the IntelliJ IDEA Project View&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -260,7 +260,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style=" font-size: 18px;"&gt;Step 3: Configure the Auto Build Feature of the Project&lt;/span&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Step 3: Configure the Auto Build Feature of the Project&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -295,21 +295,21 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;Further reading&lt;/span&gt;
+       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Further reading&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;ul&gt;
-       &lt;li&gt;Read &lt;span style=""&gt;Chapter 1. Dive in A Quick Dip: Breaking the Surface &lt;/span&gt;of the &lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;Head First Java Book&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;Read &lt;span style="font-weight: bold;"&gt;Chapter 1. Dive in A Quick Dip: Breaking the Surface &lt;/span&gt;of the &lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;Head First Java Book&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 11px;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
-       &lt;a style="font-size: 11px;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
-       &lt;span style="font-size: 11px;"&gt;.&lt;/span&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
@@ -320,7 +320,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
     <published>2017-06-18T11:50:25Z</published>
-    <updated>2017-06-19T04:41:37+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -414,7 +414,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html"/>
     <id>https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html</id>
     <published>2017-04-14T15:10:46Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -529,7 +529,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html"/>
     <id>https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html</id>
     <published>2017-04-07T15:13:15Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -590,7 +590,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html"/>
     <id>https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html</id>
     <published>2017-03-28T05:25:38Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -640,7 +640,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html"/>
     <id>https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html</id>
     <published>2017-03-27T05:38:50Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -672,7 +672,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html"/>
     <id>https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html</id>
     <published>2017-03-13T21:34:47Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -747,7 +747,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html"/>
     <id>https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html</id>
     <published>2017-01-30T06:55:41Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -829,7 +829,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html"/>
     <id>https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html</id>
     <published>2017-01-11T22:31:09Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -872,7 +872,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html"/>
     <id>https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html</id>
     <published>2016-12-06T06:34:22Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -978,7 +978,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html"/>
     <id>https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html</id>
     <published>2016-12-05T06:18:54Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1041,7 +1041,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html"/>
     <id>https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html</id>
     <published>2016-12-01T22:20:29Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1220,7 +1220,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html"/>
     <id>https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html</id>
     <published>2016-11-30T22:56:42Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1288,7 +1288,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html"/>
     <id>https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html</id>
     <published>2016-11-29T21:48:26Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1373,7 +1373,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"/>
     <id>https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html</id>
     <published>2016-11-28T21:33:21Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1444,7 +1444,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html"/>
     <id>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</id>
     <published>2016-11-22T22:15:39Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1553,7 +1553,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html"/>
     <id>https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html</id>
     <published>2016-07-18T16:06:09Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1679,7 +1679,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html"/>
     <id>https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html</id>
     <published>2016-06-21T22:17:15Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1732,7 +1732,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
     <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
     <published>2016-06-09T21:14:47Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1833,7 +1833,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html"/>
     <id>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</id>
     <published>2016-05-23T17:03:55Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1952,7 +1952,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
     <id>https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html</id>
     <published>2016-05-13T23:04:33Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2035,7 +2035,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
     <id>https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
     <published>2016-05-12T21:14:14Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2279,7 +2279,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
     <id>https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
     <published>2016-04-24T13:06:12Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2429,7 +2429,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html"/>
     <id>https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html</id>
     <published>2016-04-21T22:49:36Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2495,7 +2495,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
     <id>https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
     <published>2016-03-04T06:38:48Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2600,7 +2600,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
     <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
     <published>2015-12-20T17:48:53Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2883,7 +2883,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
     <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
     <published>2015-11-15T00:07:50Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2934,7 +2934,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html"/>
     <id>https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html</id>
     <published>2015-11-07T22:47:46Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2969,7 +2969,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html"/>
     <id>https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html</id>
     <published>2015-10-03T12:07:50Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3125,7 +3125,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html</id>
     <published>2015-10-01T19:26:35Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3238,7 +3238,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html</id>
     <published>2015-10-01T08:42:00Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3341,7 +3341,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"/>
     <id>https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html</id>
     <published>2015-09-30T06:31:36Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3476,7 +3476,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/09/29/micro-business-quick-tips-3-rechtssicherheit-bei-der-eroffnung-eines-onlineshops.html"/>
     <id>https://dev.cloudburo.net/2015/09/29/micro-business-quick-tips-3-rechtssicherheit-bei-der-eroffnung-eines-onlineshops.html</id>
     <published>2015-09-29T10:32:56Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3565,7 +3565,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/09/03/micro-business-quick-tips-2-build-a-business-without-employees.html"/>
     <id>https://dev.cloudburo.net/2015/09/03/micro-business-quick-tips-2-build-a-business-without-employees.html</id>
     <published>2015-09-03T05:41:56Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3621,7 +3621,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html"/>
     <id>https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html</id>
     <published>2015-08-11T09:53:31Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3756,7 +3756,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html"/>
     <id>https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html</id>
     <published>2015-07-28T10:16:46Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4008,7 +4008,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html"/>
     <id>https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html</id>
     <published>2015-07-26T11:18:54Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4093,7 +4093,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html"/>
     <id>https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html</id>
     <published>2015-07-05T09:41:00Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4133,7 +4133,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/06/10/a-nice-introduction-to-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/06/10/a-nice-introduction-to-microservices.html</id>
     <published>2015-06-10T08:53:32Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4155,7 +4155,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html"/>
     <id>https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</id>
     <published>2015-06-07T04:05:06Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4218,7 +4218,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html"/>
     <id>https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html</id>
     <published>2015-05-27T20:46:21Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4250,7 +4250,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html"/>
     <id>https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html</id>
     <published>2015-05-25T07:13:55Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4290,7 +4290,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html"/>
     <id>https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html</id>
     <published>2015-05-07T08:57:51Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4348,7 +4348,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html"/>
     <id>https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html</id>
     <published>2015-05-06T05:54:45Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4365,7 +4365,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"/>
     <id>https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html</id>
     <published>2015-04-25T12:25:42Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4634,7 +4634,7 @@ iMac: ~ Felix$ eb ssh
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html"/>
     <id>https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html</id>
     <published>2015-04-24T05:01:26Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4777,7 +4777,7 @@ iMac: ~ Felix$ eb ssh
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html"/>
     <id>https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html</id>
     <published>2015-04-21T19:44:40Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4961,7 +4961,7 @@ iMac: ~ Felix$ eb ssh
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html</id>
     <published>2015-04-17T10:24:00Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4978,7 +4978,7 @@ iMac: ~ Felix$ eb ssh
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html"/>
     <id>https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html</id>
     <published>2015-04-14T20:00:00Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5156,7 +5156,7 @@ iMac: ~ Felix$ eb ssh
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/13/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html"/>
     <id>https://dev.cloudburo.net/2015/04/13/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</id>
     <published>2015-04-13T06:05:00Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5212,7 +5212,7 @@ iMac: ~ Felix$ eb ssh
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html"/>
     <id>https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html</id>
     <published>2015-04-09T06:25:00Z</published>
-    <updated>2017-05-27T21:45:28+00:00</updated>
+    <updated>2017-06-20T21:32:11+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
