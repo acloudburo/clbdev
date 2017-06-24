@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"/>
     <id>https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html</id>
     <published>2017-06-24T13:06:45Z</published>
-    <updated>2017-06-24T14:06:51+00:00</updated>
+    <updated>2017-06-24T16:11:55+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -31,7 +31,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        In this lesson, we will complete the project preparation steps for our Football App and introduce the concepts of a RESTful API,  the Application Programming Interface we use to get football data from 
+        In this lesson, we complete the project preparation steps for our Football App and introduce the concepts of a RESTful API,  the Application Programming Interface we use to get football data from 
        &lt;a href="http://www.football-data.org/index"&gt;&lt;a href="http://www.football-data.org/index"&gt;http://www.football-data.org/index&lt;/a&gt;&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;
@@ -72,7 +72,7 @@
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        The IntelliJ User Interface consists of multiple Windows  (which can be switched or closed and configured for your needs). Let’s start with the most important on
+        The IntelliJ User Interface consists of multiple Windows  (which can be switched or closed and configured for your needs). Let’s start with the most important one
       &lt;/div&gt;
       &lt;ul&gt;
        &lt;li&gt;Top Left displays by default the &lt;span style="font-weight: bold;"&gt;Project Window&lt;/span&gt;, which gives an overview of you project file structure. &lt;/li&gt;
@@ -96,28 +96,28 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;ol&gt;
-       &lt;li&gt;Because we selected a Maven Project in the last session, IntelliJ configured this Project with a &lt;span style="font-weight: bold;"&gt;pom.xml&lt;/span&gt;, which is the so-called &lt;span style="font-weight: bold;"&gt;P&lt;/span&gt;r&lt;span style="font-weight: bold;"&gt;O&lt;/span&gt;ject &lt;span style="font-weight: bold;"&gt;M&lt;/span&gt;odel. It is an XML file that contains information about the project and configuration details used by Maven to build the project. It was created by default by IntelliJ and contains all the necessary information to build your project (i.e. compiling, building a jar). The content of the pom.xml can be seen in the Editor Window. You will recognise the &lt;span style="font-weight: bold;"&gt;groupId &lt;/span&gt;and &lt;span style="font-weight: bold;"&gt;artifactId&lt;/span&gt; XML elements, which contain the values, which you provided in the session 1.&lt;/li&gt;
+       &lt;li&gt;Because we selected a Maven Project Type in the last session, IntelliJ configured this Project with a &lt;span style="font-weight: bold;"&gt;pom.xml&lt;/span&gt;, which is the so-called &lt;span style="font-weight: bold;"&gt;P&lt;/span&gt;r&lt;span style="font-weight: bold;"&gt;O&lt;/span&gt;ject &lt;span style="font-weight: bold;"&gt;M&lt;/span&gt;odel. It is an XML file that contains information about the project and configuration details used by Maven to build the project. It was created by default by IntelliJ and contains all the necessary information to build your project (i.e. compiling, building a jar). The content of the pom.xml can be seen in the Editor Window. You will recognise the &lt;span style="font-weight: bold;"&gt;groupId &lt;/span&gt;and &lt;span style="font-weight: bold;"&gt;artifactId&lt;/span&gt; XML elements, which contain the values, which you provided in session 1.&lt;/li&gt;
        &lt;li&gt;IntelliJ also created the project default directory and file structure. &lt;/li&gt;
        &lt;ul&gt;
-        &lt;li&gt;&lt;span style="font-weight: bold;"&gt;src/main/java&lt;/span&gt; will be the folder where you Java source files will be stored (will be used in this session)&lt;/li&gt;
-        &lt;li&gt;&lt;span style="font-weight: bold;"&gt;src/main/test &lt;/span&gt;will be the folder where you Java source test files will be stored (will be used in a later session)&lt;/li&gt;
+        &lt;li&gt;&lt;span style="font-weight: bold;"&gt;src/main/java&lt;/span&gt; will be the folder where you Java source files will be stored&lt;/li&gt;
+        &lt;li&gt;&lt;span style="font-weight: bold;"&gt;src/main/test &lt;/span&gt;will be the folder where you Java source test files will be stored &lt;/li&gt;
         &lt;li&gt;&lt;span style="font-weight: bold;"&gt;.idea&lt;/span&gt; is a folder used by IntelliJ for its purpose and you will not require it&lt;/li&gt;
        &lt;/ul&gt;
-       &lt;li&gt;In the &lt;span style="font-weight: bold;"&gt;External Libraries&lt;/span&gt; folder, IntelliJ will list all Java libraries which are used in your project. In our case we require the &lt;span style="font-weight: bold;"&gt;Java JDK  1.8&lt;/span&gt; libraries. If you open the folder by double clicking a list of jar files will be shown, which are making up the Java JDK.&lt;/li&gt;
+       &lt;li&gt;In the &lt;span style="font-weight: bold;"&gt;External Libraries&lt;/span&gt; folder, IntelliJ lists all Java libraries which are used in your project. In our case we require the &lt;span style="font-weight: bold;"&gt;Java JDK  1.8&lt;/span&gt; libraries. If you open the folder, by double clicking it, a list of jar files will be shown, which are making up the Java JDK.&lt;/li&gt;
        &lt;li&gt;On the right side, you have a toolbar, where you can open additional tool windows. In our case we are interested in the &lt;span style="font-weight: bold;"&gt;Maven Project&lt;/span&gt; window&lt;/li&gt;
       &lt;/ol&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        We want now to open the Maven Tool Window, which will be shown then left to the Editor Window
+        Open the Maven Tool Window: 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;ol&gt;
        &lt;li&gt;Click on &lt;span style="font-weight: bold;"&gt;Maven Projects&lt;/span&gt; in the toolbar&lt;/li&gt;
-       &lt;li&gt;The &lt;span style="font-weight: bold;"&gt;Maven Tool Window&lt;/span&gt; will be displayed for your &lt;span style="font-weight: bold;"&gt;footballApp&lt;/span&gt; project (it’s the name you configured in the &lt;span style="font-weight: bold;"&gt;artifactId&lt;/span&gt;)&lt;/li&gt;
+       &lt;li&gt;The &lt;span style="font-weight: bold;"&gt;Maven Tool Window&lt;/span&gt; will be displayed of your &lt;span style="font-weight: bold;"&gt;footballApp&lt;/span&gt; project (it’s the name you configured in the &lt;span style="font-weight: bold;"&gt;artifactId&lt;/span&gt;)&lt;/li&gt;
        &lt;li&gt;Drill down in tree to the &lt;span style="font-weight: bold;"&gt;Lifecycle &lt;/span&gt;node and open it. You will see a list of &lt;span style="font-weight: bold;"&gt;Lifecycle Commands, &lt;/span&gt;as for example &lt;span style="font-style: italic;"&gt;clean, validate, compile &lt;/span&gt;&lt;span style="font-style: italic; font-weight: bold;"&gt; &lt;/span&gt;and so on&lt;span style="font-weight: bold;"&gt;. &lt;/span&gt;It’s on of the main concepts in Maven.&lt;/li&gt;
       &lt;/ol&gt;
       &lt;div&gt;&lt;/p&gt;
@@ -147,7 +147,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         As you may already guessed, you can now for example 
-       &lt;span style="font-weight: bold; font-style: italic;"&gt;compile &lt;/span&gt;your project. Ok there is no java source code yet, but let’s do the check if everything in Maven is correctly set up
+       &lt;span style="font-weight: bold; font-style: italic;"&gt;compile &lt;/span&gt;your project. There is no java source code yet, but let’s do the check if everything in Maven is correctly set up
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -155,7 +155,7 @@
       &lt;ol&gt;
        &lt;li&gt;Double click on the &lt;span style="font-weight: bold;"&gt;compile &lt;/span&gt;Lifecycle command&lt;/li&gt;
        &lt;li&gt;You will see that in the bottom of the Window, yet another Tool Windows (The Run Window) will be opened which shows the output of the Maven build process. You should see a “BUILD SUCCESS” message at the end.&lt;/li&gt;
-       &lt;li&gt;By clicking on the Icon in the upper right of the Run Window or on the highlighted entry (4: Run) in the bottom, you can hide the window again (clicking the entry a second time will display it again). The same holds true for the Maven Projects Window.&lt;/li&gt;
+       &lt;li&gt;By clicking on the Icon in the upper right of the Run Window or on the highlighted entry (4: Run) in the bottom, you can hide the window (clicking the entry a second time will display it again). The same holds true for the Maven Projects Window.&lt;/li&gt;
       &lt;/ol&gt;
       &lt;div&gt;
        &lt;br&gt;
