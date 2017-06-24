@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"/>
     <id>https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html</id>
     <published>2017-06-24T13:06:45Z</published>
-    <updated>2017-06-24T13:06:55+00:00</updated>
+    <updated>2017-06-24T14:06:51+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -227,7 +227,7 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;div class="responsive-video"&gt;
-        &lt;iframe src="https://www.youtube.com/embed/s7wmiS2mSXY?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;iframe src="https://www.youtube.com/embed/7YcW25PHnAA?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
        &lt;/div&gt;
       &lt;/div&gt;
       &lt;div&gt;
@@ -388,9 +388,21 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        That’s it for today, in the next session, we will write the first program, which will fetch data from the
-       &lt;a href="http://football-data.org"&gt;football-data.org&lt;/a&gt; site in a machine-readable format.
+        That’s it for today, as you have learned, writing a program means also to collect useful libraries which are helping you in completing your development task. You don’t have to reinvent all the time the wheel and write all code from scratch. Rather watch out for open source libraries which can help you in full-filling a task and add them as external libraries to your project. Maven will help you to keep all the necessary libraries in sync and consistent. Good starting point
+      &lt;/div&gt;
+      &lt;div&gt;
        &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&lt;a href="http://www.apache.org/index.html#projects-list"&gt;&lt;a href="http://www.apache.org/index.html#projects-list"&gt;http://www.apache.org/index.html#projects-list&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href="https://github.com/"&gt;&lt;a href="https://github.com/"&gt;https://github.com/&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;/div&gt;
+      &lt;div&gt;
+        In the next session, we will write the first program, which will fetch data from the
+       &lt;a href="http://football-data.org"&gt;football-data.org&lt;/a&gt; site in a machine-readable format.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -409,7 +421,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
     <published>2017-06-18T12:46:32Z</published>
-    <updated>2017-06-20T22:15:34+00:00</updated>
+    <updated>2017-06-24T14:06:39+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -683,7 +695,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        That’s it for today, in the next session, we will write the first program, which will fetch data from the
+        That’s it for today, in the next session, we will finalize the project-setup and dive into the concepts around RESTful API’s which allows us to fetch data from the
        &lt;a href="http://football-data.org"&gt;football-data.org&lt;/a&gt; site in a machine-readable format.
       &lt;/div&gt;
       &lt;div&gt;
@@ -715,7 +727,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
     <published>2017-06-18T11:50:25Z</published>
-    <updated>2017-06-20T21:32:11+00:00</updated>
+    <updated>2017-06-24T14:06:31+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -724,27 +736,27 @@
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;div&gt;
+       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Table of Content&lt;/span&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&lt;a href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"&gt;Java for Beginners #1 - Prepare an IntelliJ Maven Project&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"&gt;Java for Beginners #2 - Maven Primer and Understanding API&amp;rsquo;s&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
       &lt;div&gt;
-       &lt;span style=" font-size: 18px;"&gt;Table of Content&lt;/span&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Prerequisites&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;&lt;a href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"&gt;Java for Beginners #1 - Prepare an IntelliJ Maven Project&lt;/a&gt;&lt;br&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style=" font-size: 18px;"&gt;Prerequisites&lt;/span&gt;
+       &lt;b&gt;&lt;u&gt;E-Book: Head First Java&lt;/u&gt;&lt;/b&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -769,6 +781,12 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;b&gt;&lt;u&gt;Integrated Development Environment&lt;/u&gt;&lt;/b&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
        &lt;span style="font-size: 14px;"&gt;For developing of the Java Application we are using the excellent integrated development environment IntelliJ IDEA Community edition&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
@@ -790,12 +808,41 @@
        &lt;span style="font-size: 14px;"&gt;.&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b&gt;&lt;u&gt;JSON Viewer Extension for Chrome&lt;/u&gt;&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 11px;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
-       &lt;a style="font-size: 11px;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
-       &lt;span style="font-size: 11px;"&gt;.&lt;/span&gt;
+        For looking a JSON Data Request we suggest that you use the Chrome Browser with JSONView (but any other JSON viewing extension available for your browser). It will help you to read and understand the structured data content.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc"&gt;&lt;a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc"&gt;https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/6ccf83e03409878d244ee1c4d4442aa3.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
