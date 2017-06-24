@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Java for Beginners #2 - Maven Primer and Understanding API's</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js" type="text/javascript"></script><![endif]--><link href="../../../css/all.css" media="screen" rel="stylesheet" type="text/css" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a class="label label-default" href="/tags/api.html">api (2)</a>
+            <a class="label label-default" href="/tags/architecture.html">architecture (16)</a>
+            <a class="label label-default" href="/tags/aws.html">aws (12)</a>
+            <a class="label label-default" href="/tags/banking.html">banking (5)</a>
+            <a class="label label-default" href="/tags/blockchain.html">blockchain (5)</a>
+            <a class="label label-default" href="/tags/bots.html">bots (2)</a>
+            <a class="label label-default" href="/tags/datascience.html">datascience (2)</a>
+            <a class="label label-default" href="/tags/deutsch.html">deutsch (1)</a>
+            <a class="label label-default" href="/tags/docker.html">docker (9)</a>
+            <a class="label label-default" href="/tags/futurework.html">futureWork (5)</a>
+            <a class="label label-default" href="/tags/googleapps.html">googleapps (1)</a>
+            <a class="label label-default" href="/tags/gradle.html">gradle (2)</a>
+            <a class="label label-default" href="/tags/inspiration.html">inspiration (3)</a>
+            <a class="label label-default" href="/tags/javatutorial.html">javatutorial (3)</a>
+            <a class="label label-default" href="/tags/legal.html">legal (1)</a>
+            <a class="label label-default" href="/tags/meteor.html">meteor (5)</a>
+            <a class="label label-default" href="/tags/microservice.html">microservice (13)</a>
+            <a class="label label-default" href="/tags/modeling.html">modeling (1)</a>
+            <a class="label label-default" href="/tags/personaldata.html">personalData (3)</a>
+            <a class="label label-default" href="/tags/quicktips.html">quicktips (14)</a>
+            <a class="label label-default" href="/tags/shift.html">shift (4)</a>
+            <a class="label label-default" href="/tags/smallhints.html">smallhints (13)</a>
+            <a class="label label-default" href="/tags/startup.html">startup (11)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a class="label label-primary" href="/2017.html">2017 (10)</a>
+            <a class="label label-primary" href="/2016.html">2016 (16)</a>
+            <a class="label label-primary" href="/2015.html">2015 (35)</a>
+            <a class="label label-primary" href="/2014.html">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html">Java for Beginners #2 - Maven Primer and Understanding API's</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  24.Jun 2017 | Tags <a class="label label-primary" href="/tags/javatutorial.html">javatutorial</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                   <span style="font-size: 14px; font-style: italic;">The Table of Content of all sessions you can find </span>
+                   <a style="font-size: 14px; font-style: italic;" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html">here</a>
+                   <span style="font-size: 14px; font-style: italic;">.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    In this lesson, we will complete the project preparation steps for our Football App and introduce the concepts of a RESTful API,  the Application Programming Interface we use to get football data from 
+                   <a href="http://www.football-data.org/index"><a href="http://www.football-data.org/index">http://www.football-data.org/index</a></a>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;">The goal of the football-data API is to provide football data of all major european leagues in a machine-readable way. By data I mean fixtures, teams, players, results and more. All this information is provided via an easy-to-use RESTful API in JSON (only) representation.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-weight: bold; font-size: 18px;">Prerequisite</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li><span style="font-size: 14px;">You have completed the first session and have a IntelliJ Project ready: </span><a style="font-size: 14px;" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html">Java for Beginners #1 - Prepare an IntelliJ Maven Project</a></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-weight: bold; font-size: 18px;">Understanding Your Maven Project</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;">Open your “FootballApp” project in the IntelliJ IDEA. You should see a window, which looks like the following</span>
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/fd8fb3eaa72f65be95a39c4aceb33f4b.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    The IntelliJ User Interface consists of multiple Windows  (which can be switched or closed and configured for your needs). Let’s start with the most important on
+                  </div>
+                  <ul>
+                   <li>Top Left displays by default the <span style="font-weight: bold;">Project Window</span>, which gives an overview of you project file structure. </li>
+                   <li>Top Right displays the <span style="font-weight: bold;">Editor</span>, where you write your code.</li>
+                   <li>Bottom displays the <span style="font-weight: bold;">Event Log</span></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Tip: You can find here the official
+                   <a href="https://www.jetbrains.com/help/idea/guided-tour-around-the-user-interface.html">Guided Tour around the User Interface</a> from IntelliJ, which gives an in-depth overview.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    To the Call-Outs in the above screen shot:
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ol>
+                   <li>Because we selected a Maven Project in the last session, IntelliJ configured this Project with a <span style="font-weight: bold;">pom.xml</span>, which is the so-called <span style="font-weight: bold;">P</span>r<span style="font-weight: bold;">O</span>ject <span style="font-weight: bold;">M</span>odel. It is an XML file that contains information about the project and configuration details used by Maven to build the project. It was created by default by IntelliJ and contains all the necessary information to build your project (i.e. compiling, building a jar). The content of the pom.xml can be seen in the Editor Window. You will recognise the <span style="font-weight: bold;">groupId </span>and <span style="font-weight: bold;">artifactId</span> XML elements, which contain the values, which you provided in the session 1.</li>
+                   <li>IntelliJ also created the project default directory and file structure. </li>
+                   <ul>
+                    <li><span style="font-weight: bold;">src/main/java</span> will be the folder where you Java source files will be stored (will be used in this session)</li>
+                    <li><span style="font-weight: bold;">src/main/test </span>will be the folder where you Java source test files will be stored (will be used in a later session)</li>
+                    <li><span style="font-weight: bold;">.idea</span> is a folder used by IntelliJ for its purpose and you will not require it</li>
+                   </ul>
+                   <li>In the <span style="font-weight: bold;">External Libraries</span> folder, IntelliJ will list all Java libraries which are used in your project. In our case we require the <span style="font-weight: bold;">Java JDK  1.8</span> libraries. If you open the folder by double clicking a list of jar files will be shown, which are making up the Java JDK.</li>
+                   <li>On the right side, you have a toolbar, where you can open additional tool windows. In our case we are interested in the <span style="font-weight: bold;">Maven Project</span> window</li>
+                  </ol>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    We want now to open the Maven Tool Window, which will be shown then left to the Editor Window
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ol>
+                   <li>Click on <span style="font-weight: bold;">Maven Projects</span> in the toolbar</li>
+                   <li>The <span style="font-weight: bold;">Maven Tool Window</span> will be displayed for your <span style="font-weight: bold;">footballApp</span> project (it’s the name you configured in the <span style="font-weight: bold;">artifactId</span>)</li>
+                   <li>Drill down in tree to the <span style="font-weight: bold;">Lifecycle </span>node and open it. You will see a list of <span style="font-weight: bold;">Lifecycle Commands, </span>as for example <span style="font-style: italic;">clean, validate, compile </span><span style="font-style: italic; font-weight: bold;"> </span>and so on<span style="font-weight: bold;">. </span>It’s on of the main concepts in Maven.</li>
+                  </ol>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/e51885d9d5c96090800c777543a35989.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <span style="font-weight: bold;">Maven Lifecycle Commands</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Maven is based around the central concept of a build lifecycle. What this means is that the process for building and distributing a particular artifact (project) is clearly defined.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    For the person building a project, this means that it is only necessary to learn a small set of commands to build any Maven project, and the POM will ensure they get the results they desired.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As you may already guessed, you can now for example 
+                   <span style="font-weight: bold; font-style: italic;">compile </span>your project. Ok there is no java source code yet, but let’s do the check if everything in Maven is correctly set up
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ol>
+                   <li>Double click on the <span style="font-weight: bold;">compile </span>Lifecycle command</li>
+                   <li>You will see that in the bottom of the Window, yet another Tool Windows (The Run Window) will be opened which shows the output of the Maven build process. You should see a “BUILD SUCCESS” message at the end.</li>
+                   <li>By clicking on the Icon in the upper right of the Run Window or on the highlighted entry (4: Run) in the bottom, you can hide the window again (clicking the entry a second time will display it again). The same holds true for the Maven Projects Window.</li>
+                  </ol>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/bc4239f8d5ce31074df808802ce5f814.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <span style="font-weight: bold; font-size: 14px;">Extending the POM.xml</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As a preparation step for our next task, we will add the dependencies section in the POM.xml (this is section in the POM will allow us to define additional external library, which we require.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ol>
+                   <li>Add the <span style="font-weight: bold;">&lt;dependencies&gt;   &lt;/dependencies&gt;</span> in the POM.xml</li>
+                  </ol>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/d5dfa5c9f94e29be3c3f45091ac5e98f.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-weight: bold; font-size: 18px;">Adding the Apache HTTP Components Library to our Project</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    It’s time to introduce the term
+                   <span style="font-weight: bold;">API</span>, which means an
+                   <span style="font-weight: bold;">Application Programming Interface</span>. Check out this very helpful 3 minutes video to get a better understanding.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <div class="responsive-video">
+                    <iframe src="https://www.youtube.com/embed/s7wmiS2mSXY?rel=0" frameborder="0" allowfullscreen></iframe>
+                   </div>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As you can see, API’s are ruling the world and allowing us to connect and glue together useful services to a new app. We will connect to the football-data API to get some interesting data about football. Well the 
+                   <a href="http://www.football-data.org/documentation"><a href="http://www.football-data.org/">http://www.football-data.org/</a></a> API is based on
+                   <span style="font-weight: bold;">REST</span>, yet another very important term in the API world, which you have to understand. Take another 8 minutes time to grasp the concept in this video (which is quite straightforward)
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <div class="responsive-video">
+                    <iframe src="https://www.youtube.com/embed/s7wmiS2mSXY?rel=0" frameborder="0" allowfullscreen></iframe>
+                   </div>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Each good API comes with a documentation, which describes how you can communicate with it. This holds true for our API, which provides all the necessary information on their documentation site 
+                   <a href="http://www.football-data.org/documentation"><a href="http://www.football-data.org/documentation">http://www.football-data.org/documentation</a></a>. The screenshot below taken from their site, shows the overall structure of their API. So you can retrieve data about
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li>Soccer Seasons</li>
+                   <li>Teams</li>
+                   <li>Fixtures</li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Quite cool isn’t it ? And that’s for free.
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/1de59aa4ebca2c2675f9ab27adbbf4b3.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    By drilling down into the documentation details you will find any kind of required information in order to connect from a program and retrieve the data.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As we have learned in the video, we have to use HTTP-requests in order to access the data. So from a Browser point of view that’s alright, but how to do that out of our program. The Java JDK libraries (which we have configured) don’t really provide any kind of libraries for that, so what to do now ?
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Well we need here and
+                   <span style="font-weight: bold;">additional Java library</span>, which does the main job for us. There are several libraries around which could help us to connect with a RESTful API. We decided to use the famous 
+                   <a href="https://hc.apache.org/">Apache HTTPComponents</a> library. It’s described as follows
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;">The Apache HttpComponents™ project is responsible for creating and maintaining a toolset of low level Java components focused on HTTP and associated protocols.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;">The Hyper-Text Transfer Protocol (HTTP) is perhaps the most significant protocol used on the Internet today. Web services, network-enabled appliances and the growth of network computing continue to expand the role of the HTTP protocol beyond user-driven web browsers, while increasing the number of applications that require HTTP support.</span>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;">Designed for extension while providing robust support for the base HTTP protocol, the HttpComponents may be of interest to anyone building HTTP-aware client and server applications such as web browsers, web spiders, HTTP proxies, web service transport libraries, or systems that leverage or extend the HTTP protocol for distributed communication</span>.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Instead of downloading the library from the Apache site, we will configure it via Maven. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ol>
+                   <li>So head over to <a href="https://mvnrepository.com"><a href="https://mvnrepository.com">https://mvnrepository.com</a></a> and type in the name of the library we are looking for <span style="font-weight: bold;">org.apache.httpcomponents</span></li>
+                   <li>There are several ones, we want the <span style="font-weight: bold;">Apache HttpClient</span>, click on it</li>
+                  </ol>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/7c9a242ef2cc1b06cede09ee60851942.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    The Apache HttpClient libary overview page will be shown. You will see a list of versions, which are available. We go for the newest one, which was released in (Jan 2017).
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ol>
+                   <li>Click on the version number <span style="font-weight: bold;">4.5.3</span></li>
+                  </ol>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/d264a4e75ec80018cbc138fb1d1b3863.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    Now you are on the Library Version Page and will see at the bottom of the page a configuration string for Maven.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ol>
+                   <li>Copy the full string from &lt;dependency&gt;&hellip;&lt;/dependency&gt;</li>
+                  </ol>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/a6eaf1411827e7c7fbfbb219a4a12d15.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <ol>
+                   <li>In you IntelliJ project, paste in this Maven dependency in-between the <span style="font-weight: bold;">dependencies</span> XLM elements</li>
+                   <li>IntelliJ will now update the list of <span style="font-weight: bold;">External Libraries</span>. Beside the JDK 1.8 libraries you have a set of new libraries (brought in via Maven).  </li>
+                  </ol>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/f40e463c7f9965c39ca2ad3ec8f4a5d0.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    If you look carefully at the list of libraries you can see not just, the
+                   <span style="font-weight: bold;">httpclient</span> library which we added but also list of additional libraries, as for example
+                   <span style="font-weight: bold;">httpcore</span> ?
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Why that ? Well
+                   <span style="font-weight: bold;"> httpclient </span>library itself is dependent on other libraries (apart from the Java JDK), i.e.
+                   <span style="font-weight: bold;">commons-code version 1.9, commons-logging 1.2</span>,
+                   <span style="font-weight: bold;">httpcore 4.4.6</span>. The Maven
+                   <span style="font-weight: bold;"> </span>Build Tool, ensures that all these are loaded as well, which makes your life easier. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+              </div>
+              <img class="img-responsive img-thumbnail article" src="/images/d11cbdb5b7f43305666ad5d6e26bda6b.png" />
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    That’s it for today, in the next session, we will write the first program, which will fetch data from the
+                   <a href="http://football-data.org">football-data.org</a> site in a machine-readable format.
+                   <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 11px; font-style: italic;">This blog entry was fully produced within Evernote and published using the </span>
+                   <a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net">Cloudburo Publishing Bot</a>
+                   <span style="font-size: 11px; font-style: italic;">.</span>
+                  </div></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a class="btn btn-twitter" href="https://twitter.com/talfco">
+                <i class="fa fa-twitter"></i></a><a class="btn btn-facebook" href="https://www.facebook.com/Cloudburonet-897759390318816/">
+                <i class="fa fa-facebook"></i></a><a class="btn btn-google-plus" href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts">
+                <i class="fa fa-google-plus"></i></a><a class="btn btn-linkedin" href="https://www.linkedin.com/in/felixk">
+                <i class="fa fa-linkedin"></i></a><a class="btn btn-github" href="https://github.com/talfco">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2017 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js" type="text/javascript"></script>
+  </body>
+</html>

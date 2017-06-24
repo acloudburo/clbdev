@@ -5,10 +5,405 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2017-06-18T12:46:32Z</updated>
+  <updated>2017-06-24T13:06:45Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Java for Beginners #2 - Maven Primer and Understanding API's</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"/>
+    <id>https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html</id>
+    <published>2017-06-24T13:06:45Z</published>
+    <updated>2017-06-24T13:06:55+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;span style="font-size: 14px; font-style: italic;"&gt;The Table of Content of all sessions you can find &lt;/span&gt;
+       &lt;a style="font-size: 14px; font-style: italic;" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"&gt;here&lt;/a&gt;
+       &lt;span style="font-size: 14px; font-style: italic;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In this lesson, we will complete the project preparation steps for our Football App and introduce the concepts of a RESTful API,  the Application Programming Interface we use to get football data from 
+       &lt;a href="http://www.football-data.org/index"&gt;&lt;a href="http://www.football-data.org/index"&gt;http://www.football-data.org/index&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;The goal of the football-data API is to provide football data of all major european leagues in a machine-readable way. By data I mean fixtures, teams, players, results and more. All this information is provided via an easy-to-use RESTful API in JSON (only) representation.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Prerequisite&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&lt;span style="font-size: 14px;"&gt;You have completed the first session and have a IntelliJ Project ready: &lt;/span&gt;&lt;a style="font-size: 14px;" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"&gt;Java for Beginners #1 - Prepare an IntelliJ Maven Project&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Understanding Your Maven Project&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;Open your “FootballApp” project in the IntelliJ IDEA. You should see a window, which looks like the following&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/fd8fb3eaa72f65be95a39c4aceb33f4b.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The IntelliJ User Interface consists of multiple Windows  (which can be switched or closed and configured for your needs). Let’s start with the most important on
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;Top Left displays by default the &lt;span style="font-weight: bold;"&gt;Project Window&lt;/span&gt;, which gives an overview of you project file structure. &lt;/li&gt;
+       &lt;li&gt;Top Right displays the &lt;span style="font-weight: bold;"&gt;Editor&lt;/span&gt;, where you write your code.&lt;/li&gt;
+       &lt;li&gt;Bottom displays the &lt;span style="font-weight: bold;"&gt;Event Log&lt;/span&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Tip: You can find here the official
+       &lt;a href="https://www.jetbrains.com/help/idea/guided-tour-around-the-user-interface.html"&gt;Guided Tour around the User Interface&lt;/a&gt; from IntelliJ, which gives an in-depth overview.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        To the Call-Outs in the above screen shot:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ol&gt;
+       &lt;li&gt;Because we selected a Maven Project in the last session, IntelliJ configured this Project with a &lt;span style="font-weight: bold;"&gt;pom.xml&lt;/span&gt;, which is the so-called &lt;span style="font-weight: bold;"&gt;P&lt;/span&gt;r&lt;span style="font-weight: bold;"&gt;O&lt;/span&gt;ject &lt;span style="font-weight: bold;"&gt;M&lt;/span&gt;odel. It is an XML file that contains information about the project and configuration details used by Maven to build the project. It was created by default by IntelliJ and contains all the necessary information to build your project (i.e. compiling, building a jar). The content of the pom.xml can be seen in the Editor Window. You will recognise the &lt;span style="font-weight: bold;"&gt;groupId &lt;/span&gt;and &lt;span style="font-weight: bold;"&gt;artifactId&lt;/span&gt; XML elements, which contain the values, which you provided in the session 1.&lt;/li&gt;
+       &lt;li&gt;IntelliJ also created the project default directory and file structure. &lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;&lt;span style="font-weight: bold;"&gt;src/main/java&lt;/span&gt; will be the folder where you Java source files will be stored (will be used in this session)&lt;/li&gt;
+        &lt;li&gt;&lt;span style="font-weight: bold;"&gt;src/main/test &lt;/span&gt;will be the folder where you Java source test files will be stored (will be used in a later session)&lt;/li&gt;
+        &lt;li&gt;&lt;span style="font-weight: bold;"&gt;.idea&lt;/span&gt; is a folder used by IntelliJ for its purpose and you will not require it&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;li&gt;In the &lt;span style="font-weight: bold;"&gt;External Libraries&lt;/span&gt; folder, IntelliJ will list all Java libraries which are used in your project. In our case we require the &lt;span style="font-weight: bold;"&gt;Java JDK  1.8&lt;/span&gt; libraries. If you open the folder by double clicking a list of jar files will be shown, which are making up the Java JDK.&lt;/li&gt;
+       &lt;li&gt;On the right side, you have a toolbar, where you can open additional tool windows. In our case we are interested in the &lt;span style="font-weight: bold;"&gt;Maven Project&lt;/span&gt; window&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        We want now to open the Maven Tool Window, which will be shown then left to the Editor Window
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ol&gt;
+       &lt;li&gt;Click on &lt;span style="font-weight: bold;"&gt;Maven Projects&lt;/span&gt; in the toolbar&lt;/li&gt;
+       &lt;li&gt;The &lt;span style="font-weight: bold;"&gt;Maven Tool Window&lt;/span&gt; will be displayed for your &lt;span style="font-weight: bold;"&gt;footballApp&lt;/span&gt; project (it’s the name you configured in the &lt;span style="font-weight: bold;"&gt;artifactId&lt;/span&gt;)&lt;/li&gt;
+       &lt;li&gt;Drill down in tree to the &lt;span style="font-weight: bold;"&gt;Lifecycle &lt;/span&gt;node and open it. You will see a list of &lt;span style="font-weight: bold;"&gt;Lifecycle Commands, &lt;/span&gt;as for example &lt;span style="font-style: italic;"&gt;clean, validate, compile &lt;/span&gt;&lt;span style="font-style: italic; font-weight: bold;"&gt; &lt;/span&gt;and so on&lt;span style="font-weight: bold;"&gt;. &lt;/span&gt;It’s on of the main concepts in Maven.&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/e51885d9d5c96090800c777543a35989.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold;"&gt;Maven Lifecycle Commands&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Maven is based around the central concept of a build lifecycle. What this means is that the process for building and distributing a particular artifact (project) is clearly defined.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        For the person building a project, this means that it is only necessary to learn a small set of commands to build any Maven project, and the POM will ensure they get the results they desired.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As you may already guessed, you can now for example 
+       &lt;span style="font-weight: bold; font-style: italic;"&gt;compile &lt;/span&gt;your project. Ok there is no java source code yet, but let’s do the check if everything in Maven is correctly set up
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ol&gt;
+       &lt;li&gt;Double click on the &lt;span style="font-weight: bold;"&gt;compile &lt;/span&gt;Lifecycle command&lt;/li&gt;
+       &lt;li&gt;You will see that in the bottom of the Window, yet another Tool Windows (The Run Window) will be opened which shows the output of the Maven build process. You should see a “BUILD SUCCESS” message at the end.&lt;/li&gt;
+       &lt;li&gt;By clicking on the Icon in the upper right of the Run Window or on the highlighted entry (4: Run) in the bottom, you can hide the window again (clicking the entry a second time will display it again). The same holds true for the Maven Projects Window.&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/bc4239f8d5ce31074df808802ce5f814.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold; font-size: 14px;"&gt;Extending the POM.xml&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As a preparation step for our next task, we will add the dependencies section in the POM.xml (this is section in the POM will allow us to define additional external library, which we require.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ol&gt;
+       &lt;li&gt;Add the &lt;span style="font-weight: bold;"&gt;&amp;lt;dependencies&amp;gt;   &amp;lt;/dependencies&amp;gt;&lt;/span&gt; in the POM.xml&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/d5dfa5c9f94e29be3c3f45091ac5e98f.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Adding the Apache HTTP Components Library to our Project&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        It’s time to introduce the term
+       &lt;span style="font-weight: bold;"&gt;API&lt;/span&gt;, which means an
+       &lt;span style="font-weight: bold;"&gt;Application Programming Interface&lt;/span&gt;. Check out this very helpful 3 minutes video to get a better understanding.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;div class="responsive-video"&gt;
+        &lt;iframe src="https://www.youtube.com/embed/s7wmiS2mSXY?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As you can see, API’s are ruling the world and allowing us to connect and glue together useful services to a new app. We will connect to the football-data API to get some interesting data about football. Well the 
+       &lt;a href="http://www.football-data.org/documentation"&gt;&lt;a href="http://www.football-data.org/"&gt;http://www.football-data.org/&lt;/a&gt;&lt;/a&gt; API is based on
+       &lt;span style="font-weight: bold;"&gt;REST&lt;/span&gt;, yet another very important term in the API world, which you have to understand. Take another 8 minutes time to grasp the concept in this video (which is quite straightforward)
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;div class="responsive-video"&gt;
+        &lt;iframe src="https://www.youtube.com/embed/s7wmiS2mSXY?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Each good API comes with a documentation, which describes how you can communicate with it. This holds true for our API, which provides all the necessary information on their documentation site 
+       &lt;a href="http://www.football-data.org/documentation"&gt;&lt;a href="http://www.football-data.org/documentation"&gt;http://www.football-data.org/documentation&lt;/a&gt;&lt;/a&gt;. The screenshot below taken from their site, shows the overall structure of their API. So you can retrieve data about
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;Soccer Seasons&lt;/li&gt;
+       &lt;li&gt;Teams&lt;/li&gt;
+       &lt;li&gt;Fixtures&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Quite cool isn’t it ? And that’s for free.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/1de59aa4ebca2c2675f9ab27adbbf4b3.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        By drilling down into the documentation details you will find any kind of required information in order to connect from a program and retrieve the data.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As we have learned in the video, we have to use HTTP-requests in order to access the data. So from a Browser point of view that’s alright, but how to do that out of our program. The Java JDK libraries (which we have configured) don’t really provide any kind of libraries for that, so what to do now ?
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Well we need here and
+       &lt;span style="font-weight: bold;"&gt;additional Java library&lt;/span&gt;, which does the main job for us. There are several libraries around which could help us to connect with a RESTful API. We decided to use the famous 
+       &lt;a href="https://hc.apache.org/"&gt;Apache HTTPComponents&lt;/a&gt; library. It’s described as follows
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;The Apache HttpComponents™ project is responsible for creating and maintaining a toolset of low level Java components focused on HTTP and associated protocols.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;The Hyper-Text Transfer Protocol (HTTP) is perhaps the most significant protocol used on the Internet today. Web services, network-enabled appliances and the growth of network computing continue to expand the role of the HTTP protocol beyond user-driven web browsers, while increasing the number of applications that require HTTP support.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;Designed for extension while providing robust support for the base HTTP protocol, the HttpComponents may be of interest to anyone building HTTP-aware client and server applications such as web browsers, web spiders, HTTP proxies, web service transport libraries, or systems that leverage or extend the HTTP protocol for distributed communication&lt;/span&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Instead of downloading the library from the Apache site, we will configure it via Maven. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ol&gt;
+       &lt;li&gt;So head over to &lt;a href="https://mvnrepository.com"&gt;&lt;a href="https://mvnrepository.com"&gt;https://mvnrepository.com&lt;/a&gt;&lt;/a&gt; and type in the name of the library we are looking for &lt;span style="font-weight: bold;"&gt;org.apache.httpcomponents&lt;/span&gt;&lt;/li&gt;
+       &lt;li&gt;There are several ones, we want the &lt;span style="font-weight: bold;"&gt;Apache HttpClient&lt;/span&gt;, click on it&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/7c9a242ef2cc1b06cede09ee60851942.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The Apache HttpClient libary overview page will be shown. You will see a list of versions, which are available. We go for the newest one, which was released in (Jan 2017).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ol&gt;
+       &lt;li&gt;Click on the version number &lt;span style="font-weight: bold;"&gt;4.5.3&lt;/span&gt;&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/d264a4e75ec80018cbc138fb1d1b3863.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Now you are on the Library Version Page and will see at the bottom of the page a configuration string for Maven.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ol&gt;
+       &lt;li&gt;Copy the full string from &amp;lt;dependency&amp;gt;&amp;hellip;&amp;lt;/dependency&amp;gt;&lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/a6eaf1411827e7c7fbfbb219a4a12d15.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ol&gt;
+       &lt;li&gt;In you IntelliJ project, paste in this Maven dependency in-between the &lt;span style="font-weight: bold;"&gt;dependencies&lt;/span&gt; XLM elements&lt;/li&gt;
+       &lt;li&gt;IntelliJ will now update the list of &lt;span style="font-weight: bold;"&gt;External Libraries&lt;/span&gt;. Beside the JDK 1.8 libraries you have a set of new libraries (brought in via Maven).  &lt;/li&gt;
+      &lt;/ol&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/f40e463c7f9965c39ca2ad3ec8f4a5d0.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        If you look carefully at the list of libraries you can see not just, the
+       &lt;span style="font-weight: bold;"&gt;httpclient&lt;/span&gt; library which we added but also list of additional libraries, as for example
+       &lt;span style="font-weight: bold;"&gt;httpcore&lt;/span&gt; ?
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Why that ? Well
+       &lt;span style="font-weight: bold;"&gt; httpclient &lt;/span&gt;library itself is dependent on other libraries (apart from the Java JDK), i.e.
+       &lt;span style="font-weight: bold;"&gt;commons-code version 1.9, commons-logging 1.2&lt;/span&gt;,
+       &lt;span style="font-weight: bold;"&gt;httpcore 4.4.6&lt;/span&gt;. The Maven
+       &lt;span style="font-weight: bold;"&gt; &lt;/span&gt;Build Tool, ensures that all these are loaded as well, which makes your life easier. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/d11cbdb5b7f43305666ad5d6e26bda6b.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        That’s it for today, in the next session, we will write the first program, which will fetch data from the
+       &lt;a href="http://football-data.org"&gt;football-data.org&lt;/a&gt; site in a machine-readable format.
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Java for Beginners #1 - Prepare an IntelliJ Maven Project</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
@@ -5203,178 +5598,6 @@ iMac: ~ Felix$ eb ssh
       &lt;div&gt; 
        &lt;br&gt; 
       &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Docker Small Hints #1:  High Level Concepts Elastic Beanstalk</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html"/>
-    <id>https://dev.cloudburo.net/2015/04/09/docker-small-hints-1-high-level-concepts-elastic-beanstalk.html</id>
-    <published>2015-04-09T06:25:00Z</published>
-    <updated>2017-06-20T21:32:11+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Cloud Platforms are normally highly generic and configurable and it’s easy to loose overview, what can be configured or modified where. So I assembled some of the main high level concepts for AWS Elastic Beanstalk.&lt;br&gt;
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;b&gt;&lt;span style="font-size:24px;"&gt;Level 0: Concepts&lt;/span&gt;&lt;/b&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; Elastic Beanstalk is structured around the 3 high level concepts. 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;i&gt;&lt;span style="font-size:18px;"&gt;A &lt;/span&gt;&lt;/i&gt; 
-       &lt;i&gt;&lt;span style="font-size:18px;"&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/span&gt;&lt;/i&gt; 
-       &lt;i&gt;&lt;span style="font-size:18px;"&gt;of an (&lt;/span&gt;&lt;/i&gt; 
-       &lt;i&gt;&lt;span style="font-size:18px;"&gt;&lt;b&gt;Docker)&lt;/b&gt;&lt;/span&gt;&lt;/i&gt; 
-       &lt;i&gt;&lt;span style="font-size:18px;"&gt; &lt;/span&gt;&lt;/i&gt; 
-       &lt;i&gt;&lt;span style="font-size:18px;"&gt;&lt;b&gt;Application&lt;/b&gt;&lt;/span&gt;&lt;/i&gt; 
-       &lt;i&gt;&lt;span style="font-size:18px;"&gt;is running in one&lt;/span&gt;&lt;/i&gt; 
-       &lt;i&gt;&lt;span style="font-size:18px;"&gt;&lt;b&gt;Environment&lt;/b&gt;&lt;/span&gt;&lt;/i&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; Elastic Beanstalk allows you to run in parallel 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;i&gt;&lt;b&gt;Multiple Versions&lt;/b&gt;&lt;/i&gt; 
-       &lt;i&gt;of&lt;/i&gt; 
-       &lt;i&gt;&lt;b&gt;multiple (Docker) Applications&lt;/b&gt;&lt;/i&gt; 
-       &lt;i&gt;in&lt;/i&gt; 
-       &lt;i&gt;&lt;b&gt;multiple Environments&lt;/b&gt;&lt;/i&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; The Dashboard will show you all deployed 
-       &lt;b&gt;Applications&lt;/b&gt; which can be running in multiple&lt;br&gt;
-       &lt;b&gt;Environments&lt;/b&gt;. 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; In the screenshot below we have one Docker Application „ 
-       &lt;i&gt;curationApp“&lt;/i&gt; which has to two environments „ 
-       &lt;i&gt;curationApp-prod&lt;/i&gt;“ and „ 
-       &lt;i&gt;curationApp-test&amp;quot;&lt;/i&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/95051bbe9efdb4532199204d0f61fd2e.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; An 
-       &lt;b&gt;Environment&lt;/b&gt; may run one of your released docker Application Versions. You could now „ 
-       &lt;i&gt;Deploy&lt;/i&gt;“ one of your versions to one of your Environments. 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; In the example below the environment &amp;ldquo; 
-       &lt;i&gt;curationApp-prod&amp;rdquo;&lt;/i&gt; is running Version 0.0.5. 
-      &lt;/div&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/22c0aadeda311a7a7ede6ab4973ba58d.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-       &lt;b&gt;&lt;span style="font-size:24px;"&gt;Level 1: Concepts&lt;/span&gt;&lt;/b&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; By selecting an 
-       &lt;b&gt;Environment&lt;/b&gt; you will see the Dashboard of the running 
-       &lt;b&gt;Application Version&lt;/b&gt; which is configured on a AWS 
-       &lt;b&gt;Solution Stack&lt;/b&gt;. 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; In our example below this a Docker solution running on Amazon Linux. 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; A running Environment has a 
-       &lt;b&gt;Health Status&lt;/b&gt; and an associated&lt;br&gt;
-       &lt;b&gt;Configuration.&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        It’s exposed to the Internet via a 
-       &lt;b&gt;Domain Name Endpoint&lt;/b&gt;, 
-       &lt;span style=""&gt;&amp;lt;EnvironmentName&amp;gt;-&amp;lt;Id&amp;gt;.elasticbeanstalk.com&lt;/span&gt;.&lt;br&gt;
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        It’s processing can be checked via 
-       &lt;b&gt;Logs&lt;/b&gt;, 
-       &lt;b&gt;Realtime Monitors, Events&lt;/b&gt; or 
-       &lt;b&gt;Alarms.&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; Furthermore an Environment may be complemented with&lt;br&gt;
-       &lt;b&gt;Tags&lt;/b&gt;.&lt;br&gt;
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;b&gt;Configuration&lt;/b&gt;, 
-       &lt;b&gt;Alarms&lt;/b&gt; and 
-       &lt;b&gt;Tags&lt;/b&gt; may be maintained a set according to your needs. 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/2a86af971f134a9e2fbd2c7a4ca91115.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        An 
-       &lt;b&gt;Environment&lt;/b&gt; maps to a 
-       &lt;b&gt;EC2 Instance&lt;/b&gt; (orange box) which is running an Amazon Linux version, on a Docker container infrastructure.&lt;br&gt;
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/820746984edb2ecb86de31973a2d854e.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style="font-size:24px;"&gt;&lt;b&gt;Main Workflow&lt;/b&gt;&lt;/span&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; The Main Workflow consists of the following step: 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;&lt;b&gt;Baseline&lt;/b&gt; your Docker Application Directory (e.g. checkin to git)&lt;/li&gt; 
-       &lt;li&gt;&lt;b&gt;Create&lt;/b&gt; an new &lt;b&gt;Application Version ZIP File&lt;/b&gt; of your baselined Docker Application&lt;/li&gt; 
-       &lt;li&gt;&lt;b&gt;Transfer&lt;/b&gt; the &lt;b&gt;Application Version ZIP File&lt;/b&gt; to your Amazon &lt;b&gt;S3&lt;/b&gt;&lt;/li&gt; 
-       &lt;li&gt;&lt;b&gt;Configure&lt;/b&gt;  an &lt;b&gt;Beanstalk&lt;/b&gt; &lt;b&gt;Application Version&lt;/b&gt; item&lt;b&gt; &lt;/b&gt;&lt;/li&gt; 
-       &lt;li&gt;&lt;b&gt;Deploy&lt;/b&gt; the new &lt;b&gt;Beanstalk&lt;/b&gt; &lt;b&gt;Application Version&lt;/b&gt; to a &lt;b&gt;Beanstalk Environment &lt;/b&gt;&lt;/li&gt; 
-       &lt;li&gt;The Deploy will &lt;b&gt;Restart and Reconfigure&lt;/b&gt; the Environment&lt;/li&gt; 
-      &lt;/ul&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
