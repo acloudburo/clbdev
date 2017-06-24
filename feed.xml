@@ -421,7 +421,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
     <published>2017-06-18T12:46:32Z</published>
-    <updated>2017-06-24T14:06:39+00:00</updated>
+    <updated>2017-06-24T15:08:53+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -464,7 +464,21 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Some terminology to get you a better start of (taken over from
+        If you are completely new to Java, watch the following 6 minutes video
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;div class="responsive-video"&gt;
+        &lt;iframe src="https://www.youtube.com/embed/2Xa3Y4xz8_s?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Some terminology to get you a better start off (taken over from
        &lt;a href="http://computer.howstuffworks.com/program1.htm"&gt;here&lt;/a&gt;).
       &lt;/div&gt;
       &lt;div&gt;
