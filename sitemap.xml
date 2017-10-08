@@ -97,6 +97,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html</loc>
+    <lastmod>2017-10-08</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html</loc>
     <lastmod>2017-09-13</lastmod>
     <priority>0.7</priority>
@@ -703,6 +709,18 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/inspiration.html</loc>
+    <lastmod>2017-08-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/blockchain.html</loc>
+    <lastmod>2017-08-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/deutsch.html</loc>
     <lastmod>2017-08-13</lastmod>
     <priority>0.9</priority>
@@ -715,12 +733,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/tags/inspiration.html</loc>
-    <lastmod>2017-08-13</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net/tags/futurework.html</loc>
     <lastmod>2017-08-13</lastmod>
     <priority>0.9</priority>
@@ -728,12 +740,6 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/tags/javatutorial.html</loc>
-    <lastmod>2017-08-13</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/tags/blockchain.html</loc>
     <lastmod>2017-08-13</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
@@ -760,6 +766,18 @@
     <loc>https://dev.cloudburo.net/2017.html</loc>
     <lastmod>2017-08-13</lastmod>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2017/10.html</loc>
+    <lastmod>2017-08-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2017/10/08.html</loc>
+    <lastmod>2017-08-13</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
