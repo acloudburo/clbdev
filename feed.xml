@@ -5,16 +5,72 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2017-10-12T09:31:29Z</updated>
+  <updated>2017-10-12T10:24:16Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Now anyone can explore machine learning, no coding required</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html"/>
+    <id>https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html</id>
+    <published>2017-10-12T10:24:16Z</published>
+    <updated>2017-10-12T10:24:17+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/325472601571f31e1bf00674c368d335.gif" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;/div&gt;
+      &lt;div style=""&gt;
+        I like Google for their approach, how they introduce new technology concepts for freshmen. A good example is the the teachablemachine, a machine learning experiment. As the state
+      &lt;/div&gt;
+      &lt;div style=""&gt;
+       &lt;i&gt;&amp;ldquo;From helping you find &lt;a href="https://www.youtube.com/watch?v=bHvf7Tagt18&amp;amp;index=11&amp;amp;list=PLeqAcoTy5741GXa8rccolGQaj_nVGw76g"&gt;your favorite dog photos&lt;/a&gt;, to &lt;a href="https://www.youtube.com/watch?v=_rdINNHLYaQ"&gt;helping farmers in Japan sort cucumbers&lt;/a&gt;, machine learning is changing the way people use code to solve problems. But how does machine learning actually work? We wanted to make it easier for people who are curious about this technology to learn more about it. So we created &lt;a href="http://g.co/teachablemachine"&gt;Teachable Machine&lt;/a&gt;, a simple experiment that lets you teach a machine using your camera—live in the browser, no coding required.&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;/div&gt;
+      &lt;div style=""&gt;
+       &lt;div&gt;
+        &lt;i&gt;Teachable Machine is built with a new library called &lt;a href="https://pair-code.github.io/deeplearnjs/"&gt;deeplearn.js&lt;/a&gt;, which makes it easier for any web developer to get into machine learning by training and running neural nets right in the browser. We’ve also &lt;a href="https://github.com/googlecreativelab/teachable-machine"&gt;open sourced the code&lt;/a&gt; to help inspire others to make new experiments.&amp;rdquo;&lt;/i&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;/div&gt;
+      &lt;div style=""&gt;
+       &lt;div&gt;
+         Check it out at
+        &lt;a href="http://g.co/teachablemachine"&gt;g.co/teachablemachine&lt;/a&gt;.
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="https://www.blog.google/topics/machine-learning/now-anyone-can-explore-machine-learning-no-coding-required/"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Google Cloud and GDPR</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html</id>
     <published>2017-10-12T09:31:29Z</published>
-    <updated>2017-10-12T09:32:58+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -65,7 +121,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html"/>
     <id>https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html</id>
     <published>2017-10-08T16:26:49Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -111,7 +167,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html"/>
     <id>https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html</id>
     <published>2017-09-13T05:35:50Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -128,7 +184,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"/>
     <id>https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html</id>
     <published>2017-06-24T13:06:45Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -535,7 +591,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
     <published>2017-06-18T12:46:32Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -855,7 +911,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
     <published>2017-06-18T11:50:25Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -984,7 +1040,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html"/>
     <id>https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html</id>
     <published>2017-04-14T15:10:46Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1099,7 +1155,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html"/>
     <id>https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html</id>
     <published>2017-04-07T15:13:15Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1160,7 +1216,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html"/>
     <id>https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html</id>
     <published>2017-03-28T05:25:38Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1210,7 +1266,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html"/>
     <id>https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html</id>
     <published>2017-03-27T05:38:50Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1242,7 +1298,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html"/>
     <id>https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html</id>
     <published>2017-03-13T21:34:47Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1317,7 +1373,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html"/>
     <id>https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html</id>
     <published>2017-01-30T06:55:41Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1399,7 +1455,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html"/>
     <id>https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html</id>
     <published>2017-01-11T22:31:09Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1442,7 +1498,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html"/>
     <id>https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html</id>
     <published>2016-12-06T06:34:22Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1548,7 +1604,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html"/>
     <id>https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html</id>
     <published>2016-12-05T06:18:54Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1611,7 +1667,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html"/>
     <id>https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html</id>
     <published>2016-12-01T22:20:29Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1790,7 +1846,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html"/>
     <id>https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html</id>
     <published>2016-11-30T22:56:42Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1858,7 +1914,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html"/>
     <id>https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html</id>
     <published>2016-11-29T21:48:26Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1943,7 +1999,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"/>
     <id>https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html</id>
     <published>2016-11-28T21:33:21Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2014,7 +2070,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html"/>
     <id>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</id>
     <published>2016-11-22T22:15:39Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2123,7 +2179,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html"/>
     <id>https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html</id>
     <published>2016-07-18T16:06:09Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2249,7 +2305,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html"/>
     <id>https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html</id>
     <published>2016-06-21T22:17:15Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2302,7 +2358,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
     <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
     <published>2016-06-09T21:14:47Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2403,7 +2459,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html"/>
     <id>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</id>
     <published>2016-05-23T17:03:55Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2522,7 +2578,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
     <id>https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html</id>
     <published>2016-05-13T23:04:33Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2605,7 +2661,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
     <id>https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
     <published>2016-05-12T21:14:14Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2849,7 +2905,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
     <id>https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
     <published>2016-04-24T13:06:12Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2999,7 +3055,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html"/>
     <id>https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html</id>
     <published>2016-04-21T22:49:36Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3065,7 +3121,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
     <id>https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
     <published>2016-03-04T06:38:48Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3170,7 +3226,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
     <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
     <published>2015-12-20T17:48:53Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3453,7 +3509,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
     <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
     <published>2015-11-15T00:07:50Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3504,7 +3560,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html"/>
     <id>https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html</id>
     <published>2015-11-07T22:47:46Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3539,7 +3595,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html"/>
     <id>https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html</id>
     <published>2015-10-03T12:07:50Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3695,7 +3751,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html</id>
     <published>2015-10-01T19:26:35Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3808,7 +3864,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html</id>
     <published>2015-10-01T08:42:00Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3911,7 +3967,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"/>
     <id>https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html</id>
     <published>2015-09-30T06:31:36Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4046,7 +4102,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/09/29/micro-business-quick-tips-3-rechtssicherheit-bei-der-eroffnung-eines-onlineshops.html"/>
     <id>https://dev.cloudburo.net/2015/09/29/micro-business-quick-tips-3-rechtssicherheit-bei-der-eroffnung-eines-onlineshops.html</id>
     <published>2015-09-29T10:32:56Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4135,7 +4191,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/09/03/micro-business-quick-tips-2-build-a-business-without-employees.html"/>
     <id>https://dev.cloudburo.net/2015/09/03/micro-business-quick-tips-2-build-a-business-without-employees.html</id>
     <published>2015-09-03T05:41:56Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4191,7 +4247,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html"/>
     <id>https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html</id>
     <published>2015-08-11T09:53:31Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4326,7 +4382,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html"/>
     <id>https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html</id>
     <published>2015-07-28T10:16:46Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4578,7 +4634,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html"/>
     <id>https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html</id>
     <published>2015-07-26T11:18:54Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4663,7 +4719,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html"/>
     <id>https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html</id>
     <published>2015-07-05T09:41:00Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4703,7 +4759,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/06/10/a-nice-introduction-to-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/06/10/a-nice-introduction-to-microservices.html</id>
     <published>2015-06-10T08:53:32Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4725,7 +4781,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html"/>
     <id>https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</id>
     <published>2015-06-07T04:05:06Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4788,7 +4844,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html"/>
     <id>https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html</id>
     <published>2015-05-27T20:46:21Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4820,7 +4876,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html"/>
     <id>https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html</id>
     <published>2015-05-25T07:13:55Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4860,7 +4916,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html"/>
     <id>https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html</id>
     <published>2015-05-07T08:57:51Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4918,7 +4974,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html"/>
     <id>https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html</id>
     <published>2015-05-06T05:54:45Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4935,7 +4991,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"/>
     <id>https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html</id>
     <published>2015-04-25T12:25:42Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5204,7 +5260,7 @@ iMac: ~ Felix$ eb ssh
     <link rel="alternate" href="https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html"/>
     <id>https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html</id>
     <published>2015-04-24T05:01:26Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
+    <updated>2017-10-12T09:47:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5337,190 +5393,6 @@ iMac: ~ Felix$ eb ssh
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Micro Business Quick Tips #1: Get a bullet proof E-Mail setup (SPF, DKIM, DMARC)</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html"/>
-    <id>https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html</id>
-    <published>2015-04-21T19:44:40Z</published>
-    <updated>2017-10-12T08:05:12+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        In the current world of spammers, intruders and fake emails, it is vital to get a bullet proof setup for your E-Mail deliveries. It took me some time to sort it out, but at the end not more than three steps are necessary to get an authenticated email setup with less spam risk and with better reputation, which reduces the risk that  your emails are put into the spam folder by your client or prospects. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;1. Get a own Domain with an associated Email Address&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Using email addresses of a free mail provider isn’t a good idea when you start your business. Especially when you want  to use third party providers for certain email based services over time. E.g. you could use
-       &lt;a href="https://mailchimp.com"&gt;Mailchimp&lt;/a&gt; to send out a Email Newsletter on behalf of you.
-      &lt;/div&gt;
-      &lt;div&gt;
-        The reason why you want your own domain based (and controlled) email address is that you want to decouple you from any DMARC policy decisions of the free email provider on its email domain. 
-      &lt;/div&gt;
-      &lt;div&gt;
-        DMARC is a global initiative (you will see later how you can benefit from it, a primer can be found
-       &lt;a href="https://wordtothewise.com/2014/04/brief-dmarc-primer/"&gt;here&lt;/a&gt;) to reduce or stop fraudulent emails. All the big free email provider are participating and they may decide to strengthen the DMARC authentication policy. This will result in rejecting emails that claim to come for example from yahoo.com but actually originate at a non-Yahoo server.
-      &lt;/div&gt;
-      &lt;div&gt;
-        This is a pattern definitely used by spammers, but for example also by Mailchimp when it will send out emails on behalf of your company (read the full story
-       &lt;a href="https://blog.mailchimp.com/yahoo-changes-may-affect-your-deliverability/"&gt;here&lt;/a&gt;). Therefore get your own domain with its email address (&lt;a href="mailto:myname@mydomain.com"&gt;myname@mydomain.com&lt;/a&gt;) in order to keep it under your control how you want to handle Emails sent on behalf of you by a untrusted or unknown source.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;2. Setup Email Authentication in your DNS records &lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In order to ensure effective email delivery it’s highly recommended that you setup email authentication in your DNS records. By having purchased a own domain you also will get the possibility to adjust your DNS records (again you are in control). Depending where your purchased a domain the way how you update the records may vary. Search for DNS on the support page of your domain provider.
-      &lt;/div&gt;
-      &lt;div&gt;
-        Email Authentication requires not only modification of the client side (by you adding DNS records) as well as Email provider which supports the
-       &lt;a href="http://www.openspf.org/"&gt;SPF&lt;/a&gt; and
-       &lt;a href="http://www.dkim.org/info/dkim-faq.html"&gt;DKIM&lt;/a&gt; on the server side. This is either the Email service provided with your domain or you go for one with the necessary support (you then have to modify the MX records of your DNS records to point to this new Email provider). Check the support pages of your domain email provider for keywords like SPF, DKIM to get an understanding what is supported.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        For example I purchased a
-       &lt;a href="https://www.google.com/work/apps/business/"&gt;Google Apps for Work&lt;/a&gt; account which comes with a very strong Gmail based E-Mail service offering. It can host all my different Email Addresses of all my different domains (around 10)  and  allows the setup of   SPF/DKIM Email Authentication. The offering is overall very powerful (it introduces any kind of email relaying, rerouting etc. in case you run some other email account as well) and allows you to centralize all your Email handling. 
-      &lt;/div&gt;
-      &lt;div&gt;
-        In my DNS record of of my 
-       &lt;i&gt;cloudburo.net&lt;/i&gt; domain - which was purchased by another vendor - I had to reroute the mail traffic to the google email host environment (in DNS these are MX records). As you can see this a set of servers which will handle the traffic.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/cc04a82d31aae919cef08f1f3da39820.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        To get SPF and DKIM on your side established  you have to create DNS records for
-       &lt;a href="http://wiht.link/sender-id"&gt;Sender-ID&lt;/a&gt; and
-       &lt;a href="http://www.dkim.org/info/dkim-faq.html"&gt;DKIM&lt;/a&gt; on your own domain.
-      &lt;/div&gt;
-      &lt;div&gt;
-        Major ISP’s will use this DNS entries to verify your identity and track reputation. So it will ensure that your Emails will not land in the spam folder of your customers.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        An example here the SPF DNS record entry which is used for my domain cloudburo.net. It  defines that emails sent from
-       &lt;i&gt;&amp;lt;name&amp;gt;@cloudburo.net&lt;/i&gt; may be coming from servers of
-       &lt;i&gt;google.com&lt;/i&gt; (as explained above I host my emails with
-       &lt;i&gt;google&lt;/i&gt;), as well as from
-       &lt;i&gt;mtasv.net&lt;/i&gt; (this are the servers of Mailchimp which I use for newsletter distribution).
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/acc5ef067f49560caa27dbbf5e93b669.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;3. Start Monitoring your Email Traffic via a DMARC report&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Having SPF and DKIM established you now can benefit from DMARC reporting to check unauthenticated usage of your domain email. You could even introduce a reject policy that is something I didn’t investigated it (definitely the large ISPs are starting to change their strategy as explained later)
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;a style="text-decoration: none; color: rgb(69, 81, 163); font-size: 16px;" href="http://dmarc.org/"&gt;&lt;br&gt;&lt;/a&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;&lt;b&gt;&lt;span style="color: rgb(69, 81, 163);"&gt;DMARC&lt;/span&gt;&lt;span style="color: rgb(47, 48, 76);"&gt;&lt;i&gt; stands for Domain-based Message Authentication, Reporting and Conformance. What DMARC does is allow domain owners to publish policy statements in DNS telling receiver domains what to do with messages that do not authenticate. In addition, DMARC introduces the concept of “domain alignment.” What this means is that the authentication has to be from the same domain (or a sub-domain) as the address in the header-from: line. The idea behind DMARC is that organizational owners can use SPF and DKIM authentication to authenticate their actual domain in the header-from line. This moves authentication from a important but behind the scenes technology out to an end user visible technology.&lt;/i&gt;&lt;/span&gt;&lt;/b&gt;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        An excellent free reporting is provided by Postmark (
-       &lt;a href="https://dmarc.postmarkapp.com/"&gt;&lt;a href="https://dmarc.postmarkapp.com/"&gt;https://dmarc.postmarkapp.com/&lt;/a&gt;&lt;/a&gt;). By registering with them and again adding an additional DNS record for your domain, you will be delivered with a weekly DMARC report. Postmark will process reports from major ISPs about your domain’s DMARC alignment and turn the into beautiful, human-readable weekly email digests.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        An example report is shown below, it shows two untrusted sources. A short lookup revealed that the IP addresses from mtasv.net belong to a third party provider which is used by me to send out Emails on behalf of me (actually it’s the very useful Postmark Transaction Email service which is integrated into applications of me). By checking their Web page I found the instruction how I could align these IP address with the DMARC policy (as you could think of by extending the DNS record).
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        You should now be well  set up of with your Micro-Business to handle Email traffic in a spam-free manner and a high confidence that the email is reaching your end-user and not his spam folder.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/f3590a9af71c30a37847ee71a091421d.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Read the following
-       &lt;a href="http://yahoo.tumblr.com/post/82426971544/an-update-on-our-dmarc-policy-to-protect-our-users"&gt;article&lt;/a&gt; by Yahoo which explains why the changed from one day to another to the hard DMARC policy. A journey to a spam free world.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div style="color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);"&gt;
-        &lt;div&gt;
-         &lt;i&gt;In Friday afternoon last week, Yahoo made a simple change to its DMARC policy from “report” to “reject”. In other words, we requested that all other mail services reject emails claiming to come from a Yahoo user, but not signed by Yahoo.  Y&lt;/i&gt;
-         &lt;span style="color: rgb(68, 68, 68);"&gt;&lt;i&gt;ahoo is the first major email provider in the world to adopt this aggressive level of DMARC policy on behalf of our users.&lt;/i&gt;&lt;/span&gt;
-        &lt;/div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="color: rgb(68, 68, 68);"&gt;&lt;i&gt;And overnight, the bad guys who have used email spoofing to forge emails and launch phishing attempts pretending to come from a Yahoo Mail account were nearly stopped in their tracks.&lt;/i&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;&lt;span style="color: rgb(68, 68, 68);"&gt;&lt;br&gt;&lt;/span&gt;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;&lt;span style="color: rgb(68, 68, 68);"&gt;&lt;br&gt;&lt;/span&gt;&lt;/i&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;

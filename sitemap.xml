@@ -463,6 +463,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html</loc>
+    <lastmod>2017-10-12</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/footer1.html</loc>
     <lastmod>2017-10-12</lastmod>
     <priority>1.0</priority>
@@ -770,6 +776,18 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/tags/modeling.html</loc>
+    <lastmod>2017-10-12</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/ai.html</loc>
+    <lastmod>2017-10-12</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/ml.html</loc>
     <lastmod>2017-10-12</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
