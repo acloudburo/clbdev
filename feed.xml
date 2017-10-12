@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html</id>
     <published>2017-10-12T10:24:16Z</published>
-    <updated>2017-10-12T10:24:17+00:00</updated>
+    <updated>2017-10-12T10:27:27+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -28,21 +28,39 @@
       &lt;div&gt;
       &lt;/div&gt;
       &lt;div style=""&gt;
-        I like Google for their approach, how they introduce new technology concepts for freshmen. A good example is the the teachablemachine, a machine learning experiment. As the state
+        I like Google for their approach, how they introduce new technology concepts for freshmen. A good example is the the teachablemachine, a machine learning experiment. As they state
       &lt;/div&gt;
       &lt;div style=""&gt;
-       &lt;i&gt;&amp;ldquo;From helping you find &lt;a href="https://www.youtube.com/watch?v=bHvf7Tagt18&amp;amp;index=11&amp;amp;list=PLeqAcoTy5741GXa8rccolGQaj_nVGw76g"&gt;your favorite dog photos&lt;/a&gt;, to &lt;a href="https://www.youtube.com/watch?v=_rdINNHLYaQ"&gt;helping farmers in Japan sort cucumbers&lt;/a&gt;, machine learning is changing the way people use code to solve problems. But how does machine learning actually work? We wanted to make it easier for people who are curious about this technology to learn more about it. So we created &lt;a href="http://g.co/teachablemachine"&gt;Teachable Machine&lt;/a&gt;, a simple experiment that lets you teach a machine using your camera—live in the browser, no coding required.&lt;br&gt;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div style=""&gt;
        &lt;div&gt;
-        &lt;i&gt;Teachable Machine is built with a new library called &lt;a href="https://pair-code.github.io/deeplearnjs/"&gt;deeplearn.js&lt;/a&gt;, which makes it easier for any web developer to get into machine learning by training and running neural nets right in the browser. We’ve also &lt;a href="https://github.com/googlecreativelab/teachable-machine"&gt;open sourced the code&lt;/a&gt; to help inspire others to make new experiments.&amp;rdquo;&lt;/i&gt;
+        &lt;span style="font-style: italic;"&gt;&amp;ldquo;From helping you find &lt;/span&gt;
+        &lt;a style="font-style: italic;" href="https://www.youtube.com/watch?v=bHvf7Tagt18&amp;amp;index=11&amp;amp;list=PLeqAcoTy5741GXa8rccolGQaj_nVGw76g"&gt;your favorite dog photos&lt;/a&gt;
+        &lt;span style="font-style: italic;"&gt;, to &lt;/span&gt;
+        &lt;a style="font-style: italic;" href="https://www.youtube.com/watch?v=_rdINNHLYaQ"&gt;helping farmers in Japan sort cucumbers&lt;/a&gt;
+        &lt;span style="font-style: italic;"&gt;, machine learning is changing the way people use code to solve problems. But how does machine learning actually work? We wanted to make it easier for people who are curious about this technology to learn more about it. So we created &lt;/span&gt;
+        &lt;a style="font-style: italic;" href="http://g.co/teachablemachine"&gt;Teachable Machine&lt;/a&gt;
+        &lt;span style="font-style: italic;"&gt;, a simple experiment that lets you teach a machine using your camera—live in the browser, no coding required.&lt;/span&gt;
        &lt;/div&gt;
       &lt;/div&gt;
       &lt;div&gt;
       &lt;/div&gt;
       &lt;div style=""&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;Teachable Machine is built with a new library called &lt;/span&gt;
+        &lt;a style="font-style: italic;" href="https://pair-code.github.io/deeplearnjs/"&gt;deeplearn.js&lt;/a&gt;
+        &lt;span style="font-style: italic;"&gt;, which makes it easier for any web developer to get into machine learning by training and running neural nets right in the browser. We’ve also &lt;/span&gt;
+        &lt;a style="font-style: italic;" href="https://github.com/googlecreativelab/teachable-machine"&gt;open sourced the code&lt;/a&gt;
+        &lt;span style="font-style: italic;"&gt; to help inspire others to make new experiments.&amp;rdquo;&lt;/span&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;/div&gt;
+      &lt;div style=""&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
        &lt;div&gt;
          Check it out at
         &lt;a href="http://g.co/teachablemachine"&gt;g.co/teachablemachine&lt;/a&gt;.
