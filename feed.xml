@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html</id>
     <published>2017-10-12T09:31:29Z</published>
-    <updated>2017-10-12T09:31:30+00:00</updated>
+    <updated>2017-10-12T09:32:58+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -41,14 +41,14 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span&gt;&lt;i&gt;&amp;ldquo;You can count on the fact that Google is committed to GDPR compliance across Google Cloud services. We are also committed to helping our customers with their GDPR compliance journey by providing robust privacy and security protections built into our services and contracts over the years.&lt;/i&gt;&lt;/span&gt;
-       &lt;i&gt;”&lt;/i&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;You can count on the fact that Google is committed to GDPR compliance across Google Cloud services. We are also committed to helping our customers with their GDPR compliance journey by providing robust privacy and security protections built into our services and contracts over the years.&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;”&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/span&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;a href="https://www.google.com/cloud/security/gdpr/"&gt;&lt;b&gt;Link to the Googel Cloud GDPR Website&lt;/b&gt;&lt;/a&gt;.
+       &lt;a style="font-weight: bold;" href="https://www.google.com/cloud/security/gdpr/"&gt;Link to the Google Cloud GDPR Website&lt;/a&gt;.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
