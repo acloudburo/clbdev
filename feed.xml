@@ -5,10 +5,78 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2017-10-12T10:24:16Z</updated>
+  <updated>2017-10-25T17:28:37Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Amazon wants to let strangers into your home</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html"/>
+    <id>https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html</id>
+    <published>2017-10-25T17:28:37Z</published>
+    <updated>2017-10-25T17:28:38+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;span style="font-size: 16px;"&gt;The following Email Newsletter by&lt;/span&gt;
+       &lt;a style="color: rgb(83, 69, 64); font-size: 16px;" href="https://www.producthunt.com/?utm_campaign=455_2017-10-24&amp;amp;utm_medium=email&amp;amp;utm_source=Product+Hunt"&gt; Product Hunt&lt;/a&gt;
+       &lt;span style="font-size: 16px;"&gt; caught my attention this morning. I you like the move or not it’s just a brilliant chess move again by Amazon.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(83, 69, 64); font-size: 16px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(83, 69, 64); font-size: 16px;"&gt;This morning Bezos and team announced &lt;/span&gt;
+       &lt;a style=" font-size: 16px; font-weight: bold; color: rgb(218, 85, 47) !important;" href="http://links.producthunt.com/lnk/AEMASWUJpXUAAAYo7ucAAALSFhAAAAAIijYAAAAAAAYklQBZ8KtEiBOX4z_wSKWnmbtwz1845gAF1QU/4/3KXsFd-5NHsbAkREz4FCNQ/aHR0cDovL2JpdC5seS8yaXZWRW43"&gt;Amazon Key&lt;/a&gt;
+       &lt;span style="color: rgb(83, 69, 64); font-size: 16px;"&gt;, an in-home camera and smart lock. As expected, the news was met with hugs and disgust.&lt;/span&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(83, 69, 64); font-size: 16px; font-style: italic;"&gt;“Hell no. There’s no way I’m letting a stranger into my home.”&lt;/span&gt;
+       &lt;span style="color: rgb(83, 69, 64); font-size: 16px;"&gt; – 😐 Person on the Internet.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(83, 69, 64); font-size: 16px;"&gt;Regardless of your position, Amazon’s chess move to get a key to your door is brilliant. This gives the “A” in FANG (Facebook, Amazon, Netflix, and Google) a gateway to in-home services, including:&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(83, 69, 64); font-size: 16px;"&gt;🍎 Grocery delivery&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(83, 69, 64); font-size: 16px;"&gt;🐶 Dog walking&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(83, 69, 64); font-size: 16px;"&gt;✨ House cleaning&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(83, 69, 64); font-size: 16px;"&gt;👵 Elderly care&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(83, 69, 64); font-size: 16px;"&gt;🛠 Home repairs&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(83, 69, 64); font-size: 16px;"&gt;Amazon’s playing a very long game. The seeds planted today will enable a new wave of exciting (and society altering) automation as robots clean your home, walk your dog, and deliver eggs.&lt;/span&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Now anyone can explore machine learning, no coding required</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html"/>
@@ -5262,149 +5330,6 @@ iMac: ~ Felix$ eb ssh
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Micro Business Quick Tips #2: Google Apps Email setup for a new domain</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html"/>
-    <id>https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html</id>
-    <published>2015-04-24T05:01:26Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Assumption is that&lt;br&gt;
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;you have a Google Business Account&lt;/li&gt; 
-       &lt;li&gt;you purchased a new domain, e.g. &lt;span style=""&gt;curation.space&lt;/span&gt;&lt;/li&gt; 
-       &lt;li&gt;you want to route emails to the new domain &lt;span style=""&gt;&amp;lt;anyname&amp;gt;@curation.space&lt;/span&gt; to your primary Gmail account&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Necessary Steps 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Go to the Google Admin Console ( 
-       &lt;a href="https://admin.google.com"&gt;&lt;a href="https://admin.google.com"&gt;https://admin.google.com&lt;/a&gt;&lt;/a&gt;) 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;b&gt;&lt;u&gt;1. Add the Domain on the Google Admin Console&lt;/u&gt;&lt;/b&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        On the Domain Page add your new Domain: 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/0eb35bda154e50b99c048c274f9127e0.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;b&gt;2. Add a TXT Record on your DNS Server&lt;/b&gt;&lt;/u&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Google will provide a TXT record which  has to be added onto the DNS server, in our example of 
-       &lt;span style=""&gt;curation.space&lt;/span&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;b&gt;3. Add MX Records on  your DNS Server&lt;/b&gt;&lt;/u&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Remove the MX records of the old provider and add the new one as listed by Google 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style=""&gt;&lt;span style=""&gt;&lt;span style=""&gt; &lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/cc1e141a70bba6d8a622f5057c4bb651.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/u&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;b&gt;4. Add SPF Record on your DNS Server&lt;/b&gt;&lt;/u&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Refer to the discussion about SPF, DKIM, DMARC in the following 
-       &lt;a href="http://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html"&gt;blog entry&lt;/a&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;span style=""&gt;&lt;span style=" font-size: 14px;"&gt;v=spf1 include:&lt;a href="http://_spf.google.com"&gt;_spf.google.com&lt;/a&gt; ~all&lt;/span&gt;&lt;/span&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;b&gt;5. Add an Email Alias for the User on the Google Admin Console&lt;/b&gt;&lt;/u&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Make sure to add an email alias to your user in the google admin 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/72a2130bfe765dbf5973630a268d79ff.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;br&gt;&lt;/u&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;u&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/u&gt; 
       &lt;/div&gt; 
       &lt;div&gt; 
        &lt;br&gt; 

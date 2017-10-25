@@ -205,6 +205,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html</loc>
+    <lastmod>2017-10-25</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</loc>
     <lastmod>2017-10-12</lastmod>
     <priority>0.7</priority>
@@ -802,6 +808,12 @@
     <loc>https://dev.cloudburo.net/2017/10.html</loc>
     <lastmod>2017-10-12</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2017/10/25.html</loc>
+    <lastmod>2017-10-12</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
