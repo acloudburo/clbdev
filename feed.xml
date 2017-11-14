@@ -5,16 +5,110 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2017-10-25T17:28:37Z</updated>
+  <updated>2017-11-14T09:10:46Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Introduction to Blockstack</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html"/>
+    <id>https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html</id>
+    <published>2017-11-14T09:10:46Z</published>
+    <updated>2017-11-14T09:10:47+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        One of the most interesting blockchain based solution in my opinion is Blockstack. Blockstack is a new internet for decentralized apps.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A very good and easy to read overview is given in their
+       &lt;a href="https://blockstack.com/blockstack_overview.pdf"&gt;Blockstack Overview&lt;/a&gt; document.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Blockstack aims to accelerate and facilitate the next way of computing, which going to be a shift away from computin towards decentralized computing.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        When you download Blockstack it will install everything they need to gain access to the new internet of decentralized apps.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A user will create an account and a keychain is created on its user device. This keychain lets them sign and encrypt their files locally before it is sync and backed up to the cloud, enabling true data ownership. So in this context Blockstack is acting as intermediate to a zero knowledge cloud store.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As user you then create and verify a BlockstackID, you truly own (and stored in Blockstack blockchain). There is a strong protection against account hijacking and impersonation.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Below you see my global BlockstackId “felixk.id”. Blockstack verified for the below 4 social accounts that I’m the owner of it.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/f4bbd66ddbf3b06b66adc00fd0cb2a75.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+        At the foundation of the Blockstack platform is the Blockstack blockchain and t’a Peer 2 Peer network, which is building the secure backbone of the solution.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/be6c08d99e9baa2ff12ac5a8fdfd912c.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; $
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The Blockchain Name System (BNS) is a replacement for DNS and is meant to provide similar functionality without any central root servers. In BNS, names are owned by cryptographic key pairs. I.e. felixk.id is a named owned by my cryptograhpic key pair, stored in locally on my device as a Blockstack key chain.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So head over to the introduction paper, which points you to other useful documentation: 
+       &lt;a href="https://blockstack.com/blockstack_overview.pdf"&gt;Blockstack Overview&lt;/a&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Amazon wants to let strangers into your home</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html"/>
     <id>https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html</id>
     <published>2017-10-25T17:28:37Z</published>
-    <updated>2017-10-25T17:36:47+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -82,7 +176,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html</id>
     <published>2017-10-12T10:24:16Z</published>
-    <updated>2017-10-12T11:28:46+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -156,7 +250,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html</id>
     <published>2017-10-12T09:31:29Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -207,7 +301,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html"/>
     <id>https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html</id>
     <published>2017-10-08T16:26:49Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -253,7 +347,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html"/>
     <id>https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html</id>
     <published>2017-09-13T05:35:50Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -270,7 +364,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"/>
     <id>https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html</id>
     <published>2017-06-24T13:06:45Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -677,7 +771,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
     <published>2017-06-18T12:46:32Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -997,7 +1091,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
     <published>2017-06-18T11:50:25Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1126,7 +1220,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html"/>
     <id>https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html</id>
     <published>2017-04-14T15:10:46Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1241,7 +1335,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html"/>
     <id>https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html</id>
     <published>2017-04-07T15:13:15Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1302,7 +1396,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html"/>
     <id>https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html</id>
     <published>2017-03-28T05:25:38Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1352,7 +1446,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html"/>
     <id>https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html</id>
     <published>2017-03-27T05:38:50Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1384,7 +1478,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html"/>
     <id>https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html</id>
     <published>2017-03-13T21:34:47Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1459,7 +1553,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html"/>
     <id>https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html</id>
     <published>2017-01-30T06:55:41Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1541,7 +1635,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html"/>
     <id>https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html</id>
     <published>2017-01-11T22:31:09Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1584,7 +1678,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html"/>
     <id>https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html</id>
     <published>2016-12-06T06:34:22Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1690,7 +1784,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html"/>
     <id>https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html</id>
     <published>2016-12-05T06:18:54Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1753,7 +1847,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html"/>
     <id>https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html</id>
     <published>2016-12-01T22:20:29Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1932,7 +2026,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html"/>
     <id>https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html</id>
     <published>2016-11-30T22:56:42Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2000,7 +2094,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html"/>
     <id>https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html</id>
     <published>2016-11-29T21:48:26Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2085,7 +2179,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"/>
     <id>https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html</id>
     <published>2016-11-28T21:33:21Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2156,7 +2250,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html"/>
     <id>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</id>
     <published>2016-11-22T22:15:39Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2265,7 +2359,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html"/>
     <id>https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html</id>
     <published>2016-07-18T16:06:09Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2391,7 +2485,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html"/>
     <id>https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html</id>
     <published>2016-06-21T22:17:15Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2444,7 +2538,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
     <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
     <published>2016-06-09T21:14:47Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2545,7 +2639,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html"/>
     <id>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</id>
     <published>2016-05-23T17:03:55Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2664,7 +2758,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
     <id>https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html</id>
     <published>2016-05-13T23:04:33Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2747,7 +2841,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
     <id>https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
     <published>2016-05-12T21:14:14Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2991,7 +3085,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
     <id>https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
     <published>2016-04-24T13:06:12Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3141,7 +3235,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html"/>
     <id>https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html</id>
     <published>2016-04-21T22:49:36Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3207,7 +3301,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
     <id>https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
     <published>2016-03-04T06:38:48Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3312,7 +3406,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
     <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
     <published>2015-12-20T17:48:53Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3595,7 +3689,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
     <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
     <published>2015-11-15T00:07:50Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3646,7 +3740,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html"/>
     <id>https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html</id>
     <published>2015-11-07T22:47:46Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3681,7 +3775,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html"/>
     <id>https://dev.cloudburo.net/2015/10/03/meteor-small-hints-1-execute-a-function-by-name-which-works-on-client-and-server.html</id>
     <published>2015-10-03T12:07:50Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3837,7 +3931,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html</id>
     <published>2015-10-01T19:26:35Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3950,7 +4044,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"/>
     <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html</id>
     <published>2015-10-01T08:42:00Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4053,7 +4147,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"/>
     <id>https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html</id>
     <published>2015-09-30T06:31:36Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4188,7 +4282,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/09/29/micro-business-quick-tips-3-rechtssicherheit-bei-der-eroffnung-eines-onlineshops.html"/>
     <id>https://dev.cloudburo.net/2015/09/29/micro-business-quick-tips-3-rechtssicherheit-bei-der-eroffnung-eines-onlineshops.html</id>
     <published>2015-09-29T10:32:56Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4277,7 +4371,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/09/03/micro-business-quick-tips-2-build-a-business-without-employees.html"/>
     <id>https://dev.cloudburo.net/2015/09/03/micro-business-quick-tips-2-build-a-business-without-employees.html</id>
     <published>2015-09-03T05:41:56Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4333,7 +4427,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html"/>
     <id>https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html</id>
     <published>2015-08-11T09:53:31Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4468,7 +4562,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html"/>
     <id>https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html</id>
     <published>2015-07-28T10:16:46Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4720,7 +4814,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html"/>
     <id>https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html</id>
     <published>2015-07-26T11:18:54Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4805,7 +4899,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html"/>
     <id>https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html</id>
     <published>2015-07-05T09:41:00Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4845,7 +4939,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/06/10/a-nice-introduction-to-microservices.html"/>
     <id>https://dev.cloudburo.net/2015/06/10/a-nice-introduction-to-microservices.html</id>
     <published>2015-06-10T08:53:32Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4867,7 +4961,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html"/>
     <id>https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</id>
     <published>2015-06-07T04:05:06Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4930,7 +5024,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html"/>
     <id>https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html</id>
     <published>2015-05-27T20:46:21Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4962,7 +5056,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html"/>
     <id>https://dev.cloudburo.net/2015/05/25/large-scale-cluster-management-at-google-with-borg.html</id>
     <published>2015-05-25T07:13:55Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5002,7 +5096,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html"/>
     <id>https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html</id>
     <published>2015-05-07T08:57:51Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5060,7 +5154,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html"/>
     <id>https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html</id>
     <published>2015-05-06T05:54:45Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
+    <updated>2017-11-12T17:51:00+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5068,275 +5162,6 @@
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;       At the Amazon Web Services AWS Summit London keynote, Werner Vogels shared nine patterns of cloud adoption that AWS have observed from its customer base over the past nine years of operation. Vogels suggested that the ease of operation, low cost and additional value-add business services provided by cloud vendors mean that organisations must embrace the cloud in order to stay competitive. Vogels, CTO of Amazon, began the keynote by stating that “cloud has become the new normal”, and cited an increasing number of companies that are developing for, or migrating to, cloud-based platforms.
     &lt;a href="http://www.infoq.com/news/2015/04/vogels-patterns-cloud-adoption?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Docker Small Hints #3: SSH into your AWS Elastic Beanstalk Component</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html"/>
-    <id>https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html</id>
-    <published>2015-04-25T12:25:42Z</published>
-    <updated>2017-10-12T09:47:06+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    Was quite a hassle in the past to setup SSH connectivity into your Elastic Beanstalk instance, luckly this got simplified. With the 
-   &lt;i&gt;eb&lt;/i&gt; Version 3 command tool you get all the necessary support.&lt;br&gt;
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    First install the&lt;br&gt;
-   &lt;i&gt;eb cli&lt;/i&gt; interface, as described here 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-getting-set-up.html"&gt;&lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-getting-set-up.html"&gt;http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-getting-set-up.html&lt;/a&gt;&lt;/a&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    Run 
-   &lt;i&gt; eb init&lt;/i&gt;, which will configure the eb command line to one of your running 
-   &lt;i&gt;eb&lt;/i&gt; instances. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-iMac:~ Felix$ eb init 
-  Select a default region
- 1) us-east-1 : US East (N. Virginia) 
-  2) us-west-1 : US West (N. California) 
-  ... 
-  (default is 3): 
-  Select an application to use 
-  1) curationApp
- 2) [ Create new Application ] 
-  (default is 2): 1 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-
-&lt;p&gt;&lt;div&gt;
-    Now configure your EB Environment to allow ssh inbound traffic, via&lt;br&gt;
-   &lt;i&gt;eb ssh —setup&lt;/i&gt; command. Be aware that will result in a re-creation of your EB environment. 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    Amongst others the command will create the public/private keypair as well which is put under the default name 
-   &lt;i&gt;aws-eb&lt;/i&gt; into your local&lt;br&gt;
-   &lt;i&gt;.ssh&lt;/i&gt; directory 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;div&gt; 
-    &lt;br&gt; 
-   &lt;/div&gt; 
-   &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-iMac:~ Felix$ eb ssh --setup
- WARNING: You are about to setup SSH for environment "curationApp-prod". If you continue, your existing instances will have to be **terminated** and new instances will be created. The environment will be temporarily unavailable. 
-  To confirm, type the environment name: curationApp-prod 
-  Type a keypair name.
- (Default is aws-eb):
- Generating public/private rsa key pair. 
-   ... 
-
-  Your identification has been saved in /Users/Felix/.ssh/aws-eb. 
-   ... 
-  WARNING: Uploaded SSH public key for "aws-eb" into EC2 for region us-west-2. 
-  INFO: Environment update is starting.                              
- INFO: Updating environment curationApp-prod's configuration settings.
- INFO: Created Auto Scaling launch configuration named: awseb-e-...-stack-AWSEBAutoScalingLaunchConfiguration-1D8ET9F9BZ592
- INFO: Deleted Auto Scaling launch configuration named: awseb-e-...-stack-AWSEBAutoScalingLaunchConfiguration-8JDT6IAKL1QQ 
-  INFO: Successfully deployed new configuration to environment.  
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt; 
-    &lt;br&gt; 
-   &lt;/div&gt; 
-
-&lt;p&gt;&lt;/div&gt; 
-  &lt;div&gt;
-    You are now ready to connect with the&lt;br&gt;
-   &lt;i&gt;eb ssh&lt;/i&gt; command. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-iMac: ~ Felix$ eb ssh 
-  INFO: Attempting to open port 22. 
-  INFO: SSH port 22 open. 
-         __|  __|_  )
-        _|  (     /   Amazon Linux AMI 
-        ___|\___|___| 
-  [ec2-user ~]$  
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt; 
-   &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-
-&lt;p&gt;&lt;div&gt;
-    Log files of your instances can be found in the 
-   &lt;span style=""&gt;/var/log&lt;/span&gt; directory.  The log file of your en-docker instance you will find in the following subdirectory. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-[ec2-user ~]$ cd  /var/log/eb-docker/containers/eb-current-app 
-  [ec2-user eb-current-app]$ ls -l  
-  insgesamt 136
- -rw-r--r-- 1 root root 67113425 14. Mai 06:34 894d84f26a6a-stdouterr.log 
-  drwxr-xr-x 2 root root     4096 14. Mai 06:01 rotated 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;span style="font-size: 18px;"&gt;&lt;b&gt;Looking at the details of the configuration triangle&lt;/b&gt;&lt;/span&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    Memorize the following picture, which shows you the major concepts of a EC2 setup.  AWS EC2 is the underlying Linux Container Infrastructure on top of which your EB managed Docker Applications will run. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;br&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;
-    You Docker Container will run within one EC2 instance, represented by the orange Instance box. For each EB Docker Instance there will be one EC2 Instance instantiated. 
-  &lt;/div&gt; 
-  &lt;div&gt; 
-   &lt;div&gt; 
-    &lt;br&gt; 
-   &lt;/div&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/820746984edb2ecb86de31973a2d854e.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The EC2 instance will have Security Groups to control the access. There is a Security Group for each  EB-Instance you are running, which by default allows inbound access from the http port. This security group is now extended to allow SSH inbound traffic. 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        In the dashboard you will see a  Security Group Name which contains the substring 
-       &lt;i&gt;AWSEBSecurityGroup (&lt;/i&gt;this value is also a tag value of the group for tag name&lt;br&gt;
-       &lt;i&gt;aws:cloudformation:logical-id&lt;/i&gt; (Tab Tags)) 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/74509d1957c1fcb41391de8fb8add8f9.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        This Security Group 
-       &lt;i&gt;&lt;em&gt;ASWEBSecurityGroup&lt;/em&gt;&lt;/i&gt; is the configured Security Group of your EC2 docker instance running the EB environment. You would find the link in the column security group when click on Instances (left hand menu) in the Dashboard 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/0e16630c0c6e65305ffbd4d961df9e45.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        As mentioned above a Key Pair was created with the default name 
-       &lt;i&gt;aws_eb&lt;/i&gt; (left hand menu Key Pairs). The eb setup command made sure that this key pair was downloaded to your local .ssh directory. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/a84b6851d2333a7ea9ff8cdd848ac43e.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        So now we have (1) a EC2 Instance configured with (2) a  Security Group for SSH inbound traffic and we have (3) a Public/Private key pair  which allows us to authenticate ourselves.&lt;br&gt;
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The missing combination of (2) Security Group with (3) Key Pair can be found in the Elastic Beanstalk Dashboard via the Server Configuration tab. You can see here the Security Group as well as the drop box EC2 key pair, which ties the relevant Key Pair to the configuration. That’s it. 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/58931d9f39e7ac379c3d099e40f2e74b.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
