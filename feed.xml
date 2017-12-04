@@ -5,10 +5,46 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2017-11-14T09:10:46Z</updated>
+  <updated>2017-12-04T19:05:49Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>All You Wanted To Know About Bitcoin</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html"/>
+    <id>https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html</id>
+    <published>2017-12-04T19:05:49Z</published>
+    <updated>2017-12-04T19:05:51+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        The team behind
+       &lt;a href="https://bitcoinplay.net/58-insane-facts-about-bitcoin/"&gt;Bitcoin Play&lt;/a&gt;, is looking at the last 10 years of bitcoin and produced a very nice and informative infographic “62 insane facts about bitcoin”. Will be interesting how the world will look after twenty years of bitcoin &amp;hellip;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a data-toggle='lightbox' href='/images/cceade2c56660a99b4abcb0830810552.png'/&gt;
+         &lt;img class='article  img-thumbnail' src='/images/tb-cceade2c56660a99b4abcb0830810552.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Introduction to Blockstack</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html"/>
@@ -5146,23 +5182,6 @@
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://www.copyblogger.com/protect-your-content/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Amazon CTO Werner Vogels Shares Nine Patterns of Cloud Adoption</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html"/>
-    <id>https://dev.cloudburo.net/2015/05/06/amazon-cto-werner-vogels-shares-nine-patterns-of-cloud-adoption.html</id>
-    <published>2015-05-06T05:54:45Z</published>
-    <updated>2017-11-12T17:51:00+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;       At the Amazon Web Services AWS Summit London keynote, Werner Vogels shared nine patterns of cloud adoption that AWS have observed from its customer base over the past nine years of operation. Vogels suggested that the ease of operation, low cost and additional value-add business services provided by cloud vendors mean that organisations must embrace the cloud in order to stay competitive. Vogels, CTO of Amazon, began the keynote by stating that “cloud has become the new normal”, and cited an increasing number of companies that are developing for, or migrating to, cloud-based platforms.
-    &lt;a href="http://www.infoq.com/news/2015/04/vogels-patterns-cloud-adoption?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
