@@ -145,6 +145,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2017/12/05/nun-ist-es-raus-hunde-sind-kluger-als-katzen.html</loc>
+    <lastmod>2017-12-05</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html</loc>
     <lastmod>2017-11-12</lastmod>
     <priority>0.7</priority>
@@ -820,6 +826,12 @@
     <loc>https://dev.cloudburo.net/2017/12.html</loc>
     <lastmod>2017-11-12</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2017/12/05.html</loc>
+    <lastmod>2017-11-12</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
