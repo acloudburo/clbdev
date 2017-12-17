@@ -421,6 +421,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2017/12/17/by-2030-provide-legal-identity-for-all-including-birth-registration.html</loc>
+    <lastmod>2017-12-17</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html</loc>
     <lastmod>2017-11-12</lastmod>
     <priority>0.7</priority>
@@ -805,6 +811,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/identity.html</loc>
+    <lastmod>2017-11-12</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/modeling.html</loc>
     <lastmod>2017-11-12</lastmod>
     <priority>0.9</priority>
@@ -820,6 +832,12 @@
     <loc>https://dev.cloudburo.net/2017/12.html</loc>
     <lastmod>2017-11-12</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2017/12/17.html</loc>
+    <lastmod>2017-11-12</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
