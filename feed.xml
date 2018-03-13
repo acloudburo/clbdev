@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html"/>
     <id>https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html</id>
     <published>2018-03-13T18:27:05Z</published>
-    <updated>2018-03-13T18:33:30+00:00</updated>
+    <updated>2018-03-13T19:27:23+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -24,7 +24,7 @@
     
     &lt;p&gt;&lt;div&gt;
         The
-       &lt;a href="http://d0.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf"&gt;AWS Well-Architected Framework Document&lt;/a&gt; (November 2017) has an updated section about “On Architecture”, which describes their federated architecture team setup approach in their large scale enterprise.
+       &lt;a href="http://d0.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf"&gt;AWS Well-Architected Framework Document&lt;/a&gt; (November 2017) has an updated section about “On Architecture”, which describes the federated architecture team setup approach in their large scale enterprise.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
