@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html"/>
     <id>https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html</id>
     <published>2018-03-13T18:27:05Z</published>
-    <updated>2018-03-13T18:27:06+00:00</updated>
+    <updated>2018-03-13T18:33:30+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -31,45 +31,62 @@
       &lt;/div&gt;
       &lt;div&gt;
         &amp;ldquo;
-       &lt;i&gt;In Amazon, we &lt;b&gt;prefer to distribute capabilities into teams&lt;/b&gt; rather than having a centralized team with that capability. There are risks when you choose to distribute decision making authority, for example, ensuring that teams are meeting internal standards. &lt;/i&gt;
+       &lt;span style="font-style: italic;"&gt;In Amazon, we &lt;/span&gt;
+       &lt;span style="font-style: italic; font-weight: bold;"&gt;prefer to distribute capabilities into teams&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt; rather than having a centralized team with that capability. There are risks when you choose to distribute decision making authority, for example, ensuring that teams are meeting internal standards. &lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;i&gt;We mitigate these risks in two ways. &lt;/i&gt;
+       &lt;span style="font-style: italic;"&gt;We mitigate these risks in two ways. &lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;ul&gt;
-        &lt;li&gt;&lt;i&gt;First, we have practices1 that focus on enabling each team to have that capability, and we provide access to experts who ensure that teams raise the bar on the standards they need to meet. &lt;/i&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;i&gt;Second, we put in place mechanisms2 that carry out automated checks to ensure standards are being meet. &lt;br&gt;&lt;br&gt;&lt;/i&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;First, we have practices1 that focus on enabling each team to have that capability, and we provide access to experts who ensure that teams raise the bar on the standards they need to meet. &lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;Second, we put in place mechanisms2 that carry out automated checks to ensure standards are being meet. &lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;
        &lt;/ul&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;i&gt;This distributed approach is supported by the Amazon leadership principles, and establishes a culture across all roles that works back from the customer. &lt;/i&gt;&lt;/span&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14px;"&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;This distributed approach is supported by the Amazon leadership principles, and establishes a culture across all roles that works back from the customer. &lt;/span&gt;&lt;/span&gt;
+       &lt;/div&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/span&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;i&gt;Customer-obsessed teams build products in response to a customer need. &lt;b&gt;For architecture this means that we expect every team to have the capability to create architectures and to follow best practices&lt;/b&gt;. &lt;/i&gt;&lt;/span&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;Customer-obsessed teams build products in response to a customer need. &lt;/span&gt;&lt;span style=" font-size: 14px; font-style: italic; font-weight: bold;"&gt;For architecture this means that we expect every team to have the capability to create architectures and to follow best practices&lt;/span&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;. &lt;/span&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/span&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;i&gt;To help new teams gain these capabilities or existing teams to raise their bar, &lt;b&gt;we enable access to a virtual community of principal engineers who can review their designs and help them understand what AWS best practices are&lt;/b&gt;. &lt;/i&gt;&lt;/span&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;To help new teams gain these capabilities or existing teams to raise their bar, &lt;/span&gt;&lt;span style=" font-size: 14px; font-style: italic; font-weight: bold;"&gt;we enable access to a virtual community of principal engineers who can review their designs and help them understand what AWS best practices are&lt;/span&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;. &lt;/span&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/span&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;i&gt;The principal engineering community works to make best practices visible and accessible. One way they do this, for example, is through lunchtime talks that focus on applying best practices to real examples. These talks are recorded and can be used as part of onboarding materials for new team members&lt;/i&gt;.&amp;rdquo;&lt;/span&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14px;"&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;The principal engineering community works to make best practices visible and accessible. One way they do this, for example, is through lunchtime talks that focus on applying best practices to real examples. These talks are recorded and can be used as part of onboarding materials for new team members&lt;/span&gt;.&amp;rdquo;&lt;/span&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
+        Especially I like their “architecture&amp;quot; expectation to the delivery teams, which on the one side is an obligation but on the other side a real empowerment and expression of confidence to the team capabilities. 
+      &lt;/div&gt;
+      &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Especially I like expectation to their teams, which on the one side an obligation but on the other side a real empowerment and expression of confidence to their capabilities.
+        No central overhead but distributed team empowerment, which is lacking sometimes in other large organisations.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
