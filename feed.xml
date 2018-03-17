@@ -5,10 +5,49 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-03-13T18:27:05Z</updated>
+  <updated>2018-03-17T08:34:59Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>CNL - A Guiding Map To Cloud Technologies</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html"/>
+    <id>https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html</id>
+    <published>2018-03-17T08:34:59Z</published>
+    <updated>2018-03-17T08:35:06+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/828009c2fa310dc9d68b15e857ff4fe4.png'&gt;&lt;/p&gt;
+  
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;span style=""&gt;The &lt;a href="https://github.com/cncf/landscape" style="-en-paragraph:true;"&gt;Cloud Native Landscape&lt;/a&gt;  is intended as a map through the previously uncharted terrain of cloud native technologies. This attempts to categorize most of the projects and product offerings in the cloud native space. There are many routes to deploying a cloud native application, with CNCF Projects representing a particularly well-traveled path.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        It’s a crowded map, and it’s only the most well established offerings but allows a team to evaluate options and choose and offering that is a good fit to their needs.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Amazon's Architecture Team Setup</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html"/>
@@ -5224,38 +5263,6 @@
        &lt;br&gt; 
       &lt;/div&gt;&lt;/p&gt;
     
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Docker Small Hints #4: Cleaning up your local zombie docker images</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html"/>
-    <id>https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html</id>
-    <published>2015-05-27T20:46:21Z</published>
-    <updated>2018-01-06T08:56:18+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt; 
-   &lt;div&gt;
-     The following commands I found very useful to get rid of zombie docker objects/images, which are accumulated over testing time. If you don’t remove them from time to time,  it can happen that your local docker environment runs out of space. Or you get some weird FileSystem errors during your docker build. 
-   &lt;/div&gt; 
-   &lt;div&gt; 
-    &lt;br&gt; 
-   &lt;/div&gt; 
-  &lt;/div&gt; 
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight shell"&gt;&lt;code&gt;
-  docker ps -a -q | xargs -n 1 docker rm 
-   docker images -q --filter &lt;span class="s2"&gt;"dangling=true"&lt;/span&gt; | xargs docker rmi 
-  docker images 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt; 
-  &lt;/div&gt;&lt;/p&gt;
-
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>

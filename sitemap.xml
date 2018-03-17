@@ -397,6 +397,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html</loc>
+    <lastmod>2018-03-17</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.7</priority>
@@ -817,6 +823,18 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/platform.html</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/cloud.html</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/deutsch.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.9</priority>
@@ -838,6 +856,12 @@
     <loc>https://dev.cloudburo.net/2018/03.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2018/03/17.html</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -1550,6 +1574,12 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/page/8/</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/page/9/</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>
