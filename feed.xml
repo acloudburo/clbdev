@@ -5,10 +5,138 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-03-17T08:34:59Z</updated>
+  <updated>2018-03-17T15:29:03Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Thougths about an effective digital platform</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html"/>
+    <id>https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html</id>
+    <published>2018-03-17T15:29:03Z</published>
+    <updated>2018-03-17T15:29:03+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        On Martin Fowlers blog Evan Bottcher published an excellent article about digital platforms, called “
+       &lt;a href="https://martinfowler.com/articles/talk-about-platforms.html"&gt;What I Talk About When I Talk About Platforms&lt;/a&gt;”.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In his article, he provide insights out of different “going to the cloud” projects of big companies and their failure and success criterias. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As for example “The half arsed superficial private cloud”, which is a re-labelling existing virtualisation platforms for use by delivery teams in a very constrained way, with no real intent to reduce the amount of centralised control.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        It’s a consequence of 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;The BigCo infrastructure and operations group was not ready at that time to break down it’s own organisational silos, and shift significant responsibility (and therefore access) to delivery teams. And even if the intent was good, the sheer amount of effort required to incrementally build that API to the required richness was not viable.”&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A pattern which I’m confronted in my daily work as well, big enterprises are not ready to really shift control out of their infrastructure and operations towers.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        He introduces the concept of backlog coupling 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;quot;Digital teams are generally constrained in three main areas: slow-moving core transactional systems of record, access to high-quality data and analytics, and shared infrastructure and operations. &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;It’s a simple concept - if a large number of items in the backlog of a digital product team require a corresponding backlog item to be raised in another team, then productivity and responsiveness suffer enormously. Backlogs get chained across the organisation, each being prioritised according to a different system.&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;”&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Therefore
+       &lt;span style="font-style: italic;"&gt; &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;quot;The platform should provide a team with self-service access. Specifically it should allow for self-service provisioning, self-service configuration, and self-service management and operation of the platform capabilities and assets.&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;”&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So where to start:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;&lt;span style="font-size: 14px; font-style: italic;"&gt;Firstly you will probably already be on your journey to move away from ‘project’ as the primary mechanism for funding and staffing delivery of technology. Platform is a product, and needs a long-lived and stable product team tasked with both build and run.&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style="font-style: italic;"&gt;Secondly you must be willing to shift some or all of the run responsibility for applications into the application teams and away from centralised operations and support. &lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;i&gt;Thirdly you must be willing to trade off strict consistency of implementation against the freedom and responsibilities that you’re handing to the autonomous application teams.&lt;/i&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>CNL - A Guiding Map To Cloud Technologies</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html"/>
@@ -5199,69 +5327,6 @@
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://nginx.com/blog/introduction-to-microservices/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Docker Small Hints #2: Controlling Cloud Costs using Alarms in AWS</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html"/>
-    <id>https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</id>
-    <published>2015-06-07T04:05:06Z</published>
-    <updated>2018-01-06T08:56:18+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        In order not to wake up one morning with a high AWS Cloud bill, it’s advisable to set a BillingAlarm which will notify you when your environments are starting charging more than you expect. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        In the sample below I will get an Email when the Estimated Charges for 6 hours is passing 10 USD.&lt;br&gt;
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/757bd37198cd347fe51640ac3bec9e06.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        It will allow you to react in time in case some of your instances will go out of your expected bound.&lt;br&gt;
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>

@@ -313,6 +313,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html</loc>
+    <lastmod>2018-03-17</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.7</priority>
@@ -787,6 +793,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/platform.html</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/shift.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.9</priority>
@@ -818,12 +830,6 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/tags/javatutorial.html</loc>
-    <lastmod>2018-01-06</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/tags/platform.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
