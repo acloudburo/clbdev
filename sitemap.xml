@@ -523,6 +523,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html</loc>
+    <lastmod>2018-03-25</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.7</priority>
@@ -874,6 +880,12 @@
     <loc>https://dev.cloudburo.net/2018/03.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2018/03/25.html</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

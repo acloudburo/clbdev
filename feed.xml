@@ -5,10 +5,51 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-03-24T12:07:53Z</updated>
+  <updated>2018-03-25T14:20:37Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Circuit Breaker Pattern For Robust Microservices</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html"/>
+    <id>https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html</id>
+    <published>2018-03-25T14:20:37Z</published>
+    <updated>2018-03-25T14:20:38+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/accba0b69f352b4c9440f05891b015c5.jpeg'&gt;&lt;/p&gt;
+  
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        The Circuit Breaker Pattern is an important pattern which prevents to run out of critical resources leading to cascading failures accross multiple systems due to the inavailabilty of a remote supplier. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In his excellent book
+       &lt;a href="https://www.amazon.com/gp/product/0978739213?ie=UTF8&amp;amp;tag=martinfowlerc-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0978739213"&gt;Release It&lt;/a&gt; &lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; , Michael Nygard popularized the Circuit Breaker pattern to prevent this kind of catastrophic cascade.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Martin Fowler describes the pattern in the following blog article.
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="https://martinfowler.com/bliki/CircuitBreaker.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Martin Fowler's Microservices Architecture Definiton</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html"/>
@@ -5269,91 +5310,6 @@
       &lt;div&gt; 
        &lt;br&gt; 
       &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Launching a New Product? These 5 Tips Will Get You the Testimonials You Need</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html"/>
-    <id>https://dev.cloudburo.net/2015/07/26/launching-a-new-product-these-5-tips-will-get-you-the-testimonials-you-need.html</id>
-    <published>2015-07-26T11:18:54Z</published>
-    <updated>2018-01-06T08:56:18+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt; 
-       &lt;div&gt;
-         Demian Farnworth was publishing a very helpful article on the well known &amp;ldquo;copyblogger&amp;rdquo; site about the strategy how to get testimonials for your new product launch.&lt;br&gt;
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt;
-         The article starts with a very illustrative thought experiment about the importance of trust 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;i&gt;&amp;hellip; look at your birth certificate to confirm that you were indeed born on the day that your parents said you were born?&lt;/i&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;i&gt;For most people, the answer is never. You simply took your parents’ word. Because you trusted them.&lt;/i&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;i&gt;Your parents hopefully did a lot of things to help build that trust — like feed and clothe you, teach you lessons, play with you, and protect you. People who don’t have that experience, however, feel something entirely different: they question everything. They don’t inherently trust.&lt;/i&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;i&gt;&lt;br&gt;&lt;/i&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;i&gt;For most of us, though, if we read or hear something from someone we know, like, and trust, we accept it without question.&lt;/i&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;i&gt;As an entrepreneur, you need to think of your customer as a child who’s been burned one too many times. Who’s been hoodwinked, ridiculed, and neglected. Who’s defensive, reserved, and hard-nosed.&lt;/i&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-       &lt;div&gt;
-         The article moves on and introduces five simple methods to get hold of testimonials, which are seen as a prove of your claim about the usefullness of your new launched product: 
-       &lt;/div&gt; 
-       &lt;div&gt; 
-        &lt;br&gt; 
-       &lt;/div&gt; 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;Offer free trials&lt;/li&gt; 
-       &lt;li&gt;Create superb welcome experiences&lt;/li&gt; 
-       &lt;li&gt;Ask for volunteers&lt;/li&gt; 
-       &lt;li&gt;Build relationships with credible experts&lt;/li&gt; 
-       &lt;li&gt;Invite people to a beta version&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        You can find the full article here 
-      &lt;/div&gt; 
-      &lt;div style=""&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.copyblogger.com/get-testimonials/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
