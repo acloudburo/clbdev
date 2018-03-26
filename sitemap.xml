@@ -499,6 +499,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html</loc>
+    <lastmod>2018-03-26</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2014/10/19/the-big-shift.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.7</priority>
@@ -880,6 +886,12 @@
     <loc>https://dev.cloudburo.net/2018/03.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2018/03/26.html</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -1634,6 +1646,12 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/tags/architecture/page/2.html</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/architecture/page/3.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.7</priority>
     <changefreq>daily</changefreq>
