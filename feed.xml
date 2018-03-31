@@ -5,10 +5,100 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-03-26T04:13:17Z</updated>
+  <updated>2018-03-31T06:20:58Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>An Overview Of GDPR’s Consenting Law Impact On Marketers</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html"/>
+    <id>https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html</id>
+    <published>2018-03-31T06:20:58Z</published>
+    <updated>2018-03-31T06:20:58+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;div&gt;
+       &lt;/div&gt;GDPR’s Effect On Web Forms, Events, 3rd-Party Lead Gen, Channel Partners and Sales
+       &lt;div&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The article of David Crane, provides a good overview on the necessary actions a marketing department of a company has to take in order to be compliant with the European GDPR law.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        It covers topics like
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;Web Forms&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;Events&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;3rd-Party Lead Gen&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;Channel Partners, as well as&lt;br&gt;&lt;/li&gt;
+        &lt;li&gt;Sales&lt;br&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        GDPR is constructed around 6 lawful bases for processing data, the two that matter most to marketers are consent and legitimate interest. For marketers obtaining consent should be the primary legal basis to use personal data.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        GDPR should be seen as an opportunity than a threat as David states:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;span style=""&gt;There’s no doubt that &lt;/span&gt;&lt;a href="https://www.integrate.com/blog/eu-gdpr-y2k-b2b-marketing" style="-en-paragraph:true;"&gt;GDPR can threaten organizations&lt;/a&gt;&lt;span style=""&gt; that aren’t prepared for it. A lack of compliance may result in penalties that could cripple your company.&lt;/span&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style=""&gt;&lt;i&gt;However, smart marketing teams are facing GDPR with a different vigor: Not simply to avoid the fallout of non-compliance with the new regulation, but to prepare their organizations for the inevitable transformation from old batch-and-blast practices to complete permission-based marketing.&lt;/i&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style=""&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style=""&gt;And be sure: This is not the end of data privacy regulations, other countries are waiting with new regulations in order to protect their citizen better.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;div&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+       &lt;/div&gt;
+       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+         You can read the full article here:
+       &lt;/div&gt;
+       &lt;div&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="http://customerthink.com/gdprs-effect-on-web-forms-events-3rd-party-lead-gen-channel-partners-and-sales/"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Sam Newman's Talk - From Macro To Micro</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html"/>
@@ -4961,141 +5051,6 @@
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://www.entrepreneur.com/article/249868"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Docker Small Hints #6: Using Cloudwatch in combination with Log Entries Management Solution</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html"/>
-    <id>https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html</id>
-    <published>2015-08-11T09:53:31Z</published>
-    <updated>2018-01-06T08:56:18+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        As explained in my last article &amp;ldquo; 
-       &lt;a href="https://dev.cloudburo.net/2015/07/28/docker-small-hints-5-using-cloudwatch-alarms-for-monitoring-aws-elastic-beanstal.html"&gt;Using Cloudwatch Alarms for monitoring AWS Elastic Beanstalk Docker Instances&lt;/a&gt;“ I set up a Cloudwatch Alarm to detect inactivity/potential hanging scenarios of my micro service. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        In this article I will drill down and give  you some ideas how to configure your 
-       &lt;a href="http://logentries.com/"&gt;logentries&lt;/a&gt; engine. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        As one can see in the following example the Cloudwatch Alarm was sending out an Alarm at 11:20 about inactivity of the microservice, which was released 5 minutes later again.&lt;br&gt;
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/0ddb572232295e371a5ff2b5145ac5e2.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        So it seems that this was a false alarm. For the root cause analysis I normally check first then my logentries management instance. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        One powerful feature of logentries is to define any kind of tag  for a text pattern in your log event stream. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        For my microservice I defined amongst others the following tags 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;„Gen“ which is attached to log events which contains the text „html.slim“. The microservice produces this log entry when a new article is added to the blog and the &lt;a href="https://middlemanapp.com/"&gt;middleman&lt;/a&gt; regeneration will take place&lt;/li&gt; 
-       &lt;li&gt;„Stats“ which is attached to log events which are providing processing time statistics for a blog checking and generation cycle. They contain the text „STAT.FullRoundtripTime“&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/281b875f295a1eef409c65d55fd2f5a0.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The screenshot below shows me immediately that there was an inactivity phase starting around 11:10 which was terminated around 11:20. The logentries management solution didn’t get any event from my micro-service and therefore the Cloudwatch kicked off. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        By selecting the „Stats“ filter I  can conclude that the roundtrip time for the blog dognews was around 15 minutes, which was the reason for the Cloudwatch alarm. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        If you look at the graph you can see that the inactivity period is happening after a &amp;ldquo;light blue“ log event, which is the color of the „Gen“ tagged log entries. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/e4bb9fa15be75b695c4f7ead6295c9c9.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Filtering now for the „Gen“ log events, shows me immdeiately the root cause, i.e. the middleman generation cycle when a new entry is added lasts for 15 minutes for the dedicated blog „dognews“. 
-      &lt;/div&gt; 
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/ac488945374cb1a8d2e31b213144a7e7.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Taken into consideration that the blog is the largest one currently managed by the Cloudburo Curation Platform with over 300 articles the reason is clear: Middleman is regenerating the static website after each new article and this takes now considerable time (i.e. processing categories pages etc.). It also means I have to exploit possibilities to parallelize this processing area before going live. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        This concludes the article which  gives you some hints how to use the logentries management solution in combination with tags in order to get a quick overview about the state of your microservice. Carefully tagging your logentries allows you to get an overview of the health and status of your application in a very short period of time. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        This blog is managed fully out of Evernote by using the Cloudburo Curation Platform. Interested - head over to &lt;a href="https://cloudburo.net/docs/products.html"&gt;https://cloudburo.net/docs/products.html&lt;/a&gt;. 
-      &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
