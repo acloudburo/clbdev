@@ -14,14 +14,16 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html"/>
     <id>https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html</id>
     <published>2018-04-23T11:07:31Z</published>
-    <updated>2018-04-23T16:16:05+00:00</updated>
+    <updated>2018-04-23T17:43:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;      If you want to try it out by yourselve, head over to the “Google Talk To Books” Website&lt;br/&gt;
+    &lt;p&gt;&lt;span/&gt;      A very interesting article how Google is exploiting new machine learning strategies.&lt;br/&gt;
+    They recently used machine learning to train an application to answer questions in a very unique way. It scans hundreds of thousands of books and identifies sentences which seem to offer the best response. And it does this by analyzing what it sees as the meaning of the question rather than just matching up keywords. It’s Google’s way of showcasing improved ways of processing natural-language queries.&lt;br/&gt;
     &lt;br/&gt;
+    The full article can be found here.&lt;br/&gt;
     &lt;a href="https://thenewstack.io/test-run-googles-machine-learning-based-talk-to-books-service/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
