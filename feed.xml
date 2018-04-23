@@ -5,10 +5,31 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-03-31T06:20:58Z</updated>
+  <updated>2018-04-23T11:07:31Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Test Run: Google’s Machine Learning-Based ‘Talk to Books’ Service</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html"/>
+    <id>https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html</id>
+    <published>2018-04-23T11:07:31Z</published>
+    <updated>2018-04-23T11:07:32+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;      A very interesting article how Google is exploiting new machine learning strategies.&lt;br/&gt;
+    &lt;br/&gt;
+    They recently used machine learning to train an application to answer questions in a very unique way. It scans hundreds of thousands of books and identifies sentences which seem to offer the best response. And it does this by analyzing what it sees as the meaning of the question rather than just matching up keywords. It’s Google’s way of showcasing improved ways of processing natural-language queries.&lt;br/&gt;
+    &lt;br/&gt;
+    The article can be found here.&lt;br/&gt;
+    &lt;a href="https://thenewstack.io/test-run-googles-machine-learning-based-talk-to-books-service/"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>An Overview Of GDPR’s Consenting Law Impact On Marketers</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html"/>
@@ -4992,62 +5013,6 @@
       &lt;div&gt; 
        &lt;br&gt; 
       &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Micro Business Quick Tips #2: Build a Business Without Employees</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/09/03/micro-business-quick-tips-2-build-a-business-without-employees.html"/>
-    <id>https://dev.cloudburo.net/2015/09/03/micro-business-quick-tips-2-build-a-business-without-employees.html</id>
-    <published>2015-09-03T05:41:56Z</published>
-    <updated>2018-01-06T08:56:18+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        A helpful article by 
-       &lt;a href="http://www.entrepreneur.com/article/249868"&gt;enterpreneur.com&lt;/a&gt; which outlines some basics of How to build a Seven-Figure Business Without Employees. As the article states 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;i&gt;The good news is that my lack of interest in such pursuits (… being famous and glamorous …)  hasn&amp;rsquo;t been a hindrance in building a seven figure-business, in a rather short period of time, with a single co-founder and no employees &amp;ndash; which can be operated from anywhere in the world with an Internet connection. As a matter of fact, I’m typing this at a cafe in Copenhagen, Denmark, and will be meandering through Europe for at least the next five weeks &amp;ndash; yet sales will continue to grow and the business won&amp;rsquo;t miss a step. I&amp;rsquo;m not bragging, just validating.&lt;/i&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The replicable model comes with three simple key points 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;ul&gt; 
-       &lt;li&gt;Start Simple: As for example &amp;ldquo;&lt;i&gt;you should avoid, at least at the beginning, from overcomplicating your sales pipeline with wholesale or retail scenarios and instead focus on taking your product direct to the consumer.&lt;/i&gt;&amp;rdquo;&lt;/li&gt; 
-       &lt;li&gt;Automate Early: Front to back from sales channel up to the inbound-support requests.&lt;/li&gt; 
-       &lt;li&gt;Leverage Outsourcing: Here the statement is quite bold &lt;i&gt;&amp;ldquo;I’ve even written a few, but here we’re focusing on building a business that doesn’t require employees &amp;ndash; so we’re going to outsource it all.&amp;rdquo;&lt;/i&gt;&lt;/li&gt; 
-      &lt;/ul&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        Three points which we consider at Cloudburo.com as well when building up our first subscription based product centered around content marketing. 
-      &lt;/div&gt; 
-      &lt;div&gt; 
-       &lt;br&gt; 
-      &lt;/div&gt; 
-      &lt;div&gt;
-        The 
-       &lt;a href="https://cloudburo.net/docs/products.html"&gt;Cloudburo Curation Platform&lt;/a&gt; will help you to establish your content online presence via a highly optimized and easy workflow to support you in establishing a web presence of the various content types. 
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.entrepreneur.com/article/249868"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
