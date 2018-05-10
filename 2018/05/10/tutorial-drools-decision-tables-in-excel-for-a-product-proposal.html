@@ -108,7 +108,8 @@
                 <p><span/></p>
                 
                 <p><div>
-                   <b>Tutorial Source Repository: <a href="https://github.com/talfco/tutorial-drools-decisiontable"><a href="https://github.com/talfco/tutorial-drools-decisiontable">https://github.com/talfco/tutorial-drools-decisiontable</a></a></b>
+                   <span style="font-weight: bold;">Tutorial Source Repository: </span>
+                   <a href="https://github.com/talfco/tutorial-drools-decisiontable" style="font-weight: bold;"><a href="https://github.com/talfco/tutorial-drools-decisiontable">https://github.com/talfco/tutorial-drools-decisiontable</a></a>
                   </div>
                   <div>
                    <br>
@@ -119,7 +120,7 @@
                   <ul>
                    <li>
                     <div>
-                      Defining a Product Sales Decision Table for a customer, covering a product proposal, which is
+                      Defining a Product Sales Decision Table for a customer in Excel, covering a product proposal, which is
                     </div></li>
                    <ul>
                     <li>
@@ -155,7 +156,7 @@
                   <ul>
                    <li>
                     <div>
-                      This sounds quite huge and complex, but the current design and architecture of of Drools, allows a very lightweight and simple integration of the BRMS in jtava applications, which require a flexible, “easy to manage” approach of Business Rules by using spreadsheet(s).
+                      This sounds quite huge and complex, but the current design and architecture of of Drools, allows a very lightweight and simple integration of the BRMS in Java applications, which require a flexible, “easy to manage” approach of Business Rules by using spreadsheet(s).
                     </div></li>
                   </ul>
                   <div>
@@ -186,7 +187,7 @@
                     </div></li>
                    <li>
                     <div>
-                      ¨the Action Object(s), which is required in order to store the results of the calculated decision
+                      the Action Object(s), which is required in order to store the results of the calculated decision
                     </div></li>
                   </ul>
                   <div>
@@ -526,13 +527,13 @@
                    <br>
                   </div>
                   <div>
-                    Our tutorial covered some proposal rules mainly for the life stage Career Focused. In a real life example we would have rules for each life stage and multiple rules for any product combination. As already explained above, drools is comfortable to consumer mutliple tables and spreadsheets which allows to decompose the offering for example along functional boundaries in order to manage the complexity within a single Excel table.
+                    Our tutorial covered some proposal rules mainly for the life stage Career Focused. In a real life example we would have rules for each life stage and multiple rules for any product combination. As already explained above, drools is comfortable to consumer multiple tables and spreadsheets which allows to decompose the offering for example along functional boundaries in order to manage the complexity within a single Excel table.
                   </div>
                   <div>
                    <br>
                   </div>
                   <div>
-                   <span style="font-weight: bold; font-size: 18px;">Instantiating a Rule Engine </span>
+                   <span style="font-size: 18px; font-weight: bold;">Instantiating a Rule Engine </span>
                   </div>
                   <div>
                    <br>
@@ -540,7 +541,7 @@
                   <div>
                    <span style="font-size: 14px;">Instantiating a Rule Engine is quite straightforward and can be achieved by establishing a </span>
                    <span style="font-size: 14px;">KieSession </span>
-                   <span style="font-size: 14px;">an passing the Decision Table Excel.</span>
+                   <span style="font-size: 14px;"><span style="font-size: 14px;">an passing the Decision Table Excel.</span></span>
                   </div>
                   <div></p>
                 
@@ -548,16 +549,16 @@
                 
               </div>
               <div class="article">
-                <p><span/>        </div>
-                  <div>
-                   <b>Testing the Rules</b>
+                <p><span/>         <br>
                   </div>
                   <div>
-                   <b><br></b>
+                   <span style="font-size: 18px; font-weight: bold;">Testing the Rules</span>
                   </div>
                   <div>
-                   <b style="font-size: 14px;"></b>
-                   <span style="font-size: 14px;">In order to test our rules, we have build up a Customer object, which holds the answers to our questions from a dedicated customer<br></span>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;">In order to test our rules, we have build up a Customer object, which holds the answers to our questions from a dedicated customer</span>
                   </div>
                   <ul>
                    <li>
@@ -566,19 +567,23 @@
                     </div></li>
                    <li>
                     <div>
-                      The customer will be inserted into the KieSession into which we loaded beforehand our Excel (which is part of our jar file delivery)
+                      The customer will be inserted into the
+                     <span style="">KieSession</span> into which we loaded beforehand our Excel (which is part of our jar file delivery)
                     </div></li>
                    <li>
                     <div>
-                      We initialize our action object offer, which will be added as a global variable under the name offer to the KieSession (remember the variable definition in the Excel)
+                      We initialize our action object
+                     <span style="">offer</span>, which will be added as a global variable under the name
+                     <span style="">offer</span> to the KieSession (remember the variable definition in the Excel)
                     </div></li>
                    <li>
                     <div>
-                      It’s time to the calculate the offering by calling kSession.fireAllRules()
+                      It’s time to the calculate the offering by calling
+                     <span style=""> kSession.fireAllRules()</span>
                     </div></li>
                    <li>
                     <div>
-                      Having done that our offer Object will have the result of the calculation. In our example
+                     <span style="">Having done that our offer Object will have the result of the calculation. In our example</span>
                     </div></li>
                    <ul>
                     <li>
@@ -596,7 +601,8 @@
                 
               </div>
               <div class="article">
-                <p><span/>        </div>
+                <p><span/>         <br>
+                  </div>
                   <div>
                    <br>
                   </div>
@@ -612,30 +618,31 @@
                 
               </div>
               <div class="article">
-                <p><span/>        </div>
-                  <div>
-                   <br>
+                <p><span/>         <br>
                   </div>
                   <div>
                    <br>
                   </div>
                   <div>
-                   <b>Outlook - Future Proof</b>
+                   <br>
                   </div>
                   <div>
-                   <b><br></b>
+                   <span style="font-size: 18px; font-weight: bold;">Outlook - Future Proof</span>
                   </div>
                   <div>
-                   <span style="font-size: 14px;">By building up a Product Proposal rule engine on top of Drools, will provide you </span>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;">By building up a Product Proposal rule engine on top of Drools, you will gain </span>
                   </div>
                   <ul>
                    <li>
                     <div>
-                      with an easy to manage and rule definition approach by just using Excel
+                      an easy to model and manage rule definition approach by just using Excel
                     </div></li>
                    <li>
                     <div>
-                      with the flexibility to load Excel either out of a JAR or any kind of other local or remote location 
+                      the flexibility to load Excel either out of a JAR or any kind of other local or remote location 
                     </div></li>
                    <li>
                     <div>
@@ -644,6 +651,11 @@
                   </ul>
                   <div>
                    <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 11px; font-style: italic;">This blog entry was fully produced within Evernote and published using the </span>
+                   <a href="https://publishingbot.cloudburo.net" style="font-size: 11px; font-style: italic;">Cloudburo Publishing Bot</a>
+                   <span style="font-size: 11px; font-style: italic;">.</span>
                   </div></p>
                 
               </div>
