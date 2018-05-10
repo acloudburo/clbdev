@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Tutorial: Drools Decision Tables in Excel for a Product Proposal</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js" type="text/javascript"></script><![endif]--><link href="../../../css/all.css" media="screen" rel="stylesheet" type="text/css" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a class="label label-default" href="/tags/ai.html">ai (2)</a>
+            <a class="label label-default" href="/tags/api.html">api (2)</a>
+            <a class="label label-default" href="/tags/architecture.html">architecture (25)</a>
+            <a class="label label-default" href="/tags/aws.html">aws (13)</a>
+            <a class="label label-default" href="/tags/banking.html">banking (5)</a>
+            <a class="label label-default" href="/tags/blockchain.html">blockchain (8)</a>
+            <a class="label label-default" href="/tags/bots.html">bots (2)</a>
+            <a class="label label-default" href="/tags/cloud.html">cloud (1)</a>
+            <a class="label label-default" href="/tags/datascience.html">datascience (2)</a>
+            <a class="label label-default" href="/tags/deutsch.html">deutsch (1)</a>
+            <a class="label label-default" href="/tags/docker.html">docker (9)</a>
+            <a class="label label-default" href="/tags/futurework.html">futureWork (5)</a>
+            <a class="label label-default" href="/tags/gdpr.html">gdpr (3)</a>
+            <a class="label label-default" href="/tags/googleapps.html">googleapps (1)</a>
+            <a class="label label-default" href="/tags/gradle.html">gradle (2)</a>
+            <a class="label label-default" href="/tags/identity.html">identity (1)</a>
+            <a class="label label-default" href="/tags/inspiration.html">inspiration (7)</a>
+            <a class="label label-default" href="/tags/javatutorial.html">javatutorial (3)</a>
+            <a class="label label-default" href="/tags/legal.html">legal (1)</a>
+            <a class="label label-default" href="/tags/marketing.html">marketing (1)</a>
+            <a class="label label-default" href="/tags/meteor.html">meteor (5)</a>
+            <a class="label label-default" href="/tags/microservice.html">microservice (18)</a>
+            <a class="label label-default" href="/tags/ml.html">ml (2)</a>
+            <a class="label label-default" href="/tags/modeling.html">modeling (1)</a>
+            <a class="label label-default" href="/tags/personaldata.html">personalData (4)</a>
+            <a class="label label-default" href="/tags/platform.html">platform (2)</a>
+            <a class="label label-default" href="/tags/quicktips.html">quicktips (14)</a>
+            <a class="label label-default" href="/tags/shift.html">shift (4)</a>
+            <a class="label label-default" href="/tags/smallhints.html">smallhints (13)</a>
+            <a class="label label-default" href="/tags/startup.html">startup (11)</a>
+            <a class="label label-default" href="/tags/tutorial.html">tutorial (1)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a class="label label-primary" href="/2018.html">2018 (10)</a>
+            <a class="label label-primary" href="/2017.html">2017 (18)</a>
+            <a class="label label-primary" href="/2016.html">2016 (16)</a>
+            <a class="label label-primary" href="/2015.html">2015 (35)</a>
+            <a class="label label-primary" href="/2014.html">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html">Tutorial: Drools Decision Tables in Excel for a Product Proposal</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  10.May 2018 | Tags <a class="label label-primary" href="/tags/tutorial.html">tutorial</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                   <b>Tutorial Source Repository: <a href="https://github.com/talfco/tutorial-drools-decisiontable"><a href="https://github.com/talfco/tutorial-drools-decisiontable">https://github.com/talfco/tutorial-drools-decisiontable</a></a></b>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The Tutorial covers the following points
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      Defining a Product Sales Decision Table for a customer, covering a product proposal, which is
+                    </div></li>
+                   <ul>
+                    <li>
+                     <div>
+                       dependent of its life stage, accumulated assets as well as expressed needs
+                     </div></li>
+                    <li>
+                     <div>
+                       as well as calculating a discount which can be offered him
+                     </div></li>
+                   </ul>
+                   <li>
+                    <div>
+                      We will use a Drools Global Variable to communicate back the proposed initial offering
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The official Drools site 
+                   <a href="http://www.drools.org/"><a href="http://www.drools.org/">http://www.drools.org/</a></a> provides the following definitions:
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;">Drools is a Business Rules Management System (BRMS) solution. It provides a core Business Rules Engine (BRE), a web authoring and rules management application (Drools Workbench) and an Eclipse IDE plugin for core development.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      This sounds quite huge and complex, but the current design and architecture of of Drools, allows a very lightweight and simple integration of the BRMS in jtava applications, which require a flexible, “easy to manage” approach of Business Rules by using spreadsheet(s).
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    This nifty feature is called “Drools Decision Tables in Excel&quot;
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Very briefly speaking, in Drools decision tables are a way to generate rules driven from the data entered into a spreadsheet. All the usual features of a spreadsheet for data capture and manipulation can be taken advantage of. Decision tables are a &ldquo;precise yet compact&rdquo; (ref. Wikipedia) way of representing conditional logic, and are well suited to business level rules.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Two kind of objects plays a role in context of the Drools BRMS:
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      the Condition Object(s), which defines the input objects required in a decision rule
+                    </div></li>
+                   <li>
+                    <div>
+                      ¨the Action Object(s), which is required in order to store the results of the calculated decision
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 18px; font-weight: bold;">Condition Object: Customer</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So let’s start with our example:
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    We want to model the decision rule of a product proposal for a financial services digital journey which takes into consideration the questions answered by the customer on our web page. It includes the following questions
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      two personal data questions about its current life stage, as well as its current financial assets 
+                    </div></li>
+                   <li>
+                    <div>
+                      a set of customer preferences in context of its financial needs
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The data collected we will store in our Customer class
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/be6a91805e80a8337a147dfbf97e874c.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    We define 3 enum’s in order to differentiate the customer’s question answers given 
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                     <span style="">CustomerNeed, CustomerLifeStage, CustomerAssets</span>
+                    </div></li>
+                  </ul>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/94537edf65869b0c908d415e42337f62.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 18px; font-weight: bold;">Action Object: Offer</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;">The Offer object will store the result of our product offering rule calculation.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;">In our example our offering will consist of a</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                     <span style="font-size: 14px;">Product Package offered by the financial service</span>
+                    </div></li>
+                   <li>
+                    <div>
+                      A list of individual Products
+                    </div></li>
+                   <li>
+                    <div>
+                      A discount of the overall price of the offering. We assume that the base price is not part of this calculation and provided as part of a Product Catalog service.
+                    </div></li>
+                  </ul>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/17eda1987704abff9a5dedf7ec824d2d.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    Also here we keep a enum for the Product Package, as well as the individual Product result.
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/92cae82864a3e38087047483b20acb52.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 18px; font-weight: bold;">Decision Table Excel</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Having defined the Input and Output Object, it’s time to define the our product offering rule in a Decision Table Excel. Drools Decision Table Excel functionality is very powerful, you can find the full documentation
+                   <a href="http://docs.jboss.org/drools/release/7.7.0.Final/drools-docs/html_single/#_decision_tables_in_spreadsheets">here</a>.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Consider decision tables as a course of action if rules exist that can be expressed as rule templates and data: each row of a decision table provides data that is combined with a template to generate a rule.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As each row is a rule, the same principles apply. As the rule engine processes the facts, any rules that match may fire. (Some people are confused by this. It is possible to clear the agenda when a rule fires and simulate a very simple decision table where only the first match effects an action.) Also note that you can have multiple tables on one spreadsheet. This way, rules can be grouped where they share common templates, yet at the end of the day they are all combined into one rule package. Decision tables are essentially a tool to generate DRL rules automatically. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So it’s a lightweight and easy to understand approach 
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      for a business analyst to model the rules on the ons side
+                    </div></li>
+                   <li>
+                    <div>
+                      as well as convenient way for a business user to verify and sign-off the rules<br>
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Having the possibility to distribute the rules in multiple tables or separate Excels, allows to handle governance and business ownership in an easy and straightforward way.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    In a normal case the Excel’s are delivered as part of the resource bundle of the JAR file. But you could think of more flexible strategies by loading the Excels during startup from a local or remote location in order not being dependent from code build delivery.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The below screenshot provides an overall overview of a Drools Decision Table Excel
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/0501330c9490c9e296591fb792bd32dc.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    So let’s look at the different part of the Excel.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-weight: bold;">Rule Set Part</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The Rule Set part consists amongst others (not all options used in the tutorial) of a
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      Import row, which imports the above defined decision and action classes.
+                    </div></li>
+                   <li>
+                    <div>
+                      Variables row, which defines global variables. In our example, we define the Offer class, which is used to store and transfer out the product proposal. As one can see in the later section, the offer variable, will be initialised by the caller and passed by reference to the rule execution.
+                    </div></li>
+                   <li>
+                    <div>
+                      Notes row, for a descriptive text.
+                    </div></li>
+                  </ul>
+                  <div></p>
+                
+                <p></div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/521100aad0ceadf77f096625669afd0e.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-weight: bold;">Rule Table Part - Rule Definition</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The screenshot below shows the Rule Definition Part. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/a03fe87ecdf7171a9e8e5c8237c2020e.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The Name and Condition Column, define left-hand side (LHS) of the decision rule.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      The blue cells, are defining the Code snippet and interpolated values for constructing a constraint within a pattern in a condition. 
+                    </div></li>
+                   <ul>
+                    <li>
+                     <div>
+                       I.e. the first column condition will pass in the life stage of a Customer to the 9 rules defined, the second column the assets of a Customer and so on 
+                     </div></li>
+                   </ul>
+                   <li>
+                    <div>
+                      Each row from 11-19 defines one specific rule. In our tutorial we define some rules 
+                    </div></li>
+                   <ul>
+                    <li>
+                     <div>
+                       for a customer of the life stage *Career Focused”, i.e. which Product Package should be chosen (11),
+                     </div></li>
+                    <li>
+                     <div>
+                       as well which discount should be taken into consideration in context with its accumulated asset (12-15)
+                     </div></li>
+                    <li>
+                     <div>
+                       furthermore we will propose additional individual products dependent on his expressed needs (16-19)
+                     </div></li>
+                   </ul>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/cd7a85515166393b21033c1c22251754.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The action we take for each row is defined in the ACTION columns
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/befbfa8bff469d4ab1cb82ffc8f61570.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      The first action column is used to identify optimal product package, so only relevant for the rule of line 11.
+                    </div></li>
+                   <li>
+                    <div>
+                      The second action column is used propose the single product and relevant for rule line 16-19
+                    </div></li>
+                   <li>
+                    <div>
+                      The third action column is used to calculate a discount and is relevant for rule line 12-15
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Our tutorial covered some proposal rules mainly for the life stage Career Focused. In a real life example we would have rules for each life stage and multiple rules for any product combination. As already explained above, drools is comfortable to consumer mutliple tables and spreadsheets which allows to decompose the offering for example along functional boundaries in order to manage the complexity within a single Excel table.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-weight: bold; font-size: 18px;">Instantiating a Rule Engine </span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;">Instantiating a Rule Engine is quite straightforward and can be achieved by establishing a </span>
+                   <span style="font-size: 14px;">KieSession </span>
+                   <span style="font-size: 14px;">an passing the Decision Table Excel.</span>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/62a59b95a38cd8db9b550e8258bd58b4.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>        </div>
+                  <div>
+                   <b>Testing the Rules</b>
+                  </div>
+                  <div>
+                   <b><br></b>
+                  </div>
+                  <div>
+                   <b style="font-size: 14px;"></b>
+                   <span style="font-size: 14px;">In order to test our rules, we have build up a Customer object, which holds the answers to our questions from a dedicated customer<br></span>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      In our example a customer in life stage CAREERFOCUSED with an asset of 150k-300k and a need for LifeInsurance, Saving Accounts and Mortage
+                    </div></li>
+                   <li>
+                    <div>
+                      The customer will be inserted into the KieSession into which we loaded beforehand our Excel (which is part of our jar file delivery)
+                    </div></li>
+                   <li>
+                    <div>
+                      We initialize our action object offer, which will be added as a global variable under the name offer to the KieSession (remember the variable definition in the Excel)
+                    </div></li>
+                   <li>
+                    <div>
+                      It’s time to the calculate the offering by calling kSession.fireAllRules()
+                    </div></li>
+                   <li>
+                    <div>
+                      Having done that our offer Object will have the result of the calculation. In our example
+                    </div></li>
+                   <ul>
+                    <li>
+                     <div>
+                       An offer for the product package CAREERFOCUSED_PACKAGE with a discount of 10%, as well as to additional single products.
+                     </div></li>
+                   </ul>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/b842c4fc36460b30625379b670293f3f.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>        </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The test output will also spill out the compiled decision rules (DSR) from the Excel. So the Excel is just another rule definition concept which will be converted into the powerful DSR drool language and feeded into their Production Rule System with its inference engine. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/597a4ee5a1d604c77072dd38fb2372f1.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>        </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <b>Outlook - Future Proof</b>
+                  </div>
+                  <div>
+                   <b><br></b>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;">By building up a Product Proposal rule engine on top of Drools, will provide you </span>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      with an easy to manage and rule definition approach by just using Excel
+                    </div></li>
+                   <li>
+                    <div>
+                      with the flexibility to load Excel either out of a JAR or any kind of other local or remote location 
+                    </div></li>
+                   <li>
+                    <div>
+                      a future proof approach in case the complexity of the rules will grow. I.e. Drools is a hybrid reasoning system which supports forward-reasoning as well as backward-reasoning programming styles and comes with a Business Rules Engine (BRE), a web authoring and rules management application (Drools Workbench) and an Eclipse IDE plugin for core development (should your rule appetite grow)
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a class="btn btn-twitter" href="https://twitter.com/talfco">
+                <i class="fa fa-twitter"></i></a><a class="btn btn-facebook" href="https://www.facebook.com/Cloudburonet-897759390318816/">
+                <i class="fa fa-facebook"></i></a><a class="btn btn-google-plus" href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts">
+                <i class="fa fa-google-plus"></i></a><a class="btn btn-linkedin" href="https://www.linkedin.com/in/felixk">
+                <i class="fa fa-linkedin"></i></a><a class="btn btn-github" href="https://github.com/talfco">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2018 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js" type="text/javascript"></script>
+  </body>
+</html>
