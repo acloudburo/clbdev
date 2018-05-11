@@ -703,6 +703,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html</loc>
+    <lastmod>2018-05-11</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.7</priority>
@@ -907,6 +913,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/ethereum.html</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2018.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>1.0</priority>
@@ -916,6 +928,12 @@
     <loc>https://dev.cloudburo.net/2018/05.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2018/05/11.html</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -1732,6 +1750,12 @@
     <loc>https://dev.cloudburo.net/tags/smallhints/page/2.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2018/page/2.html</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

@@ -5,10 +5,74 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-05-10T11:07:02Z</updated>
+  <updated>2018-05-11T07:10:04Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>ERC-725 Video Tutorial</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html"/>
+    <id>https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html</id>
+    <published>2018-05-11T07:10:04Z</published>
+    <updated>2018-05-11T07:10:05+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Origin, which are building a platform for decentralized peer-to-peer marketplaces, published recently
+       &lt;a href="https://medium.com/originprotocol/managing-identity-with-a-ui-for-erc-725-5c7422b38c09"&gt;an excellent tutorial&lt;/a&gt; and Youtube video about “Managing Identity with a UI for ERC 725”.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-725.md"&gt; ERC 725&lt;/a&gt; (and 735) — a proposed standard for managing identity on the blockchain from Fabian Vogelsteller. Fabian works on the Ethereum project and is well known in the community as the creator of the Mist browser and Web3.js.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The standard is about Identities, Claim Issuer and Claim Checker. In a nutshell the concept is described in this comment by Fabian. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/f73feb5ad7e5c6679d36074e439f8678.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        By the way I found it super useful to subscribe to the ERC-725 comment history on Github to understand how the standard is evolving during its draft phase. You got more or less a live picture of the incremental design process of  an ERC standard.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        But nothing beats a prototype GUI demo when it comes to an easy to follow tutorial of an ERC standard. So thanks to
+       &lt;a href="https://medium.com/@nick_p"&gt;Nick Poulden&lt;/a&gt; who assembled this learning video.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;div class="responsive-video"&gt;
+        &lt;iframe src="https://www.youtube.com/embed/jjUKWRK8H2g?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Tutorial: Drools Decision Tables in Excel for a Product Proposal</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html"/>
@@ -5354,141 +5418,6 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 12px;"&gt;&lt;i&gt;By the way, this blog is fully managed by the &lt;a href="https://cloudburo.net/docs/products.html"&gt;Cloudburo Curation Platform&lt;/a&gt; which helps you to establish your content online presence via a highly optimized and easy workflow driven out of Evernote’s One Workspace solution. Ideally suited for startups, small and medium enterprises (SME) in facilitating their  content marketing strategy.&lt;/i&gt;&lt;/span&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Micro Business Quick Tips #4: Visualizing your Business Model with Canvas</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"/>
-    <id>https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html</id>
-    <published>2015-09-30T06:31:36Z</published>
-    <updated>2018-01-06T08:56:18+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        This is the
-       &lt;b&gt;first article&lt;/b&gt; out of a series how to bootstrap your company to sell a first product.
-      &lt;/div&gt;
-      &lt;ol&gt;
-       &lt;li&gt;First  article introduces &amp;ldquo;&lt;a href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"&gt;Visualizing your Business Model with Canvas&lt;/a&gt;&amp;rdquo;&lt;/li&gt;
-       &lt;li&gt;Second article will cover &amp;ldquo;&lt;a href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"&gt;Using Product Canvas to create and define new Products&lt;/a&gt;&amp;rdquo;&lt;/li&gt;
-       &lt;li&gt;Third article introduces “&lt;a href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"&gt;The Business Model Canvas Playground for Free&lt;/a&gt;&amp;ldquo;&lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        For young startup founders having a bright idea it’s important that they understand and define the underlying Business Model which drives their Product or Service offering. A Business- or Operating model may be abstract or difficult to grasp in the beginning, especially for unexperienced entrepreneurs which are bootstrapping their first company.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Luckily the Swiss guy
-       &lt;a href="http://alexosterwalder.com/"&gt;Alex Osterwalder&lt;/a&gt; invented the
-       &lt;a href="http://businessmodelgeneration.com/canvas/bmc"&gt;Business Model Canvas&lt;/a&gt; approach which is easy to use strategic management and entrepreneurial tool. It condenses your business model visually onto one page and allows you to describe, design, challenge, invent and pivot your business model.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Assembling the startup team (get all the various disciplines together) around a visual business model diagram on a flip-board and interactively discuss and shape out the 9 basic building blocks of your business model is an excellent and agile way to get clarity about your initial company setup.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The following video gives a short two minute intro to the 9 building blocks of the Business Model Canvas approach. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        &lt;div class="responsive-video"&gt;&lt;iframe src="https://www.youtube.com/embed/QoAOzMTLP5s?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Well potentially still a little bit abstract, luckily there are some good examples which will map the canvas approach to some real life examples.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Strategyzer - the company co-founded by Alex Osterwalder - released a set of mini video tutorials (six in total), which describes the approach in an animated series „
-       &lt;a href="https://www.youtube.com/playlist?list=PLBh9h0LWoawphbpUvC1DofjagNqG1Qdf3"&gt;From Idea to Business&lt;/a&gt;“. It’s worth to spend around 15 minutes to get a better understanding of the approach.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Episode 2 of series „Visualizing Your Business Model“ is introducing the concept via the  company „Cheap Flights“ and explains the 9 ingredients of the approach:
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;Value Proposition&lt;/li&gt;
-       &lt;li&gt;Customer Segments&lt;/li&gt;
-       &lt;li&gt;Customer Relationships&lt;/li&gt;
-       &lt;li&gt;Channels&lt;/li&gt;
-       &lt;li&gt;Revenue Streams&lt;/li&gt;
-       &lt;li&gt;Key Activities&lt;/li&gt;
-       &lt;li&gt;Key Resources&lt;/li&gt;
-       &lt;li&gt;Key Partnerships&lt;/li&gt;
-       &lt;li&gt;Cost Structures&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        &lt;div class="responsive-video"&gt;&lt;iframe src="https://www.youtube.com/embed/wlKP-BaC0jA?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        There is always the danger to fall in love with your first „cool“ idea and not spend time in prototype multiple business model options. Episode 3 is introducing you to this concept.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        &lt;div class="responsive-video"&gt;&lt;iframe src="https://www.youtube.com/embed/iA5MVUNkSkM?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Needless to say that the approach is backed by a very
-       &lt;a href="http://businessmodelgeneration.com/book"&gt;nice „visual“ book&lt;/a&gt;, which is a source of inspirations for young entrepreneurs.
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-      &lt;div&gt;
-        Additional Links:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;Interested in a German introduction ? Head over to startwerk.de which gives you an &lt;a href="http://www.startplatz.de/startup-wiki/business-model-canvas/"&gt;introduction of the nine building blocks&lt;/a&gt; in German.&lt;/li&gt;
-       &lt;li&gt;Refer also to our &lt;a href="https://dev.cloudburo.net/2015/01/31/google-ventures-releases-new-diy-guide-to-help-startups.html"&gt;blog entry about the DYI Ventures&lt;/a&gt; approach from Google, which describes a five day sprint to establish an initial product.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 12px;"&gt;&lt;i&gt;By the way, this blog is fully managed by the  &lt;a href="https://cloudburo.net/docs/products.html"&gt;Cloudburo Curation Platform&lt;/a&gt; which helps you to establish your content online presence via a highly optimized and easy workflow driven out of Evernote’s One Workspace solution. Ideally suited for startups, small and medium enterprises (SME) in facilitating their  content marketing strategy. &lt;/i&gt;&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
