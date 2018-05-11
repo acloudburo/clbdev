@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html"/>
     <id>https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html</id>
     <published>2018-05-11T07:10:04Z</published>
-    <updated>2018-05-11T07:10:05+00:00</updated>
+    <updated>2018-05-11T08:30:05+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -68,6 +68,12 @@
        &lt;div class="responsive-video"&gt;
         &lt;iframe src="https://www.youtube.com/embed/jjUKWRK8H2g?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px;"&gt;&lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
