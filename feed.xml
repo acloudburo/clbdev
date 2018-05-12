@@ -5,10 +5,31 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-05-11T07:10:04Z</updated>
+  <updated>2018-05-12T09:46:48Z</updated>
   <author>
     <name>Felix K?stahler</name>
   </author>
+  <entry>
+    <title>Precision banking: The ‘segment of one’: Part 1</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/05/12/precision-banking-the-segment-of-one-part-1.html"/>
+    <id>https://dev.cloudburo.net/2018/05/12/precision-banking-the-segment-of-one-part-1.html</id>
+    <published>2018-05-12T09:46:48Z</published>
+    <updated>2018-05-12T09:46:49+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;      Edelman’s 2017 trust barometer&lt;br/&gt;
+    Edelman’s 2018 trust barometer&lt;br/&gt;
+    Segment of One&lt;br/&gt;
+    relevance-filled financial reality&lt;br/&gt;
+    friction-less&lt;br/&gt;
+    &lt;a href="https://www.thoughtworks.com/insights/blog/precision-banking-segment-one"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>ERC-725 Video Tutorial</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html"/>
@@ -5318,109 +5339,6 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 12px;"&gt;&lt;i&gt;By the way, this blog is fully managed by the &lt;a href="https://cloudburo.net/docs/products.html"&gt;Cloudburo Curation Platform&lt;/a&gt; which helps you to establish your content online presence via a highly optimized and easy workflow driven out of Evernote’s One Workspace solution. Ideally suited for startups, small and medium enterprises (SME) in facilitating their  content marketing strategy.&lt;/i&gt;&lt;/span&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Micro-Business Quick Tips #6 - The Business Model Canvas Playground for Free</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"/>
-    <id>https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html</id>
-    <published>2015-10-01T08:42:00Z</published>
-    <updated>2018-01-06T08:56:18+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        This is the
-       &lt;b&gt;third article&lt;/b&gt; out of a series how to bootstrap your company to sell a first product.
-      &lt;/div&gt;
-      &lt;ol&gt;
-       &lt;li&gt;First  article introduces &amp;ldquo;&lt;a href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"&gt;Visualizing your Business Model with Canvas&lt;/a&gt;&amp;rdquo;&lt;/li&gt;
-       &lt;li&gt;Second article will cover &amp;ldquo;&lt;a href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"&gt;Using Product Canvas to create and define new Products&lt;/a&gt;&amp;rdquo;&lt;/li&gt;
-       &lt;li&gt;Third article introduces “&lt;a href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-6-the-business-model-canvas-playground-for-free.html"&gt;The Business Model Canvas Playground for Free&lt;/a&gt;&amp;ldquo;&lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In the last two quick tips we introduced the
-       &lt;a href="https://dev.cloudburo.net/2015/09/30/micro-business-quick-tips-4-visualizing-your-business-model-with-canvas.html"&gt;Business Model&lt;/a&gt; and
-       &lt;a href="https://dev.cloudburo.net/2015/10/01/micro-business-quick-tips-5-using-product-canvas-to-create-and-define-new-produc.html"&gt;Product&lt;/a&gt; definition approach with the help of Canvas. Both approaches are relying on Canvas in order to visualize and explain the Business Model of your company, as well as to shape out a Product with a great user experience and the right features.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Both approaches are suited for a physical approach (by using a Flipboard and stickers), as well as an electric one, where you define the Canvas content on a computer.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        An amazing offering is available from
-       &lt;a href="http://bmfiddle.com/"&gt;bmfiddle.com&lt;/a&gt;, the so-called „Free Business Model Canvas Playground“. It’s a free and easy way to capture and develop your ideas.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        It’s a zero instal HTML5 minimalist web app which works everywhere, it provides sharing and collaboration features and many more.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        It supports various Canvas based modeling approaches, amongst others the two discussed one:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;Business Model Canvas from Alex Osterwalder&lt;/li&gt;
-       &lt;li&gt;Product Canvas from Roman Pichler&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        You can find a tool tour
-       &lt;a href="http://bmfiddle.com/tour.html"&gt;here&lt;/a&gt;, as well as Business Model Canvas Sample of Skype out of Alex Osterwalder book
-       &lt;a href="https://bmfiddle.com/f/#/yJSnj"&gt;here&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The tool is straightforward to use and it show the power of a well designed HTML 5 app. I used it to sketch out the my first product the
-       &lt;a href="https://curation.cloudburo.net/"&gt;Cloudburo Curation Platform&lt;/a&gt;. It took me less than half an hour to get the first draft assembled together (
-       &lt;a href="https://bmfiddle.com/f/#/dHQH2"&gt;&lt;a href="https://bmfiddle.com/f/#/dHQH2"&gt;https://bmfiddle.com/f/#/dHQH2&lt;/a&gt;&lt;/a&gt;).
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        A powerful tool which structures your ideas and thinking around bootstrapping a company or product.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/a62e0736ad004e73363319ede58e5944.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;&lt;span style="font-size: 12px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/i&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 12px;"&gt;&lt;i&gt;By the way, this blog is fully managed by the &lt;a href="https://cloudburo.net/docs/products.html"&gt;Cloudburo Curation Platform&lt;/a&gt; which helps you to establish your content online presence via a highly optimized and easy workflow driven out of Evernote’s One Workspace solution. Ideally suited for startups, small and medium enterprises (SME) in facilitating their  content marketing strategy.&lt;/i&gt;&lt;/span&gt;
