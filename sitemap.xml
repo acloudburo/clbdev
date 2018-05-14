@@ -463,6 +463,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2018/05/14/data-science-mindset.html</loc>
+    <lastmod>2018-05-14</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.7</priority>
@@ -650,7 +656,7 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html</loc>
-    <lastmod>2018-03-13</lastmod>
+    <lastmod>2018-05-14</lastmod>
     <priority>0.7</priority>
     <changefreq>daily</changefreq>
   </url>
@@ -919,6 +925,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/teambuilding.html</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/ethereum.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.9</priority>
@@ -934,6 +946,12 @@
     <loc>https://dev.cloudburo.net/2018/05.html</loc>
     <lastmod>2018-01-06</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2018/05/14.html</loc>
+    <lastmod>2018-01-06</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
