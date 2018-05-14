@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/14/data-science-mindset.html"/>
     <id>https://dev.cloudburo.net/2018/05/14/data-science-mindset.html</id>
     <published>2018-05-14T21:08:45Z</published>
-    <updated>2018-05-14T21:08:45+00:00</updated>
+    <updated>2018-05-14T21:12:57+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -30,7 +30,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        First of the summarized the practice of Data Science into four different strategic areas:
+        First of all he summarized the practice of Data Science in his word, by introducing four different strategic areas:
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -38,20 +38,20 @@
       &lt;ol&gt;
        &lt;li&gt;
         &lt;div&gt;
-         &lt;b&gt;Datasets&lt;/b&gt; typically covers data governance, strategic data sources and infrastructures.
+         &lt;span style="font-weight: bold;"&gt;Datasets&lt;/span&gt; typically covers data governance, strategic data sources and infrastructures.
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-         &lt;b&gt;Skillsets&lt;/b&gt; are about measuring analytics readiness, managing talent, spreading an evidence-based culture (e.g. creating a shared language), applying Data Science processes, and designing the organizational framework of Data Science teams.
+         &lt;span style="font-weight: bold;"&gt;Skillsets&lt;/span&gt; are about measuring analytics readiness, managing talent, spreading an evidence-based culture (e.g. creating a shared language), applying Data Science processes, and designing the organizational framework of Data Science teams.
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-         &lt;b&gt;Toolsets&lt;/b&gt; cover the selection of the proper Data Science tools and the application of the best practices throughout the organization.
+         &lt;span style="font-weight: bold;"&gt;Toolsets&lt;/span&gt; cover the selection of the proper Data Science tools and the application of the best practices throughout the organization.
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
           A
-         &lt;b&gt;Mindset&lt;/b&gt; that assembles the animating principles that support the ethos of a Data Science function to deliver value and innovate at the source of a digital transformation.
+         &lt;span style="font-weight: bold;"&gt;Mindset&lt;/span&gt; that assembles the animating principles that support the ethos of a Data Science function to deliver value and innovate at the source of a digital transformation.
         &lt;/div&gt;&lt;/li&gt;
       &lt;/ol&gt;
       &lt;div&gt;
@@ -64,10 +64,10 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;i&gt;&amp;ldquo;I believe the Mindset is the moving force that transforms the investments in Datasets, Skillsets and Toolsets into economic and cultural impact. Let me try to introduce why and how.”&lt;/i&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;I believe the Mindset is the moving force that transforms the investments in Datasets, Skillsets and Toolsets into economic and cultural impact. Let me try to introduce why and how.”&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
         In order to nuture the mindset for Innovation he formulated the following 5 value principles
@@ -78,23 +78,23 @@
       &lt;ul&gt;
        &lt;li&gt;
         &lt;div&gt;
-         &lt;b&gt;Culture&lt;/b&gt; over technology
+         &lt;span style="font-weight: bold;"&gt;Culture&lt;/span&gt; over technology
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-         &lt;b&gt;Polymathy&lt;/b&gt; over expertise
+         &lt;span style="font-weight: bold;"&gt;Polymathy&lt;/span&gt; over expertise
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-         &lt;b&gt;Ambidexterity&lt;/b&gt; over disruptiveness
+         &lt;span style="font-weight: bold;"&gt;Ambidexterity&lt;/span&gt; over disruptiveness
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-         &lt;b&gt;Stories&lt;/b&gt; over sprints
+         &lt;span style="font-weight: bold;"&gt;Stories&lt;/span&gt; over sprints
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-         &lt;b&gt;Ethics&lt;/b&gt; over profits
+         &lt;span style="font-weight: bold;"&gt;Ethics&lt;/span&gt; over profits
         &lt;/div&gt;&lt;/li&gt;
       &lt;/ul&gt;
       &lt;div&gt;
