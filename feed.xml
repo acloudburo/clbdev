@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/26/tutorial-react-application-with-a-python-json-backend-part-1.html"/>
     <id>https://dev.cloudburo.net/2018/05/26/tutorial-react-application-with-a-python-json-backend-part-1.html</id>
     <published>2018-05-26T23:16:16Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <updated>2018-05-31T11:24:33+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -27,7 +27,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        The first Part describes to get the Server Side ready.
+        The first part describes, how to get the Python Server Side ready.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -39,7 +39,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;b&gt;First install Flask&lt;/b&gt;
+       &lt;span style="font-size: 18px; font-weight: bold;"&gt;First install Flask&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -52,9 +52,11 @@
     &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/c541197fb151a27bd9e8e3b8b6a6a139.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+  &lt;/div&gt;
   &lt;div&gt;
-    Write a quick hello world program and store it in the file helloflask.py
+    Write a quick hello world program and store it in the file
+   &lt;span style=""&gt;helloflask.py&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -82,7 +84,8 @@
   &lt;/div&gt;
 
 &lt;p&gt;&lt;div&gt;
-    Run the programm  by python3 flaskhello.py  - which runs an flask app server on port 5000 - and open a browser on
+    Run the programm  by 
+   &lt;span style=""&gt;python3 flaskhello.py&lt;/span&gt;  - which runs an flask app server on port 5000 - and open a browser on
    &lt;a href="http://localhost:5000/"&gt;&lt;a href="http://localhost:5000/"&gt;http://localhost:5000/&lt;/a&gt;&lt;/a&gt; 
   &lt;/div&gt;
   &lt;div&gt;
@@ -94,9 +97,10 @@
 
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
       &lt;div&gt;
-       &lt;b&gt;Second install Flask API&lt;/b&gt;
+       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Second install Flask API&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -104,14 +108,14 @@
       &lt;div&gt;
         As a second step install the
        &lt;a href="http://www.flaskapi.org/"&gt;Flask-API&lt;/a&gt;, which is a drop-in replacement for Flask that provides an implementation of browsable APIs similar to what Django REST framework provides.
-       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/a0fb2859e6c1414bc4f2eb22bf884c1f.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+  &lt;/div&gt;
   &lt;div&gt;
     Write a hello world now for the Flask API and store it 
    &lt;span style=""&gt;flaskhello1.py&lt;/span&gt;
@@ -154,7 +158,14 @@
 
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A renderer for the response data will be selected using content negotiation based on the client &amp;lsquo;Accept&amp;rsquo; header. If you&amp;rsquo;re making the API request from a regular client, this will default to a JSON response. If you&amp;rsquo;re viewing the API in a browser it&amp;rsquo;ll default to the browsable API HTML.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
       &lt;div&gt;
         So now you have a Python App Server ready which can communicate via a REST API.
       &lt;/div&gt;
@@ -192,7 +203,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="color: rgb(153, 0, 115);"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
