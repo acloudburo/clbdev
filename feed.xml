@@ -5,7 +5,7 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-05-26T23:16:16Z</updated>
+  <updated>2018-05-26T23:16:16+00:00</updated>
   <author>
     <name>Felix</name>
   </author>
@@ -13,33 +13,33 @@
     <title>Tutorial: React Application with a Python JSON Backend (Part 1)</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/26/tutorial-react-application-with-a-python-json-backend-part-1.html"/>
     <id>https://dev.cloudburo.net/2018/05/26/tutorial-react-application-with-a-python-json-backend-part-1.html</id>
-    <published>2018-05-26T23:16:16Z</published>
-    <updated>2018-05-31T11:24:33+00:00</updated>
+    <published>2018-05-26T23:16:16+00:00</published>
+    <updated>2018-06-02T11:10:59+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-        This tutorial gives a short introduction about the necessary preparation steps to get a Python Application Server ready which can serve a React Frontend with a JSON interface.
+        This tutorial gives a short introduction about the necessary preparation steps to get a Python Application Server ready which can serve a React Frontend via a  JSON interface.&lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        The first part describes, how to get the Python Server Side ready.
+        The first part describes, how to get the Python Server Side ready. 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        We assume that you have pyhton3 and the pip (Python Package Management System) on your machine ready.
+        We assume that you have pyhton3 and the pip (Python Package Management System) on your machine ready. 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 18px; font-weight: bold;"&gt;First install Flask&lt;/span&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;First install Flask &lt;/span&gt;&lt;/font&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -56,7 +56,7 @@
   &lt;/div&gt;
   &lt;div&gt;
     Write a quick hello world program and store it in the file
-   &lt;span style=""&gt;helloflask.py&lt;/span&gt;
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;helloflask.py&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -85,7 +85,7 @@
 
 &lt;p&gt;&lt;div&gt;
     Run the programm  by 
-   &lt;span style=""&gt;python3 flaskhello.py&lt;/span&gt;  - which runs an flask app server on port 5000 - and open a browser on
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;python3 flaskhello.py&lt;/span&gt;  - which runs an flask app server on port 5000 - and open a browser on
    &lt;a href="http://localhost:5000/"&gt;&lt;a href="http://localhost:5000/"&gt;http://localhost:5000/&lt;/a&gt;&lt;/a&gt; 
   &lt;/div&gt;
   &lt;div&gt;
@@ -100,7 +100,7 @@
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Second install Flask API&lt;/span&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;Second install Flask API&lt;/span&gt;&lt;/font&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -118,7 +118,7 @@
   &lt;/div&gt;
   &lt;div&gt;
     Write a hello world now for the Flask API and store it 
-   &lt;span style=""&gt;flaskhello1.py&lt;/span&gt;
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;flaskhello1.py&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -146,7 +146,7 @@
   &lt;/div&gt;
   &lt;div&gt;
     Run the programm  by 
-   &lt;span style=""&gt;python3 flaskhello1.py&lt;/span&gt;  - which runs an flask app server on port 5000 - and open a browser on
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;python3 flaskhello1.py&lt;/span&gt;  - which runs an flask app server on port 5000 - and open a browser on
    &lt;a href="http://localhost:5000/"&gt;&lt;a href="http://localhost:5000/"&gt;http://localhost:5000/&lt;/a&gt;&lt;/a&gt; 
   &lt;/div&gt;
   &lt;div&gt;
@@ -213,8 +213,8 @@
     <title>Data Science Mindset</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/14/data-science-mindset.html"/>
     <id>https://dev.cloudburo.net/2018/05/14/data-science-mindset.html</id>
-    <published>2018-05-14T21:08:45Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-05-14T21:08:45+00:00</published>
+    <updated>2018-06-02T11:10:55+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -318,8 +318,8 @@
     <title>Precision banking: The ‘segment of one’:</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/12/precision-banking-the-segment-of-one.html"/>
     <id>https://dev.cloudburo.net/2018/05/12/precision-banking-the-segment-of-one.html</id>
-    <published>2018-05-12T09:46:48Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-05-12T09:46:48+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -338,8 +338,8 @@
     <title>ERC-725 Video Tutorial</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html"/>
     <id>https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html</id>
-    <published>2018-05-11T07:10:04Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-05-11T07:10:04+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -408,8 +408,8 @@
     <title>Tutorial: Drools Decision Tables in Excel for a Product Proposal</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html"/>
     <id>https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html</id>
-    <published>2018-05-10T11:07:02Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-05-10T11:07:02+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -975,8 +975,8 @@
     <title>Test Run: Google’s Machine Learning-Based ‘Talk to Books’ Service</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html"/>
     <id>https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html</id>
-    <published>2018-04-23T11:07:31Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-04-23T11:07:31+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -995,8 +995,8 @@
     <title>An Overview Of GDPR’s Consenting Law Impact On Marketers</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html"/>
     <id>https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html</id>
-    <published>2018-03-31T06:20:58Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-03-31T06:20:58+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1082,8 +1082,8 @@
     <title>Sam Newman's Talk - From Macro To Micro</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html"/>
     <id>https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html</id>
-    <published>2018-03-26T04:13:17Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-03-26T04:13:17+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1120,8 +1120,8 @@
     <title>Circuit Breaker Pattern For Robust Microservices</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html"/>
     <id>https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html</id>
-    <published>2018-03-25T14:20:37Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-03-25T14:20:37+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1161,8 +1161,8 @@
     <title>Martin Fowler's Microservices Architecture Definiton</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html"/>
     <id>https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html</id>
-    <published>2018-03-24T12:07:53Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-03-24T12:07:53+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1222,8 +1222,8 @@
     <title>Reactive Microservices for the Architect and CTO</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/22/reactive-microservices-for-the-architect-and-cto.html"/>
     <id>https://dev.cloudburo.net/2018/03/22/reactive-microservices-for-the-architect-and-cto.html</id>
-    <published>2018-03-22T22:05:23Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-03-22T22:05:23+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1250,8 +1250,8 @@
     <title>Thougths about an effective digital platform</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html"/>
     <id>https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html</id>
-    <published>2018-03-17T15:29:03Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-03-17T15:29:03+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1378,8 +1378,8 @@
     <title>CNL - A Guiding Map To Cloud Technologies</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html"/>
     <id>https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html</id>
-    <published>2018-03-17T08:34:59Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-03-17T08:34:59+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1417,8 +1417,8 @@
     <title>Amazon's Architecture Team Setup</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html"/>
     <id>https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html</id>
-    <published>2018-03-13T18:27:05Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2018-03-13T18:27:05+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1503,8 +1503,8 @@
     <title>By 2030, provide legal identity for all, including birth registration</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/12/17/by-2030-provide-legal-identity-for-all-including-birth-registration.html"/>
     <id>https://dev.cloudburo.net/2017/12/17/by-2030-provide-legal-identity-for-all-including-birth-registration.html</id>
-    <published>2017-12-17T20:19:52Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-12-17T20:19:52+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1574,8 +1574,8 @@
     <title>All You Wanted To Know About Bitcoin</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html"/>
     <id>https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html</id>
-    <published>2017-12-04T19:05:49Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-12-04T19:05:49+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1624,8 +1624,8 @@
     <title>Introduction to Blockstack</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html"/>
     <id>https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html</id>
-    <published>2017-11-14T09:10:46Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-11-14T09:10:46+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1719,8 +1719,8 @@
     <title>Amazon wants to let strangers into your home</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html"/>
     <id>https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html</id>
-    <published>2017-10-25T17:28:37Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-10-25T17:28:37+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1787,8 +1787,8 @@
     <title>Now anyone can explore machine learning, no coding required</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html</id>
-    <published>2017-10-12T10:24:16Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-10-12T10:24:16+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1861,8 +1861,8 @@
     <title>Google Cloud and GDPR</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html</id>
-    <published>2017-10-12T09:31:29Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-10-12T09:31:29+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1912,8 +1912,8 @@
     <title>Blockchain 101 - A Visual Demo</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html"/>
     <id>https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html</id>
-    <published>2017-10-08T16:26:49Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-10-08T16:26:49+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1958,8 +1958,8 @@
     <title>Event-Driven Architecture Is the Wave of the Future</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html"/>
     <id>https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html</id>
-    <published>2017-09-13T05:35:50Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-09-13T05:35:50+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1975,8 +1975,8 @@
     <title>Java for Beginners #2 - Maven Primer and Understanding API's</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"/>
     <id>https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html</id>
-    <published>2017-06-24T13:06:45Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-06-24T13:06:45+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2382,8 +2382,8 @@
     <title>Java for Beginners #1 - Prepare an IntelliJ Maven Project</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
-    <published>2017-06-18T12:46:32Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-06-18T12:46:32+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2702,8 +2702,8 @@
     <title>Java for Beginners - Table of Content and Resources</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
-    <published>2017-06-18T11:50:25Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-06-18T11:50:25+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2831,8 +2831,8 @@
     <title>Reflections On Bootstrapping A Digital Micro Company - Ready to Switch</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html"/>
     <id>https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html</id>
-    <published>2017-04-14T15:10:46Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-04-14T15:10:46+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2946,8 +2946,8 @@
     <title>Stripe Atlas - Get your startup registered within days</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html"/>
     <id>https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html</id>
-    <published>2017-04-07T15:13:15Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-04-07T15:13:15+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3007,8 +3007,8 @@
     <title>A Classification Algorithms Video Introduction for Beginners</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html"/>
     <id>https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html</id>
-    <published>2017-03-28T05:25:38Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-03-28T05:25:38+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3057,8 +3057,8 @@
     <title>An Easy To Understand Introduction to Classification Algorithms</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html"/>
     <id>https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html</id>
-    <published>2017-03-27T05:38:50Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-03-27T05:38:50+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3089,8 +3089,8 @@
     <title>Verifiable Data Audit an Innovative Way by DeepMind</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html"/>
     <id>https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html</id>
-    <published>2017-03-13T21:34:47Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-03-13T21:34:47+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3164,8 +3164,8 @@
     <title>Actions on Google - Engage User through the Google Assistant</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html"/>
     <id>https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html</id>
-    <published>2017-01-30T06:55:41Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-01-30T06:55:41+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3246,8 +3246,8 @@
     <title>Client Classification in Banking</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html"/>
     <id>https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html</id>
-    <published>2017-01-11T22:31:09Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2017-01-11T22:31:09+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3289,8 +3289,8 @@
     <title>Ireland Banking Crisis in the 1970 - It's all about trust</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html"/>
     <id>https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html</id>
-    <published>2016-12-06T06:34:22Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-12-06T06:34:22+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3395,8 +3395,8 @@
     <title>AWS re:Invent 2016 Keynote of Werner Vogels</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html"/>
     <id>https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html</id>
-    <published>2016-12-05T06:18:54Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-12-05T06:18:54+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3458,8 +3458,8 @@
     <title>The Human Being(s) and We (as a Bank) #1 - Relationship</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html"/>
     <id>https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html</id>
-    <published>2016-12-01T22:20:29Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-12-01T22:20:29+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3637,8 +3637,8 @@
     <title>Blockchain Smart Signatures Explained</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html"/>
     <id>https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html</id>
-    <published>2016-11-30T22:56:42Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-11-30T22:56:42+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3705,8 +3705,8 @@
     <title>The 5 pillars of the AWS Architecture Framework</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html"/>
     <id>https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html</id>
-    <published>2016-11-29T21:48:26Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-11-29T21:48:26+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3790,8 +3790,8 @@
     <title>The Twelve Factor App Methodology for Building SAAS</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"/>
     <id>https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html</id>
-    <published>2016-11-28T21:33:21Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-11-28T21:33:21+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3861,8 +3861,8 @@
     <title>Blockchain Governance System Introduction</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html"/>
     <id>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</id>
-    <published>2016-11-22T22:15:39Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-11-22T22:15:39+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3970,8 +3970,8 @@
     <title>Meteor Small Hints #5: Server Code Fragments executed twice on Startup</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html"/>
     <id>https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html</id>
-    <published>2016-07-18T16:06:09Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-07-18T16:06:09+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4096,8 +4096,8 @@
     <title>A Terminology Guide to DAOs, DACs, DAs and More</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html"/>
     <id>https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html</id>
-    <published>2016-06-21T22:17:15Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-06-21T22:17:15+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4149,8 +4149,8 @@
     <title>A categorisation of bots used for conversational commerce</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
     <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
-    <published>2016-06-09T21:14:47Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-06-09T21:14:47+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4250,8 +4250,8 @@
     <title>Meteor Small Hints #4: Reading this.params values in the iron-router Data Context</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html"/>
     <id>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</id>
-    <published>2016-05-23T17:03:55Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-05-23T17:03:55+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4369,8 +4369,8 @@
     <title>How We Built an Ecommerce Business from Scratch and Generated $922.16 in Revenue in 3 Days</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
     <id>https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html</id>
-    <published>2016-05-13T23:04:33Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-05-13T23:04:33+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4452,8 +4452,8 @@
     <title>The Anatomy of a EB based Microservice - Github Docker Integration</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
     <id>https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
-    <published>2016-05-12T21:14:14Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-05-12T21:14:14+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4696,8 +4696,8 @@
     <title>Meteor Small Hints #3: Passing Query Parameters to Signup Route</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
     <id>https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
-    <published>2016-04-24T13:06:12Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-04-24T13:06:12+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4846,8 +4846,8 @@
     <title>Meteor Small Hints #2: Calling local methods in a Template</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html"/>
     <id>https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html</id>
-    <published>2016-04-21T22:49:36Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-04-21T22:49:36+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4912,8 +4912,8 @@
     <title>Rodrigue Schaefer : From monolith to microservices at Zalando</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
     <id>https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
-    <published>2016-03-04T06:38:48Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2016-03-04T06:38:48+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5017,8 +5017,8 @@
     <title>The Anatomy of a EB based Microservice - AWS Security Configuration</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
     <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
-    <published>2015-12-20T17:48:53Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2015-12-20T17:48:53+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5300,8 +5300,8 @@
     <title>Problems with AWS CLI on Mac OSX El Capitan</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
     <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
-    <published>2015-11-15T00:07:50Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2015-11-15T00:07:50+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5351,8 +5351,8 @@
     <title>DMARC: How to monitor and secure your email</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html"/>
     <id>https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html</id>
-    <published>2015-11-07T22:47:46Z</published>
-    <updated>2018-05-31T10:59:03+00:00</updated>
+    <published>2015-11-07T22:47:46+00:00</published>
+    <updated>2018-06-02T10:46:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
