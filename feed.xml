@@ -5,16 +5,309 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-05-26T23:16:16+00:00</updated>
+  <updated>2018-06-03T12:26:22+00:00</updated>
   <author>
     <name>Felix</name>
   </author>
+  <entry>
+    <title>Quick Tips: Install  Letsencrypt  Certificate in the Java JDK Keystore on OSX</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/06/03/quick-tips-install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html"/>
+    <id>https://dev.cloudburo.net/2018/06/03/quick-tips-install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html</id>
+    <published>2018-06-03T12:26:22+00:00</published>
+    <updated>2018-06-03T12:26:26+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
+    The following article gives a short introduction, how to import a root certificate into the Java JDK keystore on a Mac OSX. The example is based on the import of the
+   &lt;a href="https://letsencrypt.org/certificates/"&gt;ISRG Root X1 certificate&lt;/a&gt;, which is a very new certificate and not broadly trusted yet. Actually they do a cross signing of their intermediate certificate with IdenTrust (which is already widely trusted) in order to relief this short-coming.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Anyway the import sequence may help you in case you want to install another certificate in a same way. 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Assumption is that we have SSLHandshake Exception due to the missing ISRG certificate. In my example a gradle build was failing due to missing certificate.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;
+  Could not resolve all dependencies &lt;span class="k"&gt;for &lt;/span&gt;configuration &lt;span class="s1"&gt;':compileClasspath'&lt;/span&gt;. 
+  &amp;gt; Could not resolve com.aspose:aspose-cells:17.9. 
+    Required by: 
+        project : &amp;gt; com.edorasware.one:edoras-one-starter:2.0.4 &amp;gt; com.edorasware.one:edoras-one-server-rest:2.0.4 &amp;gt; com.edorasware.one:edoras-one-server-core:2.0.4 
+     &amp;gt; Could not resolve com.aspose:aspose-cells:17.9. 
+        &amp;gt; Could not get resource &lt;span class="s1"&gt;' https://artifact.aspose.com/repo/com/aspose/aspose-cells/17.9/aspose-cells-17.9.pom'&lt;/span&gt;. 
+           &amp;gt; Could not GET &lt;span class="s1"&gt;' https://artifact.aspose.com/repo/com/aspose/aspose-cells/17.9/aspose-cells-17.9.pom'&lt;/span&gt;. 
+              &amp;gt; sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    The certificate of the
+   &lt;a href="http://aspose.com"&gt;&lt;a href="https://aspose.com"&gt;https://aspose.com&lt;/a&gt;&lt;/a&gt; repository is a Let’s Encrypt Authority X3, which is based on DST Root CA X3. You get the below window when you check the certificate of the site in the browser (Chrome screenshot)
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/983fa892a9ca8a1124351e1d82cffd92.png'&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So we have to load Let’s Encrypt the certificates into the Java keystore&lt;br&gt;
+       &lt;font face="Courier New"&gt;cacerts&lt;/font&gt; on our machine, to make the certificate path accessible.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The whole signing setup is describe here: 
+       &lt;a href="https://letsencrypt.org/certificates/"&gt;&lt;a href="https://letsencrypt.org/certificates/"&gt;https://letsencrypt.org/certificates/&lt;/a&gt;&lt;/a&gt; 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/776235a84f4a1c13ad3cf52b4df21ba3.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;b&gt;Step 1: Set-up JAVA_HOME and install wget&lt;/b&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    First of all it’s advisable to set up the
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;JAVA_HOME&lt;/span&gt; correctly on your Mac OSX machine, by using the
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;java_home&lt;/span&gt; executable (
+   &lt;a href="https://stackoverflow.com/questions/1348842/what-should-i-set-java-home-to-on-osx"&gt;Stackoverflow&lt;/a&gt;). Add the following to the .bash_profile 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;
+  &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;JAVA_HOME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;/usr/libexec/java_home&lt;span class="k"&gt;)&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    For running the import script we require
+   &lt;font face="Courier New"&gt;wget&lt;/font&gt;. Assuming you install OSX tools via
+   &lt;font style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;a href="https://brew.sh/"&gt;brew&lt;/a&gt; -&lt;/font&gt; the so-called missing package manager for the Mac - run the following command
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;
+  brew install wget 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+   &lt;b&gt;Step 2: Do some keystore checks&lt;/b&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    First of check if the ISRG certificate is already installed in your
+   &lt;font face="Courier New"&gt;keystore&lt;/font&gt;. The java JDK keystore can be found under the
+   &lt;font face="Courier New"&gt;JAVA_HOME&lt;/font&gt; directory in the following folder 
+   &lt;font face="Courier New"&gt;jre/lib/security/cacerts&lt;/font&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;
+  ~ felix&lt;span class="nv"&gt;$ &lt;/span&gt;keytool -v -list -keystore &lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/jre/lib/security/cacerts | grep ISRG 
+  Enter keystore password:  changeit 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+   &lt;font face="Courier New"&gt;changeit&lt;/font&gt; is the default password of the Java JDK installation. Nothing will be given back. As for example looking for existing certificate (i.e. the in this example the cross signing certificate of Digital Signature Trust Co.), will be shown.  By storing the full output in a file, provides you with an overview of all installed certificates in your Java JDK keystore.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+  ~ felix$ keytool -v -list -keystore $JAVA_HOME/jre/lib/security/cacerts | grep DST 
+  Enter keystore password:  changeit 
+  Issuer: CN=DST Root CA X3, O=Digital Signature Trust Co. 
+       [URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
+  Issuer: CN=DST Root CA X3, O=Digital Signature Trust Co. 
+       [URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
+  Issuer: CN=DST Root CA X3, O=Digital Signature Trust Co. 
+       [URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
+  Issuer: CN=DST Root CA X3, O=Digital Signature Trust Co. 
+       [URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    As we have seen, the certificate is missing, so let’s run the following script 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;b&gt;Step 3: Run the import script&lt;/b&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    The script will fetch from the
+   &lt;a href="http://letsencrypt.org"&gt;letsencrypt.org&lt;/a&gt; web site the certificate information via
+   &lt;font face="Courier New"&gt;wget&lt;/font&gt; and adds it to the
+   &lt;font face="Courier New"&gt;cacerts&lt;/font&gt; keystore via the
+   &lt;font face="Courier New"&gt;keytool&lt;/font&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;
+  &lt;span class="c"&gt;#!/bin/bash &lt;/span&gt;
+  &lt;span class="nb"&gt;set&lt;/span&gt; -e 
+
+
+  &lt;span class="nv"&gt;KEYSTORE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/jre/lib/security/cacerts 
+
+
+  wget https://letsencrypt.org/certs/letsencryptauthorityx1.der 
+  wget https://letsencrypt.org/certs/letsencryptauthorityx2.der 
+  wget https://letsencrypt.org/certs/letsencryptauthorityx3.der 
+  wget https://letsencrypt.org/certs/lets-encrypt-x1-cross-signed.der 
+  wget https://letsencrypt.org/certs/lets-encrypt-x2-cross-signed.der 
+  wget https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.der 
+  wget https://letsencrypt.org/certs/lets-encrypt-x4-cross-signed.der 
+
+
+  &lt;span class="c"&gt;# to be idempotent &lt;/span&gt;
+  keytool -delete -alias isrgrootx1 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
+  &lt;/span&gt;keytool -delete -alias isrgrootx2 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
+  &lt;/span&gt;keytool -delete -alias isrgrootx3 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
+  &lt;/span&gt;keytool -delete -alias letsencryptauthorityx1 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
+  &lt;/span&gt;keytool -delete -alias letsencryptauthorityx2 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
+  &lt;/span&gt;keytool -delete -alias letsencryptauthorityx3 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
+  &lt;/span&gt;keytool -delete -alias letsencryptauthorityx4 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
+
+
+  &lt;/span&gt;keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias isrgrootx1 -file letsencryptauthorityx1.der 
+  keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias isrgrootx2 -file letsencryptauthorityx2.der 
+  keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias isrgrootx3 -file letsencryptauthorityx3.der 
+  keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias letsencryptauthorityx1 -file lets-encrypt-x1-cross-signed.der 
+  keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias letsencryptauthorityx2 -file lets-encrypt-x2-cross-signed.der 
+  keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias letsencryptauthorityx3 -file lets-encrypt-x3-cross-signed.der 
+  keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias letsencryptauthorityx4 -file lets-encrypt-x4-cross-signed.der 
+
+
+  rm -f letsencryptauthorityx1.der letsencryptauthorityx2.der   letsencryptauthorityx2.der lets-encrypt-x1-cross-signed.der lets-encrypt-x2-cross-signed.der lets-encrypt-x3-cross-signed.der lets-encrypt-x4-cross-signed.der 
+  &amp;lt;code&amp;gt; 
+
+
+  Run the script, which get all the necessary certificate artifacts  from the letsencrypt server and installs &lt;span class="k"&gt;in &lt;/span&gt;your keystore. So script is based on the following implementation and described by letsencrypt here. 
+
+
+
+
+  Step 4: Check the successful Import 
+
+
+  Run the list &lt;span class="nb"&gt;command &lt;/span&gt;once again, you will now get back result output 
+
+
+  &amp;lt;code&amp;gt; shell 
+  ~ felix&lt;span class="nv"&gt;$ &lt;/span&gt;keytool -v -list -keystore &lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/jre/lib/security/cacerts | grep ISRG 
+  Enter keystore password:  changeit 
+  Issuer: &lt;span class="nv"&gt;CN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ISRG Root X1, &lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Internet Security Research Group, &lt;span class="nv"&gt;C&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;US 
+  Issuer: &lt;span class="nv"&gt;CN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ISRG Root X1, &lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Internet Security Research Group, &lt;span class="nv"&gt;C&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;US 
+  Issuer: &lt;span class="nv"&gt;CN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ISRG Root X1, &lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Internet Security Research Group, &lt;span class="nv"&gt;C&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;US 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Retry you java application or build, which should now be executed.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;b&gt;&lt;br&gt;&lt;/b&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Tutorial: React Application with a Python JSON Backend (Part 1)</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/26/tutorial-react-application-with-a-python-json-backend-part-1.html"/>
     <id>https://dev.cloudburo.net/2018/05/26/tutorial-react-application-with-a-python-json-backend-part-1.html</id>
     <published>2018-05-26T23:16:16+00:00</published>
-    <updated>2018-06-02T11:10:59+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -214,7 +507,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/14/data-science-mindset.html"/>
     <id>https://dev.cloudburo.net/2018/05/14/data-science-mindset.html</id>
     <published>2018-05-14T21:08:45+00:00</published>
-    <updated>2018-06-02T11:10:55+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -319,7 +612,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/12/precision-banking-the-segment-of-one.html"/>
     <id>https://dev.cloudburo.net/2018/05/12/precision-banking-the-segment-of-one.html</id>
     <published>2018-05-12T09:46:48+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -339,7 +632,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html"/>
     <id>https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html</id>
     <published>2018-05-11T07:10:04+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -409,7 +702,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html"/>
     <id>https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html</id>
     <published>2018-05-10T11:07:02+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -976,7 +1269,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html"/>
     <id>https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html</id>
     <published>2018-04-23T11:07:31+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -996,7 +1289,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html"/>
     <id>https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html</id>
     <published>2018-03-31T06:20:58+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1083,7 +1376,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html"/>
     <id>https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html</id>
     <published>2018-03-26T04:13:17+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1121,7 +1414,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html"/>
     <id>https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html</id>
     <published>2018-03-25T14:20:37+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1162,7 +1455,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html"/>
     <id>https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html</id>
     <published>2018-03-24T12:07:53+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1223,7 +1516,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/22/reactive-microservices-for-the-architect-and-cto.html"/>
     <id>https://dev.cloudburo.net/2018/03/22/reactive-microservices-for-the-architect-and-cto.html</id>
     <published>2018-03-22T22:05:23+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1251,7 +1544,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html"/>
     <id>https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html</id>
     <published>2018-03-17T15:29:03+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1379,7 +1672,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html"/>
     <id>https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html</id>
     <published>2018-03-17T08:34:59+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1418,7 +1711,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html"/>
     <id>https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html</id>
     <published>2018-03-13T18:27:05+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1504,7 +1797,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/12/17/by-2030-provide-legal-identity-for-all-including-birth-registration.html"/>
     <id>https://dev.cloudburo.net/2017/12/17/by-2030-provide-legal-identity-for-all-including-birth-registration.html</id>
     <published>2017-12-17T20:19:52+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1575,7 +1868,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html"/>
     <id>https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html</id>
     <published>2017-12-04T19:05:49+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1625,7 +1918,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html"/>
     <id>https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html</id>
     <published>2017-11-14T09:10:46+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1720,7 +2013,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html"/>
     <id>https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html</id>
     <published>2017-10-25T17:28:37+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1788,7 +2081,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html</id>
     <published>2017-10-12T10:24:16+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1862,7 +2155,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html</id>
     <published>2017-10-12T09:31:29+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1913,7 +2206,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html"/>
     <id>https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html</id>
     <published>2017-10-08T16:26:49+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1959,7 +2252,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html"/>
     <id>https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html</id>
     <published>2017-09-13T05:35:50+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1976,7 +2269,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"/>
     <id>https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html</id>
     <published>2017-06-24T13:06:45+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2383,7 +2676,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
     <published>2017-06-18T12:46:32+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2703,7 +2996,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
     <published>2017-06-18T11:50:25+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2832,7 +3125,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html"/>
     <id>https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html</id>
     <published>2017-04-14T15:10:46+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2947,7 +3240,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html"/>
     <id>https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html</id>
     <published>2017-04-07T15:13:15+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3008,7 +3301,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html"/>
     <id>https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html</id>
     <published>2017-03-28T05:25:38+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3058,7 +3351,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html"/>
     <id>https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html</id>
     <published>2017-03-27T05:38:50+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3090,7 +3383,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html"/>
     <id>https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html</id>
     <published>2017-03-13T21:34:47+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3165,7 +3458,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html"/>
     <id>https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html</id>
     <published>2017-01-30T06:55:41+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3247,7 +3540,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html"/>
     <id>https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html</id>
     <published>2017-01-11T22:31:09+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3290,7 +3583,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html"/>
     <id>https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html</id>
     <published>2016-12-06T06:34:22+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3396,7 +3689,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html"/>
     <id>https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html</id>
     <published>2016-12-05T06:18:54+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3459,7 +3752,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html"/>
     <id>https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html</id>
     <published>2016-12-01T22:20:29+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3638,7 +3931,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html"/>
     <id>https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html</id>
     <published>2016-11-30T22:56:42+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3706,7 +3999,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html"/>
     <id>https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html</id>
     <published>2016-11-29T21:48:26+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3791,7 +4084,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"/>
     <id>https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html</id>
     <published>2016-11-28T21:33:21+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3862,7 +4155,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html"/>
     <id>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</id>
     <published>2016-11-22T22:15:39+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3971,7 +4264,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html"/>
     <id>https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html</id>
     <published>2016-07-18T16:06:09+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4097,7 +4390,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html"/>
     <id>https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html</id>
     <published>2016-06-21T22:17:15+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4150,7 +4443,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
     <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
     <published>2016-06-09T21:14:47+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4251,7 +4544,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html"/>
     <id>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</id>
     <published>2016-05-23T17:03:55+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4370,7 +4663,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
     <id>https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html</id>
     <published>2016-05-13T23:04:33+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4453,7 +4746,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
     <id>https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
     <published>2016-05-12T21:14:14+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4697,7 +4990,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
     <id>https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
     <published>2016-04-24T13:06:12+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4847,7 +5140,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html"/>
     <id>https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html</id>
     <published>2016-04-21T22:49:36+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4913,7 +5206,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
     <id>https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
     <published>2016-03-04T06:38:48+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5018,7 +5311,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"/>
     <id>https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html</id>
     <published>2015-12-20T17:48:53+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5301,7 +5594,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
     <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
     <published>2015-11-15T00:07:50+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
+    <updated>2018-06-02T11:22:18+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5344,41 +5637,6 @@
    &lt;br&gt;
   &lt;/div&gt;&lt;/p&gt;
 
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>DMARC: How to monitor and secure your email</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html"/>
-    <id>https://dev.cloudburo.net/2015/11/07/dmarc-how-to-monitor-and-secure-your-email.html</id>
-    <published>2015-11-07T22:47:46+00:00</published>
-    <updated>2018-06-02T10:46:29+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        In my blog article „
-       &lt;a href="https://dev.cloudburo.net/2015/04/21/micro-business-quick-tips-1-get-a-bullet-proof-e-mail-setup-spf-dkim-dmarc.html"&gt;Get a bullet proof email set up for spf-dkim-dmarc&lt;/a&gt;&amp;ldquo;, I explained how to setup your email account in order to be protected against spammer.
-       &lt;span style="color: rgb(0, 0, 0);"&gt;I was following mainly the advices of postmark, which did an excellent job in this area.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In the meantime they published an introduction blog to DMARC which explains in all detail, how the mechanism is working. It’s well written and illustrated and you should take the time to read it, to understand the global approach against spammer.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The article can be found
-       &lt;a href="https://postmarkapp.com/guides/dmarc?utm_medium=email&amp;amp;utm_campaign=DMARC+guide++100+DMARC+compliant+Postmark+customers&amp;amp;utm_content=DMARC+guide++100+DMARC+compliant+Postmark+customers+CID_590f9f6996154b221bfa4ea877e09279&amp;amp;utm_source=campaignmonitor&amp;amp;utm_term=httpspostmarkappcomguidesdmarc"&gt;here&lt;/a&gt;.
-      &lt;/div&gt;&lt;/p&gt;
-    
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
