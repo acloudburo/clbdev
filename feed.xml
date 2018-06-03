@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/06/03/install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html"/>
     <id>https://dev.cloudburo.net/2018/06/03/install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html</id>
     <published>2018-06-03T12:26:22+00:00</published>
-    <updated>2018-06-03T13:24:37+00:00</updated>
+    <updated>2018-06-03T14:28:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -84,7 +84,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        The whole signing setup is describe here: 
+        The whole signing setup is described here: 
        &lt;a href="https://letsencrypt.org/certificates/"&gt;&lt;a href="https://letsencrypt.org/certificates/"&gt;https://letsencrypt.org/certificates/&lt;/a&gt;&lt;/a&gt; 
       &lt;/div&gt;
       &lt;div&gt;
@@ -164,7 +164,7 @@
   &lt;/div&gt;
   &lt;div&gt;&lt;/p&gt;
 &lt;pre class="highlight shell"&gt;&lt;code&gt;
-  ~ felix&lt;span class="nv"&gt;$ &lt;/span&gt;keytool -v -list -keystore &lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/jre/lib/security/cacerts | grep ISRG 
+  ~ felix&amp;gt; keytool -v -list -keystore &lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/jre/lib/security/cacerts | grep ISRG 
   Enter keystore password:  changeit 
 
 &lt;/code&gt;&lt;/pre&gt;
@@ -180,17 +180,17 @@
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-  ~ felix$ keytool -v -list -keystore $JAVA_HOME/jre/lib/security/cacerts | grep DST 
+&lt;pre class="highlight shell"&gt;&lt;code&gt;
+  ~ felix&amp;gt; keytool -v -list -keystore &lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/jre/lib/security/cacerts | grep DST 
   Enter keystore password:  changeit 
-  Issuer: CN=DST Root CA X3, O=Digital Signature Trust Co. 
-       [URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
-  Issuer: CN=DST Root CA X3, O=Digital Signature Trust Co. 
-       [URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
-  Issuer: CN=DST Root CA X3, O=Digital Signature Trust Co. 
-       [URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
-  Issuer: CN=DST Root CA X3, O=Digital Signature Trust Co. 
-       [URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
+  Issuer: &lt;span class="nv"&gt;CN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;DST Root CA X3, &lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Digital Signature Trust Co. 
+       &lt;span class="o"&gt;[&lt;/span&gt;URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
+  Issuer: &lt;span class="nv"&gt;CN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;DST Root CA X3, &lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Digital Signature Trust Co. 
+       &lt;span class="o"&gt;[&lt;/span&gt;URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
+  Issuer: &lt;span class="nv"&gt;CN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;DST Root CA X3, &lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Digital Signature Trust Co. 
+       &lt;span class="o"&gt;[&lt;/span&gt;URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
+  Issuer: &lt;span class="nv"&gt;CN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;DST Root CA X3, &lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Digital Signature Trust Co. 
+       &lt;span class="o"&gt;[&lt;/span&gt;URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
 
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -218,7 +218,7 @@
    &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;keytool.&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
-   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;br&gt;&lt;/span&gt;
+   &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
     You can find the script here: 
@@ -232,12 +232,13 @@
 &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/dec5f8f74d808230c2c66c152088b91f.png'&gt;&lt;/p&gt;
 
   &lt;/div&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+  &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-    Run the script, which get all the necessary certificate artifacts  from the letsencrypt server and installs in your keystore. So script is based on the following
+    Run the script, which get all the necessary certificate artefacts  from the letsencrypt server and installs in your keystore. So script is based on the following
    &lt;a href="https://gist.github.com/Firefishy/109b0f1a90156f6c933a50fe40aa777e"&gt;implementation&lt;/a&gt; and described by
    &lt;a href="https://community.letsencrypt.org/t/ssl-certs-in-java/15450"&gt;letsencrypt&lt;/a&gt; here.
   &lt;/div&gt;
@@ -261,7 +262,7 @@
   &lt;/div&gt;
   &lt;div&gt;&lt;/p&gt;
 &lt;pre class="highlight shell"&gt;&lt;code&gt;
-  ~ felix&lt;span class="nv"&gt;$ &lt;/span&gt;keytool -v -list -keystore &lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/jre/lib/security/cacerts | grep ISRG 
+  ~ felix&amp;gt; keytool -v -list -keystore &lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/jre/lib/security/cacerts | grep ISRG 
   Enter keystore password:  changeit 
   Issuer: &lt;span class="nv"&gt;CN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ISRG Root X1, &lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Internet Security Research Group, &lt;span class="nv"&gt;C&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;US 
   Issuer: &lt;span class="nv"&gt;CN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ISRG Root X1, &lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Internet Security Research Group, &lt;span class="nv"&gt;C&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;US 
@@ -275,6 +276,17 @@
   &lt;/div&gt;
   &lt;div&gt;
     Retry you java application or build, which should now be executed.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+   &lt;a href="https://publishingbot.cloudburo.net" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+   &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
   &lt;/div&gt;&lt;/p&gt;
 
   &lt;/div&gt;
