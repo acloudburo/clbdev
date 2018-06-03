@@ -10,321 +10,6 @@
     <name>Felix</name>
   </author>
   <entry>
-    <title>Quick Tips: Install  Letsencrypt  Certificate in the Java JDK Keystore on OSX</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2018/06/03/quick-tips-install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html"/>
-    <id>https://dev.cloudburo.net/2018/06/03/quick-tips-install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html</id>
-    <published>2018-06-03T12:26:22+00:00</published>
-    <updated>2018-06-03T12:36:00+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    The following article gives a short introduction, how to import a root certificate into the Java JDK keystore on a Mac OSX. The example is based on the import of the
-   &lt;a href="https://letsencrypt.org/certificates/"&gt;ISRG Root X1 certificate&lt;/a&gt;, which is a very new certificate and not broadly trusted yet. Actually they do a cross signing of their intermediate certificate with IdenTrust (which is already widely trusted) in order to relief this short-coming.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Anyway the import sequence may help you in case you want to install another certificate in a same way. 
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Assumption is that we have SSLHandshake Exception due to the missing ISRG certificate. In my example a gradle build was failing due to missing certificate.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight shell"&gt;&lt;code&gt;
-  Could not resolve all dependencies &lt;span class="k"&gt;for &lt;/span&gt;configuration &lt;span class="s1"&gt;':compileClasspath'&lt;/span&gt;. 
-  &amp;gt; Could not resolve com.aspose:aspose-cells:17.9. 
-    Required by: 
-        project : &amp;gt; com.edorasware.one:edoras-one-starter:2.0.4 ... 
-     &amp;gt; Could not resolve com.aspose:aspose-cells:17.9. 
-        &amp;gt; Could not get resource &lt;span class="s1"&gt;' https://artifact.aspose.com/repo/com/aspose/aspose-cells/17.9/aspose-cells-17.9.pom'&lt;/span&gt;. 
-           ... 
-              &amp;gt; sun.security.validator.ValidatorException: PKIX path building failed:  
-
-
-  sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-    The certificate of the
-   &lt;a href="http://aspose.com"&gt;&lt;a href="https://aspose.com"&gt;https://aspose.com&lt;/a&gt;&lt;/a&gt; repository is a Let’s Encrypt Authority X3, which is based on DST Root CA X3. You get the below window when you check the certificate of the site in the browser (Chrome screenshot)
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/983fa892a9ca8a1124351e1d82cffd92.png'&gt;&lt;/p&gt;
-
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        So we have to load the Let’s Encrypt certificates into the Java keystore&lt;br&gt;
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;cacerts&lt;/span&gt; on our machine, to make the certificate path accessible.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The whole signing setup is describe here: 
-       &lt;a href="https://letsencrypt.org/certificates/"&gt;&lt;a href="https://letsencrypt.org/certificates/"&gt;https://letsencrypt.org/certificates/&lt;/a&gt;&lt;/a&gt; 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/776235a84f4a1c13ad3cf52b4df21ba3.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-weight: bold;"&gt;Step 1: Set-up JAVA_HOME and install wget&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    First of all it’s advisable to set up the
-   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;JAVA_HOME&lt;/span&gt; correctly on your Mac OSX machine, by using the
-   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;java_home&lt;/span&gt; executable (
-   &lt;a href="https://stackoverflow.com/questions/1348842/what-should-i-set-java-home-to-on-osx"&gt;Stackoverflow&lt;/a&gt;). Add the following to the .bash_profile 
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight shell"&gt;&lt;code&gt;
-  &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;JAVA_HOME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;/usr/libexec/java_home&lt;span class="k"&gt;)&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-    For running the import script we require
-   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;wget&lt;/span&gt;. Assuming you install OSX tools via
-   &lt;a href="https://brew.sh/" style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;brew&lt;/a&gt;
-   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; -&lt;/span&gt; the so-called missing package manager for the Mac - run the following command
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight shell"&gt;&lt;code&gt;
-  brew install wget 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-   &lt;span style="font-weight: bold;"&gt;Step 2: Do some keystore checks&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    First of check if the ISRG certificate is already installed in your
-   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;keystore&lt;/span&gt;. The java JDK keystore can be found under the
-   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;JAVA_HOME&lt;/span&gt; directory in the following folder 
-   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;jre/lib/security/cacerts&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight shell"&gt;&lt;code&gt;
-  ~ felix&lt;span class="nv"&gt;$ &lt;/span&gt;keytool -v -list -keystore &lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/jre/lib/security/cacerts | grep ISRG 
-  Enter keystore password:  changeit 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;changeit&lt;/span&gt; is the default password of the Java JDK installation. Nothing will be given back. As for example looking for existing certificate (i.e. the in this example the cross signing certificate of Digital Signature Trust Co.), will be shown.  By storing the full output in a file, provides you with an overview of all installed certificates in your Java JDK keystore.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-  ~ felix$ keytool -v -list -keystore $JAVA_HOME/jre/lib/security/cacerts | grep DST 
-  Enter keystore password:  changeit 
-  Issuer: CN=DST Root CA X3, O=Digital Signature Trust Co. 
-       [URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
-  Issuer: CN=DST Root CA X3, O=Digital Signature Trust Co. 
-       [URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
-  Issuer: CN=DST Root CA X3, O=Digital Signature Trust Co. 
-       [URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
-  Issuer: CN=DST Root CA X3, O=Digital Signature Trust Co. 
-       [URIName: http://crl.identrust.com/DSTROOTCAX3CRL.crl] 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-    As we have seen, the certificate is missing, so let’s run the following script 
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-weight: bold;"&gt;Step 3: Run the import script&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    The script will fetch from the
-   &lt;a href="http://letsencrypt.org"&gt;letsencrypt.org&lt;/a&gt; web site the certificate information via
-   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;wget&lt;/span&gt; and adds it to the 
-   &lt;font face="Courier New"&gt;cacerts&lt;/font&gt; keystore via the
-   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;keytool&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight shell"&gt;&lt;code&gt;
-  &lt;span class="c"&gt;#!/bin/bash &lt;/span&gt;
-  &lt;span class="nb"&gt;set&lt;/span&gt; -e 
-
-
-  &lt;span class="nv"&gt;KEYSTORE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/jre/lib/security/cacerts 
-
-
-  wget https://letsencrypt.org/certs/letsencryptauthorityx1.der 
-  wget https://letsencrypt.org/certs/letsencryptauthorityx2.der 
-  wget https://letsencrypt.org/certs/letsencryptauthorityx3.der 
-  wget https://letsencrypt.org/certs/lets-encrypt-x1-cross-signed.der 
-  wget https://letsencrypt.org/certs/lets-encrypt-x2-cross-signed.der 
-  wget https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.der 
-  wget https://letsencrypt.org/certs/lets-encrypt-x4-cross-signed.der 
-
-
-  &lt;span class="c"&gt;# to be idempotent &lt;/span&gt;
-  keytool -delete -alias isrgrootx1 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
-  &lt;/span&gt;keytool -delete -alias isrgrootx2 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
-  &lt;/span&gt;keytool -delete -alias isrgrootx3 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
-  &lt;/span&gt;keytool -delete -alias letsencryptauthorityx1 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
-  &lt;/span&gt;keytool -delete -alias letsencryptauthorityx2 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
-  &lt;/span&gt;keytool -delete -alias letsencryptauthorityx3 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
-  &lt;/span&gt;keytool -delete -alias letsencryptauthorityx4 -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit 2&amp;gt; /dev/null &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="nb"&gt;true 
-
-
-  &lt;/span&gt;keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias isrgrootx1 -file letsencryptauthorityx1.der 
-  keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias isrgrootx2 -file letsencryptauthorityx2.der 
-  keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias isrgrootx3 -file letsencryptauthorityx3.der 
-  keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias letsencryptauthorityx1 -file lets-encrypt-x1-cross-signed.der 
-  keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias letsencryptauthorityx2 -file lets-encrypt-x2-cross-signed.der 
-  keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias letsencryptauthorityx3 -file lets-encrypt-x3-cross-signed.der 
-  keytool -trustcacerts -keystore &lt;span class="nv"&gt;$KEYSTORE&lt;/span&gt; -storepass changeit -noprompt -importcert -alias letsencryptauthorityx4 -file lets-encrypt-x4-cross-signed.der 
-
-
-  rm -f letsencryptauthorityx1.der letsencryptauthorityx2.der   letsencryptauthorityx2.der lets-encrypt-x1-cross-signed.der lets-encrypt-x2-cross-signed.der lets-encrypt-x3-cross-signed.der lets-encrypt-x4-cross-signed.der 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-    Run the script, which get all the necessary certificate artifacts  from the letsencrypt server and installs in your keystore. So script is based on the following
-   &lt;a href="https://gist.github.com/Firefishy/109b0f1a90156f6c933a50fe40aa777e"&gt;implementation&lt;/a&gt; and described by
-   &lt;a href="https://community.letsencrypt.org/t/ssl-certs-in-java/15450"&gt;letsencrypt&lt;/a&gt; here.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-weight: bold;"&gt;Step 4: Check the successful Import&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Run the list command once again, you will now get back result output
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight shell"&gt;&lt;code&gt;
-  ~ felix&lt;span class="nv"&gt;$ &lt;/span&gt;keytool -v -list -keystore &lt;span class="nv"&gt;$JAVA_HOME&lt;/span&gt;/jre/lib/security/cacerts | grep ISRG 
-  Enter keystore password:  changeit 
-  Issuer: &lt;span class="nv"&gt;CN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ISRG Root X1, &lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Internet Security Research Group, &lt;span class="nv"&gt;C&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;US 
-  Issuer: &lt;span class="nv"&gt;CN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ISRG Root X1, &lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Internet Security Research Group, &lt;span class="nv"&gt;C&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;US 
-  Issuer: &lt;span class="nv"&gt;CN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ISRG Root X1, &lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;Internet Security Research Group, &lt;span class="nv"&gt;C&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;US 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Retry you java application or build, which should now be executed.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;&lt;/p&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
     <title>Install  Letsencrypt  Certificate in the Java JDK Keystore on OSX</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/06/03/install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html"/>
     <id>https://dev.cloudburo.net/2018/06/03/install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html</id>
@@ -5876,6 +5561,57 @@
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
+   &lt;br&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Problems with AWS CLI on Mac OSX El Capitan</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
+    <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
+    <published>2015-11-15T00:07:50+00:00</published>
+    <updated>2018-06-02T11:22:18+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
+    There are various problem reported with AWS CLI on El Capitan. For example I got problems with the s3 command (as well as the EB CLI). 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    The quickest way is to reinstall the awscli with the option —ignore-installed
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+  sudo pip install awscli --ignore-installed 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    That’s it and fixed my problem.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
    &lt;br&gt;
   &lt;/div&gt;&lt;/p&gt;
 

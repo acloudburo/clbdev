@@ -631,12 +631,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/2018/06/03/quick-tips-install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html</loc>
-    <lastmod>2018-06-03</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html</loc>
     <lastmod>2018-06-02</lastmod>
     <priority>0.7</priority>
