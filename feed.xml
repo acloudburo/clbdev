@@ -5,10 +5,109 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-06-03T12:26:22+00:00</updated>
+  <updated>2018-06-04T20:10:14+00:00</updated>
   <author>
     <name>Felix</name>
   </author>
+  <entry>
+    <title>Intellij: Gradle Project Fails To Deploy Tomcat Server (war:exploded)</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/06/04/intellij-gradle-project-fails-to-deploy-tomcat-server-war-exploded.html"/>
+    <id>https://dev.cloudburo.net/2018/06/04/intellij-gradle-project-fails-to-deploy-tomcat-server-war-exploded.html</id>
+    <published>2018-06-04T20:10:14+00:00</published>
+    <updated>2018-06-04T20:10:17+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Recently I had a problem, that the deployment of a IntellJ Gradle Project Artifact to a local Tomcat Server didn’t work out.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The local Tomcat Server was configured as follows with the deployment of the exploded WAR file, which is the preferred option(will easen debugging).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/0d9dc1ba9e011da18a22003be283505f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/160511f32a54c0e0f0ebcb0a3071f355.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Running the build, didn’t result in the war exploded to be generated.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A check of the of the explodedWAR artifact and its output directory was correct.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/ec20d3590401b55babd6e9e01a489382.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+        Finally the following Stackoverflow Article gave the final hint
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;a href="https://stackoverflow.com/questions/47078199/intellij-fails-deploying-exploded-war-to-tomcat"&gt;&lt;a href="https://stackoverflow.com/questions/47078199/intellij-fails-deploying-exploded-war-to-tomcat"&gt;https://stackoverflow.com/questions/47078199/intellij-fails-deploying-exploded-war-to-tomcat&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Under Gradle Preferences , you have to make sure you don&amp;rsquo;t have checked &amp;lsquo;Delegate IDE build/run actions to gradle’. After having unchecked it the exploded WAR artefact will be builded.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/bf3b19b799c97c2126d0ac39cda785ce.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Install  Letsencrypt  Certificate in the Java JDK Keystore on OSX</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/06/03/install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html"/>
@@ -5573,57 +5672,6 @@
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
-   &lt;br&gt;
-  &lt;/div&gt;&lt;/p&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Problems with AWS CLI on Mac OSX El Capitan</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html"/>
-    <id>https://dev.cloudburo.net/2015/11/15/problems-with-aws-cli-on-mac-osx-el-capitan.html</id>
-    <published>2015-11-15T00:07:50+00:00</published>
-    <updated>2018-06-02T11:22:18+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    There are various problem reported with AWS CLI on El Capitan. For example I got problems with the s3 command (as well as the EB CLI). 
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    The quickest way is to reinstall the awscli with the option —ignore-installed
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-  sudo pip install awscli --ignore-installed 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    That’s it and fixed my problem.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
    &lt;br&gt;
   &lt;/div&gt;&lt;/p&gt;
 

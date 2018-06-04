@@ -199,6 +199,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2018/06/04/intellij-gradle-project-fails-to-deploy-tomcat-server-war-exploded.html</loc>
+    <lastmod>2018-06-04</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/09/29/micro-business-quick-tips-3-rechtssicherheit-bei-der-eroffnung-eines-onlineshops.html</loc>
     <lastmod>2018-06-02</lastmod>
     <priority>0.7</priority>
@@ -817,6 +823,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/intellij.html</loc>
+    <lastmod>2018-06-02</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/startup.html</loc>
     <lastmod>2018-06-02</lastmod>
     <priority>0.9</priority>
@@ -964,6 +976,12 @@
     <loc>https://dev.cloudburo.net/2018/06.html</loc>
     <lastmod>2018-06-02</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2018/06/04.html</loc>
+    <lastmod>2018-06-02</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
