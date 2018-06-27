@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/06/04/intellij-gradle-project-fails-to-deploy-tomcat-server-war-exploded.html"/>
     <id>https://dev.cloudburo.net/2018/06/04/intellij-gradle-project-fails-to-deploy-tomcat-server-war-exploded.html</id>
     <published>2018-06-04T20:10:14+00:00</published>
-    <updated>2018-06-26T22:06:25+00:00</updated>
+    <updated>2018-06-27T05:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -23,7 +23,7 @@
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;div&gt;
-        Recently I had a problem, that the deployment of a IntellJ Gradle Project Artifact to a local Tomcat Server didn’t work out. 
+        Recently I had a problem, that the deployment of a IntellJ Gradle Project Artifact to a local Tomcat Server didn’t work out.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
