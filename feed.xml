@@ -5,10 +5,30 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-07-18T06:24:33+00:00</updated>
+  <updated>2018-07-19T06:19:59+00:00</updated>
   <author>
     <name>Felix</name>
   </author>
+  <entry>
+    <title>Google Reveals the Secrets of DevOps</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/07/19/google-reveals-the-secrets-of-devops.html"/>
+    <id>https://dev.cloudburo.net/2018/07/19/google-reveals-the-secrets-of-devops.html</id>
+    <published>2018-07-19T06:19:59+00:00</published>
+    <updated>2018-07-19T06:20:01+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;      A interesting article about Google&amp;rsquo;s DevOps approach, which is immense. &lt;br/&gt;
+    The numbers revealed by Meckfessel at the conference showed that over 500 million tests are run per day inside Google’s systems. That’s to accommodate over 4 million builds, daily. Why so many builds? Because Google’s Bazel build system allows for near-instant build processes, ensuring developers can quickly gain the feedback they need from their code.&lt;br/&gt;
+    One of the more interesting and compelling aspects of the Google development philosophy is the idea of blameless post-mortems. When a problem occurs and is resolved, the chief goal of the Google development teams is to find a way to solve the problem with tools or processes, rather than finding a way to assign blame. Ramji referenced Toyota’s techniques which were the inspiration: an error is the fault of the process, not necessarily of the person who created the error itself.&lt;br/&gt;
+    You can read the full article here.&lt;br/&gt;
+    &lt;a href="https://thenewstack.io/google-reveals-the-secrets-of-devops/"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Minimal Ubuntu, on Docker Hub</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/07/18/minimal-ubuntu-on-docker-hub.html"/>
@@ -5316,111 +5336,6 @@
 
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Rodrigue Schaefer : From monolith to microservices at Zalando</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html"/>
-    <id>https://dev.cloudburo.net/2016/03/04/rodrigue-schaefer-from-monolith-to-microservices-at-zalando.html</id>
-    <published>2016-03-04T06:38:48+00:00</published>
-    <updated>2018-07-04T19:34:54+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        At the 
-       &lt;a href="http://microxchg.io/2016/index.html"&gt;Microxchg 2016&lt;/a&gt; conference in Berlin, Rodrigue Schaefer did an interesting presentation how they introduced microservices at Zalando.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The main driver was an organisational change centred around autonomy of teams. As he stated
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        - We want Autonomous team to deliver amazing products efficiently at scale
-      &lt;/div&gt;
-      &lt;div&gt;
-        - We want them to be  independent, without having to look left and right
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        By changing the organisation, the tech landscape of applications tied into a monolith architecture didn&amp;rsquo;t fit anymore. Team autonomy results in a change of the landscape to Microservices.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        It means also a shift from Control to Trust. He coined the term &amp;ldquo;Radical Agility&amp;rdquo;, a  concept which is based on three principles glued together by trust.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/a9e22bc1b3a4936e8a2f01d31d245e50.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        -
-       &lt;b&gt;Autonomy&lt;/b&gt;, a team can define its own delivery process or tech stack. A team is cross-functional and can do everything from having an idea, developing it, testing and deploying it, bringing it live and operating it. It has full control over its delivery (DevOps)
-      &lt;/div&gt;
-      &lt;div&gt;
-        -
-       &lt;b&gt;Purpose&lt;/b&gt;, means to give the team something so everyone goes in a similar direction (the company wants at that time). By having a clear purpose of each team, there is a  strategic alignment.
-      &lt;/div&gt;
-      &lt;div&gt;
-        -
-       &lt;b&gt;Mastery&lt;/b&gt;, means  to give the engineers a chance to get better in an area where they want to get better.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        He mentioned an interesting detail about a change in process, which is common in today&amp;rsquo;s large organisations. Using of shared libraries across different microservices were banned. All teams are forced to open source and play by the company established rules. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Finally, testing services across teams are done by a cross-functional business assurance unit. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Check out the full speech here
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        &lt;div class="responsive-video"&gt;&lt;iframe src="https://www.youtube.com/embed/I9zpROdDf48?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Also refer to the following article, which addresses the autonomy, small team approach: 
-       &lt;a href="https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html"&gt;&lt;a href="https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html"&gt;https://dev.cloudburo.net/2015/04/17/the-benefits-of-microservices.html&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://www.infoq.com/news/2016/02/Monolith-Microservices-Zalando?utm_campaign=infoq_content&amp;amp;utm_source=infoq&amp;amp;utm_medium=feed&amp;amp;utm_term=global"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
