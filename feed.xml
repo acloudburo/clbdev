@@ -5,16 +5,100 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-07-19T06:19:59+00:00</updated>
+  <updated>2018-08-12T21:18:38+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Scalability Trilemma Of A Blockchain or There Is No Free Lunch</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/08/12/scalability-trilemma-of-a-blockchain-or-there-is-no-free-lunch.html"/>
+    <id>https://dev.cloudburo.net/2018/08/12/scalability-trilemma-of-a-blockchain-or-there-is-no-free-lunch.html</id>
+    <published>2018-08-12T21:18:38+00:00</published>
+    <updated>2018-08-12T21:18:40+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Scalability and the slowness of Blockchains is a hot topic in the crypto community. Georgio Konstantopoulos (@LoomNetwork) provides a very good introduction to the topic in his Medium artice &amp;ldquo;
+       &lt;a href="https://medium.com/loom-network/scalability-tradeoffs-why-the-ethereum-killer-hasnt-arrived-yet-8f60a88e46c0"&gt;Scalability Tradeoffs:  “Why The Ethereum Killer” Hasn’t Arrived Yet&lt;/a&gt;
+       &lt;a href="https://medium.com/loom-network/scalability-tradeoffs-why-the-ethereum-killer-hasnt-arrived-yet-8f60a88e46c0"&gt;”&lt;/a&gt;. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As the title state it, it’s a tradeoff of three system properties, which are influencing the scalability of a Blockchain system. Vitalik Buterin, describes that this Scalability Trilemma as follows
+       &lt;a href="https://medium.com/loom-network/scalability-tradeoffs-why-the-ethereum-killer-hasnt-arrived-yet-8f60a88e46c0"&gt;here&lt;/a&gt;:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&amp;quot;This sounds like there’s some kind of scalability trilemma at play. What is this trilemma and can we break through it?&lt;/i&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;The trilemma claims that blockchain systems can only at most have two of the following three properties:&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;i&gt;Decentralization (defined as the system being able to run in a scenario where each participant only has access to O&amp;copy; resources, i.e. a regular laptop or small VPS)&lt;/i&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;i&gt;Scalability (defined as being able to process O(n) &amp;gt; O&amp;copy; transactions)&lt;/i&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;i&gt;Security (defined as being secure against attackers with up to O(n) resources)&amp;rdquo;&lt;/i&gt;
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So what it expresses is the fact, that in case you want to get higher scalability in a blockchain system you have to sacrifice Security or Decentralisation.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As Georgio states in the article 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&amp;ldquo;Α blockchain that claims to have solved the trilemma has either bent the laws of physics (highly unlikely), or it has discovered a breakthrough method that solves the major blockchain scalability problems that have stumped top mathematicians and computer scientists for the past decade”&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The article provides various examples (e.g. Ripple’s XRP) which gain scalability by going in a (semi-) centralized direction.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You can read the full article
+       &lt;a href="https://medium.com/loom-network/scalability-tradeoffs-why-the-ethereum-killer-hasnt-arrived-yet-8f60a88e46c0"&gt;here&lt;/a&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Google Reveals the Secrets of DevOps</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/07/19/google-reveals-the-secrets-of-devops.html"/>
     <id>https://dev.cloudburo.net/2018/07/19/google-reveals-the-secrets-of-devops.html</id>
     <published>2018-07-19T06:19:59+00:00</published>
-    <updated>2018-08-11T06:39:54+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -34,7 +118,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/07/18/minimal-ubuntu-on-docker-hub.html"/>
     <id>https://dev.cloudburo.net/2018/07/18/minimal-ubuntu-on-docker-hub.html</id>
     <published>2018-07-18T06:24:33+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -57,7 +141,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/06/04/intellij-gradle-project-fails-to-deploy-tomcat-server-war-exploded.html"/>
     <id>https://dev.cloudburo.net/2018/06/04/intellij-gradle-project-fails-to-deploy-tomcat-server-war-exploded.html</id>
     <published>2018-06-04T20:10:14+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -162,7 +246,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/06/03/install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html"/>
     <id>https://dev.cloudburo.net/2018/06/03/install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html</id>
     <published>2018-06-03T12:26:22+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -445,7 +529,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/26/tutorial-react-application-with-a-python-json-backend-part-1.html"/>
     <id>https://dev.cloudburo.net/2018/05/26/tutorial-react-application-with-a-python-json-backend-part-1.html</id>
     <published>2018-05-26T23:16:16+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -645,7 +729,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/14/data-science-mindset.html"/>
     <id>https://dev.cloudburo.net/2018/05/14/data-science-mindset.html</id>
     <published>2018-05-14T21:08:45+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -750,7 +834,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/12/precision-banking-the-segment-of-one.html"/>
     <id>https://dev.cloudburo.net/2018/05/12/precision-banking-the-segment-of-one.html</id>
     <published>2018-05-12T09:46:48+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -770,7 +854,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html"/>
     <id>https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html</id>
     <published>2018-05-11T07:10:04+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -840,7 +924,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html"/>
     <id>https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html</id>
     <published>2018-05-10T11:07:02+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1407,7 +1491,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html"/>
     <id>https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html</id>
     <published>2018-04-23T11:07:31+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1427,7 +1511,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html"/>
     <id>https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html</id>
     <published>2018-03-31T06:20:58+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1514,7 +1598,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html"/>
     <id>https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html</id>
     <published>2018-03-26T04:13:17+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1552,7 +1636,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html"/>
     <id>https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html</id>
     <published>2018-03-25T14:20:37+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1593,7 +1677,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html"/>
     <id>https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html</id>
     <published>2018-03-24T12:07:53+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1654,7 +1738,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/22/reactive-microservices-for-the-architect-and-cto.html"/>
     <id>https://dev.cloudburo.net/2018/03/22/reactive-microservices-for-the-architect-and-cto.html</id>
     <published>2018-03-22T22:05:23+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1682,7 +1766,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html"/>
     <id>https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html</id>
     <published>2018-03-17T15:29:03+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1810,7 +1894,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html"/>
     <id>https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html</id>
     <published>2018-03-17T08:34:59+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1849,7 +1933,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html"/>
     <id>https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html</id>
     <published>2018-03-13T18:27:05+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1935,7 +2019,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/12/17/by-2030-provide-legal-identity-for-all-including-birth-registration.html"/>
     <id>https://dev.cloudburo.net/2017/12/17/by-2030-provide-legal-identity-for-all-including-birth-registration.html</id>
     <published>2017-12-17T20:19:52+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2006,7 +2090,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html"/>
     <id>https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html</id>
     <published>2017-12-04T19:05:49+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2056,7 +2140,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html"/>
     <id>https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html</id>
     <published>2017-11-14T09:10:46+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2151,7 +2235,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html"/>
     <id>https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html</id>
     <published>2017-10-25T17:28:37+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2219,7 +2303,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html</id>
     <published>2017-10-12T10:24:16+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2293,7 +2377,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html</id>
     <published>2017-10-12T09:31:29+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2344,7 +2428,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html"/>
     <id>https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html</id>
     <published>2017-10-08T16:26:49+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2390,7 +2474,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html"/>
     <id>https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html</id>
     <published>2017-09-13T05:35:50+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2407,7 +2491,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"/>
     <id>https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html</id>
     <published>2017-06-24T13:06:45+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2814,7 +2898,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
     <published>2017-06-18T12:46:32+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3134,7 +3218,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
     <published>2017-06-18T11:50:25+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3263,7 +3347,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html"/>
     <id>https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html</id>
     <published>2017-04-14T15:10:46+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3378,7 +3462,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html"/>
     <id>https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html</id>
     <published>2017-04-07T15:13:15+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3439,7 +3523,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html"/>
     <id>https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html</id>
     <published>2017-03-28T05:25:38+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3489,7 +3573,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html"/>
     <id>https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html</id>
     <published>2017-03-27T05:38:50+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3521,7 +3605,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html"/>
     <id>https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html</id>
     <published>2017-03-13T21:34:47+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3596,7 +3680,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html"/>
     <id>https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html</id>
     <published>2017-01-30T06:55:41+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3678,7 +3762,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html"/>
     <id>https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html</id>
     <published>2017-01-11T22:31:09+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3721,7 +3805,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html"/>
     <id>https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html</id>
     <published>2016-12-06T06:34:22+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3827,7 +3911,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html"/>
     <id>https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html</id>
     <published>2016-12-05T06:18:54+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3890,7 +3974,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html"/>
     <id>https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html</id>
     <published>2016-12-01T22:20:29+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4069,7 +4153,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html"/>
     <id>https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html</id>
     <published>2016-11-30T22:56:42+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4137,7 +4221,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html"/>
     <id>https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html</id>
     <published>2016-11-29T21:48:26+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4222,7 +4306,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"/>
     <id>https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html</id>
     <published>2016-11-28T21:33:21+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4293,7 +4377,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html"/>
     <id>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</id>
     <published>2016-11-22T22:15:39+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4402,7 +4486,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html"/>
     <id>https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html</id>
     <published>2016-07-18T16:06:09+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4528,7 +4612,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html"/>
     <id>https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html</id>
     <published>2016-06-21T22:17:15+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4581,7 +4665,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
     <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
     <published>2016-06-09T21:14:47+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4682,7 +4766,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html"/>
     <id>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</id>
     <published>2016-05-23T17:03:55+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4801,7 +4885,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
     <id>https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html</id>
     <published>2016-05-13T23:04:33+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4884,7 +4968,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
     <id>https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
     <published>2016-05-12T21:14:14+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5128,7 +5212,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
     <id>https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
     <published>2016-04-24T13:06:12+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
+    <updated>2018-08-11T12:52:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5270,72 +5354,6 @@
        &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Meteor Small Hints #2: Calling local methods in a Template</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html"/>
-    <id>https://dev.cloudburo.net/2016/04/21/meteor-small-hints-2-calling-local-methods-in-a-template.html</id>
-    <published>2016-04-21T22:49:36+00:00</published>
-    <updated>2018-08-07T19:12:36+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    At the end it is straightforward but took me some time to figure out, how to call local methods in a Meteor template file.&lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Just add the local methods without any scope at the beginning.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
-  &lt;span class="nx"&gt;isStep1OK&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-    &lt;span class="nx"&gt;Meteor&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;user&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="na"&gt;emails&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="na"&gt;verified&lt;/span&gt; 
-
-
-  &lt;span class="nx"&gt;getStepStatus1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;isStep1OK&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt; 
-     &lt;span class="s"&gt;"glyphicon glyphicon-ok-sign icon-success"&lt;/span&gt; 
-    &lt;span class="k"&gt;else&lt;/span&gt; 
-      &lt;span class="s"&gt;"glyphicon glyphicon-minus-sign icon-failure"&lt;/span&gt; 
-
-
-  &lt;span class="nx"&gt;getStepStatus2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-    &lt;span class="s"&gt;"glyphicon glyphicon-minus-sign icon-failure"&lt;/span&gt; 
-
-
-  &lt;span class="nx"&gt;getStepStatus3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-    &lt;span class="s"&gt;"glyphicon glyphicon-minus-sign icon-failure"&lt;/span&gt; 
-
-
-  &lt;span class="nx"&gt;Template&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;curationLanding&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;helpers&lt;/span&gt; 
-
-
-    &lt;span class="na"&gt;getStepStatus&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;step&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-      &lt;span class="k"&gt;switch&lt;/span&gt; &lt;span class="nx"&gt;step&lt;/span&gt; 
-        &lt;span class="k"&gt;when&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt; &lt;span class="nx"&gt;getStepStatus1&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-        &lt;span class="k"&gt;when&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt; &lt;span class="nx"&gt;getStepStatus2&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-        &lt;span class="k"&gt;when&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt; &lt;span class="nx"&gt;getStepStatus3&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-
-
-    &lt;span class="na"&gt;getStepStatus1Text&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;-&amp;gt;&lt;/span&gt; 
-      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;isStep1OK&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt; 
-        &lt;span class="nx"&gt;TAPi18n&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;__&lt;/span&gt; &lt;span class="s"&gt;"landingStep1OK"&lt;/span&gt; 
-      &lt;span class="k"&gt;else&lt;/span&gt; 
-        &lt;span class="nx"&gt;TAPi18n&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;__&lt;/span&gt; &lt;span class="s"&gt;"landingStep1NOK"&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
-
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
