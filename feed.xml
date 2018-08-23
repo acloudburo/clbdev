@@ -5,16 +5,190 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-08-12T21:18:38+00:00</updated>
+  <updated>2018-08-23T21:24:11+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Google Data Collection Research Madness</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/08/23/google-data-collection-research-madness.html"/>
+    <id>https://dev.cloudburo.net/2018/08/23/google-data-collection-research-madness.html</id>
+    <published>2018-08-23T21:24:11+00:00</published>
+    <updated>2018-08-23T21:24:14+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Digital Content Next (DCN) - which is providing research and insights on current and emerging industry topics - released a very interesting report about Google’s data collection research by professor Douglas C. Schmidt of the Vanderbilt University.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Some interesting findings out of the report:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          A dormant, stationary Android phone (with the Chrome browser active in the background) communicated location information to Google 340 times during a 24-hour period, or at an average of 14 data communications per hour. In fact, location information constituted 35 percent of all the data samples sent to Google.
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          For comparison’s sake, a similar experiment found that on an iOS device with Safari but not Chrome, Google could not collect any appreciable data unless a user was interacting with the device. Moreover, an idle Android phone running the Chrome browser sends back to Google nearly fifty times as many data requests per hour as an idle iOS phone running Safari.
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Major part of Google’s data collection occurs while a user is not directly engaged with any of its products. The magnitude of such collection is significant, especially on Android mobile devices, arguably the most popular personal accessory now carried 24/7 by more than 2 billion people.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Well that’s tells something about Google’s USP, I’m not sure if this is really what an end-user expects.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You can find the full report
+       &lt;a href="https://digitalcontentnext.org/blog/2018/08/21/google-data-collection-research/"&gt;here&lt;/a&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>What a brilliant idea: Proof of usefulness in Crypto</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/08/21/what-a-brilliant-idea-proof-of-usefulness-in-crypto.html"/>
+    <id>https://dev.cloudburo.net/2018/08/21/what-a-brilliant-idea-proof-of-usefulness-in-crypto.html</id>
+    <published>2018-08-21T20:02:28+00:00</published>
+    <updated>2018-08-23T19:03:56+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;a href="https://hackernoon.com/@david.gilbertson"&gt;David Glibertson&lt;/a&gt;, describes in his excellent Medium Series “
+       &lt;a href="https://hackernoon.com/crypto-traders-diary/home"&gt;My adventures in Crypto&lt;/a&gt;”  an new visionary idea how the mining energy wasting could be converted in some useful energy consumption by solving real world puzzles. What a nice idea, here the excerpt of his idea. You can find the whole article
+       &lt;a href="https://hackernoon.com/ripple-not-a-cryptocurrency-afc5e9248c4c"&gt;here&lt;/a&gt;. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;One of Bitcoin’s biggest downsides is the fact that it uses — some might say ‘wastes’ — an enormous amount of electricity.&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;So I’ve been wondering, what if you could take the proof-of-work mechanism — with thousands upon thousands of processing machines doing work that is ultimately discarded — and somehow get it to do some useful work.&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Have you have heard of Folding@home?&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;“Folding@home is a project focused on disease research. The problems we’re solving require so many computer calculations — and we need your help to find the cures”.&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Now you’ve heard of &lt;a href="mailto:Folding@home"&gt;Folding@home&lt;/a&gt;.&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Doesn’t it seem wrong to you that on one hand there is a need for computing power that will ultimately save lives, and on the other hand there is a mass of computing power being ‘wasted’ to secure a cryptocurrency?&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;How hard could it be to combine the two?&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Maybe it’s possible to break down the protein folding work that Folding@home does into chunks that take a predictable amount of time (e.g. 10 minutes). &lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;If you automate that process of building 10-minute chunks of work, then you could have a difficultly adjustment just like there currently is.&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Maybe that’s not possible — to get the timing reliable enough — so perhaps you could have something in the consensus mechanism like: You must earn the right to mine a block by solving a protein folding problem.&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Your overall chances of mining a block in a given day would stay the same, since everyone must follow the same rule. The protein folding might take 2 minutes or an hour, it wouldn’t matter in the long run provided the work is evenly distributed.&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Maybe it just isn’t possible to break down protein-folding work. But maybe it is possible for SETI work, or something else I haven’t heard of.&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Lastly, you’d need a way to submit work to the network, perhaps to be voted on by nodes. Since you probably don’t want to be instrumental in cracking passwords, you might require proof of who the person is. So a proposal to submit proof-of-usefulness puzzles to the network might take the form: “we are Folding@home and our signed proof is at &lt;a href="https://foldingathome.org/pou-proof-key.%E2%80%9D%E2%80%8A%E2%80%94%E2%80%8Athey"&gt;https://foldingathome.org/pou-proof-key.” — they&lt;/a&gt; then have a licence to publish puzzles for 1 month, or something like that.&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Details details.&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Anyway, that’s just some thoughts that have been rattling around in my skull. I’m sure this has already been discussed in great detail somewhere.&lt;/i&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Scalability Trilemma Of A Blockchain or There Is No Free Lunch</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/08/12/scalability-trilemma-of-a-blockchain-or-there-is-no-free-lunch.html"/>
     <id>https://dev.cloudburo.net/2018/08/12/scalability-trilemma-of-a-blockchain-or-there-is-no-free-lunch.html</id>
     <published>2018-08-12T21:18:38+00:00</published>
-    <updated>2018-08-12T21:18:40+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -98,7 +272,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/07/19/google-reveals-the-secrets-of-devops.html"/>
     <id>https://dev.cloudburo.net/2018/07/19/google-reveals-the-secrets-of-devops.html</id>
     <published>2018-07-19T06:19:59+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -118,7 +292,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/07/18/minimal-ubuntu-on-docker-hub.html"/>
     <id>https://dev.cloudburo.net/2018/07/18/minimal-ubuntu-on-docker-hub.html</id>
     <published>2018-07-18T06:24:33+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -141,7 +315,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/06/04/intellij-gradle-project-fails-to-deploy-tomcat-server-war-exploded.html"/>
     <id>https://dev.cloudburo.net/2018/06/04/intellij-gradle-project-fails-to-deploy-tomcat-server-war-exploded.html</id>
     <published>2018-06-04T20:10:14+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -246,7 +420,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/06/03/install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html"/>
     <id>https://dev.cloudburo.net/2018/06/03/install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html</id>
     <published>2018-06-03T12:26:22+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -529,7 +703,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/26/tutorial-react-application-with-a-python-json-backend-part-1.html"/>
     <id>https://dev.cloudburo.net/2018/05/26/tutorial-react-application-with-a-python-json-backend-part-1.html</id>
     <published>2018-05-26T23:16:16+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -729,7 +903,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/14/data-science-mindset.html"/>
     <id>https://dev.cloudburo.net/2018/05/14/data-science-mindset.html</id>
     <published>2018-05-14T21:08:45+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -834,7 +1008,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/12/precision-banking-the-segment-of-one.html"/>
     <id>https://dev.cloudburo.net/2018/05/12/precision-banking-the-segment-of-one.html</id>
     <published>2018-05-12T09:46:48+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -854,7 +1028,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html"/>
     <id>https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html</id>
     <published>2018-05-11T07:10:04+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -924,7 +1098,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html"/>
     <id>https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html</id>
     <published>2018-05-10T11:07:02+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1491,7 +1665,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html"/>
     <id>https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html</id>
     <published>2018-04-23T11:07:31+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1511,7 +1685,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html"/>
     <id>https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html</id>
     <published>2018-03-31T06:20:58+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1598,7 +1772,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html"/>
     <id>https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html</id>
     <published>2018-03-26T04:13:17+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1636,7 +1810,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html"/>
     <id>https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html</id>
     <published>2018-03-25T14:20:37+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1677,7 +1851,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html"/>
     <id>https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html</id>
     <published>2018-03-24T12:07:53+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1738,7 +1912,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/22/reactive-microservices-for-the-architect-and-cto.html"/>
     <id>https://dev.cloudburo.net/2018/03/22/reactive-microservices-for-the-architect-and-cto.html</id>
     <published>2018-03-22T22:05:23+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1766,7 +1940,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html"/>
     <id>https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html</id>
     <published>2018-03-17T15:29:03+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1894,7 +2068,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html"/>
     <id>https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html</id>
     <published>2018-03-17T08:34:59+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1933,7 +2107,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html"/>
     <id>https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html</id>
     <published>2018-03-13T18:27:05+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2019,7 +2193,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/12/17/by-2030-provide-legal-identity-for-all-including-birth-registration.html"/>
     <id>https://dev.cloudburo.net/2017/12/17/by-2030-provide-legal-identity-for-all-including-birth-registration.html</id>
     <published>2017-12-17T20:19:52+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2090,7 +2264,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html"/>
     <id>https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html</id>
     <published>2017-12-04T19:05:49+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2140,7 +2314,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html"/>
     <id>https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html</id>
     <published>2017-11-14T09:10:46+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2235,7 +2409,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html"/>
     <id>https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html</id>
     <published>2017-10-25T17:28:37+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2303,7 +2477,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html</id>
     <published>2017-10-12T10:24:16+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2377,7 +2551,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html</id>
     <published>2017-10-12T09:31:29+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2428,7 +2602,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html"/>
     <id>https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html</id>
     <published>2017-10-08T16:26:49+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2474,7 +2648,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html"/>
     <id>https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html</id>
     <published>2017-09-13T05:35:50+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2491,7 +2665,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"/>
     <id>https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html</id>
     <published>2017-06-24T13:06:45+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2898,7 +3072,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
     <published>2017-06-18T12:46:32+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3218,7 +3392,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
     <published>2017-06-18T11:50:25+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3347,7 +3521,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html"/>
     <id>https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html</id>
     <published>2017-04-14T15:10:46+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3462,7 +3636,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html"/>
     <id>https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html</id>
     <published>2017-04-07T15:13:15+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3523,7 +3697,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html"/>
     <id>https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html</id>
     <published>2017-03-28T05:25:38+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3573,7 +3747,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html"/>
     <id>https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html</id>
     <published>2017-03-27T05:38:50+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3605,7 +3779,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html"/>
     <id>https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html</id>
     <published>2017-03-13T21:34:47+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3680,7 +3854,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html"/>
     <id>https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html</id>
     <published>2017-01-30T06:55:41+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3762,7 +3936,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html"/>
     <id>https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html</id>
     <published>2017-01-11T22:31:09+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3805,7 +3979,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html"/>
     <id>https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html</id>
     <published>2016-12-06T06:34:22+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3911,7 +4085,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html"/>
     <id>https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html</id>
     <published>2016-12-05T06:18:54+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3974,7 +4148,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html"/>
     <id>https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html</id>
     <published>2016-12-01T22:20:29+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4153,7 +4327,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html"/>
     <id>https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html</id>
     <published>2016-11-30T22:56:42+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4221,7 +4395,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html"/>
     <id>https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html</id>
     <published>2016-11-29T21:48:26+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4306,7 +4480,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"/>
     <id>https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html</id>
     <published>2016-11-28T21:33:21+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4377,7 +4551,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html"/>
     <id>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</id>
     <published>2016-11-22T22:15:39+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4486,7 +4660,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html"/>
     <id>https://dev.cloudburo.net/2016/07/18/meteor-small-hints-5-server-code-fragments-executed-twice-on-startup.html</id>
     <published>2016-07-18T16:06:09+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4612,7 +4786,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html"/>
     <id>https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html</id>
     <published>2016-06-21T22:17:15+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4665,7 +4839,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
     <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
     <published>2016-06-09T21:14:47+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4766,7 +4940,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html"/>
     <id>https://dev.cloudburo.net/2016/05/23/meteor-small-hints-4-reading-this-params-values-in-the-iron-router-data-context.html</id>
     <published>2016-05-23T17:03:55+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4885,7 +5059,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
     <id>https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html</id>
     <published>2016-05-13T23:04:33+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
+    <updated>2018-08-23T19:03:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4959,400 +5133,6 @@
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="https://www.shopify.com/blog/34526469-how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-in-3-days"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>The Anatomy of a EB based Microservice - Github Docker Integration</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html"/>
-    <id>https://dev.cloudburo.net/2016/05/12/the-anatomy-of-a-eb-based-microservice-github-docker-integration.html</id>
-    <published>2016-05-12T21:14:14+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-        The article describes the fundamental steps for the base setup of the Amazon Elastic Beanstalk Runtime Configuration.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        For handling S3 based configuration aspects of our Microservices we will setup a bucket, which holds any kind of file required by our Microservices.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In order to be fit for grow we will introduce a naming convention from start. An asset/configuration item required for our microservice ecosystem, will start with „
-       &lt;span style=""&gt;TST&lt;/span&gt;“, you should follow a similar strategy in your area. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;strong&gt;&lt;br&gt;&lt;/strong&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;&lt;strong&gt;Setup&lt;span style="font-size: 18px;"&gt; &lt;/span&gt;&lt;/strong&gt;&lt;strong&gt;up a S3 Bucket for our Microservices&lt;/strong&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;We will call our Amazon S3 Bucket, using &lt;span style=""&gt;ms&lt;/span&gt; as an acronym for &lt;span style=""&gt;microservice&lt;/span&gt;.
-        &lt;ul&gt;
-         &lt;li&gt;&lt;span style=""&gt;tst.ms.common.&amp;lt;region&amp;gt;&lt;/span&gt;&lt;/li&gt;
-         &lt;li&gt;The bucket will hold any data which is common to all our microservices.&lt;/li&gt;
-        &lt;/ul&gt; &lt;/li&gt;
-       &lt;li&gt;Be aware of that the S3 Bucket must &lt;span style="text-decoration: underline;"&gt;be in the same region&lt;/span&gt; as your Elastic Beanstalk Instance, therefore we append the region postfix, e.g. &lt;span style=""&gt;tst.ms.common.us-west-2.&lt;/span&gt;&lt;/li&gt;
-       &lt;li&gt;With the region postfix, we can easily introduce the same bucket in other regions - in case we want to replicate our installations cross-region - following a clean and easy to understand name scheme.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;&lt;strong&gt;Create an IAM Policy for the S3 Bucket Access&lt;/strong&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;strong&gt;&lt;br&gt;&lt;/strong&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;We create now an Amazon AWS Identity and Access Management(IAM) Policy, which is a read policy, which will be attached to any of our running microservices:
-        &lt;ul&gt;
-         &lt;li&gt;IAM Policy: &lt;span style=""&gt;TST.S3.Read.clb_ms_common&lt;/span&gt;&lt;/li&gt;
-         &lt;li&gt;We will include here any common buckets of the various regions, for now we have only one&lt;/li&gt;
-        &lt;/ul&gt; &lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/fa1f9d80fa3e99cfd43cb10f08f2fd30.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;&lt;strong&gt;Allocate the policy to your  IAM Role&lt;/strong&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Having defined a read policy, we have to attach now the police to our
-       &lt;a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-roles.html#concepts-roles-instance"&gt;Elastic Beanstalk instance profile&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Refer to the following article, 
-       &lt;a href="https://dev.cloudburo.net/2015/12/20/the-anatomy-of-a-eb-based-microservice-aws-security-configuration.html"&gt;The Anatomy of a EB based Microservice - AWS Security Configuration&lt;/a&gt;, which describes how to setup an EB instance profile.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        We will attach to the role the above created the bucket read policy.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/f1cc61e5c345dcb0403a760325cfe237.png" /&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    So we have now a common bucket ready in our Elastic Beanstalk region,  which is attached with read-rights to our EB instance configuration.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Now head over to your EB project which contains the EB Docker configuration.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 18px;"&gt;&lt;strong&gt;Storing your dockerhub credentials required to access your private Github docker account&lt;/strong&gt;&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    The common bucket will be used for storing your dockerhub credentials in order to allow EB to pull your private docker image. In case you are working with a public docker image this step is not required.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;ul&gt;
-   &lt;li&gt;As a first step store your github credentials in the common bucket, as for example in the file &lt;span style=""&gt;tst.ms.common.us-west-2&lt;/span&gt;/&lt;span style=""&gt;credentials.json&lt;/span&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-        &lt;/span&gt;&lt;span class="s2"&gt;"https://index.docker.io/v1/"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-                &lt;/span&gt;&lt;span class="s2"&gt;"auth"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"myauth1245="&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-                &lt;/span&gt;&lt;span class="s2"&gt;"email"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"myemail@gmail.com"&lt;/span&gt;&lt;span class="w"&gt; 
-        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
-  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
-
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;ul&gt;
-   &lt;li&gt;You docker sensitive access data is now available to EB in a encrypted manner and secured at rest.&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;b&gt;&lt;span style="font-size: 18px;"&gt;Configure the docker file in your Elastic Beanstalk Directory&lt;/span&gt;&lt;/b&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;ul&gt;
-   &lt;li&gt;Add the following entry to your &lt;span style=""&gt;Dockerrun.aws.json. &lt;/span&gt;The file describes your &lt;a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_image.html"&gt;EB single container docker configuration&lt;/a&gt; and the entry will tell EB where to find your authentication information to access your private docker hub repository.&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-    "Authentication": { 
-      "Bucket": "clb.ms.common.us-west-2", 
-      "Key": "credentials.json" 
-    }, 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;ul&gt;
-   &lt;li&gt;Finally add an entry where to find the docker image to the &lt;span style=""&gt;Dockerrun.aws.json&lt;/span&gt; file&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-    "Image": { 
-      "Name": „&amp;lt;dockerhubUsername&amp;gt;/curationplatform:v1.0.2", 
-      "Update": "true" 
-    }, 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;ul&gt;
-   &lt;li&gt;The overall Dockerrun.aws.json file will look like as following and EB will load your application from a private dockerhub repository.&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight json"&gt;&lt;code&gt;&lt;span class="w"&gt;
-  &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="s2"&gt;"AWSEBDockerrunVersion"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"1"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="s2"&gt;"Authentication"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="s2"&gt;"Bucket"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"tst.ms.common.us-west-2"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="s2"&gt;"Key"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"credentials.json"&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="s2"&gt;"Image"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="s2"&gt;"Name"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"dockerhubusername/curationplatform:v1.0.2"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="s2"&gt;"Update"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"false"&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="s2"&gt;"Volumes"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-        &lt;/span&gt;&lt;span class="s2"&gt;"HostDirectory"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"/var/log"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; 
-        &lt;/span&gt;&lt;span class="s2"&gt;"ContainerDirectory"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"/home/app/log"&lt;/span&gt;&lt;span class="w"&gt; 
-      &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="s2"&gt;"Ports"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="w"&gt; 
-       &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt; 
-         &lt;/span&gt;&lt;span class="s2"&gt;"ContainerPort"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"80"&lt;/span&gt;&lt;span class="w"&gt; 
-       &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
-     &lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="w"&gt; 
-    &lt;/span&gt;&lt;span class="s2"&gt;"Logging"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"/var/log/docker.log"&lt;/span&gt;&lt;span class="w"&gt; 
-  &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt; 
-
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;&lt;/p&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Meteor Small Hints #3: Passing Query Parameters to Signup Route</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html"/>
-    <id>https://dev.cloudburo.net/2016/04/24/meteor-small-hints-3-passing-query-parameters-to-signup-route.html</id>
-    <published>2016-04-24T13:06:12+00:00</published>
-    <updated>2018-08-11T12:52:38+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-    This is a condensed tutorial which was initially described in
-   &lt;a href="https://github.com/meteor-useraccounts/core/issues/95"&gt;here&lt;/a&gt;.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    I have a  use case, where a new user will subscribe for one of my products, via a landing page. What I want to do is to route the registration via the normal Meteor Accounts sign up route. After having successfully registered for an account, I will manage the various set-up steps as post-process steps.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    This requires that I can provide to the signup route an additional parameter
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;, which will store the information for which product the new user wants to subscribe.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    This can be solved quite easily:
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    First extend the
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;AccountsTemplates&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; configuration in the
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;both&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; directory with the
-   &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;AccountsTemplates.addField&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; operation, for example
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight coffeescript"&gt;&lt;code&gt;
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configure&lt;/span&gt; 
-    &lt;span class="na"&gt;sendVerificationEmail&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="no"&gt;true&lt;/span&gt; 
-    &lt;span class="na"&gt;enablePasswordChange&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="no"&gt;true&lt;/span&gt; 
-    &lt;span class="na"&gt;showForgotPasswordLink&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="no"&gt;true&lt;/span&gt; 
-
-
-  &lt;span class="c1"&gt;# Configure the routes 
-&lt;/span&gt;  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'signIn'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'signUp'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'ensureSignedIn'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'verifyEmail'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'changePwd'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'forgotPwd'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;configureRoute&lt;/span&gt; &lt;span class="s"&gt;'resetPwd'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="na"&gt;layoutTemplate&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'appLayout'&lt;/span&gt; 
-
-
-  &lt;span class="c1"&gt;# Add the new field 
-&lt;/span&gt;  &lt;span class="nx"&gt;AccountsTemplates&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;addField&lt;/span&gt; 
-    &lt;span class="na"&gt;_id&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'reg_code'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-    &lt;span class="na"&gt;type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'hidden'&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-    Having done that you could call now the sign-up URL with the following parameter
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-  http://localhost:3000/sign-up?email=felix@example.com&amp;amp;reg_code=123 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    This will route you to the sign-up form already filled with the Email address.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/c3e6af765a9f71b2d13940d2498d83b2.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The form will have as well a hidden form element
-       &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;at-field-reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/7a4c3b62df8868c9d36e31d5bb552dd1.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        After registering of the user, the information will be available as  of the users profile configuration
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/4e4a66ef39a30f5f84571124f134d700.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        An can be easily retrieved via
-       &lt;b&gt;&lt;i&gt;&lt;span style=""&gt;Meteor.user().profile.reg_code&lt;/span&gt;&lt;/i&gt;&lt;/b&gt; for further processing.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
