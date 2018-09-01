@@ -5,10 +5,205 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-08-23T21:24:11+00:00</updated>
+  <updated>2018-09-01T11:18:41+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>DevOp Notes: Monitoring Nginx and its underlying Web Components</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/09/01/devop-notes-monitoring-nginx-and-its-underlying-web-components.html"/>
+    <id>https://dev.cloudburo.net/2018/09/01/devop-notes-monitoring-nginx-and-its-underlying-web-components.html</id>
+    <published>2018-09-01T11:18:41+00:00</published>
+    <updated>2018-09-01T11:18:59+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
+    Under the acronym “DevOps Notes” I publish my technical findings, which were gathered during the bootstrapping phase of my first cloud based side-project, the so-called “
+   &lt;a href="https://publishingbot.cloudburo.net/"&gt;Cloudburo Publishing Bot&lt;/a&gt;”.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-style: italic;"&gt;“The Cloudburo Publishing Bot Platform enables Micropreneurs, Small and Medium Enterprises (SME), as well as enthusiastic blogging hobbyists to establish a Content Marketing Presence with minimal effort which is centered around Evernote.” &lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    You can find a description of the Evernote based blogging solution in the following Medium Article:
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;a href="https://medium.com/@talfco/how-to-manage-an-online-or-news-blog-directly-out-of-evernote-65bd0833f8cb"&gt;How to Manage an Online or News Blog directly out of Evernote&lt;/a&gt;.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    So let’s move on to the tech note:
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    An essential component within the Publishing Bot platform is “
+   &lt;a href="https://www.nginx.com/"&gt;nginx&lt;/a&gt;”, the well-known high performance Webserver.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    The main task of the Publishing Bot is to extract a user’s Evernote Blog Article and convert it into a static blog website (based on the brilliant static Website Framework
+   &lt;a href="https://middlemanapp.com/"&gt;MiddleMan&lt;/a&gt;). 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Each blog site managed by the Publishing Bot will be automatically configured into the Nginx instance running on the Publishing Bot Instance. 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Until recently I used a very basic monitoring of my docker instance until I got aware of Amplify, which offers a brilliant free monitoring solution (
+   &lt;a href="https://amplify.nginx.com/"&gt;&lt;a href="https://amplify.nginx.com"&gt;https://amplify.nginx.com&lt;/a&gt;&lt;/a&gt;)
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-style: italic;"&gt;Amplify is a free, modern, low barrier monitoring tool. It comes directly from the company behind NGINX. With the focus on NGINX and the underlying web site components, Amplify will make your web site more reliable and predictable.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    What you have to do, is to create an account at their site and follow the configuration steps instructions, which are straightforward.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    For example do enable the monitoring in my Publishing Bot Docker instance (with its configured nginx instance), the only thing I had to do, is to add the following line to the
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;Dockerfile&lt;/span&gt;:
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+  # Install Nginx Amplify Monitor 
+  RUN curl -L -O https://github.com/nginxinc/nginx-amplify-agent/raw/master/packages/install.sh \ 
+      &amp;amp;&amp;amp; API_KEY=‘xxxx15x0e610xxxxaa80axxead' sh ./install.sh 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Within minutes the Amplify Dashboard gets filled with useful monitoring data.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Some examples:
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-weight: bold;"&gt;Main Dashboard&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/2e14647648ae9c53ea7c3df9283ff73c.png'&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A Multitude of
+       &lt;span style="font-weight: bold;"&gt; Graphs &lt;/span&gt;are offered
+       &lt;span style="font-weight: bold;"&gt;:&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/7a198fd219b492fad3aad1493731a726.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The
+       &lt;span style="font-weight: bold;"&gt;Analyzer &lt;/span&gt;allows you to check the overall configuration, as well as various analysis tasks are offered.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/8062b4c5e135776721b1fb33df6e302f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The
+       &lt;span style="font-weight: bold;"&gt;Config analysis&lt;/span&gt; checks for errors and provides as well recommendations to improve your overall Nginx configuration
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/4284ad9c4f0b755b2d5bef0d55c2bbc5.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/ab67c19aaf2e4d6c8ebdfe391729f341.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Finally you can define
+       &lt;span style="font-weight: bold;"&gt;Alerts, &lt;/span&gt;which will inform you via Email in case of problems.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/a6468a875419630289723cb371a8ad6a.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A incredible useful tools to monitor your Nginx hosted website.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Google Data Collection Research Madness</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/08/23/google-data-collection-research-madness.html"/>
@@ -5051,89 +5246,6 @@
    &lt;span style="font-size: 11px;"&gt;&lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
   &lt;/div&gt;&lt;/p&gt;
 
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>How We Built an Ecommerce Business from Scratch and Generated $922.16 in Revenue in 3 Days</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html"/>
-    <id>https://dev.cloudburo.net/2016/05/13/how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-.html</id>
-    <published>2016-05-13T23:04:33+00:00</published>
-    <updated>2018-08-23T19:03:56+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Shopify has an execellent blog when it comes down to tips for startups or micro enterprises. There advices are always very practical oriented.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Richard Lazazzera presented a nice article “how build an ecommerce business from scratch and see how many sales we could generate in three days”.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        For many entrepreneurs, building their first business can be intimidating. There’s seemingly hundreds of steps, choices and paths to get to the finish line of just launching your business, let alone generating traffic and sales. Richard outlines and describes the following steps in detail:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;Getting Started In most cases, it takes some money to make money.&lt;/li&gt;
-       &lt;li&gt;What Should We Sell?&lt;/li&gt;
-       &lt;li&gt;Determining an Ecommerce Business Model &lt;/li&gt;
-       &lt;li&gt;Finding a High Quality Dropshipper&lt;/li&gt;
-       &lt;li&gt;Broadening Our Product Supplier Search Terms&lt;/li&gt;
-       &lt;li&gt;Ordering a Sample Product to Verify Product&lt;/li&gt;
-       &lt;li&gt;Determining Product Pricing &lt;/li&gt;
-       &lt;li&gt;Creating and Designing a Brand Keeping&lt;/li&gt;
-       &lt;li&gt;Deciding On a Business Name&lt;/li&gt;
-       &lt;li&gt;Designing a Logo That was Simple and Effective&lt;/li&gt;
-       &lt;li&gt;Creating Product Logo&lt;/li&gt;
-       &lt;li&gt;Taking the Product Photography with Our Smartphones&lt;/li&gt;
-       &lt;li&gt;Setting Up Our Shopify Store&lt;/li&gt;
-       &lt;li&gt;Setting up the Product Page&lt;/li&gt;
-       &lt;li&gt;Sales Channels and Marketing Strategies&lt;/li&gt;
-       &lt;li&gt;Personal Outreach to Friends and Family&lt;/li&gt;
-       &lt;li&gt;Product Hunt&lt;/li&gt;
-       &lt;li&gt;Reddit&lt;/li&gt;
-       &lt;li&gt;Instagram&lt;/li&gt;
-       &lt;li&gt;Pinterest&lt;/li&gt;
-       &lt;li&gt;Facebook Paid Advertising&lt;/li&gt;
-       &lt;li&gt;Twitter&lt;/li&gt;
-       &lt;li&gt;Marketing Channel Results - Overview&lt;/li&gt;
-       &lt;li&gt;Overall Setup and Marketing Expenses&lt;/li&gt;
-       &lt;li&gt;Conclusion&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        An astonishing list of activities and findings. Especially the sections about the various Sales Channels and their effectiveness is helpful when you establishing your own business.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        You can find the complete article
-       &lt;a href="https://www.shopify.com/blog/34526469-how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-in-3-days"&gt;here&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="https://www.shopify.com/blog/34526469-how-we-built-an-ecommerce-business-from-scratch-and-generated-922-16-in-revenue-in-3-days"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
