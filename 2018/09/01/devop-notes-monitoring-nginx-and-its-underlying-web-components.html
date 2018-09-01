@@ -188,6 +188,33 @@
   # Install Nginx Amplify Monitor 
   RUN curl -L -O https://github.com/nginxinc/nginx-amplify-agent/raw/master/packages/install.sh \ 
       &amp;&amp; API_KEY=‘xxxx15x0e610xxxxaa80axxead' sh ./install.sh 
+  ADD nginx-conf /etc/nginx/conf.d 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div>
+    The
+   <span style="font-family: &quot;Courier New&quot;;">ADD</span> command will copy the following file into the
+   <span style="font-family: &quot;Courier New&quot;;">conf.d</span> directory
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight plaintext"><code>
+  server { 
+      listen 127.0.0.1:80; 
+      server_name 127.0.0.1; 
+      location /nginx_status { 
+          stub_status on; 
+          allow 127.0.0.1; 
+          deny all; 
+      } 
+  } 
 
 </code></pre>
 
@@ -290,12 +317,13 @@
     
   </div>
   <div class="article">
-    <p><span/>        </div>
+    <p><span/>         <br>
+      </div>
       <div>
        <br>
       </div>
       <div>
-        A incredible useful tools to monitor your Nginx hosted website, what do you need more ?
+        A incredible useful tool to monitor your Nginx hosted website, what do you need more ?
       </div>
       <div>
        <br>
