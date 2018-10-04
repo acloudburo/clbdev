@@ -5,10 +5,735 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-09-03T17:18:13+00:00</updated>
+  <updated>2018-10-04T05:03:04+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Polkadot Hello World #1: Cost-Effective Cloud Deployment of a Validator Node</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html"/>
+    <id>https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html</id>
+    <published>2018-10-04T05:03:04+00:00</published>
+    <updated>2018-10-04T05:04:03+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;This tutorial is based on Polkadot POC2. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The following article series “Polkadot Hello World&amp;quot; describes the steps and findings during my personal kickoff phase in the area of the Polkadot multi-chain framework.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In the last months, I was extensively researching projects in the area of blockchain and crypto with the goal to find a challenging visionary project, which allows me to build up know how and experience in this topic. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        It should be in the early inception phase in order to allow me to collect insights how such a open source decentralized Web project (also known as Web 3) evolves and progress over time.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        I’m a strong believer that the decentralized Web - driven amongst others by the various Blockchain and Crypto innovations - will be the next big thing. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You know I’m an IT veteran, which was starting programming with the  ZX81 back in 1981 (in Basic), moved forward with Pascal, Modula, Oberon to Java JDK 1.0 (1996), followed by Perl, TCL, Groovy, Javascript and a multitude of other languages and landed now for the next year(s) with Rust (which is a safe, concurrent system programming language, ideally for crypto and blockchain work). 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/a40a5e815888d9b89e6096bdc9ad0719.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So I have seen in the last three decades several phases and tectonic shifts of the internet, which started initially purely in a decentralized manner (in the 70’ies with the ARPANET) and shifted to a heavy centralized internet nowadays. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/89e21d9d8731b78912ef5b80d50b051b.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        There is a shift in front of us, or as Josh Stark, states in his Medium Article “
+       &lt;a href="https://medium.com/l4-media/making-sense-of-web-3-c1a9e74dcae"&gt;Making Sense of Web 3&lt;/a&gt;”:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;Over the last decade internet-based services have trended towards centralization. Today, a handful of companies control the platforms we use to search for information, store our personal data, manage our online identities, and communicate publicly and privately.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;At the same time, a group of seemingly unrelated technologies are being developed on the fringes of the tech industry, ranging from encrypted messaging to digital money. Within that loose community, “web 3” has become a catchall term for a vision of a new, better internet. An internet where payments and money are natively digital, where “decentralized” applications compete with centralized ones, and where users have more control over their identity and data.&amp;rdquo;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        One of the most innovative and interesting project in this area, is Polkadot.  Polkadot has the vision for a heterogeneous multi-chain framework, which connects blockchains and enables applications and smart contracts on one blockchain to seamlessly transact data and assets on other chains. You can find a good overview in the
+       &lt;a href="https://github.com/w3f/polkadot-light-paper/blob/master/Polkadot-lightpaper.pdf"&gt;Polkadot Light Paper&lt;/a&gt;. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Behind the Polkadot Framework stands Dr. Gavin Wood, who is one of the founder of Ethereum, as well as Partiy. Parity is the company behind Polkadot and its roadmap foresees a going live date around Q3/2019 (DOT-token sales phase). So enough time to  ramp up know how and watch how the product evolves and solves the challenges laid out in the white paper.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        I have to say it requires quite some reading to get the a initial basic understanding of the framework, but there is enough documentation material available as well as a vibrant community on
+       &lt;a href="https://riot.im/app/#/room/%23polkadotnoobs:matrix.org"&gt;riot&lt;/a&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;Let’s get started then&lt;/span&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The first exercise I did, was the deployment of a Polkadot Verification Node  as a dockerized cloud instance. I call it the “Hello World of the Polkadot Framework”. It’s quite straightforward and results  - after some hours of syncing of the existing 1.5 million blocks -  in a connected and synchronised  alidator Node on the Polkadot “Krumme Lenke Test Network” (which is reflecting the POC-2 state of the project).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        On the below screenshot, you see my node “clb-polkadancer” which is connected with 24 peers and processes around every five seconds a new block and adds it to its local blockchain (
+       &lt;a href="https://telemetry.polkadot.io/"&gt;telemetry user interface&lt;/a&gt;) 
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/a34c370aa72087a8ee92da6ebaf299b9.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Be aware that the article covers the instantiating of the Polkadot Validator Node on Docker. To convert it to a fully trusted Polkadot validator node - which participates actively in the Proof of Stake (POS) consensus process -  requires additional steps and will be covered in another blog article.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Validator is one of the four basic roles which upkeeps a Polkadot network. The other three roles are
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Collator
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Nominator
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Fishermen
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Gavin Wood, depicts in his white paper the 4 roles and its interactions, as follows:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/77d655e48624d9f77c7900ba4998195d.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        I will not go into the details here about the various role (refer to the
+       &lt;a href="https://polkadot.network/PolkaDotPaper.pdf"&gt;white paper&lt;/a&gt;) but just provide the Validator definition out of the white paper.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;A validator is the highest charge and helps seal new blocks on the Polkadot network. The validator’s role is contingent upon a sufficiently high bond being deposited, though we allow other bonded parties to nominate one or more validators to act for them and as such some portion of the validator’s bond may not necessarily be owned by the validator itself but rather by these nominators.&amp;rdquo;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So what is his primary task then? 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;A validator must run a relay-chain client implementation with high availability and bandwidth. At each block the node must be ready to accept the role of ratifying a new block on a nominated parachain. This process involves receiving, validating and republishing candidate blocks”.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Ok there are two new concepts introduced “relay-chain” and “parachain”, which may be new for you and are core concepts within Polkadot. Let’s try to explain them quickly not going too much into the detail by using the summary of the white paper:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;quot;Polkadot is a scalable heterogeneous multi-chain. This means that unlike previous blockchain implementations which have focused on providing a single chain of varying degrees of generality over potential applications, Polkadot itself is designed to provide no inherent application functionality at all. Rather, Polkadot provides the bedrock “&lt;/span&gt;
+       &lt;span style="font-style: italic; font-weight: bold;"&gt;relay-chain&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;” upon which a large number of validatable, globally-coherent dynamic data-structures may be hosted side-by-side. We call these data-structures “parallelised” chains or &lt;/span&gt;
+       &lt;span style="font-style: italic; font-weight: bold;"&gt;parachains&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;, though there is no specific need for them to be blockchain in nature.&amp;rdquo;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Got it? So our Validator Node is part of the relay-chain and receives blocks and - in case the blocks belong to our managed parachain - will seal them in its fully synchronized parachain database. If the block belongs to a parachain which isn&amp;rsquo;t in our scope, then 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;… it is expected that the validator will nominate the task of devising a suggested new parachain block to a third-party, known as a collator.”&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/cd1e6b78b2615912de40621969441873.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So let’s get now a “highest charge” Polkadot role node up and running. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Just one last comment, highest charge has some stringent non-functional requirements: 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;A validator must run a relay-chain client implementation with &lt;span style="font-style: italic; font-weight: bold; text-decoration: underline;"&gt;high availability and bandwidth&lt;/span&gt;&lt;/span&gt;
+       &lt;span style="font-style: italic; font-weight: bold; text-decoration: underline;"&gt;”&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So in case you want to get nominated as approved Validator you must ensure that you run the node in a 7x24 fashion in order to stay in sync with the evolvement of your global parachain. Otherwise the fishermen will detect this bad behaviour and punish you and potentially kicks you out of the consensus validator role.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As one can see below,  around every 5 seconds a new block is processed with a propagation time of 502 ms. Your node has to be ready to process and propagate such requests in a timely fashion.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e6dc4a80ef577930a2f139b4fbbced1b.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Running a validator on your personal laptop or desktop may not be a good idea, so a Cloud-managed Validator Node is the way to go.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Finding a suitable Cloud-Provider&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In the recent years I was testing out and using various Cloud Providers (AWS, Google …) in order to run my side-project micro business, which is offering a subscription-based product called “Cloudburo Publishing Bot”. The solution allows you to manage your website(s) directly out of Evernote. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;As a side-note: For example this article was initially written completely in Evernote and published directly to my website. If you are interested in such an blogging approach, head over to my &lt;/span&gt;
+       &lt;a href="https://publishingbot.cloudburo.net/" style="font-style: italic;"&gt;PublishingBot&lt;/a&gt;
+       &lt;span style="font-style: italic;"&gt; site and get a free basic registration.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So having invested quite heavily in AWS Elastic Beanstalk I switched over recently to the 
+       &lt;a href="https://jelastic.com/"&gt;Jelastic Platform-as-a-Service &lt;/a&gt;platform, which provides an excellent Pay-as-you-use pricing model, ideally for micro business requirements (I could reduce my monthly costs substantially).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Another aspect which is really striking with Jelastic is, that there is zero service provider lock-in! 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;Jelastic PaaS offering is available across 60+ data centers in 30 countries worldwide. The infrastructure and local support are provided by the proven hosting partners listed in Cloud Union. Users can host their applications within hardware regions of a single provider or across multiple using the same technology&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As for example in my case, I’m running my Jelastic PaaS with a local Swiss vendor (
+       &lt;a href="https://hidora.com/"&gt;Hidora - Flex Swiss Cloud&lt;/a&gt;) in a data center in the Swiss Jurisdiction (no US tampering), but have the freedom to move my instances to any Service provider world-wide to data centres which may be under control of local service providers and not controlled by a centailzed enterprise.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/ff445b2c5dc25f83df21320c1f932b7e.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;Cloudlets the base for the Pay-as-you-use pricing model&lt;/span&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Jelastic PaaS prices are flexible and scalable. They are based on actual consumption so your bill reflects exactly what you use per hour.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        This pricing model is based on resource units called “cloudlets”. Each cloudlet accounts for 400 MHz of processor speed and 128 MB of RAM.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/bbe11ee3b0beebce9bf9aa72395df927.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Jelastic PaaS offers you two types of cloudlets:
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Reserved Cloudlets – a type of cloudlets that allows to get significant automatic discount rates. A number of resources you reserve beforehand and pay for it whether you spent all resources or not.
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Dynamic Cloudlets – a type of cloudlets that allows you to pay based on your actual resource usage. Set your maximum resource consumption and the Dynamic cloudlets will add and remove automatically depending on your site load.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So after deployment of an application you have to do some fine-tuning in context of the reserved cloudlets in order to get an optimal prize. This can be easily done via the Dashboard in real-time without restarting any instance.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As we see later, it allows you to tune the cloudlets in real-time and check if there is an impact onto your node block propagation time in the Polkadot Net.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Preparing a Validator Dockerfile&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        All my cloud projects (be it a Java based Bot or a Meteor Node.js based frontend) I run in a Docker container. This allowed me to standardise and automate the deployment and runtime configuration and tuning. So it was clear for me to deploy the validator node in a Docker image as well.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Polkadot already provide its own Docker Image “
+       &lt;a href="https://hub.docker.com/r/chevdor/polkadot/"&gt;chevdor/polkadot&lt;/a&gt;”, which is based on the &amp;ldquo;phusion/baseimage:0.10.1” which maps to the newest Ubuntu release 18.04.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Unfortunately  Jelastic PaaS is not Ubuntu 18.04 ready, so I changed the Dockerfile to be based on Ubuntu release 16.04 and made it available via Docker Hub under the name “
+       &lt;a href="https://hub.docker.com/r/talfco/clb-polkadot/"&gt;talfco/clb-polkadot&lt;/a&gt;&amp;rdquo;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Configuring and Running the Validator Docker Instance&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Within the Hidora PaaS I created a new Docker Environment “polkadotDocker” and loaded my  clb-polkadot Docker image from Docker Hub.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The initial instance configuration for the res-ynchronization phase was 4-5 cloudlets, which gets translated to a CPU between 1.6 GHz - 2.0 GHZ with 512 MB to 640 MB.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 12px; color: rgb(51, 51, 51); font-family: Monaco;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/e15d3f04ae779f8bdd032dc06e821a4f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(51, 51, 51);"&gt;I configured the Polkadot database directory to be persisted on the servers local file system, in order not to loose our full parachain db after a re-deployment of a new docker image.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(51, 51, 51);"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/9057789db66dfab2ca987c58bfeb7c36.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(51, 51, 51);"&gt;Finally I added &lt;/span&gt;
+       &lt;span style="caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51);"&gt;—&lt;/span&gt;
+       &lt;span style="color: rgb(51, 51, 51);"&gt;name ‘clb-polkadancer’ parameter to the entry point.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(51, 51, 51);"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/7705796c96d9f27c5501e69b7cd44dea.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(51, 51, 51); font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;That&lt;/span&gt;
+       &lt;span style="caret-color: rgb(51, 51, 51); color: rgb(51, 51, 51); font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;’&lt;/span&gt;
+       &lt;span style="color: rgb(51, 51, 51); font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;s it. I started the instance, the log file will show the progress of the Syncing.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(51, 51, 51);"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/4e291f394700167a3968a8687e942fee.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px; color: rgb(51, 51, 51); font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;Head over to the &lt;/span&gt;
+       &lt;span style="color: rgb(51, 51, 51);"&gt;&lt;a href="https://telemetry.polkadot.io/"&gt;&lt;a href="https://telemetry.polkadot.io/"&gt;https://telemetry.polkadot.io/&lt;/a&gt;&lt;/a&gt; where you should see your Validator instance and the syncing progress as well.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(51, 51, 51);"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/d2489b7f87a11cc56cf6146530818522.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;span style="color: rgb(51, 51, 51); font-size: 18px; font-weight: bold;"&gt;Building up a copy of the parachain DB&lt;/span&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(51, 51, 51);"&gt;As a first step the Validator node has to build up the complete parachain db on your local node.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px; color: rgb(51, 51, 51); font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;As one can see in the below screenshot the chain build phase - which got finished around 14:30 -  was using all CPU. After completion, the CPU usage was reduced to 200-250 MHz. To build up the full parachain of around 5 million blocks 6 hours of processing was required.  Overall disk consumption is around 5 GB.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/74915a2514f74ca1d8c45dd6232aab40.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Having loaded the full parachain it’s time to reconfigure the instance. The first instance configuration tested out consisted of  2 cloudlets which gets translated into 256 MB RAM and a CPU of 800 MHz.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/448285659fb1865b73115233fa3701f4.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Fine Tuning the Cloudlets&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        An assessment of the runtime statistics showed, that upper RAM limit (which is for 2 cloudlets  256 MB) of our node is always topped, which results in additional dynamic cloudlet charges, which is suboptimal.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/66c0f9f99db4e12aeee1099318709ce9.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So let’s re-adjust our instance to 3 cloudlets, which results in a&lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-weight: bold;"&gt;384 MB RAM &lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-weight: bold;"&gt;1.2 GHz CPU &lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-weight: bold;"&gt;(10 GB of Disk)&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/c41c76786b61f518c8d48d7459dae28e.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As one can see in the above dashboard with 3 cloudlets configured for an instance, we can keep CPU, RAM, Network, Disk and IOPS below the upper limit. So this is the ideal configuration to run a Polkadot Validator Node.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A special look has to be taken for the Network traffic. The Validator is quite bandwidth hungry, you have to expect a network bandwidth of around 100-300 MB/min, which may results in additional costs by your provider (I will update this section after having a clearer picture running the node for a month).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font face="Helvetica Neue" style="font-size: 18px;"&gt;&lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;; font-size: 18px; font-weight: bold;"&gt;So what’s price to run a Validator Node 7x24 ?&lt;/span&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;A instance with 3 reserved Cloudlets, results in 24x3 = 72 Cloudlets per day which is charged with 0.22 CHF  (around 0.20 USD). Actually there is no Paid Traffic charges, but that may change later in the month (as said an update will follow here in case traffic charges apply). &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;As one can also see, there is an additional charge of 0.20 CHF per day for a Public IP4 address. This one is required due the fact that we have to open port 30333 for public access, which requires that the instance has a public IP address as well. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/a293e5ba0319a79f191615994ab65874.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;Don’t forget: Opening the port &lt;/span&gt;&lt;/span&gt;
+       &lt;span style=" font-size: 18px; color: rgb(69, 69, 69); font-family: &amp;quot;Open Sans&amp;quot;, Arial, Helvetica, sans-serif; font-weight: bold;"&gt;30333&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style=""&gt;&lt;span style="color: rgb(69, 69, 69); font-family: &amp;quot;Open Sans&amp;quot;, Arial, Helvetica, sans-serif; font-size: 14px;"&gt;As one can see on this screenshot, certain nodes are have only connections with halt of the peers (24). My node was also showing that behaviour in the beginning. &lt;/span&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="color: rgb(69, 69, 69); font-family: &amp;quot;Open Sans&amp;quot;;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/1801f6a1c8c7b59ed73c2254d14c7be7.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        With the help of the Polkadot Beginner Lounge on Riot I could quickly solve this problem. My Docker Instance was exposing some general purpose ports, but not 30333 used by the Polkadot Validator.
+      &lt;/div&gt;
+      &lt;div&gt;
+        In context of my PaaS it requires that I associated a Public IP with my node to open the port, which results in the above 0.20 CHF per day.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/8f1283012855cfe8e475e84a468b748c.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        All in all, a full Validator is charged 0.42 CHF per day, which results in monthly costs of around the price of 2 Starbuck coffees in Switzerland or 3 in Tokyo. So dependent on your global location you have to adjust your coffee consumption slightly that you can run your own Polkadot Validator node.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/12779f4e857876e39cc302f1bbfaf832.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        That’s it for today, in the next article we will transform our Polkadot Validator in a
+       &lt;span style="text-decoration: underline;"&gt;official&lt;/span&gt; Validator which will take part in the Proof of Stake (POS) consensus process.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Stay tuned … 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>The Cloud Landscape Categorization Framework By Johan Den Haan</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/09/03/the-cloud-landscape-categorization-framework-by-johan-den-haan.html"/>
@@ -5178,107 +5903,6 @@
       &lt;div&gt;
        &lt;span style="font-size: 11px;"&gt;&lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>A categorisation of bots used for conversational commerce</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html"/>
-    <id>https://dev.cloudburo.net/2016/06/09/a-categorisation-of-bots-used-for-conversational-commerce.html</id>
-    <published>2016-06-09T21:14:47+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-       &lt;div&gt;
-        &lt;b&gt;Chat Bots&lt;/b&gt;, as the new way to engage with your clients, it’s a trending concept and approach in 2016.
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-         Forbes is even asking if
-        &lt;a href="http://www.forbes.com/sites/parmyolson/2016/05/09/could-chat-bots-replace-human-jobs-facebook"&gt;ChatBots could replace Human Jobs&lt;/a&gt; or VentureBeat is talking from the
-        &lt;a href="http://venturebeat.com/2016/05/22/this-is-the-start-of-the-post-app-era/"&gt;Start of the Post App Era&lt;/a&gt;, which handed over to the Bot Era.
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div&gt;
-         For example refer to the following Google Trend graph, which shows how the search keyword  Chatbots spiked in the last months in 2016.
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-       &lt;div&gt;
-         &lt;script type="text/javascript" src="//www.google.ch/trends/embed.js?hl=en-GB&amp;amp;q=chatbots&amp;amp;date=1/2016+12m&amp;amp;cmpt=q&amp;amp;tz=Etc/GMT-2&amp;amp;tz=Etc/GMT-2&amp;amp;content=1&amp;amp;cid=TIMESERIES_GRAPH_0&amp;amp;export=5&amp;amp;w=500&amp;amp;h=330"&gt;&lt;/script&gt;
-       &lt;/div&gt;
-       &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div&gt;
-         But let’s look first at the bot type categorisation which will help to better understand the topic.
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-         In the e-commerce sector, they are using the term
-        &lt;i&gt;conversational commerce bots&lt;/i&gt;. The
-        &lt;a href="http://venturebeat.com/2016/05/21/the-5-branches-of-conversational-commerce-a-guide-for-the-bot-curious/"&gt;Venturebeat article&lt;/a&gt; by Jeff Lawson of Twilio introduces a nice categorisation of the various bot types which can be used in commerce.
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-         First of all the term conversational commerce is defined as
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;i&gt;A future of technology driven by messaging (and voice) interactions that transcend current communication modalities.&lt;/i&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-         Jeff Lawson counts five different trends converging on conversational commerce:
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;p&gt;1. Advanced notifications&lt;br&gt; 2. Bots&lt;br&gt; 3. Chat in apps&lt;br&gt; 4. Apps in chat&lt;br&gt; 5. Humans chatting with each other&lt;/p&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-         You can find all the details in the Venturebeat article.
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;i&gt;&lt;span style="font-size: 11px;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/i&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;span style="font-size: 11px;"&gt;&lt;i&gt;BTW: This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://venturebeat.com/2016/05/21/the-5-branches-of-conversational-commerce-a-guide-for-the-bot-curious/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
