@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html"/>
     <id>https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html</id>
     <published>2018-10-04T05:03:04+00:00</published>
-    <updated>2018-10-04T06:09:22+00:00</updated>
+    <updated>2018-10-04T10:28:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -41,7 +41,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        It should be in the early inception phase in order to allow me to collect insights how such a open source decentralized Web project (also known as Web 3) evolves and progress over time.
+        The project should be in the early inception phase in order to allow me to collect valuable insights about the evolvement of such an open source decentralized Web project (also known as Web 3).
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -64,7 +64,8 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
@@ -102,7 +103,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        One of the most innovative and interesting project in this area, is Polkadot.  Polkadot has the vision for a heterogeneous multi-chain framework, which connects blockchains and enables applications and smart contracts on one blockchain to seamlessly transact data and assets on other chains. You can find a good overview in the
+        One of the most innovative and interesting projects in this area is Polkadot.  Polkadot has the vision for a heterogeneous multi-chain framework, which connects blockchains and enables applications and smart contracts on one blockchain to seamlessly transact data and assets on other chains. You can find a good overview in the
        &lt;a href="https://github.com/w3f/polkadot-light-paper/blob/master/Polkadot-lightpaper.pdf"&gt;Polkadot Light Paper&lt;/a&gt;. 
       &lt;/div&gt;
       &lt;div&gt;
@@ -318,7 +319,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;As a side-note: For example this article was initially written completely in Evernote and published directly to my website. If you are interested in such an blogging approach, head over to my &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;As a side-note: For example this article was initially written completely in Evernote and published directly to my &lt;a href="https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html"&gt;website&lt;/a&gt;. If you are interested in such an blogging approach, head over to my &lt;/span&gt;
        &lt;a href="https://publishingbot.cloudburo.net/" style="font-style: italic;"&gt;PublishingBot&lt;/a&gt;
        &lt;span style="font-style: italic;"&gt; site and get a free basic registration.&lt;/span&gt;
       &lt;/div&gt;
@@ -383,7 +384,7 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
