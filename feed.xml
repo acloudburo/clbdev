@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html"/>
     <id>https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html</id>
     <published>2018-10-04T05:03:04+00:00</published>
-    <updated>2018-10-04T21:09:56+00:00</updated>
+    <updated>2018-10-05T17:08:17+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -319,7 +319,9 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;As a side-note: For example this article was initially written completely in Evernote and published directly to my &lt;a href="https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html"&gt;website&lt;/a&gt;. If you are interested in such an blogging approach, head over to my &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;As a side-note: For example this article was initially written completely in Evernote and published directly to my &lt;/span&gt;
+       &lt;a href="https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html" style="font-style: italic;"&gt;website&lt;/a&gt;
+       &lt;span style="font-style: italic;"&gt;. If you are interested in such an blogging approach, head over to my &lt;/span&gt;
        &lt;a href="https://publishingbot.cloudburo.net/" style="font-style: italic;"&gt;PublishingBot&lt;/a&gt;
        &lt;span style="font-style: italic;"&gt; site and get a free basic registration.&lt;/span&gt;
       &lt;/div&gt;
@@ -503,10 +505,10 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="color: rgb(51, 51, 51); font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;&lt;font style="font-size: 18px;"&gt;&lt;b&gt;Running your Node&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;span style="color: rgb(51, 51, 51); font-family: &amp;quot;Helvetica Neue&amp;quot;; font-size: 18px; font-weight: bold;"&gt;Running your Node&lt;/span&gt;&lt;/font&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="color: rgb(51, 51, 51); font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="color: rgb(51, 51, 51); font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;That&lt;/span&gt;
@@ -637,7 +639,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        A special look has to be taken for the Network traffic. The Validator is quite a bandwidth hungry process, you have to expect a network bandwidth of around 100-300 MB/min, which may results in additional costs by your provider (I will update this section after having a clearer picture running the node for a month).
+        A special look has to be taken for the Network traffic. The Validator is quite a bandwidth hungry process, you have to expect a network bandwidth of around 100-300 MB/min.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -649,7 +651,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;An instance with 3 reserved Cloudlets, results in 24x3 = 72 Cloudlets per day which is charged with 0.22 CHF  (around 0.20 USD). Actually, there is no Paid Traffic charges, but that may change later in the month (as said an update will follow here in case of traffic charges apply). &lt;/span&gt;
+       &lt;span style="font-size: 14px;"&gt;An instance with 3 reserved Cloudlets, results in 24x3 = 72 Cloudlets per day which is charged with 0.22 CHF  (around 0.20 USD). There is no Paid Traffic charges, because 1.4 TB/per month is free, which is more than enough to cover the bandwidth of the node.&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
