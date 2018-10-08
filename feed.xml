@@ -5,10 +5,697 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-10-04T05:03:04+00:00</updated>
+  <updated>2018-10-08T22:05:10+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Polkadot Hello World #2: Get Ready to Be Nominated as Official Validator</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html"/>
+    <id>https://dev.cloudburo.net/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html</id>
+    <published>2018-10-08T22:05:10+00:00</published>
+    <updated>2018-10-08T22:06:01+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/9d1f526610ce86f93330837ea5c1eaa1.png'&gt;&lt;/p&gt;
+  
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;This tutorial is based on Polkadot POC2.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        This is the second article of the series, articles already published on Medium:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;a href="https://medium.com/@talfco/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node-d3c1bbdb9200"&gt;Polkadot Hello World #1: Cost-Effective Cloud Deployment of a Validator Node&lt;/a&gt;
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;Where’s the Party ?&lt;/span&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        I suppose you followed the steps as described in
+       &lt;a href="https://medium.com/@talfco/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node-d3c1bbdb9200"&gt;my first article&lt;/a&gt; and have now a stable Polkadot Validator cloud instance running.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So what does that mean, actually ?
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Well you have a node running which is building up a local copy of the parachain exposed by the Krumme Lanke Polkadot POC-2 test net. So you are more less an active listener on the relay chain and are processing the newly created block and seal them into your local blockchain db.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        This situation can be explained by using a modified tweet of 
+       &lt;a href="https://twitter.com/iamdevloper" style="background-color: rgb(230, 236, 240); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; unicode-bidi: embed; direction: ltr !important; color: rgb(101, 119, 134); font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: bold;"&gt;@&lt;/a&gt;
+       &lt;a href="https://twitter.com/iamdevloper" style="background-color: rgb(230, 236, 240); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; unicode-bidi: embed; direction: ltr !important; color: rgb(101, 119, 134); font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: bold;"&gt;iamdevloper&lt;/a&gt;, which is famous for brilliant to-the-point funny messages, as for example
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So you entered the blockchain space with a validator node  … but … are not part of the party yet.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt; 
+       &lt;img class='pull-left img-responsive article img-thumbnail' src='/images/e77de2760f8136c2e6ffabc662b2ab2c.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b style="font-size: 14px;"&gt;&lt;br&gt;&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In order to join the party and get the possibility to earn DOT tokens and get rich ( test-rich only)  you have to apply for one of the four Polkadot basic roles, which upkeeps a Polkadot network (refer to the roles discussion in my last
+       &lt;a href="https://medium.com/@talfco/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node-d3c1bbdb9200"&gt;article&lt;/a&gt;). 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So let’s walkthrough the four steps which are necessary to enter the Proof of Stake (PoS) party room in the Validator role.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/7532c353533904d84b317d74f2cf48d4.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;1. Create an account&lt;/span&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As a first step, you have create an account on: 
+       &lt;a href="https://poc-2.polkadot.io/#/accounts"&gt;&lt;a href="https://poc-2.polkadot.io/#/accounts"&gt;https://poc-2.polkadot.io/#/accounts&lt;/a&gt;&lt;/a&gt;. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/9b6f8a3172cba60273b0da127346ef4a.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Choose a name and password and create your account.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In return you will get an Account Address (which you can use in public), as well a seed, which you have to keep private!
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In a later stage when you start up your validator applying as official validator, you will require your seed again.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;2. Get some funding&lt;/span&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Having created your account, you now have to get some DOT test tokens for your account. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You require DOT’s test token in order that you can pay the “staking” transaction fee, which brings you forward into the intention queue of future validators. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Head over to the
+       &lt;a href="https://riot.im/app/#/room/%23polkadot-watercooler:matrix.org"&gt;Polkadot Watercooler on Riot&lt;/a&gt;, where you will find a lot helpful people which will send you some DOT’s to your account address.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/441f3199fde0c43bd2d7503361717bc3.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        After receiving some test DOT’s head over to your account and check the balance, in my case 20’000 dots were deposited.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/fcf2bedbdd81c8730a71de40fe924e9e.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px; font-weight: bold;"&gt;Reconfigure your Validator node and restart&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Having a funded account, it’s time to restart your node applying some parameters, which will brings you onto the the intention list of Validators.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;Modify the parameter of your Validator, by applying the following values: &lt;/span&gt;
+       &lt;span style="font-size: 14px;"&gt;&amp;ldquo;—validator —key &amp;lt;yourPrivateSeed&amp;gt;&amp;rdquo;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/5afcb343b8779e9a0836a27d17db6c58.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        and restart your node.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You now have Validator node running, which is ready for working as a “Proof of Stake” (POS) consensus Polkadot Validator node. So you have expressed the desire to take over this role, but you are not eligible yet. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So grab some of your DOT tokens and head over to the Stake account transaction process.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        BTW: The Polkadot Validator will show in his log the following message in this mode (you don’t have to care about this error, it just signifies that you aren’t an official validator yet)
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/fd007ecf8950a98cdc32fdfc07893b41.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b style="font-size: 18px;"&gt;&lt;br&gt;&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Deep Dive Section: Consensus in context of Polkadot&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        But what means “BFT agreement” in log entry ? Well we have to go way back in the history to the Byzantine Generals
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/017aa7e83fe82186540d869e65972c48.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;a href="https://commons.wikimedia.org/wiki/File:Skylitzes._Basil_II_vs_Georgians_cropped.jpg" style="font-size: 12px;"&gt;Public Domain Picture&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The so-called
+       &lt;a href="https://en.wikipedia.org/wiki/Two_Generals%27_Problem"&gt;T&lt;/a&gt;
+       &lt;a href="https://en.wikipedia.org/wiki/Two_Generals%27_Problem" style="font-style: italic;"&gt;wo-General Problem&lt;/a&gt; described in 1975 a scenario where two generals are attacking a common enemy and try to communicate via  messengers in a reliable and secure way the attack time. The scenario was proven to be unsolvable.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &amp;ldquo;There is no way to guarantee the second requirement that each general be sure the other has agreed to the attack plan. Both generals will always be left wondering whether their last messenger got through.”
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In 1982 a follow-paper was published describing the
+       &lt;span style="font-style: italic;"&gt; &lt;a href="https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf" style="font-style: italic;"&gt;Byzantine General Problem&lt;/a&gt;&lt;/span&gt;, which is a generalized version of the Two Generals Problem with a twist. It describes the same scenario, where instead more than two generals need to agree on a time to attack their common enemy. The added complication here is that one or more of the generals can be a traitor, meaning that they can lie about their choice.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The algorithm described in paper was proven, that the algorithm can reach consensus as long as 2/3 of the actors are honest. If the traitors are more than 1/3, consensus is not reached, the armies do not coordinate their attack and the enemy wins.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Byzantine Faults are the most severe and difficult to deal with. Byzantine Fault Tolerance has been needed in airplane engine systems, nuclear power plants, as well as blockchains. There are various algorithms available tackling the problem.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A consensus algorithm (BFT)  is
+       &lt;span style="font-style: italic;"&gt;Byzantine Fault Tolerant&lt;/span&gt; as long as the number of traitors do not exceed one third of the generals. You can find a good overview in the
+       &lt;a href="https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419"&gt;following Medium article&lt;/a&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The big breakthrough with blockchains was the usage of Proof of Work (PoW), as well as later Proof of Stake (PoS) as a probabilistic solution to the Byzantine General Problem. The
+       &lt;a href="https://www.mail-archive.com/cryptography@metzdowd.com/msg09997.html"&gt;following email by Satoshi Nakamoto &lt;/a&gt;(the Bitcoin anonymous founder) from 2008, explains how PoW should be used to solve the problem in an easy language.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In context of the Polkadot algorithm - which is under development - the white paper states:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;Ultimately we expect to be inspired by a number of promising BFT consensus algorithms in the core; &lt;/span&gt;
+       &lt;a href="http://www.scs.stanford.edu/14au-cs244b/labs/projects/copeland_zhong.pdf" style="font-style: italic;"&gt;Tangaora&lt;/a&gt;
+       &lt;span style="font-style: italic;"&gt; (a BFT variant of &lt;/span&gt;
+       &lt;a href="https://raft.github.io/" style="font-style: italic;"&gt;Raft&lt;/a&gt;
+       &lt;span style="font-style: italic;"&gt;), &lt;/span&gt;
+       &lt;a href="https://tendermint.com/static/docs/tendermint.pdf" style="font-style: italic;"&gt;Tendermint&lt;/a&gt;
+       &lt;span style="font-style: italic;"&gt;  and &lt;/span&gt;
+       &lt;a href="https://eprint.iacr.org/2016/199.pdf" style="font-style: italic;"&gt;HoneyBadgerBFT&lt;/a&gt;
+       &lt;span style="font-style: italic;"&gt;]. The algorithm will have to reach an agreement on multiple parachains in parallel, thus differing from the usual blockchain consensus mechanisms. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As Gavin Wood states in the
+       &lt;a href="https://polkadot.network/PolkaDotPaper.pdf"&gt;White Paper&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;For a proof-of-authority (PoA) style network, this alone would be sufficient, however Polkadot is imagined to be also deployable as a network in a fully open and public situation without any particular organisation or trusted authority required to maintain it. As such we need a means of determining a set of validators and incentivising them to be honest. For this we utilise PoS based selection criteria.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So it’s important to realise that a BFT algorithm in a PoA environment only (with a consensus mechanism based on identity as a stake) would be sufficient. But the open an public situation ask of Polkador for additional means.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        To conclude the section, there was some debate about Polkadot being a permission-less platform on the Riot channel, let summarize the findings (which are backed by the statements in the white paper)
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Polkadot will be a public network. Anyone is free to participate in the network, and if nomination processes are used to select validators as the white papers outlines, it might take place daily.
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Polkadot&amp;rsquo;s process will allow any party to attempt to validate as described, just like anyone is free to mine on Ethereum or Bitcoin, that doesn&amp;rsquo;t mean they are guaranteed a block.
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Additionally, the term permissioned can often apply to more than just block creation, but also to a white or black list allowing or disallowing participation among other restricted sets.
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          All things considered, Polkadot  fits the definition of a permissionless platform.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Having now a basic understanding of the consensus topic let’s move forward with our process of stake and getting nominated.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;3. Stake and Get Nominated&lt;/span&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        This step is the PoS selection process, which will us incentivise in case we are behaving in honest manner.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        To get you on the intention list of potential validators, means you have to execute a stake transaction, which comes with some transaction fees (around 210 DOT’s).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Open the Polkadot Admin GU, select the Staking Tab (
+       &lt;a href="https://poc-2.polkadot.io/#/staking"&gt;&lt;a href="https://poc-2.polkadot.io/#/staking"&gt;https://poc-2.polkadot.io/#/staking&lt;/a&gt;&lt;/a&gt;) and press the “stake” action button. 
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/d6163e5a860e7614b7c51f428fce42d4.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You have to provide your password to sign and submit the  “staking.stake” transaction. Due to the fact that is your first stake transaction it’s index is 0.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/56659461833209323b2b24309d9b2b8b.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Having you executed this transaction brings you in  the waiting room of Validator nodes, which expressed their intention to participate in the Proof of Stake consensus validation process with the next “era” (era will be explained shortly). 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/b323330a530b3fbf6603322b8328c3e8.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 10px;"&gt;Waiting for the next free seat - Taos . New Mexico, 1942  (&lt;/span&gt;
+       &lt;a href="https://pixabay.com/en/taos-new-mexico-1941-84790/" style="font-size: 10px;"&gt;Creative CC0 Commons Licence&lt;/a&gt;
+       &lt;span style="font-size: 10px;"&gt;)&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Technically the waiting room looks like this
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/c97a1a5adaaffe8ad84e01f5f3bdac0e.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        On the left side are the validators shown (with their Nominators - small polkadot icon, below the Validator node) on the right the nodes waiting to enter the party room.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As mentioned above, the listed Intention nodes may get a chance to get an official Validator at the end of an
+       &lt;span style="font-weight: bold;"&gt;era&lt;/span&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;/div&gt;
+      &lt;div&gt;
+        An era is defined as the time required to create and seal 720 blocks on the relay-chain. A new block is created, processed and verified around every 5 seconds. I.e. that means an era lasts for around a hour.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As the white paper describes:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;We imagine validators be elected, infrequently (at most once per day but perhaps as seldom as once per quarter), through a Nominated Proof-of-Stake (NPoS) scheme.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        For the test environment the selection process is happening around every hour. The Header information of the Staking GUI, gives some basic information, among other the actual time slot in an era cycle.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As one can see on the header information, there are 22 slots for Validators available and there are  6 validators (22+6=28) waiting on the intentions list. The time passed in an era is slot 653 of the total of 720. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/7400a6963f6eece0c192f038c3ccfc34.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        After the end of an era, the eligible validator set will be newly calculated, by applying the following rule 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold;"&gt;the 22 validators with the highest overall account balance will be the validators for the next era cycle.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The GUI will also show, the lowest validator node of the era with 1’099’715 DOTS and the highest intention node with 2’303’173 DOTS, which means in the next era, there will be a replacement happening (highest intention node will replace the lowest validator). 
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/7c5937146b796352136de51afe3894c9.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Now checking my own account balance above (19’793), shows me that I’m way behind the highest intended node with an account balance of 2’303&amp;#39;173. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        That means I have to reach out for Nominators, which will back me with their account balance. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So it’s time to describe the second role in the Polkadot ecosystem, the “Nominator”. Let’s use the white paper definition here:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;A nominator is a stake-holding party who contributes to the security bond of a validator. They have no additional role except to place risk capital and as such to signal that they trust a particular validator (or set thereof) to act responsibly in their maintenance of the network. They receive a pro-rata increase or reduction in their deposit according to the bond’s growth to which they contribute.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;Together with collators, nominators are in some sense similar to the miners of the present-day PoW networks.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        It’s important to realise, that  a nominator will get either an increase (in case you behave in line with the rules) or a decrease (in case you misbehave and get slashed) of its deposit put on you. So its risk capital in his context, dependent on your misbehaviour various level of slashing is foreseen (which affects directly you, as well as indirectly the nominators), as the white paper states:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;Some cases of misbehaviour threaten the network’s integrity (such as signing invalid parachain blocks and validating multiple sides of a fork) and as such result in effective exile through the total reduction of the bond. In other, less serious cases (e.g. inactivity in the consensus process) or cases where blame cannot be precisely allotted (being part of an ineffective group), a small portion of the bond may instead be fined.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        It’s clear that a nominator is keen of supporting validators who stick with the rules.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 14px;"&gt;&lt;span style="font-size: 14px; font-weight: bold;"&gt;Reach out to a nominator&lt;/span&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So you have to reach out to nominators which are willing to add an increase of your security bond in order to get a chance to get nominated. Potentially your are already in contact with some members via the riot
+       &lt;a href="https://riot.im/app/#/room/%23polkadot-watercooler:matrix.org"&gt;polkadot watercooler&lt;/a&gt; or
+       &lt;a href="https://riot.im/app/#/room/%23polkadotnoobs:matrix.org"&gt;polkadot beginners lounge&lt;/a&gt; chat. Contact them: 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/4d4fc153bef5cf5772492256fb2f5d99.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;Entering as Validator &lt;/span&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As soon enough Nominators support you, i.e. you are under the 22nd Validators with the highest overall balance, you will be part of the official validator set, which can earn DOTS for sealing new blocks. The log entries will now look like:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b style="font-size: 14px;"&gt;&lt;br&gt;&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 13px; color: rgb(78, 78, 78); font-family: monospace;"&gt; 
+       &lt;img class='pull-left img-responsive article img-thumbnail' src='/images/0b60b3bda8e98597892dbf9872091956.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As you can see here, my account is backed by a nominator which adds 2’226’461 dots.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/821fcfdbd1ea601b09a7dad5e2a0957d.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Polkadot Hello World #1: Cost-Effective Cloud Deployment of a Validator Node</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html"/>
@@ -5859,59 +6546,6 @@
    &lt;br&gt;
   &lt;/div&gt;&lt;/p&gt;
 
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>A Terminology Guide to DAOs, DACs, DAs and More</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html"/>
-    <id>https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html</id>
-    <published>2016-06-21T22:17:15+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Due to the recent DAO hack in the Ethereum blockchain network (which resulted in the stealing of around 50 millions), I was starting to dig a little bit deeper into this new technology approach.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The topic is quite complex and overloaded with different terms and abbreviations, which makes it difficult to understand in the beginning. Therefore I’m quite pleased that Ethereum blog, released a “Incomplete Terminology Guide” around the topic of “decentralised autonomous entities”, which is a popular topic in the digital consensus space (yet a new term for crypto-currency 2.0). It introduces concise definitions of the important concepts and helps in establishing a basic understanding (well its sounds like science fiction from time to time). The article can be found
-       &lt;a href="https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide/"&gt;here&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-      &lt;div&gt;
-        By the way one of the most easy to read articles about the DAO hack, complemented with a lot of details and facts, can be found  in
-       &lt;a href="https://medium.com/@pullnews/understanding-the-dao-hack-for-journalists-2312dd43e993#.6usjlleot"&gt;Understanding the DAO Hack for Journalists&lt;/a&gt; on Medium. It’s aimed at Journalists, which ensures that the topic is not too technical overloaded.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        If you want to understand the details (as well a quite readable intro is provided) refer to the following technical paper “
-       &lt;a href="https://docs.google.com/document/d/10kTyCmGPhvZy94F7VWyS-dQ4lsBacR2dUgGTtV98C40/mobilebasic#heading=h.e437su2ytbf9"&gt;A Call for a temporary Moratorium on The DAO&lt;/a&gt;”, which is outlining the inherent problems in The DAO Smart Contract solution around three weeks before the Hack happened. I have to re-read the article from time to time to incrementally improve my understanding in the topic domain.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Facit: Every revolutionary as well evolutionary step is not easy to achieve and there are pushback and failures. For the new kid on the block “blockchain”, it’s the second pushback after the MtGox Bitcoin disaster last year. Hopefully the “lessons are learnt” and we will in the mid-term achieve the vision of decentralised autonomous entities. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 11px;"&gt;&lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>

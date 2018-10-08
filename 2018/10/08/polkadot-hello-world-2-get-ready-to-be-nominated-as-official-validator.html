@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Polkadot Hello World #2: Get Ready to Be Nominated as Official Validator</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (1)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (13)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (10)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (1)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (10)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (4)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (4)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (2)</a>
+            <a href="/tags/python.html" class="label label-default">python (1)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (17)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (4)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2018.html" class="label label-primary">2018 (25)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html">Polkadot Hello World #2: Get Ready to Be Nominated as Official Validator</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  08.Oct 2018 | Tags <a class="label label-primary" href="/tags/blockchain.html">blockchain</a> <a class="label label-primary" href="/tags/tutorial.html">tutorial</a> <a class="label label-primary" href="/tags/polkadot.html">polkadot</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <p><img class='pull-left img-responsive article img-thumbnail' src='/images/9d1f526610ce86f93330837ea5c1eaa1.png'></p>
+              
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                   <span style="font-style: italic;">This tutorial is based on Polkadot POC2.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    This is the second article of the series, articles already published on Medium:
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                     <a href="https://medium.com/@talfco/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node-d3c1bbdb9200">Polkadot Hello World #1: Cost-Effective Cloud Deployment of a Validator Node</a>
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 18px;"><span style="font-size: 18px; font-weight: bold;">Where’s the Party ?</span></span>
+                  </div>
+                  <div>
+                   <font style="font-size: 18px;"><br></font>
+                  </div>
+                  <div>
+                    I suppose you followed the steps as described in
+                   <a href="https://medium.com/@talfco/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node-d3c1bbdb9200">my first article</a> and have now a stable Polkadot Validator cloud instance running.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So what does that mean, actually ?
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Well you have a node running which is building up a local copy of the parachain exposed by the Krumme Lanke Polkadot POC-2 test net. So you are more less an active listener on the relay chain and are processing the newly created block and seal them into your local blockchain db.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    This situation can be explained by using a modified tweet of 
+                   <a href="https://twitter.com/iamdevloper" style="background-color: rgb(230, 236, 240); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; unicode-bidi: embed; direction: ltr !important; color: rgb(101, 119, 134); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: bold;">@</a>
+                   <a href="https://twitter.com/iamdevloper" style="background-color: rgb(230, 236, 240); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; unicode-bidi: embed; direction: ltr !important; color: rgb(101, 119, 134); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: bold;">iamdevloper</a>, which is famous for brilliant to-the-point funny messages, as for example
+                  </div>
+                  <div></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So you entered the blockchain space with a validator node  … but … are not part of the party yet.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 18px;"> 
+                   <img class='pull-left img-responsive article img-thumbnail' src='/images/e77de2760f8136c2e6ffabc662b2ab2c.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> <br></span>
+                  </div>
+                  <div>
+                   <b style="font-size: 14px;"><br></b>
+                  </div>
+                  <div>
+                    In order to join the party and get the possibility to earn DOT tokens and get rich ( test-rich only)  you have to apply for one of the four Polkadot basic roles, which upkeeps a Polkadot network (refer to the roles discussion in my last
+                   <a href="https://medium.com/@talfco/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node-d3c1bbdb9200">article</a>). 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So let’s walkthrough the four steps which are necessary to enter the Proof of Stake (PoS) party room in the Validator role.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/7532c353533904d84b317d74f2cf48d4.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <font style="font-size: 18px;"><br></font>
+                  </div>
+                  <div>
+                   <font style="font-size: 18px;"><span style="font-size: 18px; font-weight: bold;">1. Create an account</span></font>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As a first step, you have create an account on: 
+                   <a href="https://poc-2.polkadot.io/#/accounts"><a href="https://poc-2.polkadot.io/#/accounts">https://poc-2.polkadot.io/#/accounts</a></a>. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/9b6f8a3172cba60273b0da127346ef4a.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    Choose a name and password and create your account.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    In return you will get an Account Address (which you can use in public), as well a seed, which you have to keep private!
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    In a later stage when you start up your validator applying as official validator, you will require your seed again.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 18px;"><span style="font-size: 18px; font-weight: bold;">2. Get some funding</span></span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Having created your account, you now have to get some DOT test tokens for your account. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    You require DOT’s test token in order that you can pay the “staking” transaction fee, which brings you forward into the intention queue of future validators. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Head over to the
+                   <a href="https://riot.im/app/#/room/%23polkadot-watercooler:matrix.org">Polkadot Watercooler on Riot</a>, where you will find a lot helpful people which will send you some DOT’s to your account address.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/441f3199fde0c43bd2d7503361717bc3.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    After receiving some test DOT’s head over to your account and check the balance, in my case 20’000 dots were deposited.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/fcf2bedbdd81c8730a71de40fe924e9e.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px; font-weight: bold;">Reconfigure your Validator node and restart</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Having a funded account, it’s time to restart your node applying some parameters, which will brings you onto the the intention list of Validators.
+                  </div>
+                  <div></p>
+                
+                <p></div>
+                  <div>
+                   <span style="font-size: 14px;">Modify the parameter of your Validator, by applying the following values: </span>
+                   <span style="font-size: 14px;">&ldquo;—validator —key &lt;yourPrivateSeed&gt;&rdquo;</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/5afcb343b8779e9a0836a27d17db6c58.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    and restart your node.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    You now have Validator node running, which is ready for working as a “Proof of Stake” (POS) consensus Polkadot Validator node. So you have expressed the desire to take over this role, but you are not eligible yet. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So grab some of your DOT tokens and head over to the Stake account transaction process.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    BTW: The Polkadot Validator will show in his log the following message in this mode (you don’t have to care about this error, it just signifies that you aren’t an official validator yet)
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/fd007ecf8950a98cdc32fdfc07893b41.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <b style="font-size: 18px;"><br></b>
+                  </div>
+                  <div>
+                   <span style="font-size: 18px; font-weight: bold;">Deep Dive Section: Consensus in context of Polkadot</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    But what means “BFT agreement” in log entry ? Well we have to go way back in the history to the Byzantine Generals
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/017aa7e83fe82186540d869e65972c48.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <a href="https://commons.wikimedia.org/wiki/File:Skylitzes._Basil_II_vs_Georgians_cropped.jpg" style="font-size: 12px;">Public Domain Picture</a>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The so-called
+                   <a href="https://en.wikipedia.org/wiki/Two_Generals%27_Problem">T</a>
+                   <a href="https://en.wikipedia.org/wiki/Two_Generals%27_Problem" style="font-style: italic;">wo-General Problem</a> described in 1975 a scenario where two generals are attacking a common enemy and try to communicate via  messengers in a reliable and secure way the attack time. The scenario was proven to be unsolvable.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    &ldquo;There is no way to guarantee the second requirement that each general be sure the other has agreed to the attack plan. Both generals will always be left wondering whether their last messenger got through.”
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    In 1982 a follow-paper was published describing the
+                   <span style="font-style: italic;"> <a href="https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf" style="font-style: italic;">Byzantine General Problem</a></span>, which is a generalized version of the Two Generals Problem with a twist. It describes the same scenario, where instead more than two generals need to agree on a time to attack their common enemy. The added complication here is that one or more of the generals can be a traitor, meaning that they can lie about their choice.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The algorithm described in paper was proven, that the algorithm can reach consensus as long as 2/3 of the actors are honest. If the traitors are more than 1/3, consensus is not reached, the armies do not coordinate their attack and the enemy wins.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Byzantine Faults are the most severe and difficult to deal with. Byzantine Fault Tolerance has been needed in airplane engine systems, nuclear power plants, as well as blockchains. There are various algorithms available tackling the problem.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    A consensus algorithm (BFT)  is
+                   <span style="font-style: italic;">Byzantine Fault Tolerant</span> as long as the number of traitors do not exceed one third of the generals. You can find a good overview in the
+                   <a href="https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419">following Medium article</a>.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The big breakthrough with blockchains was the usage of Proof of Work (PoW), as well as later Proof of Stake (PoS) as a probabilistic solution to the Byzantine General Problem. The
+                   <a href="https://www.mail-archive.com/cryptography@metzdowd.com/msg09997.html">following email by Satoshi Nakamoto </a>(the Bitcoin anonymous founder) from 2008, explains how PoW should be used to solve the problem in an easy language.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    In context of the Polkadot algorithm - which is under development - the white paper states:
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;">Ultimately we expect to be inspired by a number of promising BFT consensus algorithms in the core; </span>
+                   <a href="http://www.scs.stanford.edu/14au-cs244b/labs/projects/copeland_zhong.pdf" style="font-style: italic;">Tangaora</a>
+                   <span style="font-style: italic;"> (a BFT variant of </span>
+                   <a href="https://raft.github.io/" style="font-style: italic;">Raft</a>
+                   <span style="font-style: italic;">), </span>
+                   <a href="https://tendermint.com/static/docs/tendermint.pdf" style="font-style: italic;">Tendermint</a>
+                   <span style="font-style: italic;">  and </span>
+                   <a href="https://eprint.iacr.org/2016/199.pdf" style="font-style: italic;">HoneyBadgerBFT</a>
+                   <span style="font-style: italic;">]. The algorithm will have to reach an agreement on multiple parachains in parallel, thus differing from the usual blockchain consensus mechanisms. </span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As Gavin Wood states in the
+                   <a href="https://polkadot.network/PolkaDotPaper.pdf">White Paper</a>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;">For a proof-of-authority (PoA) style network, this alone would be sufficient, however Polkadot is imagined to be also deployable as a network in a fully open and public situation without any particular organisation or trusted authority required to maintain it. As such we need a means of determining a set of validators and incentivising them to be honest. For this we utilise PoS based selection criteria.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So it’s important to realise that a BFT algorithm in a PoA environment only (with a consensus mechanism based on identity as a stake) would be sufficient. But the open an public situation ask of Polkador for additional means.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    To conclude the section, there was some debate about Polkadot being a permission-less platform on the Riot channel, let summarize the findings (which are backed by the statements in the white paper)
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      Polkadot will be a public network. Anyone is free to participate in the network, and if nomination processes are used to select validators as the white papers outlines, it might take place daily.
+                    </div></li>
+                   <li>
+                    <div>
+                      Polkadot&rsquo;s process will allow any party to attempt to validate as described, just like anyone is free to mine on Ethereum or Bitcoin, that doesn&rsquo;t mean they are guaranteed a block.
+                    </div></li>
+                   <li>
+                    <div>
+                      Additionally, the term permissioned can often apply to more than just block creation, but also to a white or black list allowing or disallowing participation among other restricted sets.
+                    </div></li>
+                   <li>
+                    <div>
+                      All things considered, Polkadot  fits the definition of a permissionless platform.
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Having now a basic understanding of the consensus topic let’s move forward with our process of stake and getting nominated.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <font style="font-size: 18px;"><span style="font-size: 18px; font-weight: bold;">3. Stake and Get Nominated</span></font>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    This step is the PoS selection process, which will us incentivise in case we are behaving in honest manner.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    To get you on the intention list of potential validators, means you have to execute a stake transaction, which comes with some transaction fees (around 210 DOT’s).
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Open the Polkadot Admin GU, select the Staking Tab (
+                   <a href="https://poc-2.polkadot.io/#/staking"><a href="https://poc-2.polkadot.io/#/staking">https://poc-2.polkadot.io/#/staking</a></a>) and press the “stake” action button. 
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/d6163e5a860e7614b7c51f428fce42d4.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    You have to provide your password to sign and submit the  “staking.stake” transaction. Due to the fact that is your first stake transaction it’s index is 0.
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/56659461833209323b2b24309d9b2b8b.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    Having you executed this transaction brings you in  the waiting room of Validator nodes, which expressed their intention to participate in the Proof of Stake consensus validation process with the next “era” (era will be explained shortly). 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/b323330a530b3fbf6603322b8328c3e8.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 10px;">Waiting for the next free seat - Taos . New Mexico, 1942  (</span>
+                   <a href="https://pixabay.com/en/taos-new-mexico-1941-84790/" style="font-size: 10px;">Creative CC0 Commons Licence</a>
+                   <span style="font-size: 10px;">)</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Technically the waiting room looks like this
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/c97a1a5adaaffe8ad84e01f5f3bdac0e.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    On the left side are the validators shown (with their Nominators - small polkadot icon, below the Validator node) on the right the nodes waiting to enter the party room.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As mentioned above, the listed Intention nodes may get a chance to get an official Validator at the end of an
+                   <span style="font-weight: bold;">era</span>.
+                  </div>
+                  <div></p>
+                
+                <p></div>
+                  <div>
+                    An era is defined as the time required to create and seal 720 blocks on the relay-chain. A new block is created, processed and verified around every 5 seconds. I.e. that means an era lasts for around a hour.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As the white paper describes:
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;">We imagine validators be elected, infrequently (at most once per day but perhaps as seldom as once per quarter), through a Nominated Proof-of-Stake (NPoS) scheme.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    For the test environment the selection process is happening around every hour. The Header information of the Staking GUI, gives some basic information, among other the actual time slot in an era cycle.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As one can see on the header information, there are 22 slots for Validators available and there are  6 validators (22+6=28) waiting on the intentions list. The time passed in an era is slot 653 of the total of 720. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/7400a6963f6eece0c192f038c3ccfc34.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    After the end of an era, the eligible validator set will be newly calculated, by applying the following rule 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-weight: bold;">the 22 validators with the highest overall account balance will be the validators for the next era cycle.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The GUI will also show, the lowest validator node of the era with 1’099’715 DOTS and the highest intention node with 2’303’173 DOTS, which means in the next era, there will be a replacement happening (highest intention node will replace the lowest validator). 
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/7c5937146b796352136de51afe3894c9.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Now checking my own account balance above (19’793), shows me that I’m way behind the highest intended node with an account balance of 2’303&#39;173. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    That means I have to reach out for Nominators, which will back me with their account balance. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So it’s time to describe the second role in the Polkadot ecosystem, the “Nominator”. Let’s use the white paper definition here:
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;">A nominator is a stake-holding party who contributes to the security bond of a validator. They have no additional role except to place risk capital and as such to signal that they trust a particular validator (or set thereof) to act responsibly in their maintenance of the network. They receive a pro-rata increase or reduction in their deposit according to the bond’s growth to which they contribute.</span>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;">Together with collators, nominators are in some sense similar to the miners of the present-day PoW networks.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    It’s important to realise, that  a nominator will get either an increase (in case you behave in line with the rules) or a decrease (in case you misbehave and get slashed) of its deposit put on you. So its risk capital in his context, dependent on your misbehaviour various level of slashing is foreseen (which affects directly you, as well as indirectly the nominators), as the white paper states:
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;">Some cases of misbehaviour threaten the network’s integrity (such as signing invalid parachain blocks and validating multiple sides of a fork) and as such result in effective exile through the total reduction of the bond. In other, less serious cases (e.g. inactivity in the consensus process) or cases where blame cannot be precisely allotted (being part of an ineffective group), a small portion of the bond may instead be fined.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    It’s clear that a nominator is keen of supporting validators who stick with the rules.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <font style="font-size: 14px;"><span style="font-size: 14px; font-weight: bold;">Reach out to a nominator</span></font>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So you have to reach out to nominators which are willing to add an increase of your security bond in order to get a chance to get nominated. Potentially your are already in contact with some members via the riot
+                   <a href="https://riot.im/app/#/room/%23polkadot-watercooler:matrix.org">polkadot watercooler</a> or
+                   <a href="https://riot.im/app/#/room/%23polkadotnoobs:matrix.org">polkadot beginners lounge</a> chat. Contact them: 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/4d4fc153bef5cf5772492256fb2f5d99.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <font style="font-size: 18px;"><span style="font-size: 18px; font-weight: bold;">Entering as Validator </span></font>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As soon enough Nominators support you, i.e. you are under the 22nd Validators with the highest overall balance, you will be part of the official validator set, which can earn DOTS for sealing new blocks. The log entries will now look like:
+                  </div>
+                  <div>
+                   <b style="font-size: 14px;"><br></b>
+                  </div>
+                  <div>
+                   <span style="font-size: 13px; color: rgb(78, 78, 78); font-family: monospace;"> 
+                   <img class='pull-left img-responsive article img-thumbnail' src='/images/0b60b3bda8e98597892dbf9872091956.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> <br></span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As you can see here, my account is backed by a nominator which adds 2’226’461 dots.
+                  </div>
+                  <div></p>
+                
+                <p><img class='pull-left img-responsive article img-thumbnail' src='/images/821fcfdbd1ea601b09a7dad5e2a0957d.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/Cloudburonet-897759390318816/" class="btn btn-facebook">
+                <i class="fa fa-facebook"></i></a><a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts" class="btn btn-google-plus">
+                <i class="fa fa-google-plus"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2018 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>
