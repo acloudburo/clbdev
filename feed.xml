@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html"/>
     <id>https://dev.cloudburo.net/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html</id>
     <published>2018-10-08T22:05:10+00:00</published>
-    <updated>2018-10-09T08:01:56+00:00</updated>
+    <updated>2018-10-09T10:15:27+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -51,7 +51,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         I suppose you followed the steps as described in
-       &lt;a href="https://medium.com/@talfco/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node-d3c1bbdb9200"&gt;my first article&lt;/a&gt; and have now a stable Polkadot Validator cloud instance running.
+       &lt;a href="https://medium.com/@talfco/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node-d3c1bbdb9200"&gt;my first article&lt;/a&gt; and have now a stable Polkadot Validator cloud instance running. 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -363,7 +363,7 @@
        &lt;a href="https://raft.github.io/" style="font-style: italic;"&gt;Raft&lt;/a&gt;
        &lt;span style="font-style: italic;"&gt;), &lt;/span&gt;
        &lt;a href="https://tendermint.com/static/docs/tendermint.pdf" style="font-style: italic;"&gt;Tendermint&lt;/a&gt;
-       &lt;span style="font-style: italic;"&gt;  and &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt; and &lt;/span&gt;
        &lt;a href="https://eprint.iacr.org/2016/199.pdf" style="font-style: italic;"&gt;HoneyBadgerBFT&lt;/a&gt;
        &lt;span style="font-style: italic;"&gt;]. The algorithm will have to reach an agreement on multiple parachains in parallel, thus differing from the usual blockchain consensus mechanisms. &lt;/span&gt;
       &lt;/div&gt;
@@ -577,7 +577,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Now checking my own account balance above (19’793), shows me that I’m way behind the highest intended node with an account balance of 2’303&amp;#39;173. 
+        Now checking my own account balance above (19’793) shows me that I’m way behind the highest intended node with an account balance of 2’303&amp;#39;173. 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
