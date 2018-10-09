@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html"/>
     <id>https://dev.cloudburo.net/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html</id>
     <published>2018-10-08T22:05:10+00:00</published>
-    <updated>2018-10-08T23:07:12+00:00</updated>
+    <updated>2018-10-09T08:01:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -44,7 +44,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;Where’s the Party ?&lt;/span&gt;&lt;/span&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;Where’s the Party?&lt;/span&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;font style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
@@ -57,13 +57,13 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        So what does that mean, actually ?
+        So what does that mean, actually?
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Well you have a node running which is building up a local copy of the parachain exposed by the Krumme Lanke Polkadot POC-2 test net. So you are more less an active listener on the relay chain and are processing the newly created block and seal them into your local blockchain db.
+        Well, you have a node running which is building up a local copy of the parachain exposed by the Krumme Lanke Polkadot POC-2 test net. So you are more or less an active listener on the relay chain and are processing the newly created block and seal them into your local blockchain DB.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -102,14 +102,14 @@
        &lt;b style="font-size: 14px;"&gt;&lt;br&gt;&lt;/b&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        In order to join the party and get the possibility to earn DOT tokens and get rich ( test-rich only)  you have to apply for one of the four Polkadot basic roles, which upkeeps a Polkadot network (refer to the roles discussion in my last
+        In order to join the party, get the possibility to earn DOT tokens and get rich ( test-rich only)  you have to apply for one of the four Polkadot basic roles, which upkeeps a Polkadot network (refer to the roles discussion in my last
        &lt;a href="https://medium.com/@talfco/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node-d3c1bbdb9200"&gt;article&lt;/a&gt;). 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        So let’s walkthrough the four steps which are necessary to enter the Proof of Stake (PoS) party room in the Validator role.
+        So let’s walkt-hrough the four steps which are necessary to enter the Proof of Stake (PoS) party room in the Validator role.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -132,7 +132,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        As a first step, you have create an account on: 
+        As a first step, you have to create an account on 
        &lt;a href="https://poc-2.polkadot.io/#/accounts"&gt;&lt;a href="https://poc-2.polkadot.io/#/accounts"&gt;https://poc-2.polkadot.io/#/accounts&lt;/a&gt;&lt;/a&gt;. 
       &lt;/div&gt;
       &lt;div&gt;
@@ -153,13 +153,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        In return you will get an Account Address (which you can use in public), as well a seed, which you have to keep private!
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In a later stage when you start up your validator applying as official validator, you will require your seed again.
+        In return, you will get an Account Address (which you can use in public), as well a seed, which you have to keep private! In a later stage when you start up your validator applying as an official validator, you will require your seed again.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -184,7 +178,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         Head over to the
-       &lt;a href="https://riot.im/app/#/room/%23polkadot-watercooler:matrix.org"&gt;Polkadot Watercooler on Riot&lt;/a&gt;, where you will find a lot helpful people which will send you some DOT’s to your account address.
+       &lt;a href="https://riot.im/app/#/room/%23polkadot-watercooler:matrix.org"&gt;Polkadot Watercooler on Riot&lt;/a&gt;, where you will find a lot of helpful people which will send you some DOT’s to your account address.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -224,7 +218,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Having a funded account, it’s time to restart your node applying some parameters, which will brings you onto the the intention list of Validators.
+        Having a funded account, it’s time to restart your node by applying some parameters, which will bring you onto the intention list of Validators.
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
@@ -254,7 +248,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        You now have Validator node running, which is ready for working as a “Proof of Stake” (POS) consensus Polkadot Validator node. So you have expressed the desire to take over this role, but you are not eligible yet. 
+        You now have Validator node running, which is ready for work as a “Proof of Stake” (POS) consensus Polkadot Validator node. So you have expressed the desire to take over this role, but you are not eligible yet. 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -289,7 +283,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        But what means “BFT agreement” in log entry ? Well we have to go way back in the history to the Byzantine Generals
+        But what means “BFT agreement” in log entry? Well we have to go way back in the history to the Byzantine Generals
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -311,13 +305,13 @@
       &lt;div&gt;
         The so-called
        &lt;a href="https://en.wikipedia.org/wiki/Two_Generals%27_Problem"&gt;T&lt;/a&gt;
-       &lt;a href="https://en.wikipedia.org/wiki/Two_Generals%27_Problem" style="font-style: italic;"&gt;wo-General Problem&lt;/a&gt; described in 1975 a scenario where two generals are attacking a common enemy and try to communicate via  messengers in a reliable and secure way the attack time. The scenario was proven to be unsolvable.
+       &lt;a href="https://en.wikipedia.org/wiki/Two_Generals%27_Problem" style="font-style: italic;"&gt;wo-General Problem&lt;/a&gt; described in 1975 a scenario where two generals are attacking a common enemy and try to communicate via messengers in a reliable and secure way the attack time. The scenario was proven to be unsolvable.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        &amp;ldquo;There is no way to guarantee the second requirement that each general be sure the other has agreed to the attack plan. Both generals will always be left wondering whether their last messenger got through.”
+        &amp;ldquo;There is no way to guarantee the second requirement that each general is sure the other has agreed to the attack plan. Both generals will always be left wondering whether their last messenger got through.”
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -330,7 +324,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        The algorithm described in paper was proven, that the algorithm can reach consensus as long as 2/3 of the actors are honest. If the traitors are more than 1/3, consensus is not reached, the armies do not coordinate their attack and the enemy wins.
+        The algorithm described in paper was proven, that the algorithm can reach consensus as long as 2/3 of the actors are honest. If the traitors are more than 1/3, the consensus is not reached, the armies do not coordinate their attack and the enemy wins.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -343,7 +337,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         A consensus algorithm (BFT)  is
-       &lt;span style="font-style: italic;"&gt;Byzantine Fault Tolerant&lt;/span&gt; as long as the number of traitors do not exceed one third of the generals. You can find a good overview in the
+       &lt;span style="font-style: italic;"&gt;Byzantine Fault Tolerant&lt;/span&gt; as long as the number of traitors does not exceed one-third of the generals. You can find a good overview of the
        &lt;a href="https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419"&gt;following Medium article&lt;/a&gt;.
       &lt;/div&gt;
       &lt;div&gt;
@@ -357,7 +351,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        In context of the Polkadot algorithm - which is under development - the white paper states:
+        In the context of the Polkadot algorithm - which is under development - the white paper states:
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -384,19 +378,19 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;For a proof-of-authority (PoA) style network, this alone would be sufficient, however Polkadot is imagined to be also deployable as a network in a fully open and public situation without any particular organisation or trusted authority required to maintain it. As such we need a means of determining a set of validators and incentivising them to be honest. For this we utilise PoS based selection criteria.&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;For a proof-of-authority (PoA) style network, this alone would be sufficient, however,  Polkadot is imagined to be also deployable as a network in a fully open and public situation without any particular organisation or trusted authority required to maintain it. As such we need a means of determining a set of validators and incentivising them to be honest. For this, we utilise PoS based selection criteria.&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        So it’s important to realise that a BFT algorithm in a PoA environment only (with a consensus mechanism based on identity as a stake) would be sufficient. But the open an public situation ask of Polkador for additional means.
+        So it’s important to realise that a BFT algorithm in a PoA environment only (with a consensus mechanism based on identity as a stake) would be sufficient. But the open an public situation of Polkadot ask for additional means.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        To conclude the section, there was some debate about Polkadot being a permission-less platform on the Riot channel, let summarize the findings (which are backed by the statements in the white paper)
+        To conclude the section, there was some debate about Polkadot being a permission-less platform on the Riot channel, let&amp;rsquo;s summarize the findings (which are backed by the statements in the white paper)
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -412,18 +406,18 @@
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-          Additionally, the term permissioned can often apply to more than just block creation, but also to a white or black list allowing or disallowing participation among other restricted sets.
+          Additionally, the term permission can often apply to more than just block creation, but also to a white or black list allowing or disallowing participation among other restricted sets.
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-          All things considered, Polkadot  fits the definition of a permissionless platform.
+          All things considered, Polkadot fits the definition of a permissionless platform.
         &lt;/div&gt;&lt;/li&gt;
       &lt;/ul&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Having now a basic understanding of the consensus topic let’s move forward with our process of stake and getting nominated.
+        Having a basic understanding now of the consensus topic let’s move forward with our process of stake and getting nominated.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -435,13 +429,13 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        This step is the PoS selection process, which will us incentivise in case we are behaving in honest manner.
+        This step is the PoS selection process, which will finally incentivise us, in case we are behaving in an honest manner.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        To get you on the intention list of potential validators, means you have to execute a stake transaction, which comes with some transaction fees (around 210 DOT’s).
+        To get you on the intention list of potential validators requires you to execute a stake transaction, which comes with some transaction fees (around 210 DOT’s).
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -459,7 +453,7 @@
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        You have to provide your password to sign and submit the  “staking.stake” transaction. Due to the fact that is your first stake transaction it’s index is 0.
+        You have to provide your password to sign and submit the  “staking.stake” transaction. Due to the fact that is your first stake transaction, it’s index is 0.
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
@@ -470,10 +464,10 @@
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Having you executed this transaction brings you in  the waiting room of Validator nodes, which expressed their intention to participate in the Proof of Stake consensus validation process with the next “era” (era will be explained shortly). 
+        The execution of this transaction brings you in the waiting room of Validator nodes, which expressed their intention to participate in the Proof of Stake consensus validation process with the next “era” (era will be explained shortly). 
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;br&gt;
+        x
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
@@ -484,7 +478,7 @@
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 10px;"&gt;Waiting for the next free seat - Taos . New Mexico, 1942  (&lt;/span&gt;
+       &lt;span style="font-size: 10px;"&gt;Waiting for the next free seat - Taos. New Mexico, 1942  (&lt;/span&gt;
        &lt;a href="https://pixabay.com/en/taos-new-mexico-1941-84790/" style="font-size: 10px;"&gt;Creative CC0 Commons Licence&lt;/a&gt;
        &lt;span style="font-size: 10px;"&gt;)&lt;/span&gt;
       &lt;/div&gt;
@@ -516,7 +510,7 @@
     
     &lt;p&gt;&lt;/div&gt;
       &lt;div&gt;
-        An era is defined as the time required to create and seal 720 blocks on the relay-chain. A new block is created, processed and verified around every 5 seconds. I.e. that means an era lasts for around a hour.
+        An era is defined as the time required to create and seal 720 blocks on the relay-chain. A new block is created, processed and verified around every 5 seconds. I.e. that means an era lasts for around an hour.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -534,7 +528,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        For the test environment the selection process is happening around every hour. The Header information of the Staking GUI, gives some basic information, among other the actual time slot in an era cycle.
+        For the test environment, the selection process is happening around every hour. The Header information of the Staking GUI, gives some basic information, among other the actual time slot in an era cycle.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -610,19 +604,19 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        It’s important to realise, that  a nominator will get either an increase (in case you behave in line with the rules) or a decrease (in case you misbehave and get slashed) of its deposit put on you. So its risk capital in his context, dependent on your misbehaviour various level of slashing is foreseen (which affects directly you, as well as indirectly the nominators), as the white paper states:
+        It’s important to realise, that a nominator will get either an increase (in case you behave in line with the rules) or a decrease (in case you misbehave and get slashed) of its deposit put on you. So its risk capital in his context, dependent on your misbehavior various level of slashing is foreseen (which affects directly you, as well as indirectly the nominators), as the white paper states:
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;Some cases of misbehaviour threaten the network’s integrity (such as signing invalid parachain blocks and validating multiple sides of a fork) and as such result in effective exile through the total reduction of the bond. In other, less serious cases (e.g. inactivity in the consensus process) or cases where blame cannot be precisely allotted (being part of an ineffective group), a small portion of the bond may instead be fined.&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;Some cases of misbehavior threaten the network’s integrity (such as signing invalid parachain blocks and validating multiple sides of a fork) and as such result in effective exile through the total reduction of the bond. In other, less serious cases (e.g. inactivity in the consensus process) or cases where blame cannot be precisely allotted (being part of an ineffective group), a small portion of the bond may instead be fined.&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        It’s clear that a nominator is keen of supporting validators who stick with the rules.
+        It’s clear that a nominator is keen on supporting validators who stick with the rules.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -634,7 +628,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        So you have to reach out to nominators which are willing to add an increase of your security bond in order to get a chance to get nominated. Potentially your are already in contact with some members via the riot
+        So you have to reach out to nominators which are willing to add an increase of your security bond in order to get a chance to get nominated. Potentially you are already in contact with some members via the riot
        &lt;a href="https://riot.im/app/#/room/%23polkadot-watercooler:matrix.org"&gt;polkadot watercooler&lt;/a&gt; or
        &lt;a href="https://riot.im/app/#/room/%23polkadotnoobs:matrix.org"&gt;polkadot beginners lounge&lt;/a&gt; chat. Contact them: 
       &lt;/div&gt;
