@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html"/>
     <id>https://dev.cloudburo.net/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html</id>
     <published>2018-10-08T22:05:10+00:00</published>
-    <updated>2018-10-09T10:15:27+00:00</updated>
+    <updated>2018-10-09T16:16:39+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -71,7 +71,7 @@
       &lt;div&gt;
         This situation can be explained by using a modified tweet of 
        &lt;a href="https://twitter.com/iamdevloper" style="background-color: rgb(230, 236, 240); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; unicode-bidi: embed; direction: ltr !important; color: rgb(101, 119, 134); font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: bold;"&gt;@&lt;/a&gt;
-       &lt;a href="https://twitter.com/iamdevloper" style="background-color: rgb(230, 236, 240); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; unicode-bidi: embed; direction: ltr !important; color: rgb(101, 119, 134); font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: bold;"&gt;iamdevloper&lt;/a&gt;, which is famous for brilliant to-the-point funny messages, as for example
+       &lt;a href="https://twitter.com/iamdevloper" style="background-color: rgb(230, 236, 240); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; unicode-bidi: embed; direction: ltr !important; color: rgb(101, 119, 134); font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: bold;"&gt;iamdevloper&lt;/a&gt;, which is famous for funny to-the-point messages, as for example
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
@@ -85,7 +85,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        So you entered the blockchain space with a validator node  … but … are not part of the party yet.
+        Actually you entered the blockchain space with a validator node  … but … are not part of the party yet.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -102,14 +102,14 @@
        &lt;b style="font-size: 14px;"&gt;&lt;br&gt;&lt;/b&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        In order to join the party, get the possibility to earn DOT tokens and get rich ( test-rich only)  you have to apply for one of the four Polkadot basic roles, which upkeeps a Polkadot network (refer to the roles discussion in my last
+        In order to join the party, getting the possibility to earn DOT tokens and getting rich ( test-rich only)  you have to apply for one of the four Polkadot basic roles, which upkeeps a Polkadot network (refer to the roles discussion in my last
        &lt;a href="https://medium.com/@talfco/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node-d3c1bbdb9200"&gt;article&lt;/a&gt;). 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        So let’s walkt-hrough the four steps which are necessary to enter the Proof of Stake (PoS) party room in the Validator role.
+        Let’s walk-Through the four steps which are necessary to enter the Proof of Stake (PoS) party room in the Validator role.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -248,7 +248,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        You now have Validator node running, which is ready for work as a “Proof of Stake” (POS) consensus Polkadot Validator node. So you have expressed the desire to take over this role, but you are not eligible yet. 
+        You now have A Validator node running, which is ready for work as a “Proof of Stake” (POS) consensus Polkadot Validator node. So you have expressed the desire to take over this role, but you are not eligible yet. 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -467,7 +467,7 @@
         The execution of this transaction brings you in the waiting room of Validator nodes, which expressed their intention to participate in the Proof of Stake consensus validation process with the next “era” (era will be explained shortly). 
       &lt;/div&gt;
       &lt;div&gt;
-        x
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
@@ -535,6 +535,12 @@
       &lt;/div&gt;
       &lt;div&gt;
         As one can see on the header information, there are 22 slots for Validators available and there are  6 validators (22+6=28) waiting on the intentions list. The time passed in an era is slot 653 of the total of 720. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The session counter will express the number of block sealing left until the validator and its nominators are incentivized. In our example 7 block sealings (60-53) left until the next payout phase takes place.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -672,6 +678,21 @@
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;
+        You are now an official Polkadot validator which takes part in PoS consensus process.You will find your validator now on the left side of the Staking page:
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/141d95111741fe9e741a021a1e02dd40.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div&gt;
         As you can see here, my account is backed by a nominator which adds 2’226’461 dots.
       &lt;/div&gt;
@@ -681,16 +702,10 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div&gt;
-        You are now an official Polkadot validator which takes part in PoS consensus process.
-      &lt;/div&gt;
-      &lt;div&gt;
+        That’s it for today. In the next article, we will address some reliability and security topics of your node.
        &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        That’s it for today in the next article, we will address some reliability and security topics of your node.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
