@@ -733,6 +733,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2018/10/22/polkadot-hello-world-3-poc-3-on-substrate-is-here.html</loc>
+    <lastmod>2018-10-22</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2018/09/01/devop-notes-monitoring-nginx-and-its-underlying-web-components.html</loc>
     <lastmod>2018-09-09</lastmod>
     <priority>0.7</priority>
@@ -1045,6 +1051,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/crypto.html</loc>
+    <lastmod>2018-09-09</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2018.html</loc>
     <lastmod>2018-09-09</lastmod>
     <priority>1.0</priority>
@@ -1054,6 +1066,12 @@
     <loc>https://dev.cloudburo.net/2018/10.html</loc>
     <lastmod>2018-09-09</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2018/10/22.html</loc>
+    <lastmod>2018-09-09</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

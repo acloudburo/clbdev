@@ -5,10 +5,674 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-10-13T22:09:40+00:00</updated>
+  <updated>2018-10-22T21:15:23+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Polkadot Hello World #3: POC-3 on Substrate is Here</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/10/22/polkadot-hello-world-3-poc-3-on-substrate-is-here.html"/>
+    <id>https://dev.cloudburo.net/2018/10/22/polkadot-hello-world-3-poc-3-on-substrate-is-here.html</id>
+    <published>2018-10-22T21:15:23+00:00</published>
+    <updated>2018-10-22T21:16:21+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
+        Around the 15th October (as announced in the following
+       &lt;a href="https://hackmd.io/y-E9Q9jTRreni6z9EU0kkA"&gt;hackmd.io article&lt;/a&gt;)  the POC-3 test net called “BBQ-Birch” went life, which is an implementation of a Substrate-based blockchain. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So you may ask, what heck is the difference between Polkadot and Substrate, which was confusing for me at the beginning as well. Let’s clarify the differences, as well as similarities between these two main concepts.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Substrate is a framework for creating cryptocurrencies and other decentralised systems using the latest research in blockchain technology.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As Jack Fransham states on the
+       &lt;a href="https://medium.com/paritytech/substrate-in-a-nutshell-a54cd34c7863"&gt; Parity website in the Substrate Intro article&lt;/a&gt;:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;It’s important to understand that Parity Substrate is not part of Polkadot at all. Although Polkadot is built with Substrate and projects built with Substrate can run natively on Polkadot, you can use Substrate to build new blockchains right now. You don&amp;rsquo;t need to wait for Polkadot to be finished or even for a proof-of-concept to be released to start working on a blockchain using this framework.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;hellip;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;You can think of it as being like Express or another web application framework, but for building distributed or decentralised systems such as cryptocurrencies or a message bus. Just as most web applications shouldn&amp;rsquo;t need to reimplement their own version of HTTP, we believe that it&amp;rsquo;s wasted effort for every team creating a new blockchain to have to implement all the networking and consensus code from scratch.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Substrate in a Nutshell, gives you a nice more detailed view:
+       &lt;a href="https://medium.com/paritytech/substrate-in-a-nutshell-a54cd34c7863"&gt;&lt;a href="https://medium.com/paritytech/substrate-in-a-nutshell-a54cd34c7863"&gt;https://medium.com/paritytech/substrate-in-a-nutshell-a54cd34c7863&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So the POC-3 “BB” is exactly that, a minimal substrate reference implementation of a blockchain based WASM smart contract. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As Gavin Wood states on Riot:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/f2e4bd9019b13732351062f50cf8ce48.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        He also provides an outlook to POC-4 planned for December /January. Were it’s stated that BB Testnet would support parachains, which means that substrate would be ready to host Polkadot as well.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e421997df25dc3343e0d9dcc08db8acd.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    So let’s check out some changes in contrast to the POC-2 deployment. 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    You should read the following article “
+   &lt;a href="https://medium.com/coinmonks/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node-d3c1bbdb9200"&gt;Hello World Polkadot #1: Cost-Effective Deployment of a Validator Node&lt;/a&gt;” first, which provides you with the big picture. In this article here I will only describe the delta-changes to the POC-2 installation.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 18px; font-weight: bold;"&gt;New Docker Image&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    First I had to create a new docker image, which runs the latest substrate POC-3 code on Ubuntu 16.04.5 in order to deploy it to a my Jelastic PaaS (hidora.com). It’s a minimal docker image, the main run command looks like this:
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+  RUN curl https://sh.rustup.rs -sSf | sh -s -- -y &amp;amp;&amp;amp; \ 
+      $HOME/.cargo/bin/rustup update &amp;amp;&amp;amp; \ 
+     export PATH=$PATH:$HOME/.cargo/bin &amp;amp;&amp;amp; \ 
+     git clone https://github.com/paritytech/substrate.git &amp;amp;&amp;amp; \ 
+      cd substrate/ &amp;amp;&amp;amp; \ 
+      ./scripts/init.sh &amp;amp;&amp;amp; \ 
+      ./scripts/build.sh &amp;amp;&amp;amp; \ 
+      cargo build --release 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    You can find the image on Dockerhub in 
+   &lt;a href="https://hub.docker.com/r/talfco/clb-substrate/"&gt;talfco/clb-substrate&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Deploy the Dockerfile to your test node installation and run it by providing the  &amp;ndash;name parameter
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/ae86a78cdc36203d62ba52ebedbb6e8e.png'&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As with POC-2 the Telemetry GUI  (
+       &lt;a href="https://telemetry.polkadot.io/#/BBQ%20Birch"&gt;&lt;a href="https://telemetry.polkadot.io/#/BBQ%20Birch"&gt;https://telemetry.polkadot.io/#/BBQ%20Birch&lt;/a&gt;&lt;/a&gt;) will show how you node is syncing up with the chain.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;Create a new address store it in your digital Wallet&lt;/span&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The next thing to do is to create an address of the POC-3 test-net and store it in your personal wallet app. Actually, there are two wallet apps available for POC-3, which can be used for managing your POC-3 addresses.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As a blockchain newcomer, I always got confused with the topic “wallet account” by intuitively mapping it to the conventional concepts of other (centralized) accounts solutions. These accounts are accessible via a different browser on multiple devices (or by multiple browsers on the same device). Wallet Apps and their account management capability are quite different.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So let me share you my personal findings  (which may potentially for you crystal-clear) when we are using these two Substrate  Wallet/Management Apps for the POC-3.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;The below picture represents a digital wallet, which stores amongst others the private-, as well as the public key of a Birch address.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/c66c044a02206ac1d9bddfd59fd8732e.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 12px;"&gt;Base-Image &lt;/span&gt;
+       &lt;span style="font-size: 12px;"&gt; by&lt;/span&gt;
+       &lt;a href="http://www.freepik.com/" style="font-size: 12px;"&gt; Sergey_Kandakov / Freepik&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The so-called Bondy Polkadot UI (by Gavin Wood)  is minimal in its feature set, but an excellent (not too extensive) code-base for studying the inner working of a React-based Polkadot client app.&lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          POC-3 Wallet App Link: 
+         &lt;a href="https://paritytech.github.io/substrate-ui/index.html"&gt;&lt;a href="https://paritytech.github.io/substrate-ui/index.html"&gt;https://paritytech.github.io/substrate-ui/index.html&lt;/a&gt;&lt;/a&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Source Code: 
+         &lt;a href="https://github.com/paritytech/substrate-ui"&gt;&lt;a href="https://github.com/paritytech/substrate-ui"&gt;https://github.com/paritytech/substrate-ui&lt;/a&gt;&lt;/a&gt;
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The second app is the Parity Substrate Portal app, which is built up from different modular components and is more feature-rich and was the frontend used in my previous article. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          POC-3 Portal App Link: 
+         &lt;a href="https://polkadot.js.org/apps/next"&gt;&lt;a href="https://polkadot.js.org/apps/next"&gt;https://polkadot.js.org/apps/next&lt;/a&gt;&lt;/a&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Source Code: 
+         &lt;a href="https://github.com/polkadot-js/apps"&gt;&lt;a href="https://github.com/polkadot-js/apps"&gt;https://github.com/polkadot-js/apps&lt;/a&gt;&lt;/a&gt;
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Both Apps are so-called Crypto Wallet apps, which are software programs that store your public and private keys and interface with Polkadot so users can monitor their balance, transfer dots, staking up and conduct other operations.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The above Wallet Apps in the context of managing the key(s) must be seen as fully isolated within a browser runtime and its associated local device storage required for storing the sensitive keys. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Both Wallet Apps are so-called
+       &lt;a href="https://en.wikipedia.org/wiki/Single-page_application"&gt;HTML5 Single Page Application&lt;/a&gt; based on the React Javascript Framework.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        For example, the Bondy Polkadot UI loads initially in 11 HTTP requests the necessary Javascript Application (and some helper files) and then make a protocol switch to the WebSocket protocol and communicates via &amp;ldquo;wss://substrate-rpc.parity.io/“ with the Substrate Test net. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        That’s it from a pure HTTP point of view, i.e. the HTTP protocol will only be required to load the static files (Javascript and some CSS and image files) into the Browser VM.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/9dd0565be6e2e5973490c577190ca580.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So the Wallet App lives in a Browser VM and controls his local store objects. In our example, the store is used to persist the private key, public key, as well as a textual description of the managed address. For the address book functionality, the store will be used to persist a textual identifier of the address, as well as the address itself.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/1163b570e83df7edee142fb28316c2cd.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In case you open in the browser the second Wallet app (i.e. Substrate Wallet Portal App) you will realize that the app isn’t aware of any private key-/public key. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/2ec72fb93dadaef5d4802d5d7c777695.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        This was confusing me at the beginning but it should be now clear by taking the rule into consideration, that a wallet app is specific for:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold;"&gt;one device, running one browser type (Chrome, Firefox etc.) and executing one specific single page app (represented by the URL from where the resources are loaded).&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Just another example: Running the Bondy Polkadot App in a Chrome as well as Firefox browser on the same device will not share any key configuration.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So how to get your address configured in the second wallet app? First I thought I have to use the restore account functionality, but at the end, the solution, was even simpler: 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold;"&gt;just create in the second app the address by using your private seed of the address.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        By using the same seed, you will just configure the App for this dedicated address (dead simple). So you have the address configured for both apps. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A final remark to this drill-down:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The secretStore management in the App is provided by the oo7-substrate NPM library, which is part of the Bond Framework 
+       &lt;a href="https://github.com/paritytech/oo7"&gt;&lt;a href="https://github.com/paritytech/oo7"&gt;https://github.com/paritytech/oo7&lt;/a&gt;&lt;/a&gt;. Potentially a good start for a later drill down in the mechanics of the Wallet app.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;Create a new Address and store it in your wallet&lt;/span&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As a first step, you have to create a new Address on the BBQ-Birch Testnet. 
+      &lt;/div&gt;
+      &lt;div&gt;
+        Head over to the BBQ Birch
+       &lt;a href="https://paritytech.github.io/substrate-ui/index.html"&gt;Bondy Polkadot App&lt;/a&gt; and create a new address via the Wallet function.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As one can see, the first time you open the App you will already get a default address configured with the account name “Default”. Press “Delete” to get rid of it, so you can set your own name.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/5ac8043652f9e55266ffab3fc372eb5c.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So create your own address by (1) generating a private seed, (2) defining a name and press the “Create” button. This will (3) generate a new address for you.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/7338eae0c0971991399b5f3f94bbb1e3.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In order to extract your private seed, you have to click on the eye-icon (4), which will show initially the Validator Seed as a hexadecimal value (required when starting a Validator with the KEY argument.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/f09fe308c5deb2e1d56931d3beacd48d.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Click on the key icon to get the seed, as Seed phrase. You should store the Seed phrase offline and keep it secure, it’s your safety net to recover at any time, your address to a Substrate Wallet app.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/06e70d9fa9b3467148430b2f54224e03.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;It’s time to request some BBQ/Birch (instead of DOT&amp;rsquo;s)&lt;/span&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;You should know it already from &lt;/span&gt;
+       &lt;a href="https://medium.com/coinmonks/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator-cc355ff4fd4d" style="font-size: 14px;"&gt;my last article&lt;/a&gt;
+       &lt;span style="font-size: 14px;"&gt;, you have to reach out to get some Birch (tokens) or are they called BBQ? Anyway, the community is still looking for a correct naming of the “tokens”. Get them on the &lt;/span&gt;
+       &lt;a href="https://riot.im/app/#/room/%23polkadot-watercooler:matrix.org/$15393684132609owsNS:matrix.parity.io" style="font-size: 14px;"&gt;Riot channel&lt;/a&gt; by asking politely for some Birch’s.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        After you received some Birch tokens, you will get as well a Short Address. You can check, the status of your Address via the Address Lookup
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/52639e34dcb1852bc5c98580b5d6e3d4.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A nifty new feature is the Short Address, which is enabled as soon as you got some Birch associated with your address, it’s a 4-character address.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/c6de26cf8fde46f549c61a043e83a940.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You can do a lookup using your short address
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/2d0d8ba8b754849b27d8471e1afe591c.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;Get the Polkadot Portal App ready&lt;/span&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Switch over to the
+       &lt;a href="https://polkadot.js.org/apps/next"&gt;Substrate Portal App&lt;/a&gt; and open it in the browser. As one can see, there is no address account configured yet (remember the discussion about wallet scope above).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;u&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/eab71e7df70cf53937ce508ab7cc6bfe.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/u&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Just create an account with your “Seed Phrase”, which will create an account in this app. You normally will use the same account name (not to get confused) and you have to provide a password.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;u&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/88a3172c867592356efcef61a5a91e50.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/u&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Et voila, you now have two Substrate Wallet Apps configured with your substrate address. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/fb9b8567a33c128205b3d5c2a385fdba.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So it’s time to restart your Validator node with your private Validator Seed (see above), by configuring your docker instance run cmd with the parameter  &amp;lsquo;&amp;ndash;validator —key &amp;lt;yourValidatorSeed&amp;gt;’ (see my last article). After restart, the log will show the BFT agreement error, which signifies that you are not nominated yet to a full validator.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/8f05b3627f6fe88358e0e426eee4091c.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In case you will use the above Dockerfile, make sure to set two environment variables in your Docker instance
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          POLKADOT_KEY_POC3
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          POLKADOT_NAME_POC3
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/48ce0c75a7e99a8bc78c68d857ea700f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The Dockerfile configures a crontab file with the monitorValidator.sh script. Each minute it will be checked if the Validator process is still running.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/0db4a97741db0805c235ae5c1bd11a51.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        If not, the Validator process will be restarted in order to reduce the slashing time.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/eba919eeb9efe1b3bcc9e8d4c906e89e.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Finally get nominated &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;The final steps are to stake up for Validation and get enough Nominators which back you with their Birchs in order to get become a full validator. Refer to my last article:&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;a href="https://medium.com/coinmonks/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator-cc355ff4fd4d"&gt;&lt;a href="https://medium.com/coinmonks/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator-cc355ff4fd4d"&gt;https://medium.com/coinmonks/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator-cc355ff4fd4d&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        That’s it for today, everybody Polka then 😉
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/88acaeb97a2dc84c83b91bf5f87d28a5.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Being Writer for the Coinmonks Medium Publication</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/13/being-writer-for-the-coinmonks-medium-publication.html"/>
@@ -6385,115 +7049,6 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Blockchain Governance System Introduction</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html"/>
-    <id>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</id>
-    <published>2016-11-22T22:15:39+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Josh Stark provides in
-       &lt;a href="http://www.coindesk.com/making-sense-blockchain-governance-applications/"&gt;this article&lt;/a&gt; an excellent introduction to the topic of Blockchain Governance Applications.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        It starts with a simple definition of the term “Governance”
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;This is what I mean by &amp;ldquo;governance&amp;rdquo; for the purposes of this article – the processes and systems used to facilitate decision-making in any organization.&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        This decision making process requires some basic technologies, which are provided in this context by the blockchain technology.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Amongst others these are
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;First, it requires a way to record a set of rules. Rules like who gets to vote, who gets to sit in parliament or who has commit access to a codebase.&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;Second, there must be a way for people to interact with the rules.&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;Third, governance systems require a way to enforce the rules.&lt;br&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;The article introduces a simple example of a voting system used by an NGO and then applies the blockchain technology to provide a Governance Application solution to the use case. This illustration process is very helpful in getting a quick and easy to understand overview of this rather complex domain.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The benefits of the blockchain in the above example are
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;First, blockchains are ideal for recording information in a way that can be later verified as authoritative. &lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;Second, blockchains provide a new way for people to interact with the rules directly. Some blockchains allow users to create logical scripts that are executed by the blockchain itself (smart contract code), which are executing the agreed rule.&lt;/li&gt;
-        &lt;li&gt;Having the rule express as executable code in the blockchain itself we have already achieved our third requirement – enforcement. When the rule is expressed as executable code, the rule can be enforced at the same time it is exercised.&lt;br&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        These three blockchain features are the foundation of any bitcoin governance system.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The author then goes on a introduces the bigger picture as well outlines various existing use cases. You can find the full article
-       &lt;a href="http://www.coindesk.com/making-sense-blockchain-governance-applications/"&gt;here&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
