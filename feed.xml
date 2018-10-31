@@ -14,14 +14,14 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/31/polkadot-hello-world-4-security-and-availability-aspects-of-your-validator-node.html"/>
     <id>https://dev.cloudburo.net/2018/10/31/polkadot-hello-world-4-security-and-availability-aspects-of-your-validator-node.html</id>
     <published>2018-10-31T07:29:01+00:00</published>
-    <updated>2018-10-31T07:29:24+00:00</updated>
+    <updated>2018-10-31T09:08:56+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-        In this article, I will address two topics in the context of the security and availability aspects of your Validator Node. I’m aware that tips presented are just covering the tip of the &amp;ldquo;security and availability&amp;rdquo; iceberg for a PoS validator node. Nevertheless, I find them useful to get a minimal amount of security and availability to your test instance.
+        In this article, I will address two topics in the context of the security and availability aspects of your Validator Node. I’m aware that the tips presented are just covering the tip of the &amp;ldquo;security and availability&amp;rdquo; iceberg for a PoS validator node. Nevertheless, I find them useful to get a minimal amount of security and availability to your test instance.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -451,20 +451,20 @@
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-   &lt;i&gt;&amp;ldquo;a lightweight service intended to be deployed alongside the gaiad service (ideally on separate physical hosts) which provides the following:&lt;/i&gt;
+   &lt;span style="font-style: italic;"&gt;&amp;ldquo;a lightweight service intended to be deployed alongside the gaiad service (ideally on separate physical hosts) which provides the following:&lt;/span&gt;
   &lt;/div&gt;
   &lt;ul&gt;
    &lt;li&gt;
     &lt;div&gt;
-     &lt;i&gt;High-availability access to validator signing keys&lt;/i&gt;
+     &lt;span style="font-style: italic;"&gt;High-availability access to validator signing keys&lt;/span&gt;
     &lt;/div&gt;&lt;/li&gt;
    &lt;li&gt;
     &lt;div&gt;
-     &lt;i&gt;Double-signing prevention even in the event the validator process is compromised&lt;/i&gt;
+     &lt;span style="font-style: italic;"&gt;Double-signing prevention even in the event the validator process is compromised&lt;/span&gt;
     &lt;/div&gt;&lt;/li&gt;
    &lt;li&gt;
     &lt;div&gt;
-     &lt;i&gt;Hardware security module storage for validator keys which can survive host compromise&amp;rdquo;&lt;/i&gt;
+     &lt;span style="font-style: italic;"&gt;Hardware security module storage for validator keys which can survive host compromise&amp;rdquo;&lt;/span&gt;
     &lt;/div&gt;&lt;/li&gt;
   &lt;/ul&gt;
   &lt;div&gt;
