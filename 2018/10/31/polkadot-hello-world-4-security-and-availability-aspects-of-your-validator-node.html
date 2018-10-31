@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Polkadot Hello World #4: Security and Availability Aspects of Your Validator Node</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (1)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (15)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (1)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (10)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (1)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (11)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (4)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (4)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (4)</a>
+            <a href="/tags/python.html" class="label label-default">python (1)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (17)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (6)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2018.html" class="label label-primary">2018 (28)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2018/10/31/polkadot-hello-world-4-security-and-availability-aspects-of-your-validator-node.html">Polkadot Hello World #4: Security and Availability Aspects of Your Validator Node</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  31.Oct 2018 | Tags <a class="label label-primary" href="/tags/blockchain.html">blockchain</a> <a class="label label-primary" href="/tags/tutorial.html">tutorial</a> <a class="label label-primary" href="/tags/polkadot.html">polkadot</a> 
+            </p>
+          </header>
+          <div class="entry-description"><div class="row">
+  <div class="article">
+    <p><span/>      <div>
+        In this article, I will address two topics in the context of the security and availability aspects of your Validator Node. I’m aware that tips presented are just covering the tip of the &ldquo;security and availability&rdquo; iceberg for a PoS validator node. Nevertheless, I find them useful to get a minimal amount of security and availability to your test instance.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/3976637b3c0c63fc643f856683058294.jpeg'></p>
+    
+  </div>
+  <div class="article"><p><span/>         <br>
+  </div>
+  <div>
+   <a href="https://en.wiktionary.org/wiki/tip_of_the_iceberg#/media/File:Iceberg.jpg">Photomontage of an iceberg</a> (
+   <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC by SA-3.0</a>)
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 18px; font-weight: bold;">Protecting Your Validator Node</span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    Exposing Blockchain or Crypto Services on the internet will always attract attacker who may try to crack your system. So better be prepared to take any measure to reduce the risk to be compromised.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    When running my Polkadot Validator I observed quite an extensive amount of attackers who tried to brute force my ssh password. 
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    One of the first things I did, was to install SSHGuard. So what is SSHGuard? As Andrew Schartzmeyer describes in his
+   <a href="https://andschwa.com/post/configuring-sshguard-on-ubuntu-server/">blog</a>:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-style: italic;">&ldquo;SSHGuard monitors servers from their logging activity. When logs convey that someone is doing a Bad Thing, sshguard reacts by blocking he/she/it for a bit. Sshguard has a touchy personality: when a naughty tyke insists disturbing your host, it reacts firmer and firmer.</span>
+  </div>
+  <div>
+   <span style="font-style: italic;">Now the nice thing about SSHGuard is that, despite its name, it protects quite a different services, and I now use it for SSH, Dovecot, and vsftpd. Unfortunately, the documentation makes it seem that these will be set up automatically, but that is only the case for SSH.&rdquo;</span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    In our case, we use it to protect our SSH port, so the installation is quite straightforward and by default, it will start checking the /var/log/auth.log on a Ubuntu server (in which the SSH attacks etc. are logged).n
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    On an Ubuntu server run the following commands in order to install SSHGuard which will use the
+   <a href="https://wiki.gentoo.org/wiki/Iptables">iptables</a> as it system firewall. iptables is a program used to configure and manage the kernels netfilter modules.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight plaintext"><code>
+  apt-get update 
+  apt-get install -y sshguard 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div>
+    When sshguard blocks any malicious users (by blocking their IP addresses), it will use the sshguard chain. Prepare the chain, and make sure it is also triggered when new incoming connections are detected. Restart sshguard at the end.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight plaintext"><code>
+  iptables -N sshguard 
+  ip6tables -N sshguard   
+  iptables -A INPUT -j sshguard   
+  ip6tables -A INPUT -j sshguard  
+  service sshguard restart 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div>
+    In the below example SSHGuard started to block an attempt after 4 unsuccessful login attempts and will increase the block time gradually, should the attacker go on with its attacks.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+
+<p><img class='article  img-thumbnail' src='/images/f2338e9e90399fe139700c52a590abfc.png'></p>
+
+  </div>
+  <div class="article"><p><span/>         <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    In order to get an overview of the blocked IP addresses run the following command:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight plaintext"><code>
+  iptables -nvL sshguard 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div></p>
+
+<p><img class='article  img-thumbnail' src='/images/7121116329398ea425af1cc40ac9718e.png'></p>
+
+  </div>
+  <div class="article"><p><span/>         <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    With this easy setup, you can be sure that your sensible sshd port is protected against dumb attackers try to crack into your system.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <font style="font-size: 18px;"><span style="font-size: 18px; font-weight: bold;">Inbound Ports of the Polkadot Validator</span></font>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    By the way which ports, are required by Polkadot Validator. There are three inbound ports required by a validator:
+  </div>
+  <div>
+   <br>
+  </div>
+  <ul>
+   <li>
+    <div>
+      30333 port for the peer2peer protocol
+    </div></li>
+   <li>
+    <div>
+      9933 on RPC and
+    </div></li>
+   <li>
+    <div>
+      9944 for the WebSocket (WS) communication
+    </div></li>
+  </ul>
+  <div>
+   <br>
+  </div>
+  <div>
+    Ideally, your validator node would expose just these three ports as well as the sshd port allowing you to login to the system.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 18px; font-weight: bold;">Outbound Ports of the Polkadot Validator</span>
+  </div>
+  <div>
+   <font style="font-size: 18px;"><br></font>
+  </div>
+  <div>
+    Some thoughts about protecting as well as the outbound ports of a Validator.  As described in this
+   <a href="https://security.stackexchange.com/questions/24310/why-block-outgoing-network-traffic-with-a-firewall">security.stackexchange</a> thread
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-style: italic;">… incoming traffic blocking can only prevent unsolicited traffic from reaching your internal network. However, if you get malware on an internal machine (via running an untrusted executable, or through an exploit) you can still be hit.</span>
+  </div>
+  <div>
+   <span style="font-style: italic;">Blocking outgoing traffic helps limit the damage, by preventing the malware from connecting to a command &amp; control server or exfiltrating data.</span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    So in a production Validator node, this may be considered as vital, but be aware:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-style: italic;">… the idea of outbound filtering would seem a natural course in a high-security environment. However, it is a very large and complex undertaking&hellip;</span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    To illustrate this I was running a quick exercise by analyzing the communication pattern of a Validator node.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    For that, I was using the excellent tool 
+   <a href="https://www.wireshark.org/">Wire Shark</a>. 
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-style: italic;">&ldquo;Wireshark is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions.”</span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    In order to get the input file for Wire Shark, I had to run the tcpdump command on my validator node &hellip;
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight plaintext"><code>
+  root@node32882:~# tcpdump -w dump.out -i venet0 -c 1000  -vvv 
+  tcpdump: listening on venet0, link-type LINUX_SLL (Linux cooked), capture size 262144 bytes 
+  1000 packets captured 
+  1125 packets received by filter 
+  0 packets dropped by kernel 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div>
+    … and load it into Wire Shark. As one can see in the below screenshot. There a plethora of outbound ports in use by the Validator. 
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+
+<p><img class='article  img-thumbnail' src='/images/d4b76860aefe027a3f2cc86f81400dd9.png'></p>
+
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+        This is expected taken into consideration that the Validator will use a Peer2Peer communication scheme in order to talk to the other around 45 Validators in his network.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        In order to protect the outbound ports as well, a detailed know how would be necessary how the underlying P2P library is working, which is out-of-scope of this article (looking at securing a test node).
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Nevertheless, it’s worth to mention that the
+       <a href="https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard">Payment Card Industry Data Security Standard</a> is just asking that from organisations which are offering credit cards (also some kind of validators).
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-style: italic;">PCI DSS Requirement 1.2.1 focuses around organizations developing policies and procedures that restrict traffic to that which is absolutely necessary, both inbound and outbound, for business purposes. PCI Requirement 1.2.1 states, “Restrict inbound and outbound traffic to that which is necessary for the cardholder data environment, and specifically deny all other traffic.” The goal of PCI Requirement 1.2.1 is to limit traffic to only essential, required protocols, ports, or services and have the business justification for those required elements. (</span>
+       <a href="https://kirkpatrickprice.com/video/pci-dss-requirement-1-2-1-restrict-traffic-to-that-which-is-necessary/" style="font-style: italic;">Link</a>
+       <span style="font-style: italic;">)</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Interesting to see, what the minimal requirements will be to run a Polkadot Validator node.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        So let’s switch to the second topic of this article.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <font face="Helvetica Neue" style="font-size: 18px;"><span style="font-size: 18px; font-family: &quot;Helvetica Neue&quot;; font-weight: bold;">Increase Availability of your Validator Node</span></font>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        I’m running a Validator POC-2 node in a 7x24 fashion and try to get the slashing (due to unavailability of my node) reduced to a minimum. 
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Nevertheless, from time to time, the process gets a Killed signal which results  that the process must be started.
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/3f93fdd412917ac7ead4aa70d1125ab4.png'></p>
+    
+  </div>
+  <div class="article"><p><span/>         <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    In order to automate this task and reduce the slashing probability to a minimum, I wrote a small cron job script, which gets executed every minute.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    The script (monitorValidator.sh) to be triggered will check if there is no polkadot process running
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight shell"><code>
+  <span class="c">#!/bin/bash </span>
+  timestamp<span class="o">()</span> 
+  <span class="o">{</span> 
+  date +<span class="s2">"%Y-%m-%d %T"</span> 
+  <span class="o">}</span> 
+  <span class="nv">a</span><span class="o">=</span><span class="k">$(</span>/bin/netstat -tulpn | awk <span class="s1">'{print $7}'</span> |  grep polkadot | wc -l <span class="k">)</span> 
+  <span class="k">if </span><span class="nb">test</span> <span class="nv">$a</span> <span class="o">=</span> <span class="s2">"0"</span> 
+  <span class="k">then 
+  </span><span class="nb">echo</span> <span class="s2">"</span><span class="k">$(</span>timestamp<span class="k">)</span><span class="s2">: Polkadot Validator Down"</span> &gt;&gt; /var/log/polkamonitor.log 
+    /root/.cargo/bin/polkadot --name <span class="nv">$POLKADOT_NAME_POC2</span> --validator --key <span class="nv">$POLKADOT_KEY_POC2</span> &amp;&gt;&gt; /var/log/polkamonitor.log 
+  <span class="k">fi</span> 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div>
+    To install the crontab, execute the following command
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight plaintext"><code>
+  (/usr/bin/crontab -l ; echo " * * * * *  bash -l -c '/root/monitorValidator.sh  &gt; /dev/null 2&gt;&amp;1'") | /usr/bin/crontab 
+
+</code></pre>
+
+<p></div>
+  <div>
+   <br>
+  </div>
+  <div>
+    This will result in a check of every 60 seconds if there is a validator process still running, if not it will be restarted.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 18px;">Future Outlook and Cosmos Approach</span>
+  </div>
+  <div>
+   <font style="font-size: 14px;"><br></font>
+  </div>
+  <div>
+   <span style="font-size: 14px; font-family: &quot;Helvetica Neue&quot;;">On the p</span>
+   <span style=" font-size: 14px; color: rgb(36, 41, 46); font-family: &quot;Helvetica Neue&quot;;">ublic repo to coordinate the collaboration of teams working in the web3 space an issue was opened to &ldquo;</span>
+   <span style="font-size: 14px; color: rgb(36, 41, 46); font-family: &quot;Helvetica Neue&quot;;">Create and run a node cluster service for Polkadot</span>
+   <span style="caret-color: rgb(36, 41, 46); font-size: 14px; color: rgb(36, 41, 46); font-family: &quot;Helvetica Neue&quot;;">”</span>
+   <span style="font-size: 14px; color: rgb(36, 41, 46); font-family: &quot;Helvetica Neue&quot;;"> (</span>
+   <a href="https://github.com/w3f/Web3-collaboration/issues/43" style="font-size: 14px; font-family: &quot;Helvetica Neue&quot;;"><a href="https://github.com/w3f/Web3-collaboration/issues/43">https://github.com/w3f/Web3-collaboration/issues/43</a></a>
+   <span style="font-size: 14px; font-family: &quot;Helvetica Neue&quot;;">), which would address the availability issue.</span>
+  </div>
+  <div>
+   <font face="Helvetica Neue" style="font-size: 14px;"><br></font>
+  </div>
+  <div>
+   <span style="font-size: 14px; font-family: &quot;Helvetica Neue&quot;;">Cosmos which is more mature than Polkadot addressed some of the topics, amongst others</span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    Provisioning of the
+   <a href="https://forum.cosmos.network/t/sentry-node-architecture-overview/454">Sentry Node Architecture</a>, which is an infrastructure example for DDoS mitigation on Gaia / Cosmos Hub network validator nodes.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-style: italic;">&quot;To mitigate the issue, multiple distributed nodes (sentry nodes) are deployed in cloud environments. With the possibility of easy scaling, it is harder to make an impact on the validator node. New sentry nodes can be brought up during a DDoS attack and using the gossip network they can be integrated into the transaction flow.&rdquo;</span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    As well as the
+   <a href="https://github.com/tendermint/kms">Tendermint HSM Key Management System</a> (KMS)
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <i>&ldquo;a lightweight service intended to be deployed alongside the gaiad service (ideally on separate physical hosts) which provides the following:</i>
+  </div>
+  <ul>
+   <li>
+    <div>
+     <i>High-availability access to validator signing keys</i>
+    </div></li>
+   <li>
+    <div>
+     <i>Double-signing prevention even in the event the validator process is compromised</i>
+    </div></li>
+   <li>
+    <div>
+     <i>Hardware security module storage for validator keys which can survive host compromise&rdquo;</i>
+    </div></li>
+  </ul>
+  <div>
+   <br>
+  </div>
+  <div>
+    That’s it for today, at least on the surface of your Validator iceberg, you have done your first step to secure and increase availability. It will be interesting to watch how Polkadot will evolve over time in the context of security and availability.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+
+<p><img class='article  img-thumbnail' src='/images/80f439c75ee641bb0f51fb6e36a1f509.jpeg'></p>
+
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+       <a href="https://de.wikipedia.org/wiki/Eisb%C3%A4r#/media/File:Polar_bear_after_unlucky_hunt_for_a_seal.jpg">Icebear</a> (
+       <a href="https://creativecommons.org/licenses/by-sa/4.0">CC by SA-4</a>)
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        In the next week, we will look in more detail to the Slashing process and how you can influence it.
+      </div></p>
+    
+  </div>
+</div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/Cloudburonet-897759390318816/" class="btn btn-facebook">
+                <i class="fa fa-facebook"></i></a><a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts" class="btn btn-google-plus">
+                <i class="fa fa-google-plus"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2018 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>

@@ -5,10 +5,499 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-10-22T21:15:23+00:00</updated>
+  <updated>2018-10-31T07:29:01+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Polkadot Hello World #4: Security and Availability Aspects of Your Validator Node</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/10/31/polkadot-hello-world-4-security-and-availability-aspects-of-your-validator-node.html"/>
+    <id>https://dev.cloudburo.net/2018/10/31/polkadot-hello-world-4-security-and-availability-aspects-of-your-validator-node.html</id>
+    <published>2018-10-31T07:29:01+00:00</published>
+    <updated>2018-10-31T07:29:24+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
+        In this article, I will address two topics in the context of the security and availability aspects of your Validator Node. I’m aware that tips presented are just covering the tip of the &amp;ldquo;security and availability&amp;rdquo; iceberg for a PoS validator node. Nevertheless, I find them useful to get a minimal amount of security and availability to your test instance.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/3976637b3c0c63fc643f856683058294.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;a href="https://en.wiktionary.org/wiki/tip_of_the_iceberg#/media/File:Iceberg.jpg"&gt;Photomontage of an iceberg&lt;/a&gt; (
+   &lt;a href="http://creativecommons.org/licenses/by-sa/3.0/"&gt;CC by SA-3.0&lt;/a&gt;)
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 18px; font-weight: bold;"&gt;Protecting Your Validator Node&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Exposing Blockchain or Crypto Services on the internet will always attract attacker who may try to crack your system. So better be prepared to take any measure to reduce the risk to be compromised.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    When running my Polkadot Validator I observed quite an extensive amount of attackers who tried to brute force my ssh password. 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    One of the first things I did, was to install SSHGuard. So what is SSHGuard? As Andrew Schartzmeyer describes in his
+   &lt;a href="https://andschwa.com/post/configuring-sshguard-on-ubuntu-server/"&gt;blog&lt;/a&gt;:
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-style: italic;"&gt;&amp;ldquo;SSHGuard monitors servers from their logging activity. When logs convey that someone is doing a Bad Thing, sshguard reacts by blocking he/she/it for a bit. Sshguard has a touchy personality: when a naughty tyke insists disturbing your host, it reacts firmer and firmer.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-style: italic;"&gt;Now the nice thing about SSHGuard is that, despite its name, it protects quite a different services, and I now use it for SSH, Dovecot, and vsftpd. Unfortunately, the documentation makes it seem that these will be set up automatically, but that is only the case for SSH.&amp;rdquo;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    In our case, we use it to protect our SSH port, so the installation is quite straightforward and by default, it will start checking the /var/log/auth.log on a Ubuntu server (in which the SSH attacks etc. are logged).n
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    On an Ubuntu server run the following commands in order to install SSHGuard which will use the
+   &lt;a href="https://wiki.gentoo.org/wiki/Iptables"&gt;iptables&lt;/a&gt; as it system firewall. iptables is a program used to configure and manage the kernels netfilter modules.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+  apt-get update 
+  apt-get install -y sshguard 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    When sshguard blocks any malicious users (by blocking their IP addresses), it will use the sshguard chain. Prepare the chain, and make sure it is also triggered when new incoming connections are detected. Restart sshguard at the end.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+  iptables -N sshguard 
+  ip6tables -N sshguard   
+  iptables -A INPUT -j sshguard   
+  ip6tables -A INPUT -j sshguard  
+  service sshguard restart 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    In the below example SSHGuard started to block an attempt after 4 unsuccessful login attempts and will increase the block time gradually, should the attacker go on with its attacks.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/f2338e9e90399fe139700c52a590abfc.png'&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    In order to get an overview of the blocked IP addresses run the following command:
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+  iptables -nvL sshguard 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/7121116329398ea425af1cc40ac9718e.png'&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    With this easy setup, you can be sure that your sensible sshd port is protected against dumb attackers try to crack into your system.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;font style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-weight: bold;"&gt;Inbound Ports of the Polkadot Validator&lt;/span&gt;&lt;/font&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    By the way which ports, are required by Polkadot Validator. There are three inbound ports required by a validator:
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;ul&gt;
+   &lt;li&gt;
+    &lt;div&gt;
+      30333 port for the peer2peer protocol
+    &lt;/div&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;div&gt;
+      9933 on RPC and
+    &lt;/div&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;div&gt;
+      9944 for the WebSocket (WS) communication
+    &lt;/div&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Ideally, your validator node would expose just these three ports as well as the sshd port allowing you to login to the system.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 18px; font-weight: bold;"&gt;Outbound Ports of the Polkadot Validator&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;font style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Some thoughts about protecting as well as the outbound ports of a Validator.  As described in this
+   &lt;a href="https://security.stackexchange.com/questions/24310/why-block-outgoing-network-traffic-with-a-firewall"&gt;security.stackexchange&lt;/a&gt; thread
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-style: italic;"&gt;… incoming traffic blocking can only prevent unsolicited traffic from reaching your internal network. However, if you get malware on an internal machine (via running an untrusted executable, or through an exploit) you can still be hit.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-style: italic;"&gt;Blocking outgoing traffic helps limit the damage, by preventing the malware from connecting to a command &amp;amp; control server or exfiltrating data.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    So in a production Validator node, this may be considered as vital, but be aware:
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-style: italic;"&gt;… the idea of outbound filtering would seem a natural course in a high-security environment. However, it is a very large and complex undertaking&amp;hellip;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    To illustrate this I was running a quick exercise by analyzing the communication pattern of a Validator node.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    For that, I was using the excellent tool 
+   &lt;a href="https://www.wireshark.org/"&gt;Wire Shark&lt;/a&gt;. 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-style: italic;"&gt;&amp;ldquo;Wireshark is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions.”&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    In order to get the input file for Wire Shark, I had to run the tcpdump command on my validator node &amp;hellip;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+  root@node32882:~# tcpdump -w dump.out -i venet0 -c 1000  -vvv 
+  tcpdump: listening on venet0, link-type LINUX_SLL (Linux cooked), capture size 262144 bytes 
+  1000 packets captured 
+  1125 packets received by filter 
+  0 packets dropped by kernel 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    … and load it into Wire Shark. As one can see in the below screenshot. There a plethora of outbound ports in use by the Validator. 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/d4b76860aefe027a3f2cc86f81400dd9.png'&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        This is expected taken into consideration that the Validator will use a Peer2Peer communication scheme in order to talk to the other around 45 Validators in his network.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In order to protect the outbound ports as well, a detailed know how would be necessary how the underlying P2P library is working, which is out-of-scope of this article (looking at securing a test node).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Nevertheless, it’s worth to mention that the
+       &lt;a href="https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard"&gt;Payment Card Industry Data Security Standard&lt;/a&gt; is just asking that from organisations which are offering credit cards (also some kind of validators).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;PCI DSS Requirement 1.2.1 focuses around organizations developing policies and procedures that restrict traffic to that which is absolutely necessary, both inbound and outbound, for business purposes. PCI Requirement 1.2.1 states, “Restrict inbound and outbound traffic to that which is necessary for the cardholder data environment, and specifically deny all other traffic.” The goal of PCI Requirement 1.2.1 is to limit traffic to only essential, required protocols, ports, or services and have the business justification for those required elements. (&lt;/span&gt;
+       &lt;a href="https://kirkpatrickprice.com/video/pci-dss-requirement-1-2-1-restrict-traffic-to-that-which-is-necessary/" style="font-style: italic;"&gt;Link&lt;/a&gt;
+       &lt;span style="font-style: italic;"&gt;)&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Interesting to see, what the minimal requirements will be to run a Polkadot Validator node.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So let’s switch to the second topic of this article.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font face="Helvetica Neue" style="font-size: 18px;"&gt;&lt;span style="font-size: 18px; font-family: &amp;quot;Helvetica Neue&amp;quot;; font-weight: bold;"&gt;Increase Availability of your Validator Node&lt;/span&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        I’m running a Validator POC-2 node in a 7x24 fashion and try to get the slashing (due to unavailability of my node) reduced to a minimum. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Nevertheless, from time to time, the process gets a Killed signal which results  that the process must be started.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/3f93fdd412917ac7ead4aa70d1125ab4.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    In order to automate this task and reduce the slashing probability to a minimum, I wrote a small cron job script, which gets executed every minute.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    The script (monitorValidator.sh) to be triggered will check if there is no polkadot process running
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;
+  &lt;span class="c"&gt;#!/bin/bash &lt;/span&gt;
+  timestamp&lt;span class="o"&gt;()&lt;/span&gt; 
+  &lt;span class="o"&gt;{&lt;/span&gt; 
+  date +&lt;span class="s2"&gt;"%Y-%m-%d %T"&lt;/span&gt; 
+  &lt;span class="o"&gt;}&lt;/span&gt; 
+  &lt;span class="nv"&gt;a&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;/bin/netstat -tulpn | awk &lt;span class="s1"&gt;'{print $7}'&lt;/span&gt; |  grep polkadot | wc -l &lt;span class="k"&gt;)&lt;/span&gt; 
+  &lt;span class="k"&gt;if &lt;/span&gt;&lt;span class="nb"&gt;test&lt;/span&gt; &lt;span class="nv"&gt;$a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"0"&lt;/span&gt; 
+  &lt;span class="k"&gt;then 
+  &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;timestamp&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;: Polkadot Validator Down"&lt;/span&gt; &amp;gt;&amp;gt; /var/log/polkamonitor.log 
+    /root/.cargo/bin/polkadot --name &lt;span class="nv"&gt;$POLKADOT_NAME_POC2&lt;/span&gt; --validator --key &lt;span class="nv"&gt;$POLKADOT_KEY_POC2&lt;/span&gt; &amp;amp;&amp;gt;&amp;gt; /var/log/polkamonitor.log 
+  &lt;span class="k"&gt;fi&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    To install the crontab, execute the following command
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
+  (/usr/bin/crontab -l ; echo " * * * * *  bash -l -c '/root/monitorValidator.sh  &amp;gt; /dev/null 2&amp;gt;&amp;amp;1'") | /usr/bin/crontab 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    This will result in a check of every 60 seconds if there is a validator process still running, if not it will be restarted.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 18px;"&gt;Future Outlook and Cosmos Approach&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 14px; font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;On the p&lt;/span&gt;
+   &lt;span style=" font-size: 14px; color: rgb(36, 41, 46); font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;ublic repo to coordinate the collaboration of teams working in the web3 space an issue was opened to &amp;ldquo;&lt;/span&gt;
+   &lt;span style="font-size: 14px; color: rgb(36, 41, 46); font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;Create and run a node cluster service for Polkadot&lt;/span&gt;
+   &lt;span style="caret-color: rgb(36, 41, 46); font-size: 14px; color: rgb(36, 41, 46); font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;”&lt;/span&gt;
+   &lt;span style="font-size: 14px; color: rgb(36, 41, 46); font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt; (&lt;/span&gt;
+   &lt;a href="https://github.com/w3f/Web3-collaboration/issues/43" style="font-size: 14px; font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;&lt;a href="https://github.com/w3f/Web3-collaboration/issues/43"&gt;https://github.com/w3f/Web3-collaboration/issues/43&lt;/a&gt;&lt;/a&gt;
+   &lt;span style="font-size: 14px; font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;), which would address the availability issue.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;font face="Helvetica Neue" style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 14px; font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;Cosmos which is more mature than Polkadot addressed some of the topics, amongst others&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Provisioning of the
+   &lt;a href="https://forum.cosmos.network/t/sentry-node-architecture-overview/454"&gt;Sentry Node Architecture&lt;/a&gt;, which is an infrastructure example for DDoS mitigation on Gaia / Cosmos Hub network validator nodes.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-style: italic;"&gt;&amp;quot;To mitigate the issue, multiple distributed nodes (sentry nodes) are deployed in cloud environments. With the possibility of easy scaling, it is harder to make an impact on the validator node. New sentry nodes can be brought up during a DDoS attack and using the gossip network they can be integrated into the transaction flow.&amp;rdquo;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    As well as the
+   &lt;a href="https://github.com/tendermint/kms"&gt;Tendermint HSM Key Management System&lt;/a&gt; (KMS)
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;i&gt;&amp;ldquo;a lightweight service intended to be deployed alongside the gaiad service (ideally on separate physical hosts) which provides the following:&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;ul&gt;
+   &lt;li&gt;
+    &lt;div&gt;
+     &lt;i&gt;High-availability access to validator signing keys&lt;/i&gt;
+    &lt;/div&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;div&gt;
+     &lt;i&gt;Double-signing prevention even in the event the validator process is compromised&lt;/i&gt;
+    &lt;/div&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;div&gt;
+     &lt;i&gt;Hardware security module storage for validator keys which can survive host compromise&amp;rdquo;&lt;/i&gt;
+    &lt;/div&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    That’s it for today, at least on the surface of your Validator iceberg, you have done your first step to secure and increase availability. It will be interesting to watch how Polkadot will evolve over time in the context of security and availability.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/80f439c75ee641bb0f51fb6e36a1f509.jpeg'&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;a href="https://de.wikipedia.org/wiki/Eisb%C3%A4r#/media/File:Polar_bear_after_unlucky_hunt_for_a_seal.jpg"&gt;Icebear&lt;/a&gt; (
+       &lt;a href="https://creativecommons.org/licenses/by-sa/4.0"&gt;CC by SA-4&lt;/a&gt;)
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In the next week, we will look in more detail to the Slashing process and how you can influence it.
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Polkadot Hello World #3: POC-3 on Substrate is Here</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/22/polkadot-hello-world-3-poc-3-on-substrate-is-here.html"/>
@@ -6975,77 +7464,6 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;b&gt;&lt;br&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>The Twelve Factor App Methodology for Building SAAS</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"/>
-    <id>https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html</id>
-    <published>2016-11-28T21:33:21+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Deliver applications as “Software-As-A-Service” in a Cloud Platform requires to take some principles into consideration, which were not immediately obvious when coming from a classic development environment.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The
-       &lt;a href="http://12factor.net"&gt;12factor.net&lt;/a&gt; Web page provides the so-called twelve-factor app methodology for building software-as-a-service apps. It can be applied to apps written in any language and using any combination of backing service.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        It’s centred around the core principles of
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;Use &lt;b&gt;declarative&lt;/b&gt; formats for setup automation, to minimize time and cost for new developers joining the project;&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;Have a &lt;b&gt;clean contrac&lt;/b&gt;t with the underlying operating system, offering maximum portability between execution environments;&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;Are suitable for &lt;b&gt;deployment&lt;/b&gt; on modern cloud platforms, obviating the need for servers and systems administration;&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Minimize divergence&lt;/b&gt; between development and production, enabling continuous deployment for maximum agility;&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;And can &lt;b&gt;scale up&lt;/b&gt; without significant changes to tooling, architecture, or development practices.&lt;br&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;Use it as your guiding cookbook when starting newly with writing software-as-a-service apps.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Update 2.12.2016: Werner Vogels CTO of Amazon was mentioning the company in his key speech at the
-       &lt;a href="https://www.youtube.com/watch?v=ZDScBNahsL4"&gt;AWS re:Invent 2016&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;a href="http://12factor.net"&gt;&lt;b&gt;Check it out here&lt;/b&gt;&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;

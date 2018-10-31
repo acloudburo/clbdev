@@ -661,6 +661,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2018/10/31/polkadot-hello-world-4-security-and-availability-aspects-of-your-validator-node.html</loc>
+    <lastmod>2018-10-31</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html</loc>
     <lastmod>2018-09-09</lastmod>
     <priority>0.7</priority>
@@ -1066,6 +1072,12 @@
     <loc>https://dev.cloudburo.net/2018/10.html</loc>
     <lastmod>2018-09-09</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2018/10/31.html</loc>
+    <lastmod>2018-09-09</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
