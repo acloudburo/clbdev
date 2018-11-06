@@ -745,6 +745,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2018/11/06/polkadot-blockchain-technology-for-web-3-0.html</loc>
+    <lastmod>2018-11-06</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2018/10/22/polkadot-hello-world-3-poc-3-on-substrate-is-here.html</loc>
     <lastmod>2018-10-22</lastmod>
     <priority>0.7</priority>
