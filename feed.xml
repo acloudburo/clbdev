@@ -5,10 +5,56 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-10-31T07:29:01+00:00</updated>
+  <updated>2018-11-06T19:09:50+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Hidoras Blog Re-Published Cloudburo Article</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/11/06/hidoras-blog-re-published-cloudburo-article.html"/>
+    <id>https://dev.cloudburo.net/2018/11/06/hidoras-blog-re-published-cloudburo-article.html</id>
+    <published>2018-11-06T19:09:50+00:00</published>
+    <updated>2018-11-06T19:09:56+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        As part of my CoinMonks Medium Publication article series “
+       &lt;a href="https://medium.com/coinmonks/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node-d3c1bbdb9200"&gt;Hello World Polkadot&lt;/a&gt;”, which were initially published on this site, I also introduced an article about leveraging the PaaS Platform of Hidoras.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Mathieu Robin - CEO of Hidoras - reached out to me for publishing the article as part of the Hidoras Website, which now got now published and announced in the periodical Email letter. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;a href="https://hidora.com/polkadot-hello-world-1-cost-effective-cloud-deployment-validator-node/"&gt;&lt;a href="https://hidora.com/polkadot-hello-world-1-cost-effective-cloud-deployment-validator-node/"&gt;https://hidora.com/polkadot-hello-world-1-cost-effective-cloud-deployment-validator-node/&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/46c5df6c09d65c5f9566d78c8178a5b2.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Polkadot Hello World #4: Security and Availability Aspects of Your Validator Node</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/31/polkadot-hello-world-4-security-and-availability-aspects-of-your-validator-node.html"/>
@@ -7379,91 +7425,6 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>The 5 pillars of the AWS Architecture Framework</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html"/>
-    <id>https://dev.cloudburo.net/2016/11/29/the-5-pillars-of-the-aws-architecture-framework.html</id>
-    <published>2016-11-29T21:48:26+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Recently I published an article about the
-       &lt;a href="https://dev.cloudburo.net/2016/11/28/the-twelve-factor-app-methodology-for-building-saas.html"&gt;Twelve Factor App Methodology for SAAS&lt;/a&gt;, which can be applied for any programming language.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In case you decide to go with
-       &lt;a href="http://aws.amazon.com"&gt;aws.amazon.com&lt;/a&gt; you can complement the methodology with
-       &lt;a href="http://d0.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf"&gt;AWS Architecture Framework&lt;/a&gt;, which provides you with a solid architectural foundation for building these new kind of applications. The white paper got recently updated (November 2016) an addresses general design principles, as well as specific best practices and guidance in five conceptual areas that AWS defines as the pillars of the Well-Architected Framework.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;ol&gt;
-        &lt;li&gt;&lt;b&gt;Security&lt;/b&gt;: The ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Reliability&lt;/b&gt;:  The ability of a system to recover from infrastructure or service failures, dynamically acquire computing resources to meet demand, and mitigate disruptions such as misconfigurations or transient network issues.&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Performance Efficiency: &lt;/b&gt;The ability to use computing resources efficiently to meet system requirements, and to maintain that efficiency as demand changes and technologies evolve.&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Cost Optimization&lt;/b&gt;: The ability to avoid or eliminate unneeded cost or suboptimal resources.   &lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Operational Excellence: &lt;/b&gt;The ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.&lt;br&gt;&lt;/li&gt;
-       &lt;/ol&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        When architecting solutions you make trade-offs between pillars based upon your business context, these business decisions can drive your engineering priorities. 
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The paper will help you to make the right decisions in context of application requirements and is a guiding light in the sometimes complex AWS ecosystems
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        You can find the full white paper:
-       &lt;b&gt;&lt;a href="http://d0.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf"&gt;Here&lt;/a&gt;.&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Update 2.12.2016: Werner Vogels CTO of Amazon AWS is providing an introduction to the topic, you can find his page
-       &lt;a href="https://www.youtube.com/watch?v=ZDScBNahsL4"&gt;&lt;b&gt;here&lt;/b&gt;&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        My articles to the usage of the Amazon cloud you will find under the tag
-       &lt;a href="https://dev.cloudburo.net/tags/aws.html"&gt;aws&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
