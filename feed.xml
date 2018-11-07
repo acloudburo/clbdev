@@ -5,49 +5,10 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-11-06T20:09:18+00:00</updated>
+  <updated>2018-11-06T19:09:50+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
-  <entry>
-    <title>Polkadot - Blockchain Technology for Web 3.0</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2018/11/06/polkadot-blockchain-technology-for-web-3-0.html"/>
-    <id>https://dev.cloudburo.net/2018/11/06/polkadot-blockchain-technology-for-web-3-0.html</id>
-    <published>2018-11-06T20:09:18+00:00</published>
-    <updated>2018-11-07T06:30:43+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-       &lt;font style="font-size: 14px;"&gt;&lt;span style="font-size: 14px; font-weight: bold;"&gt;Introduction slides by Tomasz Drwiega to Polkadot&lt;/span&gt;&lt;/font&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-      &lt;div&gt;
-        &lt;iframe src="
-       &lt;a href="https://slides.com/tomaszdrwiega/polkadot/embed"&gt;//slides.com/tomaszdrwiega/polkadot/embed&lt;/a&gt;&amp;ldquo; width=&amp;quot;576&amp;rdquo; height=&amp;ldquo;420&amp;rdquo; scrolling=&amp;ldquo;no&amp;rdquo; frameborder=&amp;ldquo;0&amp;rdquo; webkitallowfullscreen mozallowfullscreen allowfullscreen&amp;gt;&lt;/iframe&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
   <entry>
     <title>Hidoras Blog Re-Published Cloudburo Article</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/11/06/hidoras-blog-re-published-cloudburo-article.html"/>
@@ -7393,6 +7354,74 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Blockchain Smart Signatures Explained</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html"/>
+    <id>https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html</id>
+    <published>2016-11-30T22:56:42+00:00</published>
+    <updated>2018-09-09T11:03:33+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Christopher Allen provides all the time very profound blog articles in the context of blockchain, identity and authorization topics.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The Smart Signatures white paper from Rebooting the Web of Trust conference is giving an excellent and easy to understand introduction to the topic of Smart Signatures.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Out of the abstract of the paper, Smart Signatures are defined as follows.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Traditional cryptographic signature systems are based on &lt;b&gt;strictly-defined &lt;/b&gt;authentication and authorization mechanisms that &lt;b&gt;assume a single private key&lt;/b&gt; can be used to produce a given signature and that a single public key can be used to verify it. Given the evident limitations of this design, we propose an alternative with more powerful capabilties, based on the ability to &lt;b&gt;explicitly outline&lt;/b&gt; and fully &lt;b&gt;program conditions for verification&lt;/b&gt;. These conditions would then be used to determine when a signature or set of signatures can be considered valid.&lt;/i&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        This requirement of explicitly define authorization rules for the (multiple) signature(s) check is a core principle of the blockchain aka bitcoin, and an invention which enhancing authorisation strategies dramatically.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The authors will describe the topic of Smart Signatures in context of the Bitcoin Script language and provides various use cases and implementation statuses.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You can find the white paper
+       &lt;a href="https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust/blob/master/final-documents/smart-signatures.pdf"&gt;&lt;b&gt;here&lt;/b&gt;&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
