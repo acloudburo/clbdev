@@ -445,6 +445,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2018/11/21/polkadot-hello-world-5-minting-bonding-staking-and-slashing.html</loc>
+    <lastmod>2018-11-21</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/04/24/micro-business-quick-tips-2-google-apps-email-setup-for-a-new-domain.html</loc>
     <lastmod>2018-09-09</lastmod>
     <priority>0.7</priority>
@@ -1078,6 +1084,12 @@
     <loc>https://dev.cloudburo.net/2018/11.html</loc>
     <lastmod>2018-09-09</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2018/11/21.html</loc>
+    <lastmod>2018-09-09</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Polkadot Hello World #5: Minting, Bonding, Staking and Slashing</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (1)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (16)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (1)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (10)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (1)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (11)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (4)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (4)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (5)</a>
+            <a href="/tags/python.html" class="label label-default">python (1)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (17)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (6)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2018.html" class="label label-primary">2018 (30)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2018/11/21/polkadot-hello-world-5-minting-bonding-staking-and-slashing.html">Polkadot Hello World #5: Minting, Bonding, Staking and Slashing</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  21.Nov 2018 | Tags <a class="label label-primary" href="/tags/blockchain.html">blockchain</a> <a class="label label-primary" href="/tags/polkadot.html">polkadot</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                    This week’s article is about “minting”, “bonding”, “staking” and “slashing” which are core functions of a Proof of Stake (POS) blockchain consensus engine.
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">It’s a follow-up article of “</span>
+                   <a href="https://medium.com/coinmonks/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator-cc355ff4fd4d" style="-en-paragraph:true;">Polkadot Hello World #2: Get Nominated As An Official Validator</a>
+                   <span style="">”, which is an introduction to the topic and explains the Byzantine Fault Tolerance (BFT) and it’s relationship to PoS. So you may check out this one as well. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">When I was thinking about the right teaser image for this article - by playing around with the keyword “slashing” - I got remembered of the brilliant hit by Ian Dury &amp; The Blockheads “Hit Me With Your Rythm Stick” from 1979. So instead of a static image, I start this article with this old post-punk music video, honouring the validators out in the PoS network universes, trying not to get hit by the rhythm stick of the consensus engines … </span>
+                  </div>
+                  <div>
+                   <div class="responsive-video">
+                    <iframe src="https://www.youtube.com/embed/2U5d7X7sE4k?rel=0" frameborder="0" allowfullscreen></iframe>
+                   </div>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">… so back to work then.  </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">When I started my Polkadot blockchain researching work some weeks ago I wasn’t aware that the crypto economy is actually going through a big shift in direction to decentralized staking networks. Not just Polkadot, but a lot of other blockchain networks are looking forward replacing (or already replaced) the energy-hungry Proof of Work consensus approach with a new consensus model, the so-called Proof of Stake (PoS). </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Just a short wrap-up: In a PoS consensus network a group of Validators together will form the new chain. They are a new breed of miners (well minters) who … </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                    <span style="font-style: italic;">&ldquo;… are proposing and voting on the next block, and the weight of each validator’s vote depends on the size of its deposit (i.e. stake). Significant advantages of PoS include </span>
+                    <span style="font-style: italic; font-weight: bold;">security, reduced risk of centralization, and energy efficiency</span>
+                    <span style="font-style: italic;">.&rdquo; (</span>
+                    <a href="https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQs" style="font-style: italic;">Ethereum Proof of Stake Wiki</a>
+                    <span style="font-style: italic;">) </span>
+                   </div>
+                  </blockquote>
+                  <span style="font-size: 24px;">Minting</span>
+                  <span style="font-size: 24px;">  </span>
+                  <div>
+                   <span style="font-size: 24px;"> 
+                   <img class='article  img-thumbnail' src='/images/8dc80a557d9e0912e4abb5c17f7e8288.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   <span style="font-size: 14px;">San Francisco Mint Employees in the Machine Shop — 1873 (</span>
+                   <a href="https://commons.wikimedia.org/wiki/File:Photograph_of_four_San_Francisco_Mint_employees_in_the_Machine_Shop._-_NARA_-_296569.jpg" style="font-size: 14px;">License Wikimedia Commons</a>
+                   <span style="font-size: 14px;">)</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="">This brings us to the first keyword of the article. The process of generating blocks with Proof-of-Stake is loosely referred to as </span>
+                   <span style="font-weight: bold;">Minting</span>
+                   <span style="">. Not sure why the word is used but could imagine that the task of the Validator is more driven to check an already produced raw block and attest its correctness. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Where in the world of PoW there is this hard and dirty (energy-consuming) job to be done of Mining to get hold of a raw block. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/91ce2aca55c5d8cf7dd0df6c7bc7e93a.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> Bundesarchiv Bild 183–17031–0003, Bergarbeiter bohrend — 1952 (
+                   <a href="https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-17031-0003,_Bergarbeiter_bohrend.jpg">Creative Commons License</a>)
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></div>
+                  <span style="font-size: 24px;">Polkadot’s Consensus Algorithm </span>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Combining the PoS consensus approach with BFT research in a public blockchain was first introduced by Jae Kwon around 2011 and ultimately led to the development of the </span>
+                   <a href="https://tendermint.com/" style="-en-paragraph:true;">Tendermint Algorithm</a>
+                   <span style=""> (in 2015), which is the PoS consensus engine in the </span>
+                   <a href="https://cosmos.network/" style="-en-paragraph:true;">Cosmos Network</a>
+                   <span style="">, another Internet of Blockchains solution. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Various different consensus algorithms got developed in the meantime, amongst others Polkadot was announcing in its white paper a modern new algorithm. </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                    <span style="font-style: italic;">&ldquo;Polkadot achieves low-level consensus over a set of mutually agreed valid blocks through a modern asynchronous Byzantine fault- tolerant (BFT) algorithm. The algorithm will be inspired by the simple Tendermint and the substantially more involved HoneyBadgerBFT . The latter provides an efficient and fault-tolerant consensus over an arbitrarily defective network infrastructure, given a set of mostly be-nign authorities or validators.&rdquo;</span>(
+                    <a href="https://polkadot.network/PolkaDotPaper.pdf">Polkadot Whitepaper</a>)
+                   </div>
+                  </blockquote>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The algorithm got the name “Grandpa”, as an abbreviation for “</span>
+                   <a href="https://medium.com/polkadot-network/grandpa-block-finality-in-polkadot-an-introduction-part-1-d08a24a021b5" style="-en-paragraph:true;">GHOST-based Recursive Ancestor Deriving Prefix Agreement</a>
+                   <span style="">” and may be integrated into the upcoming Polkadot POC-3. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">To finish this short excursion to the consensus algorithm world, let me introduce the category to which Grandpa belongs to, a so-called “</span>
+                   <span style="font-weight: bold;">chain-based proof of stake</span>
+                   <span style="">” category: </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                    <span style="font-style: italic;">&ldquo;The algorithm pseudo-randomly selects a validator during each time slot and assigns that validator the right to create a single block, and this block must point to some previous block (normally the block at the end of the previously longest chain), and so over time most blocks converge into a single constantly growing chain.&rdquo;</span> (
+                    <a href="https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQs">Ethereum Proof of Stake Wiki</a>)
+                   </div>
+                  </blockquote>
+                  <span style="font-size: 24px; font-weight: bold;">Bonding</span>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">A key concept in PoS networks is “Bonding” which can be translated as building up a strong “binding” relationship with a PoS network. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">You express your commitment to the network by locking a defined amount of your network token for a certain time period. You signal the network that you are a trustable network actor and accept the rules and regulations of the network. </span>
+                  </div>
+                  <span style="font-size: 24px;">Staking </span>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">With bonding, you locked in your investment, but that’s far not enough. You have to put your token “at stake” or “at risk”. So you express to the network, “hey I’m ready to participate in securing the network and I accept punishment in case I don’t play to the rules and regulations of the network.” </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">In Polkadot POC-2 Bonding/Staking are a combined action </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/963d8ae07f80ab2dd7f3f62f03c18040.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">By submitting a “staking.stake” transaction and sign it with the private key of your address, your Polkadot Stacking Tokens (DOT) will be locked and you are ready to act as a validator (in case you get elected). </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/0de5557c95c3253dedb3a5708ede6257.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">By staking your token and taking over an active role in the network, you are eligible for newly minted token and fees, which over time will </span>
+                   <span style="font-weight: bold;">grow your ownership in the network.</span>
+                   <span style="">  </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">In contrast to that, people who are not bonding their token to the network will have easy access to them which means ultimately liquidity. But they will not participate in the constant stream of new token distribution and will over time </span>
+                   <span style="font-weight: bold;">reduce their ownership in the network</span>
+                   <span style="">. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Having a reasonable set of trustful validators, which actively participate in the securing of the network and which altogether will grow their ownership of a successful network, is the nucleus of a PoS blockchain network. </span>
+                  </div>
+                  <span style="font-size: 24px;">Rewarding in Polkadot </span>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">This implies that there is a reward system in place which is fine-tuned and well balanced to foster trustful Validators. As the </span>
+                   <a href="https://polkadot.network/PolkaDotPaper.pdf" style="-en-paragraph:true;">Polkadot Whitepaper</a>
+                   <span style=""> paper states </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                    <span style="font-style: italic;">&ldquo;In general, it is important that the reward is sufficiently large to make verification worthwhile for the network, yet not so large as to offset the costs of fronting a well-financed, well-orchestrated ”industrial-level” criminal hacking attack on some unlucky validator to force misbehaviour.&rdquo;</span>
+                   </div>
+                  </blockquote>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Gavin’s Wood goes on and describes the envisaged reward system as follows: </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                    <span style="font-style: italic;">&ldquo;Incentivisation can happen through a pro-rata allocation of funds coming from a token base expansion (up to 100% per year, though more likely around 10%) together with any transaction fees collected. While monetary base expansion typically leads to inflation, since all token owners would have a fair opportunity at participation, no tokenholder would need to suffer a reduction in value of their holdings over time provided they were happy to take a role in the consensus mechanism.&rdquo;</span>
+                   </div>
+                  </blockquote>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">By expanding the overall amount of available DOT tokens, there is obviously an inflation or an overall value dilution ongoing, which can be neglected as long as you participate. The expansion is unlimited as he states: </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                    <span style="font-style: italic; font-weight: bold;">&ldquo;What is the inflation rate for Polkadot staking tokens</span>
+                    <span style="font-style: italic;">: The Polkadot staking token base expansion is unlimited. It rises and lowers according to market effects in order to target a particular proportion of tokens held under long-term bond in the validation process.&rdquo;</span>
+                   </div>
+                  </blockquote>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Taking all these facts into consideration, it’s clear that DOT’s aren’t aimed as cryptocurrencies. </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                    <span style="font-style: italic;">&ldquo;Polkadot tokens are neither intended nor designed to be used as a currency. They would make a bad currency: most will remain illiquid in the staking system and those that are liquid will face substantial fees for transfer of ownership. Rather, the purpose of Polkadot tokens is to be a direct representation of stake in the Polkadot network.&rdquo;</span>
+                   </div>
+                  </blockquote>
+                  <span style="font-size: 24px;">Slashing in Polkadot </span>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Now let’s come to the uncomfortable part. As an active network community member - be it as Validator or Delegator — you may be punished in case you don’t comply with rules and regulations.  </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Validators have the ultimate goal to secure the network and must comply with the network rule being ready 7x24 to validate new blocks and obviously not trying to cheat or attack the network by different means. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Breaking the rule will result in a punishment, also known as </span>
+                   <span style="font-weight: bold;">Slashing</span>
+                   <span style=""> </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">In case the consensus algorithm detects a rule break of a Validator, it will reduce or remove completely the staked tokens. The penalty size is dependent on the seriousness of your misbehaviour. Obviously, availability problems of your Validator node will be penalised less than actions which try to attack or fool the network. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">It’s not the consensus algorithm alone which tries to detect misbehaviours, but also well-defined Polkadot network roles, as for example the Fishermen: </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                     Unlike the other two active parties, fishermen are not directly related to the block-authoring process. Rather they are independent “bounty hunters” motivated by a large one-off reward. Precisely due to the existence of fishermen, we expect events of misbehaviour to happen seldom, and when they do only due to the bonded party being careless with secret key security, rather than through malicious intent. (
+                    <a href="https://polkadot.network/PolkaDotPaper.pdf">Polkadot Whitepaper</a>)
+                   </div>
+                  </blockquote>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">An interesting question which must be answered when the network confiscates tokens. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">What should happen with the sanctioned tokens? Should they be burned (removed completely out of the network) or distributed to the others well-behaving validators? What do you think? </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="font-style: italic;">&ldquo;The short answer is that burning tokens gives value to everyone through distributed scarcity, whereas distributing it to remaining validators would encourage them to sabotage each other in an effort to get each other’s slashed tokens. ( (</span>
+                   <span style="font-style: italic;">Two Point Oh: Explaining Validators</span>
+                   <span style="font-style: italic;">)&rdquo;</span>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/1cca72003aeed9a391f8b20d0e788053.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <a href="https://commons.wikimedia.org/wiki/File:Slashing-and-burning.jpg">Link</a> Slashing-and-burning in Eno, Finland. Public Domain Licensing
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As an analogy to the above picture: Having Slashed and Burnt the bonded tokens of bad actors, the soil (or network in our case) is ready to progress with healthy growth.
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Polkadot POC-2 provides already some basic slashing functionality. As for example in the below screenshot, the </span>
+                   <span style="">Polkadot Network Status</span>
+                   <span style=""> is reporting a slashing of the Validator node “5FTt471….”, which is going over 4 subsequent steps. Each step gets more severe and finally, after burning 15&#39;000 microDOTs, the Validator gets kicked out of the active Validator set.  </span>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/6022e9ad8ae2bea4d9de8d210e9becdf.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">You even have the possibility to adjust the slashing threshold, by executing a threshold transaction. </span>
+                  </div>
+                  <span style="font-size: 24px;">Final Remarks </span>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Minting, Bonding, Staking and Slashing are key functionalities within a Proof of Stake (PoS) network, which gets secured by a new breed of service providers, the so-called Validators, which are minting blocks and are not requiring energy-hungry mining activities. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The whole new PoS economy model with strong Validator communities isn’t mature yet. There are a lot of important PoS networks (Polkadot, Etherum Casper, Cosmos) still in POC or testing phase, and debates are ongoing about the right mix of Validators (threat of cartels and centralization), how to secure them properly (threat of attacks, which could result in slashing), as well what will be a feasible profit model for a Validator service providers.  </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Getting these questions sorted will be key in order to attract a reasonable set of Validators, which will participate in the securing and healthy growth of the network.  </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">My tip to stay up-to-date with the evolvement and progress of the Polkadot network is by subscribing to their riot channels, namely: </span>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      Polkadot Watercooler Riot Channel
+                    </div></li>
+                   <li>
+                    <div>
+                      Substrate-technical 
+                    </div></li>
+                   <li>
+                    <div>
+                      Validatorians
+                    </div></li>
+                  </ul>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">As an example below, Gav Wood informed recently when we have to expect a release 1.0 ready implementation of slashing (which will be early 2019). </span>
+                   <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/e585efd3a05afe817d1cfa30cc621f8e.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <span style=""><br></span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                    Stay tuned !
+                  </div>
+                  <div>
+                   <br>
+                  </div></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/Cloudburonet-897759390318816/" class="btn btn-facebook">
+                <i class="fa fa-facebook"></i></a><a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts" class="btn btn-google-plus">
+                <i class="fa fa-google-plus"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2018 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>

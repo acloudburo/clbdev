@@ -5,10 +5,332 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-11-06T19:09:50+00:00</updated>
+  <updated>2018-11-21T23:25:27+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Polkadot Hello World #5: Minting, Bonding, Staking and Slashing</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/11/21/polkadot-hello-world-5-minting-bonding-staking-and-slashing.html"/>
+    <id>https://dev.cloudburo.net/2018/11/21/polkadot-hello-world-5-minting-bonding-staking-and-slashing.html</id>
+    <published>2018-11-21T23:25:27+00:00</published>
+    <updated>2018-11-21T23:25:55+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        This week’s article is about “minting”, “bonding”, “staking” and “slashing” which are core functions of a Proof of Stake (POS) blockchain consensus engine.
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;It’s a follow-up article of “&lt;/span&gt;
+       &lt;a href="https://medium.com/coinmonks/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator-cc355ff4fd4d" style="-en-paragraph:true;"&gt;Polkadot Hello World #2: Get Nominated As An Official Validator&lt;/a&gt;
+       &lt;span style=""&gt;”, which is an introduction to the topic and explains the Byzantine Fault Tolerance (BFT) and it’s relationship to PoS. So you may check out this one as well. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;When I was thinking about the right teaser image for this article - by playing around with the keyword “slashing” - I got remembered of the brilliant hit by Ian Dury &amp;amp; The Blockheads “Hit Me With Your Rythm Stick” from 1979. So instead of a static image, I start this article with this old post-punk music video, honouring the validators out in the PoS network universes, trying not to get hit by the rhythm stick of the consensus engines … &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;div class="responsive-video"&gt;
+        &lt;iframe src="https://www.youtube.com/embed/2U5d7X7sE4k?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;… so back to work then.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;When I started my Polkadot blockchain researching work some weeks ago I wasn’t aware that the crypto economy is actually going through a big shift in direction to decentralized staking networks. Not just Polkadot, but a lot of other blockchain networks are looking forward replacing (or already replaced) the energy-hungry Proof of Work consensus approach with a new consensus model, the so-called Proof of Stake (PoS). &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Just a short wrap-up: In a PoS consensus network a group of Validators together will form the new chain. They are a new breed of miners (well minters) who … &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;&amp;ldquo;… are proposing and voting on the next block, and the weight of each validator’s vote depends on the size of its deposit (i.e. stake). Significant advantages of PoS include &lt;/span&gt;
+        &lt;span style="font-style: italic; font-weight: bold;"&gt;security, reduced risk of centralization, and energy efficiency&lt;/span&gt;
+        &lt;span style="font-style: italic;"&gt;.&amp;rdquo; (&lt;/span&gt;
+        &lt;a href="https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQs" style="font-style: italic;"&gt;Ethereum Proof of Stake Wiki&lt;/a&gt;
+        &lt;span style="font-style: italic;"&gt;) &lt;/span&gt;
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;span style="font-size: 24px;"&gt;Minting&lt;/span&gt;
+      &lt;span style="font-size: 24px;"&gt;  &lt;/span&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/8dc80a557d9e0912e4abb5c17f7e8288.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;span style="font-size: 14px;"&gt;San Francisco Mint Employees in the Machine Shop — 1873 (&lt;/span&gt;
+       &lt;a href="https://commons.wikimedia.org/wiki/File:Photograph_of_four_San_Francisco_Mint_employees_in_the_Machine_Shop._-_NARA_-_296569.jpg" style="font-size: 14px;"&gt;License Wikimedia Commons&lt;/a&gt;
+       &lt;span style="font-size: 14px;"&gt;)&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style=""&gt;This brings us to the first keyword of the article. The process of generating blocks with Proof-of-Stake is loosely referred to as &lt;/span&gt;
+       &lt;span style="font-weight: bold;"&gt;Minting&lt;/span&gt;
+       &lt;span style=""&gt;. Not sure why the word is used but could imagine that the task of the Validator is more driven to check an already produced raw block and attest its correctness. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Where in the world of PoW there is this hard and dirty (energy-consuming) job to be done of Mining to get hold of a raw block. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/91ce2aca55c5d8cf7dd0df6c7bc7e93a.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; Bundesarchiv Bild 183–17031–0003, Bergarbeiter bohrend — 1952 (
+       &lt;a href="https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-17031-0003,_Bergarbeiter_bohrend.jpg"&gt;Creative Commons License&lt;/a&gt;)
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/div&gt;
+      &lt;span style="font-size: 24px;"&gt;Polkadot’s Consensus Algorithm &lt;/span&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Combining the PoS consensus approach with BFT research in a public blockchain was first introduced by Jae Kwon around 2011 and ultimately led to the development of the &lt;/span&gt;
+       &lt;a href="https://tendermint.com/" style="-en-paragraph:true;"&gt;Tendermint Algorithm&lt;/a&gt;
+       &lt;span style=""&gt; (in 2015), which is the PoS consensus engine in the &lt;/span&gt;
+       &lt;a href="https://cosmos.network/" style="-en-paragraph:true;"&gt;Cosmos Network&lt;/a&gt;
+       &lt;span style=""&gt;, another Internet of Blockchains solution. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Various different consensus algorithms got developed in the meantime, amongst others Polkadot was announcing in its white paper a modern new algorithm. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;&amp;ldquo;Polkadot achieves low-level consensus over a set of mutually agreed valid blocks through a modern asynchronous Byzantine fault- tolerant (BFT) algorithm. The algorithm will be inspired by the simple Tendermint and the substantially more involved HoneyBadgerBFT . The latter provides an efficient and fault-tolerant consensus over an arbitrarily defective network infrastructure, given a set of mostly be-nign authorities or validators.&amp;rdquo;&lt;/span&gt;(
+        &lt;a href="https://polkadot.network/PolkaDotPaper.pdf"&gt;Polkadot Whitepaper&lt;/a&gt;)
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The algorithm got the name “Grandpa”, as an abbreviation for “&lt;/span&gt;
+       &lt;a href="https://medium.com/polkadot-network/grandpa-block-finality-in-polkadot-an-introduction-part-1-d08a24a021b5" style="-en-paragraph:true;"&gt;GHOST-based Recursive Ancestor Deriving Prefix Agreement&lt;/a&gt;
+       &lt;span style=""&gt;” and may be integrated into the upcoming Polkadot POC-3. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;To finish this short excursion to the consensus algorithm world, let me introduce the category to which Grandpa belongs to, a so-called “&lt;/span&gt;
+       &lt;span style="font-weight: bold;"&gt;chain-based proof of stake&lt;/span&gt;
+       &lt;span style=""&gt;” category: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;&amp;ldquo;The algorithm pseudo-randomly selects a validator during each time slot and assigns that validator the right to create a single block, and this block must point to some previous block (normally the block at the end of the previously longest chain), and so over time most blocks converge into a single constantly growing chain.&amp;rdquo;&lt;/span&gt; (
+        &lt;a href="https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQs"&gt;Ethereum Proof of Stake Wiki&lt;/a&gt;)
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;span style="font-size: 24px; font-weight: bold;"&gt;Bonding&lt;/span&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;A key concept in PoS networks is “Bonding” which can be translated as building up a strong “binding” relationship with a PoS network. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;You express your commitment to the network by locking a defined amount of your network token for a certain time period. You signal the network that you are a trustable network actor and accept the rules and regulations of the network. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span style="font-size: 24px;"&gt;Staking &lt;/span&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;With bonding, you locked in your investment, but that’s far not enough. You have to put your token “at stake” or “at risk”. So you express to the network, “hey I’m ready to participate in securing the network and I accept punishment in case I don’t play to the rules and regulations of the network.” &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;In Polkadot POC-2 Bonding/Staking are a combined action &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/963d8ae07f80ab2dd7f3f62f03c18040.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;By submitting a “staking.stake” transaction and sign it with the private key of your address, your Polkadot Stacking Tokens (DOT) will be locked and you are ready to act as a validator (in case you get elected). &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/0de5557c95c3253dedb3a5708ede6257.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;By staking your token and taking over an active role in the network, you are eligible for newly minted token and fees, which over time will &lt;/span&gt;
+       &lt;span style="font-weight: bold;"&gt;grow your ownership in the network.&lt;/span&gt;
+       &lt;span style=""&gt;  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;In contrast to that, people who are not bonding their token to the network will have easy access to them which means ultimately liquidity. But they will not participate in the constant stream of new token distribution and will over time &lt;/span&gt;
+       &lt;span style="font-weight: bold;"&gt;reduce their ownership in the network&lt;/span&gt;
+       &lt;span style=""&gt;. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Having a reasonable set of trustful validators, which actively participate in the securing of the network and which altogether will grow their ownership of a successful network, is the nucleus of a PoS blockchain network. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span style="font-size: 24px;"&gt;Rewarding in Polkadot &lt;/span&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;This implies that there is a reward system in place which is fine-tuned and well balanced to foster trustful Validators. As the &lt;/span&gt;
+       &lt;a href="https://polkadot.network/PolkaDotPaper.pdf" style="-en-paragraph:true;"&gt;Polkadot Whitepaper&lt;/a&gt;
+       &lt;span style=""&gt; paper states &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;&amp;ldquo;In general, it is important that the reward is sufficiently large to make verification worthwhile for the network, yet not so large as to offset the costs of fronting a well-financed, well-orchestrated ”industrial-level” criminal hacking attack on some unlucky validator to force misbehaviour.&amp;rdquo;&lt;/span&gt;
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Gavin’s Wood goes on and describes the envisaged reward system as follows: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;&amp;ldquo;Incentivisation can happen through a pro-rata allocation of funds coming from a token base expansion (up to 100% per year, though more likely around 10%) together with any transaction fees collected. While monetary base expansion typically leads to inflation, since all token owners would have a fair opportunity at participation, no tokenholder would need to suffer a reduction in value of their holdings over time provided they were happy to take a role in the consensus mechanism.&amp;rdquo;&lt;/span&gt;
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;By expanding the overall amount of available DOT tokens, there is obviously an inflation or an overall value dilution ongoing, which can be neglected as long as you participate. The expansion is unlimited as he states: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic; font-weight: bold;"&gt;&amp;ldquo;What is the inflation rate for Polkadot staking tokens&lt;/span&gt;
+        &lt;span style="font-style: italic;"&gt;: The Polkadot staking token base expansion is unlimited. It rises and lowers according to market effects in order to target a particular proportion of tokens held under long-term bond in the validation process.&amp;rdquo;&lt;/span&gt;
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Taking all these facts into consideration, it’s clear that DOT’s aren’t aimed as cryptocurrencies. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;&amp;ldquo;Polkadot tokens are neither intended nor designed to be used as a currency. They would make a bad currency: most will remain illiquid in the staking system and those that are liquid will face substantial fees for transfer of ownership. Rather, the purpose of Polkadot tokens is to be a direct representation of stake in the Polkadot network.&amp;rdquo;&lt;/span&gt;
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;span style="font-size: 24px;"&gt;Slashing in Polkadot &lt;/span&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Now let’s come to the uncomfortable part. As an active network community member - be it as Validator or Delegator — you may be punished in case you don’t comply with rules and regulations.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Validators have the ultimate goal to secure the network and must comply with the network rule being ready 7x24 to validate new blocks and obviously not trying to cheat or attack the network by different means. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Breaking the rule will result in a punishment, also known as &lt;/span&gt;
+       &lt;span style="font-weight: bold;"&gt;Slashing&lt;/span&gt;
+       &lt;span style=""&gt; &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;In case the consensus algorithm detects a rule break of a Validator, it will reduce or remove completely the staked tokens. The penalty size is dependent on the seriousness of your misbehaviour. Obviously, availability problems of your Validator node will be penalised less than actions which try to attack or fool the network. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;It’s not the consensus algorithm alone which tries to detect misbehaviours, but also well-defined Polkadot network roles, as for example the Fishermen: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         Unlike the other two active parties, fishermen are not directly related to the block-authoring process. Rather they are independent “bounty hunters” motivated by a large one-off reward. Precisely due to the existence of fishermen, we expect events of misbehaviour to happen seldom, and when they do only due to the bonded party being careless with secret key security, rather than through malicious intent. (
+        &lt;a href="https://polkadot.network/PolkaDotPaper.pdf"&gt;Polkadot Whitepaper&lt;/a&gt;)
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;An interesting question which must be answered when the network confiscates tokens. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;What should happen with the sanctioned tokens? Should they be burned (removed completely out of the network) or distributed to the others well-behaving validators? What do you think? &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;The short answer is that burning tokens gives value to everyone through distributed scarcity, whereas distributing it to remaining validators would encourage them to sabotage each other in an effort to get each other’s slashed tokens. ( (&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;Two Point Oh: Explaining Validators&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;)&amp;rdquo;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/1cca72003aeed9a391f8b20d0e788053.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;a href="https://commons.wikimedia.org/wiki/File:Slashing-and-burning.jpg"&gt;Link&lt;/a&gt; Slashing-and-burning in Eno, Finland. Public Domain Licensing
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As an analogy to the above picture: Having Slashed and Burnt the bonded tokens of bad actors, the soil (or network in our case) is ready to progress with healthy growth.
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Polkadot POC-2 provides already some basic slashing functionality. As for example in the below screenshot, the &lt;/span&gt;
+       &lt;span style=""&gt;Polkadot Network Status&lt;/span&gt;
+       &lt;span style=""&gt; is reporting a slashing of the Validator node “5FTt471….”, which is going over 4 subsequent steps. Each step gets more severe and finally, after burning 15&amp;#39;000 microDOTs, the Validator gets kicked out of the active Validator set.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/6022e9ad8ae2bea4d9de8d210e9becdf.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;You even have the possibility to adjust the slashing threshold, by executing a threshold transaction. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span style="font-size: 24px;"&gt;Final Remarks &lt;/span&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Minting, Bonding, Staking and Slashing are key functionalities within a Proof of Stake (PoS) network, which gets secured by a new breed of service providers, the so-called Validators, which are minting blocks and are not requiring energy-hungry mining activities. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The whole new PoS economy model with strong Validator communities isn’t mature yet. There are a lot of important PoS networks (Polkadot, Etherum Casper, Cosmos) still in POC or testing phase, and debates are ongoing about the right mix of Validators (threat of cartels and centralization), how to secure them properly (threat of attacks, which could result in slashing), as well what will be a feasible profit model for a Validator service providers.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Getting these questions sorted will be key in order to attract a reasonable set of Validators, which will participate in the securing and healthy growth of the network.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;My tip to stay up-to-date with the evolvement and progress of the Polkadot network is by subscribing to their riot channels, namely: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Polkadot Watercooler Riot Channel
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Substrate-technical 
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Validatorians
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;As an example below, Gav Wood informed recently when we have to expect a release 1.0 ready implementation of slashing (which will be early 2019). &lt;/span&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e585efd3a05afe817d1cfa30cc621f8e.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+        Stay tuned !
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Hidoras Blog Re-Published Cloudburo Article</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/11/06/hidoras-blog-re-published-cloudburo-article.html"/>
@@ -7354,74 +7676,6 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Blockchain Smart Signatures Explained</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html"/>
-    <id>https://dev.cloudburo.net/2016/11/30/blockchain-smart-signatures-explained.html</id>
-    <published>2016-11-30T22:56:42+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Christopher Allen provides all the time very profound blog articles in the context of blockchain, identity and authorization topics.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The Smart Signatures white paper from Rebooting the Web of Trust conference is giving an excellent and easy to understand introduction to the topic of Smart Signatures.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Out of the abstract of the paper, Smart Signatures are defined as follows.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;Traditional cryptographic signature systems are based on &lt;b&gt;strictly-defined &lt;/b&gt;authentication and authorization mechanisms that &lt;b&gt;assume a single private key&lt;/b&gt; can be used to produce a given signature and that a single public key can be used to verify it. Given the evident limitations of this design, we propose an alternative with more powerful capabilties, based on the ability to &lt;b&gt;explicitly outline&lt;/b&gt; and fully &lt;b&gt;program conditions for verification&lt;/b&gt;. These conditions would then be used to determine when a signature or set of signatures can be considered valid.&lt;/i&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        This requirement of explicitly define authorization rules for the (multiple) signature(s) check is a core principle of the blockchain aka bitcoin, and an invention which enhancing authorisation strategies dramatically.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The authors will describe the topic of Smart Signatures in context of the Bitcoin Script language and provides various use cases and implementation statuses.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        You can find the white paper
-       &lt;a href="https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust/blob/master/final-documents/smart-signatures.pdf"&gt;&lt;b&gt;here&lt;/b&gt;&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
