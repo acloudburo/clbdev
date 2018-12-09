@@ -5,16 +5,87 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2018-11-21T23:25:27+00:00</updated>
+  <updated>2018-12-09T10:50:32+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>The new Data Journalism Handbook by Google News Lab</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/12/09/the-new-data-journalism-handbook-by-google-news-lab.html"/>
+    <id>https://dev.cloudburo.net/2018/12/09/the-new-data-journalism-handbook-by-google-news-lab.html</id>
+    <published>2018-12-09T10:50:32+00:00</published>
+    <updated>2018-12-09T10:50:35+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Recently, the Google News Lab launched the first part of its new
+       &lt;a href="https://datajournalismhandbook.net/"&gt;Data Journalism Handbook&lt;/a&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Google News Lab supported a new version of the book which was worked out with the
+       &lt;a href="https://ejc.net/"&gt;European Journalism Centre&lt;/a&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The book is published online (see link above) as well as on paper (2019) and contains sections about:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        It includes sections about:
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Telling stories with social media data from Buzzfeed’s Lam Thuy Vo
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Collaborative investigations from Spiegel Online’s Christina Elmer
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Archiving data journalism by Meredith Broussard
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          The latest trends in data visualisation
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        It’s the result of over a year of editing and gathering data journalists and academics together in hackathons at major journalistic events.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Definitive an excellent source of information you may find the full announcement
+       &lt;a href="https://medium.com/google-news-lab/introducing-the-new-data-journalism-handbook-3e9c1ed7db2b"&gt;here&lt;/a&gt;.
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Polkadot Hello World #5: Minting, Bonding, Staking and Slashing</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2018/11/21/polkadot-hello-world-5-minting-bonding-staking-and-slashing.html"/>
     <id>https://dev.cloudburo.net/2018/11/21/polkadot-hello-world-5-minting-bonding-staking-and-slashing.html</id>
     <published>2018-11-21T23:25:27+00:00</published>
-    <updated>2018-11-21T23:25:55+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -336,7 +407,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/11/06/hidoras-blog-re-published-cloudburo-article.html"/>
     <id>https://dev.cloudburo.net/2018/11/06/hidoras-blog-re-published-cloudburo-article.html</id>
     <published>2018-11-06T19:09:50+00:00</published>
-    <updated>2018-11-06T19:09:56+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -382,7 +453,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/31/polkadot-hello-world-4-security-and-availability-aspects-of-your-validator-node.html"/>
     <id>https://dev.cloudburo.net/2018/10/31/polkadot-hello-world-4-security-and-availability-aspects-of-your-validator-node.html</id>
     <published>2018-10-31T07:29:01+00:00</published>
-    <updated>2018-10-31T09:08:56+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -871,7 +942,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/22/polkadot-hello-world-3-poc-3-on-substrate-is-here.html"/>
     <id>https://dev.cloudburo.net/2018/10/22/polkadot-hello-world-3-poc-3-on-substrate-is-here.html</id>
     <published>2018-10-22T21:15:23+00:00</published>
-    <updated>2018-10-22T21:16:21+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1535,7 +1606,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/13/being-writer-for-the-coinmonks-medium-publication.html"/>
     <id>https://dev.cloudburo.net/2018/10/13/being-writer-for-the-coinmonks-medium-publication.html</id>
     <published>2018-10-13T22:09:40+00:00</published>
-    <updated>2018-10-13T22:09:43+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1591,7 +1662,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html"/>
     <id>https://dev.cloudburo.net/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html</id>
     <published>2018-10-08T22:05:10+00:00</published>
-    <updated>2018-10-09T16:16:39+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -2302,7 +2373,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html"/>
     <id>https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html</id>
     <published>2018-10-04T05:03:04+00:00</published>
-    <updated>2018-10-05T17:08:17+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3035,7 +3106,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/09/03/the-cloud-landscape-categorization-framework-by-johan-den-haan.html"/>
     <id>https://dev.cloudburo.net/2018/09/03/the-cloud-landscape-categorization-framework-by-johan-den-haan.html</id>
     <published>2018-09-03T17:18:13+00:00</published>
-    <updated>2018-09-25T22:14:23+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3150,7 +3221,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/09/01/devop-notes-monitoring-nginx-and-its-underlying-web-components.html"/>
     <id>https://dev.cloudburo.net/2018/09/01/devop-notes-monitoring-nginx-and-its-underlying-web-components.html</id>
     <published>2018-09-01T11:18:41+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3383,7 +3454,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/08/23/google-data-collection-research-madness.html"/>
     <id>https://dev.cloudburo.net/2018/08/23/google-data-collection-research-madness.html</id>
     <published>2018-08-23T21:24:11+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3448,7 +3519,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/08/21/what-a-brilliant-idea-proof-of-usefulness-in-crypto.html"/>
     <id>https://dev.cloudburo.net/2018/08/21/what-a-brilliant-idea-proof-of-usefulness-in-crypto.html</id>
     <published>2018-08-21T20:02:28+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3557,7 +3628,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/08/12/scalability-trilemma-of-a-blockchain-or-there-is-no-free-lunch.html"/>
     <id>https://dev.cloudburo.net/2018/08/12/scalability-trilemma-of-a-blockchain-or-there-is-no-free-lunch.html</id>
     <published>2018-08-12T21:18:38+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3641,7 +3712,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/07/19/google-reveals-the-secrets-of-devops.html"/>
     <id>https://dev.cloudburo.net/2018/07/19/google-reveals-the-secrets-of-devops.html</id>
     <published>2018-07-19T06:19:59+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3661,7 +3732,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/07/18/minimal-ubuntu-on-docker-hub.html"/>
     <id>https://dev.cloudburo.net/2018/07/18/minimal-ubuntu-on-docker-hub.html</id>
     <published>2018-07-18T06:24:33+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3684,7 +3755,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/06/04/intellij-gradle-project-fails-to-deploy-tomcat-server-war-exploded.html"/>
     <id>https://dev.cloudburo.net/2018/06/04/intellij-gradle-project-fails-to-deploy-tomcat-server-war-exploded.html</id>
     <published>2018-06-04T20:10:14+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -3789,7 +3860,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/06/03/install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html"/>
     <id>https://dev.cloudburo.net/2018/06/03/install-letsencrypt-certificate-in-the-java-jdk-keystore-on-osx.html</id>
     <published>2018-06-03T12:26:22+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4072,7 +4143,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/26/tutorial-react-application-with-a-python-json-backend-part-1.html"/>
     <id>https://dev.cloudburo.net/2018/05/26/tutorial-react-application-with-a-python-json-backend-part-1.html</id>
     <published>2018-05-26T23:16:16+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4272,7 +4343,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/14/data-science-mindset.html"/>
     <id>https://dev.cloudburo.net/2018/05/14/data-science-mindset.html</id>
     <published>2018-05-14T21:08:45+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4377,7 +4448,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/12/precision-banking-the-segment-of-one.html"/>
     <id>https://dev.cloudburo.net/2018/05/12/precision-banking-the-segment-of-one.html</id>
     <published>2018-05-12T09:46:48+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4397,7 +4468,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html"/>
     <id>https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html</id>
     <published>2018-05-11T07:10:04+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4467,7 +4538,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html"/>
     <id>https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html</id>
     <published>2018-05-10T11:07:02+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5034,7 +5105,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html"/>
     <id>https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html</id>
     <published>2018-04-23T11:07:31+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5054,7 +5125,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html"/>
     <id>https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html</id>
     <published>2018-03-31T06:20:58+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5141,7 +5212,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html"/>
     <id>https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html</id>
     <published>2018-03-26T04:13:17+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5179,7 +5250,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html"/>
     <id>https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html</id>
     <published>2018-03-25T14:20:37+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5220,7 +5291,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html"/>
     <id>https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html</id>
     <published>2018-03-24T12:07:53+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5281,7 +5352,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/22/reactive-microservices-for-the-architect-and-cto.html"/>
     <id>https://dev.cloudburo.net/2018/03/22/reactive-microservices-for-the-architect-and-cto.html</id>
     <published>2018-03-22T22:05:23+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5309,7 +5380,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html"/>
     <id>https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html</id>
     <published>2018-03-17T15:29:03+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5437,7 +5508,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html"/>
     <id>https://dev.cloudburo.net/2018/03/17/cnl-a-guiding-map-to-cloud-technologies.html</id>
     <published>2018-03-17T08:34:59+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5476,7 +5547,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html"/>
     <id>https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html</id>
     <published>2018-03-13T18:27:05+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5562,7 +5633,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/12/17/by-2030-provide-legal-identity-for-all-including-birth-registration.html"/>
     <id>https://dev.cloudburo.net/2017/12/17/by-2030-provide-legal-identity-for-all-including-birth-registration.html</id>
     <published>2017-12-17T20:19:52+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5633,7 +5704,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html"/>
     <id>https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html</id>
     <published>2017-12-04T19:05:49+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5683,7 +5754,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html"/>
     <id>https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html</id>
     <published>2017-11-14T09:10:46+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5778,7 +5849,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html"/>
     <id>https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html</id>
     <published>2017-10-25T17:28:37+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5846,7 +5917,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html</id>
     <published>2017-10-12T10:24:16+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5920,7 +5991,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html"/>
     <id>https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html</id>
     <published>2017-10-12T09:31:29+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -5971,7 +6042,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html"/>
     <id>https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html</id>
     <published>2017-10-08T16:26:49+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -6017,7 +6088,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html"/>
     <id>https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html</id>
     <published>2017-09-13T05:35:50+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -6034,7 +6105,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"/>
     <id>https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html</id>
     <published>2017-06-24T13:06:45+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -6441,7 +6512,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
     <published>2017-06-18T12:46:32+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -6761,7 +6832,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
     <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
     <published>2017-06-18T11:50:25+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -6890,7 +6961,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html"/>
     <id>https://dev.cloudburo.net/2017/04/14/reflections-on-bootstrapping-a-digital-micro-company-ready-to-switch.html</id>
     <published>2017-04-14T15:10:46+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -7005,7 +7076,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html"/>
     <id>https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html</id>
     <published>2017-04-07T15:13:15+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -7066,7 +7137,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html"/>
     <id>https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html</id>
     <published>2017-03-28T05:25:38+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -7116,7 +7187,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html"/>
     <id>https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html</id>
     <published>2017-03-27T05:38:50+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -7148,7 +7219,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html"/>
     <id>https://dev.cloudburo.net/2017/03/13/verifiable-data-audit-an-innovative-way-by-deepmind.html</id>
     <published>2017-03-13T21:34:47+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -7223,7 +7294,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html"/>
     <id>https://dev.cloudburo.net/2017/01/30/actions-on-google-engage-user-through-the-google-assistant.html</id>
     <published>2017-01-30T06:55:41+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -7305,7 +7376,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html"/>
     <id>https://dev.cloudburo.net/2017/01/11/client-classification-in-banking.html</id>
     <published>2017-01-11T22:31:09+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -7348,7 +7419,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html"/>
     <id>https://dev.cloudburo.net/2016/12/06/ireland-banking-crisis-in-the-1970-it-s-all-about-trust.html</id>
     <published>2016-12-06T06:34:22+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -7454,7 +7525,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html"/>
     <id>https://dev.cloudburo.net/2016/12/05/aws-re-invent-2016-keynote-of-werner-vogels.html</id>
     <published>2016-12-05T06:18:54+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
+    <updated>2018-12-09T07:29:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -7504,185 +7575,6 @@
        &lt;div class="responsive-video"&gt;
         &lt;iframe src="https://www.youtube.com/embed/ZDScBNahsL4?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>The Human Being(s) and We (as a Bank) #1 - Relationship</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html"/>
-    <id>https://dev.cloudburo.net/2016/12/01/the-human-being-s-and-we-as-a-bank-1-relationship.html</id>
-    <published>2016-12-01T22:20:29+00:00</published>
-    <updated>2018-09-09T11:03:33+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Under this title I will publish articles how established banks should approach their customers in a digital world with a client centric view in mind. I will concentrate here on the view which is generally managed in a bank by a 
-       &lt;a href="https://en.wikipedia.org/wiki/Customer_relationship_management"&gt;Customer Relationship Management&lt;/a&gt; (CRM) system. Obviously there are other views which are important for a bank, i.e. a client risk exposure- or client profitability view, but all these  others view are out of scope here.&lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        First of all, a bank is interacting with Persons and nothing more. An Person is a human being who has an real identity (and often multiple digital identities), who got born somewhere on this planet, may have a nationality and is domiciled in a country at a certain point in time.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        As a side remark, this is the normal case unfortunately there a stateless persons which may have no domicile at the moment, which were treated as unbanked persons,
-       &lt;a href="http://www.worldbank.org/en/programs/globalfindex"&gt;as another 2.5 billions persons mainly in poor countries&lt;/a&gt;. A topic for another article, which will show the opportunities for digital banks who starting serving this segment. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        For sure the bank will make businesses with a company or a family office, but finally the bank is  interacting with a person(s) which may representing in a certain
-       &lt;u&gt;role &lt;/u&gt;a company, a simple partnership, a trust or family office. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;&lt;b&gt;This is the first important recognition&lt;/b&gt;: Persons are the centre of interests which are interacting with us in one or multiple roles. We cannot interact directly with a company or group construct we are always in contact with human beings.&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        I explicitly don’t use the term “customer” here. We as a bank (you could generalize it to any other industry) will have Person relationships which we may be aware of or not and which may finally result in a profitable customer relationship.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;&lt;b&gt;The second important recognition&lt;/b&gt;: It’s about relationships, being in no relationship with a Person, means he isn’t aware of us (non-existent for the moment) and not reachable for any kind of business.&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The ultimate initial goal for a company is to raise awareness of its products and services in the person segment which is relevant for its business.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;br&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        This leads us to the concept of relationship phases, which are used to position persons which are interacting with us.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The four Relationship Phases are sequenced one after the other, but a Person may switch from one to another in a non-sequenced way and may visit a phase multiple times during his life time. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Relationship means mutual interaction and may require certain obligations and rules on both sides.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        So let’s look at the four relationship phases, a Person may be in an &amp;hellip;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;(1) … Information Relationship&lt;/b&gt; with us when browsing our web pages, reading our printed brochues, listening to our podcasts or watching our ads. He is not
-       &lt;u&gt;explicitly&lt;/u&gt; willing to share any personal information with us, but implicitly may accept (or not, by taking additional measures, i.e. anonymous browsing) that we are tracking him in context of a digital information relationship (e.g. tracking his activities on our sites with cookies as a nameless human being)
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;&lt;i&gt;Obligation on Person&lt;/i&gt;: none&lt;/li&gt;
-        &lt;li&gt;&lt;i&gt;Obligation on Us&lt;/i&gt;: Jurisdictional Cookie Rules (e.g. &lt;a href="http://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:32009L0136"&gt;EU&lt;/a&gt;, &lt;a href="https://www.admin.ch/opc/de/classified-compilation/19970160/index.html#a45c"&gt;CH&lt;/a&gt;) compliancy, expressed in a &lt;a href="https://en.wikipedia.org/wiki/Privacy_policy"&gt;Privacy Policy&lt;/a&gt; (which may vary per jurisdiction due to the differences of the applicable law)&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;(2) … Trust Relationship &lt;/b&gt;with us when leaving us some personal information, so that we can get in contact with him (e.g. an Email). Depending on his trust level in us, he is willing to provide additional information about him, so that we can better understand him as a person with his current or future needs. By doing that he allows us to move him out of our nameless person based pool of public aggregated data that covers only a slice of its existence into a contactable person.&lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;&lt;i&gt;Obligation on Person: &lt;/i&gt;none&lt;/li&gt;
-        &lt;li&gt;&lt;i&gt;Obligation on Us: &lt;/i&gt; The obligations of (1) and an enhanced Privacy Policy (covering the handling of the personal data collected) in line with the Data Protection Act of our jurisdiction (refer to the &lt;a href="https://ico.org.uk/for-organisations/guide-to-data-protection/key-definitions/"&gt;UK ICO definition&lt;/a&gt; of the DPA term). A DPA could also include the “&lt;a href="http://ec.europa.eu/justice/data-protection/files/factsheets/factsheet_data_protection_en.pdf"&gt;Right to be Forgotten&lt;/a&gt;”, which would switch a person back into Phase (1) when executed (we wouldn’t know him anymore, because he lost trust in us). &lt;br&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;(3) … Business Relationship &lt;/b&gt;with us, when purchasing certain products and services which we can offer outside of the legal framework of a bank. This may be a personalised research report, or a real time quotes notification from our free public internet quotes system, for which the client is willing to pay some one-off or subscription fees. These are any kind of products for which non-banking rules and regulation applies. As an example we may sell a promotional branding teddy bear via our online shop in order to attract the young generation of the retail segment. In this case we have to ensure that our product complies with the jurisdictional laws about kids toy.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;&lt;i&gt;Obligation on Person: &lt;/i&gt; The obligation laid out in our Sales &lt;a href="http://www.businessdictionary.com/definition/agreement.html"&gt;Agreement&lt;/a&gt; for the product/service in the role of a Buyer. Our Sales agreement is backed normally by  &lt;a href="http://www.businessdictionary.com/definition/agreement.html"&gt;Terms of Conditions (TOC)&lt;/a&gt; (or Terms of Services).&lt;/li&gt;
-        &lt;li&gt;&lt;i&gt;Obligation on Us: &lt;/i&gt; The obligation of (1)+(2) and potentially an enhanced Privacy Policy (in case we share the data with a third party for credit card payments or physical package delivery etc.), plus our Sales Agreement and Terms of Conditions in the role of the Seller.&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;(4) … Banking Relationship &lt;/b&gt;with us, when purchasing banking products/services from us. These offerings require that we have a
-       &lt;a href="https://en.wikipedia.org/wiki/Banking_license"&gt;Banking Licence&lt;/a&gt; in the jurisdiction where our bank is incorporated. The legal and regulatory obligation on us in context of knowing our person (
-       &lt;a href="https://en.wikipedia.org/wiki/Know_your_customer"&gt;KYC&lt;/a&gt;) will rise here exponentially. But that’s the phase which we want ultimately achieve with a person relationship, i.e. the person (well it’s now a customer) highly trusts in us and transfer assets to us, which we manage and keep on his behalf. He may be even see us as a trusted advisor for any kind  of investment decision. 
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;&lt;i&gt;Obligation on Person&lt;/i&gt;: Correctly answer any kind of question required by the KYC check, provisioning of valid and regulatory accepted identity proof. The obligation as a banking service consumer laid out in our Banking Relationship Agreement  and TOC. For each purchased Banking Product/Service the corresponding Product/Service Agreement  and TOC in the role of a buyer.&lt;/li&gt;
-       &lt;li&gt;&lt;i&gt;Obligation on Us:&lt;/i&gt; The obligation of (1)+(2) and a enhanced Privacy Policy which may include specific &lt;a href="https://en.wikipedia.org/wiki/Bank_secrecy"&gt;Banking Secrecy&lt;/a&gt; Rules of the jurisdiction where we are incorporated. The obligation to identify and verify the identity of our customer in line with the jurisdictional KYC rule. The obligation as a banking service provider laid out in our Banking Relationship Agreement  and TOC. For each purchased Banking Product/Service the corresponding Product/Service Agreement  and TOC in the role of a seller.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;&lt;b&gt;Third and final recognition for today&lt;/b&gt;: Four Relationship Phases are enough to position a Person interacting with us as a Bank. Each phase will move the Person closer to our goal to win him as profitabel customer. This user journey along the four phases is based &lt;u&gt;on an increase of&lt;/u&gt;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;&lt;i&gt;… Trust in us: Which is indispensable and which we have to gain every day. Otherwise the person stays in a information relationship .&lt;br&gt;&lt;/i&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;i&gt;… Obligation on us: To handle his data diligently and in line with any kind of regulation. Not doing it will result over time in a loss of trust in us which may result not achieving our goal&lt;/i&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;i&gt;… Knowledge about him&lt;/i&gt;:&lt;i&gt; Having trust in us, a Person will be willing to share more information about him, which will strengthen our position as a potential trusted advisor.&lt;/i&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;i&gt;&lt;i&gt;… Identity Accuracy of him&lt;/i&gt;: The more information we have about him, the higher accuracy about his real identity we achieve. In early phases an assumed Person by us could represent a group of different ones sharing the digital identity (e.g. a user account).&lt;/i&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;i&gt; &lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        That’s it for today: Did you realize there is no sales funnel yet, a topic for the next article, it’s less important than the relationship and trust topic.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Finally Thinking Out of the Box: Edge Perspectives by John Hagel about
-       &lt;a href="http://edgeperspectives.typepad.com/edge_perspectives/2015/03/disruption-by-trusted-advisors.html"&gt;Disruption by the Trusted Advisor&lt;/a&gt;, stretches the topic even more. Do we as a Bank can act in the future as a trusted advisor for our  clients by just offering our products and services - well not really ?&lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;
-       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
