@@ -505,7 +505,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/31/polkadot-hello-world-4-security-and-availability-aspects-of-your-validator-node.html"/>
     <id>https://dev.cloudburo.net/2018/10/31/polkadot-hello-world-4-security-and-availability-aspects-of-your-validator-node.html</id>
     <published>2018-10-31T07:29:01+00:00</published>
-    <updated>2018-12-16T09:58:35+00:00</updated>
+    <updated>2018-12-16T20:08:08+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -962,7 +962,13 @@
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-    That’s it for today, at least on the surface of your Validator iceberg, you have done your first step to secure and increase availability. It will be interesting to watch how Polkadot will evolve over time in the context of security and availability.
+    That’s it for today, at least on the surface of your Validator iceberg, you have done your first step to secure and increase availability. 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    It will be interesting to watch how Polkadot will evolve over time in the context of security and availability.
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -984,6 +990,14 @@
       &lt;/div&gt;
       &lt;div&gt;
         In the next week, we will look in more detail to the Slashing process and how you can influence it.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
@@ -994,7 +1008,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/22/polkadot-hello-world-3-poc-3-on-substrate-is-here.html"/>
     <id>https://dev.cloudburo.net/2018/10/22/polkadot-hello-world-3-poc-3-on-substrate-is-here.html</id>
     <published>2018-10-22T21:15:23+00:00</published>
-    <updated>2018-12-16T09:58:35+00:00</updated>
+    <updated>2018-12-16T19:32:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1648,6 +1662,11 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
