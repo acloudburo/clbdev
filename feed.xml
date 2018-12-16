@@ -1714,7 +1714,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html"/>
     <id>https://dev.cloudburo.net/2018/10/08/polkadot-hello-world-2-get-ready-to-be-nominated-as-official-validator.html</id>
     <published>2018-10-08T22:05:10+00:00</published>
-    <updated>2018-12-16T09:58:35+00:00</updated>
+    <updated>2018-12-16T18:25:04+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1770,8 +1770,8 @@
       &lt;/div&gt;
       &lt;div&gt;
         This situation can be explained by using a modified tweet of 
-       &lt;a href="https://twitter.com/iamdevloper" style="background-color: rgb(230, 236, 240); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; unicode-bidi: embed; direction: ltr !important; color: rgb(101, 119, 134); font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: bold;"&gt;@&lt;/a&gt;
-       &lt;a href="https://twitter.com/iamdevloper" style="background-color: rgb(230, 236, 240); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; unicode-bidi: embed; direction: ltr !important; color: rgb(101, 119, 134); font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: bold;"&gt;iamdevloper&lt;/a&gt;, which is famous for funny to-the-point messages, as for example
+       &lt;a href="https://twitter.com/iamdevloper" style="background-color: rgb(230, 236, 240); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; unicode-bidi: embed; color: rgb(101, 119, 134); font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: bold; direction: ltr !important;"&gt;@&lt;/a&gt;
+       &lt;a href="https://twitter.com/iamdevloper" style="background-color: rgb(230, 236, 240); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; unicode-bidi: embed; color: rgb(101, 119, 134); font-family: &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal; font-weight: bold; direction: ltr !important;"&gt;iamdevloper&lt;/a&gt;, which is famous for funny to-the-point messages, as for example
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
@@ -2378,10 +2378,8 @@
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
       &lt;div&gt;
         You are now an official Polkadot validator which takes part in PoS consensus process.You will find your validator now on the left side of the Staking page:
-       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -2392,7 +2390,8 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
       &lt;div&gt;
         As you can see here, my account is backed by a nominator which adds 2’226’461 dots.
       &lt;/div&gt;
@@ -2402,10 +2401,10 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
       &lt;div&gt;
         That’s it for today. In the next article, we will address some reliability and security topics of your node.
-       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -2415,6 +2414,11 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
