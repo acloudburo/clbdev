@@ -241,6 +241,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2018/12/21/data-journalism-the-disinformation-report-assessing-the-ira-us-propaganda-war.html</loc>
+    <lastmod>2018-12-21</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html</loc>
     <lastmod>2018-12-16</lastmod>
     <priority>0.7</priority>
@@ -979,6 +985,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/journalism.html</loc>
+    <lastmod>2018-12-16</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/blockchain.html</loc>
     <lastmod>2018-12-16</lastmod>
     <priority>0.9</priority>
@@ -1096,6 +1108,12 @@
     <loc>https://dev.cloudburo.net/2018/12.html</loc>
     <lastmod>2018-12-16</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2018/12/21.html</loc>
+    <lastmod>2018-12-16</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -2090,6 +2108,12 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/tags/microservice/page/2.html</loc>
+    <lastmod>2018-12-16</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/inspiration/page/2.html</loc>
     <lastmod>2018-12-16</lastmod>
     <priority>0.7</priority>
     <changefreq>daily</changefreq>
