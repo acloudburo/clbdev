@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/01/14/sequence-diagram-ethereum-contract-transaction-execution.html"/>
     <id>https://dev.cloudburo.net/2019/01/14/sequence-diagram-ethereum-contract-transaction-execution.html</id>
     <published>2019-01-14T19:09:10+00:00</published>
-    <updated>2019-01-14T19:09:13+00:00</updated>
+    <updated>2019-01-14T19:13:16+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -31,6 +31,13 @@
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/d8e16c90411be8004a287e36041f011e.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
