@@ -1063,6 +1063,18 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/ethereum.html</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/diagram.html</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/polkadot.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
@@ -1094,12 +1106,6 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/tags/devops.html</loc>
-    <lastmod>2019-01-13</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/tags/ethereum.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
