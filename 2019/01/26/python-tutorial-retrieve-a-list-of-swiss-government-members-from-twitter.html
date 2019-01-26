@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Python Tutorial: Retrieve a list of Swiss Government Members From Twitter</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (17)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (1)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (10)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (2)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (13)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (4)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (4)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (5)</a>
+            <a href="/tags/python.html" class="label label-default">python (2)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (18)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (7)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2019.html" class="label label-primary">2019 (3)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2019/01/26/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html">Python Tutorial: Retrieve a list of Swiss Government Members From Twitter</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  26.Jan 2019 | Tags <a class="label label-primary" href="/tags/tutorial.html">tutorial</a> <a class="label label-primary" href="/tags/python.html">python</a> 
+            </p>
+          </header>
+          <div class="entry-description"><div class="row">
+  <div class="article">
+    <p><span/>      <div>
+        The tutorial will show you how to extract a list of tweeting Swiss Government Members via the Twitter API. The extracted data will be put into a Panda Dataframe and then visualized via the powerful Plotly package.
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/51f95668e3af88d125b4a83cd7d0781c.jpeg'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div style="text-align: center;">
+       <span style="font-size: 12px;">Source Attribution: </span>
+       <a style="font-size: 12px;" href="http://www.parlament.ch/"><a href="http://www.parlament.ch/">http://www.parlament.ch/</a></a>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The result will look as follows:
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/730b95c858afee7d04beb7c0d9eb186a.png'></p>
+    
+  </div>
+  <div class="article"><p><span/>         <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 14px;">Interested in the Swiss Government system? Head over to </span>
+   <a style="font-size: 14px;" href="https://www.thelocal.ch/20170403/ten-things-you-need-to-know-about-the-swiss-political-system">Ten Things you need to know about the Swiss Political system</a>
+   <span style="font-size: 14px;">. </span>
+  </div>
+  <div>
+   <span style="font-size: 18px;"><br></span>
+  </div>
+  <div>
+   <span style="font-size: 24px;">Where to get the data from?</span>
+  </div>
+  <div>
+   <span style="font-size: 18px;"><br></span>
+  </div>
+  <div>
+   <span style="font-size: 14px;">The twitter account </span>
+   <a href="https://twitter.com/SoMePolis">SoMePolis</a> maintains a list of Swiss government members, who have a Twitter account.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    The list can be found here 
+  </div>
+  <ul>
+   <li>
+    <div></p>
+<pre class="highlight plaintext"><code> &lt;a href="https://twitter.com/SoMePolis/lists/bundesparlamentarierinnen"&gt;https://twitter.com/SoMePolis/lists/bundesparlamentarierinnen &lt;/a&gt;
+&lt;/div&gt;&lt;/li&gt;
+</code></pre>
+
+<p></ul>
+  <div>
+   <img src="https://www.evernote.com/shard/s74/res/aade86d8-9969-46b4-89e5-bec6d83f1a6e/Capto_Capture%202019-01-26_04-57-14_AM.png">
+  </div>
+  <div>
+    The goal of the program is to fetch all list members (government members who are tweeting) and extract some key figures (followers and friends)
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 24px;">Create a Twitter Developer Account and App</span>
+  </div>
+  <div>
+   <span style="font-size: 18px;"><br></span>
+  </div>
+  <div>
+   <span style="font-size: 14px;">To fetch data via the public Twitter API, you have to register your application via the site </span>
+   <a style="font-size: 14px;" href="https://developer.twitter.com/"><a href="https://developer.twitter.com">https://developer.twitter.com</a></a>
+   <span style="font-size: 14px;">. You have to describe the purpose of your application. The approval process may take one or two days. </span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <img src="https://www.evernote.com/shard/s74/res/22aba40a-e269-47e8-aaba-02be232cb00c/Capto_Capture%202019-01-26_05-02-29_AM.png">
+  </div>
+  <div>
+    After the confirmation, you then create your first App in your developer account.
+  </div>
+  <div>
+   <img src="https://www.evernote.com/shard/s74/res/a612bb3d-c5e0-49b3-b75e-c9fe90e98388/Capto_Capture%202019-01-26_05-08-53_AM.png">
+  </div>
+  <div>
+    Having done that, Twitter will generate  API keys and tokens which you will use in your program to communicate with the Twitter API.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <img src="https://www.evernote.com/shard/s74/res/960fd480-722c-430f-b36c-21eab0cf0b88/Capto_Capture%202019-01-26_05-10-14_AM.png">
+  </div>
+  <div>
+   <span style="font-size: 24px;">Write the Program</span>
+  </div>
+  <div>
+   <span style="font-size: 14px;"><br></span>
+  </div>
+  <div>
+   <span style="font-size: 14px;">It’s time to write the program.</span>
+  </div>
+  <div>
+   <span style="font-size: 14px;"><br></span>
+  </div>
+  <div>
+   <span style="font-size: 14px;">We will create a class </span>
+   <span style="font-size: 14px; font-family: 'Courier New';">TwitterClient</span>
+   <span style="font-size: 14px;"> which offers two methods </span>
+   <span style="font-size: 14px; font-family: 'Courier New';">get_government_members</span>
+   <span style="font-size: 14px;"> and </span>
+   <span style="font-size: 14px; font-family: 'Courier New';">create_plotly_table</span>
+  </div>
+  <div>
+   <span style="font-size: 14px;"><br></span>
+  </div>
+  <div></p>
+
+<p><img class='article  img-thumbnail' src='/images/4aaf0fc7e4f43e7e9e02ad68b466876b.png'></p>
+
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The program will use the following python packages
+      </div>
+      <div>
+       <br>
+      </div>
+      <ul>
+       <li>
+        <div>
+         <a href="http://docs.tweepy.org/en/3.7.0/index.html">tweepy</a>: will provide access to the Twitter public API
+        </div></li>
+       <li>
+        <div>
+         <a href="https://pyyaml.org/wiki/PyYAMLDocumentation">yaml</a>: is a parser which can read yaml configuration files (used to store our secret keys)
+        </div></li>
+       <li>
+        <div>
+         <a href="https://pandas.pydata.org/">pandas</a>: is a library providing high-performance, easy-to-use data structures, and data analysis tools
+        </div></li>
+       <li>
+        <div>
+         <a href="https://plot.ly/python/">plotly</a>: is a graphing library which makes interactive, publication-quality graphs online. 
+        </div></li>
+      </ul>
+      <div>
+       <br>
+      </div>
+      <div>
+        That’s is by using these 4 libraries we are ready to go.
+      </div>
+      <div>
+       <span style="font-size: 24px;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 24px;">The Program</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 18px;"><strong>init</strong></span>
+      </div>
+      <div>
+       <span style="font-size: 14px;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 14px;">Within the Class initialization method, we have to establish a connection with the Twitter API.</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/49f934f474f747cb7ae40ce8c4de86c3.png'></p>
+    
+  </div>
+  <div class="article"><p><span/>         <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    For that, we use our keys and tokens which are loaded from a yaml file, which is located outside of the current directory in the
+   <span style="font-family: 'Courier New';">secret</span> directory.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">"../../secret/twitter.yaml"</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">stream</span><span class="p">:</span> 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div>
+    This is a common approach, to locate sensitive data in a directory which only lives on the local computer and never will be checked in a remote source system as Github.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <a href="https://en.wikipedia.org/wiki/YAML">Yaml</a> is a human-readable data serialization language. It is commonly used for configuration files but could be used in many applications where data is being stored.
+  </div>
+  <div></p>
+
+<p><img class='article  img-thumbnail' src='/images/71e07c466e88a02f595bb0eb931dd2dd.png'></p>
+
+  </div>
+  <div class="article"><p><span/>         <br>
+  </div>
+  <div>
+    It has a straightforward syntax, for our case four
+   <span style="font-family: 'Courier New';">&lt;key&gt;:&lt;value&gt;</span> pairs for the security tokens, which are loaded:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="n">consumer_key</span> <span class="o">=</span> <span class="n">res</span><span class="p">[</span><span class="s">'apiKey'</span><span class="p">]</span> 
+  <span class="n">consumer_secret</span> <span class="o">=</span> <span class="n">res</span><span class="p">[</span><span class="s">'apiSecretKey'</span><span class="p">]</span> 
+  <span class="n">access_token</span> <span class="o">=</span> <span class="n">res</span><span class="p">[</span><span class="s">'accessToken'</span><span class="p">]</span> 
+  <span class="n">access_token_secret</span> <span class="o">=</span> <span class="n">res</span><span class="p">[</span><span class="s">'accessSecretToken'</span><span class="p">]</span> 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div>
+    As a side information, when you enhance your program and require additional non-sensitive configuration data, you would introduce a second yaml file with public information, which you can check-in with the normal source code.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    In the next step, we use
+   <a href="https://en.wikipedia.org/wiki/OAuth">OAuth</a> to authenticate with Twitter and gain access to their API.  OAuth is an open standard for access delegation, commonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords. I.e. you will provide them with your secret access token and keys.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 12px; --inversion-type-color: simple; color: #301b2d; font-family: Menlo;"> 
+   <img class='article  img-thumbnail' src='/images/126d143d904d25d079dc7a0042df94b4.png'></p>
+
+  </div>
+  <div class="article">
+    <p><span/> <br></span>
+      </div>
+      <div>
+       <span style="font-size: 12px; --inversion-type-color: simple;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 14px; --inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">We create a private class variable </span>
+       <span style="font-size: 14px;"><span style="--inversion-type-color: simple; font-size: 14px; color: #000000; font-family: 'Courier New';">_<em>api</span></span>
+       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';"> which holds the reference to the Twitter API. Via this reference object you can now interact with the Twitter API, all methods available are described </span>
+       <a style="font-size: 14px; --inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';" href="http://docs.tweepy.org/en/3.7.0/api.html#tweepy-api-twitter-api-wrapper">here</a>
+       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">. We use a private variable for the API  because we don</span>
+       <span style="caret-color: #e4cfe1; --inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">’</span>
+       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">t want to offer the API directly to consumers of our classes but rather provide higher level methods as </span>
+       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Courier New';">get</em>government_members</span>
+       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">. </span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">Defining the scope of your class variables - public, protected, private - is an important design decision, when you are designing classes which will be used within a program or module. </span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">You communicate via the __api reference with the Twitter server. All available methods can be found here: </span>
+       <span style="color: #000000; --inversion-type-color: simple;"><a href="http://docs.tweepy.org/en/v3.5.0/api.html"><a href="http://docs.tweepy.org/en/v3.5.0/api.html">http://docs.tweepy.org/en/v3.5.0/api.html</a></a></span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/2c3f08f2ae86c89157d0a4fbbbba8140.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+       <span style="font-size: 18px;">get_government_members</span>
+      </div>
+      <div>
+       <span style="font-size: 14px;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 14px;">In this method, we will fetch all twitter politician accounts out of the above described list </span>
+       <span style="font-family: 'Courier New';">BundesparlamentarierInnen</span> of the twitter account 
+       <span style="font-family: 'Courier New';">SoMePolis.</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-family: 'Courier New';"> 
+       <img class='article  img-thumbnail' src='/images/8d531d07d7d9f862e103be2e53ace7f1.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/> <br></span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        In a first step, we get all Twitters lists of the SomePolis account and search for the required one. Having found it we will use its
+       <span style="font-family: 'Courier New';">list.id</span> in order to retrieve all members (twitter accounts) of the list.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 12px; --inversion-type-color: simple; color: #33412b; font-family: Menlo;"> 
+       <img class='article  img-thumbnail' src='/images/0122b63432ad51386982c9639ae62206.png'></p>
+    
+  </div>
+  <div class="article"><p><span/> <br></span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    In order to retrieve all members of a list we have to use a so-called
+   <span style="font-family: 'Courier New';">Cursor</span>.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">tweepy</span><span class="o">.</span><span class="n">Cursor</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__api</span><span class="o">.</span><span class="n">list_members</span><span class="p">,</span> <span class="n">list_id</span><span class="o">=</span><span class="nb">list</span><span class="o">.</span><span class="nb">id</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> 
+      <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> 
+  <span class="k">return</span> <span class="n">result</span> 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div>
+    It’s an important concept in API interfaces in order to manage data retrieval of arbitrary large lists (i.e. a list may have millions of entries)
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    If you use in the program the following code sequence, you would just return the first 25 members of the list.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="n">__api</span><span class="o">.</span><span class="n">list_members</span><span class="p">(</span><span class="nb">list</span><span class="o">.</span><span class="nb">id</span><span class="p">)</span> 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div>
+    With this strategy, the Twitter API will ensure that it will not have to deliver huge data amount in a single request to a client program. In case you want all members you have to call multiple times the
+   <span style="font-family: 'Courier New';">list_members. </span>
+   <span style="font-family: 'Helvetica Neue';">In each request a packet of 25 list member accounts will be returned. This concept is called “pagination” and is used throughout public API’s of various providers (you can find more information here: </span>
+   <a style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';" href="http://docs.tweepy.org/en/v3.5.0/cursor_tutorial.html">Tweeply Cursor Tutorial</a>
+   <span style="font-family: 'Helvetica Neue';">)</span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-family: 'Helvetica Neue';">The list has about 110 members, that means the</span>
+   <span style="font-family: 'Courier New';"> list_members </span>
+   <span style="font-family: 'Helvetica Neue';">method will be called five times. At the end, the </span>
+   <span style="font-family: 'Courier New';">result</span>
+   <span style="font-family: 'Helvetica Neue';"> variable will have the 110 Twitter Accounts accounts.</span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 18px; font-family: 'Helvetica Neue';">create_plotly_table</span>
+  </div>
+  <div>
+   <span style="font-size: 18px;"><br></span>
+  </div>
+  <div>
+   <span style="font-size: 14px; font-family: 'Helvetica Neue';">Fi,nally we extract out of the list of twitter accounts certain data for further processing.</span>
+  </div>
+  <div></p>
+
+<p><img class='article  img-thumbnail' src='/images/7ee6857e4ade87332c0f9872362e39a5.png'></p>
+
+  </div>
+  <div class="article"><p><span/>         <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-family: 'Helvetica Neue';">We will prepare a </span>
+   <a style="font-family: 'Helvetica Neue';" href="https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.DataFrame.html">Panda Dataframe</a>
+   <span style="font-family: 'Helvetica Neue';">, which is a t</span>wo-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns).
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    Of our list of Twitter accounts we will extract
+  </div>
+  <div>
+   <br>
+  </div>
+  <ul>
+   <li>
+    <div>
+      the
+     <span style="font-family: 'Courier New';">screen_name, </span>
+     <span style="font-family: 'Helvetica Neue';">which is the @&lt;twitterName&gt;</span>
+    </div></li>
+   <li>
+    <div>
+      the
+     <span style="font-family: 'Courier New';">name, </span>
+     <span style="font-family: 'Helvetica Neue';">which is the normally the full name of the person</span>
+    </div></li>
+   <li>
+    <div>
+      the
+     <span style="font-family: 'Courier New';">description</span>, which provides an additional description about the person
+    </div></li>
+   <li>
+    <div>
+      the
+     <span style="font-family: 'Courier New';">followers_count</span>, as well as the
+     <span style="font-family: 'Courier New';">friends_count</span> of the Twiitter account.
+    </div></li>
+  </ul>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-family: 'Helvetica Neue';">We have to create columns for the data frame which is achieved via the following command sequence</span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-family: 'Helvetica Neue';">
+&ldquo;`  python</span></p>
+
+<p>col1 = [list.screen_name for list in lists] </p>
+<pre class="highlight plaintext"><code>
+&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-family: 'Helvetica Neue';"&gt;We iterate through our &lt;/span&gt;
+   &lt;span style="font-family: 'Courier New';"&gt;lists&lt;/span&gt;
+   &lt;span style="font-family: 'Helvetica Neue';"&gt; and extract for each record the &lt;/span&gt;
+   &lt;span style="font-family: 'Courier New';"&gt;screen_name&lt;/span&gt;
+   &lt;span style="font-family: 'Helvetica Neue';"&gt;.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-family: 'Helvetica Neue';"&gt;Finally, we create a plotly &lt;/span&gt;
+   &lt;span style="font-family: 'Courier New';"&gt;Table:&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    There are the two main modules that we will need in order to generate our Plotly graphs.
+  &lt;/div&gt;
+  &lt;div&gt;
+    *
+   &lt;span style="font-family: 'Courier New';"&gt;plotly.plotly &lt;/span&gt;contains the functions that will help us communicate with the Plotly servers
+  &lt;/div&gt;
+  &lt;div&gt;
+    *
+   &lt;span style="font-family: 'Courier New';"&gt;plotly.graph_objs&lt;/span&gt; contains the functions that will generate graph objects for us.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    You will have to create an account  at 
+   &lt;a href="https://plot.ly/"&gt;https://plot.ly&lt;/a&gt; (when you first run the application, to which your generated table will be uploaded. As a result, you will get a table similar like this one in your account.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;img src="https://www.evernote.com/shard/s74/res/0707e5ff-9888-4ea2-9fe0-0d51d332d13c/Capto_Capture%202019-01-26_04-44-17_AM.png" width="710"&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    That’s it for today as an exercise try to add the following code sequence.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 24px;"&gt;Exercise&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Try to identify the party of each government person, by anaylzing its
+   &lt;span style="font-family: 'Courier New';"&gt;screen_name&lt;/span&gt; or
+   &lt;span style="font-family: 'Courier New';"&gt;description&lt;/span&gt;. As a guiding help, check out the
+   &lt;a href="https://www.parlament.ch/en/organe/groups/parties-in-parliament"&gt;following guide of parties in Switzerland&lt;/a&gt;. Main parties are “CVP”, “FDP”, “SP”, “SVP” as well as “Grüne”. There is a high chance that the abbreviation are mentioned by a person (see screenshot below).
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    So build up a new Panda Column and add it to the Data Frame for visualizing.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+
+   &lt;img class='article  img-thumbnail' src='/images/1103fa74449d215e347812d06eafbebc.png'&gt;
+</code></pre>
+
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 18px;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 24px;">Source Code</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The source code can be found here:
+       <span style="font-size: 18px;"> <a style="font-size: 18px;" href="https://github.com/talfco/clb-sentiment"><a href="https://github.com/talfco/clb-sentiment">https://github.com/talfco/clb-sentiment</a></a></span>
+      </div></p>
+    
+  </div>
+</div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/Cloudburonet-897759390318816/" class="btn btn-facebook">
+                <i class="fa fa-facebook"></i></a><a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts" class="btn btn-google-plus">
+                <i class="fa fa-google-plus"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2019 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>
