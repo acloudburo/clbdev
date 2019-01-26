@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/01/26/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html"/>
     <id>https://dev.cloudburo.net/2019/01/26/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html</id>
     <published>2019-01-26T18:09:14+00:00</published>
-    <updated>2019-01-26T18:15:23+00:00</updated>
+    <updated>2019-01-26T19:12:58+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -46,111 +46,127 @@
     &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/730b95c858afee7d04beb7c0d9eb186a.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;Interested in the Swiss Government system? Head over to &lt;/span&gt;
+       &lt;a style="font-size: 14px;" href="https://www.thelocal.ch/20170403/ten-things-you-need-to-know-about-the-swiss-political-system"&gt;Ten Things you need to know about the Swiss Political system&lt;/a&gt;
+       &lt;span style="font-size: 14px;"&gt;. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Where to get the data from?&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;The twitter account &lt;/span&gt;
+       &lt;a href="https://twitter.com/SoMePolis"&gt;SoMePolis&lt;/a&gt; maintains a list of Swiss government members, who have a Twitter account.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The list can be found here:&lt;br&gt;
+       &lt;a href="https://twitter.com/SoMePolis/lists/bundesparlamentarierinnen"&gt;&lt;a href="https://twitter.com/SoMePolis/lists/bundesparlamentarierinnen"&gt;https://twitter.com/SoMePolis/lists/bundesparlamentarierinnen&lt;/a&gt; &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/7b6bf9cd54824d52c91cbed1c48cc3c1.png'&gt;&lt;/p&gt;
+    
   &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+        The goal of the program is to fetch all list members (government members who are tweeting) and extract some key figures (followers and friends)
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Create a Twitter Developer Account and App&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;To fetch data via the public Twitter API, you have to register your application via the site &lt;/span&gt;
+       &lt;a style="font-size: 14px;" href="https://developer.twitter.com/"&gt;&lt;a href="https://developer.twitter.com"&gt;https://developer.twitter.com&lt;/a&gt;&lt;/a&gt;
+       &lt;span style="font-size: 14px;"&gt;. You have to describe the purpose of your application. The approval process may take one or two days. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/9e65e059ea800c2ae59275490ec49473.png'&gt;&lt;/p&gt;
+    
   &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 14px;"&gt;Interested in the Swiss Government system? Head over to &lt;/span&gt;
-   &lt;a style="font-size: 14px;" href="https://www.thelocal.ch/20170403/ten-things-you-need-to-know-about-the-swiss-political-system"&gt;Ten Things you need to know about the Swiss Political system&lt;/a&gt;
-   &lt;span style="font-size: 14px;"&gt;. &lt;/span&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        After the confirmation, you then create your first App in your developer account.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/495e6095e1bfaf110cb5bab9b820b7df.png'&gt;&lt;/p&gt;
+    
   &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+        Having done that, Twitter will generate  API keys and tokens which you will use in your program to communicate with the Twitter API.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/61892cc0c837e0f565efb1c790b2528e.png'&gt;&lt;/p&gt;
+    
   &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 24px;"&gt;Where to get the data from?&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 14px;"&gt;The twitter account &lt;/span&gt;
-   &lt;a href="https://twitter.com/SoMePolis"&gt;SoMePolis&lt;/a&gt; maintains a list of Swiss government members, who have a Twitter account.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    The list can be found here 
-  &lt;/div&gt;
-  &lt;ul&gt;
-   &lt;li&gt;
-    &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt; &amp;lt;a href="https://twitter.com/SoMePolis/lists/bundesparlamentarierinnen"&amp;gt;https://twitter.com/SoMePolis/lists/bundesparlamentarierinnen &amp;lt;/a&amp;gt;
-&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/ul&gt;
-  &lt;div&gt;
-   &lt;img src="https://www.evernote.com/shard/s74/res/aade86d8-9969-46b4-89e5-bec6d83f1a6e/Capto_Capture%202019-01-26_04-57-14_AM.png"&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    The goal of the program is to fetch all list members (government members who are tweeting) and extract some key figures (followers and friends)
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 24px;"&gt;Create a Twitter Developer Account and App&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 14px;"&gt;To fetch data via the public Twitter API, you have to register your application via the site &lt;/span&gt;
-   &lt;a style="font-size: 14px;" href="https://developer.twitter.com/"&gt;&lt;a href="https://developer.twitter.com"&gt;https://developer.twitter.com&lt;/a&gt;&lt;/a&gt;
-   &lt;span style="font-size: 14px;"&gt;. You have to describe the purpose of your application. The approval process may take one or two days. &lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;img src="https://www.evernote.com/shard/s74/res/22aba40a-e269-47e8-aaba-02be232cb00c/Capto_Capture%202019-01-26_05-02-29_AM.png"&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    After the confirmation, you then create your first App in your developer account.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;img src="https://www.evernote.com/shard/s74/res/a612bb3d-c5e0-49b3-b75e-c9fe90e98388/Capto_Capture%202019-01-26_05-08-53_AM.png"&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Having done that, Twitter will generate  API keys and tokens which you will use in your program to communicate with the Twitter API.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;img src="https://www.evernote.com/shard/s74/res/960fd480-722c-430f-b36c-21eab0cf0b88/Capto_Capture%202019-01-26_05-10-14_AM.png"&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 24px;"&gt;Write the Program&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 14px;"&gt;It’s time to write the program.&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 14px;"&gt;We will create a class &lt;/span&gt;
-   &lt;span style="font-size: 14px; font-family: &amp;quot;Courier New&amp;quot;;"&gt;TwitterClient&lt;/span&gt;
-   &lt;span style="font-size: 14px;"&gt; which offers two methods &lt;/span&gt;
-   &lt;span style="font-size: 14px; font-family: &amp;quot;Courier New&amp;quot;;"&gt;get_government_members&lt;/span&gt;
-   &lt;span style="font-size: 14px;"&gt; and &lt;/span&gt;
-   &lt;span style="font-size: 14px; font-family: &amp;quot;Courier New&amp;quot;;"&gt;create_plotly_table&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/4aaf0fc7e4f43e7e9e02ad68b466876b.png'&gt;&lt;/p&gt;
-
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Write the Program&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;It’s time to write the program.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;We will create a class &lt;/span&gt;
+       &lt;span style="font-size: 14px; font-family: &amp;quot;Courier New&amp;quot;;"&gt;TwitterClient&lt;/span&gt;
+       &lt;span style="font-size: 14px;"&gt; which offers two methods &lt;/span&gt;
+       &lt;span style="font-size: 14px; font-family: &amp;quot;Courier New&amp;quot;;"&gt;get_government_members&lt;/span&gt;
+       &lt;span style="font-size: 14px;"&gt; and &lt;/span&gt;
+       &lt;span style="font-size: 14px; font-family: &amp;quot;Courier New&amp;quot;;"&gt;create_plotly_table&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/4aaf0fc7e4f43e7e9e02ad68b466876b.png'&gt;&lt;/p&gt;
+    
   &lt;/div&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
@@ -499,7 +515,7 @@
    &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;We have to create columns for the data frame which is achieved via the following command sequence&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
-   &lt;br&gt;
+   &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;&lt;br&gt;&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
    &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;
@@ -507,7 +523,7 @@
 
 &lt;p&gt;col1 = [list.screen_name for list in lists] &lt;/p&gt;
 &lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-&amp;lt;/span&amp;gt;
+
   &amp;lt;/div&amp;gt;
   &amp;lt;div&amp;gt;
    &amp;lt;br&amp;gt;
@@ -552,9 +568,6 @@
   &amp;lt;/div&amp;gt;
   &amp;lt;div&amp;gt;
    &amp;lt;img src="https://www.evernote.com/shard/s74/res/0707e5ff-9888-4ea2-9fe0-0d51d332d13c/Capto_Capture%202019-01-26_04-44-17_AM.png" width="710"&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;br&amp;gt;
   &amp;lt;/div&amp;gt;
   &amp;lt;div&amp;gt;
     That’s it for today as an exercise try to add the following code sequence.
