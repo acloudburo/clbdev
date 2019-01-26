@@ -233,11 +233,11 @@
   </div>
   <div>
    <span style="font-size: 14px;">We will create a class </span>
-   <span style="font-size: 14px; font-family: 'Courier New';">TwitterClient</span>
+   <span style="font-size: 14px; font-family: &quot;Courier New&quot;;">TwitterClient</span>
    <span style="font-size: 14px;"> which offers two methods </span>
-   <span style="font-size: 14px; font-family: 'Courier New';">get_government_members</span>
+   <span style="font-size: 14px; font-family: &quot;Courier New&quot;;">get_government_members</span>
    <span style="font-size: 14px;"> and </span>
-   <span style="font-size: 14px; font-family: 'Courier New';">create_plotly_table</span>
+   <span style="font-size: 14px; font-family: &quot;Courier New&quot;;">create_plotly_table</span>
   </div>
   <div>
    <span style="font-size: 14px;"><br></span>
@@ -316,7 +316,7 @@
   </div>
   <div>
     For that, we use our keys and tokens which are loaded from a yaml file, which is located outside of the current directory in the
-   <span style="font-family: 'Courier New';">secret</span> directory.
+   <span style="font-family: &quot;Courier New&quot;;">secret</span> directory.
   </div>
   <div>
    <br>
@@ -349,7 +349,7 @@
   </div>
   <div>
     It has a straightforward syntax, for our case four
-   <span style="font-family: 'Courier New';">&lt;key&gt;:&lt;value&gt;</span> pairs for the security tokens, which are loaded:
+   <span style="font-family: &quot;Courier New&quot;;">&lt;key&gt;:&lt;value&gt;</span> pairs for the security tokens, which are loaded:
   </div>
   <div>
    <br>
@@ -381,7 +381,7 @@
    <br>
   </div>
   <div>
-   <span style="font-size: 12px; --inversion-type-color: simple; color: #301b2d; font-family: Menlo;"> 
+   <span style="font-size: 12px; --inversion-type-color:  simple; color: rgb(48, 27, 45); font-family: Menlo;"> 
    <img class='article  img-thumbnail' src='/images/126d143d904d25d079dc7a0042df94b4.png'></p>
 
   </div>
@@ -392,28 +392,28 @@
        <span style="font-size: 12px; --inversion-type-color: simple;"><br></span>
       </div>
       <div>
-       <span style="font-size: 14px; --inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">We create a private class variable </span>
-       <span style="font-size: 14px;"><span style="--inversion-type-color: simple; font-size: 14px; color: #000000; font-family: 'Courier New';">_<em>api</span></span>
-       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';"> which holds the reference to the Twitter API. Via this reference object you can now interact with the Twitter API, all methods available are described </span>
-       <a style="font-size: 14px; --inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';" href="http://docs.tweepy.org/en/3.7.0/api.html#tweepy-api-twitter-api-wrapper">here</a>
-       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">. We use a private variable for the API  because we don</span>
-       <span style="caret-color: #e4cfe1; --inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">’</span>
-       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">t want to offer the API directly to consumers of our classes but rather provide higher level methods as </span>
-       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Courier New';">get</em>government_members</span>
-       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">. </span>
+       <span style="font-size: 14px; --inversion-type-color:  simple; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;;">We create a private class variable </span>
+       <span style="font-size: 14px;"><span style="--inversion-type-color:  simple; font-size: 14px; color: rgb(0, 0, 0); font-family: &quot;Courier New&quot;;">_<em>api</span></span>
+       <span style="--inversion-type-color:  simple; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;;"> which holds the reference to the Twitter API. Via this reference object you can now interact with the Twitter API, all methods available are described </span>
+       <a style="font-size: 14px; --inversion-type-color:  simple; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;;" href="http://docs.tweepy.org/en/3.7.0/api.html#tweepy-api-twitter-api-wrapper">here</a>
+       <span style="--inversion-type-color:  simple; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;;">. We use a private variable for the API  because we don</span>
+       <span style="caret-color: rgb(228, 207, 225); --inversion-type-color:  simple; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;;">’</span>
+       <span style="--inversion-type-color:  simple; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;;">t want to offer the API directly to consumers of our classes but rather provide higher level methods as </span>
+       <span style="--inversion-type-color:  simple; color: rgb(0, 0, 0); font-family: &quot;Courier New&quot;;">get</em>government_members</span>
+       <span style="--inversion-type-color:  simple; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;;">. </span>
       </div>
       <div>
        <br>
       </div>
       <div>
-       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">Defining the scope of your class variables - public, protected, private - is an important design decision, when you are designing classes which will be used within a program or module. </span>
+       <span style="--inversion-type-color:  simple; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;;">Defining the scope of your class variables - public, protected, private - is an important design decision, when you are designing classes which will be used within a program or module. </span>
       </div>
       <div>
        <br>
       </div>
       <div>
-       <span style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';">You communicate via the __api reference with the Twitter server. All available methods can be found here: </span>
-       <span style="color: #000000; --inversion-type-color: simple;"><a href="http://docs.tweepy.org/en/v3.5.0/api.html"><a href="http://docs.tweepy.org/en/v3.5.0/api.html">http://docs.tweepy.org/en/v3.5.0/api.html</a></a></span>
+       <span style="--inversion-type-color:  simple; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;;">You communicate via the __api reference with the Twitter server. All available methods can be found here: </span>
+       <a href="http://docs.tweepy.org/en/v3.5.0/api.html" style="--inversion-type-color:  simple;"><a href="http://docs.tweepy.org/en/v3.5.0/api.html">http://docs.tweepy.org/en/v3.5.0/api.html</a></a>
       </div>
       <div>
        <br>
@@ -434,14 +434,14 @@
       </div>
       <div>
        <span style="font-size: 14px;">In this method, we will fetch all twitter politician accounts out of the above described list </span>
-       <span style="font-family: 'Courier New';">BundesparlamentarierInnen</span> of the twitter account 
-       <span style="font-family: 'Courier New';">SoMePolis.</span>
+       <span style="font-family: &quot;Courier New&quot;;">BundesparlamentarierInnen</span> of the twitter account 
+       <span style="font-family: &quot;Courier New&quot;;">SoMePolis.</span>
       </div>
       <div>
        <br>
       </div>
       <div>
-       <span style="font-family: 'Courier New';"> 
+       <span style="font-family: &quot;Courier New&quot;;"> 
        <img class='article  img-thumbnail' src='/images/8d531d07d7d9f862e103be2e53ace7f1.png'></p>
     
   </div>
@@ -453,13 +453,13 @@
       </div>
       <div>
         In a first step, we get all Twitters lists of the SomePolis account and search for the required one. Having found it we will use its
-       <span style="font-family: 'Courier New';">list.id</span> in order to retrieve all members (twitter accounts) of the list.
+       <span style="font-family: &quot;Courier New&quot;;">list.id</span> in order to retrieve all members (twitter accounts) of the list.
       </div>
       <div>
        <br>
       </div>
       <div>
-       <span style="font-size: 12px; --inversion-type-color: simple; color: #33412b; font-family: Menlo;"> 
+       <span style="font-size: 12px; --inversion-type-color:  simple; color: rgb(51, 65, 43); font-family: Menlo;"> 
        <img class='article  img-thumbnail' src='/images/0122b63432ad51386982c9639ae62206.png'></p>
     
   </div>
@@ -470,7 +470,7 @@
   </div>
   <div>
     In order to retrieve all members of a list we have to use a so-called
-   <span style="font-family: 'Courier New';">Cursor</span>.
+   <span style="font-family: &quot;Courier New&quot;;">Cursor</span>.
   </div>
   <div>
    <br>
@@ -511,32 +511,32 @@
 
 <p><div>
     With this strategy, the Twitter API will ensure that it will not have to deliver huge data amount in a single request to a client program. In case you want all members you have to call multiple times the
-   <span style="font-family: 'Courier New';">list_members. </span>
-   <span style="font-family: 'Helvetica Neue';">In each request a packet of 25 list member accounts will be returned. This concept is called “pagination” and is used throughout public API’s of various providers (you can find more information here: </span>
-   <a style="--inversion-type-color: simple; color: #000000; font-family: 'Helvetica Neue';" href="http://docs.tweepy.org/en/v3.5.0/cursor_tutorial.html">Tweeply Cursor Tutorial</a>
-   <span style="font-family: 'Helvetica Neue';">)</span>
+   <span style="font-family: &quot;Courier New&quot;;">list_members. </span>
+   <span style="font-family: &quot;Helvetica Neue&quot;;">In each request a packet of 25 list member accounts will be returned. This concept is called “pagination” and is used throughout public API’s of various providers (you can find more information here: </span>
+   <a style="--inversion-type-color:  simple; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;;" href="http://docs.tweepy.org/en/v3.5.0/cursor_tutorial.html">Tweeply Cursor Tutorial</a>
+   <span style="font-family: &quot;Helvetica Neue&quot;;">)</span>
   </div>
   <div>
    <br>
   </div>
   <div>
-   <span style="font-family: 'Helvetica Neue';">The list has about 110 members, that means the</span>
-   <span style="font-family: 'Courier New';"> list_members </span>
-   <span style="font-family: 'Helvetica Neue';">method will be called five times. At the end, the </span>
-   <span style="font-family: 'Courier New';">result</span>
-   <span style="font-family: 'Helvetica Neue';"> variable will have the 110 Twitter Accounts accounts.</span>
+   <span style="font-family: &quot;Helvetica Neue&quot;;">The list has about 110 members, that means the</span>
+   <span style="font-family: &quot;Courier New&quot;;"> list_members </span>
+   <span style="font-family: &quot;Helvetica Neue&quot;;">method will be called five times. At the end, the </span>
+   <span style="font-family: &quot;Courier New&quot;;">result</span>
+   <span style="font-family: &quot;Helvetica Neue&quot;;"> variable will have the 110 Twitter Accounts accounts.</span>
   </div>
   <div>
    <br>
   </div>
   <div>
-   <span style="font-size: 18px; font-family: 'Helvetica Neue';">create_plotly_table</span>
+   <span style="font-size: 18px; font-family: &quot;Helvetica Neue&quot;;">create_plotly_table</span>
   </div>
   <div>
    <span style="font-size: 18px;"><br></span>
   </div>
   <div>
-   <span style="font-size: 14px; font-family: 'Helvetica Neue';">Fi,nally we extract out of the list of twitter accounts certain data for further processing.</span>
+   <span style="font-size: 14px; font-family: &quot;Helvetica Neue&quot;;">Fi,nally we extract out of the list of twitter accounts certain data for further processing.</span>
   </div>
   <div></p>
 
@@ -549,9 +549,9 @@
    <br>
   </div>
   <div>
-   <span style="font-family: 'Helvetica Neue';">We will prepare a </span>
-   <a style="font-family: 'Helvetica Neue';" href="https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.DataFrame.html">Panda Dataframe</a>
-   <span style="font-family: 'Helvetica Neue';">, which is a t</span>wo-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns).
+   <span style="font-family: &quot;Helvetica Neue&quot;;">We will prepare a </span>
+   <a href="https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.DataFrame.html" style="font-family: &quot;Helvetica Neue&quot;;">Panda Dataframe</a>
+   <span style="font-family: &quot;Helvetica Neue&quot;;">, which is a t</span>wo-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns).
   </div>
   <div>
    <br>
@@ -566,38 +566,38 @@
    <li>
     <div>
       the
-     <span style="font-family: 'Courier New';">screen_name, </span>
-     <span style="font-family: 'Helvetica Neue';">which is the @&lt;twitterName&gt;</span>
+     <span style="font-family: &quot;Courier New&quot;;">screen_name, </span>
+     <span style="font-family: &quot;Helvetica Neue&quot;;">which is the @&lt;twitterName&gt;</span>
     </div></li>
    <li>
     <div>
       the
-     <span style="font-family: 'Courier New';">name, </span>
-     <span style="font-family: 'Helvetica Neue';">which is the normally the full name of the person</span>
+     <span style="font-family: &quot;Courier New&quot;;">name, </span>
+     <span style="font-family: &quot;Helvetica Neue&quot;;">which is the normally the full name of the person</span>
     </div></li>
    <li>
     <div>
       the
-     <span style="font-family: 'Courier New';">description</span>, which provides an additional description about the person
+     <span style="font-family: &quot;Courier New&quot;;">description</span>, which provides an additional description about the person
     </div></li>
    <li>
     <div>
       the
-     <span style="font-family: 'Courier New';">followers_count</span>, as well as the
-     <span style="font-family: 'Courier New';">friends_count</span> of the Twiitter account.
+     <span style="font-family: &quot;Courier New&quot;;">followers_count</span>, as well as the
+     <span style="font-family: &quot;Courier New&quot;;">friends_count</span> of the Twiitter account.
     </div></li>
   </ul>
   <div>
    <br>
   </div>
   <div>
-   <span style="font-family: 'Helvetica Neue';">We have to create columns for the data frame which is achieved via the following command sequence</span>
+   <span style="font-family: &quot;Helvetica Neue&quot;;">We have to create columns for the data frame which is achieved via the following command sequence</span>
   </div>
   <div>
    <br>
   </div>
   <div>
-   <span style="font-family: 'Helvetica Neue';">
+   <span style="font-family: &quot;Helvetica Neue&quot;;">
 &ldquo;`  python</span></p>
 
 <p>col1 = [list.screen_name for list in lists] </p>
@@ -608,18 +608,18 @@
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-   &lt;span style="font-family: 'Helvetica Neue';"&gt;We iterate through our &lt;/span&gt;
-   &lt;span style="font-family: 'Courier New';"&gt;lists&lt;/span&gt;
-   &lt;span style="font-family: 'Helvetica Neue';"&gt; and extract for each record the &lt;/span&gt;
-   &lt;span style="font-family: 'Courier New';"&gt;screen_name&lt;/span&gt;
-   &lt;span style="font-family: 'Helvetica Neue';"&gt;.&lt;/span&gt;
+   &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;We iterate through our &lt;/span&gt;
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;lists&lt;/span&gt;
+   &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt; and extract for each record the &lt;/span&gt;
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;screen_name&lt;/span&gt;
+   &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;.&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-   &lt;span style="font-family: 'Helvetica Neue';"&gt;Finally, we create a plotly &lt;/span&gt;
-   &lt;span style="font-family: 'Courier New';"&gt;Table:&lt;/span&gt;
+   &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;Finally, we create a plotly &lt;/span&gt;
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;Table:&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -629,11 +629,11 @@
   &lt;/div&gt;
   &lt;div&gt;
     *
-   &lt;span style="font-family: 'Courier New';"&gt;plotly.plotly &lt;/span&gt;contains the functions that will help us communicate with the Plotly servers
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;plotly.plotly &lt;/span&gt;contains the functions that will help us communicate with the Plotly servers
   &lt;/div&gt;
   &lt;div&gt;
     *
-   &lt;span style="font-family: 'Courier New';"&gt;plotly.graph_objs&lt;/span&gt; contains the functions that will generate graph objects for us.
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;plotly.graph_objs&lt;/span&gt; contains the functions that will generate graph objects for us.
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -665,8 +665,8 @@
   &lt;/div&gt;
   &lt;div&gt;
     Try to identify the party of each government person, by anaylzing its
-   &lt;span style="font-family: 'Courier New';"&gt;screen_name&lt;/span&gt; or
-   &lt;span style="font-family: 'Courier New';"&gt;description&lt;/span&gt;. As a guiding help, check out the
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;screen_name&lt;/span&gt; or
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;description&lt;/span&gt;. As a guiding help, check out the
    &lt;a href="https://www.parlament.ch/en/organe/groups/parties-in-parliament"&gt;following guide of parties in Switzerland&lt;/a&gt;. Main parties are “CVP”, “FDP”, “SP”, “SVP” as well as “Grüne”. There is a high chance that the abbreviation are mentioned by a person (see screenshot below).
   &lt;/div&gt;
   &lt;div&gt;
