@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/01/26/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html"/>
     <id>https://dev.cloudburo.net/2019/01/26/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html</id>
     <published>2019-01-26T18:09:14+00:00</published>
-    <updated>2019-01-26T19:12:58+00:00</updated>
+    <updated>2019-01-26T19:18:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -426,11 +426,11 @@
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;div&gt;
+&lt;p&gt;&lt;/div&gt;
+  &lt;div&gt;
    &lt;br&gt;
   &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
+  &lt;div&gt;
     With this strategy, the Twitter API will ensure that it will not have to deliver huge data amount in a single request to a client program. In case you want all members you have to call multiple times the
    &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;list_members. &lt;/span&gt;
    &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;In each request a packet of 25 list member accounts will be returned. This concept is called “pagination” and is used throughout public API’s of various providers (you can find more information here: &lt;/span&gt;
@@ -464,143 +464,138 @@
 &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/7ee6857e4ade87332c0f9872362e39a5.png'&gt;&lt;/p&gt;
 
   &lt;/div&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;We will prepare a &lt;/span&gt;
-   &lt;a href="https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.DataFrame.html" style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;Panda Dataframe&lt;/a&gt;
-   &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;, which is a t&lt;/span&gt;wo-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns).
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Of our list of Twitter accounts we will extract
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;ul&gt;
-   &lt;li&gt;
-    &lt;div&gt;
-      the
-     &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;screen_name, &lt;/span&gt;
-     &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;which is the @&amp;lt;twitterName&amp;gt;&lt;/span&gt;
-    &lt;/div&gt;&lt;/li&gt;
-   &lt;li&gt;
-    &lt;div&gt;
-      the
-     &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;name, &lt;/span&gt;
-     &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;which is the normally the full name of the person&lt;/span&gt;
-    &lt;/div&gt;&lt;/li&gt;
-   &lt;li&gt;
-    &lt;div&gt;
-      the
-     &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;description&lt;/span&gt;, which provides an additional description about the person
-    &lt;/div&gt;&lt;/li&gt;
-   &lt;li&gt;
-    &lt;div&gt;
-      the
-     &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;followers_count&lt;/span&gt;, as well as the
-     &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;friends_count&lt;/span&gt; of the Twiitter account.
-    &lt;/div&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;We have to create columns for the data frame which is achieved via the following command sequence&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;&lt;br&gt;&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;
-&amp;ldquo;`  python&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;col1 = [list.screen_name for list in lists] &lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;span style="font-family: &amp;amp;quot;Helvetica Neue&amp;amp;quot;;"&amp;gt;We iterate through our &amp;lt;/span&amp;gt;
-   &amp;lt;span style="font-family: &amp;amp;quot;Courier New&amp;amp;quot;;"&amp;gt;lists&amp;lt;/span&amp;gt;
-   &amp;lt;span style="font-family: &amp;amp;quot;Helvetica Neue&amp;amp;quot;;"&amp;gt; and extract for each record the &amp;lt;/span&amp;gt;
-   &amp;lt;span style="font-family: &amp;amp;quot;Courier New&amp;amp;quot;;"&amp;gt;screen_name&amp;lt;/span&amp;gt;
-   &amp;lt;span style="font-family: &amp;amp;quot;Helvetica Neue&amp;amp;quot;;"&amp;gt;.&amp;lt;/span&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;span style="font-family: &amp;amp;quot;Helvetica Neue&amp;amp;quot;;"&amp;gt;Finally, we create a plotly &amp;lt;/span&amp;gt;
-   &amp;lt;span style="font-family: &amp;amp;quot;Courier New&amp;amp;quot;;"&amp;gt;Table:&amp;lt;/span&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-    There are the two main modules that we will need in order to generate our Plotly graphs.
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-    *
-   &amp;lt;span style="font-family: &amp;amp;quot;Courier New&amp;amp;quot;;"&amp;gt;plotly.plotly &amp;lt;/span&amp;gt;contains the functions that will help us communicate with the Plotly servers
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-    *
-   &amp;lt;span style="font-family: &amp;amp;quot;Courier New&amp;amp;quot;;"&amp;gt;plotly.graph_objs&amp;lt;/span&amp;gt; contains the functions that will generate graph objects for us.
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-    You will have to create an account  at 
-   &amp;lt;a href="https://plot.ly/"&amp;gt;https://plot.ly&amp;lt;/a&amp;gt; (when you first run the application, to which your generated table will be uploaded. As a result, you will get a table similar like this one in your account.
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;img src="https://www.evernote.com/shard/s74/res/0707e5ff-9888-4ea2-9fe0-0d51d332d13c/Capto_Capture%202019-01-26_04-44-17_AM.png" width="710"&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-    That’s it for today as an exercise try to add the following code sequence.
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;span style="font-size: 24px;"&amp;gt;Exercise&amp;lt;/span&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-    Try to identify the party of each government person, by anaylzing its
-   &amp;lt;span style="font-family: &amp;amp;quot;Courier New&amp;amp;quot;;"&amp;gt;screen_name&amp;lt;/span&amp;gt; or
-   &amp;lt;span style="font-family: &amp;amp;quot;Courier New&amp;amp;quot;;"&amp;gt;description&amp;lt;/span&amp;gt;. As a guiding help, check out the
-   &amp;lt;a href="https://www.parlament.ch/en/organe/groups/parties-in-parliament"&amp;gt;following guide of parties in Switzerland&amp;lt;/a&amp;gt;. Main parties are “CVP”, “FDP”, “SP”, “SVP” as well as “Grüne”. There is a high chance that the abbreviation are mentioned by a person (see screenshot below).
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-    So build up a new Panda Column and add it to the Data Frame for visualizing.
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div&amp;gt;
-
-   &amp;lt;img class='article  img-thumbnail' src='/images/1103fa74449d215e347812d06eafbebc.png'&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;We will prepare a &lt;/span&gt;
+       &lt;a href="https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.DataFrame.html" style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;Panda Dataframe&lt;/a&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;, which is a t&lt;/span&gt;wo-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Of our list of Twitter accounts we will extract
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          the
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;screen_name, &lt;/span&gt;
+         &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;which is the @&amp;lt;twitterName&amp;gt;&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          the
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;name, &lt;/span&gt;
+         &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;which is the normally the full name of the person&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          the
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;description&lt;/span&gt;, which provides an additional description about the person
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          the
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;followers_count&lt;/span&gt;, as well as the
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;friends_count&lt;/span&gt; of the Twiitter account.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;We have to create columns for the data frame which is achieved via the following command sequence&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font face="Courier New"&gt;col1 = [list.screen_name for list in lists]&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;We iterate through our &lt;/span&gt;
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;lists&lt;/span&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt; and extract for each record the &lt;/span&gt;
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;screen_name&lt;/span&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;Finally, we create a plotly &lt;/span&gt;
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;Table:&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        There are the two main modules that we will need in order to generate our Plotly graphs.
+      &lt;/div&gt;
+      &lt;div&gt;
+        *
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;plotly.plotly &lt;/span&gt;contains the functions that will help us communicate with the Plotly servers
+      &lt;/div&gt;
+      &lt;div&gt;
+        *
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;plotly.graph_objs&lt;/span&gt; contains the functions that will generate graph objects for us.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You will have to create an account  at 
+       &lt;a href="https://plot.ly/"&gt;&lt;a href="https://plot.ly"&gt;https://plot.ly&lt;/a&gt;&lt;/a&gt; (when you first run the application, to which your generated table will be uploaded. As a result, you will get a table similar like this one in your account.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;img src="https://www.evernote.com/shard/s74/res/0707e5ff-9888-4ea2-9fe0-0d51d332d13c/Capto_Capture%202019-01-26_04-44-17_AM.png" width="710"&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        That’s it for today as an exercise try to add the following code sequence.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Exercise&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Try to identify the party of each government person, by anaylzing its
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;screen_name&lt;/span&gt; or
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;description&lt;/span&gt;. As a guiding help, check out the
+       &lt;a href="https://www.parlament.ch/en/organe/groups/parties-in-parliament"&gt;following guide of parties in Switzerland&lt;/a&gt;. Main parties are “CVP”, “FDP”, “SP”, “SVP” as well as “Grüne”. There is a high chance that the abbreviation are mentioned by a person (see screenshot below).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So build up a new Panda Column and add it to the Data Frame for visualizing.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/1103fa74449d215e347812d06eafbebc.png'&gt;&lt;/p&gt;
+    
   &lt;/div&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
