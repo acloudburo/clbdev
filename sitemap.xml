@@ -799,12 +799,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/2019/01/26/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html</loc>
-    <lastmod>2019-01-26</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net/2015/05/07/micro-business-quick-tips-3-are-these-4-common-legal-mistakes-putting-your-conte.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.7</priority>
@@ -1142,12 +1136,6 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/2019/01/27.html</loc>
-    <lastmod>2019-01-13</lastmod>
-    <priority>0.8</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/2019/01/26.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>
