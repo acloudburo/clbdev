@@ -5,16 +5,132 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-01-27T01:11:41+00:00</updated>
+  <updated>2019-01-27T11:17:41+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Python Tutorial Exercise 1: Introduce check_for_party</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/01/27/python-tutorial-exercise-1-introduce-check_for_party.html"/>
+    <id>https://dev.cloudburo.net/2019/01/27/python-tutorial-exercise-1-introduce-check_for_party.html</id>
+    <published>2019-01-27T11:17:41+00:00</published>
+    <updated>2019-01-27T11:17:49+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;      &lt;div&gt;
+    This is the exercise for the first tutorial: 
+   &lt;a href="https://dev.cloudburo.net/2019/01/27/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html"&gt;&lt;a href="https://dev.cloudburo.net/2019/01/27/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html"&gt;https://dev.cloudburo.net/2019/01/27/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html&lt;/a&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    In order to identify the associated party of a Swiss politician, we introduce the method
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;check_for_party&lt;/span&gt;, which checks the
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;screen_name&lt;/span&gt; as well as the account
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;description&lt;/span&gt; field for the mentioning of one of the party’s abbreviation. 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    A minimal implementation may look like this:
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight python"&gt;&lt;code&gt;
+  &lt;span class="c"&gt;# Method will return the party of the list member by analyzing &lt;/span&gt;
+  &lt;span class="c"&gt;# twitter account attributes. If party cannot be detected the &lt;/span&gt;
+  &lt;span class="c"&gt;# account column  have an entry "unknown" &lt;/span&gt;
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;check_for_party&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;account_list&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
+      &lt;span class="n"&gt;party_column&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt; 
+      &lt;span class="n"&gt;party_abbreviations&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;"FDP"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"CVP"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"SP"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"SVP"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"EVP"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;"BDP"&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
+      &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;account&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;account_list&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
+          &lt;span class="n"&gt;party&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"unknown"&lt;/span&gt; 
+          &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;abbr&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;party_abbreviations&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
+              &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;abbr&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;account&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;description&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="n"&gt;abbr&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;account&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;screen_name&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
+                  &lt;span class="n"&gt;party&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;abbr&lt;/span&gt; 
+          &lt;span class="n"&gt;party_column&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;party&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;party_column&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    We extend the
+   &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; create_plotly_table&lt;/span&gt; with the following statemens
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/74b960f2dc1ba29e6af8ced20c65bd40.png'&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The new Plotly Table will look like this. 
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/7197a1abeec53696a9b614914fba86d3.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+        Clearly the algorithm is very inaccurate at the moment, but it shows you the direction. E.g. you could enhance by including the french abbreviations, or twitter handles of the party’s which are refrenced in the description (grunliberale) etc,
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You can find the extended program (with the exercise code)  here: 
+       &lt;a href="https://github.com/talfco/clb-sentiment/blob/master/src/lesson1/lesson1-ex1.py"&gt;&lt;a href="https://github.com/talfco/clb-sentiment/blob/master/src/lesson1/lesson1-ex1.py"&gt;https://github.com/talfco/clb-sentiment/blob/master/src/lesson1/lesson1-ex1.py&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Python Tutorial: Retrieve a list of Swiss Government Members From Twitter</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/01/27/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html"/>
     <id>https://dev.cloudburo.net/2019/01/27/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html</id>
     <published>2019-01-27T01:11:41+00:00</published>
-    <updated>2019-01-27T01:12:23+00:00</updated>
+    <updated>2019-01-27T11:17:38+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -29,8 +145,7 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div style="text-align: center;"&gt;
        &lt;span style="font-size: 12px;"&gt;Source Attribution: &lt;/span&gt;
        &lt;a style="font-size: 12px;" href="http://www.parlament.ch/"&gt;&lt;a href="http://www.parlament.ch/"&gt;http://www.parlament.ch/&lt;/a&gt;&lt;/a&gt;
@@ -619,6 +734,14 @@
       &lt;div&gt;
         The source code can be found here:
        &lt;span style="font-size: 18px;"&gt; &lt;a style="font-size: 18px;" href="https://github.com/talfco/clb-sentiment"&gt;&lt;a href="https://github.com/talfco/clb-sentiment"&gt;https://github.com/talfco/clb-sentiment&lt;/a&gt;&lt;/a&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
@@ -8113,38 +8236,6 @@
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>An Easy To Understand Introduction to Classification Algorithms</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html"/>
-    <id>https://dev.cloudburo.net/2017/03/27/an-easy-to-understand-introduction-to-classification-algorithms.html</id>
-    <published>2017-03-27T05:38:50+00:00</published>
-    <updated>2019-01-13T23:26:08+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-       &lt;div&gt;
-        &lt;p&gt;The Lead Data Scientist at Nielsen published an excellent kickstart article about classification algorithms.&lt;/p&gt;
-        &lt;p&gt;Classification algorithms are one of the first thing you learn about data science.&lt;/p&gt;
-        &lt;p&gt;Instead of using the common lecturer example of email spam filters  to explain the algorithms, Bryan is using a more nerdy and magical example. As he states:&lt;/p&gt;
-        &lt;p&gt;&lt;i&gt;That&amp;rsquo;s right folks! Today we&amp;rsquo;ll be talking about the Sorting Hat from the Harry Potter universe. We&amp;rsquo;ll pull some Harry Potter data from the web, analyze it, and then build a classifier to sort characters into the different houses. Should be fun!&lt;/i&gt;&lt;br&gt;&lt;/p&gt;
-        &lt;p&gt;&lt;/p&gt;
-        &lt;p&gt;The sample program is based on Python and you can find the whole tutorial here.&lt;/p&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://blog.yhat.com/posts/harry-potter-classification.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
