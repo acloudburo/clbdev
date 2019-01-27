@@ -130,7 +130,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/01/27/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html"/>
     <id>https://dev.cloudburo.net/2019/01/27/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html</id>
     <published>2019-01-27T01:11:41+00:00</published>
-    <updated>2019-01-27T11:17:38+00:00</updated>
+    <updated>2019-01-27T19:19:04+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -145,7 +145,8 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
       &lt;div style="text-align: center;"&gt;
        &lt;span style="font-size: 12px;"&gt;Source Attribution: &lt;/span&gt;
        &lt;a style="font-size: 12px;" href="http://www.parlament.ch/"&gt;&lt;a href="http://www.parlament.ch/"&gt;http://www.parlament.ch/&lt;/a&gt;&lt;/a&gt;
@@ -683,6 +684,70 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;img src="https://www.evernote.com/shard/s74/res/0707e5ff-9888-4ea2-9fe0-0d51d332d13c/Capto_Capture%202019-01-26_04-44-17_AM.png" width="710"&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font face="Helvetica Neue" style="font-size: 18px;"&gt;Account Creation at Plotly&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font face="Helvetica Neue" style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 14px;"&gt;The first time you run the program, you will be asked to sign up and create an account at plotly.&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 12px; color: rgb(0, 0, 0); font-family: Helvetica; --inversion-type-color: simple;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/ccae60b5b1cde3343e95e176b30eb6f4.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: normal; font-weight: normal; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); -webkit-text-stroke-color: rgb(0, 0, 0);"&gt; &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: normal; font-weight: normal; font-size: 12px; font-family: Times; color: rgb(0, 0, 0); -webkit-text-stroke-color: rgb(0, 0, 0);"&gt; &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font face="Helvetica Neue" style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 14px;"&gt;Having created an account you will have to retrieve the access token (by creating a new one if necessary)&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/5443e5d3211e19599f40d6d52280335a.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font face="Helvetica Neue" style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font face="Helvetica Neue" style="font-size: 14px;"&gt;And store it in the file &lt;/font&gt;
+       &lt;font style="font-size: 14px;" face="Courier New"&gt;.credentials &lt;/font&gt;
+       &lt;font face="Helvetica Neue" style="font-size: 14px;"&gt;in the home directory in the folder &lt;/font&gt;
+       &lt;font style="font-size: 14px;" face="Courier New"&gt;.plotly&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font face="Helvetica Neue" style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/99a49df2864cd4755f9f655f0f97c732.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
         That’s it for today as an exercise try to add the following code sequence.
