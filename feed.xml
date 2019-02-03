@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html"/>
     <id>https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html</id>
     <published>2019-02-03T15:03:07+00:00</published>
-    <updated>2019-02-03T19:25:41+00:00</updated>
+    <updated>2019-02-03T21:04:47+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -76,7 +76,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         Our first&lt;br&gt;
-       &lt;a href="https://github.com/talfco/clb-sentiment/blob/master/src/lesson1/lesson1.py"&gt;lesson1.py&lt;/a&gt;  Python program was hard coding the twitter account- and its list name directly in the program itself.
+       &lt;a href="https://github.com/talfco/clb-sentiment/blob/master/src/lesson1/lesson1.py"&gt;lesson1.py&lt;/a&gt; Python program was hard coding the twitter account- and its list name directly in the program itself.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -183,11 +183,12 @@
        &lt;li&gt;
         &lt;div&gt;
           will be stored as a private instance variable
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;country_code&lt;/span&gt;  and used
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;country_code&lt;/span&gt; 
+         &lt;font face="Helvetica Neue"&gt; and used&lt;/font&gt;
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-           to create the yaml configuration
+         &lt;font face="Helvetica Neue"&gt; to create the yaml configuration &lt;/font&gt;
          &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;file_name&lt;/span&gt;, 
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
@@ -212,7 +213,8 @@
       &lt;/div&gt;
       &lt;div&gt;
         So now we are ready to generalize our
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;get_government_members&lt;/span&gt; method by reading the twitter account-  and list-name out of the configuration data, which is stored in
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;get_government_members&lt;/span&gt;
+       &lt;font face="Helvetica Neue"&gt; method by reading the twitter account-  and list-name out of the configuration data, which is stored in&lt;/font&gt;
        &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; self.&lt;/em&gt;cfg &lt;/span&gt;instance variable.
       &lt;/div&gt;
       &lt;div&gt;
@@ -265,7 +267,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         We will do this step in a dedicate helper method, which will be called
-       &lt;span style="font-family: &amp;quot;courier new&amp;quot;, courier, monospace;"&gt;&lt;em&gt;extract_columns&lt;/span&gt;. We defined it as a private method (
+       &lt;span style="font-family: &amp;quot;courier new&amp;quot;, courier, monospace;"&gt;&lt;em&gt;extract_columns&lt;/span&gt;.  We defined it as a private method (
        &lt;span style="font-family: &amp;quot;courier new&amp;quot;, courier, monospace;"&gt;&lt;/em&gt;&lt;/span&gt; prefix) because it shouldn’t be used by anybody outside of this class.
       &lt;/div&gt;
       &lt;div&gt;
