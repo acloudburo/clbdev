@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Python Tutorial: Government Social Media Analyser Class Build Out</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (17)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (1)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (10)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (2)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (13)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (4)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (4)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (5)</a>
+            <a href="/tags/python.html" class="label label-default">python (3)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (18)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tut01.html" class="label label-default">tut01 (3)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (8)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2019.html" class="label label-primary">2019 (5)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html">Python Tutorial: Government Social Media Analyser Class Build Out</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  03.Feb 2019 | Tags <a class="label label-primary" href="/tags/tutorial.html">tutorial</a> <a class="label label-primary" href="/tags/python.html">python</a> <a class="label label-primary" href="/tags/tut01.html">tut01</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                   <br>
+                  </div>
+                  <div>
+                    In this exercise, we will convert our initial program (
+                   <a href="https://dev.cloudburo.net/2019/01/27/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html">refer to the first tutorial)</a> to a general purpose program for fetching twitter information of parliaments member of a country. This means we do the first iteration of generalization and refactoring of our code. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 24px;">Generalization Step 1</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Our ambition is to have a program which can analyze Twitter accounts of politicians of any country not only Switzerland. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    For example, there is a Twitter Government account  (
+                   <a href="https://twitter.com/TwitterGov?lang=de"><a href="https://twitter.com/TwitterGov">https://twitter.com/TwitterGov</a></a>) which have various Twitter lists of the government of multiple countries.<br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/9e098d5955d31e02f9bf7eefdaaa2ef0.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So our program should be generalized in a way that we can use it (i.e., configuring) for other countries as well.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 18px; font-family: &quot;Helvetica Neue&quot;;">The Yaml Configuration File</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Our first<br>
+                   <a href="https://github.com/talfco/clb-sentiment/blob/master/src/lesson1/lesson1.py">lesson1.py</a> Python program was hard coding the twitter account- and its list name directly in the program itself.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/cea2c17a0e7ee33fbbe288375e8d558c.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Now what we want to do is to read this information out from a configuration file, similar to what we have done for passing in the Twitter API secrets in the first lesson (
+                   <a href="https://dev.cloudburo.net/2019/01/27/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html">refer to the tutorial</a>)
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    This information isn’t any secret one, so we create a new public yaml configuration file, which will be used for any
+                   <span style="text-decoration: underline;">country-configuration</span> parameters of our program. Having all these parameters offloaded to a configuration file is a crucial point when you generalize programs. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As you can see in the screenshot below, we name the file
+                   <span style="font-family: &quot;Courier New&quot;;"> config-CH.yaml. </span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/5372f3b0586a1857ea27e1c1ebe6f239.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So why to use the
+                   <span style="font-family: &quot;Courier New&quot;;">CH</span> post-fix? Well the
+                   <span style="font-family: &quot;Courier New&quot;;">CH</span> postfix is the Alpha-2 code of the international
+                   <a href="https://en.wikipedia.org/wiki/ISO_3166-1"> ISO-Country Code</a> standard for Switzerland. Code values (or reference values) are the ingredient of any program to encode information. Best practice is to use standardized one if possible (don’t reinvent the wheel here). I.e., for countries we decided to use Alpha-2 code of the standard  ISO 3166-1. As you will see later for encoding languages, we take a similar approach. ISO, by the way, means “
+                   <a href="https://en.wikipedia.org/wiki/International_Organization_for_Standardization">International Organization for Standardization</a>.”
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/1726e1072e39b595649e35019647e5c9.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 24px;">Refactoring and Enhancing</span>
+                  </div>
+                  <div>
+                   <span style="font-size: 18px;">The GovernmentSocialMediaAnalyzer Class</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    For our generalized program, we do a first
+                   <a href="https://en.wikipedia.org/wiki/Code_refactoring">refactoring</a> step. Code refactoring is the process of restructuring existing computer code without changing its external behavior. So we rephrase our class in 
+                   <span style="font-family: &quot;Courier New&quot;;">sample1.py</span> to 
+                   <span style="font-family: &quot;Courier New&quot;;">GovernmentSocialMediaAnalyzer </span>and enhance its class constructor
+                   <span style="font-family: &quot;Courier New&quot;;"><strong>init</strong></span> method by a parameter
+                   <span style="font-family: &quot;Courier New&quot;;">country_code</span>. We took a design decision, that. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;"><span style="font-style: italic; text-decoration: underline;">Design Decision 1</span>: An instance of our class GovernmentSocialMediaAnalyzer will encapsulate the data and behavior of a dedicated country.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The code enhancements are shown below:
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      The passed in country_code parameter (e.g.,
+                     <span style="font-family: &quot;Courier New&quot;;">CH</span>) during class creation
+                    </div></li>
+                   <li>
+                    <div>
+                      will be stored as a private instance variable
+                     <span style="font-family: &quot;Courier New&quot;;"><strong>country_code</span>  and used
+                    </div></li>
+                   <li>
+                    <div>
+                       to create the yaml configuration
+                     <span style="font-family: &quot;Courier New&quot;;">file_name</span>, 
+                    </div></li>
+                   <li>
+                    <div>
+                      from where we will load the configuration data and store the data in the private variable
+                     <span style="font-family: &quot;Courier New&quot;;"></strong>cfg</span>
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/ff137148f0b721db33a4ec2b2dcb1d3f.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So now we are ready to generalize our
+                   <span style="font-family: &quot;Courier New&quot;;"><strong>get_government_members</span> method by reading the twitter account-  and list-name out of the configuration data, which is stored in
+                   <span style="font-family: &quot;Courier New&quot;;"> self.</strong>cfg </span>instance variable.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/e5c9bbded85336ef03eef198d16e57c9.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Our program is now ready for any country. I.e. we could use it for any government list of the 
+                   <a href="https://twitter.com/TwitterGov?lang=de"><a href="https://twitter.com/TwitterGov">https://twitter.com/TwitterGov</a></a>. store the relevant information in a corresponding configuration file, i.e.
+                   <span style="font-family: &quot;Courier New&quot;;">config-US.yaml </span>(for a US government list) and retrieve the account information.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 18px;">Enhance the <strong>init</strong> method</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    But le’ts finalize first the refactoring and enhancement of our
+                   <span style="font-family: &quot;Courier New&quot;;"><strong>init</strong></span> class. We take another design decision
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-style: italic;"><span style="font-style: italic; text-decoration: underline;">Design Decision 2</span>: The <strong>init</strong> method should encapsulate the loading of all Twitter accounts of the list from Twitter, as well as the conversion to the relevant attributes in attributes column (= array of Strings). The column should be made available as private class instance variables</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    That means when we create a
+                   <span style="font-family: &quot;Courier New&quot;;">GovernmentAnalyzer</span> instance for a dedicated country, the initialization phase of the case will include the all the necessary steps to get the data from Twitter into our intern data structures (as represented as columns)
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    We will do this step in a dedicate helper method, which will be called
+                   <span style="font-family: &quot;courier new&quot;, courier, monospace;"><strong>extract_columns</span>. We defined it as a private method (
+                   <span style="font-family: &quot;courier new&quot;, courier, monospace;"></strong></span> prefix) because it shouldn’t be used by anybody outside of this class.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The refactored class out of lesson 1 now looks like this. We made the column attributes more descriptive and defined them as class instance variables so that the columns can be used by any method within our class.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/c61d38d630b206ea5cc99011bab2d7d7.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So we have finalized and refactored the class instance creation class
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      30-38: code block to load the country-specific configuration file
+                    </div></li>
+                   <li>
+                    <div>
+                      51-64: code block to read the twitter security token and keys from the secret configuration file and then connect to the Twitter API
+                    </div></li>
+                   <li>
+                    <div>
+                      66: call to the
+                     <span style="font-family: &quot;Courier New&quot;;">__extract_columns </span>method to retrieve the data and convert it into columns
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/e43ff305b04af2d0bb4b7d538ca59f62.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 24px;">Generalization Step 2</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Our
+                   <span style="font-family: &quot;Courier New&quot;;"> check_for_party algorithm</span> of tutorial one was hard coding the party abbreviations in the code itself.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/a43176be0f63f175365fa4c4136a552c.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Well, let’s refactor the code and move the party information to our configuration file. Thanks to the flexibility of the YAML file, this can be done quite easily.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-style: italic; text-decoration: underline;">Design Decision 3</span>
+                   <span style="font-style: italic;">: We want to use several party abbreviations (potentially in multiple languages) and keywords (e.g. the parties Twitter screen-name) per party to try to identify the party ownership of a politician.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So our configuration
+                   <span style="font-family: &quot;Courier New&quot;;"> config-CH.yaml</span> will require configuration information per party. A list of parties and their abbreviations can be found on
+                   <a href="https://www.parlament.ch/de/organe/fraktionen/im-parlament-vertretene-parteien">parlament.ch </a> in four languages for Switzerland. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    In YAML you can easily build up a list of configuration items (e.g. a party configuration item). List members are denoted by a leading hyphen (-) with one member per one to multiple lines, or enclosed in square brackets ([ ]) and separated by comma space(, ).
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    In our YAML file
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      a party list member is denoted by the hyphen notation. A party-list member has a
+                     <span style="font-family: &quot;Courier New&quot;;">twitter</span> and
+                     <span style="font-family: &quot;Courier New&quot;;">abbrs</span> attribute. The
+                     <span style="font-family: &quot;Courier New&quot;;">abbrs</span> (abbreviations) attribute itself is a list of string denoted by the square bracket notation.
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/df78821b6fd007be77881454be2a6c0a.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    If we check the loaded configuration file (stored in the
+                   <span style="font-family: &quot;Courier New&quot;;"> self.__cfg </span>variable)  in the Python debugger, it should be clear how the data structure is looking like using Python lists and dictionaries.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/d751fc1228e0c91c6d2c2cb791af8703.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                    A side-remark to the
+                   <span style="font-family: &quot;Courier New&quot;;">abbrs</span> attribute, we introduced their a list of party abbreviations, i.e. having multiple national languages means also that a party has multiple abbreviations (e.g. for German and French).  In our case above “FDP” and “PLR”. And we want to check for all of them. In other countries, there may be potentially just one abbreviation, but with decision, we are future proof.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Our improved
+                   <span style="font-family: &quot;Courier New&quot;;">_<em>check_for_party</span> method nows look like follows. It will iterate over all twitter accounts and each parties configuration record and checks if the twitter account has a match in its description or screen</em>name to a party.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/1dbed834816e94088d73b5be24f4ed1f.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                     <span style="font-size: 14px;">On line 98,102 and 110 we are getting the data out of our configuration structure. </span>
+                    </div></li>
+                   <li>
+                    <div>
+                      Dependent on the attribute type, we have to iterate over the list of values (98, 102) or fetch the data directly (112)
+                    </div></li>
+                   <li>
+                    <div>
+                      If we have a match, the first abbreviation will be returned, as our code value to identify parties:
+                     <span style="font-family: &quot;Courier New&quot;;"> res = party[‘abbrs’][0]</span>
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 24px;">Fine Tuning the Algorithm</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-family: &quot;Helvetica Neue&quot;;">Let’s run the program and check the accuracy of our party assignment allocation algorithm. </span>Our first run shows, that the majority of the politician (65) don’t mention their party abbreviations or party twitter screen_name in their account description/screen_name. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/3e2264ab761a0b708446c3e322745f2d.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So let’s try to fine tune our algorithm. Let’s go through the list once again and check for other keywords which could help us to identify their party relationship. We analyze the twitter descriptions for additional keywords, which could help us to identify the party of the twitter user.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/3241a02fc08e1f14c8da1187123a3042.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/b7e215026898254eb45ded342a981edb.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    We found the following key words:
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      socialist (SP)
+                    </div></li>
+                   <li>
+                    <div>
+                      glp (GLP), 
+                    </div></li>
+                   <li>
+                    <div>
+                      Grüne  (GLP)
+                    </div></li>
+                   <li>
+                    <div>
+                      @lega  (Lega)
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    So let’s add this one to our configuration file with a new attribute: 
+                   <span style="font-family: &quot;Courier New&quot;;">keywords</span>. That’s the beauty of YAML you easily can extend with additional attributes. In our case another list attribute. As for example:
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/4e0a3d21aa4c54169def8644b15adc90.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    And we add the additional check in our check_for_party method 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/761f1ea2dd9538956c1ba483dee7a38c.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Et voila, we could identify 13 additional twitter accounts with over 20’000 followers. Still, 52 accounts can’t be mapped to a party, but for that, we have to connect another data source, which will be done in a later tutorial. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/8293bffc014cd4137794187e51ae8042.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As a final step for today, we refactor the
+                   <span style="font-family: &quot;Courier New&quot;;">create_politican_table</span> method. Mainly we standardize the file name used in plotly by using the country code in the file name. That allows us to generate tables for different countries and ensuring that they are not overwriting each other in our plotly account.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/e49d76fc5ae25fcf2c133a907749bb9a.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 24px;">Wrap Up</span>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;"><br></span>
+                  </div>
+                  <div>
+                    There we are, we have now generalized and refactored our overall application and have good foundation backed by a configuration file for a further build out. 
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    We can now instantiate a
+                   <span style="font-family: &quot;Courier New&quot;;">GovernmnetSocialMediaAnalyzer</span> for a dedicated country (supposing that we have provided the necessary configuration file)  and extract twitter relevant data into a plotly table for further processing.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/cdd1cd11fd57b44f1cbb01ad3a8208b9.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As a UML Sequence Diagram visualized, the interaction flow of our class can be represented as follows:
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/b38fc8ec510cbeebc364b260cf19ffe7.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>        </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    If you want to understand more details about UML sequence diagrams, refer to the following
+                   <a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/">tutorial</a>. It’s an excellent technique to visualize various aspects of a program.  In the above diagram, the return calls of a message are depicted in blue.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As an example: The message line to the panda package to create a data frame is depicted in red (
+                   <span style="font-family: &quot;Courier New&quot;;">createDataFrame</span>), its return message line of a 
+                   <span style="font-family: &quot;Courier New&quot;;">dataFrame</span> object in blue.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 24px;">Exercise</span>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;"><br></span>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;">Use one of the lists offered via the Government Twitter account (</span>
+                   <span style="font-size: 14px;"> </span>
+                   <a href="https://twitter.com/TwitterGov/lists/us-cabinet?lang=de"><a href="https://twitter.com/TwitterGov">https://twitter.com/TwitterGov</a></a>
+                   <span style="font-size: 14px;">), for example the list of US Cabinet members (</span>
+                   <a href="https://twitter.com/TwitterGov/lists/us-cabinet?lang=de"><a href="https://twitter.com/TwitterGov/lists/us-cabinet?lang=de">https://twitter.com/TwitterGov/lists/us-cabinet?lang=de</a></a>). 
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      Work out at corresponding yaml configuration file
+                    </div></li>
+                   <li>
+                    <div>
+                      Check out what kind of information could be used to identify the party of the politician.
+                    </div></li>
+                   <li>
+                    <div>
+                      Enhance the keywords with your findings
+                    </div></li>
+                   <li>
+                    <div>
+                      Enhance the main program with a user input question, something like “Which government do you want to analyze”. Provide a list of available configurations and then run the program with the user selection.
+                    </div></li>
+                   <li>
+                    <div>
+                      Think about the changes necessary in order to analyze multiple politicians lists per country. I.e. we want to differentiate multiple government bodies per country and have that generalized in the configuration files.
+                    </div></li>
+                  </ul>
+                  <div>
+                   <span style="font-size: 14px;"><br></span>
+                  </div>
+                  <div>
+                   <span style="font-size: 24px;">Source Code</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    The source code can be found here:
+                   <span style="font-size: 18px;"> </span>
+                   <a style="font-size: 18px;" href="https://github.com/talfco/clb-sentiment"><a href="https://github.com/talfco/clb-sentiment">https://github.com/talfco/clb-sentiment</a></a>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 11px; font-style: italic;">This blog entry was fully produced within Evernote and published using the </span>
+                   <a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net/">Cloudburo Publishing Bot</a>
+                   <span style="font-size: 11px; font-style: italic;">.</span>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/Cloudburonet-897759390318816/" class="btn btn-facebook">
+                <i class="fa fa-facebook"></i></a><a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts" class="btn btn-google-plus">
+                <i class="fa fa-google-plus"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2019 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>

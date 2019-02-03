@@ -5,10 +5,735 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-01-27T11:17:41+00:00</updated>
+  <updated>2019-02-03T15:03:07+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Python Tutorial: Government Social Media Analyser Class Build Out</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html"/>
+    <id>https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html</id>
+    <published>2019-02-03T15:03:07+00:00</published>
+    <updated>2019-02-03T15:04:02+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In this exercise, we will convert our initial program (
+       &lt;a href="https://dev.cloudburo.net/2019/01/27/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html"&gt;refer to the first tutorial)&lt;/a&gt; to a general purpose program for fetching twitter information of parliaments member of a country. This means we do the first iteration of generalization and refactoring of our code. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Generalization Step 1&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Our ambition is to have a program which can analyze Twitter accounts of politicians of any country not only Switzerland. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        For example, there is a Twitter Government account  (
+       &lt;a href="https://twitter.com/TwitterGov?lang=de"&gt;&lt;a href="https://twitter.com/TwitterGov"&gt;https://twitter.com/TwitterGov&lt;/a&gt;&lt;/a&gt;) which have various Twitter lists of the government of multiple countries.&lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/9e098d5955d31e02f9bf7eefdaaa2ef0.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So our program should be generalized in a way that we can use it (i.e., configuring) for other countries as well.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px; font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;The Yaml Configuration File&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Our first&lt;br&gt;
+       &lt;a href="https://github.com/talfco/clb-sentiment/blob/master/src/lesson1/lesson1.py"&gt;lesson1.py&lt;/a&gt; Python program was hard coding the twitter account- and its list name directly in the program itself.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/cea2c17a0e7ee33fbbe288375e8d558c.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Now what we want to do is to read this information out from a configuration file, similar to what we have done for passing in the Twitter API secrets in the first lesson (
+       &lt;a href="https://dev.cloudburo.net/2019/01/27/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter.html"&gt;refer to the tutorial&lt;/a&gt;)
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        This information isn’t any secret one, so we create a new public yaml configuration file, which will be used for any
+       &lt;span style="text-decoration: underline;"&gt;country-configuration&lt;/span&gt; parameters of our program. Having all these parameters offloaded to a configuration file is a crucial point when you generalize programs. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As you can see in the screenshot below, we name the file
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; config-CH.yaml. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/5372f3b0586a1857ea27e1c1ebe6f239.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So why to use the
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;CH&lt;/span&gt; post-fix? Well the
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;CH&lt;/span&gt; postfix is the Alpha-2 code of the international
+       &lt;a href="https://en.wikipedia.org/wiki/ISO_3166-1"&gt; ISO-Country Code&lt;/a&gt; standard for Switzerland. Code values (or reference values) are the ingredient of any program to encode information. Best practice is to use standardized one if possible (don’t reinvent the wheel here). I.e., for countries we decided to use Alpha-2 code of the standard  ISO 3166-1. As you will see later for encoding languages, we take a similar approach. ISO, by the way, means “
+       &lt;a href="https://en.wikipedia.org/wiki/International_Organization_for_Standardization"&gt;International Organization for Standardization&lt;/a&gt;.”
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/1726e1072e39b595649e35019647e5c9.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Refactoring and Enhancing&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;The GovernmentSocialMediaAnalyzer Class&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        For our generalized program, we do a first
+       &lt;a href="https://en.wikipedia.org/wiki/Code_refactoring"&gt;refactoring&lt;/a&gt; step. Code refactoring is the process of restructuring existing computer code without changing its external behavior. So we rephrase our class in 
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;sample1.py&lt;/span&gt; to 
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;GovernmentSocialMediaAnalyzer &lt;/span&gt;and enhance its class constructor
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;strong&gt;init&lt;/strong&gt;&lt;/span&gt; method by a parameter
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;country_code&lt;/span&gt;. We took a design decision, that. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&lt;span style="font-style: italic; text-decoration: underline;"&gt;Design Decision 1&lt;/span&gt;: An instance of our class GovernmentSocialMediaAnalyzer will encapsulate the data and behavior of a dedicated country.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The code enhancements are shown below:
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          The passed in country_code parameter (e.g.,
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;CH&lt;/span&gt;) during class creation
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          will be stored as a private instance variable
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;strong&gt;country_code&lt;/span&gt;  and used
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+           to create the yaml configuration
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;file_name&lt;/span&gt;, 
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          from where we will load the configuration data and store the data in the private variable
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;/strong&gt;cfg&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/ff137148f0b721db33a4ec2b2dcb1d3f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So now we are ready to generalize our
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;strong&gt;get_government_members&lt;/span&gt; method by reading the twitter account-  and list-name out of the configuration data, which is stored in
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; self.&lt;/strong&gt;cfg &lt;/span&gt;instance variable.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e5c9bbded85336ef03eef198d16e57c9.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Our program is now ready for any country. I.e. we could use it for any government list of the 
+       &lt;a href="https://twitter.com/TwitterGov?lang=de"&gt;&lt;a href="https://twitter.com/TwitterGov"&gt;https://twitter.com/TwitterGov&lt;/a&gt;&lt;/a&gt;. store the relevant information in a corresponding configuration file, i.e.
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;config-US.yaml &lt;/span&gt;(for a US government list) and retrieve the account information.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;Enhance the &lt;strong&gt;init&lt;/strong&gt; method&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        But le’ts finalize first the refactoring and enhancement of our
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;strong&gt;init&lt;/strong&gt;&lt;/span&gt; class. We take another design decision
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&lt;span style="font-style: italic; text-decoration: underline;"&gt;Design Decision 2&lt;/span&gt;: The &lt;strong&gt;init&lt;/strong&gt; method should encapsulate the loading of all Twitter accounts of the list from Twitter, as well as the conversion to the relevant attributes in attributes column (= array of Strings). The column should be made available as private class instance variables&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        That means when we create a
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;GovernmentAnalyzer&lt;/span&gt; instance for a dedicated country, the initialization phase of the case will include the all the necessary steps to get the data from Twitter into our intern data structures (as represented as columns)
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        We will do this step in a dedicate helper method, which will be called
+       &lt;span style="font-family: &amp;quot;courier new&amp;quot;, courier, monospace;"&gt;&lt;strong&gt;extract_columns&lt;/span&gt;. We defined it as a private method (
+       &lt;span style="font-family: &amp;quot;courier new&amp;quot;, courier, monospace;"&gt;&lt;/strong&gt;&lt;/span&gt; prefix) because it shouldn’t be used by anybody outside of this class.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The refactored class out of lesson 1 now looks like this. We made the column attributes more descriptive and defined them as class instance variables so that the columns can be used by any method within our class.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/c61d38d630b206ea5cc99011bab2d7d7.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So we have finalized and refactored the class instance creation class
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          30-38: code block to load the country-specific configuration file
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          51-64: code block to read the twitter security token and keys from the secret configuration file and then connect to the Twitter API
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          66: call to the
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;__extract_columns &lt;/span&gt;method to retrieve the data and convert it into columns
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e43ff305b04af2d0bb4b7d538ca59f62.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Generalization Step 2&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Our
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; check_for_party algorithm&lt;/span&gt; of tutorial one was hard coding the party abbreviations in the code itself.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/a43176be0f63f175365fa4c4136a552c.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Well, let’s refactor the code and move the party information to our configuration file. Thanks to the flexibility of the YAML file, this can be done quite easily.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic; text-decoration: underline;"&gt;Design Decision 3&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;: We want to use several party abbreviations (potentially in multiple languages) and keywords (e.g. the parties Twitter screen-name) per party to try to identify the party ownership of a politician.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So our configuration
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; config-CH.yaml&lt;/span&gt; will require configuration information per party. A list of parties and their abbreviations can be found on
+       &lt;a href="https://www.parlament.ch/de/organe/fraktionen/im-parlament-vertretene-parteien"&gt;parlament.ch &lt;/a&gt; in four languages for Switzerland. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In YAML you can easily build up a list of configuration items (e.g. a party configuration item). List members are denoted by a leading hyphen (-) with one member per one to multiple lines, or enclosed in square brackets ([ ]) and separated by comma space(, ).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In our YAML file
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          a party list member is denoted by the hyphen notation. A party-list member has a
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;twitter&lt;/span&gt; and
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;abbrs&lt;/span&gt; attribute. The
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;abbrs&lt;/span&gt; (abbreviations) attribute itself is a list of string denoted by the square bracket notation.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/df78821b6fd007be77881454be2a6c0a.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        If we check the loaded configuration file (stored in the
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; self.__cfg &lt;/span&gt;variable)  in the Python debugger, it should be clear how the data structure is looking like using Python lists and dictionaries.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/d751fc1228e0c91c6d2c2cb791af8703.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A side-remark to the
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;abbrs&lt;/span&gt; attribute, we introduced their a list of party abbreviations, i.e. having multiple national languages means also that a party has multiple abbreviations (e.g. for German and French).  In our case above “FDP” and “PLR”. And we want to check for all of them. In other countries, there may be potentially just one abbreviation, but with decision, we are future proof.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Our improved
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;_&lt;em&gt;check_for_party&lt;/span&gt; method nows look like follows. It will iterate over all twitter accounts and each parties configuration record and checks if the twitter account has a match in its description or screen&lt;/em&gt;name to a party.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/1dbed834816e94088d73b5be24f4ed1f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 14px;"&gt;On line 98,102 and 110 we are getting the data out of our configuration structure. &lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Dependent on the attribute type, we have to iterate over the list of values (98, 102) or fetch the data directly (112)
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          If we have a match, the first abbreviation will be returned, as our code value to identify parties:
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; res = party[‘abbrs’][0]&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Fine Tuning the Algorithm&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;Let’s run the program and check the accuracy of our party assignment allocation algorithm. &lt;/span&gt;Our first run shows, that the majority of the politician (65) don’t mention their party abbreviations or party twitter screen_name in their account description/screen_name. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/3e2264ab761a0b708446c3e322745f2d.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So let’s try to fine tune our algorithm. Let’s go through the list once again and check for other keywords which could help us to identify their party relationship. We analyze the twitter descriptions for additional keywords, which could help us to identify the party of the twitter user.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/3241a02fc08e1f14c8da1187123a3042.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/b7e215026898254eb45ded342a981edb.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        We found the following key words:
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          socialist (SP)
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          glp (GLP), 
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Grüne  (GLP)
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          @lega  (Lega)
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        So let’s add this one to our configuration file with a new attribute: 
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;keywords&lt;/span&gt;. That’s the beauty of YAML you easily can extend with additional attributes. In our case another list attribute. As for example:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/4e0a3d21aa4c54169def8644b15adc90.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        And we add the additional check in our check_for_party method 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/761f1ea2dd9538956c1ba483dee7a38c.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Et voila, we could identify 13 additional twitter accounts with over 20’000 followers. Still, 52 accounts can’t be mapped to a party, but for that, we have to connect another data source, which will be done in a later tutorial. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/8293bffc014cd4137794187e51ae8042.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As a final step for today, we refactor the
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;create_politican_table&lt;/span&gt; method. Mainly we standardize the file name used in plotly by using the country code in the file name. That allows us to generate tables for different countries and ensuring that they are not overwriting each other in our plotly account.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e49d76fc5ae25fcf2c133a907749bb9a.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Wrap Up&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        There we are, we have now generalized and refactored our overall application and have good foundation backed by a configuration file for a further build out. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        We can now instantiate a
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;GovernmnetSocialMediaAnalyzer&lt;/span&gt; for a dedicated country (supposing that we have provided the necessary configuration file)  and extract twitter relevant data into a plotly table for further processing.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/cdd1cd11fd57b44f1cbb01ad3a8208b9.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As a UML Sequence Diagram visualized, the interaction flow of our class can be represented as follows:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/b38fc8ec510cbeebc364b260cf19ffe7.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        If you want to understand more details about UML sequence diagrams, refer to the following
+       &lt;a href="https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/"&gt;tutorial&lt;/a&gt;. It’s an excellent technique to visualize various aspects of a program.  In the above diagram, the return calls of a message are depicted in blue.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As an example: The message line to the panda package to create a data frame is depicted in red (
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;createDataFrame&lt;/span&gt;), its return message line of a 
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;dataFrame&lt;/span&gt; object in blue.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Exercise&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;Use one of the lists offered via the Government Twitter account (&lt;/span&gt;
+       &lt;span style="font-size: 14px;"&gt; &lt;/span&gt;
+       &lt;a href="https://twitter.com/TwitterGov/lists/us-cabinet?lang=de"&gt;&lt;a href="https://twitter.com/TwitterGov"&gt;https://twitter.com/TwitterGov&lt;/a&gt;&lt;/a&gt;
+       &lt;span style="font-size: 14px;"&gt;), for example the list of US Cabinet members (&lt;/span&gt;
+       &lt;a href="https://twitter.com/TwitterGov/lists/us-cabinet?lang=de"&gt;&lt;a href="https://twitter.com/TwitterGov/lists/us-cabinet?lang=de"&gt;https://twitter.com/TwitterGov/lists/us-cabinet?lang=de&lt;/a&gt;&lt;/a&gt;). 
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Work out at corresponding yaml configuration file
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Check out what kind of information could be used to identify the party of the politician.
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Enhance the keywords with your findings
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Enhance the main program with a user input question, something like “Which government do you want to analyze”. Provide a list of available configurations and then run the program with the user selection.
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Think about the changes necessary in order to analyze multiple politicians lists per country. I.e. we want to differentiate multiple government bodies per country and have that generalized in the configuration files.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Source Code&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The source code can be found here:
+       &lt;span style="font-size: 18px;"&gt; &lt;/span&gt;
+       &lt;a style="font-size: 18px;" href="https://github.com/talfco/clb-sentiment"&gt;&lt;a href="https://github.com/talfco/clb-sentiment"&gt;https://github.com/talfco/clb-sentiment&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net/"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Python Tutorial Exercise 1: Introduce check_for_party</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/01/27/python-tutorial-exercise-1-introduce-check_for_party.html"/>
@@ -8242,56 +8967,6 @@
   &lt;/div&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>A Classification Algorithms Video Introduction for Beginners</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html"/>
-    <id>https://dev.cloudburo.net/2017/03/28/a-classification-algorithms-video-introduction-for-beginners.html</id>
-    <published>2017-03-28T05:25:38+00:00</published>
-    <updated>2019-01-13T23:26:08+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Brian Lange gave at the PyData Chicago 2016 an Introduction to Classification Algorithms geared to people with a weak background in math/stats. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div class="responsive-video"&gt;
-        &lt;iframe src="https://www.youtube.com/embed/y8J6ggsLSfw?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The slide set can be found at
-       &lt;a href="https://www.slideshare.net/brianjlange/its-not-magic-explaining-classification-algorithms-pydata-chicago-2016-edition"&gt;Slideshare&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
