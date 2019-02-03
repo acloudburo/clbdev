@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html"/>
     <id>https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html</id>
     <published>2019-02-03T15:03:07+00:00</published>
-    <updated>2019-02-03T15:04:02+00:00</updated>
+    <updated>2019-02-03T16:13:22+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -462,10 +462,87 @@
        &lt;span style="font-size: 24px;"&gt;Fine Tuning the Algorithm&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
+       &lt;font face="Helvetica Neue" style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;Introducing a Second Plotly Table:  Grouping Accounts by Party&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;In order to fine tune our algorithm, we have to check its effectiveness on finding a party to twitter account. For that we have to introduce a second table, which will group our twitter accounts according their party allocation.&lt;/span&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;Let’s run the program and check the accuracy of our party assignment allocation algorithm. &lt;/span&gt;Our first run shows, that the majority of the politician (65) don’t mention their party abbreviations or party twitter screen_name in their account description/screen_name. 
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;Obviously the powerful panda package will provide us the necessary tooling. You can refer to the &lt;a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html"&gt;following panda API description&lt;/a&gt; with all the details how to group data.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/9f84e9a3c76cd2e64df1af12140f5784.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Some comments to the code fragment:
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          151-155: We are creating here a panda_data record consisting of 4 columns. The&lt;br&gt;
+         &lt;font face="Courier New"&gt;&lt;strong&gt;col_party&lt;/font&gt;,
+         &lt;font face="Courier New"&gt;&lt;/strong&gt;col_followers_count&lt;/font&gt;,
+         &lt;font face="Courier New"&gt;&lt;strong&gt;col_friends_count. &lt;/font&gt;
+         &lt;font style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;The &lt;/font&gt;
+         &lt;font face="Courier New"&gt;&lt;/strong&gt;col_party&lt;/font&gt;
+         &lt;font style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt; is used twice, the first column is used for labelling each row (as you see on line 158 we do the grouping by party) and in the second column we do sum up of the rows which have the same party,&lt;/font&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          157: We create a first panda data frame of this table with the four columns
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          158: Here we transform the created data frame by using the
+         &lt;font face="Courier New"&gt;groupby&lt;/font&gt; function. We also define the aggregation
+         &lt;font face="Courier New"&gt;agg&lt;/font&gt; operations for the 2nd, 3rd and 4th row. 
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          162-166: The basic stuff to create a nice plotly table.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;Let’s run the program and check the accuracy of our party assignment allocation algorithm. As a result of the program  execution you will now have to tables in your plotly account (also some grid tables will be created, which are not relevant at the moment).&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/3ae58b05798604e630ec703efc6e955d.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Our first run shows, that the majority of the politician (65) don’t mention their party abbreviations or party twitter screen_name in their account description/screen_name. 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -482,7 +559,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        So let’s try to fine tune our algorithm. Let’s go through the list once again and check for other keywords which could help us to identify their party relationship. We analyze the twitter descriptions for additional keywords, which could help us to identify the party of the twitter user.
+        So let’s try to fine tune our algorithm. Let’s go through the list once again and check for other keywords which could help us to identify their party relationship. 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -624,12 +701,11 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/cdd1cd11fd57b44f1cbb01ad3a8208b9.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/582a44eaa64cd90fa8d7a2e1f29cfc53.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
@@ -641,7 +717,7 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/b38fc8ec510cbeebc364b260cf19ffe7.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/91796177dcf970c204df0b690313323b.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;

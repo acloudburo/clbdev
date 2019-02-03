@@ -559,10 +559,87 @@
                    <span style="font-size: 24px;">Fine Tuning the Algorithm</span>
                   </div>
                   <div>
+                   <font face="Helvetica Neue" style="font-size: 14px;"><br></font>
+                  </div>
+                  <div>
+                   <font style="font-size: 18px;">Introducing a Second Plotly Table:  Grouping Accounts by Party</font>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;"><br></span>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;">In order to fine tune our algorithm, we have to check its effectiveness on finding a party to twitter account. For that we have to introduce a second table, which will group our twitter accounts according their party allocation.</span>
                    <br>
                   </div>
                   <div>
-                   <span style="font-family: &quot;Helvetica Neue&quot;;">Let’s run the program and check the accuracy of our party assignment allocation algorithm. </span>Our first run shows, that the majority of the politician (65) don’t mention their party abbreviations or party twitter screen_name in their account description/screen_name. 
+                   <span style="font-size: 14px;"><br></span>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;">Obviously the powerful panda package will provide us the necessary tooling. You can refer to the <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html">following panda API description</a> with all the details how to group data.</span>
+                  </div>
+                  <div>
+                   <span style="font-size: 14px;"><br></span>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/9f84e9a3c76cd2e64df1af12140f5784.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>        </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    Some comments to the code fragment:
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      151-155: We are creating here a panda_data record consisting of 4 columns. The<br>
+                     <font face="Courier New"><strong>col_party</font>,
+                     <font face="Courier New"></strong>col_followers_count</font>,
+                     <font face="Courier New"><strong>col_friends_count. </font>
+                     <font style="font-family: &quot;Helvetica Neue&quot;;">The </font>
+                     <font face="Courier New"></strong>col_party</font>
+                     <font style="font-family: &quot;Helvetica Neue&quot;;"> is used twice, the first column is used for labelling each row (as you see on line 158 we do the grouping by party) and in the second column we do sum up of the rows which have the same party,</font>
+                    </div></li>
+                   <li>
+                    <div>
+                      157: We create a first panda data frame of this table with the four columns
+                    </div></li>
+                   <li>
+                    <div>
+                      158: Here we transform the created data frame by using the
+                     <font face="Courier New">groupby</font> function. We also define the aggregation
+                     <font face="Courier New">agg</font> operations for the 2nd, 3rd and 4th row. 
+                    </div></li>
+                   <li>
+                    <div>
+                      162-166: The basic stuff to create a nice plotly table.
+                    </div></li>
+                  </ul>
+                  <div>
+                   <span style="font-family: &quot;Helvetica Neue&quot;;"><br></span>
+                  </div>
+                  <div>
+                   <span style="font-family: &quot;Helvetica Neue&quot;;">Let’s run the program and check the accuracy of our party assignment allocation algorithm. As a result of the program  execution you will now have to tables in your plotly account (also some grid tables will be created, which are not relevant at the moment).</span>
+                  </div>
+                  <div>
+                   <span style="font-family: &quot;Helvetica Neue&quot;;"><br></span>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/3ae58b05798604e630ec703efc6e955d.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>        </div>
+                  <div>
+                   <span style="font-family: &quot;Helvetica Neue&quot;;"><br></span>
+                  </div>
+                  <div>
+                    Our first run shows, that the majority of the politician (65) don’t mention their party abbreviations or party twitter screen_name in their account description/screen_name. 
                   </div>
                   <div>
                    <br>
@@ -579,7 +656,7 @@
                    <br>
                   </div>
                   <div>
-                    So let’s try to fine tune our algorithm. Let’s go through the list once again and check for other keywords which could help us to identify their party relationship. We analyze the twitter descriptions for additional keywords, which could help us to identify the party of the twitter user.
+                    So let’s try to fine tune our algorithm. Let’s go through the list once again and check for other keywords which could help us to identify their party relationship. 
                   </div>
                   <div>
                    <br>
@@ -721,12 +798,11 @@
                   </div>
                   <div></p>
                 
-                <p><img class='article  img-thumbnail' src='/images/cdd1cd11fd57b44f1cbb01ad3a8208b9.png'></p>
+                <p><img class='article  img-thumbnail' src='/images/582a44eaa64cd90fa8d7a2e1f29cfc53.png'></p>
                 
               </div>
               <div class="article">
-                <p><span/>         <br>
-                  </div>
+                <p><span/>        </div>
                   <div>
                    <br>
                   </div>
@@ -738,7 +814,7 @@
                   </div>
                   <div></p>
                 
-                <p><img class='article  img-thumbnail' src='/images/b38fc8ec510cbeebc364b260cf19ffe7.png'></p>
+                <p><img class='article  img-thumbnail' src='/images/91796177dcf970c204df0b690313323b.png'></p>
                 
               </div>
               <div class="article">
