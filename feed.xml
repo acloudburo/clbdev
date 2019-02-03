@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html"/>
     <id>https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html</id>
     <published>2019-02-03T15:03:07+00:00</published>
-    <updated>2019-02-03T17:07:33+00:00</updated>
+    <updated>2019-02-03T19:25:41+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -159,7 +159,7 @@
        &lt;a href="https://en.wikipedia.org/wiki/Code_refactoring"&gt;refactoring&lt;/a&gt; step. Code refactoring is the process of restructuring existing computer code without changing its external behavior. So we rephrase our class in 
        &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;sample1.py&lt;/span&gt; to 
        &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;GovernmentSocialMediaAnalyzer &lt;/span&gt;and enhance its class constructor
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;strong&gt;init&lt;/strong&gt;&lt;/span&gt; method by a parameter
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;init&lt;/em&gt;&lt;/span&gt; method by a parameter
        &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;country_code&lt;/span&gt;. We took a design decision, that. 
       &lt;/div&gt;
       &lt;div&gt;
@@ -183,7 +183,7 @@
        &lt;li&gt;
         &lt;div&gt;
           will be stored as a private instance variable
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;strong&gt;country_code&lt;/span&gt;  and used
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;country_code&lt;/span&gt;  and used
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
@@ -193,7 +193,7 @@
        &lt;li&gt;
         &lt;div&gt;
           from where we will load the configuration data and store the data in the private variable
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;/strong&gt;cfg&lt;/span&gt;
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;/em&gt;cfg&lt;/span&gt;
         &lt;/div&gt;&lt;/li&gt;
       &lt;/ul&gt;
       &lt;div&gt;
@@ -212,8 +212,8 @@
       &lt;/div&gt;
       &lt;div&gt;
         So now we are ready to generalize our
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;strong&gt;get_government_members&lt;/span&gt; method by reading the twitter account-  and list-name out of the configuration data, which is stored in
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; self.&lt;/strong&gt;cfg &lt;/span&gt;instance variable.
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;get_government_members&lt;/span&gt; method by reading the twitter account-  and list-name out of the configuration data, which is stored in
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; self.&lt;/em&gt;cfg &lt;/span&gt;instance variable.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -238,20 +238,20 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;Enhance the &lt;strong&gt;init&lt;/strong&gt; method&lt;/span&gt;
+       &lt;span style="font-size: 18px;"&gt;Enhance the &lt;em&gt;init&lt;/em&gt; method&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
         But le’ts finalize first the refactoring and enhancement of our
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;strong&gt;init&lt;/strong&gt;&lt;/span&gt; class. We take another design decision
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;init&lt;/em&gt;&lt;/span&gt; class. We take another design decision
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;&lt;span style="font-style: italic; text-decoration: underline;"&gt;Design Decision 2&lt;/span&gt;: The &lt;strong&gt;init&lt;/strong&gt; method should encapsulate the loading of all Twitter accounts of the list from Twitter, as well as the conversion to the relevant attributes in attributes column (= array of Strings). The column should be made available as private class instance variables&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;&lt;span style="font-style: italic; text-decoration: underline;"&gt;Design Decision 2&lt;/span&gt;: The &lt;em&gt;init&lt;/em&gt; method should encapsulate the loading of all Twitter accounts of the list from Twitter, as well as the conversion to the relevant attributes in attributes column (= array of Strings). The column should be made available as private class instance variables&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -265,8 +265,8 @@
       &lt;/div&gt;
       &lt;div&gt;
         We will do this step in a dedicate helper method, which will be called
-       &lt;span style="font-family: &amp;quot;courier new&amp;quot;, courier, monospace;"&gt;&lt;strong&gt;extract_columns&lt;/span&gt;. We defined it as a private method (
-       &lt;span style="font-family: &amp;quot;courier new&amp;quot;, courier, monospace;"&gt;&lt;/strong&gt;&lt;/span&gt; prefix) because it shouldn’t be used by anybody outside of this class.
+       &lt;span style="font-family: &amp;quot;courier new&amp;quot;, courier, monospace;"&gt;&lt;em&gt;extract_columns&lt;/span&gt;. We defined it as a private method (
+       &lt;span style="font-family: &amp;quot;courier new&amp;quot;, courier, monospace;"&gt;&lt;/em&gt;&lt;/span&gt; prefix) because it shouldn’t be used by anybody outside of this class.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -306,7 +306,7 @@
        &lt;li&gt;
         &lt;div&gt;
           66: call to the
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;__extract_columns &lt;/span&gt;method to retrieve the data and convert it into columns
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;_extract_columns &lt;/span&gt;method to retrieve the data and convert it into columns
         &lt;/div&gt;&lt;/li&gt;
       &lt;/ul&gt;
       &lt;div&gt;
@@ -402,7 +402,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         If we check the loaded configuration file (stored in the
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; self.__cfg &lt;/span&gt;variable)  in the Python debugger, it should be clear how the data structure is looking like using Python lists and dictionaries.
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; self._cfg &lt;/span&gt;variable)  in the Python debugger, it should be clear how the data structure is looking like using Python lists and dictionaries.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -424,7 +424,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         Our improved
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;_&lt;em&gt;check_for_party&lt;/span&gt; method nows look like follows. It will iterate over all twitter accounts and each parties configuration record and checks if the twitter account has a match in its description or screen&lt;/em&gt;name to a party.
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;check_for_party&lt;/span&gt; method nows look like follows. It will iterate over all twitter accounts and each parties configuration record and checks if the twitter account has a match in its description or screen&lt;/em&gt;name to a party.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -502,11 +502,11 @@
        &lt;li&gt;
         &lt;div&gt;
           151-155: We are creating here a panda_data record consisting of 4 columns. The&lt;br&gt;
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;strong&gt;col_party&lt;/span&gt;,
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;/strong&gt;col_followers_count&lt;/span&gt;,
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;strong&gt;col_friends_count. &lt;/span&gt;
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;_col_party&lt;/span&gt;,
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;_col_followers_count&lt;/span&gt;,
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;_col_friends_count. &lt;/span&gt;
          &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;The &lt;/span&gt;
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;/strong&gt;col_party&lt;/span&gt;
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;_col_party&lt;/span&gt;
          &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt; is used twice, the first column is used for labelling each row (as you see on line 158 we do the grouping by party) and in the second column we do sum up of the rows which have the same party,&lt;/span&gt;
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
