@@ -173,7 +173,7 @@
                   </div>
                   <div>
                     Our first<br>
-                   <a href="https://github.com/talfco/clb-sentiment/blob/master/src/lesson1/lesson1.py">lesson1.py</a> Python program was hard coding the twitter account- and its list name directly in the program itself.
+                   <a href="https://github.com/talfco/clb-sentiment/blob/master/src/lesson1/lesson1.py">lesson1.py</a>  Python program was hard coding the twitter account- and its list name directly in the program itself.
                   </div>
                   <div>
                    <br>
@@ -562,20 +562,21 @@
                    <font face="Helvetica Neue" style="font-size: 14px;"><br></font>
                   </div>
                   <div>
-                   <font style="font-size: 18px;">Introducing a Second Plotly Table:  Grouping Accounts by Party</font>
+                   <span style="font-size: 18px;">Introducing a Second Plotly Table:  Grouping Accounts by Party</span>
                   </div>
                   <div>
                    <span style="font-size: 14px;"><br></span>
                   </div>
                   <div>
                    <span style="font-size: 14px;">In order to fine tune our algorithm, we have to check its effectiveness on finding a party to twitter account. For that we have to introduce a second table, which will group our twitter accounts according their party allocation.</span>
-                   <br>
                   </div>
                   <div>
                    <span style="font-size: 14px;"><br></span>
                   </div>
                   <div>
-                   <span style="font-size: 14px;">Obviously the powerful panda package will provide us the necessary tooling. You can refer to the <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html">following panda API description</a> with all the details how to group data.</span>
+                   <span style="font-size: 14px;">Obviously the powerful panda package will provide us the necessary tooling. You can refer to the </span>
+                   <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html" style="font-size: 14px;">following panda API description</a>
+                   <span style="font-size: 14px;"> with all the details how to group data.</span>
                   </div>
                   <div>
                    <span style="font-size: 14px;"><br></span>
@@ -586,7 +587,8 @@
                 
               </div>
               <div class="article">
-                <p><span/>        </div>
+                <p><span/>         <br>
+                  </div>
                   <div>
                    <br>
                   </div>
@@ -597,12 +599,12 @@
                    <li>
                     <div>
                       151-155: We are creating here a panda_data record consisting of 4 columns. The<br>
-                     <font face="Courier New"><strong>col_party</font>,
-                     <font face="Courier New"></strong>col_followers_count</font>,
-                     <font face="Courier New"><strong>col_friends_count. </font>
-                     <font style="font-family: &quot;Helvetica Neue&quot;;">The </font>
-                     <font face="Courier New"></strong>col_party</font>
-                     <font style="font-family: &quot;Helvetica Neue&quot;;"> is used twice, the first column is used for labelling each row (as you see on line 158 we do the grouping by party) and in the second column we do sum up of the rows which have the same party,</font>
+                     <span style="font-family: &quot;Courier New&quot;;"><strong>col_party</span>,
+                     <span style="font-family: &quot;Courier New&quot;;"></strong>col_followers_count</span>,
+                     <span style="font-family: &quot;Courier New&quot;;"><strong>col_friends_count. </span>
+                     <span style="font-family: &quot;Helvetica Neue&quot;;">The </span>
+                     <span style="font-family: &quot;Courier New&quot;;"></strong>col_party</span>
+                     <span style="font-family: &quot;Helvetica Neue&quot;;"> is used twice, the first column is used for labelling each row (as you see on line 158 we do the grouping by party) and in the second column we do sum up of the rows which have the same party,</span>
                     </div></li>
                    <li>
                     <div>
@@ -611,8 +613,8 @@
                    <li>
                     <div>
                       158: Here we transform the created data frame by using the
-                     <font face="Courier New">groupby</font> function. We also define the aggregation
-                     <font face="Courier New">agg</font> operations for the 2nd, 3rd and 4th row. 
+                     <span style="font-family: &quot;Courier New&quot;;">groupby</span> function. We also define the aggregation
+                     <span style="font-family: &quot;Courier New&quot;;">agg</span> operations for the 2nd, 3rd and 4th row. 
                     </div></li>
                    <li>
                     <div>
@@ -620,13 +622,13 @@
                     </div></li>
                   </ul>
                   <div>
-                   <span style="font-family: &quot;Helvetica Neue&quot;;"><br></span>
+                   <br>
                   </div>
                   <div>
                    <span style="font-family: &quot;Helvetica Neue&quot;;">Let’s run the program and check the accuracy of our party assignment allocation algorithm. As a result of the program  execution you will now have to tables in your plotly account (also some grid tables will be created, which are not relevant at the moment).</span>
                   </div>
                   <div>
-                   <span style="font-family: &quot;Helvetica Neue&quot;;"><br></span>
+                   <br>
                   </div>
                   <div></p>
                 
@@ -634,9 +636,16 @@
                 
               </div>
               <div class="article">
-                <p><span/>        </div>
+                <p><span/>         <br>
+                  </div>
                   <div>
-                   <span style="font-family: &quot;Helvetica Neue&quot;;"><br></span>
+                   <br>
+                  </div>
+                  <div>
+                   <span style="font-size: 18px;">Enhance our Config File with Keyword Attribute</span>
+                  </div>
+                  <div>
+                   <br>
                   </div>
                   <div>
                     Our first run shows, that the majority of the politician (65) don’t mention their party abbreviations or party twitter screen_name in their account description/screen_name. 
@@ -802,7 +811,8 @@
                 
               </div>
               <div class="article">
-                <p><span/>        </div>
+                <p><span/>         <br>
+                  </div>
                   <div>
                    <br>
                   </div>
@@ -818,7 +828,8 @@
                 
               </div>
               <div class="article">
-                <p><span/>        </div>
+                <p><span/>         <br>
+                  </div>
                   <div>
                    <br>
                   </div>
