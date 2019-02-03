@@ -172,7 +172,7 @@
                    <br>
                   </div>
                   <div>
-                    Our first<br>
+                    Our first 
                    <a href="https://github.com/talfco/clb-sentiment/blob/master/src/lesson1/lesson1.py">lesson1.py</a> Python program was hard coding the twitter account- and its list name directly in the program itself.
                   </div>
                   <div>
@@ -256,7 +256,7 @@
                    <a href="https://en.wikipedia.org/wiki/Code_refactoring">refactoring</a> step. Code refactoring is the process of restructuring existing computer code without changing its external behavior. So we rephrase our class in 
                    <span style="font-family: &quot;Courier New&quot;;">sample1.py</span> to 
                    <span style="font-family: &quot;Courier New&quot;;">GovernmentSocialMediaAnalyzer </span>and enhance its class constructor
-                   <span style="font-family: &quot;Courier New&quot;;"><em>init</em></span> method by a parameter
+                   <span style="font-family: &quot;Courier New&quot;;">init</span> method by a parameter
                    <span style="font-family: &quot;Courier New&quot;;">country_code</span>. We took a design decision, that. 
                   </div>
                   <div>
@@ -274,24 +274,25 @@
                   <ul>
                    <li>
                     <div>
-                      The passed in country_code parameter (e.g.,
+                      The passed in
+                     <font face="Courier New">country_code</font> parameter (e.g.,
                      <span style="font-family: &quot;Courier New&quot;;">CH</span>) during class creation
                     </div></li>
                    <li>
                     <div>
                       will be stored as a private instance variable
-                     <span style="font-family: &quot;Courier New&quot;;"><em>country_code</span> 
-                     <font face="Helvetica Neue"> and used</font>
+                     <span style="font-family: &quot;Courier New&quot;;">country_code</span> 
+                     <span style="font-family: &quot;Helvetica Neue&quot;;"> and used</span>
                     </div></li>
                    <li>
                     <div>
-                     <font face="Helvetica Neue"> to create the yaml configuration </font>
+                     <span style="font-family: &quot;Helvetica Neue&quot;;">to create the yaml configuration </span>
                      <span style="font-family: &quot;Courier New&quot;;">file_name</span>, 
                     </div></li>
                    <li>
                     <div>
                       from where we will load the configuration data and store the data in the private variable
-                     <span style="font-family: &quot;Courier New&quot;;"></em>cfg</span>
+                     <span style="font-family: &quot;Courier New&quot;;">cfg</span>
                     </div></li>
                   </ul>
                   <div>
@@ -310,9 +311,9 @@
                   </div>
                   <div>
                     So now we are ready to generalize our
-                   <span style="font-family: &quot;Courier New&quot;;"><em>get_government_members</span>
-                   <font face="Helvetica Neue"> method by reading the twitter account-  and list-name out of the configuration data, which is stored in</font>
-                   <span style="font-family: &quot;Courier New&quot;;"> self.</em>cfg </span>instance variable.
+                   <span style="font-family: &quot;Courier New&quot;;">get_government_members</span>
+                   <span style="font-family: &quot;Helvetica Neue&quot;;"> method by reading the twitter account-  and list-name out of the configuration data, which is stored in</span>
+                   <span style="font-family: &quot;Courier New&quot;;"> self.cfg </span>instance variable.
                   </div>
                   <div>
                    <br>
@@ -337,20 +338,20 @@
                    <br>
                   </div>
                   <div>
-                   <span style="font-size: 18px;">Enhance the <em>init</em> method</span>
+                   <span style="font-size: 18px;">Enhance the init method</span>
                   </div>
                   <div>
                    <br>
                   </div>
                   <div>
                     But le’ts finalize first the refactoring and enhancement of our
-                   <span style="font-family: &quot;Courier New&quot;;"><em>init</em></span> class. We take another design decision
+                   <span style="font-family: &quot;Courier New&quot;;">init</span> class. We take another design decision
                   </div>
                   <div>
                    <br>
                   </div>
                   <div>
-                   <span style="font-style: italic;"><span style="font-style: italic; text-decoration: underline;">Design Decision 2</span>: The <em>init</em> method should encapsulate the loading of all Twitter accounts of the list from Twitter, as well as the conversion to the relevant attributes in attributes column (= array of Strings). The column should be made available as private class instance variables</span>
+                   <span style="font-style: italic;"><span style="font-style: italic; text-decoration: underline;">Design Decision 2</span>: The init method should encapsulate the loading of all Twitter accounts of the list from Twitter, as well as the conversion to the relevant attributes in attributes column (= array of Strings). The column should be made available as private class instance variables</span>
                   </div>
                   <div>
                    <br>
@@ -364,8 +365,7 @@
                   </div>
                   <div>
                     We will do this step in a dedicate helper method, which will be called
-                   <span style="font-family: &quot;courier new&quot;, courier, monospace;"><em>extract_columns</span>.  We defined it as a private method (
-                   <span style="font-family: &quot;courier new&quot;, courier, monospace;"></em></span> prefix) because it shouldn’t be used by anybody outside of this class.
+                   <span style="font-family: &quot;courier new&quot;, courier, monospace;">extract_columns</span>..
                   </div>
                   <div>
                    <br>
@@ -501,7 +501,7 @@
                   </div>
                   <div>
                     If we check the loaded configuration file (stored in the
-                   <span style="font-family: &quot;Courier New&quot;;"> self._cfg </span>variable)  in the Python debugger, it should be clear how the data structure is looking like using Python lists and dictionaries.
+                   <span style="font-family: &quot;Courier New&quot;;"> self.cfg </span>variable)  in the Python debugger, it should be clear how the data structure is looking like using Python lists and dictionaries.
                   </div>
                   <div>
                    <br>
@@ -561,7 +561,7 @@
                    <span style="font-size: 24px;">Fine Tuning the Algorithm</span>
                   </div>
                   <div>
-                   <font face="Helvetica Neue" style="font-size: 14px;"><br></font>
+                   <span style="font-size: 14px;"><br></span>
                   </div>
                   <div>
                    <span style="font-size: 18px;">Introducing a Second Plotly Table:  Grouping Accounts by Party</span>
@@ -577,7 +577,7 @@
                   </div>
                   <div>
                    <span style="font-size: 14px;">Obviously the powerful panda package will provide us the necessary tooling. You can refer to the </span>
-                   <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html" style="font-size: 14px;">following panda API description</a>
+                   <a style="font-size: 14px;" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html">following panda API description</a>
                    <span style="font-size: 14px;"> with all the details how to group data.</span>
                   </div>
                   <div>
@@ -601,11 +601,11 @@
                    <li>
                     <div>
                       151-155: We are creating here a panda_data record consisting of 4 columns. The<br>
-                     <span style="font-family: &quot;Courier New&quot;;">_col_party</span>,
-                     <span style="font-family: &quot;Courier New&quot;;">_col_followers_count</span>,
-                     <span style="font-family: &quot;Courier New&quot;;">_col_friends_count. </span>
+                     <span style="font-family: &quot;Courier New&quot;;">col_party</span>,
+                     <span style="font-family: &quot;Courier New&quot;;">col_followers_count</span>,
+                     <span style="font-family: &quot;Courier New&quot;;">col_friends_count. </span>
                      <span style="font-family: &quot;Helvetica Neue&quot;;">The </span>
-                     <span style="font-family: &quot;Courier New&quot;;">_col_party</span>
+                     <span style="font-family: &quot;Courier New&quot;;">col_party</span>
                      <span style="font-family: &quot;Helvetica Neue&quot;;"> is used twice, the first column is used for labelling each row (as you see on line 158 we do the grouping by party) and in the second column we do sum up of the rows which have the same party,</span>
                     </div></li>
                    <li>

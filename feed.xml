@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html"/>
     <id>https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html</id>
     <published>2019-02-03T15:03:07+00:00</published>
-    <updated>2019-02-03T21:04:47+00:00</updated>
+    <updated>2019-02-03T23:13:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -75,7 +75,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Our first&lt;br&gt;
+        Our first 
        &lt;a href="https://github.com/talfco/clb-sentiment/blob/master/src/lesson1/lesson1.py"&gt;lesson1.py&lt;/a&gt; Python program was hard coding the twitter account- and its list name directly in the program itself.
       &lt;/div&gt;
       &lt;div&gt;
@@ -159,7 +159,7 @@
        &lt;a href="https://en.wikipedia.org/wiki/Code_refactoring"&gt;refactoring&lt;/a&gt; step. Code refactoring is the process of restructuring existing computer code without changing its external behavior. So we rephrase our class in 
        &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;sample1.py&lt;/span&gt; to 
        &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;GovernmentSocialMediaAnalyzer &lt;/span&gt;and enhance its class constructor
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;init&lt;/em&gt;&lt;/span&gt; method by a parameter
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;init&lt;/span&gt; method by a parameter
        &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;country_code&lt;/span&gt;. We took a design decision, that. 
       &lt;/div&gt;
       &lt;div&gt;
@@ -177,24 +177,25 @@
       &lt;ul&gt;
        &lt;li&gt;
         &lt;div&gt;
-          The passed in country_code parameter (e.g.,
+          The passed in
+         &lt;font face="Courier New"&gt;country_code&lt;/font&gt; parameter (e.g.,
          &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;CH&lt;/span&gt;) during class creation
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
           will be stored as a private instance variable
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;country_code&lt;/span&gt; 
-         &lt;font face="Helvetica Neue"&gt; and used&lt;/font&gt;
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;country_code&lt;/span&gt; 
+         &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt; and used&lt;/span&gt;
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-         &lt;font face="Helvetica Neue"&gt; to create the yaml configuration &lt;/font&gt;
+         &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;to create the yaml configuration &lt;/span&gt;
          &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;file_name&lt;/span&gt;, 
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
           from where we will load the configuration data and store the data in the private variable
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;/em&gt;cfg&lt;/span&gt;
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;cfg&lt;/span&gt;
         &lt;/div&gt;&lt;/li&gt;
       &lt;/ul&gt;
       &lt;div&gt;
@@ -213,9 +214,9 @@
       &lt;/div&gt;
       &lt;div&gt;
         So now we are ready to generalize our
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;get_government_members&lt;/span&gt;
-       &lt;font face="Helvetica Neue"&gt; method by reading the twitter account-  and list-name out of the configuration data, which is stored in&lt;/font&gt;
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; self.&lt;/em&gt;cfg &lt;/span&gt;instance variable.
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;get_government_members&lt;/span&gt;
+       &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt; method by reading the twitter account-  and list-name out of the configuration data, which is stored in&lt;/span&gt;
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; self.cfg &lt;/span&gt;instance variable.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -240,20 +241,20 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;Enhance the &lt;em&gt;init&lt;/em&gt; method&lt;/span&gt;
+       &lt;span style="font-size: 18px;"&gt;Enhance the init method&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
         But le’ts finalize first the refactoring and enhancement of our
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;init&lt;/em&gt;&lt;/span&gt; class. We take another design decision
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;init&lt;/span&gt; class. We take another design decision
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;&lt;span style="font-style: italic; text-decoration: underline;"&gt;Design Decision 2&lt;/span&gt;: The &lt;em&gt;init&lt;/em&gt; method should encapsulate the loading of all Twitter accounts of the list from Twitter, as well as the conversion to the relevant attributes in attributes column (= array of Strings). The column should be made available as private class instance variables&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;&lt;span style="font-style: italic; text-decoration: underline;"&gt;Design Decision 2&lt;/span&gt;: The init method should encapsulate the loading of all Twitter accounts of the list from Twitter, as well as the conversion to the relevant attributes in attributes column (= array of Strings). The column should be made available as private class instance variables&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -267,8 +268,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         We will do this step in a dedicate helper method, which will be called
-       &lt;span style="font-family: &amp;quot;courier new&amp;quot;, courier, monospace;"&gt;&lt;em&gt;extract_columns&lt;/span&gt;.  We defined it as a private method (
-       &lt;span style="font-family: &amp;quot;courier new&amp;quot;, courier, monospace;"&gt;&lt;/em&gt;&lt;/span&gt; prefix) because it shouldn’t be used by anybody outside of this class.
+       &lt;span style="font-family: &amp;quot;courier new&amp;quot;, courier, monospace;"&gt;extract_columns&lt;/span&gt;..
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -404,7 +404,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         If we check the loaded configuration file (stored in the
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; self._cfg &lt;/span&gt;variable)  in the Python debugger, it should be clear how the data structure is looking like using Python lists and dictionaries.
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt; self.cfg &lt;/span&gt;variable)  in the Python debugger, it should be clear how the data structure is looking like using Python lists and dictionaries.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -464,7 +464,7 @@
        &lt;span style="font-size: 24px;"&gt;Fine Tuning the Algorithm&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;font face="Helvetica Neue" style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 18px;"&gt;Introducing a Second Plotly Table:  Grouping Accounts by Party&lt;/span&gt;
@@ -480,7 +480,7 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 14px;"&gt;Obviously the powerful panda package will provide us the necessary tooling. You can refer to the &lt;/span&gt;
-       &lt;a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html" style="font-size: 14px;"&gt;following panda API description&lt;/a&gt;
+       &lt;a style="font-size: 14px;" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html"&gt;following panda API description&lt;/a&gt;
        &lt;span style="font-size: 14px;"&gt; with all the details how to group data.&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
@@ -504,11 +504,11 @@
        &lt;li&gt;
         &lt;div&gt;
           151-155: We are creating here a panda_data record consisting of 4 columns. The&lt;br&gt;
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;_col_party&lt;/span&gt;,
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;_col_followers_count&lt;/span&gt;,
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;_col_friends_count. &lt;/span&gt;
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;col_party&lt;/span&gt;,
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;col_followers_count&lt;/span&gt;,
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;col_friends_count. &lt;/span&gt;
          &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;The &lt;/span&gt;
-         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;_col_party&lt;/span&gt;
+         &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;col_party&lt;/span&gt;
          &lt;span style="font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt; is used twice, the first column is used for labelling each row (as you see on line 158 we do the grouping by party) and in the second column we do sum up of the rows which have the same party,&lt;/span&gt;
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
