@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html"/>
     <id>https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html</id>
     <published>2019-02-03T15:03:07+00:00</published>
-    <updated>2019-02-03T23:13:06+00:00</updated>
+    <updated>2019-02-04T00:19:47+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -426,7 +426,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         Our improved
-       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;&lt;em&gt;check_for_party&lt;/span&gt; method nows look like follows. It will iterate over all twitter accounts and each parties configuration record and checks if the twitter account has a match in its description or screen&lt;/em&gt;name to a party.
+       &lt;span style="font-family: &amp;quot;Courier New&amp;quot;;"&gt;check_for_party&lt;/span&gt; method nows look like follows. It will iterate over all twitter accounts and each parties configuration record and checks if the twitter account has a match in its description or screen_name to a party.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
