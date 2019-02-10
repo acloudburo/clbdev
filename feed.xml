@@ -5,10 +5,315 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-02-03T15:03:07+00:00</updated>
+  <updated>2019-02-10T15:24:11+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Python Tutorial: Connect Government Data API's By  Using The Factory Pattern</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html"/>
+    <id>https://dev.cloudburo.net/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html</id>
+    <published>2019-02-10T15:24:11+00:00</published>
+    <updated>2019-02-10T15:24:35+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;Source Politican Data from  Public Government Data API’s to Increase Allocation Accuracy&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In this tutorial, we do mainly two steps
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          First of all we generate some plotly diagrams out of our collected data,
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          secondly we connect public government API to our program in order to retrieve government members and party assignment in a reliable way
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As you already know we are interested in a generalized program, which can work with multiple countries. For that we will introduce an abstract class and the factory pattern for the second part of our tutoriy.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        But let’s start with the first quite easy task of generating two charts for our tables.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Plotly Chart Generation&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        We create a bar chart as well as a pie chart. As a base we take the our plotly table
+       &lt;span style="font-style: italic;"&gt;CH-tw-party-list&lt;/span&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/751c13a5281cb15579ad8b4fa6e6da92.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The code is straightforward. In the bar chart we visualize the accumulated friends count per party.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In the pie chart we aggregate the twitter account per party.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;script src="
+       &lt;a href="https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d.js"&gt;&lt;a href="https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d.js"&gt;https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d.js&lt;/a&gt;&lt;/a&gt;&amp;quot;&amp;gt;&lt;/script&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;As one can see in the sample, various configuration parameters allow you to modify the layout of a chart. Head over to the&lt;/span&gt;
+       &lt;a href="https://plot.ly/pandas/" style="font-size: 14px;"&gt; Plotly Python Open Source Graphing Library&lt;/a&gt;
+       &lt;span style="font-size: 14px;"&gt; to find out more about the various possibilities with charts, panda and plotly.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/59f7cbe865d467e007f41141c92466ce.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As one can see we have a lot of “unkowns”, i.e. we couldn’t identify the corresponding party by just analysing Twitter data elements. In the second part of this tutorial we will address this point.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/7b0307e94d4ad54a6cc124c6e7372c5d.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 14px;"&gt;The enhance main program looks like that:&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight python"&gt;&lt;code&gt;
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt; 
+      &lt;span class="n"&gt;analyzer_ch&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;GovernmentSocialMediaAnalyzer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"CH"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+      &lt;span class="n"&gt;analyzer_ch&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;create_politican_table&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
+      &lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;analyzer_ch&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;create_party_table&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
+      &lt;span class="n"&gt;analyzer_ch&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;create_party_friends_count_bar_chart&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+      &lt;span class="n"&gt;analyzer_ch&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;create_party_politicans_count_pie_chart&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 24px;"&gt;Government Data API Factory&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/76b40038953263256ecc659e32aa3d1a.jpeg'&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="text-align: center;"&gt;
+       &lt;span style="font-size: 14px; background-color: rgb(245, 245, 245); color: rgb(17, 17, 17); font-family: -apple-system, system-ui, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;"&gt;Photo by &lt;/span&gt;
+       &lt;a href="https://unsplash.com/photos/zb29xBwpt6c?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="box-sizing: border-box; background-color: rgb(245, 245, 245); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(153, 153, 153); font-family: -apple-system, system-ui, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;"&gt;Rodney Minter-Brown&lt;/a&gt;
+       &lt;span style="font-size: 14px; background-color: rgb(245, 245, 245); color: rgb(17, 17, 17); font-family: -apple-system, system-ui, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;"&gt; on &lt;/span&gt;
+       &lt;a href="https://unsplash.com/search/photos/factory?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="box-sizing: border-box; background-color: rgb(245, 245, 245); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(153, 153, 153); font-family: -apple-system, system-ui, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;"&gt;Unsplash&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In the recent years, the availability of so-called open Government API’s exploded.  It stems from the idea that data should be open, as Wikipedia describes the term of
+       &lt;a href="https://en.wikipedia.org/wiki/Open_data"&gt;Open Data&lt;/a&gt;:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;Open data is the idea that some data should be freely available to everyone to use and republish as they wish, without restrictions from copyright, patents or other mechanisms of control….&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;One of the most important forms of open data is open government data (OGD), which is a form of open data created by ruling government institutions. Open government data&amp;rsquo;s importance is borne from it being a part of citizens&amp;#39; everyday lives, down to the most routine/mundane tasks that are seemingly far removed from government.”&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A good starting point for understanding for getting an overview of government data API’s is the programmablweb directory, which has an overall list of over 20’00 different API’s.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The government directory API category can be found here:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;a href="https://www.programmableweb.com/category/government/apis?category=20094"&gt;&lt;a href="https://www.programmableweb.com/category/government/apis?category=20094"&gt;https://www.programmableweb.com/category/government/apis?category=20094&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Two examples of Government API’s
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The data API of the US government: 
+       &lt;a href="https://www.data.gov/developers/apis"&gt;&lt;a href="https://www.data.gov/developers/apis"&gt;https://www.data.gov/developers/apis&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/5690fad8adfa123f25dff86cab2356e2.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+        Or the Swiss Government API of the Swiss Parliament: 
+       &lt;a href="http://ws-old.parlament.ch/"&gt;&lt;a href="http://ws-old.parlament.ch/"&gt;http://ws-old.parlament.ch/&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/1336d71cb6fa2a52132cf14cda1a5b1d.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+        Well we will use the Swiss Parliament  API’s to extract personal data of the parliament member (mainly it’s party allocation) in order to increase the accuracy of our twitter matching algorithm.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;Public Government API&amp;rsquo;s&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Webservice Interface of the Swiss Parliament: 
+       &lt;a href="http://ws-old.parlament.ch/"&gt;&lt;a href="http://ws-old.parlament.ch"&gt;http://ws-old.parlament.ch&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/4397ee9d924f451b283292798af53756.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/8ce76625df8f934a2b3a720a90449243.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;Enhancing the Code&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &amp;lt;code python&amp;gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        import json
+      &lt;/div&gt;
+      &lt;div&gt;
+        import request
+      &lt;/div&gt;
+      &lt;div&gt;
+        &amp;lt;/code&amp;gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        TO BE COMPLETED
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;Source Code&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The source code can be found here (lesson 3 directory):
+       &lt;span style="font-size: 18px;"&gt; &lt;/span&gt;
+       &lt;a href="https://github.com/talfco/clb-sentiment" style="font-size: 18px;"&gt;&lt;a href="https://github.com/talfco/clb-sentiment"&gt;https://github.com/talfco/clb-sentiment&lt;/a&gt;&lt;/a&gt; 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Python Tutorial: Government Social Media Analyser Class Build Out</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/03/python-tutorial-government-social-media-analyser-class-build-out.html"/>
@@ -8993,67 +9298,6 @@
        &lt;a style="font-size: 11px;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
        &lt;span style="font-size: 11px;"&gt;.&lt;/span&gt;
       &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Stripe Atlas - Get your startup registered within days</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html"/>
-    <id>https://dev.cloudburo.net/2017/04/07/stripe-atlas-get-your-startup-registered-within-days.html</id>
-    <published>2017-04-07T15:13:15+00:00</published>
-    <updated>2019-01-13T23:26:08+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/b57925ad87aeec8219e151fbfea9633b.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Working as an IT architect within the CRM area of a major Swiss Bank, I’m always interested in innovative ideas in the area of client on-boarding in context of micro- and small companies. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Such a innovative idea, is launching Stripe, which famous for its easy to use Credit Card Payment Process API aimed a Internet businesses (I use it for my own
-       &lt;a href="https://publishingbot.cloudburo.net/"&gt;subscription offering&lt;/a&gt; and it serves me as a showcase how a public API service offering should look like).
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        With
-       &lt;a href="https://stripe.com/atlas"&gt;Stripe Atlas&lt;/a&gt; they offer a banking package for Internet Startup Companies. Within just 4 days you get your bank account established and a company incorporated in Delawar.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        I didn’t check the offering in detail, but it shows where the journey goes to in the space of financial services offering for micro and small companies. Traditional banks have to get sooner than later ready, to get their corporate banking for small enterprises offering aligned with the new world of thinking.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;

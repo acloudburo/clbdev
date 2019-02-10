@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Python Tutorial: Connect Government Data API's By  Using The Factory Pattern</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (17)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (1)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (10)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (2)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (13)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (4)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (4)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (5)</a>
+            <a href="/tags/python.html" class="label label-default">python (4)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (18)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tut01.html" class="label label-default">tut01 (4)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (9)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2019.html" class="label label-primary">2019 (6)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html">Python Tutorial: Connect Government Data API's By  Using The Factory Pattern</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  10.Feb 2019 | Tags <a class="label label-primary" href="/tags/tutorial.html">tutorial</a> <a class="label label-primary" href="/tags/python.html">python</a> <a class="label label-primary" href="/tags/tut01.html">tut01</a> 
+            </p>
+          </header>
+          <div class="entry-description"><div class="row">
+  <div class="article">
+    <p><span/>      <div>
+       <span style="font-size: 18px;">Source Politican Data from  Public Government Data API’s to Increase Allocation Accuracy</span>
+      </div>
+      <div>
+       <font style="font-size: 18px;"><br></font>
+      </div>
+      <div>
+        In this tutorial, we do mainly two steps
+      </div>
+      <ul>
+       <li>
+        <div>
+          First of all we generate some plotly diagrams out of our collected data,
+        </div></li>
+       <li>
+        <div>
+          secondly we connect public government API to our program in order to retrieve government members and party assignment in a reliable way
+        </div></li>
+      </ul>
+      <div>
+       <br>
+      </div>
+      <div>
+        As you already know we are interested in a generalized program, which can work with multiple countries. For that we will introduce an abstract class and the factory pattern for the second part of our tutoriy.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        But let’s start with the first quite easy task of generating two charts for our tables.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 24px;">Plotly Chart Generation</span>
+      </div>
+      <div>
+        We create a bar chart as well as a pie chart. As a base we take the our plotly table
+       <span style="font-style: italic;">CH-tw-party-list</span>.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/751c13a5281cb15579ad8b4fa6e6da92.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The code is straightforward. In the bar chart we visualize the accumulated friends count per party.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        In the pie chart we aggregate the twitter account per party.
+      </div>
+      <div>
+       <font style="font-size: 14px;"><br></font>
+      </div>
+      <div>
+       <span style="font-size: 14px;"></span>
+      </div>
+      <div>
+        <script src="
+       <a href="https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d.js"><a href="https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d.js">https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d.js</a></a>&quot;&gt;</script>
+      </div>
+      <div>
+       <span style="font-size: 14px;"></span>
+      </div>
+      <div>
+       <font style="font-size: 14px;"><br></font>
+      </div>
+      <div>
+       <span style="font-size: 14px;">As one can see in the sample, various configuration parameters allow you to modify the layout of a chart. Head over to the</span>
+       <a href="https://plot.ly/pandas/" style="font-size: 14px;"> Plotly Python Open Source Graphing Library</a>
+       <span style="font-size: 14px;"> to find out more about the various possibilities with charts, panda and plotly.</span>
+      </div>
+      <div>
+       <font style="font-size: 14px;"><br></font>
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/59f7cbe865d467e007f41141c92466ce.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+        As one can see we have a lot of “unkowns”, i.e. we couldn’t identify the corresponding party by just analysing Twitter data elements. In the second part of this tutorial we will address this point.
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/7b0307e94d4ad54a6cc124c6e7372c5d.png'></p>
+    
+  </div>
+  <div class="article"><p><span/>         <br>
+  </div>
+  <div>
+   <font style="font-size: 14px;"><br></font>
+  </div>
+  <div>
+   <span style="font-size: 14px;">The enhance main program looks like that:</span>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="k">def</span> <span class="nf">main</span><span class="p">():</span> 
+      <span class="n">analyzer_ch</span> <span class="o">=</span> <span class="n">GovernmentSocialMediaAnalyzer</span><span class="p">(</span><span class="s">"CH"</span><span class="p">)</span> 
+      <span class="n">analyzer_ch</span><span class="o">.</span><span class="n">create_politican_table</span><span class="p">()</span> 
+      <span class="n">df</span> <span class="o">=</span> <span class="n">analyzer_ch</span><span class="o">.</span><span class="n">create_party_table</span><span class="p">()</span> 
+      <span class="n">analyzer_ch</span><span class="o">.</span><span class="n">create_party_friends_count_bar_chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> 
+      <span class="n">analyzer_ch</span><span class="o">.</span><span class="n">create_party_politicans_count_pie_chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> 
+
+</code></pre>
+
+<p></div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 24px;">Government Data API Factory</span>
+  </div>
+  <div></p>
+
+<p><img class='article  img-thumbnail' src='/images/76b40038953263256ecc659e32aa3d1a.jpeg'></p>
+
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div style="text-align: center;">
+       <span style="font-size: 14px; background-color: rgb(245, 245, 245); color: rgb(17, 17, 17); font-family: -apple-system, system-ui, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;">Photo by </span>
+       <a href="https://unsplash.com/photos/zb29xBwpt6c?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="box-sizing: border-box; background-color: rgb(245, 245, 245); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(153, 153, 153); font-family: -apple-system, system-ui, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">Rodney Minter-Brown</a>
+       <span style="font-size: 14px; background-color: rgb(245, 245, 245); color: rgb(17, 17, 17); font-family: -apple-system, system-ui, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;"> on </span>
+       <a href="https://unsplash.com/search/photos/factory?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="box-sizing: border-box; background-color: rgb(245, 245, 245); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(153, 153, 153); font-family: -apple-system, system-ui, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">Unsplash</a>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        In the recent years, the availability of so-called open Government API’s exploded.  It stems from the idea that data should be open, as Wikipedia describes the term of
+       <a href="https://en.wikipedia.org/wiki/Open_data">Open Data</a>:
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-style: italic;">&ldquo;Open data is the idea that some data should be freely available to everyone to use and republish as they wish, without restrictions from copyright, patents or other mechanisms of control….</span>
+      </div>
+      <div>
+       <span style="font-style: italic;">One of the most important forms of open data is open government data (OGD), which is a form of open data created by ruling government institutions. Open government data&rsquo;s importance is borne from it being a part of citizens&#39; everyday lives, down to the most routine/mundane tasks that are seemingly far removed from government.”</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        A good starting point for understanding for getting an overview of government data API’s is the programmablweb directory, which has an overall list of over 20’00 different API’s.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The government directory API category can be found here:
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <a href="https://www.programmableweb.com/category/government/apis?category=20094"><a href="https://www.programmableweb.com/category/government/apis?category=20094">https://www.programmableweb.com/category/government/apis?category=20094</a></a>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Two examples of Government API’s
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The data API of the US government: 
+       <a href="https://www.data.gov/developers/apis"><a href="https://www.data.gov/developers/apis">https://www.data.gov/developers/apis</a></a>
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/5690fad8adfa123f25dff86cab2356e2.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>        </div>
+      <div>
+        Or the Swiss Government API of the Swiss Parliament: 
+       <a href="http://ws-old.parlament.ch/"><a href="http://ws-old.parlament.ch/">http://ws-old.parlament.ch/</a></a>
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/1336d71cb6fa2a52132cf14cda1a5b1d.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>        </div>
+      <div>
+        Well we will use the Swiss Parliament  API’s to extract personal data of the parliament member (mainly it’s party allocation) in order to increase the accuracy of our twitter matching algorithm.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 18px;">Public Government API&rsquo;s</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Webservice Interface of the Swiss Parliament: 
+       <a href="http://ws-old.parlament.ch/"><a href="http://ws-old.parlament.ch">http://ws-old.parlament.ch</a></a>
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/4397ee9d924f451b283292798af53756.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/8ce76625df8f934a2b3a720a90449243.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+       <font style="font-size: 18px;">Enhancing the Code</font>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        &lt;code python&gt;
+      </div>
+      <div>
+        import json
+      </div>
+      <div>
+        import request
+      </div>
+      <div>
+        &lt;/code&gt;
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        TO BE COMPLETED
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 24px;">Source Code</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The source code can be found here (lesson 3 directory):
+       <span style="font-size: 18px;"> </span>
+       <a href="https://github.com/talfco/clb-sentiment" style="font-size: 18px;"><a href="https://github.com/talfco/clb-sentiment">https://github.com/talfco/clb-sentiment</a></a> 
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 11px; font-style: italic;">This blog entry was fully produced within Evernote and published using the </span>
+       <a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;">Cloudburo Publishing Bot</a>
+       <span style="font-size: 11px; font-style: italic;">.</span>
+      </div></p>
+    
+  </div>
+</div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/Cloudburonet-897759390318816/" class="btn btn-facebook">
+                <i class="fa fa-facebook"></i></a><a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts" class="btn btn-google-plus">
+                <i class="fa fa-google-plus"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2019 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>
