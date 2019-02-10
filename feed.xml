@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html"/>
     <id>https://dev.cloudburo.net/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html</id>
     <published>2019-02-10T15:24:11+00:00</published>
-    <updated>2019-02-10T16:03:36+00:00</updated>
+    <updated>2019-02-10T21:24:31+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -95,14 +95,18 @@
               &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;FriendsCount&lt;/span&gt; 
           &lt;span class="p"&gt;)&lt;/span&gt; 
       &lt;span class="p"&gt;]&lt;/span&gt; 
-      &lt;span class="n"&gt;py&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__country_code&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;'-tw-party_politicans_count'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;create_party_politicans_count_pie_chart&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="n"&gt;trace&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;go&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Pie&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;labels&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Party&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PartyCount&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                     &lt;span class="n"&gt;hoverinfo&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'label+percent'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;textinfo&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'value'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                     &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"Twitter User per Party"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;titlefont&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; 
-                          &lt;span class="n"&gt;family&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'Courier New, monospace'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                          &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                          &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'#7f7f7f'&lt;/span&gt; 
+      &lt;span class="n"&gt;py&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__country_code&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;'-tw-party_politicans_count’) &lt;/span&gt;&lt;span class="err"&gt;
+
+
+
+
+&lt;/span&gt;&lt;span class="s"&gt;  def create_party_politicans_count_pie_chart(self, df): &lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;span class="s"&gt;      trace = go.Pie(labels=df.Party, values=df.PartyCount, &lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;span class="s"&gt;                     hoverinfo='&lt;/span&gt;&lt;span class="n"&gt;label&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;percent&lt;/span&gt;&lt;span class="s"&gt;', textinfo='&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="s"&gt;', &lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;span class="s"&gt;                     title="Twitter User per Party", titlefont=dict( &lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;span class="s"&gt;                          family='&lt;/span&gt;&lt;span class="n"&gt;Courier&lt;/span&gt; &lt;span class="n"&gt;New&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;monospace&lt;/span&gt;&lt;span class="s"&gt;', &lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;span class="s"&gt;                          size=14, &lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;span class="s"&gt;                          color='&lt;/span&gt;&lt;span class="c"&gt;#7f7f7f' &lt;/span&gt;
                       &lt;span class="p"&gt;))&lt;/span&gt; 
       &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;trace&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
       &lt;span class="n"&gt;py&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__country_code&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;'-tw-party_friends_count'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
@@ -290,15 +294,15 @@
       &lt;/div&gt;
       &lt;div&gt;
         The Swiss Parliament API will return about 25 records in a request and will have in the latest record an attribute attached which tells you if there are more data available (
-       &lt;i&gt;hasMorePages=true).&lt;/i&gt;
+       &lt;span style="font-style: italic;"&gt;hasMorePages=true).&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
         In case it sets to ‘
-       &lt;i&gt;true’ &lt;/i&gt;you may fetch the next page by adding the query parameter&lt;br&gt;
-       &lt;i&gt;pageNumber=2 &lt;/i&gt;etc.
+       &lt;span style="font-style: italic;"&gt;true’ &lt;/span&gt;you may fetch the next page by adding the query parameter&lt;br&gt;
+       &lt;span style="font-style: italic;"&gt;pageNumber=2 &lt;/span&gt;etc.
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
@@ -320,7 +324,8 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
@@ -331,25 +336,111 @@
        &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;Enhancing the Code&lt;/span&gt;
+       &lt;span style="font-size: 18px;"&gt;Enhancing the Code - the UML Diagram&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;Introducing the government API in a general way needs some serious design and enhancement of our program. The UML class diagram of our enhanced program looks as follows (don’t be overwhelmed by the complexity, all the details will be explained later in this article).&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/677f35f63bdfcc3ce67e87ba8eddacdb.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        &amp;lt;code python&amp;gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        import json
-      &lt;/div&gt;
-      &lt;div&gt;
-        import request
-      &lt;/div&gt;
-      &lt;div&gt;
-        &amp;lt;/code&amp;gt;
+        Let’s summarize what we have done until now:
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          We created the
+         &lt;span style="font-style: italic;"&gt;GovernmentSocialMediaAnalyzer &lt;/span&gt;class
+         &lt;span style="font-style: italic;"&gt; &lt;/span&gt;in the second
+         &lt;a href="https://towardsdatascience.com/python-tutorial-government-social-media-analyser-class-build-out-12858190b284"&gt;tutorial&lt;/a&gt;, which is capable of retrieving twitter relevant account data of politician of a country. We used a configuration driven based approach - based on YAML -  to abstract the country specific data into a configuration file
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Several methods were defined which allowed us to create panda-, as well as plotly specific tables and charts.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Now we will introduce three new classes 
+       &lt;span style="font-style: italic;"&gt;govAPIFactory, govAPI  &lt;/span&gt;(an abstract class) and
+       &lt;span style="font-style: italic;"&gt;govAPI_CH, &lt;/span&gt;which will build a generalized approach for connecting any kind of government API’s.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt;Factory Method Pattern &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Software DesignPattern play an important role in Software design, as described by
+       &lt;a href="https://en.wikipedia.org/wiki/Software_design_pattern"&gt;Wikipedia&lt;/a&gt;:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&amp;ldquo;In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. It is a description or template for how to solve a problem that can be used in many different situations. Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.&amp;rdquo;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In our design, we will use the Factory Method Pattern to generalise the connectivity to a government API, which is explained by
+       &lt;a href="https://en.wikipedia.org/wiki/Factory_method_pattern"&gt;Wikipedia&lt;/a&gt; as follows: 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&amp;ldquo;In class-based programming, the factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes,&lt;b&gt; or implemented in a base class and optionally overridden by derived classes&lt;/b&gt;—rather than by calling a constructor.&amp;rdquo;&lt;/i&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Our design will be based on the strategy, to define a base class (parent -
+       &lt;i&gt;GovAPI) &lt;/i&gt;which is abstract and a derived class (child - GovAPI_CH), which will have the country specific implementation (i.e Switzerland).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;Abstract Base Class GovAPI &lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/4575a6f90580583ae8716c4ff2430524.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;

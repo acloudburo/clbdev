@@ -191,14 +191,18 @@
               <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">FriendsCount</span> 
           <span class="p">)</span> 
       <span class="p">]</span> 
-      <span class="n">py</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__country_code</span><span class="o">+</span><span class="s">'-tw-party_politicans_count'</span><span class="p">)</span> 
-  <span class="k">def</span> <span class="nf">create_party_politicans_count_pie_chart</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">df</span><span class="p">):</span> 
-      <span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Pie</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">Party</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">PartyCount</span><span class="p">,</span> 
-                     <span class="n">hoverinfo</span><span class="o">=</span><span class="s">'label+percent'</span><span class="p">,</span> <span class="n">textinfo</span><span class="o">=</span><span class="s">'value'</span><span class="p">,</span> 
-                     <span class="n">title</span><span class="o">=</span><span class="s">"Twitter User per Party"</span><span class="p">,</span> <span class="n">titlefont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span> 
-                          <span class="n">family</span><span class="o">=</span><span class="s">'Courier New, monospace'</span><span class="p">,</span> 
-                          <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> 
-                          <span class="n">color</span><span class="o">=</span><span class="s">'#7f7f7f'</span> 
+      <span class="n">py</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__country_code</span><span class="o">+</span><span class="s">'-tw-party_politicans_count’) </span><span class="err">
+
+
+
+
+</span><span class="s">  def create_party_politicans_count_pie_chart(self, df): </span><span class="err">
+</span><span class="s">      trace = go.Pie(labels=df.Party, values=df.PartyCount, </span><span class="err">
+</span><span class="s">                     hoverinfo='</span><span class="n">label</span><span class="o">+</span><span class="n">percent</span><span class="s">', textinfo='</span><span class="n">value</span><span class="s">', </span><span class="err">
+</span><span class="s">                     title="Twitter User per Party", titlefont=dict( </span><span class="err">
+</span><span class="s">                          family='</span><span class="n">Courier</span> <span class="n">New</span><span class="p">,</span> <span class="n">monospace</span><span class="s">', </span><span class="err">
+</span><span class="s">                          size=14, </span><span class="err">
+</span><span class="s">                          color='</span><span class="c">#7f7f7f' </span>
                       <span class="p">))</span> 
       <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">trace</span><span class="p">]</span> 
       <span class="n">py</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__country_code</span><span class="o">+</span><span class="s">'-tw-party_friends_count'</span><span class="p">)</span> 
@@ -386,15 +390,15 @@
       </div>
       <div>
         The Swiss Parliament API will return about 25 records in a request and will have in the latest record an attribute attached which tells you if there are more data available (
-       <i>hasMorePages=true).</i>
+       <span style="font-style: italic;">hasMorePages=true).</span>
       </div>
       <div>
        <br>
       </div>
       <div>
         In case it sets to ‘
-       <i>true’ </i>you may fetch the next page by adding the query parameter<br>
-       <i>pageNumber=2 </i>etc.
+       <span style="font-style: italic;">true’ </span>you may fetch the next page by adding the query parameter<br>
+       <span style="font-style: italic;">pageNumber=2 </span>etc.
       </div>
       <div></p>
     
@@ -416,7 +420,8 @@
     
   </div>
   <div class="article">
-    <p><span/>        </div>
+    <p><span/>         <br>
+      </div>
       <div>
        <br>
       </div>
@@ -427,25 +432,111 @@
        <span style="font-size: 18px;"><br></span>
       </div>
       <div>
-       <span style="font-size: 18px;">Enhancing the Code</span>
+       <span style="font-size: 18px;">Enhancing the Code - the UML Diagram</span>
+      </div>
+      <div>
+       <span style="font-size: 18px;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 14px;">Introducing the government API in a general way needs some serious design and enhancement of our program. The UML class diagram of our enhanced program looks as follows (don’t be overwhelmed by the complexity, all the details will be explained later in this article).</span>
+      </div>
+      <div>
+       <span style="font-size: 18px;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 18px;"> 
+       <img class='article  img-thumbnail' src='/images/677f35f63bdfcc3ce67e87ba8eddacdb.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/> </span>
       </div>
       <div>
        <br>
       </div>
       <div>
-        &lt;code python&gt;
-      </div>
-      <div>
-        import json
-      </div>
-      <div>
-        import request
-      </div>
-      <div>
-        &lt;/code&gt;
+        Let’s summarize what we have done until now:
       </div>
       <div>
        <br>
+      </div>
+      <ul>
+       <li>
+        <div>
+          We created the
+         <span style="font-style: italic;">GovernmentSocialMediaAnalyzer </span>class
+         <span style="font-style: italic;"> </span>in the second
+         <a href="https://towardsdatascience.com/python-tutorial-government-social-media-analyser-class-build-out-12858190b284">tutorial</a>, which is capable of retrieving twitter relevant account data of politician of a country. We used a configuration driven based approach - based on YAML -  to abstract the country specific data into a configuration file
+        </div></li>
+       <li>
+        <div>
+          Several methods were defined which allowed us to create panda-, as well as plotly specific tables and charts.
+        </div></li>
+      </ul>
+      <div>
+       <br>
+      </div>
+      <div>
+        Now we will introduce three new classes 
+       <span style="font-style: italic;">govAPIFactory, govAPI  </span>(an abstract class) and
+       <span style="font-style: italic;">govAPI_CH, </span>which will build a generalized approach for connecting any kind of government API’s.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 18px;">Factory Method Pattern </span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Software DesignPattern play an important role in Software design, as described by
+       <a href="https://en.wikipedia.org/wiki/Software_design_pattern">Wikipedia</a>:
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <i>&ldquo;In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. It is a description or template for how to solve a problem that can be used in many different situations. Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.&rdquo;</i>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        In our design, we will use the Factory Method Pattern to generalise the connectivity to a government API, which is explained by
+       <a href="https://en.wikipedia.org/wiki/Factory_method_pattern">Wikipedia</a> as follows: 
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <i>&ldquo;In class-based programming, the factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes,<b> or implemented in a base class and optionally overridden by derived classes</b>—rather than by calling a constructor.&rdquo;</i>
+       <br>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Our design will be based on the strategy, to define a base class (parent -
+       <i>GovAPI) </i>which is abstract and a derived class (child - GovAPI_CH), which will have the country specific implementation (i.e Switzerland).
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <font style="font-size: 18px;">Abstract Base Class GovAPI </font>
+      </div>
+      <div>
+       <font style="font-size: 18px;"><br></font>
+      </div>
+      <div>
+       <span style="font-size: 18px;"> 
+       <img class='article  img-thumbnail' src='/images/4575a6f90580583ae8716c4ff2430524.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/> </span>
       </div>
       <div>
        <br>
