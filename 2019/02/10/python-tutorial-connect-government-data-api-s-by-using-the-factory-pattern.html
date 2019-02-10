@@ -139,7 +139,7 @@
        <br>
       </div>
       <div>
-        As you already know we are interested in a generalized program, which can work with multiple countries. For that we will introduce an abstract class and the factory pattern for the second part of our tutoriy.
+        As you already know we are interested in a generalized program, which can work with multiple countries. For that we will introduce an abstract class and the factory pattern for the second part of our tutorial.
       </div>
       <div>
        <br>
@@ -165,49 +165,66 @@
     <p><img class='article  img-thumbnail' src='/images/751c13a5281cb15579ad8b4fa6e6da92.png'></p>
     
   </div>
-  <div class="article">
-    <p><span/>         <br>
-      </div>
-      <div>
-       <br>
-      </div>
-      <div>
-        The code is straightforward. In the bar chart we visualize the accumulated friends count per party.
-      </div>
-      <div>
-       <br>
-      </div>
-      <div>
-        In the pie chart we aggregate the twitter account per party.
-      </div>
-      <div>
-       <font style="font-size: 14px;"><br></font>
-      </div>
-      <div>
-       <span style="font-size: 14px;"></span>
-      </div>
-      <div>
-        <script src="
-       <a href="https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d.js"><a href="https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d.js">https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d.js</a></a>&quot;&gt;</script>
-      </div>
-      <div>
-       <span style="font-size: 14px;"></span>
-      </div>
-      <div>
-       <font style="font-size: 14px;"><br></font>
-      </div>
-      <div>
-       <span style="font-size: 14px;">As one can see in the sample, various configuration parameters allow you to modify the layout of a chart. Head over to the</span>
-       <a href="https://plot.ly/pandas/" style="font-size: 14px;"> Plotly Python Open Source Graphing Library</a>
-       <span style="font-size: 14px;"> to find out more about the various possibilities with charts, panda and plotly.</span>
-      </div>
-      <div>
-       <font style="font-size: 14px;"><br></font>
-      </div>
-      <div></p>
-    
-    <p><img class='article  img-thumbnail' src='/images/59f7cbe865d467e007f41141c92466ce.png'></p>
-    
+  <div class="article"><p><span/>         <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    The code is straightforward. In the bar chart we visualize the accumulated friends count per party.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    In the pie chart we aggregate the twitter account per party.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="k">def</span> <span class="nf">create_party_friends_count_bar_chart</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">df</span><span class="p">):</span> 
+      <span class="n">data</span> <span class="o">=</span> <span class="p">[</span> 
+          <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span> 
+              <span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">Party</span><span class="p">,</span> <span class="c"># assign x as the dataframe column 'x' </span>
+              <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">FriendsCount</span> 
+          <span class="p">)</span> 
+      <span class="p">]</span> 
+      <span class="n">py</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__country_code</span><span class="o">+</span><span class="s">'-tw-party_politicans_count'</span><span class="p">)</span> 
+  <span class="k">def</span> <span class="nf">create_party_politicans_count_pie_chart</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">df</span><span class="p">):</span> 
+      <span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Pie</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">Party</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">PartyCount</span><span class="p">,</span> 
+                     <span class="n">hoverinfo</span><span class="o">=</span><span class="s">'label+percent'</span><span class="p">,</span> <span class="n">textinfo</span><span class="o">=</span><span class="s">'value'</span><span class="p">,</span> 
+                     <span class="n">title</span><span class="o">=</span><span class="s">"Twitter User per Party"</span><span class="p">,</span> <span class="n">titlefont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span> 
+                          <span class="n">family</span><span class="o">=</span><span class="s">'Courier New, monospace'</span><span class="p">,</span> 
+                          <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> 
+                          <span class="n">color</span><span class="o">=</span><span class="s">'#7f7f7f'</span> 
+                      <span class="p">))</span> 
+      <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">trace</span><span class="p">]</span> 
+      <span class="n">py</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__country_code</span><span class="o">+</span><span class="s">'-tw-party_friends_count'</span><span class="p">)</span> 
+
+</code></pre>
+
+<div>
+    Github Gist: 
+   <a href="https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d">https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d</a>
+  </div>
+
+<p><div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 14px;">As one can see in the sample, various configuration parameters allow you to modify the layout of a chart. Head over to the</span>
+   <a href="https://plot.ly/pandas/" style="font-size: 14px;"> Plotly Python Open Source Graphing Library</a>
+   <span style="font-size: 14px;"> to find out more about the various possibilities with charts, panda and plotly.</span>
+  </div>
+  <div>
+   <font style="font-size: 14px;"><br></font>
+  </div>
+  <div></p>
+
+<p><img class='article  img-thumbnail' src='/images/59f7cbe865d467e007f41141c92466ce.png'></p>
+
   </div>
   <div class="article">
     <p><span/>         <br>
@@ -298,7 +315,7 @@
        <br>
       </div>
       <div>
-        Two examples of Government API’s
+        Two examples of Government API’s:
       </div>
       <div>
        <br>
@@ -313,7 +330,8 @@
     
   </div>
   <div class="article">
-    <p><span/>        </div>
+    <p><span/>         <br>
+      </div>
       <div>
         Or the Swiss Government API of the Swiss Parliament: 
        <a href="http://ws-old.parlament.ch/"><a href="http://ws-old.parlament.ch/">http://ws-old.parlament.ch/</a></a>
@@ -324,30 +342,59 @@
     
   </div>
   <div class="article">
-    <p><span/>        </div>
+    <p><span/>         <br>
+      </div>
       <div>
-        Well we will use the Swiss Parliament  API’s to extract personal data of the parliament member (mainly it’s party allocation) in order to increase the accuracy of our twitter matching algorithm.
+        Well we will use the Swiss Parliament  API’s to extract personal data of the parliament member (mainly the  Party allocation) in order to increase the accuracy of our twitter matching algorithm.
       </div>
       <div>
        <br>
       </div>
       <div>
-       <span style="font-size: 18px;">Public Government API&rsquo;s</span>
+       <span style="font-size: 18px;">Councillors Data</span>
       </div>
       <div>
        <br>
       </div>
       <div>
-        Webservice Interface of the Swiss Parliament: 
-       <a href="http://ws-old.parlament.ch/"><a href="http://ws-old.parlament.ch">http://ws-old.parlament.ch</a></a>
+        What we require is the
+       <span style="font-style: italic;">councillors </span>data elements: 
+       <a href="http://ws-old.parlament.ch/councillors"><a href="http://ws-old.parlament.ch/councillors">http://ws-old.parlament.ch/councillors</a></a>
       </div>
       <div></p>
     
-    <p><img class='article  img-thumbnail' src='/images/4397ee9d924f451b283292798af53756.png'></p>
+    <p><img class='article  img-thumbnail' src='/images/73fbc1ede34d4fdf85ab4fb12b432d44.png'></p>
     
   </div>
   <div class="article">
     <p><span/>         <br>
+      </div>
+      <div>
+        In order to get the data in a program readable form we have to attach the query parameter:
+       <span style="font-style: italic;">format=json</span>. Which will return the content as a JSON document: 
+       <a href="http://ws-old.parlament.ch/councillors?format=json"><a href="http://ws-old.parlament.ch/councillors?format=json">http://ws-old.parlament.ch/councillors?format=json</a></a>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        As we have already explained in our
+       <a href="https://towardsdatascience.com/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter-d5f999555f98">second tutorial</a>  a public API which can return a lot of information, will use the concept of a cursor or paging mechanism in order to control the amount of data returned in one data request.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The Swiss Parliament API will return about 25 records in a request and will have in the latest record an attribute attached which tells you if there are more data available (
+       <i>hasMorePages=true).</i>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        In case it sets to ‘
+       <i>true’ </i>you may fetch the next page by adding the query parameter<br>
+       <i>pageNumber=2 </i>etc.
       </div>
       <div></p>
     
@@ -358,7 +405,29 @@
     <p><span/>         <br>
       </div>
       <div>
-       <font style="font-size: 18px;">Enhancing the Code</font>
+        You will find such kind of information about the API normally in its user documentation, e.g. the Swiss Parliament API has some parameters to control the output format, language etc.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div></p>
+    
+    <p><img class='article  img-thumbnail' src='/images/2543213fe4805b0088278b203a01ae16.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>        </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Having now a basic understanding, we can design our enhanced program which is capable of reading data from country specific government API’s. Let’s dig into the code.
+      </div>
+      <div>
+       <span style="font-size: 18px;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 18px;">Enhancing the Code</span>
       </div>
       <div>
        <br>
