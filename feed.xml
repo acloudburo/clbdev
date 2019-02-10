@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html"/>
     <id>https://dev.cloudburo.net/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html</id>
     <published>2019-02-10T15:24:11+00:00</published>
-    <updated>2019-02-10T21:24:31+00:00</updated>
+    <updated>2019-02-10T23:02:19+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -164,11 +164,11 @@
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;/div&gt;
-  &lt;div&gt;
+&lt;div&gt;
    &lt;br&gt;
   &lt;/div&gt;
-  &lt;div&gt;
+
+&lt;p&gt;&lt;div&gt;
    &lt;span style="font-size: 24px;"&gt;Government Data API Factory&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;&lt;/p&gt;
@@ -349,11 +349,11 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 18px;"&gt; 
-       &lt;img class='article  img-thumbnail' src='/images/677f35f63bdfcc3ce67e87ba8eddacdb.png'&gt;&lt;/p&gt;
+       &lt;img class='article  img-thumbnail' src='/images/60578db6f87ce4eb80e11409fb6a75e9.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -402,7 +402,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;i&gt;&amp;ldquo;In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. It is a description or template for how to solve a problem that can be used in many different situations. Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.&amp;rdquo;&lt;/i&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. It is a description or template for how to solve a problem that can be used in many different situations. Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.&amp;rdquo;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -415,62 +415,223 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;i&gt;&amp;ldquo;In class-based programming, the factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes,&lt;b&gt; or implemented in a base class and optionally overridden by derived classes&lt;/b&gt;—rather than by calling a constructor.&amp;rdquo;&lt;/i&gt;
-       &lt;br&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;In class-based programming, the factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes,&lt;/span&gt;
+       &lt;span style="font-style: italic; font-weight: bold;"&gt; or implemented in a base class and optionally overridden by derived classes&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;—rather than by calling a constructor.&amp;rdquo;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Our design will be based on the strategy, to define a base class (parent -
-       &lt;i&gt;GovAPI) &lt;/i&gt;which is abstract and a derived class (child - GovAPI_CH), which will have the country specific implementation (i.e Switzerland).
+        Our design will be based on the strategy, to define 
       &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          a base class (parent -
+         &lt;span style="font-style: italic;"&gt;GovAPI) &lt;/span&gt;which is abstract and
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          a derived class (child - GovAPI_CH), which will have the country specific implementation (i.e Switzerland).
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          in the future we can introduce additional classes for example for UK: GovAPI_UK
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;font style="font-size: 18px;"&gt;Abstract Base Class GovAPI &lt;/font&gt;
+       &lt;span style="font-size: 18px;"&gt;Abstract Base Class GovAPI &lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;font style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 18px;"&gt; 
-       &lt;img class='article  img-thumbnail' src='/images/4575a6f90580583ae8716c4ff2430524.png'&gt;&lt;/p&gt;
+       &lt;img class='article  img-thumbnail' src='/images/a53fe4242cddb9f2336dbd15ab80c695.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        TO BE COMPLETED
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 24px;"&gt;Source Code&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The source code can be found here (lesson 3 directory):
-       &lt;span style="font-size: 18px;"&gt; &lt;/span&gt;
-       &lt;a href="https://github.com/talfco/clb-sentiment" style="font-size: 18px;"&gt;&lt;a href="https://github.com/talfco/clb-sentiment"&gt;https://github.com/talfco/clb-sentiment&lt;/a&gt;&lt;/a&gt; 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
-       &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-style: italic;"&gt;govAPI&lt;/span&gt; is an abstract class that contains several abstract methods. An abstract method is a a method that is declared, but contains no implementation.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    In Python an abstract class is derived (or inherits) from the class ABC and will have one to more methods marked with
+   &lt;span style="font-style: italic;"&gt;@abstractmethod&lt;/span&gt;.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight python"&gt;&lt;code&gt;
+  &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;abc&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ABC&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;abstractmethod&lt;/span&gt; 
+  &lt;span class="o"&gt;...&lt;/span&gt; 
+
+
+  &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;GovAPI&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ABC&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
+      &lt;span class="nd"&gt;@abstractmethod&lt;/span&gt; 
+      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;load_government_members&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
+          &lt;span class="k"&gt;pass&lt;/span&gt; 
+      &lt;span class="o"&gt;...&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+    So the abstract class provides you a build plan, for any implementation class which inherits from this class. in our class the
+   &lt;span style="font-style: italic;"&gt;govAPI_CH. &lt;/span&gt;What kind of methods does
+   &lt;i&gt;govAPI_CH&lt;/i&gt; has to implement ?
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    First of all the implementation of the 
+   &lt;span style="font-style: italic;"&gt; load_government_members() &lt;/span&gt;method has to take care to fetch the politicians records from the government API
+   &lt;span style="font-style: italic;"&gt; &lt;/span&gt;and each fetched record (which represent the data of a singe politician) must be passed to  the method
+   &lt;span style="font-style: italic;"&gt;&lt;em&gt;add_person_record &lt;/span&gt;(which is already implemented by
+   &lt;i&gt;govAPI&lt;/i&gt; base class)
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    The question now is, what the heck is the 
+   &lt;span style="font-style: italic;"&gt;&lt;/em&gt;add_person_record&lt;/span&gt; method doing ? Well look at the code below. 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight python"&gt;&lt;code&gt;
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_add_person_record&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
+      &lt;span class="n"&gt;person&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+          &lt;span class="s"&gt;'id'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_id&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'active'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_active&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'lastName'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_last_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'firstName'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_first_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'middleName'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_middle_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'gender'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_gender&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'party'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_party&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'council'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_council&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'electedDate'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_elected_date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'birthDate'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_birthdate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'maritalStatus'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_marital_status&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'title'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;  &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'statePostalCode'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_state_postal_code&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'district'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_district&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'zip'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+          &lt;span class="s"&gt;'townName'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_town_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+      &lt;span class="p"&gt;}&lt;/span&gt; 
+      &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_members&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;person&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div&gt;
+    Github: 
+   &lt;a href="https://gist.github.com/talfco/b6bf98b61b2809542ccb51a7d6bb8160"&gt;https://gist.github.com/talfco/b6bf98b61b2809542ccb51a7d6bb8160&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;&lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    The method is just preparing a target dictionary for our person record. I.e. the attribute names defined (
+   &lt;span style="font-style: italic;"&gt;lastName, firstName, council etc.&lt;/span&gt;) are the names we want to use for any GovAPI implementation.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    That means our retrieved record in the form of a dedicated government API implementation (i.e. in the form of the Swiss Government Parliament API) has to be  transformed by using a bunch of getter methods.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Each of this getter methods is either abstract or returns an empty string. It’s the responsibility of the implementer of an inherited class (
+   &lt;i&gt;GovAPI_CH&lt;/i&gt;)  to provide the correct implementation. 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/a706ca3c26abf134cbe227239b89242c.png'&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;/p&gt;
+&lt;pre class="highlight python"&gt;&lt;code&gt;
+  &lt;span class="nd"&gt;@abstractmethod&lt;/span&gt; 
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_active&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
+      &lt;span class="k"&gt;pass&lt;/span&gt; 
+  &lt;span class="nd"&gt;@abstractmethod&lt;/span&gt; 
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_id&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
+      &lt;span class="k"&gt;pass&lt;/span&gt; 
+  &lt;span class="nd"&gt;@abstractmethod&lt;/span&gt; 
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_last_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
+      &lt;span class="k"&gt;pass&lt;/span&gt; 
+  &lt;span class="nd"&gt;@abstractmethod&lt;/span&gt; 
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_first_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
+      &lt;span class="k"&gt;pass&lt;/span&gt; 
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_middle_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
+      &lt;span class="k"&gt;pass&lt;/span&gt; 
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_party&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s"&gt;''&lt;/span&gt; 
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_council&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
+      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s"&gt;''&lt;/span&gt; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+  &lt;div&gt;
+    Github: 
+   &lt;a href="https://gist.github.com/talfco/9bc3e30fce652a46eec55bc5a2dce25c"&gt;&lt;a href="https://gist.github.com/talfco/9bc3e30fce652a46eec55bc5a2dce25c"&gt;https://gist.github.com/talfco/9bc3e30fce652a46eec55bc5a2dce25c&lt;/a&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 24px;"&gt;Source Code&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    The source code can be found here (lesson 3 directory):
+   &lt;span style="font-size: 18px;"&gt; &lt;/span&gt;
+   &lt;a href="https://github.com/talfco/clb-sentiment" style="font-size: 18px;"&gt;&lt;a href="https://github.com/talfco/clb-sentiment"&gt;https://github.com/talfco/clb-sentiment&lt;/a&gt;&lt;/a&gt; 
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+   &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+   &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
+  &lt;/div&gt;&lt;/p&gt;
+
   &lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
