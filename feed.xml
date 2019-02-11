@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html"/>
     <id>https://dev.cloudburo.net/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html</id>
     <published>2019-02-10T15:24:11+00:00</published>
-    <updated>2019-02-11T00:07:37+00:00</updated>
+    <updated>2019-02-11T07:03:19+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -99,14 +99,14 @@
               &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;FriendsCount&lt;/span&gt; 
           &lt;span class="p"&gt;)&lt;/span&gt; 
       &lt;span class="p"&gt;]&lt;/span&gt; 
-      &lt;span class="n"&gt;py&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__country_code&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;'-tw-party_politicans_count’) &lt;/span&gt;&lt;span class="err"&gt;
-&lt;/span&gt;&lt;span class="s"&gt;  def create_party_politicans_count_pie_chart(self, df): &lt;/span&gt;&lt;span class="err"&gt;
-&lt;/span&gt;&lt;span class="s"&gt;      trace = go.Pie(labels=df.Party, values=df.PartyCount, &lt;/span&gt;&lt;span class="err"&gt;
-&lt;/span&gt;&lt;span class="s"&gt;                     hoverinfo='&lt;/span&gt;&lt;span class="n"&gt;label&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;percent&lt;/span&gt;&lt;span class="s"&gt;', textinfo='&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="s"&gt;', &lt;/span&gt;&lt;span class="err"&gt;
-&lt;/span&gt;&lt;span class="s"&gt;                     title="Twitter User per Party", titlefont=dict( &lt;/span&gt;&lt;span class="err"&gt;
-&lt;/span&gt;&lt;span class="s"&gt;                          family='&lt;/span&gt;&lt;span class="n"&gt;Courier&lt;/span&gt; &lt;span class="n"&gt;New&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;monospace&lt;/span&gt;&lt;span class="s"&gt;', &lt;/span&gt;&lt;span class="err"&gt;
-&lt;/span&gt;&lt;span class="s"&gt;                          size=14, &lt;/span&gt;&lt;span class="err"&gt;
-&lt;/span&gt;&lt;span class="s"&gt;                          color='&lt;/span&gt;&lt;span class="c"&gt;#7f7f7f' &lt;/span&gt;
+      &lt;span class="n"&gt;py&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__country_code&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;'-tw-party_politicans_count'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;create_party_politicans_count_pie_chart&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
+      &lt;span class="n"&gt;trace&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;go&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Pie&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;labels&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Party&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PartyCount&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
+                     &lt;span class="n"&gt;hoverinfo&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'label+percent'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;textinfo&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'value'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
+                     &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"Twitter User per Party"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;titlefont&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; 
+                          &lt;span class="n"&gt;family&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'Courier New, monospace'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
+                          &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
+                          &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'#7f7f7f'&lt;/span&gt; 
                       &lt;span class="p"&gt;))&lt;/span&gt; 
       &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;trace&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
       &lt;span class="n"&gt;py&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__country_code&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;'-tw-party_friends_count'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
@@ -437,10 +437,10 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 18px;"&gt; 
-       &lt;img class='article  img-thumbnail' src='/images/a53fe4242cddb9f2336dbd15ab80c695.png'&gt;&lt;/p&gt;
+       &lt;img class='article  img-thumbnail' src='/images/2c7a3803501f809def0b63c9a166b1f4.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt; &lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -586,7 +586,7 @@
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-    So the full implementation of
+    The getter method implementations of
    &lt;span style="font-style: italic;"&gt;GovAPI_CH&lt;/span&gt; is shown below. It consists of a bunch of getter methods, which will return required attribute value out of the record.
   &lt;/div&gt;
   &lt;div&gt;
@@ -595,8 +595,7 @@
   &lt;div&gt;&lt;/p&gt;
 &lt;pre class="highlight python"&gt;&lt;code&gt;
   &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;GovAPI_CH&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GovAPI&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;cfg&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__cfg&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;cfg&lt;/span&gt; 
+      &lt;span class="err"&gt;…&lt;/span&gt; 
       &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_active&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
           &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'active'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
       &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_id&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
@@ -609,12 +608,7 @@
           &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s"&gt;''&lt;/span&gt; 
       &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_party&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
           &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'party'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_council&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'council'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_gender&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'gender'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_marital_status&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'maritalStatus'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+      &lt;span class="o"&gt;...&lt;/span&gt; 
       &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_birthdate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
           &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_convert_utc_timestamp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'birthDate'&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; 
       &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
@@ -623,39 +617,12 @@
           &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s"&gt;'CH'&lt;/span&gt; 
       &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_state_postal_code&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
           &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'cantonName'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_district&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s"&gt;''&lt;/span&gt; 
       &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
           &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'postalAddress'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'zip'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
       &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_town_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
           &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'postalAddress'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'city'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
       &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_elected_date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
           &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_convert_utc_timestamp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'councilMemberships'&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="s"&gt;'entryDate'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; 
-      &lt;span class="c"&gt;# http://ws-old.parlament.ch/councillors?format=json &lt;/span&gt;
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;load_government_members&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="n"&gt;page_number&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; 
-          &lt;span class="n"&gt;url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__cfg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'govAPIUrl'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
-          &lt;span class="n"&gt;politician_res&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__cfg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'govAPICouncillorsRes'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
-          &lt;span class="n"&gt;par&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__cfg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'govAPIParams'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
-          &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
-              &lt;span class="n"&gt;par&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="s"&gt;'pageNumber'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;page_number&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-              &lt;span class="n"&gt;headers&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;utils&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;default_headers&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-              &lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;update&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt; &lt;span class="s"&gt;'User-Agent'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s"&gt;'Mozilla/5.0'&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt; 
-              &lt;span class="n"&gt;politicians&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;politician_res&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;par&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-              &lt;span class="n"&gt;has_more_pages&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt; 
-              &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;politician&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;politicians&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
-                  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;politician&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'hasMorePages'&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-                      &lt;span class="n"&gt;has_more_pages&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt; 
-                  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;politician&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'active'&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; 
-                      &lt;span class="nb"&gt;id&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;politician&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'id'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
-                      &lt;span class="n"&gt;details&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;politician_res&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;"/"&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;id&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;params&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;par&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
-                      &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;details&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-                      &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_add_person_record&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;details&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-              &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;has_more_pages&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
-                  &lt;span class="k"&gt;break&lt;/span&gt; 
-              &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; 
-                  &lt;span class="n"&gt;page_number&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_members&lt;/span&gt; 
 
 &lt;/code&gt;&lt;/pre&gt;
 
