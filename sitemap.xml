@@ -841,6 +841,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/02/11/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html</loc>
+    <lastmod>2019-02-11</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/partials/disqus.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
@@ -1156,6 +1162,12 @@
     <loc>https://dev.cloudburo.net/2019/02.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/02/11.html</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

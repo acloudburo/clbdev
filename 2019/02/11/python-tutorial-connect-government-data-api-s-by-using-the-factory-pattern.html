@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Python Tutorial: Connect Government Data API's By  Using The Factory Pattern</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (17)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (1)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (10)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (2)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (13)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (4)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (4)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (5)</a>
+            <a href="/tags/python.html" class="label label-default">python (4)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (18)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tut01.html" class="label label-default">tut01 (4)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (9)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2019.html" class="label label-primary">2019 (7)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2019/02/11/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html">Python Tutorial: Connect Government Data API's By  Using The Factory Pattern</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  11.Feb 2019 | Tags 
+            </p>
+          </header>
+          <div class="entry-description"><div class="row">
+  <p><img class='pull-left img-responsive article img-thumbnail' src='/images/751c13a5281cb15579ad8b4fa6e6da92.png'></p>
+  
+  <div class="article">
+    <p><span/>      <div>
+       <span style="font-size: 18px;">Source Politican Data from  Public Government Data API’s to Increase Allocation Accuracy</span>
+      </div>
+      <div>
+       <font style="font-size: 18px;"><br></font>
+      </div>
+      <div>
+        In this tutorial, we do mainly two steps
+      </div>
+      <ul>
+       <li>
+        <div>
+          First of all we generate some plotly diagrams out of our collected data,
+        </div></li>
+       <li>
+        <div>
+          secondly we connect public government API to our program in order to retrieve government members and party assignment in a reliable way
+        </div></li>
+      </ul>
+      <div>
+       <br>
+      </div>
+      <div>
+        As you already know we are interested in a generalized program, which can work with multiple countries. For that we will introduce an abstract class and the factory pattern for the second part of our tutorial.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        But let’s start with the first quite easy task of generating two charts for our tables.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 24px;">Plotly Chart Generation</span>
+      </div>
+      <div>
+        We create a bar chart as well as a pie chart. As a base we take the our plotly table
+       <span style="font-style: italic;">CH-tw-party-list</span>.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div></p>
+    
+  </div>
+  <div class="article"><p><span/>         <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    The code is straightforward:
+  </div>
+  <ul>
+   <li>
+    <div>
+      In the bar chart we visualize the accumulated friends count per party.
+    </div></li>
+   <li>
+    <div>
+      In the pie chart we aggregate the twitter account per party.
+    </div></li>
+  </ul>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="k">def</span> <span class="nf">create_party_friends_count_bar_chart</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">df</span><span class="p">):</span> 
+      <span class="n">data</span> <span class="o">=</span> <span class="p">[</span> 
+          <span class="n">go</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span> 
+              <span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">Party</span><span class="p">,</span> <span class="c"># assign x as the dataframe column 'x' </span>
+              <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">FriendsCount</span> 
+          <span class="p">)</span> 
+      <span class="p">]</span> 
+      <span class="n">py</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__country_code</span><span class="o">+</span><span class="s">'-tw-party_politicans_count'</span><span class="p">)</span> 
+  <span class="k">def</span> <span class="nf">create_party_politicans_count_pie_chart</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">df</span><span class="p">):</span> 
+      <span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Pie</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">Party</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">PartyCount</span><span class="p">,</span> 
+                     <span class="n">hoverinfo</span><span class="o">=</span><span class="s">'label+percent'</span><span class="p">,</span> <span class="n">textinfo</span><span class="o">=</span><span class="s">'value'</span><span class="p">,</span> 
+                     <span class="n">title</span><span class="o">=</span><span class="s">"Twitter User per Party"</span><span class="p">,</span> <span class="n">titlefont</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span> 
+                          <span class="n">family</span><span class="o">=</span><span class="s">'Courier New, monospace'</span><span class="p">,</span> 
+                          <span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> 
+                          <span class="n">color</span><span class="o">=</span><span class="s">'#7f7f7f'</span> 
+                      <span class="p">))</span> 
+      <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">trace</span><span class="p">]</span> 
+      <span class="n">py</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">__country_code</span><span class="o">+</span><span class="s">'-tw-party_friends_count'</span><span class="p">)</span> 
+
+</code></pre>
+
+<div>
+    Github Gist: 
+   <a href="https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d">https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d</a>
+  </div>
+
+<p><div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 14px;">As one can see in the sample, various configuration parameters allow you to modify the layout of a chart. Head over to the</span>
+   <a href="https://plot.ly/pandas/" style="font-size: 14px;"> Plotly Python Open Source Graphing Library</a>
+   <span style="font-size: 14px;"> to find out more about the various possibilities with charts, panda and plotly.</span>
+  </div>
+  <div>
+   <font style="font-size: 14px;"><br></font>
+  </div>
+  <div></p>
+
+<p><img class='pull-left img-responsive article img-thumbnail' src='/images/59f7cbe865d467e007f41141c92466ce.png'></p>
+
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+        As one can see we have a lot of “unkowns”, i.e. we couldn’t identify the corresponding party by just analysing Twitter data elements. In the second part of this tutorial we will address this point.
+      </div>
+      <div></p>
+    
+    <p><img class='pull-left img-responsive article img-thumbnail' src='/images/7b0307e94d4ad54a6cc124c6e7372c5d.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+       <font style="font-size: 14px;"><br></font>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 24px;">Government Data API Factory</span>
+      </div>
+      <div></p>
+    
+    <p><img class='pull-left img-responsive article img-thumbnail' src='/images/76b40038953263256ecc659e32aa3d1a.jpeg'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div style="text-align: center;">
+       <span style="font-size: 14px; background-color: rgb(245, 245, 245); color: rgb(17, 17, 17); font-family: -apple-system, system-ui, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;">Photo by </span>
+       <a href="https://unsplash.com/photos/zb29xBwpt6c?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="box-sizing: border-box; background-color: rgb(245, 245, 245); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(153, 153, 153); font-family: -apple-system, system-ui, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">Rodney Minter-Brown</a>
+       <span style="font-size: 14px; background-color: rgb(245, 245, 245); color: rgb(17, 17, 17); font-family: -apple-system, system-ui, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;"> on </span>
+       <a href="https://unsplash.com/search/photos/factory?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="box-sizing: border-box; background-color: rgb(245, 245, 245); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(153, 153, 153); font-family: -apple-system, system-ui, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">Unsplash</a>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        In the recent years, the availability of so-called open Government API’s exploded.  It stems from the idea that data should be open, as Wikipedia describes the term of
+       <a href="https://en.wikipedia.org/wiki/Open_data">Open Data</a>:
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-style: italic;">&ldquo;Open data is the idea that some data should be freely available to everyone to use and republish as they wish, without restrictions from copyright, patents or other mechanisms of control….</span>
+      </div>
+      <div>
+       <span style="font-style: italic;">One of the most important forms of open data is open government data (OGD), which is a form of open data created by ruling government institutions. Open government data&rsquo;s importance is borne from it being a part of citizens&#39; everyday lives, down to the most routine/mundane tasks that are seemingly far removed from government.”</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        A good starting point for understanding for getting an overview of government data API’s is the programmablweb directory, which has an overall list of over 20’00 different API’s.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The government directory API category can be found here:
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <a href="https://www.programmableweb.com/category/government/apis?category=20094"><a href="https://www.programmableweb.com/category/government/apis?category=20094">https://www.programmableweb.com/category/government/apis?category=20094</a></a>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Two examples of Government API’s:
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The data API of the US government: 
+       <a href="https://www.data.gov/developers/apis"><a href="https://www.data.gov/developers/apis">https://www.data.gov/developers/apis</a></a>
+      </div>
+      <div></p>
+    
+    <p><img class='pull-left img-responsive article img-thumbnail' src='/images/5690fad8adfa123f25dff86cab2356e2.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+        Or the Swiss Government API of the Swiss Parliament: 
+       <a href="http://ws-old.parlament.ch/"><a href="http://ws-old.parlament.ch/">http://ws-old.parlament.ch/</a></a>
+      </div>
+      <div></p>
+    
+    <p><img class='pull-left img-responsive article img-thumbnail' src='/images/1336d71cb6fa2a52132cf14cda1a5b1d.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+        Well we will use the Swiss Parliament  API’s to extract personal data of the parliament member (mainly the  Party allocation) in order to increase the accuracy of our twitter matching algorithm.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 18px;">Councillors Data</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        What we require is the
+       <span style="font-style: italic;">councillors </span>data elements: 
+       <a href="http://ws-old.parlament.ch/councillors"><a href="http://ws-old.parlament.ch/councillors">http://ws-old.parlament.ch/councillors</a></a>
+      </div>
+      <div></p>
+    
+    <p><img class='pull-left img-responsive article img-thumbnail' src='/images/73fbc1ede34d4fdf85ab4fb12b432d44.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+        In order to get the data in a program readable form we have to attach the query parameter:
+       <span style="font-style: italic;">format=json</span>. Which will return the content as a JSON document: 
+       <a href="http://ws-old.parlament.ch/councillors?format=json"><a href="http://ws-old.parlament.ch/councillors?format=json">http://ws-old.parlament.ch/councillors?format=json</a></a>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        As we have already explained in our
+       <a href="https://towardsdatascience.com/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter-d5f999555f98">second tutorial</a>  a public API which can return a lot of information, will use the concept of a cursor or paging mechanism in order to control the amount of data returned in one data request.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The Swiss Parliament API will return about 25 records in a request and will have in the latest record an attribute attached which tells you if there are more data available (
+       <span style="font-style: italic;">hasMorePages=true).</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        In case it sets to ‘
+       <span style="font-style: italic;">true’ </span>you may fetch the next page by adding the query parameter<br>
+       <span style="font-style: italic;">pageNumber=2 </span>etc.
+      </div>
+      <div></p>
+    
+    <p><img class='pull-left img-responsive article img-thumbnail' src='/images/8ce76625df8f934a2b3a720a90449243.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+        You will find such kind of information about the API normally in its user documentation, e.g. the Swiss Parliament API has some parameters to control the output format, language etc.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div></p>
+    
+    <p><img class='pull-left img-responsive article img-thumbnail' src='/images/2543213fe4805b0088278b203a01ae16.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/>         <br>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Having now a basic understanding, we can design our enhanced program which is capable of reading data from country specific government API’s. Let’s dig into the code.
+      </div>
+      <div>
+       <span style="font-size: 18px;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 18px;">Enhancing the Code - the UML Diagram</span>
+      </div>
+      <div>
+       <span style="font-size: 18px;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 14px;">Introducing the government API in a general way needs some serious design and enhancement of our program. The UML class diagram of our enhanced program looks as follows (don’t be overwhelmed by the complexity, all the details will be explained later in this article).</span>
+      </div>
+      <div>
+       <span style="font-size: 18px;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 18px;"> 
+       <img class='pull-left img-responsive article img-thumbnail' src='/images/3f3a89b6f749bf1fc945e6e4b3e92010.png'></p>
+    
+  </div>
+  <div class="article">
+    <p><span/> <br></span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Let’s summarize what we have done until now:
+      </div>
+      <div>
+       <br>
+      </div>
+      <ul>
+       <li>
+        <div>
+          We created the
+         <span style="font-style: italic;">GovernmentSocialMediaAnalyzer </span>class
+         <span style="font-style: italic;"> </span>in the second
+         <a href="https://towardsdatascience.com/python-tutorial-government-social-media-analyser-class-build-out-12858190b284">tutorial</a>, which is capable of retrieving twitter relevant account data of politician of a country. We used a configuration driven based approach - based on YAML -  to abstract the country specific data into a configuration file
+        </div></li>
+       <li>
+        <div>
+          Several methods were defined which allowed us to create panda-, as well as plotly specific tables and charts.
+        </div></li>
+      </ul>
+      <div>
+       <br>
+      </div>
+      <div>
+        Now we will introduce three new classes 
+       <span style="font-style: italic;">govAPIFactory, govAPI  </span>(an abstract class) and
+       <span style="font-style: italic;">govAPI_CH, </span>which will build a generalized approach for connecting any kind of government API’s.
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 18px;">Factory Method Pattern </span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Software DesignPattern play an important role in Software design, as described by
+       <a href="https://en.wikipedia.org/wiki/Software_design_pattern">Wikipedia</a>:
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-style: italic;">&ldquo;In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. It is a description or template for how to solve a problem that can be used in many different situations. Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.&rdquo;</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        In our design, we will use the Factory Method Pattern to generalise the connectivity to a government API, which is explained by
+       <a href="https://en.wikipedia.org/wiki/Factory_method_pattern">Wikipedia</a> as follows: 
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-style: italic;">&ldquo;In class-based programming, the factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes,</span>
+       <span style="font-style: italic; font-weight: bold;"> or implemented in a base class and optionally overridden by derived classes</span>
+       <span style="font-style: italic;">—rather than by calling a constructor.&rdquo;</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        Our design will be based on the strategy, to define 
+      </div>
+      <ul>
+       <li>
+        <div>
+          a base class (parent -
+         <span style="font-style: italic;">GovAPI) </span>which is abstract and
+        </div></li>
+       <li>
+        <div>
+          a derived class (child - GovAPI_CH), which will have the country specific implementation (i.e Switzerland).
+        </div></li>
+       <li>
+        <div>
+          in the future we can introduce additional classes for example for UK: GovAPI_UK
+        </div></li>
+      </ul>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 18px;">Abstract Base Class “GovAPI&quot; </span>
+      </div>
+      <div>
+       <font style="font-size: 18px;"><br></font>
+      </div>
+      <div>
+       <span style="font-size: 18px;"> 
+       <img class='pull-left img-responsive article img-thumbnail' src='/images/f65f5d6a9d887a9ad58bf6a526249349.png'></p>
+    
+  </div>
+  <div class="article"><p><span/> <br></span>
+  </div>
+  <div>
+   <span style="font-size: 18px;"><br></span>
+  </div>
+  <div>
+   <span style="font-style: italic;">govAPI</span> is an abstract class that contains several abstract methods. An abstract method is a a method that is declared, but contains no implementation.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    In Python an abstract class is derived (or inherits) from the class ABC and will have one to more methods marked with
+   <span style="font-style: italic;">@abstractmethod</span>.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span> 
+  <span class="o">...</span> 
+
+
+  <span class="k">class</span> <span class="nc">GovAPI</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span> 
+      <span class="nd">@abstractmethod</span> 
+      <span class="k">def</span> <span class="nf">load_government_members</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> 
+          <span class="k">pass</span> 
+      <span class="o">...</span> 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div>
+    So the abstract class provides you a build plan, for any implementation class which inherits from this class. in our class the
+   <span style="font-style: italic;">govAPI_CH. </span>What kind of methods does
+   <span style="font-style: italic;">govAPI_CH</span> has to implement ?
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    First of all the implementation of the 
+   <span style="font-style: italic;"> load_government_members() </span>method has to take care to fetch the politicians records from the government API
+   <span style="font-style: italic;"> </span>and each fetched record (which represent the data of a singe politician) must be passed to  the method
+   <span style="font-style: italic;"><em>add_person_record </span>(which is already implemented by
+   <span style="font-style: italic;">govAPI</span> base class)
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    The question now is, what the heck is the 
+   <span style="font-style: italic;"></em>add_person_record</span> method doing ? Well look at the code below. 
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="k">def</span> <span class="nf">_add_person_record</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span> 
+      <span class="n">person</span> <span class="o">=</span> <span class="p">{</span> 
+          <span class="s">'id'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_id</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'active'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_active</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'lastName'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_last_name</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'firstName'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_first_name</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'middleName'</span><span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">_get_middle_name</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'gender'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_gender</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'party'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_party</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'council'</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_council</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'electedDate'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_elected_date</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'birthDate'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_birthdate</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'maritalStatus'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_marital_status</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'title'</span><span class="p">:</span>  <span class="bp">self</span><span class="o">.</span><span class="n">_get_title</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'statePostalCode'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_state_postal_code</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'district'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_district</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'zip'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_zip</span><span class="p">(</span><span class="nb">dict</span><span class="p">),</span> 
+          <span class="s">'townName'</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_town_name</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span> 
+      <span class="p">}</span> 
+      <span class="bp">self</span><span class="o">.</span><span class="n">_members</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">person</span><span class="p">)</span> 
+
+</code></pre>
+
+<div>
+    Github: 
+   <a href="https://gist.github.com/talfco/b6bf98b61b2809542ccb51a7d6bb8160">https://gist.github.com/talfco/b6bf98b61b2809542ccb51a7d6bb8160</a>
+  </div>
+
+<p><div>
+   <br>
+  </div>
+  <div>
+    The method is just preparing a target dictionary for our person record. I.e. the attribute names defined (
+   <span style="font-style: italic;">lastName, firstName, council etc.</span>) are the names we want to use for any GovAPI implementation.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    That means our retrieved record in the form of a dedicated government API implementation (i.e. in the form of the Swiss Government Parliament API) has to be  transformed by using a bunch of getter methods.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    Each of this getter methods is either abstract or returns an empty string. It’s the responsibility of the implementer of an inherited class (
+   <span style="font-style: italic;">GovAPI_CH</span>)  to provide the correct implementation. 
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="nd">@abstractmethod</span> 
+  <span class="k">def</span> <span class="nf">_get_active</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+      <span class="k">pass</span> 
+  <span class="nd">@abstractmethod</span> 
+  <span class="k">def</span> <span class="nf">_get_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+      <span class="k">pass</span> 
+  <span class="nd">@abstractmethod</span> 
+  <span class="k">def</span> <span class="nf">_get_last_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+      <span class="k">pass</span> 
+  <span class="nd">@abstractmethod</span> 
+  <span class="k">def</span> <span class="nf">_get_first_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+      <span class="k">pass</span> 
+  <span class="k">def</span> <span class="nf">_get_middle_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+      <span class="k">pass</span> 
+  <span class="k">def</span> <span class="nf">_get_party</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+      <span class="k">return</span> <span class="s">''</span> 
+  <span class="k">def</span> <span class="nf">_get_council</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+      <span class="k">return</span> <span class="s">''</span> 
+
+</code></pre>
+
+<div>
+    Github: 
+   <a href="https://gist.github.com/talfco/9bc3e30fce652a46eec55bc5a2dce25c">https://gist.github.com/talfco/9bc3e30fce652a46eec55bc5a2dce25c</a>
+  </div>
+
+<p><div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 18px; font-family: &quot;Helvetica Neue&quot;;">Implementation Class “GovAPI_CH&quot;</span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    The getter method implementations of
+   <span style="font-style: italic;">GovAPI_CH</span> is shown below. It consists of a bunch of getter methods, which will return required attribute values out of the record.
+  </div>
+  <div>
+   <span style="font-style: italic;"> </span>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="k">class</span> <span class="nc">GovAPI_CH</span><span class="p">(</span><span class="n">GovAPI</span><span class="p">):</span> 
+      <span class="err">…</span> 
+      <span class="k">def</span> <span class="nf">_get_active</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="nb">dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'active'</span><span class="p">)</span> 
+      <span class="k">def</span> <span class="nf">_get_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="nb">dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'id'</span><span class="p">)</span> 
+      <span class="k">def</span> <span class="nf">_get_last_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="nb">dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'lastName'</span><span class="p">)</span> 
+      <span class="k">def</span> <span class="nf">_get_first_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="nb">dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'firstName'</span><span class="p">)</span> 
+      <span class="k">def</span> <span class="nf">_get_middle_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="s">''</span> 
+      <span class="k">def</span> <span class="nf">_get_party</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="nb">dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'party'</span><span class="p">)</span> 
+      <span class="o">...</span> 
+      <span class="k">def</span> <span class="nf">_get_birthdate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_convert_utc_timestamp</span><span class="p">(</span><span class="nb">dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'birthDate'</span><span class="p">))</span> 
+      <span class="k">def</span> <span class="nf">_get_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="nb">dict</span><span class="p">[</span><span class="s">'salutationTitle'</span><span class="p">]</span> 
+      <span class="k">def</span> <span class="nf">_get_country</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="s">'CH'</span> 
+      <span class="k">def</span> <span class="nf">_get_state_postal_code</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="nb">dict</span><span class="p">[</span><span class="s">'cantonName'</span><span class="p">]</span> 
+      <span class="k">def</span> <span class="nf">_get_zip</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="nb">dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'postalAddress'</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'zip'</span><span class="p">)</span> 
+      <span class="k">def</span> <span class="nf">_get_town_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="nb">dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'postalAddress'</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'city'</span><span class="p">)</span> 
+      <span class="k">def</span> <span class="nf">_get_elected_date</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span> 
+          <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_convert_utc_timestamp</span><span class="p">(</span><span class="nb">dict</span><span class="p">[</span><span class="s">'councilMemberships'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s">'entryDate'</span><span class="p">])</span> 
+
+</code></pre>
+
+<div>
+    Github: 
+   <a href="https://gist.github.com/talfco/dd482ff73c8e35baacf15ffb63852638">https://gist.github.com/talfco/dd482ff73c8e35baacf15ffb63852638</a>
+  </div>
+
+<p><div>
+   <br>
+  </div>
+  <div>
+    Beside the getters we also have implement the method
+   <span style="font-style: italic;">load_gevernment_members</span> which contains the code to fetch the data from the government API.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    Our implementation uses the python module
+   <a href="http://docs.python-requests.org/en/master/" style="font-style: italic;">requests</a> which is &ldquo;an elegant and simple HTTP library for human-beings”. In the introduction section of this article, we provided an overview of the Swiss parliaments API, the code below will fetch the data, via the paging mechanism.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    The URL and its parameter we placed in the corresponding configuration YAML file.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight plaintext"><code>
+  govAPIUrl: "http://ws-old.parlament.ch/" 
+  govAPICouncillorsRes: "councillors" 
+  govAPIParams: 
+     - format : "json" 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><ul>
+   <li>
+    <div>
+      The first
+     <span style="font-style: italic;"> requests.get </span>will fetch all the councillors overview pages<br>
+     <a href="http://ws-old.parlament.ch/councillors?format=json&amp;pageNumber=1"><a href="http://ws-old.parlament.ch/councillors?format=json&amp;amp;pageNumber=1">http://ws-old.parlament.ch/councillors?format=json&amp;amp;pageNumber=1</a></a>. In case a data record is marked as
+     <span style="font-style: italic;">active</span> the details record will be fetched
+    </div></li>
+   <li>
+    <div>
+      The second request will use the
+     <span style="font-style: italic;">id </span>attributed of the record and construct the URL for the details record. I.e in this example we fetch the politician record with the id ‘1358’:<br>
+     <a href="http://ws-old.parlament.ch/councillors/1358?format=json&amp;pageNumber=1"><a href="http://ws-old.parlament.ch/councillors/1358?format=json">http://ws-old.parlament.ch/councillors/1358?format=json</a></a>
+    </div></li>
+   <li>
+    <div>
+      The retrieved detail record we pass to the method
+     <span style="font-style: italic;">addPerson</span> which will transform the provided data record to the target one (by using the getters we have implemented).
+    </div></li>
+  </ul>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="k">def</span> <span class="nf">load_government_members</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> 
+      <span class="n">page_number</span><span class="o">=</span><span class="mi">1</span> 
+      <span class="n">url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__cfg</span><span class="p">[</span><span class="s">'govAPIUrl'</span><span class="p">]</span> 
+      <span class="n">politician_res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__cfg</span><span class="p">[</span><span class="s">'govAPICouncillorsRes'</span><span class="p">]</span> 
+      <span class="n">par</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__cfg</span><span class="p">[</span><span class="s">'govAPIParams'</span><span class="p">]</span> 
+      <span class="k">while</span> <span class="bp">True</span><span class="p">:</span> 
+          <span class="n">par</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s">'pageNumber'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">page_number</span><span class="p">)</span> 
+          <span class="n">headers</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">default_headers</span><span class="p">()</span> 
+          <span class="n">headers</span><span class="o">.</span><span class="n">update</span><span class="p">({</span> <span class="s">'User-Agent'</span><span class="p">:</span> <span class="s">'Mozilla/5.0'</span><span class="p">})</span> 
+          <span class="n">politicians</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="o">+</span><span class="n">politician_res</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">par</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span> 
+          <span class="n">has_more_pages</span> <span class="o">=</span> <span class="bp">False</span> 
+          <span class="k">for</span> <span class="n">politician</span> <span class="ow">in</span> <span class="n">politicians</span><span class="p">:</span> 
+              <span class="k">if</span> <span class="n">politician</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'hasMorePages'</span><span class="p">):</span> 
+                  <span class="n">has_more_pages</span> <span class="o">=</span> <span class="bp">True</span> 
+              <span class="k">if</span> <span class="n">politician</span><span class="p">[</span><span class="s">'active'</span><span class="p">]:</span> 
+                  <span class="nb">id</span> <span class="o">=</span> <span class="n">politician</span><span class="p">[</span><span class="s">'id'</span><span class="p">]</span> 
+                  <span class="n">details</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="o">+</span><span class="n">politician_res</span><span class="o">+</span><span class="s">"/"</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">par</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span><span class="o">.</span><span class="n">json</span><span class="p">()</span> 
+                  <span class="k">print</span><span class="p">(</span><span class="n">details</span><span class="p">)</span> 
+                  <span class="bp">self</span><span class="o">.</span><span class="n">_add_person_record</span><span class="p">(</span><span class="n">details</span><span class="p">)</span> 
+          <span class="k">if</span> <span class="ow">not</span> <span class="n">has_more_pages</span><span class="p">:</span> 
+              <span class="k">break</span> 
+          <span class="k">else</span><span class="p">:</span> 
+              <span class="n">page_number</span> <span class="o">+=</span> <span class="mi">1</span> 
+      <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_members</span> 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div>
+    The above method will be called within the
+   <span style="font-style: italic;">govAPI</span> function
+   <span style="font-style: italic;">create_politican_from_govapi_table</span> which will transform the list of politician records into a Panda dataframe. 
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="k">def</span> <span class="nf">create_politican_from_govapi_table</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> 
+      <span class="bp">self</span><span class="o">.</span><span class="n">load_government_members</span><span class="p">()</span> 
+      <span class="n">df</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_members</span><span class="p">)</span> 
+      <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> 
+
+</code></pre>
+
+<div>
+   <br>
+  </div>
+
+<p><div>
+    It’s important to realize here, that the
+   <span style="text-decoration: underline;">structure of this Panda dataframe will be the same of any kind of Government API,</span> as long as we implement a specific class based on the
+   <span style="font-style: italic;">govAPI</span> abstract class. So we normalized our data so that we can work afterwards without knowing it’s initial format.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    Again we strived an important design pattern, our target structure (or model), is known under the name
+   <a href="https://en.wikipedia.org/wiki/Canonical_model">Canonical Model</a>. As Wikipedia describes:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-style: italic;">&quot;A canonical model is a design pattern used to communicate between different data formats. Essentially: create a data model which is a superset of all the others (&quot;canonical&rdquo;), and create a &ldquo;translator&rdquo; module or layer to/from which all existing modules exchange data with other modules.”</span>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    Conceptually we have built a mini-data pipeline. For each government API we have to implement a data record fetching function and transformation rules (the getters) which will transform the data to our standardised one.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <i> 
+   <img class='pull-left img-responsive article img-thumbnail' src='/images/97461d53364ff4c0f54f351fa61f30c9.png'></p>
+
+  </div>
+  <div class="article">
+    <p><span/> <br></i>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The whole pattern visualized in a UML sequence diagram.
+      </div>
+      <div>
+       <br>
+      </div>
+      <ul>
+       <li>
+        <div>
+          “consume”operation is represented by step 60
+        </div></li>
+       <li>
+        <div>
+          &ldquo;transform rules” operation are represented by the step 80-110.
+        </div></li>
+       <li>
+        <div>
+          “storeAs” operation is represented by step 120
+        </div></li>
+      </ul>
+      <div>
+       <span style="font-size: 24px;"><br></span>
+      </div>
+      <div></p>
+    
+    <p><img class='pull-left img-responsive article img-thumbnail' src='/images/e38e2b3ce13b028048db5eb30967cdef.png'></p>
+    
+  </div>
+  <div class="article"><p><span/>         <br>
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    It’s important that you understand the responsibility of the various classes.
+   <span style="font-style: italic;">govAPI </span>and
+   <span style="font-style: italic;"> govAPI_CH</span> (red dots) are visible to the outside world (
+   <span style="font-style: italic;">govAPIFactory</span>,
+   <span style="font-style: italic;">gsma</span>) as one class instance. For the caller is irrelevant who is implementing which method. 
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    One final thing is missing, the
+   <span style="font-style: italic;">govAPIFactory</span> class, which is quite straightforward. Depending on the
+   <span style="font-style: italic;">country_code</span> the corresponding implementation class will be opened:
+  </div>
+  <div>
+   <br>
+  </div>
+  <div></p>
+<pre class="highlight python"><code>
+  <span class="kn">from</span> <span class="nn">govAPI_CH</span> <span class="kn">import</span> <span class="n">GovAPI_CH</span> 
+  <span class="k">class</span> <span class="nc">GovAPIFactory</span><span class="p">:</span> 
+      <span class="nd">@classmethod</span> 
+      <span class="k">def</span> <span class="nf">create_country_gov_api</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">country_code</span><span class="p">,</span><span class="n">cfg</span><span class="p">):</span> 
+          <span class="k">if</span> <span class="n">country_code</span> <span class="o">==</span> <span class="s">"CH"</span><span class="p">:</span> 
+              <span class="k">return</span> <span class="n">GovAPI_CH</span><span class="p">(</span><span class="n">cfg</span><span class="p">)</span> 
+          <span class="k">return</span> <span class="bp">None</span> 
+
+</code></pre>
+
+<p></div>
+  <div>
+   <br>
+  </div>
+  <div>
+    Uff, that was quite some content to be absorbed, we introduced two important design pattern the factory method and canonical data model, as well have shown how to generate a first pair of charts.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+    The 
+   <span style="font-style: italic;">lesson3.py </span>program will generate the canonical dataframe within Plotly under the name
+   <span style="font-style: italic;">CH-govapi-member-list</span>.
+  </div>
+  <div>
+   <br>
+  </div>
+  <div>
+   <span style="font-size: 24px;"> 
+   <img class='pull-left img-responsive article img-thumbnail' src='/images/c3a84655e0d0740adf1f26315a129599.png'></p>
+
+  </div>
+  <div class="article">
+    <p><span/> <br></span>
+      </div>
+      <div>
+       <span style="font-size: 24px;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 24px;">Exercise</span>
+      </div>
+      <div>
+       <font style="font-size: 14px;"><br></font>
+      </div>
+      <div>
+       <font style="font-size: 14px;"><br></font>
+      </div>
+      <div>
+       <span style="font-size: 24px;"><br></span>
+      </div>
+      <div>
+       <span style="font-size: 24px;">Source Code</span>
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+        The source code can be found here (lesson 3 directory):
+       <span style="font-size: 18px;"> </span>
+       <a href="https://github.com/talfco/clb-sentiment" style="font-size: 18px;"><a href="https://github.com/talfco/clb-sentiment">https://github.com/talfco/clb-sentiment</a></a> 
+      </div>
+      <div>
+       <br>
+      </div>
+      <div>
+       <span style="font-size: 11px; font-style: italic;">This blog entry was fully produced within Evernote and published using the </span>
+       <a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;">Cloudburo Publishing Bot</a>
+       <span style="font-size: 11px; font-style: italic;">.</span>
+      </div></p>
+    
+  </div>
+</div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/Cloudburonet-897759390318816/" class="btn btn-facebook">
+                <i class="fa fa-facebook"></i></a><a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts" class="btn btn-google-plus">
+                <i class="fa fa-google-plus"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2019 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>
