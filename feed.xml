@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html"/>
     <id>https://dev.cloudburo.net/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html</id>
     <published>2019-02-10T15:24:11+00:00</published>
-    <updated>2019-02-11T07:03:19+00:00</updated>
+    <updated>2019-02-11T12:24:01+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -440,7 +440,7 @@
        &lt;img class='article  img-thumbnail' src='/images/2c7a3803501f809def0b63c9a166b1f4.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -634,22 +634,41 @@
   &lt;div&gt;
    &lt;br&gt;
   &lt;/div&gt;
+  &lt;div&gt;
+    The whole pattern visualized in a UML sequence diagram.
+  &lt;/div&gt;
+  &lt;div&gt;
+   &lt;br&gt;
+  &lt;/div&gt;
   &lt;div&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/a706ca3c26abf134cbe227239b89242c.png'&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e38e2b3ce13b028048db5eb30967cdef.png'&gt;&lt;/p&gt;
 
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;br&gt;
+        It’s important that you understand the responsibility of the various classes.
+       &lt;i&gt;govAPI &lt;/i&gt;and
+       &lt;i&gt; govAPI_CH&lt;/i&gt; are (red dots) are visible to the outside world (
+       &lt;i&gt;govAPIFactory&lt;/i&gt;,
+       &lt;i&gt;gsma&lt;/i&gt;) as one class instance. For the caller is irrelevant who is implementing which method. 
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;br&gt;
+        From an internal view - by providing an abstract class
+       &lt;i&gt;govAPI -&lt;/i&gt; we lay out a generic way to integrate any kind of government API, which can be plugged into our Government Social Media Analyzer Class. The ultimat goal of these two classes is to provide us a panda dataframe with detailed information about politican which we can further process.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;tbd&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 24px;"&gt;Source Code&lt;/span&gt;
