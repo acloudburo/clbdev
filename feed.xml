@@ -5,22 +5,142 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-02-11T22:34:11+00:00</updated>
+  <updated>2019-02-11T23:09:10+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Python Tutorial Exercise 3: Implement the govAPI_UK class</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/02/11/python-tutorial-exercise-3-implement-the-govapi_uk-class.html"/>
+    <id>https://dev.cloudburo.net/2019/02/11/python-tutorial-exercise-3-implement-the-govapi_uk-class.html</id>
+    <published>2019-02-11T23:09:10+00:00</published>
+    <updated>2019-02-11T23:09:15+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Write a
+       &lt;span style="font-style: italic;"&gt;govAPI_UK &lt;/span&gt;implementation class which retrieves the following attributes from the UK government API:
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          familyName
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          givenName
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          gender
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          party
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          id (by extracting the number out of the &lt;em&gt;about attributes)
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        We use the UK goverment API “data.parliament.uk” for retrieving government members.
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          The full API is described here: 
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;a href="http://explore.data.parliament.uk/?learnmore=Members"&gt;&lt;a href="http://explore.data.parliament.uk/?learnmore=Members"&gt;http://explore.data.parliament.uk/?learnmore=Members&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          The following request will return a JSON data structure of all members, which you have to transform:
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;a href="http://lda.data.parliament.uk/members.json"&gt;&lt;a href="http://lda.data.parliament.uk/members.json"&gt;http://lda.data.parliament.uk/members.json&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          The JSON is shown below
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           This formatted view can be achieved by using the online json formatter: 
+          &lt;a href="https://jsonformatter.curiousconcept.com/"&gt;&lt;a href="https://jsonformatter.curiousconcept.com/"&gt;https://jsonformatter.curiousconcept.com/&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A hint:
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          When you have fetched the JSON and stored in a variable,
+         &lt;i&gt;loaded&lt;/em&gt;json&lt;/i&gt; you have to iterate over the array found in&lt;br&gt;
+         &lt;i&gt;loaded_json[‘result’][‘items’]&lt;/i&gt;
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Additional point:
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Elaborate if the API used the paging mechanism
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/84c08f9c01bccd1d9208ae8476ac1ff7.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Python Tutorial: Connect Government Data API's By  Using The Factory Pattern</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/11/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html"/>
     <id>https://dev.cloudburo.net/2019/02/11/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html</id>
     <published>2019-02-11T22:34:11+00:00</published>
-    <updated>2019-02-11T22:34:41+00:00</updated>
+    <updated>2019-02-11T23:09:06+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/751c13a5281cb15579ad8b4fa6e6da92.png'&gt;&lt;/p&gt;
-  
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
        &lt;span style="font-size: 18px;"&gt;Source Politican Data from  Public Government Data API’s to Increase Allocation Accuracy&lt;/span&gt;
@@ -67,6 +187,8 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/751c13a5281cb15579ad8b4fa6e6da92.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
@@ -131,7 +253,7 @@
   &lt;/div&gt;
   &lt;div&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/59f7cbe865d467e007f41141c92466ce.png'&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/59f7cbe865d467e007f41141c92466ce.png'&gt;&lt;/p&gt;
 
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -142,7 +264,7 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/7b0307e94d4ad54a6cc124c6e7372c5d.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/7b0307e94d4ad54a6cc124c6e7372c5d.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -159,7 +281,7 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/76b40038953263256ecc659e32aa3d1a.jpeg'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/76b40038953263256ecc659e32aa3d1a.jpeg'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -220,7 +342,7 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/5690fad8adfa123f25dff86cab2356e2.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/5690fad8adfa123f25dff86cab2356e2.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -232,7 +354,7 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/1336d71cb6fa2a52132cf14cda1a5b1d.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/1336d71cb6fa2a52132cf14cda1a5b1d.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -257,7 +379,7 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/73fbc1ede34d4fdf85ab4fb12b432d44.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/73fbc1ede34d4fdf85ab4fb12b432d44.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -292,7 +414,7 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/8ce76625df8f934a2b3a720a90449243.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/8ce76625df8f934a2b3a720a90449243.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -306,7 +428,7 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/2543213fe4805b0088278b203a01ae16.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/2543213fe4805b0088278b203a01ae16.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -335,7 +457,7 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 18px;"&gt; 
-       &lt;img class='pull-left img-responsive article img-thumbnail' src='/images/3f3a89b6f749bf1fc945e6e4b3e92010.png'&gt;&lt;/p&gt;
+       &lt;img class='article  img-thumbnail' src='/images/3f3a89b6f749bf1fc945e6e4b3e92010.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -437,7 +559,7 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 18px;"&gt; 
-       &lt;img class='pull-left img-responsive article img-thumbnail' src='/images/f65f5d6a9d887a9ad58bf6a526249349.png'&gt;&lt;/p&gt;
+       &lt;img class='article  img-thumbnail' src='/images/f65f5d6a9d887a9ad58bf6a526249349.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
@@ -779,7 +901,7 @@
   &lt;/div&gt;
   &lt;div&gt;
    &lt;i&gt; 
-   &lt;img class='pull-left img-responsive article img-thumbnail' src='/images/97461d53364ff4c0f54f351fa61f30c9.png'&gt;&lt;/p&gt;
+   &lt;img class='article  img-thumbnail' src='/images/97461d53364ff4c0f54f351fa61f30c9.png'&gt;&lt;/p&gt;
 
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -813,7 +935,7 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/e38e2b3ce13b028048db5eb30967cdef.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e38e2b3ce13b028048db5eb30967cdef.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
@@ -871,7 +993,7 @@
   &lt;/div&gt;
   &lt;div&gt;
    &lt;span style="font-size: 24px;"&gt; 
-   &lt;img class='pull-left img-responsive article img-thumbnail' src='/images/c3a84655e0d0740adf1f26315a129599.png'&gt;&lt;/p&gt;
+   &lt;img class='article  img-thumbnail' src='/images/c3a84655e0d0740adf1f26315a129599.png'&gt;&lt;/p&gt;
 
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -882,9 +1004,6 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 24px;"&gt;Exercise&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
@@ -10347,135 +10466,6 @@
        &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
        &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
        &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Java for Beginners - Table of Content and Resources</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
-    <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
-    <published>2017-06-18T11:50:25+00:00</published>
-    <updated>2019-01-13T23:26:08+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Table of Content&lt;/span&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;&lt;a href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"&gt;Java for Beginners #1 - Prepare an IntelliJ Maven Project&lt;/a&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;a href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"&gt;Java for Beginners #2 - Maven Primer and Understanding API&amp;rsquo;s&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Prerequisites&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;u&gt;E-Book: Head First Java&lt;/u&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        We are referencing to the following book, which is a very good in-depth guide. You should get a copy of it
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/2f32bea7ea20597a6be9cd9278a507c7.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;&lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;&lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;http://shop.oreilly.com/product/9780596009205.do&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;b&gt;&lt;u&gt;Integrated Development Environment&lt;/u&gt;&lt;/b&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;For developing of the Java Application we are using the excellent integrated development environment IntelliJ IDEA Community edition&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/74e3d491fd229ddf57206f549145b3e5.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;You can download the free community edition &lt;/span&gt;
-       &lt;a style="font-size: 14px;" href="https://www.jetbrains.com/idea/"&gt;here&lt;/a&gt;
-       &lt;span style="font-size: 14px;"&gt;.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;u&gt;JSON Viewer Extension for Chrome&lt;/u&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        For looking a JSON Data Request we suggest that you use the Chrome Browser with JSONView (but any other JSON viewing extension available for your browser). It will help you to read and understand the structured data content.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc"&gt;&lt;a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc"&gt;https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/6ccf83e03409878d244ee1c4d4442aa3.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
-       &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;

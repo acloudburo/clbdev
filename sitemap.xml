@@ -205,6 +205,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/02/11/python-tutorial-exercise-3-implement-the-govapi_uk-class.html</loc>
+    <lastmod>2019-02-11</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2018/09/03/the-cloud-landscape-categorization-framework-by-johan-den-haan.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.7</priority>
@@ -991,6 +997,18 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/python.html</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/tut01.html</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/aws.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
@@ -1106,18 +1124,6 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/tags/polkadot.html</loc>
-    <lastmod>2019-01-13</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/tags/python.html</loc>
-    <lastmod>2019-01-13</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/tags/tut01.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
