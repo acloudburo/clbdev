@@ -136,7 +136,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/11/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html"/>
     <id>https://dev.cloudburo.net/2019/02/11/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html</id>
     <published>2019-02-11T22:34:11+00:00</published>
-    <updated>2019-02-11T23:09:06+00:00</updated>
+    <updated>2019-02-12T06:07:28+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -1007,6 +1007,9 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;font style="font-size: 14px;"&gt;You can find the exercise here: &lt;a href="https://dev.cloudburo.net/2019/02/11/python-tutorial-exercise-3-implement-the-govapi_uk-class.html"&gt;Link&lt;/a&gt;&lt;br&gt;&lt;/font&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt;
