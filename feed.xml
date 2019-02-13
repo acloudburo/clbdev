@@ -136,17 +136,17 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/11/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html"/>
     <id>https://dev.cloudburo.net/2019/02/11/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html</id>
     <published>2019-02-11T22:34:11+00:00</published>
-    <updated>2019-02-12T06:07:28+00:00</updated>
+    <updated>2019-02-13T08:11:23+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;Source Politican Data from  Public Government Data API’s to Increase Allocation Accuracy&lt;/span&gt;
+       &lt;span style="font-size: 18px;"&gt;Source Politician Data from  Public Government Data API’s to Increase Allocation Accuracy&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;font style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
         In this tutorial, we do mainly two steps
@@ -158,14 +158,14 @@
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-          secondly we connect public government API to our program in order to retrieve government members and party assignment in a reliable way
+          secondly, we connect a public government API to our program in order to retrieve government members and party assignment in a reliable way
         &lt;/div&gt;&lt;/li&gt;
       &lt;/ul&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        As you already know we are interested in a generalized program, which can work with multiple countries. For that we will introduce an abstract class and the factory pattern for the second part of our tutorial.
+        As you already know we are interested in a generalized program, which can work with multiple countries. For that, we will introduce an abstract class and the factory pattern in the second part of our tutorial.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -180,7 +180,7 @@
        &lt;span style="font-size: 24px;"&gt;Plotly Chart Generation&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        We create a bar chart as well as a pie chart. As a base we take the our plotly table
+        We create a bar chart as well as a pie chart. As a base, we take our plotly table
        &lt;span style="font-style: italic;"&gt;CH-tw-party-list&lt;/span&gt;.
       &lt;/div&gt;
       &lt;div&gt;
@@ -202,11 +202,11 @@
   &lt;ul&gt;
    &lt;li&gt;
     &lt;div&gt;
-      In the bar chart we visualize the accumulated friends count per party.
+      In the bar chart, we visualize the accumulated friends count per party.
     &lt;/div&gt;&lt;/li&gt;
    &lt;li&gt;
     &lt;div&gt;
-      In the pie chart we aggregate the twitter account per party.
+      In the pie chart, we aggregate the twitter account per party.
     &lt;/div&gt;&lt;/li&gt;
   &lt;/ul&gt;
   &lt;div&gt;
@@ -244,12 +244,12 @@
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-   &lt;span style="font-size: 14px;"&gt;As one can see in the sample, various configuration parameters allow you to modify the layout of a chart. Head over to the&lt;/span&gt;
-   &lt;a href="https://plot.ly/pandas/" style="font-size: 14px;"&gt; Plotly Python Open Source Graphing Library&lt;/a&gt;
+   &lt;span style="font-size: 14px;"&gt;As one can see in the code excerpt, various configuration parameters allow you to modify the layout of a chart. Head over to the&lt;/span&gt;
+   &lt;a style="font-size: 14px;" href="https://plot.ly/pandas/"&gt; Plotly Python Open Source Graphing Library&lt;/a&gt;
    &lt;span style="font-size: 14px;"&gt; to find out more about the various possibilities with charts, panda and plotly.&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
-   &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+   &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;&lt;/p&gt;
 
@@ -260,7 +260,7 @@
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        As one can see we have a lot of “unkowns”, i.e. we couldn’t identify the corresponding party by just analysing Twitter data elements. In the second part of this tutorial we will address this point.
+        As one can see we have a lot of “unkowns”, i.e. we couldn’t identify the corresponding party by just analyzing Twitter data elements. In the second part of this tutorial, we will connect another data source for addressing this issue.
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
@@ -271,7 +271,7 @@
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -288,10 +288,10 @@
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
       &lt;div style="text-align: center;"&gt;
-       &lt;span style="font-size: 14px; background-color: rgb(245, 245, 245); color: rgb(17, 17, 17); font-family: -apple-system, system-ui, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;"&gt;Photo by &lt;/span&gt;
-       &lt;a href="https://unsplash.com/photos/zb29xBwpt6c?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="box-sizing: border-box; background-color: rgb(245, 245, 245); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(153, 153, 153); font-family: -apple-system, system-ui, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;"&gt;Rodney Minter-Brown&lt;/a&gt;
-       &lt;span style="font-size: 14px; background-color: rgb(245, 245, 245); color: rgb(17, 17, 17); font-family: -apple-system, system-ui, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;"&gt; on &lt;/span&gt;
-       &lt;a href="https://unsplash.com/search/photos/factory?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="box-sizing: border-box; background-color: rgb(245, 245, 245); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(153, 153, 153); font-family: -apple-system, system-ui, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;"&gt;Unsplash&lt;/a&gt;
+       &lt;span style="font-size: 14px; background-color: #f5f5f5; color: #111111; font-family: -apple-system, system-ui, 'San Francisco', 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif;"&gt;Photo by &lt;/span&gt;
+       &lt;a style="box-sizing: border-box; background-color: #f5f5f5; font-size: 14px; color: #999999; font-family: -apple-system, system-ui, 'San Francisco', 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif;" href="https://unsplash.com/photos/zb29xBwpt6c?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Rodney Minter-Brown&lt;/a&gt;
+       &lt;span style="font-size: 14px; background-color: #f5f5f5; color: #111111; font-family: -apple-system, system-ui, 'San Francisco', 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif;"&gt; on &lt;/span&gt;
+       &lt;a style="box-sizing: border-box; background-color: #f5f5f5; font-size: 14px; color: #999999; font-family: -apple-system, system-ui, 'San Francisco', 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif;" href="https://unsplash.com/search/photos/factory?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -313,13 +313,13 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        A good starting point for understanding for getting an overview of government data API’s is the programmablweb directory, which has an overall list of over 20’00 different API’s.
+        A good starting point f for getting an overview of government data API’s is the programmablweb directory, which list over 20’00 different API’s.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        The government directory API category can be found here:
+        The government API category can be found here:
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -350,7 +350,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         Or the Swiss Government API of the Swiss Parliament: 
-       &lt;a href="http://ws-old.parlament.ch/"&gt;&lt;a href="http://ws-old.parlament.ch/"&gt;http://ws-old.parlament.ch/&lt;/a&gt;&lt;/a&gt;
+       &lt;a href="http://ws-old.parlament.ch/"&gt;&lt;a href="http://ws-old.parlament.ch/"&gt;http://ws-old.parlament.ch/&lt;/a&gt;&lt;/a&gt;:
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
@@ -358,10 +358,7 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Well we will use the Swiss Parliament  API’s to extract personal data of the parliament member (mainly the  Party allocation) in order to increase the accuracy of our twitter matching algorithm.
+    &lt;p&gt;&lt;span/&gt;  We will use the Swiss Parliament  API’s to extract personal data of the parliament members (mainly the  Party allocation) in order to increase the accuracy of our twitter matching algorithm.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -374,7 +371,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         What we require is the
-       &lt;span style="font-style: italic;"&gt;councillors &lt;/span&gt;data elements: 
+       &lt;span style="font-style: italic;"&gt;councillors &lt;/span&gt;data objects: 
        &lt;a href="http://ws-old.parlament.ch/councillors"&gt;&lt;a href="http://ws-old.parlament.ch/councillors"&gt;http://ws-old.parlament.ch/councillors&lt;/a&gt;&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
@@ -395,13 +392,13 @@
       &lt;/div&gt;
       &lt;div&gt;
         As we have already explained in our
-       &lt;a href="https://towardsdatascience.com/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter-d5f999555f98"&gt;second tutorial&lt;/a&gt;  a public API which can return a lot of information, will use the concept of a cursor or paging mechanism in order to control the amount of data returned in one data request.
+       &lt;a href="https://towardsdatascience.com/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter-d5f999555f98"&gt;second tutorial&lt;/a&gt;  a public API  may return a lot of information. In order to control the amount of data returned in one request, the concept of a cursor or paging mechanism is used.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        The Swiss Parliament API will return about 25 records in a request and will have in the latest record an attribute attached which tells you if there are more data available (
+        The Swiss Parliament API returns about 25 records in one request. The latest request record will have an attribute attached which tells you if there are more data available (
        &lt;span style="font-style: italic;"&gt;hasMorePages=true).&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
@@ -438,7 +435,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Having now a basic understanding, we can design our enhanced program which is capable of reading data from country specific government API’s. Let’s dig into the code.
+        Having now a basic understanding of the API, we can enhance program which is capable of reading data from country-specific government API’s. Let’s dig into the code.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
@@ -467,7 +464,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        Let’s summarize what we have done until now:
+        A quick summary of what we have done until now:
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -478,11 +475,11 @@
           We created the
          &lt;span style="font-style: italic;"&gt;GovernmentSocialMediaAnalyzer &lt;/span&gt;class
          &lt;span style="font-style: italic;"&gt; &lt;/span&gt;in the second
-         &lt;a href="https://towardsdatascience.com/python-tutorial-government-social-media-analyser-class-build-out-12858190b284"&gt;tutorial&lt;/a&gt;, which is capable of retrieving twitter relevant account data of politician of a country. We used a configuration driven based approach - based on YAML -  to abstract the country specific data into a configuration file
+         &lt;a href="https://towardsdatascience.com/python-tutorial-government-social-media-analyser-class-build-out-12858190b284"&gt;tutorial&lt;/a&gt;, which is capable of retrieving twitter relevant account data of politician of a country. We used a configuration driven based approach - based on YAML -  to abstract the country-specific data into a configuration file
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-          Several methods were defined which allowed us to create panda-, as well as plotly specific tables and charts.
+          Several methods were defined which allowed us to create panda data frames, as well as plotly specific tables and charts.
         &lt;/div&gt;&lt;/li&gt;
       &lt;/ul&gt;
       &lt;div&gt;
@@ -545,7 +542,8 @@
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
-          in the future we can introduce additional classes for example for UK: GovAPI_UK
+          in the future, we can introduce additional classes for example for the United Kingdom we would construct the implementation class:
+         &lt;span style="font-style: italic;"&gt;GovAPI_UK&lt;/span&gt;
         &lt;/div&gt;&lt;/li&gt;
       &lt;/ul&gt;
       &lt;div&gt;
@@ -555,7 +553,7 @@
        &lt;span style="font-size: 18px;"&gt;Abstract Base Class “GovAPI&amp;quot; &lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;font style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
+       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 18px;"&gt; 
@@ -574,7 +572,7 @@
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-    In Python an abstract class is derived (or inherits) from the class ABC and will have one to more methods marked with
+    In Python, an abstract class is derived (or inherited) from the class ABC and will have one to more methods marked with
    &lt;span style="font-style: italic;"&gt;@abstractmethod&lt;/span&gt;.
   &lt;/div&gt;
   &lt;div&gt;
@@ -599,7 +597,7 @@
   &lt;/div&gt;
 
 &lt;p&gt;&lt;div&gt;
-    So the abstract class provides you a build plan, for any implementation class which inherits from this class. in our class the
+    So the abstract class provides you with a build plan, for any implementation class which inherits from it. in our class the
    &lt;span style="font-style: italic;"&gt;govAPI_CH. &lt;/span&gt;What kind of methods does
    &lt;span style="font-style: italic;"&gt;govAPI_CH&lt;/span&gt; has to implement ?
   &lt;/div&gt;
@@ -608,9 +606,9 @@
   &lt;/div&gt;
   &lt;div&gt;
     First of all the implementation of the 
-   &lt;span style="font-style: italic;"&gt; load_government_members() &lt;/span&gt;method has to take care to fetch the politicians records from the government API
-   &lt;span style="font-style: italic;"&gt; &lt;/span&gt;and each fetched record (which represent the data of a singe politician) must be passed to  the method
-   &lt;span style="font-style: italic;"&gt;&lt;em&gt;add_person_record &lt;/span&gt;(which is already implemented by
+   &lt;span style="font-style: italic;"&gt; load_government_members() &lt;/span&gt;method has to take care of the politician&amp;rsquo;s data records fetching from the government API.
+   &lt;span style="font-style: italic;"&gt; &lt;/span&gt; Each fetched record - which represents the data of a single politician - must be passed to  the method
+   &lt;span style="font-style: italic;"&gt;&lt;em&gt;add_person_record &lt;/span&gt;(which is already implemented by the 
    &lt;span style="font-style: italic;"&gt;govAPI&lt;/span&gt; base class)
   &lt;/div&gt;
   &lt;div&gt;
@@ -664,14 +662,14 @@
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-    That means our retrieved record in the form of a dedicated government API implementation (i.e. in the form of the Swiss Government Parliament API) has to be  transformed by using a bunch of getter methods.
+    That means our retrieved record in the form of a dedicated government API implementation (i.e. in the form of the Swiss Government Parliament API) has to be transformed by using a bunch of getter methods.
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
     Each of this getter methods is either abstract or returns an empty string. It’s the responsibility of the implementer of an inherited class (
-   &lt;span style="font-style: italic;"&gt;GovAPI_CH&lt;/span&gt;)  to provide the correct implementation. 
+   &lt;span style="font-style: italic;"&gt;GovAPI_CH&lt;/span&gt;)  to provide the correct getter implementation. 
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -708,7 +706,7 @@
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-   &lt;span style="font-size: 18px; font-family: &amp;quot;Helvetica Neue&amp;quot;;"&gt;Implementation Class “GovAPI_CH&amp;quot;&lt;/span&gt;
+   &lt;span style="font-size: 18px; font-family: 'Helvetica Neue';"&gt;Implementation Class “GovAPI_CH&amp;quot;&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -763,21 +761,21 @@
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-    Beside the getters we also have implement the method
-   &lt;span style="font-style: italic;"&gt;load_gevernment_members&lt;/span&gt; which contains the code to fetch the data from the government API.
+    Let&amp;rsquo;s drill down into the method
+   &lt;span style="font-style: italic;"&gt;load_gevernment_members:&lt;/span&gt;
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
     Our implementation uses the python module
-   &lt;a href="http://docs.python-requests.org/en/master/" style="font-style: italic;"&gt;requests&lt;/a&gt; which is &amp;ldquo;an elegant and simple HTTP library for human-beings”. In the introduction section of this article, we provided an overview of the Swiss parliaments API, the code below will fetch the data, via the paging mechanism.
+   &lt;a style="font-style: italic;" href="http://docs.python-requests.org/en/master/"&gt;requests&lt;/a&gt; which is &amp;ldquo;an elegant and simple HTTP library for human-beings”. In the introduction section of this article, we provided an overview of the Swiss parliaments API. The code below will fetch the data, using the paging mechanism.
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-    The URL and its parameter we placed in the corresponding configuration YAML file.
+    The URL and its parameter we placed in our configuration YAML file.
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -813,6 +811,11 @@
     &lt;div&gt;
       The retrieved detail record we pass to the method
      &lt;span style="font-style: italic;"&gt;addPerson&lt;/span&gt; which will transform the provided data record to the target one (by using the getters we have implemented).
+    &lt;/div&gt;&lt;/li&gt;
+   &lt;li&gt;
+    &lt;div&gt;
+      Finally, we check for the 
+     &lt;span style="font-style: italic;"&gt;hasMorePages &lt;/span&gt;attribute and in case we reached the last record we will break the loop.
     &lt;/div&gt;&lt;/li&gt;
   &lt;/ul&gt;
   &lt;div&gt;
@@ -854,7 +857,8 @@
 &lt;p&gt;&lt;div&gt;
     The above method will be called within the
    &lt;span style="font-style: italic;"&gt;govAPI&lt;/span&gt; function
-   &lt;span style="font-style: italic;"&gt;create_politican_from_govapi_table&lt;/span&gt; which will transform the list of politician records into a Panda dataframe. 
+   &lt;span style="font-style: italic;"&gt;create_politican_from_govapi_table&lt;/span&gt; (already implmented by the
+   &lt;span style="font-style: italic;"&gt;govAPI&lt;/span&gt; parent class) which will transform the list of politician records into a Panda dataframe. 
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -875,7 +879,7 @@
 &lt;p&gt;&lt;div&gt;
     It’s important to realize here, that the
    &lt;span style="text-decoration: underline;"&gt;structure of this Panda dataframe will be the same of any kind of Government API,&lt;/span&gt; as long as we implement a specific class based on the
-   &lt;span style="font-style: italic;"&gt;govAPI&lt;/span&gt; abstract class. So we normalized our data so that we can work afterwards without knowing it’s initial format.
+   &lt;span style="font-style: italic;"&gt;govAPI&lt;/span&gt; abstract class. So we normalized our data so that we can work and process it afterward in a standardized way.
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -900,12 +904,12 @@
    &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
-   &lt;i&gt; 
+   &lt;em&gt; 
    &lt;img class='article  img-thumbnail' src='/images/97461d53364ff4c0f54f351fa61f30c9.png'&gt;&lt;/p&gt;
 
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/i&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/em&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -919,7 +923,7 @@
       &lt;ul&gt;
        &lt;li&gt;
         &lt;div&gt;
-          “consume”operation is represented by step 60
+          “consume” operation is represented by step 60
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
@@ -935,11 +939,10 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e38e2b3ce13b028048db5eb30967cdef.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/9f9a4b9bb3b3bcac6882ca987cecb85f.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-  &lt;/div&gt;
+  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
   &lt;/div&gt;
@@ -956,7 +959,7 @@
   &lt;div&gt;
     One final thing is missing, the
    &lt;span style="font-style: italic;"&gt;govAPIFactory&lt;/span&gt; class, which is quite straightforward. Depending on the
-   &lt;span style="font-style: italic;"&gt;country_code&lt;/span&gt; the corresponding implementation class will be opened:
+   &lt;span style="font-style: italic;"&gt;country_code&lt;/span&gt; a corresponding implementation class instance will be created and returned to the caller:
   &lt;/div&gt;
   &lt;div&gt;
    &lt;br&gt;
@@ -985,11 +988,8 @@
   &lt;/div&gt;
   &lt;div&gt;
     The 
-   &lt;span style="font-style: italic;"&gt;lesson3.py &lt;/span&gt;program will generate the canonical dataframe within Plotly under the name
+   &lt;span style="font-style: italic;"&gt;lesson3.py &lt;/span&gt;program will generate the table within Plotly under the name
    &lt;span style="font-style: italic;"&gt;CH-govapi-member-list&lt;/span&gt;.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
   &lt;/div&gt;
   &lt;div&gt;
    &lt;span style="font-size: 24px;"&gt; 
@@ -1006,13 +1006,13 @@
        &lt;span style="font-size: 24px;"&gt;Exercise&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;font style="font-size: 14px;"&gt;You can find the exercise here: &lt;a href="https://dev.cloudburo.net/2019/02/11/python-tutorial-exercise-3-implement-the-govapi_uk-class.html"&gt;Link&lt;/a&gt;&lt;br&gt;&lt;/font&gt;
+       &lt;span style="font-size: 14px;"&gt;You can find the exercise here: &lt;a style="font-size: 14px;" href="https://dev.cloudburo.net/2019/02/11/python-tutorial-exercise-3-implement-the-govapi_uk-class.html"&gt;Link&lt;/a&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 24px;"&gt;Source Code&lt;/span&gt;
@@ -1023,14 +1023,14 @@
       &lt;div&gt;
         The source code can be found here (lesson 3 directory):
        &lt;span style="font-size: 18px;"&gt; &lt;/span&gt;
-       &lt;a href="https://github.com/talfco/clb-sentiment" style="font-size: 18px;"&gt;&lt;a href="https://github.com/talfco/clb-sentiment"&gt;https://github.com/talfco/clb-sentiment&lt;/a&gt;&lt;/a&gt; 
+       &lt;a style="font-size: 18px;" href="https://github.com/talfco/clb-sentiment"&gt;&lt;a href="https://github.com/talfco/clb-sentiment"&gt;https://github.com/talfco/clb-sentiment&lt;/a&gt;&lt;/a&gt; 
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
-       &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net/"&gt;Cloudburo Publishing Bot&lt;/a&gt;
        &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
     
