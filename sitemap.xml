@@ -277,6 +277,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/02/18/python-tutorial-exercise-3-implement-the-govapi_uk-class.html</loc>
+    <lastmod>2019-02-18</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2018/08/23/google-data-collection-research-madness.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.7</priority>
@@ -1168,6 +1174,12 @@
     <loc>https://dev.cloudburo.net/2019/02.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/02/18.html</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -2198,6 +2210,12 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/page/12/</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/page/13/</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>

@@ -5,10 +5,197 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-02-11T23:09:10+00:00</updated>
+  <updated>2019-02-18T22:26:26+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Python Tutorial Exercise 3: Implement the govAPI_UK class</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/02/18/python-tutorial-exercise-3-implement-the-govapi_uk-class.html"/>
+    <id>https://dev.cloudburo.net/2019/02/18/python-tutorial-exercise-3-implement-the-govapi_uk-class.html</id>
+    <published>2019-02-18T22:26:26+00:00</published>
+    <updated>2019-02-18T22:26:31+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/75f6c26a26ff4cb8c5f2b2fac78a3186.png'&gt;&lt;/p&gt;
+  
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Write a
+       &lt;span style="font-style: italic;"&gt;govAPI_UK &lt;/span&gt;implementation class which retrieves the following attributes from the UK government API:
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          family name
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          given ame
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          gender
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          party
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          id (by extracting the number out of the _about attributes)
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Below you see a dedicated record of the
+       &lt;i&gt;members &lt;/i&gt;API endpoint. You can access the viewer via the following link:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;a href="http://explore.data.parliament.uk/?endpoint=members"&gt;&lt;a href="http://explore.data.parliament.uk/?endpoint=members"&gt;http://explore.data.parliament.uk/?endpoint=members&lt;/a&gt;&lt;/a&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          As one can see below, there are 4451 member records.
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Via the &amp;ldquo;Output to” menu item, you can change the format for example from HTML to JSON.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          The full API is described here: 
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;a href="http://explore.data.parliament.uk/?learnmore=Members"&gt;&lt;a href="http://explore.data.parliament.uk/?learnmore=Members"&gt;http://explore.data.parliament.uk/?learnmore=Members&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Scroll down the full page, to get an overview of all attributes for the Members endpoint, as well as possibilities to query parametes 
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          The following request will return a JSON data structure of all members, which you have to transform:
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;a href="http://lda.data.parliament.uk/members.json?_pageSize=500&amp;amp;_page=0"&gt;&lt;a href="http://lda.data.parliament.uk/members.json?pageSize=500&amp;amp;amp;_page=0"&gt;http://lda.data.parliament.uk/members.json?pageSize=500&amp;amp;amp;_page=0&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          The JSON is shown below
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           This formatted view can be achieved by using the online json formatter: 
+          &lt;a href="https://jsonformatter.curiousconcept.com/"&gt;&lt;a href="https://jsonformatter.curiousconcept.com/"&gt;https://jsonformatter.curiousconcept.com/&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/84c08f9c01bccd1d9208ae8476ac1ff7.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Some programming hints:
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          When you have fetched the JSON and stored in a variable, i.e. 
+         &lt;span style="font-style: italic;"&gt;loaded_json&lt;/span&gt; you have to iterate over the array found in&lt;br&gt;
+         &lt;span style="font-style: italic;"&gt;loaded_json[‘result’][‘items’] &lt;/span&gt;this is actually the members list
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          As request parameter provide 
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;i&gt;pageSize=500 &lt;/i&gt;store this values as part of the config_UK.yaml file (refer to the
+          &lt;i&gt;govAPI_CH&lt;/i&gt; class implementation)
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;i&gt;_page &lt;/i&gt;which you count up for each page you request (again refer to the
+          &lt;i&gt;govAPI_CH&lt;/i&gt; class)
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;ul&gt;
+         &lt;li&gt;
+          &lt;div&gt;
+            For the loop condition you can use the attribute
+           &lt;i&gt;totalResults, &lt;/i&gt;which is provided as an element in the JSON document. 
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li&gt;
+          &lt;div&gt;
+            I.e. fetch “x” times 500 records until you retrieved overall 4451 records.
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+       &lt;/ul&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/5c6e48b10c90a2be0bacfb6fc5050c36.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Python Tutorial Exercise 3: Implement the govAPI_UK class</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/11/python-tutorial-exercise-3-implement-the-govapi_uk-class.html"/>
@@ -10142,326 +10329,6 @@
         In the next session, we will write the first program, which will fetch data from the
        &lt;a href="http://football-data.org"&gt;football-data.org&lt;/a&gt; site in a machine-readable format.
       &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
-       &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Java for Beginners #1 - Prepare an IntelliJ Maven Project</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
-    <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
-    <published>2017-06-18T12:46:32+00:00</published>
-    <updated>2019-01-13T23:26:08+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-       &lt;span style="font-size: 14px; font-style: italic;"&gt;The Table of Content of all sessions you can find &lt;/span&gt;
-       &lt;a style="font-size: 14px; font-style: italic;" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"&gt;here&lt;/a&gt;
-       &lt;span style="font-size: 14px; font-style: italic;"&gt;.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In this first session we create a Maven Project in the
-       &lt;a href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"&gt;IntelliJ Integrated Development Environment (IDE)&lt;/a&gt; and configure some aspects of the tool, which helps us in our future development work.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The goal of our project is to develop first a standalone Java Application and then an Android App, which allows us to retrieve and visualise  football data from the API of 
-       &lt;a href="http://www.football-data.org/index"&gt;&lt;a href="http://www.football-data.org/index"&gt;http://www.football-data.org/index&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;The goal of the football-data API is to provide football data of all major european leagues in a machine-readable way. By data I mean fixtures, teams, players, results and more. All this information is provided via an easy-to-use RESTful API in JSON (only) representation.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold; font-size: 18px;"&gt;How Java Works&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        If you are completely new to Java, watch the following 6 minutes video
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div class="responsive-video"&gt;
-        &lt;iframe src="https://www.youtube.com/embed/2Xa3Y4xz8_s?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Some terminology to get you a better start off (taken over from
-       &lt;a href="http://computer.howstuffworks.com/program1.htm"&gt;here&lt;/a&gt;).
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;Computer program&lt;/span&gt; - A computer program is a set of instructions that tell a computer exactly what to do. The instructions might tell the computer to add up a set of numbers, or compare two numbers and make a decision based on the result, or whatever. But a computer program is simply a set of instructions for the computer, like a recipe is a set of instructions for a cook or musical notes are a set of instructions for a musician. The computer follows your instructions exactly and in the process does something useful &amp;ndash; like balancing a checkbook or displaying a game on the screen or implementing a word processor.&lt;/li&gt;
-       &lt;li&gt;P&lt;span style="font-weight: bold;"&gt;rogramming language &lt;/span&gt;- In order for a computer to recognize the instructions you give it, those instructions need to be written in a language the computer understands &amp;ndash; a programming language. There are many computer programming languages &amp;ndash; Fortran, Cobol, Basic, Pascal, C, C++, Java, Perl &amp;ndash; just like there are many spoken languages. They all express approximately the same concepts in different ways.&lt;/li&gt;
-       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;Compiler&lt;/span&gt; - A compiler translates a computer program written in a human-readable computer language (like Java) into a form that a computer can execute. You have probably seen EXE files on your computer. These EXE files are the output of compilers. They contain executables &amp;ndash; machine-readable programs translated from human-readable programs. &lt;/li&gt;
-       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;Build Process &lt;/span&gt;- When you develop an application in a programming language  (in our case Java) you will have a so-called Build Process which manages various steps. As we will see below, we will use a project management tool which helps us to manage this process. For example the process will&lt;/li&gt;
-       &lt;ul&gt;
-        &lt;li&gt;compiles your Java source code then &lt;/li&gt;
-        &lt;li&gt;runs some test against the code and then&lt;/li&gt;
-        &lt;li&gt;bundles it in a Java JAR file for distribution.&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Using Maven for the Build&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        We are setting the project in IntelliJ as an 
-       &lt;a href="https://maven.apache.org/"&gt;Apache Maven Project&lt;/a&gt; up. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Maven is a professional software project management tool  and it’s primary goal is to allow a developer to comprehend the complete state of a development effort in the shortest period of time. By using it from the beginning, we can grow our project easily over time. You don’t need to know the all the details from Maven, just follow the setup steps as shown below. Over time we will introduce the necessary concepts of Maven.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        For each Maven Project you have to define a “groupId&amp;quot;, an “artifactId”, as well as a “version” (see details
-       &lt;a href="https://maven.apache.org/guides/mini/guide-naming-conventions.html"&gt;here&lt;/a&gt;)
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;groupId&lt;/span&gt; will identify your project uniquely across all projects.&lt;/li&gt;
-       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;artifactId&lt;/span&gt; is the name of the jar (the file which holds all the compiled java code) without version.&lt;/li&gt;
-       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;version &lt;/span&gt;identifies the current version of the jar.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-      &lt;div&gt;
-        When Maven is compiling and building your Java Application, it will bundle the generated the files in a jar file by using the above definitions for its file name. So let’s start then and get an IntelliJ IDEA Project setup.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Step 1: Create a new Maven Project in IntelliJ IDEA &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        From the menu select: “File-&amp;gt;New-&amp;gt;Project&amp;quot;
-      &lt;/div&gt;
-      &lt;div&gt;
-        You don’t require an archetype, just press “Next&amp;quot;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/b5b0cbab25e18b36eaf517dd49edc6a3.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Maven requires the following information (more to it later)
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;“GroupId”, for example com.&amp;lt;yourName&amp;gt; (if you own a domain name use this one)&lt;/li&gt;
-       &lt;li&gt;“ArtifactId”, in our case “FootballApp”&lt;/li&gt;
-       &lt;li&gt;“Version”, leave it as suggested.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-        Press “Next&amp;quot;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/a8fb97fc23db17fc3d7da588c5cbb2c7.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The IntelliJ “Project name” and “Project location” will shown, leave it as is and Press “Finish&amp;quot;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/3c1c8202e3bbd49af12cd0ec358fc703.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The Project will now be opened and the Maven “pom.xml” File will be shown. We will explain it in the next session.
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/323acc1d8b0077fc7393b914565dfacd.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Step 2: Configure the IntelliJ IDEA Project View&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Now we do some IntelliJ Project and View configurations.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        First we open the Event Log. Click on the rectangular icon at the bottom left of the Project Window
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/af4d44b82bf2d02f7cf0f34ad221c2d3.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        A list of possible views will be shown, select the “Event Log”, by clicking on it.
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/b3ccb81b9e87c2b71d3b87f9cdacb445.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The Event Log is now shown at bottom of the Window.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/b0a8a78c69c2ba43c8c95d2f7c654b36.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        A Message is displayed “Maven projects need to be imported …”. 
-      &lt;/div&gt;
-      &lt;div&gt;
-        Click on “Enable Auto-Import”, so that any extension of the Maven pom.xml will be automatically imported.
-      &lt;/div&gt;
-      &lt;div&gt;
-        After clicking it, the entry is greyed out.
-      &lt;/div&gt;
-      &lt;div&gt;
-        You can hide the “Event Log” window by clicking on the icon in the upper right corner of the Event Log Window. But for now leave it open.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/d755aff371a9a5850494fa9dade5b0be.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Step 3: Configure the Auto Build Feature of the Project&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In order to enable the “
-       &lt;a href="https://www.jetbrains.com/help/idea/2017.1/problems-tool-window.html"&gt;Problems Tool Window&lt;/a&gt;” you have to enable the “Make project automatically” option. Select the following menu
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;&amp;ldquo;IntelliJ IDEA-&amp;gt;Preferences-&amp;gt;Build, Execution, Deployment -&amp;gt;Compiler” on a Mac or&lt;/li&gt;
-       &lt;li&gt;“File-&amp;gt;Settings-&amp;gt;Build, Execution, Deployment-&amp;gt;Compiler” on Windows or Linux.&lt;/li&gt;
-       &lt;li&gt;Click “Build project automatically” to enable it.&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/19246af83dc49fb57615ad65e486cf98.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        That’s it for today, in the next session, we will finalize the project-setup and dive into the concepts around RESTful API’s which allows us to fetch data from the
-       &lt;a href="http://football-data.org"&gt;football-data.org&lt;/a&gt; site in a machine-readable format.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Further reading&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;Read &lt;span style="font-weight: bold;"&gt;Chapter 1. Dive in A Quick Dip: Breaking the Surface &lt;/span&gt;of the &lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;Head First Java Book&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
