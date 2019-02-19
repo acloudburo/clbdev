@@ -197,128 +197,6 @@
 &lt;/div&gt;</content>
   </entry>
   <entry>
-    <title>Python Tutorial Exercise 3: Implement the govAPI_UK class</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2019/02/11/python-tutorial-exercise-3-implement-the-govapi_uk-class.html"/>
-    <id>https://dev.cloudburo.net/2019/02/11/python-tutorial-exercise-3-implement-the-govapi_uk-class.html</id>
-    <published>2019-02-11T23:09:10+00:00</published>
-    <updated>2019-02-11T23:09:15+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Write a
-       &lt;span style="font-style: italic;"&gt;govAPI_UK &lt;/span&gt;implementation class which retrieves the following attributes from the UK government API:
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          familyName
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          givenName
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          gender
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          party
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          id (by extracting the number out of the &lt;em&gt;about attributes)
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        We use the UK goverment API “data.parliament.uk” for retrieving government members.
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          The full API is described here: 
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;ul&gt;
-        &lt;li&gt;
-         &lt;div&gt;
-          &lt;a href="http://explore.data.parliament.uk/?learnmore=Members"&gt;&lt;a href="http://explore.data.parliament.uk/?learnmore=Members"&gt;http://explore.data.parliament.uk/?learnmore=Members&lt;/a&gt;&lt;/a&gt;
-         &lt;/div&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          The following request will return a JSON data structure of all members, which you have to transform:
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;ul&gt;
-        &lt;li&gt;
-         &lt;div&gt;
-          &lt;a href="http://lda.data.parliament.uk/members.json"&gt;&lt;a href="http://lda.data.parliament.uk/members.json"&gt;http://lda.data.parliament.uk/members.json&lt;/a&gt;&lt;/a&gt;
-         &lt;/div&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          The JSON is shown below
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;ul&gt;
-        &lt;li&gt;
-         &lt;div&gt;
-           This formatted view can be achieved by using the online json formatter: 
-          &lt;a href="https://jsonformatter.curiousconcept.com/"&gt;&lt;a href="https://jsonformatter.curiousconcept.com/"&gt;https://jsonformatter.curiousconcept.com/&lt;/a&gt;&lt;/a&gt;
-         &lt;/div&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        A hint:
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          When you have fetched the JSON and stored in a variable,
-         &lt;i&gt;loaded&lt;/em&gt;json&lt;/i&gt; you have to iterate over the array found in&lt;br&gt;
-         &lt;i&gt;loaded_json[‘result’][‘items’]&lt;/i&gt;
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Additional point:
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          Elaborate if the API used the paging mechanism
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/84c08f9c01bccd1d9208ae8476ac1ff7.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
     <title>Python Tutorial: Connect Government Data API's By  Using The Factory Pattern</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/11/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html"/>
     <id>https://dev.cloudburo.net/2019/02/11/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html</id>
@@ -1218,690 +1096,6 @@
       &lt;div&gt;
        &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
        &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net/"&gt;Cloudburo Publishing Bot&lt;/a&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Python Tutorial: Connect Government Data API's By  Using The Factory Pattern</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html"/>
-    <id>https://dev.cloudburo.net/2019/02/10/python-tutorial-connect-government-data-api-s-by-using-the-factory-pattern.html</id>
-    <published>2019-02-10T15:24:11+00:00</published>
-    <updated>2019-02-11T12:24:01+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;Source Politican Data from  Public Government Data API’s to Increase Allocation Accuracy&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;font style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In this tutorial, we do mainly two steps
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          First of all we generate some plotly diagrams out of our collected data,
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          secondly we connect public government API to our program in order to retrieve government members and party assignment in a reliable way
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        As you already know we are interested in a generalized program, which can work with multiple countries. For that we will introduce an abstract class and the factory pattern for the second part of our tutorial.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        But let’s start with the first quite easy task of generating two charts for our tables.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 24px;"&gt;Plotly Chart Generation&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        We create a bar chart as well as a pie chart. As a base we take the our plotly table
-       &lt;span style="font-style: italic;"&gt;CH-tw-party-list&lt;/span&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/751c13a5281cb15579ad8b4fa6e6da92.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    The code is straightforward:
-  &lt;/div&gt;
-  &lt;ul&gt;
-   &lt;li&gt;
-    &lt;div&gt;
-      In the bar chart we visualize the accumulated friends count per party.
-    &lt;/div&gt;&lt;/li&gt;
-   &lt;li&gt;
-    &lt;div&gt;
-      In the pie chart we aggregate the twitter account per party.
-    &lt;/div&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight python"&gt;&lt;code&gt;
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;create_party_friends_count_bar_chart&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt; 
-          &lt;span class="n"&gt;go&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Bar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; 
-              &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Party&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c"&gt;# assign x as the dataframe column 'x' &lt;/span&gt;
-              &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;FriendsCount&lt;/span&gt; 
-          &lt;span class="p"&gt;)&lt;/span&gt; 
-      &lt;span class="p"&gt;]&lt;/span&gt; 
-      &lt;span class="n"&gt;py&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__country_code&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;'-tw-party_politicans_count'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;create_party_politicans_count_pie_chart&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="n"&gt;trace&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;go&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Pie&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;labels&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Party&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PartyCount&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                     &lt;span class="n"&gt;hoverinfo&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'label+percent'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;textinfo&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'value'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                     &lt;span class="n"&gt;title&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"Twitter User per Party"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;titlefont&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; 
-                          &lt;span class="n"&gt;family&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'Courier New, monospace'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                          &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-                          &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'#7f7f7f'&lt;/span&gt; 
-                      &lt;span class="p"&gt;))&lt;/span&gt; 
-      &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;trace&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
-      &lt;span class="n"&gt;py&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__country_code&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s"&gt;'-tw-party_friends_count'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-    Github Gist: 
-   &lt;a href="https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d"&gt;https://gist.github.com/talfco/fd34b0f8bf75fed2bfa4307b1899e37d&lt;/a&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-size: 14px;"&gt;As one can see in the sample, various configuration parameters allow you to modify the layout of a chart. Head over to the&lt;/span&gt;
-   &lt;a href="https://plot.ly/pandas/" style="font-size: 14px;"&gt; Plotly Python Open Source Graphing Library&lt;/a&gt;
-   &lt;span style="font-size: 14px;"&gt; to find out more about the various possibilities with charts, panda and plotly.&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/59f7cbe865d467e007f41141c92466ce.png'&gt;&lt;/p&gt;
-
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        As one can see we have a lot of “unkowns”, i.e. we couldn’t identify the corresponding party by just analysing Twitter data elements. In the second part of this tutorial we will address this point.
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/7b0307e94d4ad54a6cc124c6e7372c5d.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;font style="font-size: 14px;"&gt;&lt;br&gt;&lt;/font&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 24px;"&gt;Government Data API Factory&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/76b40038953263256ecc659e32aa3d1a.jpeg'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div style="text-align: center;"&gt;
-       &lt;span style="font-size: 14px; background-color: rgb(245, 245, 245); color: rgb(17, 17, 17); font-family: -apple-system, system-ui, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;"&gt;Photo by &lt;/span&gt;
-       &lt;a href="https://unsplash.com/photos/zb29xBwpt6c?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="box-sizing: border-box; background-color: rgb(245, 245, 245); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(153, 153, 153); font-family: -apple-system, system-ui, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;"&gt;Rodney Minter-Brown&lt;/a&gt;
-       &lt;span style="font-size: 14px; background-color: rgb(245, 245, 245); color: rgb(17, 17, 17); font-family: -apple-system, system-ui, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif;"&gt; on &lt;/span&gt;
-       &lt;a href="https://unsplash.com/search/photos/factory?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="box-sizing: border-box; background-color: rgb(245, 245, 245); font-size: 14px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(153, 153, 153); font-family: -apple-system, system-ui, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;"&gt;Unsplash&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In the recent years, the availability of so-called open Government API’s exploded.  It stems from the idea that data should be open, as Wikipedia describes the term of
-       &lt;a href="https://en.wikipedia.org/wiki/Open_data"&gt;Open Data&lt;/a&gt;:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;&amp;ldquo;Open data is the idea that some data should be freely available to everyone to use and republish as they wish, without restrictions from copyright, patents or other mechanisms of control….&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;One of the most important forms of open data is open government data (OGD), which is a form of open data created by ruling government institutions. Open government data&amp;rsquo;s importance is borne from it being a part of citizens&amp;#39; everyday lives, down to the most routine/mundane tasks that are seemingly far removed from government.”&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        A good starting point for understanding for getting an overview of government data API’s is the programmablweb directory, which has an overall list of over 20’00 different API’s.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The government directory API category can be found here:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;a href="https://www.programmableweb.com/category/government/apis?category=20094"&gt;&lt;a href="https://www.programmableweb.com/category/government/apis?category=20094"&gt;https://www.programmableweb.com/category/government/apis?category=20094&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Two examples of Government API’s:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The data API of the US government: 
-       &lt;a href="https://www.data.gov/developers/apis"&gt;&lt;a href="https://www.data.gov/developers/apis"&gt;https://www.data.gov/developers/apis&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/5690fad8adfa123f25dff86cab2356e2.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Or the Swiss Government API of the Swiss Parliament: 
-       &lt;a href="http://ws-old.parlament.ch/"&gt;&lt;a href="http://ws-old.parlament.ch/"&gt;http://ws-old.parlament.ch/&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/1336d71cb6fa2a52132cf14cda1a5b1d.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Well we will use the Swiss Parliament  API’s to extract personal data of the parliament member (mainly the  Party allocation) in order to increase the accuracy of our twitter matching algorithm.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;Councillors Data&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        What we require is the
-       &lt;span style="font-style: italic;"&gt;councillors &lt;/span&gt;data elements: 
-       &lt;a href="http://ws-old.parlament.ch/councillors"&gt;&lt;a href="http://ws-old.parlament.ch/councillors"&gt;http://ws-old.parlament.ch/councillors&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/73fbc1ede34d4fdf85ab4fb12b432d44.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In order to get the data in a program readable form we have to attach the query parameter:
-       &lt;span style="font-style: italic;"&gt;format=json&lt;/span&gt;. Which will return the content as a JSON document: 
-       &lt;a href="http://ws-old.parlament.ch/councillors?format=json"&gt;&lt;a href="http://ws-old.parlament.ch/councillors?format=json"&gt;http://ws-old.parlament.ch/councillors?format=json&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        As we have already explained in our
-       &lt;a href="https://towardsdatascience.com/python-tutorial-retrieve-a-list-of-swiss-government-members-from-twitter-d5f999555f98"&gt;second tutorial&lt;/a&gt;  a public API which can return a lot of information, will use the concept of a cursor or paging mechanism in order to control the amount of data returned in one data request.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The Swiss Parliament API will return about 25 records in a request and will have in the latest record an attribute attached which tells you if there are more data available (
-       &lt;span style="font-style: italic;"&gt;hasMorePages=true).&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In case it sets to ‘
-       &lt;span style="font-style: italic;"&gt;true’ &lt;/span&gt;you may fetch the next page by adding the query parameter&lt;br&gt;
-       &lt;span style="font-style: italic;"&gt;pageNumber=2 &lt;/span&gt;etc.
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/8ce76625df8f934a2b3a720a90449243.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        You will find such kind of information about the API normally in its user documentation, e.g. the Swiss Parliament API has some parameters to control the output format, language etc.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/2543213fe4805b0088278b203a01ae16.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Having now a basic understanding, we can design our enhanced program which is capable of reading data from country specific government API’s. Let’s dig into the code.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;Enhancing the Code - the UML Diagram&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;Introducing the government API in a general way needs some serious design and enhancement of our program. The UML class diagram of our enhanced program looks as follows (don’t be overwhelmed by the complexity, all the details will be explained later in this article).&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt; 
-       &lt;img class='article  img-thumbnail' src='/images/60578db6f87ce4eb80e11409fb6a75e9.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Let’s summarize what we have done until now:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          We created the
-         &lt;span style="font-style: italic;"&gt;GovernmentSocialMediaAnalyzer &lt;/span&gt;class
-         &lt;span style="font-style: italic;"&gt; &lt;/span&gt;in the second
-         &lt;a href="https://towardsdatascience.com/python-tutorial-government-social-media-analyser-class-build-out-12858190b284"&gt;tutorial&lt;/a&gt;, which is capable of retrieving twitter relevant account data of politician of a country. We used a configuration driven based approach - based on YAML -  to abstract the country specific data into a configuration file
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          Several methods were defined which allowed us to create panda-, as well as plotly specific tables and charts.
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Now we will introduce three new classes 
-       &lt;span style="font-style: italic;"&gt;govAPIFactory, govAPI  &lt;/span&gt;(an abstract class) and
-       &lt;span style="font-style: italic;"&gt;govAPI_CH, &lt;/span&gt;which will build a generalized approach for connecting any kind of government API’s.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;Factory Method Pattern &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Software DesignPattern play an important role in Software design, as described by
-       &lt;a href="https://en.wikipedia.org/wiki/Software_design_pattern"&gt;Wikipedia&lt;/a&gt;:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;&amp;ldquo;In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. It is a description or template for how to solve a problem that can be used in many different situations. Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.&amp;rdquo;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In our design, we will use the Factory Method Pattern to generalise the connectivity to a government API, which is explained by
-       &lt;a href="https://en.wikipedia.org/wiki/Factory_method_pattern"&gt;Wikipedia&lt;/a&gt; as follows: 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;&amp;ldquo;In class-based programming, the factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes,&lt;/span&gt;
-       &lt;span style="font-style: italic; font-weight: bold;"&gt; or implemented in a base class and optionally overridden by derived classes&lt;/span&gt;
-       &lt;span style="font-style: italic;"&gt;—rather than by calling a constructor.&amp;rdquo;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Our design will be based on the strategy, to define 
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          a base class (parent -
-         &lt;span style="font-style: italic;"&gt;GovAPI) &lt;/span&gt;which is abstract and
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          a derived class (child - GovAPI_CH), which will have the country specific implementation (i.e Switzerland).
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          in the future we can introduce additional classes for example for UK: GovAPI_UK
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt;Abstract Base Class GovAPI &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;font style="font-size: 18px;"&gt;&lt;br&gt;&lt;/font&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px;"&gt; 
-       &lt;img class='article  img-thumbnail' src='/images/2c7a3803501f809def0b63c9a166b1f4.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt; &lt;br&gt;&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-style: italic;"&gt;govAPI&lt;/span&gt; is an abstract class that contains several abstract methods. An abstract method is a a method that is declared, but contains no implementation.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    In Python an abstract class is derived (or inherits) from the class ABC and will have one to more methods marked with
-   &lt;span style="font-style: italic;"&gt;@abstractmethod&lt;/span&gt;.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight python"&gt;&lt;code&gt;
-  &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;abc&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;ABC&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;abstractmethod&lt;/span&gt; 
-  &lt;span class="o"&gt;...&lt;/span&gt; 
-
-
-  &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;GovAPI&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ABC&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="nd"&gt;@abstractmethod&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;load_government_members&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;pass&lt;/span&gt; 
-      &lt;span class="o"&gt;...&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-    So the abstract class provides you a build plan, for any implementation class which inherits from this class. in our class the
-   &lt;span style="font-style: italic;"&gt;govAPI_CH. &lt;/span&gt;What kind of methods does
-   &lt;span style="font-style: italic;"&gt;govAPI_CH&lt;/span&gt; has to implement ?
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    First of all the implementation of the 
-   &lt;span style="font-style: italic;"&gt; load_government_members() &lt;/span&gt;method has to take care to fetch the politicians records from the government API
-   &lt;span style="font-style: italic;"&gt; &lt;/span&gt;and each fetched record (which represent the data of a singe politician) must be passed to  the method
-   &lt;span style="font-style: italic;"&gt;&lt;em&gt;add_person_record &lt;/span&gt;(which is already implemented by
-   &lt;span style="font-style: italic;"&gt;govAPI&lt;/span&gt; base class)
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    The question now is, what the heck is the 
-   &lt;span style="font-style: italic;"&gt;&lt;/em&gt;add_person_record&lt;/span&gt; method doing ? Well look at the code below. 
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight python"&gt;&lt;code&gt;
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_add_person_record&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="n"&gt;person&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
-          &lt;span class="s"&gt;'id'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_id&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'active'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_active&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'lastName'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_last_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'firstName'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_first_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'middleName'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_middle_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'gender'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_gender&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'party'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_party&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'council'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_council&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'electedDate'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_elected_date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'birthDate'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_birthdate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'maritalStatus'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_marital_status&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'title'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;  &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'statePostalCode'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_state_postal_code&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'district'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_district&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'zip'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-          &lt;span class="s"&gt;'townName'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_get_town_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-      &lt;span class="p"&gt;}&lt;/span&gt; 
-      &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_members&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;person&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-    Github: 
-   &lt;a href="https://gist.github.com/talfco/b6bf98b61b2809542ccb51a7d6bb8160"&gt;https://gist.github.com/talfco/b6bf98b61b2809542ccb51a7d6bb8160&lt;/a&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    The method is just preparing a target dictionary for our person record. I.e. the attribute names defined (
-   &lt;span style="font-style: italic;"&gt;lastName, firstName, council etc.&lt;/span&gt;) are the names we want to use for any GovAPI implementation.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    That means our retrieved record in the form of a dedicated government API implementation (i.e. in the form of the Swiss Government Parliament API) has to be  transformed by using a bunch of getter methods.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    Each of this getter methods is either abstract or returns an empty string. It’s the responsibility of the implementer of an inherited class (
-   &lt;span style="font-style: italic;"&gt;GovAPI_CH&lt;/span&gt;)  to provide the correct implementation. 
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight python"&gt;&lt;code&gt;
-  &lt;span class="nd"&gt;@abstractmethod&lt;/span&gt; 
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_active&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="k"&gt;pass&lt;/span&gt; 
-  &lt;span class="nd"&gt;@abstractmethod&lt;/span&gt; 
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_id&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="k"&gt;pass&lt;/span&gt; 
-  &lt;span class="nd"&gt;@abstractmethod&lt;/span&gt; 
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_last_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="k"&gt;pass&lt;/span&gt; 
-  &lt;span class="nd"&gt;@abstractmethod&lt;/span&gt; 
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_first_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="k"&gt;pass&lt;/span&gt; 
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_middle_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="k"&gt;pass&lt;/span&gt; 
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_party&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s"&gt;''&lt;/span&gt; 
-  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_council&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s"&gt;''&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div&gt;
-    Github: 
-   &lt;a href="https://gist.github.com/talfco/9bc3e30fce652a46eec55bc5a2dce25c"&gt;https://gist.github.com/talfco/9bc3e30fce652a46eec55bc5a2dce25c&lt;/a&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;&lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    The getter method implementations of
-   &lt;span style="font-style: italic;"&gt;GovAPI_CH&lt;/span&gt; is shown below. It consists of a bunch of getter methods, which will return required attribute value out of the record.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;span style="font-style: italic;"&gt; &lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-&lt;pre class="highlight python"&gt;&lt;code&gt;
-  &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;GovAPI_CH&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GovAPI&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-      &lt;span class="err"&gt;…&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_active&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'active'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_id&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'id'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_last_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'lastName'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_first_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'firstName'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_middle_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s"&gt;''&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_party&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'party'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-      &lt;span class="o"&gt;...&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_birthdate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_convert_utc_timestamp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'birthDate'&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'salutationTitle'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_country&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s"&gt;'CH'&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_state_postal_code&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'cantonName'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'postalAddress'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'zip'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_town_name&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'postalAddress'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'city'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-      &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;_get_elected_date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; 
-          &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_convert_utc_timestamp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;dict&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;'councilMemberships'&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="s"&gt;'entryDate'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;
-  &lt;div&gt;
-    Github: 
-   &lt;a href="https://gist.github.com/talfco/dd482ff73c8e35baacf15ffb63852638"&gt;&lt;a href="https://gist.github.com/talfco/dd482ff73c8e35baacf15ffb63852638"&gt;https://gist.github.com/talfco/dd482ff73c8e35baacf15ffb63852638&lt;/a&gt;&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    The whole pattern visualized in a UML sequence diagram.
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e38e2b3ce13b028048db5eb30967cdef.png'&gt;&lt;/p&gt;
-
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        It’s important that you understand the responsibility of the various classes.
-       &lt;i&gt;govAPI &lt;/i&gt;and
-       &lt;i&gt; govAPI_CH&lt;/i&gt; are (red dots) are visible to the outside world (
-       &lt;i&gt;govAPIFactory&lt;/i&gt;,
-       &lt;i&gt;gsma&lt;/i&gt;) as one class instance. For the caller is irrelevant who is implementing which method. 
-      &lt;/div&gt;
-      &lt;div&gt;
-        From an internal view - by providing an abstract class
-       &lt;i&gt;govAPI -&lt;/i&gt; we lay out a generic way to integrate any kind of government API, which can be plugged into our Government Social Media Analyzer Class. The ultimat goal of these two classes is to provide us a panda dataframe with detailed information about politican which we can further process.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 24px;"&gt;tbd&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 24px;"&gt;Source Code&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The source code can be found here (lesson 3 directory):
-       &lt;span style="font-size: 18px;"&gt; &lt;/span&gt;
-       &lt;a href="https://github.com/talfco/clb-sentiment" style="font-size: 18px;"&gt;&lt;a href="https://github.com/talfco/clb-sentiment"&gt;https://github.com/talfco/clb-sentiment&lt;/a&gt;&lt;/a&gt; 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
-       &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
        &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
     
@@ -10336,6 +9530,455 @@
        &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
        &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
        &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Java for Beginners #1 - Prepare an IntelliJ Maven Project</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"/>
+    <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html</id>
+    <published>2017-06-18T12:46:32+00:00</published>
+    <updated>2019-01-13T23:26:08+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;span style="font-size: 14px; font-style: italic;"&gt;The Table of Content of all sessions you can find &lt;/span&gt;
+       &lt;a style="font-size: 14px; font-style: italic;" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"&gt;here&lt;/a&gt;
+       &lt;span style="font-size: 14px; font-style: italic;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In this first session we create a Maven Project in the
+       &lt;a href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"&gt;IntelliJ Integrated Development Environment (IDE)&lt;/a&gt; and configure some aspects of the tool, which helps us in our future development work.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The goal of our project is to develop first a standalone Java Application and then an Android App, which allows us to retrieve and visualise  football data from the API of 
+       &lt;a href="http://www.football-data.org/index"&gt;&lt;a href="http://www.football-data.org/index"&gt;http://www.football-data.org/index&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;The goal of the football-data API is to provide football data of all major european leagues in a machine-readable way. By data I mean fixtures, teams, players, results and more. All this information is provided via an easy-to-use RESTful API in JSON (only) representation.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;How Java Works&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        If you are completely new to Java, watch the following 6 minutes video
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;div class="responsive-video"&gt;
+        &lt;iframe src="https://www.youtube.com/embed/2Xa3Y4xz8_s?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Some terminology to get you a better start off (taken over from
+       &lt;a href="http://computer.howstuffworks.com/program1.htm"&gt;here&lt;/a&gt;).
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;Computer program&lt;/span&gt; - A computer program is a set of instructions that tell a computer exactly what to do. The instructions might tell the computer to add up a set of numbers, or compare two numbers and make a decision based on the result, or whatever. But a computer program is simply a set of instructions for the computer, like a recipe is a set of instructions for a cook or musical notes are a set of instructions for a musician. The computer follows your instructions exactly and in the process does something useful &amp;ndash; like balancing a checkbook or displaying a game on the screen or implementing a word processor.&lt;/li&gt;
+       &lt;li&gt;P&lt;span style="font-weight: bold;"&gt;rogramming language &lt;/span&gt;- In order for a computer to recognize the instructions you give it, those instructions need to be written in a language the computer understands &amp;ndash; a programming language. There are many computer programming languages &amp;ndash; Fortran, Cobol, Basic, Pascal, C, C++, Java, Perl &amp;ndash; just like there are many spoken languages. They all express approximately the same concepts in different ways.&lt;/li&gt;
+       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;Compiler&lt;/span&gt; - A compiler translates a computer program written in a human-readable computer language (like Java) into a form that a computer can execute. You have probably seen EXE files on your computer. These EXE files are the output of compilers. They contain executables &amp;ndash; machine-readable programs translated from human-readable programs. &lt;/li&gt;
+       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;Build Process &lt;/span&gt;- When you develop an application in a programming language  (in our case Java) you will have a so-called Build Process which manages various steps. As we will see below, we will use a project management tool which helps us to manage this process. For example the process will&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;compiles your Java source code then &lt;/li&gt;
+        &lt;li&gt;runs some test against the code and then&lt;/li&gt;
+        &lt;li&gt;bundles it in a Java JAR file for distribution.&lt;/li&gt;
+       &lt;/ul&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Using Maven for the Build&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        We are setting the project in IntelliJ as an 
+       &lt;a href="https://maven.apache.org/"&gt;Apache Maven Project&lt;/a&gt; up. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Maven is a professional software project management tool  and it’s primary goal is to allow a developer to comprehend the complete state of a development effort in the shortest period of time. By using it from the beginning, we can grow our project easily over time. You don’t need to know the all the details from Maven, just follow the setup steps as shown below. Over time we will introduce the necessary concepts of Maven.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        For each Maven Project you have to define a “groupId&amp;quot;, an “artifactId”, as well as a “version” (see details
+       &lt;a href="https://maven.apache.org/guides/mini/guide-naming-conventions.html"&gt;here&lt;/a&gt;)
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;groupId&lt;/span&gt; will identify your project uniquely across all projects.&lt;/li&gt;
+       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;artifactId&lt;/span&gt; is the name of the jar (the file which holds all the compiled java code) without version.&lt;/li&gt;
+       &lt;li&gt;&lt;span style="font-weight: bold;"&gt;version &lt;/span&gt;identifies the current version of the jar.&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;/div&gt;
+      &lt;div&gt;
+        When Maven is compiling and building your Java Application, it will bundle the generated the files in a jar file by using the above definitions for its file name. So let’s start then and get an IntelliJ IDEA Project setup.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Step 1: Create a new Maven Project in IntelliJ IDEA &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        From the menu select: “File-&amp;gt;New-&amp;gt;Project&amp;quot;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You don’t require an archetype, just press “Next&amp;quot;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/b5b0cbab25e18b36eaf517dd49edc6a3.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Maven requires the following information (more to it later)
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;“GroupId”, for example com.&amp;lt;yourName&amp;gt; (if you own a domain name use this one)&lt;/li&gt;
+       &lt;li&gt;“ArtifactId”, in our case “FootballApp”&lt;/li&gt;
+       &lt;li&gt;“Version”, leave it as suggested.&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+        Press “Next&amp;quot;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/a8fb97fc23db17fc3d7da588c5cbb2c7.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The IntelliJ “Project name” and “Project location” will shown, leave it as is and Press “Finish&amp;quot;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/3c1c8202e3bbd49af12cd0ec358fc703.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The Project will now be opened and the Maven “pom.xml” File will be shown. We will explain it in the next session.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/323acc1d8b0077fc7393b914565dfacd.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Step 2: Configure the IntelliJ IDEA Project View&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Now we do some IntelliJ Project and View configurations.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        First we open the Event Log. Click on the rectangular icon at the bottom left of the Project Window
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/af4d44b82bf2d02f7cf0f34ad221c2d3.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A list of possible views will be shown, select the “Event Log”, by clicking on it.
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/b3ccb81b9e87c2b71d3b87f9cdacb445.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The Event Log is now shown at bottom of the Window.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/b0a8a78c69c2ba43c8c95d2f7c654b36.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A Message is displayed “Maven projects need to be imported …”. 
+      &lt;/div&gt;
+      &lt;div&gt;
+        Click on “Enable Auto-Import”, so that any extension of the Maven pom.xml will be automatically imported.
+      &lt;/div&gt;
+      &lt;div&gt;
+        After clicking it, the entry is greyed out.
+      &lt;/div&gt;
+      &lt;div&gt;
+        You can hide the “Event Log” window by clicking on the icon in the upper right corner of the Event Log Window. But for now leave it open.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/d755aff371a9a5850494fa9dade5b0be.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Step 3: Configure the Auto Build Feature of the Project&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In order to enable the “
+       &lt;a href="https://www.jetbrains.com/help/idea/2017.1/problems-tool-window.html"&gt;Problems Tool Window&lt;/a&gt;” you have to enable the “Make project automatically” option. Select the following menu
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&amp;ldquo;IntelliJ IDEA-&amp;gt;Preferences-&amp;gt;Build, Execution, Deployment -&amp;gt;Compiler” on a Mac or&lt;/li&gt;
+       &lt;li&gt;“File-&amp;gt;Settings-&amp;gt;Build, Execution, Deployment-&amp;gt;Compiler” on Windows or Linux.&lt;/li&gt;
+       &lt;li&gt;Click “Build project automatically” to enable it.&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/19246af83dc49fb57615ad65e486cf98.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        That’s it for today, in the next session, we will finalize the project-setup and dive into the concepts around RESTful API’s which allows us to fetch data from the
+       &lt;a href="http://football-data.org"&gt;football-data.org&lt;/a&gt; site in a machine-readable format.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Further reading&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;Read &lt;span style="font-weight: bold;"&gt;Chapter 1. Dive in A Quick Dip: Breaking the Surface &lt;/span&gt;of the &lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;Head First Java Book&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Java for Beginners - Table of Content and Resources</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
+    <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
+    <published>2017-06-18T11:50:25+00:00</published>
+    <updated>2019-01-13T23:26:08+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Table of Content&lt;/span&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&lt;a href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"&gt;Java for Beginners #1 - Prepare an IntelliJ Maven Project&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"&gt;Java for Beginners #2 - Maven Primer and Understanding API&amp;rsquo;s&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Prerequisites&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b&gt;&lt;u&gt;E-Book: Head First Java&lt;/u&gt;&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        We are referencing to the following book, which is a very good in-depth guide. You should get a copy of it
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/2f32bea7ea20597a6be9cd9278a507c7.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;&lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;http://shop.oreilly.com/product/9780596009205.do&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;b&gt;&lt;u&gt;Integrated Development Environment&lt;/u&gt;&lt;/b&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;For developing of the Java Application we are using the excellent integrated development environment IntelliJ IDEA Community edition&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/74e3d491fd229ddf57206f549145b3e5.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;You can download the free community edition &lt;/span&gt;
+       &lt;a style="font-size: 14px;" href="https://www.jetbrains.com/idea/"&gt;here&lt;/a&gt;
+       &lt;span style="font-size: 14px;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;b&gt;&lt;u&gt;JSON Viewer Extension for Chrome&lt;/u&gt;&lt;/b&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        For looking a JSON Data Request we suggest that you use the Chrome Browser with JSONView (but any other JSON viewing extension available for your browser). It will help you to read and understand the structured data content.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc"&gt;&lt;a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc"&gt;https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;img class="img-responsive img-thumbnail article" src="/images/6ccf83e03409878d244ee1c4d4442aa3.png" /&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
