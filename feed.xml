@@ -14,13 +14,11 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/18/python-tutorial-exercise-3-implement-the-govapi_uk-class.html"/>
     <id>https://dev.cloudburo.net/2019/02/18/python-tutorial-exercise-3-implement-the-govapi_uk-class.html</id>
     <published>2019-02-18T22:26:26+00:00</published>
-    <updated>2019-02-18T22:26:31+00:00</updated>
+    <updated>2019-02-19T07:05:57+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/75f6c26a26ff4cb8c5f2b2fac78a3186.png'&gt;&lt;/p&gt;
-  
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
@@ -76,6 +74,8 @@
       &lt;/ul&gt;
       &lt;div&gt;&lt;/p&gt;
     
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/75f6c26a26ff4cb8c5f2b2fac78a3186.png'&gt;&lt;/p&gt;
+    
   &lt;/div&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
@@ -124,7 +124,7 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/84c08f9c01bccd1d9208ae8476ac1ff7.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/84c08f9c01bccd1d9208ae8476ac1ff7.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -175,7 +175,7 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/5c6e48b10c90a2be0bacfb6fc5050c36.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/5c6e48b10c90a2be0bacfb6fc5050c36.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
