@@ -289,12 +289,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/2019/02/24/python-tutorial-short-stop-to-introduce-main-statistical-concepts.html</loc>
-    <lastmod>2019-02-24</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net/2016/11/22/blockchain-governance-system-introduction.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.7</priority>
@@ -1057,18 +1051,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/tags/python.html</loc>
-    <lastmod>2019-01-13</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/tags/tut01.html</loc>
-    <lastmod>2019-01-13</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net/tags/datascience.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
@@ -1129,6 +1111,18 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/python.html</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/tut01.html</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/deutsch.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
@@ -1168,12 +1162,6 @@
     <loc>https://dev.cloudburo.net/2019/02.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/2019/02/24.html</loc>
-    <lastmod>2019-01-13</lastmod>
-    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
