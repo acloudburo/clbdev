@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/24/python-tutorial-short-stop-to-introduce-main-statistical-concepts.html"/>
     <id>https://dev.cloudburo.net/2019/02/24/python-tutorial-short-stop-to-introduce-main-statistical-concepts.html</id>
     <published>2019-02-24T22:07:14+00:00</published>
-    <updated>2019-02-24T22:07:37+00:00</updated>
+    <updated>2019-02-24T23:13:42+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -22,8 +22,7 @@
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
-    &lt;p&gt;Explaining the concepts by using our tutorial program as a showcase 
-      &lt;br&gt;
+    &lt;p&gt;&lt;span style="font-size: 18px;"&gt;Explaining the concepts by using our tutorial program as a showcase&lt;/span&gt; 
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;I planned to introduce in this session the merging algorithm for our two data sets via the name variables.  &lt;/span&gt;
       &lt;/div&gt;
@@ -43,7 +42,8 @@
        &lt;a href="https://unsplash.com/photos/CEubYUySRo4?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;chuttersnap&lt;/a&gt; on 
        &lt;a href="https://unsplash.com/search/photos/bus-stop?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
       &lt;/div&gt;
-      &lt;font style="font-size: 24px;"&gt;Population, Sample, Measurement, Parameter, and Statistic &lt;/font&gt;
+      &lt;span style="font-size: 24px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;span style="font-size: 24px;"&gt;Population, Sample, Measurement, Parameter, and Statistic &lt;/span&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;We begin with some basic definitions used in statistics, by using the &lt;/span&gt;
        &lt;a href="https://saylordotorg.github.io/text_introductory-statistics/s05-01-basic-definitions-and-concepts.html" style="-en-paragraph:true;"&gt;introduction tutorial&lt;/a&gt;
@@ -61,7 +61,7 @@
         &lt;span style="font-weight: bold;"&gt;census&lt;/span&gt;.
        &lt;/div&gt;
       &lt;/blockquote&gt;
-      &lt;font style="font-size: 18px;"&gt;Population &lt;/font&gt;
+      &lt;span style="font-size: 18px;"&gt;Population &lt;/span&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;In our case, the population is the Swiss government members (councilors) of the &lt;/span&gt;
        &lt;a href="https://en.wikipedia.org/wiki/Federal_Assembly_%28Switzerland%29" style="-en-paragraph:true;"&gt;Federal Assembly of Switzerland&lt;/a&gt;
@@ -73,8 +73,10 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;font style="font-size: 18px;"&gt;Sample &lt;/font&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;span style="font-size: 18px;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;span style="font-size: 18px;"&gt;Sample &lt;/span&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;Our sample is all councilors, which have a Twitter account and listed as a member of the &lt;/span&gt;
        &lt;a href="https://twitter.com/SoMePolis/lists/bundesparlamentarierinnen" style="-en-paragraph:true;"&gt;SoMePolis Twitter Parliament List&lt;/a&gt;
@@ -88,11 +90,11 @@
         &lt;span style="font-weight: bold;"&gt;sample data&lt;/span&gt;.
        &lt;/div&gt;
       &lt;/blockquote&gt;
-      &lt;font style="font-size: 18px;"&gt;Measurement &lt;/font&gt;
+      &lt;span style="font-size: 18px;"&gt;Measurement &lt;/span&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;For each member of the sample set, we are collecting variables via two data set’s i.e., the first set of variables are collected via the Twitter API, the second set via the Government API. &lt;/span&gt;
       &lt;/div&gt;
-      &lt;font style="font-size: 18px;"&gt;Sample Data &lt;/font&gt;
+      &lt;span style="font-size: 18px;"&gt;Sample Data &lt;/span&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;Our overall sample data set we get by unifying these two data sets. &lt;/span&gt;
       &lt;/div&gt;
@@ -111,7 +113,7 @@
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;That’s it about the initial scope definition, let’s focus now about the “Variables” concept which is crucial. &lt;/span&gt;
       &lt;/div&gt;
-      &lt;font style="font-size: 24px;"&gt;Data Set’s and Variables &lt;/font&gt;
+      &lt;span style="font-size: 24px;"&gt;Data Set’s and Variables &lt;/span&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;As a fresh up, let’s look at the two data sets, which we retrieved already: &lt;/span&gt;
       &lt;/div&gt;
@@ -126,7 +128,9 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/div&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;It provides us with three statistical variables playing a role in our future analysis: &lt;/span&gt;
       &lt;/div&gt;
@@ -172,7 +176,9 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/div&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;From this table, we got the following variables, which we want to use for our statistical assessment: &lt;/span&gt;
       &lt;/div&gt;
@@ -224,7 +230,7 @@
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;Let’s dig a little bit deeper about the statistical meaning of variables used in our data sets &lt;/span&gt;
       &lt;/div&gt;
-      &lt;font style="font-size: 18px;"&gt;Variable Term Definition &lt;/font&gt;
+      &lt;span style="font-size: 18px;"&gt;Variable Term Definition &lt;/span&gt;
       &lt;blockquote&gt;
        &lt;div&gt;
          In statistics, a
@@ -240,7 +246,7 @@
        &lt;span style="font-style: italic;"&gt;witter follower count&lt;/span&gt;
        &lt;span style=""&gt; are potential variables.  &lt;/span&gt;
       &lt;/div&gt;
-      &lt;font style="font-size: 18px;"&gt;Data type categorization &lt;/font&gt;
+      &lt;span style="font-size: 18px;"&gt;Data type categorization &lt;/span&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;The Data Type of a variable plays an important role in statistics which must be understood, to correctly apply statistical measurements to your data. In statistics, the term “Measurement Scale” may be used as well. &lt;/span&gt;
       &lt;/div&gt;
@@ -253,7 +259,9 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/div&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;Refer to the following excellent &lt;/span&gt;
        &lt;a href="https://towardsdatascience.com/data-types-in-statistics-347e152e8bee" style="-en-paragraph:true;"&gt;Medium article&lt;/a&gt;
@@ -268,8 +276,9 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/div&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;Two comments &lt;/span&gt;
       &lt;/div&gt;
@@ -290,7 +299,7 @@
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;A multitude of variable types exists, which can be classified with the above scheme (refer to the reference sections for additional links), but we are interested now in the so-called Identifier Variables. &lt;/span&gt;
       &lt;/div&gt;
-      &lt;font style="font-size: 24px;"&gt;Identifier Variables &lt;/font&gt;
+      &lt;span style="font-size: 24px;"&gt;Identifier Variables &lt;/span&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;Identifier Variables and Unique Identifiers are commonly used in statistics to unique identifies for data collection purposes. &lt;/span&gt;
       &lt;/div&gt;
@@ -326,7 +335,8 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
       &lt;div style="text-align: center;"&gt;
         Swiss ID Card — 
        &lt;a href="https://www.checkinscan.com/blog/en/articles/find-issue-date-passport-or-id-card/"&gt;Source&lt;/a&gt;
@@ -343,7 +353,8 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
       &lt;div style="text-align: center;"&gt;
         Swiss Social Security Number — 
        &lt;a href="https://www.grundrechte.ch/ahv-nummer-soll-bei-allen-behoerden-globaler-personenidentifikator-werden.html"&gt;Source&lt;/a&gt;
@@ -377,14 +388,23 @@
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;That’s exactly the situation we are confronted now, let’s move on in the next article. &lt;/span&gt;
       &lt;/div&gt;
-      &lt;font style="font-size: 24px;"&gt;References &lt;/font&gt;
+      &lt;span style="font-size: 24px;"&gt;References &lt;/span&gt;
       &lt;ul&gt;
        &lt;li&gt;
         &lt;div&gt;
           A comprehensive list of different variable types (well any type you can imagine) — 
          &lt;a href="https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/types-of-variables/"&gt;Link: datasciencecentral.com&lt;/a&gt;
         &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;br&gt;
+        &lt;/div&gt;&lt;/li&gt;
       &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
+      &lt;/div&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;br&gt;
       &lt;/div&gt;
