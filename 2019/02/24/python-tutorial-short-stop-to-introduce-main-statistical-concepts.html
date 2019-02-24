@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Python Tutorial: Short Stop To Introduce Main Statistical Concepts</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (17)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (1)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (10)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (2)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (13)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (4)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (4)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (5)</a>
+            <a href="/tags/python.html" class="label label-default">python (5)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (18)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tut01.html" class="label label-default">tut01 (5)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (10)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2019.html" class="label label-primary">2019 (8)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2019/02/24/python-tutorial-short-stop-to-introduce-main-statistical-concepts.html">Python Tutorial: Short Stop To Introduce Main Statistical Concepts</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  24.Feb 2019 | Tags <a class="label label-primary" href="/tags/tutorial.html">tutorial</a> <a class="label label-primary" href="/tags/python.html">python</a> <a class="label label-primary" href="/tags/tut01.html">tut01</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                   <br>
+                  </div>
+                  <div style="font-size: 16px; min-width: 100%;">
+                   <div style="">
+                    <div style=" font-size: 20px;">
+                     <div style="background-color: rgb(255, 255, 255);">
+                      <div style="box-sizing:border-box;">
+                       <div style=" background-color: rgb(255, 255, 255);">
+                        <div style="">
+                         <div style="">
+                          <div style="box-sizing:border-box;">
+                           <span style="font-size: 28px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.541176); font-style: normal; font-weight: 400;">Explaining major statistical concepts by using our tutorial program as a showcase </span>
+                           <div style="margin: 10px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">I planned to introduce in this session the merging algorithm for our two data sets via the name variables. </span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">To outline the overall approach understandably and concisely, it’s essential to bring some statistical concepts beforehand. </span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">I decided to do a short bus stop and embed the work into the statistical framework, which underlies any data exploration project. So no programming today just some concepts, which are vital for the overall understanding. I plan more statistics bus stops in the future to get the scientific context of our program established. </span>
+                           </div>
+                           <div style="margin: 43px 0px 0px; box-sizing: border-box;">
+                            <div style=" margin: 0px auto;">
+                             <div style="padding-bottom: 66.8%;"></div>
+                             <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/2fecdd0272dc2b28a470c69ff578d33e.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>                    <br>
+                             </div>
+                            </div>
+                            <div style=" margin-top: 10px; text-align: center; font-size: 16px;">
+                             <span style="font-size: 16px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.682353); font-style: normal; font-weight: 400;">Photo by </span>
+                             <a href="https://medium.com/r/?url=https%3A%2F%2Funsplash.com%2Fphotos%2FCEubYUySRo4%3Futm_source%3Dunsplash%26utm_medium%3Dreferral%26utm_content%3DcreditCopyText" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 16px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-style: normal; font-weight: 400; line-height: 1.4; font-feature-settings: &quot;liga&quot;, &quot;lnum&quot;; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">chuttersnap</a>
+                             <span style="font-size: 16px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.682353); font-style: normal; font-weight: 400;"> on </span>
+                             <a href="https://medium.com/r/?url=https%3A%2F%2Funsplash.com%2Fsearch%2Fphotos%2Fbus-stop%3Futm_source%3Dunsplash%26utm_medium%3Dreferral%26utm_content%3DcreditCopyText" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 16px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-style: normal; font-weight: 400; line-height: 1.4; font-feature-settings: &quot;liga&quot;, &quot;lnum&quot;; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">Unsplash</a>
+                            </div>
+                           </div>
+                           <span style="font-size: 34px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 600;">Population, Sample, Measurement, Parameter, and Statistic</span>
+                           <div style="margin: 8px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">We begin with some basic definitions used in statistics, by using the </span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Fsaylordotorg.github.io%2Ftext_introductory-statistics%2Fs05-01-basic-definitions-and-concepts.html" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: normal; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">introduction tutorial</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;"> of the Saylor Academy (the content is provided under a </span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Fsaylordotorg.github.io%2Ftext_introductory-statistics%2Fs00-license.html" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: normal; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">creative commons license</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">) </span>
+                           </div>
+                           <blockquote style="margin: 29px 0px 0px -23px; border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">A</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;"> </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 700;">population</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;"> </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">is any specific collection of objects of interest. A</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;"> </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 700;">sample</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;"> </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">is any subset or subcollection of the population, including the case that the sample consists of the whole population, which maps to the term </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 700;">census</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">.</span>
+                           </blockquote>
+                           <span style="font-size: 26px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 600;">Population</span>
+                           <div style="margin: 6px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">In our case, the population is the Swiss government members (councilors) of the </span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFederal_Assembly_%28Switzerland%29" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: normal; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">Federal Assembly of Switzerland</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">. </span>
+                           </div>
+                           <div style="margin: 43px 0px 0px; box-sizing: border-box;">
+                            <div style=" margin: 0px auto;">
+                             <div style="padding-bottom: 62.6%;"></div>
+                             <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/4c0b504f7df300e09146939838182854.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>                    <br>
+                             </div>
+                            </div>
+                           </div>
+                           <span style="font-size: 26px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 600;">Sample</span>
+                           <div style="margin: 6px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">Our sample is all councilors, which have a Twitter account and listed as a member of the </span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Ftwitter.com%2FSoMePolis%2Flists%2Fbundesparlamentarierinnen" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: normal; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">SoMePolis Twitter Parliament List</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">. It’s a subset, so we don’t use the term census for the population.</span>
+                           </div>
+                           <blockquote style="margin: 29px 0px 0px -23px; border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">A</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;"> </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 700;">measurement</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;"> </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">is a number or attribute/variable computed for each member of a population or sample. The measurements of sample elements are collectively called the</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;"> </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 700;">sample data</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">.</span>
+                           </blockquote>
+                           <span style="font-size: 26px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 600;">Measurement</span>
+                           <div style="margin: 6px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">For each member of the sample set, we are collecting variables via two data set’s i.e., the first set of variables are collected via the Twitter API, the second set via the Government API.</span>
+                           </div>
+                           <span style="font-size: 26px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 600;">Sample Data</span>
+                           <div style="margin: 6px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">Our overall sample data set we get by unifying these two data sets.</span>
+                           </div>
+                           <blockquote style="margin: 29px 0px 0px -23px; border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">A</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;"> </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 700;">parameter</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;"> </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">is a number that summarizes some aspect of the population as a whole. A </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 700;">statistic</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;"> </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">is a number computed from the sample data.</span>
+                           </blockquote>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">Because our numbers to be computed are based on a subset of a population, we talk about a statistic and not a parameter.</span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">That’s it about the initial scope definition, let’s focus now about the “Variables” concept which is crucial.</span>
+                           </div>
+                           <span style="font-size: 34px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 600;">Data Set’s and Variables</span>
+                           <div style="margin: 8px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">As a fresh up, let’s look at the two data sets, which we retrieved already:</span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">As a first table (</span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Ftowardsdatascience.com%2Fpython-tutorial-government-social-media-analyser-class-build-out-12858190b284" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: normal; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">Tutorial 2</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">), we retrieved from Twitter the following data record of Swiss politician Twitter accounts.</span>
+                           </div>
+                           <div style="margin: 43px 0px 0px; box-sizing: border-box;">
+                            <div style=" margin: 0px auto;">
+                             <div style="padding-bottom: 39.4%;"></div>
+                             <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/5cc7f4ccbd21f36f1ef8ddd1f8eebe00.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>                    <br>
+                             </div>
+                            </div>
+                           </div>
+                           <div style="margin: 38px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">It provides us with three statistical variables playing a role in our future analysis:</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 14px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">FollowersCount</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 14px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">FriendsCount</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 14px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">Party</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 0px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">Name</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">, which may represent the Twitter users real name. The word “may” is here essential, but more to that later.</span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">What we also got from Twitter is an </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">Identifier </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">variable, which helps us reveal the real identity of a person (in our case a member of the Swiss council):</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 0px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">ScreenName</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 700;"> </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">which is the unique identifier of a Twitter account. We can use it in the case have to retrieve additional information via the Twitter API in a later stage.</span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">As a second Table (</span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Ftowardsdatascience.com%2Fpython-tutorial-government-social-media-analyser-class-build-out-12858190b284" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: normal; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">Tutorial 3</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">), we retrieved via the Swiss Government API the list of all current councilors of the </span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFederal_Assembly_%28Switzerland%29" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: normal; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">Federal Assembly of Switzerland</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">. </span>
+                           </div>
+                           <div style="margin: 43px 0px 0px; box-sizing: border-box;">
+                            <div style=" margin: 0px auto;">
+                             <div style="padding-bottom: 30.099999999999998%;"></div>
+                             <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/24ab5f54215149cfd86774dffe3714df.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>                    <br>
+                             </div>
+                            </div>
+                           </div>
+                           <div style="margin: 38px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">From this table, we got the following variables, which we want to use for our statistical assessment:</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 14px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">firstName-middleName-lastName</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">, which is the (council’s) person name.</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 14px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">birthDate</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 14px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">council, </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">the assembly is made up of two chambers i.e., the </span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNational_Council_%28Switzerland%29" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: normal; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">National Council</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;"> (lower house) and the </span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCouncil_of_States_%28Switzerland%29" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: normal; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">Council of States</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">. Which is represented by the value ’N’ or ‘S’ in the table.</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 14px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">electedDate</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 14px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">gender</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 14px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">maritalStatus</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 14px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">party</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 0px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">home address (postal Code, townName, zip) </span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">As well as the Identifier Variable</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 0px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">id</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">, which identifies the data record in the context of the government API</span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">Let’s dig a little bit deeper about the statistical meaning of variables used in our data sets</span>
+                           </div>
+                           <span style="font-size: 26px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 600;">Variable Term Definition</span>
+                           <blockquote style="margin: 10px 0px 0px -23px; border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">In statistics, a </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 700;">variable</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;"> has two defining characteristics. (1) A variable is an attribute that describes a person, place, thing, or idea. (2) The value of the variable can “vary” from one entity to another.</span>
+                           </blockquote>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">In our example, a person’s </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">gender</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">, </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">political party</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;"> or T</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">witter follower count</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;"> are potential variables. </span>
+                           </div>
+                           <span style="font-size: 26px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 600;">Data type categorization</span>
+                           <div style="margin: 6px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">The Data Type of a variable plays an important role in statistics which must be understood, to correctly apply statistical measurements to your data. In statistics, the term “Measurement Scale” may be used as well.</span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">The following tree categorizes the data type concept </span>
+                           </div>
+                           <div style="margin: 43px 0px 0px; box-sizing: border-box;">
+                            <div style=" margin: 0px auto;">
+                             <div style="padding-bottom: 68%;"></div>
+                             <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/5dd29ed6de064b9bd1a45d01126470ff.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>                    <br>
+                             </div>
+                            </div>
+                            <div style=" margin-top: 10px; text-align: center; font-size: 16px;">
+                             <span style="font-size: 16px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.682353); font-style: normal; font-weight: 400;">Data Type Classification Tree</span>
+                            </div>
+                           </div>
+                           <div style="margin: 38px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">Refer to the following excellent </span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Ftowardsdatascience.com%2Fdata-types-in-statistics-347e152e8bee" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: normal; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">Medium article</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;"> to get an overall introduction to the data type topic. </span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">Let’s apply the classification to our two data sets, which results in the following table.</span>
+                           </div>
+                           <div style="margin: 43px 0px 0px; box-sizing: border-box;">
+                            <div style=" margin: 0px auto;">
+                             <div style="padding-bottom: 59.714%;"></div>
+                             <div style=" margin: auto; box-sizing: border-box;">
+                              <div style=" margin: auto; box-sizing: border-box; border: 3px solid rgba(255, 255, 255, 0);">
+                               <div style="font-size: 16px; min-width: 100%;">
+                                <div style=" font-size: 18px; background-color: white;">
+                                 <div style=" font-size: 16px; text-align: left;">
+                                  <div style="margin-bottom: 0px; border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) rgb(204, 204, 204); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; --inversion-type-border-color: simple;">
+                                   <div style="background-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;">
+                                    <div style="border-bottom-left-radius:3px;border-bottom-right-radius:3px;">
+                                     <div style="background-color: rgb(242, 242, 242); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(229, 229, 229);">
+                                      <span style="font-size: 16px; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;"> <img style="color: rgb(88, 96, 105); font-size: 12px;"> </span>
+                                      <span style=""></span>
+                                     </div>
+                                     <div style="font-size: 16px;">
+                                      <span style="font-size: 16px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;"> </span>
+                                      <table style="font-size: inherit; margin-top: 0px; margin-bottom: 0px; border-collapse: collapse;">
+                                       <tbody>
+                                        <tr style="background-color: rgb(255, 255, 255); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 4px 10px 1px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">1</span></td>
+                                         <td style="border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgb(223, 226, 229); border-bottom-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left; background-color: rgb(246, 248, 250);"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 600;">data set</span></td>
+                                         <td style="border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgb(223, 226, 229); border-bottom-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left; background-color: rgb(246, 248, 250);"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 600;">variable name</span></td>
+                                         <td style="border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgb(223, 226, 229); border-bottom-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left; background-color: rgb(246, 248, 250);"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 600;">cat.nominal</span></td>
+                                         <td style="border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgb(223, 226, 229); border-bottom-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left; background-color: rgb(246, 248, 250);"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 600;">cat.ordinal</span></td>
+                                         <td style="border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgb(223, 226, 229); border-bottom-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left; background-color: rgb(246, 248, 250);"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 600;">num.discrete</span></td>
+                                         <td style="border-width: 0px 1px 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-right-color: rgb(223, 226, 229); border-bottom-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left; background-color: rgb(246, 248, 250);"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 600;">num.continous</span></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(255, 255, 255); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 4px 10px 1px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">2</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 4px 5px 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">twitter.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 4px 5px 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">ScreenName</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 4px 5px 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x (unique)</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 4px 5px 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 4px 5px 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 4px 5px 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(246, 248, 250); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">3</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">twitter.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">Name</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(255, 255, 255); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">4</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">twitter.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">Description</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(246, 248, 250); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">5</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">twitter.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">FollowersCount</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(255, 255, 255); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">6</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">twitter.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">FriendsCount</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(246, 248, 250); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">7</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">twitter.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">Party</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(255, 255, 255); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">8</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">gov.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">id</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x (unique)</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(246, 248, 250); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">9</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">gov.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">firstName.middleName.lastName</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(255, 255, 255); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">10</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">gov.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">birthDate</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(246, 248, 250); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">11</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">gov.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">council</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(255, 255, 255); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">12</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">gov.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">electedDate</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(246, 248, 250); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">13</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">gov.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">maritalStatus</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(255, 255, 255); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">14</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">gov.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">party</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                        <tr style="background-color: rgb(246, 248, 250); border-top-width: 0px;">
+                                         <td style="border: 0px; padding: 1px 10px; font-size: 12px; text-align: right; background-color: rgb(255, 255, 255);"><span style="font-size: 12px; text-align: right; font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; color: rgba(27, 31, 35, 0.298039); font-style: normal; font-weight: 400;">15</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">gov.api</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">postalCode.townName.zip</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"><span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;">x</span></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                         <td style="border: 1px solid rgb(223, 226, 229); padding: 5px; font-size: 12px; text-align: left;"></td>
+                                        </tr>
+                                       </tbody>
+                                      </table>
+                                      <div>
+                                       <span style="font-size: 16px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(51, 51, 51); font-style: normal; font-weight: 400;"> </span>
+                                       <span style="font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;font-size:16px;"></span>
+                                      </div>
+                                     </div>
+                                    </div>
+                                   </div>
+                                   <div style="background-color: rgb(247, 247, 247); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; font-size: 12px; padding: 10px;">
+                                    <span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(88, 96, 105); font-style: normal; font-weight: normal;"> </span>
+                                    <a href="https://gist.github.com/talfco/ea6ffc132acbed8cd40c082c7fc22e1c/raw/f77a8f5226790e2fdd5d640d955af151c24daebd/tut04-variable-categorization.csv" style="border: 0px; float: right; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-style: normal; font-weight: 600; line-height: normal; font-stretch: normal; font-variant-caps: normal; color: rgb(102, 102, 102); text-decoration: none;">view raw</a>
+                                    <span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(88, 96, 105); font-style: normal; font-weight: normal;"> </span>
+                                    <a href="https://gist.github.com/talfco/ea6ffc132acbed8cd40c082c7fc22e1c#file-tut04-variable-categorization-csv" style="border: 0px; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-style: normal; font-weight: 600; line-height: normal; font-stretch: normal; font-variant-caps: normal; color: rgb(102, 102, 102); text-decoration: none;">tut04-variable-categorization.csv</a>
+                                    <span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(88, 96, 105); font-style: normal; font-weight: normal;"> hosted with ❤ by </span>
+                                    <a href="https://github.com/" style="border: 0px; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-style: normal; font-weight: 600; line-height: normal; font-stretch: normal; font-variant-caps: normal; color: rgb(102, 102, 102); text-decoration: none;">GitHub</a>
+                                    <span style="font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(88, 96, 105); font-style: normal; font-weight: normal;"> </span>
+                                   </div>
+                                  </div>
+                                 </div>
+                                </div>
+                               </div>
+                              </div>
+                             </div>
+                            </div>
+                           </div>
+                           <div style="margin: 38px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">Two comments</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 14px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">We marked for each set a variable as “unique” which is identifying a dedicated sample result and on which we cannot perform any data analysis. A so-called Identifier Variables</span>
+                           </div>
+                           <div style="margin-left: 30px; margin-bottom: 0px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">In the gov.api data set, I bundled some variables together for describing a person or address. I.e., the name of a person is made of </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">firstName, middleName, </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">and </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">lastName</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;"> of a home address of person consisting of </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">postalCode, townName, </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">and </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">zip</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">.</span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">A multitude of variable types exists, which can be classified with the above scheme (refer to the reference sections for additional links), but we are interested now in the so-called Identifier Variables.</span>
+                           </div>
+                           <span style="font-size: 26px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 600;">Identifier Variables</span>
+                           <div style="margin: 6px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">Identifier Variables and Unique Identifiers are commonly used in statistics to unique identifies for data collection purposes.</span>
+                           </div>
+                           <blockquote style="margin: 29px 0px 0px -23px; border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">Identifier variables are </span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Fwww.statisticshowto.datasciencecentral.com%2Fwhat-is-a-categorical-variable%2F" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: italic; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">categorical variables</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;"> that have a single individual per category. For example:</span>
+                           </blockquote>
+                           <blockquote style="margin: 0px 0px 0px -23px; border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px; padding-top: 27px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">A Social Security Number, Interviewer ID number or Employee ID number.</span>
+                           </blockquote>
+                           <blockquote style="margin: 0px 0px 0px -23px; border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px; padding-top: 27px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">As identifier variables are singular, it’s impossible to perform any </span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Fwww.statisticshowto.datasciencecentral.com%2Fprobability-and-statistics%2Fdata-analysis%2F" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: italic; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">data analysis </a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">on them. Instead, they are used to identify results.</span>
+                           </blockquote>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">Well, our two data sets have a unique identifier in the own domain, but there is no real unique identifier which allows combining the two data-set directly via a unique identifier which is available in both (cross-domain) data set.</span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">In an ideal world, both records would have a unique identifier i.e., a national identifier in their data sets which allows to merge them easily.</span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">The below example shows the national identity card of Switzerland, which has a unique identity number for Swiss citizen (holding an identity card).</span>
+                           </div>
+                           <div style="margin: 43px 0px 0px; box-sizing: border-box;">
+                            <div style=" margin: 0px auto;">
+                             <div style="padding-bottom: 64.9%;"></div>
+                             <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/017f5d13fe40a6bca041c1afd2c39d6d.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>                    <br>
+                             </div>
+                            </div>
+                            <div style=" margin-top: 10px; text-align: center; font-size: 16px;">
+                             <span style="font-size: 16px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.682353); font-style: normal; font-weight: 400;">Swiss ID Card — </span>
+                             <a href="https://medium.com/r/?url=https%3A%2F%2Fwww.checkinscan.com%2Fblog%2Fen%2Farticles%2Ffind-issue-date-passport-or-id-card%2F" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 16px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-style: normal; font-weight: 400; line-height: 1.4; font-feature-settings: &quot;liga&quot;, &quot;lnum&quot;; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">Source</a>
+                            </div>
+                           </div>
+                           <div style="margin: 38px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">The below identifier requires that a person holds an identity card, in case a person holds just a passport, you would have to get the unique passport identifier. People who are not traveling wouldn’t have potentially any of the two identity means. </span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">An even better identifier would be a national security identifier, which almost every citizen holds (after a certain age). Below the number for a person domiciled in Switzerland.</span>
+                           </div>
+                           <div style="margin: 43px 0px 0px; box-sizing: border-box;">
+                            <div style=" margin: 0px auto;">
+                             <div style="padding-bottom: 63%;"></div>
+                             <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/532405696bfedbe0f8b6bc2b87c17315.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>                    <br>
+                             </div>
+                            </div>
+                            <div style=" margin-top: 10px; text-align: center; font-size: 16px;">
+                             <span style="font-size: 16px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.682353); font-style: normal; font-weight: 400;">Swiss Social Security Number — </span>
+                             <a href="https://medium.com/r/?url=https%3A%2F%2Fwww.grundrechte.ch%2Fahv-nummer-soll-bei-allen-behoerden-globaler-personenidentifikator-werden.html" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 16px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-style: normal; font-weight: 400; line-height: 1.4; font-feature-settings: &quot;liga&quot;, &quot;lnum&quot;; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">Source</a>
+                            </div>
+                           </div>
+                           <div style="margin: 38px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">The reality is that your public acquired data sets will not include such </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 700;">highly sensitive </span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">numbers of persons. </span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">Such strong identification numbers should never be exposed in an unsecured manner (sharing the public on the Internet). Refer to the following article by CNN which describes one of the famous data hacks of Equifax, which resulted in the leaking of the social security number of 143 million Americans.</span>
+                           </div>
+                           <blockquote style="margin: 29px 0px 0px -23px; border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">Criminals can use your Social Security number to steal your identity. They can open bank accounts and credit cards or apply for a loan. Hackers can also get ahold of your tax refund or get medical treatment under your name. (</span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Fmoney.cnn.com%2F2017%2F09%2F13%2Ftechnology%2Fsocial-security-number-identification%2Findex.html" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: italic; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">money.cnn.com</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">)</span>
+                           </blockquote>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">That concludes our introduction to statistical concepts for today and brings us back in the next article, to solving the problem via Python of joining data sets which don’t have a universal unique identifier. </span>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">In our case we have in both data sets one (or multiple) attributes which describes the personal name of a person. However, be aware;</span>
+                           </div>
+                           <blockquote style="margin: 29px 0px 0px -23px; border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">When names are your only unifying data point, correctly matching similar names takes on greater importance. However, their variability and complexity make name matching a uniquely challenging task. Nicknames, translation errors, multiple spellings of the same name, and more all can result in missed matches. (</span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Fwww.rosette.com%2Fblog%2Foverview-fuzzy-name-matching-techniques%2F" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: italic; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">rosette.com</a>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: italic; font-weight: 400;">)</span>
+                           </blockquote>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">That’s exactly the situation we are confronted now, let’s move on in the next article.</span>
+                           </div>
+                           <span style="font-size: 34px; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 600;">References</span>
+                           <div style="margin-left: 30px; margin-bottom: 0px; font-size: 21px;">
+                            <span style="font-size: 14.4px; box-sizing: border-box; margin-left: -78px; text-align: right; padding-top: 4px; padding-right: 15px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">•</span>
+                            <span style="font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; color: rgba(0, 0, 0, 0.843137); font-style: normal; font-weight: 400;">A comprehensive list of different variable types (well any type you can imagine) — </span>
+                            <a href="https://medium.com/r/?url=https%3A%2F%2Fwww.statisticshowto.datasciencecentral.com%2Fprobability-and-statistics%2Ftypes-of-variables%2F" style="background-color: transparent; background-image: linear-gradient(to right, currentcolor 100%, currentcolor 0px); background-size: 1px 1px; cursor: text; font-size: 21px; font-family: medium-content-serif-font, Georgia, Cambria, &quot;Times New Roman&quot;, Times, serif; font-style: normal; font-weight: 400; line-height: 1.58; text-decoration: none; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;">Link: datasciencecentral.com</a>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <br>
+                           </div>
+                           <div style="margin: 29px 0px 0px; font-size: 21px;">
+                            <br>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div>
+                   <br>
+                  </div></p>
+                
+                <p><a href="https://medium.com/p/8213724550f4/edit">Link</a></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/Cloudburonet-897759390318816/" class="btn btn-facebook">
+                <i class="fa fa-facebook"></i></a><a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts" class="btn btn-google-plus">
+                <i class="fa fa-google-plus"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2019 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>
