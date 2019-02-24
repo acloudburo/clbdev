@@ -5,10 +5,396 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-02-18T22:26:26+00:00</updated>
+  <updated>2019-02-24T22:07:14+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Python Tutorial: Short Stop To Introduce Main Statistical Concepts</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/02/24/python-tutorial-short-stop-to-introduce-main-statistical-concepts.html"/>
+    <id>https://dev.cloudburo.net/2019/02/24/python-tutorial-short-stop-to-introduce-main-statistical-concepts.html</id>
+    <published>2019-02-24T22:07:14+00:00</published>
+    <updated>2019-02-24T22:07:37+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;Explaining the concepts by using our tutorial program as a showcase 
+      &lt;br&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;I planned to introduce in this session the merging algorithm for our two data sets via the name variables.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;To outline the overall approach understandably and concisely, it’s essential to bring some statistical concepts beforehand.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;I decided to do a short bus stop and embed the work into the statistical framework, which underlies any data exploration project. So no programming today just some concepts, which are vital for the overall understanding. I plan more statistics bus stops in the future to get the scientific context of our program established.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="text-align: center;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article' style="max-width:100%" src='/images/2fecdd0272dc2b28a470c69ff578d33e.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; Photo by
+       &lt;a href="https://unsplash.com/photos/CEubYUySRo4?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;chuttersnap&lt;/a&gt; on 
+       &lt;a href="https://unsplash.com/search/photos/bus-stop?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;font style="font-size: 24px;"&gt;Population, Sample, Measurement, Parameter, and Statistic &lt;/font&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;We begin with some basic definitions used in statistics, by using the &lt;/span&gt;
+       &lt;a href="https://saylordotorg.github.io/text_introductory-statistics/s05-01-basic-definitions-and-concepts.html" style="-en-paragraph:true;"&gt;introduction tutorial&lt;/a&gt;
+       &lt;span style=""&gt; of the Saylor Academy (the content is provided under a &lt;/span&gt;
+       &lt;a href="https://saylordotorg.github.io/text_introductory-statistics/s00-license.html" style="-en-paragraph:true;"&gt;creative commons license&lt;/a&gt;
+       &lt;span style=""&gt;)  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;A&lt;/span&gt;
+        &lt;span style="font-weight: bold;"&gt;population&lt;/span&gt;
+        &lt;span style="font-style: italic;"&gt;is any specific collection of objects of interest. A&lt;/span&gt;
+        &lt;span style="font-weight: bold;"&gt;sample&lt;/span&gt;
+        &lt;span style="font-style: italic;"&gt;is any subset or subcollection of the population, including the case that the sample consists of the whole population, which maps to the term&lt;/span&gt;
+        &lt;span style="font-weight: bold;"&gt;census&lt;/span&gt;.
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;font style="font-size: 18px;"&gt;Population &lt;/font&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;In our case, the population is the Swiss government members (councilors) of the &lt;/span&gt;
+       &lt;a href="https://en.wikipedia.org/wiki/Federal_Assembly_%28Switzerland%29" style="-en-paragraph:true;"&gt;Federal Assembly of Switzerland&lt;/a&gt;
+       &lt;span style=""&gt;.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article' style="max-width:100%" src='/images/4c0b504f7df300e09146939838182854.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;font style="font-size: 18px;"&gt;Sample &lt;/font&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Our sample is all councilors, which have a Twitter account and listed as a member of the &lt;/span&gt;
+       &lt;a href="https://twitter.com/SoMePolis/lists/bundesparlamentarierinnen" style="-en-paragraph:true;"&gt;SoMePolis Twitter Parliament List&lt;/a&gt;
+       &lt;span style=""&gt;. It’s a subset, so we don’t use the term census for the population. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;A&lt;/span&gt;
+        &lt;span style="font-weight: bold;"&gt;measurement&lt;/span&gt;
+        &lt;span style="font-style: italic;"&gt;is a number or attribute/variable computed for each member of a population or sample. The measurements of sample elements are collectively called the&lt;/span&gt;
+        &lt;span style="font-weight: bold;"&gt;sample data&lt;/span&gt;.
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;font style="font-size: 18px;"&gt;Measurement &lt;/font&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;For each member of the sample set, we are collecting variables via two data set’s i.e., the first set of variables are collected via the Twitter API, the second set via the Government API. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;font style="font-size: 18px;"&gt;Sample Data &lt;/font&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Our overall sample data set we get by unifying these two data sets. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;A&lt;/span&gt;
+        &lt;span style="font-weight: bold;"&gt;parameter&lt;/span&gt;
+        &lt;span style="font-style: italic;"&gt;is a number that summarizes some aspect of the population as a whole. A&lt;/span&gt;
+        &lt;span style="font-weight: bold;"&gt;statistic&lt;/span&gt;
+        &lt;span style="font-style: italic;"&gt;is a number computed from the sample data.&lt;/span&gt;
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Because our numbers to be computed are based on a subset of a population, we talk about a statistic and not a parameter. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;That’s it about the initial scope definition, let’s focus now about the “Variables” concept which is crucial. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;font style="font-size: 24px;"&gt;Data Set’s and Variables &lt;/font&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;As a fresh up, let’s look at the two data sets, which we retrieved already: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;As a first table (&lt;/span&gt;
+       &lt;a href="https://towardsdatascience.com/python-tutorial-government-social-media-analyser-class-build-out-12858190b284" style="-en-paragraph:true;"&gt;Tutorial 2&lt;/a&gt;
+       &lt;span style=""&gt;), we retrieved from Twitter the following data record of Swiss politician Twitter accounts. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article' style="max-width:100%" src='/images/5cc7f4ccbd21f36f1ef8ddd1f8eebe00.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;It provides us with three statistical variables playing a role in our future analysis: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;FollowersCount&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;FriendsCount&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;Party&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;Name&lt;/span&gt;, which may represent the Twitter users real name. The word “may” is here essential, but more to that later.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;What we also got from Twitter is an &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;Identifier&lt;/span&gt;
+       &lt;span style=""&gt; variable, which helps us reveal the real identity of a person (in our case a member of the Swiss council): &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;ScreenName&lt;/span&gt; which is the unique identifier of a Twitter account. We can use it in the case have to retrieve additional information via the Twitter API in a later stage.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;As a second Table (&lt;/span&gt;
+       &lt;a href="https://towardsdatascience.com/python-tutorial-government-social-media-analyser-class-build-out-12858190b284" style="-en-paragraph:true;"&gt;Tutorial 3&lt;/a&gt;
+       &lt;span style=""&gt;), we retrieved via the Swiss Government API the list of all current councilors of the &lt;/span&gt;
+       &lt;a href="https://en.wikipedia.org/wiki/Federal_Assembly_%28Switzerland%29" style="-en-paragraph:true;"&gt;Federal Assembly of Switzerland&lt;/a&gt;
+       &lt;span style=""&gt;.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article' style="max-width:100%" src='/images/24ab5f54215149cfd86774dffe3714df.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;From this table, we got the following variables, which we want to use for our statistical assessment: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;firstName-middleName-lastName&lt;/span&gt;, which is the (council’s) person name.
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;birthDate&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;council,&lt;/span&gt; the assembly is made up of two chambers i.e., the
+         &lt;a href="https://en.wikipedia.org/wiki/National_Council_%28Switzerland%29"&gt;National Council&lt;/a&gt; (lower house) and the
+         &lt;a href="https://en.wikipedia.org/wiki/Council_of_States_%28Switzerland%29"&gt;Council of States&lt;/a&gt;. Which is represented by the value ’N’ or ‘S’ in the table.
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;electedDate&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;gender&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;maritalStatus&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;party&lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;home address (postal Code, townName, zip) &lt;/span&gt;
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;As well as the Identifier Variable &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;id&lt;/span&gt;, which identifies the data record in the context of the government API
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Let’s dig a little bit deeper about the statistical meaning of variables used in our data sets &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;font style="font-size: 18px;"&gt;Variable Term Definition &lt;/font&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         In statistics, a
+        &lt;span style="font-weight: bold;"&gt;variable&lt;/span&gt; has two defining characteristics. (1) A variable is an attribute that describes a person, place, thing, or idea. (2) The value of the variable can “vary” from one entity to another.
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;In our example, a person’s &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;gender&lt;/span&gt;
+       &lt;span style=""&gt;, &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;political party&lt;/span&gt;
+       &lt;span style=""&gt; or T&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;witter follower count&lt;/span&gt;
+       &lt;span style=""&gt; are potential variables.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;font style="font-size: 18px;"&gt;Data type categorization &lt;/font&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The Data Type of a variable plays an important role in statistics which must be understood, to correctly apply statistical measurements to your data. In statistics, the term “Measurement Scale” may be used as well. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The following tree categorizes the data type concept  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article' style="max-width:100%" src='/images/5dd29ed6de064b9bd1a45d01126470ff.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Refer to the following excellent &lt;/span&gt;
+       &lt;a href="https://towardsdatascience.com/data-types-in-statistics-347e152e8bee" style="-en-paragraph:true;"&gt;Medium article&lt;/a&gt;
+       &lt;span style=""&gt; to get an overall introduction to the data type topic.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Let’s apply the classification to our two data sets, which results in the following table. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article' style="max-width:100%" src='/images/aacca73ba1bd12f3d51cbb222d8e447d.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Two comments &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          We marked for each set a variable as “unique” which is identifying a dedicated sample result and on which we cannot perform any data analysis. A so-called Identifier Variables
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          In the gov.api data set, I bundled some variables together for describing a person or address. I.e., the name of a person is made of
+         &lt;span style="font-style: italic;"&gt;firstName, middleName,&lt;/span&gt; and
+         &lt;span style="font-style: italic;"&gt;lastName&lt;/span&gt; of a home address of person consisting of
+         &lt;span style="font-style: italic;"&gt;postalCode, townName,&lt;/span&gt; and
+         &lt;span style="font-style: italic;"&gt;zip&lt;/span&gt;.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;A multitude of variable types exists, which can be classified with the above scheme (refer to the reference sections for additional links), but we are interested now in the so-called Identifier Variables. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;font style="font-size: 24px;"&gt;Identifier Variables &lt;/font&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Identifier Variables and Unique Identifiers are commonly used in statistics to unique identifies for data collection purposes. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         Identifier variables are
+        &lt;a href="https://www.statisticshowto.datasciencecentral.com/what-is-a-categorical-variable/"&gt;categorical variables&lt;/a&gt; that have a single individual per category. For example:
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         A Social Security Number, Interviewer ID number or Employee ID number.
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         As identifier variables are singular, it’s impossible to perform any
+        &lt;a href="https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/data-analysis/"&gt;data analysis&lt;/a&gt; on them. Instead, they are used to identify results.
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Well, our two data sets have a unique identifier in the own domain, but there is no real unique identifier which allows combining the two data-set directly via a unique identifier which is available in both (cross-domain) data set. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;In an ideal world, both records would have a unique identifier i.e., a national identifier in their data sets which allows to merge them easily. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The below example shows the national identity card of Switzerland, which has a unique identity number for Swiss citizen (holding an identity card). &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article' style="max-width:100%" src='/images/017f5d13fe40a6bca041c1afd2c39d6d.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div style="text-align: center;"&gt;
+        Swiss ID Card — 
+       &lt;a href="https://www.checkinscan.com/blog/en/articles/find-issue-date-passport-or-id-card/"&gt;Source&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The below identifier requires that a person holds an identity card, in case a person holds just a passport, you would have to get the unique passport identifier. People who are not traveling wouldn’t have potentially any of the two identity means.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;An even better identifier would be a national security identifier, which almost every citizen holds (after a certain age). Below the number for a person domiciled in Switzerland. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='pull-left img-responsive article' style="max-width:100%" src='/images/532405696bfedbe0f8b6bc2b87c17315.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div style="text-align: center;"&gt;
+        Swiss Social Security Number — 
+       &lt;a href="https://www.grundrechte.ch/ahv-nummer-soll-bei-allen-behoerden-globaler-personenidentifikator-werden.html"&gt;Source&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The reality is that your public acquired data sets will not include such &lt;/span&gt;
+       &lt;span style="font-weight: bold;"&gt;highly sensitive&lt;/span&gt;
+       &lt;span style=""&gt; numbers of persons.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Such strong identification numbers should never be exposed in an unsecured manner (sharing the public on the Internet). Refer to the following article by CNN which describes one of the famous data hacks of Equifax, which resulted in the leaking of the social security number of 143 million Americans. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         Criminals can use your Social Security number to steal your identity. They can open bank accounts and credit cards or apply for a loan. Hackers can also get ahold of your tax refund or get medical treatment under your name. (
+        &lt;a href="https://money.cnn.com/2017/09/13/technology/social-security-number-identification/index.html"&gt;money.cnn.com&lt;/a&gt;)
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;That concludes our introduction to statistical concepts for today and brings us back in the next article, to solving the problem via Python of joining data sets which don’t have a universal unique identifier.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;In our case we have in both data sets one (or multiple) attributes which describes the personal name of a person. However, be aware; &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         When names are your only unifying data point, correctly matching similar names takes on greater importance. However, their variability and complexity make name matching a uniquely challenging task. Nicknames, translation errors, multiple spellings of the same name, and more all can result in missed matches. (
+        &lt;a href="https://www.rosette.com/blog/overview-fuzzy-name-matching-techniques/"&gt;rosette.com&lt;/a&gt;)
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;That’s exactly the situation we are confronted now, let’s move on in the next article. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;font style="font-size: 24px;"&gt;References &lt;/font&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          A comprehensive list of different variable types (well any type you can imagine) — 
+         &lt;a href="https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/types-of-variables/"&gt;Link: datasciencecentral.com&lt;/a&gt;
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Python Tutorial Exercise 3: Implement the govAPI_UK class</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/18/python-tutorial-exercise-3-implement-the-govapi_uk-class.html"/>
@@ -9850,135 +10236,6 @@
        &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
        &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
        &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Java for Beginners - Table of Content and Resources</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"/>
-    <id>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</id>
-    <published>2017-06-18T11:50:25+00:00</published>
-    <updated>2019-01-13T23:26:08+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Table of Content&lt;/span&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;&lt;a href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"&gt;Java for Beginners #1 - Prepare an IntelliJ Maven Project&lt;/a&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;a href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"&gt;Java for Beginners #2 - Maven Primer and Understanding API&amp;rsquo;s&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Prerequisites&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;u&gt;E-Book: Head First Java&lt;/u&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        We are referencing to the following book, which is a very good in-depth guide. You should get a copy of it
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/2f32bea7ea20597a6be9cd9278a507c7.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;&lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;&lt;a href="http://shop.oreilly.com/product/9780596009205.do"&gt;http://shop.oreilly.com/product/9780596009205.do&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;b&gt;&lt;u&gt;Integrated Development Environment&lt;/u&gt;&lt;/b&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;For developing of the Java Application we are using the excellent integrated development environment IntelliJ IDEA Community edition&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/74e3d491fd229ddf57206f549145b3e5.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;You can download the free community edition &lt;/span&gt;
-       &lt;a style="font-size: 14px;" href="https://www.jetbrains.com/idea/"&gt;here&lt;/a&gt;
-       &lt;span style="font-size: 14px;"&gt;.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;br&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;b&gt;&lt;u&gt;JSON Viewer Extension for Chrome&lt;/u&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        For looking a JSON Data Request we suggest that you use the Chrome Browser with JSONView (but any other JSON viewing extension available for your browser). It will help you to read and understand the structured data content.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc"&gt;&lt;a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc"&gt;https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/6ccf83e03409878d244ee1c4d4442aa3.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
-       &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
