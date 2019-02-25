@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/02/24/python-tutorial-short-stop-to-introduce-main-statistical-concepts.html"/>
     <id>https://dev.cloudburo.net/2019/02/24/python-tutorial-short-stop-to-introduce-main-statistical-concepts.html</id>
     <published>2019-02-24T22:07:14+00:00</published>
-    <updated>2019-02-24T23:13:42+00:00</updated>
+    <updated>2019-02-25T06:18:54+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -395,11 +395,10 @@
           A comprehensive list of different variable types (well any type you can imagine) — 
          &lt;a href="https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/types-of-variables/"&gt;Link: datasciencecentral.com&lt;/a&gt;
         &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-         &lt;br&gt;
-        &lt;/div&gt;&lt;/li&gt;
       &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
        &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
