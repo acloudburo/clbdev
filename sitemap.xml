@@ -145,6 +145,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/03/03/monologue-of-the-algorithm-video-how-facebook-turns-users-data-into-its-profit.html</loc>
+    <lastmod>2019-03-03</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/07/05/favicon-generator-which-generates-all-the-pictures-for-the-various-platforms.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.7</priority>
@@ -937,6 +943,18 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/inspiration.html</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/personaldata.html</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/ai.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
@@ -961,12 +979,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/tags/inspiration.html</loc>
-    <lastmod>2019-01-13</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net/tags/futurework.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
@@ -974,12 +986,6 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/tags/banking.html</loc>
-    <lastmod>2019-01-13</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/tags/personaldata.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
@@ -1162,6 +1168,18 @@
     <loc>https://dev.cloudburo.net/2019.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/03.html</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/03/03.html</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -2209,6 +2227,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/page/13/</loc>
+    <lastmod>2019-01-13</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/architecture/page/2.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.7</priority>
@@ -2227,13 +2251,13 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/tags/microservice/page/2.html</loc>
+    <loc>https://dev.cloudburo.net/tags/inspiration/page/2.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.7</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/tags/inspiration/page/2.html</loc>
+    <loc>https://dev.cloudburo.net/tags/microservice/page/2.html</loc>
     <lastmod>2019-01-13</lastmod>
     <priority>0.7</priority>
     <changefreq>daily</changefreq>
