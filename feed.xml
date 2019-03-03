@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/03/03/monologue-of-the-algorithm-video-how-facebook-turns-users-data-into-its-profit.html"/>
     <id>https://dev.cloudburo.net/2019/03/03/monologue-of-the-algorithm-video-how-facebook-turns-users-data-into-its-profit.html</id>
     <published>2019-03-03T17:03:24+00:00</published>
-    <updated>2019-03-03T18:09:07+00:00</updated>
+    <updated>2019-03-03T19:13:43+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -40,7 +40,8 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
       &lt;div&gt;
         (Diagram by 
        &lt;a href="https://en.panoptykon.org/about"&gt;Panoptykon Foundation&lt;/a&gt;)
@@ -56,7 +57,7 @@
       &lt;/div&gt;
       &lt;div&gt;
         The English version of video can be found on Vimeo:
-       &lt;a href="https://player.vimeo.com/video/249633335%0A"&gt;HERE&lt;/a&gt;
+       &lt;a href="https://player.vimeo.com/video/249633335"&gt;HERE&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -81,7 +82,7 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;i&gt;&amp;ldquo;Your digital identity has three layers, and you can only protect one of them. Once again the visualization is stunning.” &lt;/i&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;Your digital identity has three layers, and you can only protect one of them. Once again the visualization is stunning.” &lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
