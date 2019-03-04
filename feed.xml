@@ -5,10 +5,654 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-03-03T17:03:24+00:00</updated>
+  <updated>2019-03-04T23:27:04+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Python Tutorial: Fuzzy Name Matching Algorithms</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/03/04/python-tutorial-fuzzy-name-matching-algorithms.html"/>
+    <id>https://dev.cloudburo.net/2019/03/04/python-tutorial-fuzzy-name-matching-algorithms.html</id>
+    <published>2019-03-04T23:27:04+00:00</published>
+    <updated>2019-03-04T23:27:57+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;How to cope with the variability and complexity of person name variables used as identifiers.
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;This is the fifth article of our journey into the Python data exploration world. A list of the published articles you can find &lt;/span&gt;
+       &lt;a href="https://twitter.com/i/moments/1092507080307720193" style="-en-paragraph:true;"&gt;here&lt;/a&gt;
+       &lt;span style=""&gt; (and the source code &lt;/span&gt;
+       &lt;a href="https://github.com/talfco/clb-sentiment/tree/master/src/lesson5" style="-en-paragraph:true;"&gt;here&lt;/a&gt;
+       &lt;span style=""&gt;). So let’s start then. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span style="font-size: 18px;"&gt;Methods of Name Matching &lt;/span&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;In statistical data sets retrieved from public sources the names (of a person) are often treated the same as metadata for some other field like an email, phone number, or an ID number. This is the case in our sample sets: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         When names are your only unifying data point, correctly matching similar names takes on greater importance, however their variability and complexity make name matching a uniquely challenging task. Nicknames, translation errors, multiple spellings of the same name, and more all can result in missed matches. (
+        &lt;a href="https://www.rosette.com/blog/overview-fuzzy-name-matching-techniques/"&gt;rosette.com&lt;/a&gt;)
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;That’s precisely the situation we are confronted now: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Our twitter data set contains a &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;Name&lt;/span&gt;
+       &lt;span style=""&gt; variable, which is set by the Twitter user itself. Dependent on the person’s preference it may &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          a complete artificial name
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          surname, last name (or vice versa)
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          only last name
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          abbreviation sure name, abbreviation middle name, last name
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          his full name, but did some misspelling by accident
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          etc. etc. etc.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/846f0ddb1e96d36888f7d2c7d257f451.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;These leaves us with some data quality and normalization challenges, which we have to address so that we can use the &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;Name&lt;/span&gt;
+       &lt;span style=""&gt; attribute as a matching identifier. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Some of the challenges —  as well as our strategy how we want to tackle them — are described in the below table. Each of the method used to address a challenge will be explained in this article and is part of the &lt;/span&gt;
+       &lt;a href="https://github.com/talfco/clb-sentiment/tree/master/src/lesson5" style="-en-paragraph:true;"&gt;Github tutorial source code&lt;/a&gt;
+       &lt;span style=""&gt;. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/b54d9fdb7fbd52009ed632a19862d030.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Let’s start then, by addressing the challenge of &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;Titles&amp;amp;Honorifics&lt;/span&gt;
+       &lt;span style=""&gt;, &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;Missing Components,&lt;/span&gt;
+       &lt;span style=""&gt; and some other anomalies first. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;We are in the lucky position that our list is manageable from a number of records point of view, i.e., we can do a manual check about the anomalies and titles used in “Name” attribute.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span style="font-size: 18px;"&gt;Name Cleanser Step  &lt;/span&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Our quality review shows that the Name field seems to have a good quality (no dummy or nicknames used). However we found some anomalies, as shown below: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/1cf10da704a88f7d7f6fc8b60e931b7a.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;We fix these anomalies in our program in a first cleaning step. To stay generic, we use once again our yaml configuration file and add two additional parameters. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;twitterNameCleaner&lt;/span&gt; which consists of a list of keywords which must be removed from any twitter account name
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;span style="font-style: italic;"&gt;twitterNamesExpander&lt;/span&gt; which expands each Twitter account name abbreviation substring to a full name string.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Our country-specific yaml file is enhanced by the following entries. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/c08ff97c1e7399bc5df30201dc4e0201.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The cleansing step is called in the below method, which assesses every row of our Twitter table (its integration into the program is explained later) &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/b91aa351351967beca06790a84e7cc5c.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Pretty straightforward by using the String &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;replace method&lt;/span&gt;
+       &lt;span style=""&gt; &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          we remove every keyword found in the
+         &lt;span style="font-style: italic;"&gt;twitterNameCleaner&lt;/span&gt; list from the
+         &lt;span style="font-style: italic;"&gt;Name&lt;/span&gt; attribute (replace it with ‘’)
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          we replace every abbreviation found in the
+         &lt;span style="font-style: italic;"&gt;twitterNamesExpander&lt;/span&gt; dictionary through its full name.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;For our next normalizing step, we introduce an approach which has its origin in the time when America was confronted with a huge wave of immigrants 100 years ago. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span style="font-size: 18px;"&gt;Double Metaphone Algorithm &lt;/span&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The principle of the algorithm goes back to the last century, actually to the year 1918 (when the first computer was years away).  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Just as side information (should you ever participate in a millionaire quiz show), the first computer was 23 years away &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;The Z3 was a German electromechanical computer designed by Konrad Zuse. It was the world’s first working programmable, fully automatic digital computer. The Z3 was built with 2,600 relays, implementing a 22-bit word length that operated at a clock frequency of about 4–5 Hz. Program code was stored on punched film. Initial values were entered manually (&lt;/span&gt;
+        &lt;a href="https://en.wikipedia.org/wiki/Z3_%28computer%29" style="font-style: italic;"&gt;Wikipedia&lt;/a&gt;
+        &lt;span style="font-style: italic;"&gt;) &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/1951952aab2dc3892ab23bc2699e86aa.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; A Z3 replica at the Deutsche Museum (
+       &lt;a href="http://creativecommons.org/licenses/by-sa/3.0/"&gt;CC BY-SA 3.0&lt;/a&gt;)
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;So back to 1918, in that year Robert C. Russell of the US Census Bureau invented the Soundex algorithm which is capable of indexing the English language in a way that multiple spellings of the same name could be found with only a cursory glance. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;Immigrants to the United States had a native language that was not based on Roman characters. To write their names, the names of their relatives, or the cities they arrived from, the immigrants had to make their best guess of how to express their symbolic language in English. The United States government realized the need to be able to categorize the names of private citizens in a manner that allowed for multiple spellings of the same name (e.g. Smith and Smythe) to be grouped. (read the full story &lt;/span&gt;
+        &lt;a href="http://www.b-eye-network.com/view/1596" style="font-style: italic;"&gt;here&lt;/a&gt;
+        &lt;span style="font-style: italic;"&gt;) &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/9d891b330b5e0d174e75ac02a626d49b.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; Immigrants arriving at Ellis Island — Wikipedia — 
+       &lt;a href="https://commons.wikimedia.org/wiki/File:Arriving_at_Ellis_Island_LCCN2014710704.jpg"&gt;Commons Licence&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The Soundex algorithm is based on a phonetical categorization of letters of the alphabet. In his patent, Russell describes the strategy assigning a numeric value to each category. For example, Johnson was mapped to J525, Miller to M460 etc. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The Soundex algorithm evolved over time in the context of efficiency and accuracy and was replaced with other algorithms.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;For the most part, they have all been replaced by the powerful indexing system called &lt;/span&gt;
+       &lt;a href="http://aspell.net/metaphone/" style="-en-paragraph:true;"&gt;Double Metaphone&lt;/a&gt;
+       &lt;span style=""&gt;. The algorithm is available as open source and its last version was released around 2009. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Luckily there is a Python library &lt;/span&gt;
+       &lt;a href="https://pypi.org/project/Metaphone/" style="-en-paragraph:true;"&gt;available&lt;/a&gt;
+       &lt;span style=""&gt;, which we use in our program. We write some small wrapper methods around the algorithm and implement a compare method. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;doublemetaphone&lt;/span&gt;
+       &lt;span style=""&gt; method returns a tuple of two characters key, which are a phonetic translation of the passed in word. Our &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;compare&lt;/span&gt;
+       &lt;span style=""&gt; method shows the ranking capability of the algorithm which is quite limited. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/7ef655297fa80ef167d3b7e490d3280f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Let’s run some verification checks to assess the efficiency of the algorithm by introducing the &lt;/span&gt;
+       &lt;a href="http://test_class.py/" style="font-style: italic;-en-paragraph:true;"&gt;test_class.py&lt;/a&gt;
+       &lt;span style=""&gt; which is based on the Python &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;pytest&lt;/span&gt;
+       &lt;span style=""&gt; framework. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         The pytest framework makes it easy to write small tests, yet scales to support complex functional testing for applications and libraries. (
+        &lt;a href="https://docs.pytest.org/en/latest/"&gt;Link&lt;/a&gt;)
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Its usage is straightforward and, you can see the test class implementation below &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/0cfad6dd6b23a9a6ab56fbc659d4b81c.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The tests result are shown below. We used two names (A+B) and were checking with some changed names (A1/A2+B1/B2/B3) the efficiency of the algorithm. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/4d9af0a1dc2c845b845b91282bde794d.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          A1+B1 passed the Strong match check. So missing spaces and ü/ä replacements with u/a seems not affecting the double metaphone key generation
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          B2 passes the Normal match. Spelling mistakes are covered by the algorithm as well
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          A2 + B3 are failing. A2 uses an abbreviation of a name part, which cannot be coped with. This behavior we had to expect and decided to introduce the name expander algorithm (see above). B3 failed due to missing “-”. This was unexpected, but we cover this behavior with a second name cleanser step.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;span style="font-size: 18px;"&gt;Name Cleanser Step 2 &lt;/span&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Our small test run has shown that the following additional cleaning steps are beneficial: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          We have to get rid of any special character which could result in a failure
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Out of order components, i.e., the last name before the first name affects the phonetic key generation. Therefore best is to sort the name components alphabetically to increase matching accuracy.
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Besides getting rid of any special character, we decide to remove any Unicode character, i.e. in Switzerland, multiple German (ä,ö,ü), French (à,é,è) or Italian umlaut are used, and we want to get rid of them as well. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The below &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;normalize_unicode_to_ascii&lt;/span&gt;
+       &lt;span style=""&gt; method uses the &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;unicodedata&lt;/span&gt;
+       &lt;span style=""&gt; library to convert the name to ASCII and then change all character to lower case. Afterward, two regular expressions are used to remove the special characters, as well as multiple spaces.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Regular expression operations are a powerful mechanism but not easy to understand for a novice. You may work through the &lt;/span&gt;
+       &lt;a href="https://scotch.io/tutorials/an-introduction-to-regex-in-python" style="-en-paragraph:true;"&gt;following tutorial&lt;/a&gt;
+       &lt;span style=""&gt; to get the first impression of this powerful approach.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Just one explanation, the regular expression term
+         &lt;span style="font-style: italic;"&gt;‘[^A-Za-z0–9 ]+’&lt;/span&gt; means take any number of characters between ‘A-Z’ + ‘a-z’ + ‘0–9’ +‘ ‘ out of the passed in string. ^[]+ are special characters in the regular expression. The expression sequence can be translated to “strip the string from any special character.”
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+         &lt;br&gt;
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e73308dde4f32b7d7f9324b29c77456b.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;span style="font-size: 18px;"&gt;The Beauty of the Data Frame “Apply” Method &lt;/span&gt;Establish the &lt;strong&gt;calculate_name_matching method in both classes
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;We have now all our name cleanser, normalization, and phonetic key generator methods together (bundled in the &lt;/span&gt;
+       &lt;a href="http://namemachting.py/" style="font-style: italic;-en-paragraph:true;"&gt;namemachting.py&lt;/a&gt;
+       &lt;span style=""&gt; module) and can finally construct our name matching identifiers creation method(s) &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;&lt;/strong&gt;calculate_name_matching&lt;/span&gt;
+       &lt;span style=""&gt; for our two classes &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;govAPI&lt;/span&gt;
+       &lt;span style=""&gt; and &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;GovernmentSocialMediaAnalyzer. &lt;/span&gt;
+       &lt;span style=""&gt; &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/d0ebebd65dd5626a47be01f63b5add2d.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; One new module and two new methods are added
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Both of the classes get a new method, which we apply to their Panda data frames and each method creates three new identifier attributes (&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;col_match1, col_match2, col_match3&lt;/span&gt;
+       &lt;span style=""&gt;). The three columns can then be used to merge the two data frames. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The method for our &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;governmentAPI&lt;/span&gt;
+       &lt;span style=""&gt; class looks as follows: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/f57cef471d5a02c88d68e2dc88a1cdf1.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;So for our &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;govAPI&lt;/span&gt;
+       &lt;span style=""&gt; class as follows. It’s an implemented method in our abstract class. The method is used for any implemented sub-class (refer to the factory design explained in our &lt;/span&gt;
+       &lt;a href="https://towardsdatascience.com/python-tutorial-connect-government-data-apis-by-using-the-factory-pattern-501e5c65ba6d" style="-en-paragraph:true;"&gt;earlier tutorial&lt;/a&gt;
+       &lt;span style=""&gt;) &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/30e49168e0a2612f9f46937e79909c04.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The implementation is straightforward, we normalize the person’s name of each table (from the government API we got back three independent attributes, from the Twitter API one account name) and then calculate the two double metaphone identifier strings. All three new values we append to the passed in row. &lt;/span&gt;
+      &lt;/div&gt;Don’t call us we call you: “The Hollywood Principle”
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/63f3c37ff9a3fe108b40531edd10c955.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; Photo by
+       &lt;a href="https://unsplash.com/photos/goholCAVTRs?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Annie Spratt&lt;/a&gt; on 
+       &lt;a href="https://unsplash.com/search/photos/telephone?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;One question is still open: “How do we use our new methods to get the data frame enhanced by the three columns with its calculated values for each row? &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Well, that can be achieved quite easily by using the &lt;/span&gt;
+       &lt;a href="https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.DataFrame.apply.html" style="-en-paragraph:true;"&gt;Panda Data Frame &lt;/a&gt;
+       &lt;a href="https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.DataFrame.apply.html" style="font-style: italic;-en-paragraph:true;"&gt;apply&lt;/a&gt;
+       &lt;span style=""&gt; method, which is defined as: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         apply() can apply a function along any axis of the dataframe
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;This is a nice and elegant way to do any calculation on each row or column of a data frame. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Below you see the enhanced &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;create_politican_from_govapi_table&lt;/span&gt;
+       &lt;span style=""&gt; method. On code line 4 we newly call the &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;apply&lt;/span&gt;
+       &lt;span style=""&gt; method of the data frame (&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;df&lt;/span&gt;
+       &lt;span style=""&gt;) and pass in as a parameter our method name &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;self.__calculate_name_matching&lt;/span&gt;
+       &lt;span style=""&gt; and instruct the &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;apply&lt;/span&gt;
+       &lt;span style=""&gt; method to call our method for each row (&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;axis=1&lt;/span&gt;
+       &lt;span style=""&gt;). &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/8e6a705b457a7928da8489ae715615ed.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Now the Panda data frame  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          iterates through each data row, which represents a data record of a dedicated politician
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          calls our
+         &lt;span style="font-style: italic;"&gt;self.&lt;strong&gt;calculate_name_matching&lt;/span&gt; method
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          passes in the data row as a parameter and stores back the data row returned by the method call (which three new columns).
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Very nifty isn’t it? We didn’t have to code any kind of loops which are fetching data, checking for the end of loop conditions and so on. We just have implemented the method which can be passed to the &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;apply&lt;/span&gt;
+       &lt;span style=""&gt; method. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;This kind of interaction is a well-known design principle in IT, known under the name “Hollywood Principle”, which the excellent &lt;/span&gt;
+       &lt;a href="http://matthewtmead.com/blog/hollywood-principle-dont-call-us-well-call-you-4/" style="-en-paragraph:true;"&gt;blog article of Matthew Mead&lt;/a&gt;
+       &lt;span style=""&gt; describes as follows: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         The essence of this principle is “don’t call us, we’ll call you”. As you know, this is a response you might hear after auditioning for a role in a Hollywood movie. And this is the same concept for the software Hollywood Principle too. The intent is to take care to structure and implement your dependencies wisely.
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Think about our implementation above. Our &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;&lt;/strong&gt;calculate_name_matching&lt;/span&gt;
+       &lt;span style=""&gt; method is completely decoupled of the panda data frame implementation. Our method gets just a row dictionary as an input, which we can manipulate and can give back at the end as the return value. We are completely unaware that there is a massive panda data frame implementation involved and don’t have any dependency on it. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         At its most basic level, the principle is about reducing the coupling in a software system. It gets back to the well known phrase in software development: loose coupling and high cohesion. You can keep classes loosely
+        &lt;span style="font-style: italic;"&gt;coupled&lt;/span&gt; by ensuring that you don’t have unnecessary references and you are referencing classes and other subsystems properly. Although the Hollywood Principle does not dictate anything about cohesion, it is an important aspect too.
+        &lt;span style="font-style: italic;"&gt;Cohesion&lt;/span&gt; is about keeping your classes true to their intent and not allowing their behavior to expand beyond its core purpose. Like high coupling, low cohesion doesn’t tend to cause systems to be unstable or not work properly, but will likely lead to difficulty in maintaining the software.
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Enough design teaching for today, when we run our program both plotly politician tables are enhanced by 3 new attributes, which allows us to join them together finally (uff… quite some conceptual work we had to do) &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e689e93554360e3826f764d8ec4ee74a.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;Finally, Join the Data Frames
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;We now have to join the two data frames, which is one of the many combining and merging possibilities which Panda is offering. Refer to the following article by &lt;/span&gt;
+       &lt;a href="https://datacarpentry.org/python-ecology-lesson/05-merging-data/" style="-en-paragraph:true;"&gt;datacarpentry.org&lt;/a&gt;
+       &lt;span style=""&gt;, which gives a good introduction to the overall topic. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;blockquote&gt;
+       &lt;div&gt;
+         Another way to combine DataFrames is to use columns in each dataset that contain common values (a common unique id). Combining DataFrames using a common field is called “joining”. The columns containing the common values are called “join key(s)”. Joining DataFrames in this way is often useful when one DataFrame is a “lookup table” containing additional data that we want to include in the other.
+       &lt;/div&gt;
+      &lt;/blockquote&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;This is achieved by the &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;merge&lt;/span&gt;
+       &lt;span style=""&gt; method which can be applied to a Panda data frame (see code line 23 below). You have to provide as parameters &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          the two data frames
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          the matching key (in our case the double metaphone attribute
+         &lt;span style="font-style: italic;"&gt;col_match2&lt;/span&gt; available in both data frames)
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          and the join strategy (
+         &lt;span style="font-style: italic;"&gt;how&lt;/span&gt; parameter)
+        &lt;/div&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/441b6a10091be0303e25121eb322dfc4.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;We indicate an “outer left” join (&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;how=left)&lt;/span&gt;
+       &lt;span style=""&gt; which can be visualized as follows &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/9439a4b1b72776e4e8da39c5063dc3ce.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Omitting the &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;how&lt;/span&gt;
+       &lt;span style=""&gt; parameter would result in an inner join &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/cf467ad5f09b4484d9c973f71daa9ed8.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;“Inner Join” means only take over rows which are matching, “Left Join” means to take over ALL row of the left data frame. If there is no matching right table record, fill the relevant record with “NaN” values. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Our new Plotly table &lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;CH-tw-politican-merged-list&lt;/span&gt;
+       &lt;span style=""&gt; has such kind of entries.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/bcfbeecefee5901df7e4cbef2b2e9f00.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;Well, that means our matching strategy still misses entries. Let’s compare the Pie Chart of our merged table, with the initial one: &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/fdd1c4cb6053a8919d0d67d6e3723501.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; Twitter User per Party (merged with gov API source)
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The initial one (refer to this &lt;/span&gt;
+       &lt;a href="https://towardsdatascience.com/python-tutorial-connect-government-data-apis-by-using-the-factory-pattern-501e5c65ba6d" style="-en-paragraph:true;"&gt;article&lt;/a&gt;
+       &lt;span style=""&gt;) missed 51 one, with our simple merge strategy we could identify another 14 entries.  &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/d011404a3ecf2c06521bcfd216bb508a.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; Twitter User per Party (just using Twitter API information)
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;So, we are not there yet (argh…), but enough for today, in the next session we try to adapt our matching strategy so that we can reduce the unknown once again. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;The source code you can find in the corresponding &lt;/span&gt;
+       &lt;a href="https://github.com/talfco/clb-sentiment" style="-en-paragraph:true;"&gt;Github project&lt;/a&gt;
+       &lt;span style=""&gt;, a list of all other articles &lt;/span&gt;
+       &lt;a href="https://twitter.com/i/moments/1092507080307720193" style="-en-paragraph:true;"&gt;here&lt;/a&gt;
+       &lt;span style=""&gt;. &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
+       &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
+       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
+       &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+       &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Monologue of the Algorithm Video: how Facebook turns users data into its profit</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/03/03/monologue-of-the-algorithm-video-how-facebook-turns-users-data-into-its-profit.html"/>
@@ -9655,413 +10299,6 @@
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;      Event-Driven Architecture (EDA) is the latest step in the evolution of microservices and serverless technologies. The recent Emit Conference on Event-Driven Architecture held in San Francisco provided a place for cutting-edge geeks to learn about this digital business tool. We’ve covered the emergingserverless architecture&lt;br/&gt;
     &lt;a href="https://thenewstack.io/event-driven-architecture-wave-future/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Java for Beginners #2 - Maven Primer and Understanding API's</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html"/>
-    <id>https://dev.cloudburo.net/2017/06/24/java-for-beginners-2-maven-primer-and-understanding-api-s.html</id>
-    <published>2017-06-24T13:06:45+00:00</published>
-    <updated>2019-01-13T23:26:08+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-       &lt;span style="font-size: 14px; font-style: italic;"&gt;The Table of Content of all sessions you can find &lt;/span&gt;
-       &lt;a style="font-size: 14px; font-style: italic;" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html"&gt;here&lt;/a&gt;
-       &lt;span style="font-size: 14px; font-style: italic;"&gt;.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In this lesson, we complete the project preparation steps for our Football App and introduce the concepts of a RESTful API,  the Application Programming Interface we use to get football data from 
-       &lt;a href="http://www.football-data.org/index"&gt;&lt;a href="http://www.football-data.org/index"&gt;http://www.football-data.org/index&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;The goal of the football-data API is to provide football data of all major european leagues in a machine-readable way. By data I mean fixtures, teams, players, results and more. All this information is provided via an easy-to-use RESTful API in JSON (only) representation.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Prerequisite&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;&lt;span style="font-size: 14px;"&gt;You have completed the first session and have a IntelliJ Project ready: &lt;/span&gt;&lt;a style="font-size: 14px;" href="https://dev.cloudburo.net/2017/06/18/java-for-beginners-1-prepare-an-intellij-maven-project.html"&gt;Java for Beginners #1 - Prepare an IntelliJ Maven Project&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Understanding Your Maven Project&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;Open your “FootballApp” project in the IntelliJ IDEA. You should see a window, which looks like the following&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/fd8fb3eaa72f65be95a39c4aceb33f4b.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The IntelliJ User Interface consists of multiple Windows  (which can be switched or closed and configured for your needs). Let’s start with the most important one
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;Top Left displays by default the &lt;span style="font-weight: bold;"&gt;Project Window&lt;/span&gt;, which gives an overview of you project file structure. &lt;/li&gt;
-       &lt;li&gt;Top Right displays the &lt;span style="font-weight: bold;"&gt;Editor&lt;/span&gt;, where you write your code.&lt;/li&gt;
-       &lt;li&gt;Bottom displays the &lt;span style="font-weight: bold;"&gt;Event Log&lt;/span&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Tip: You can find here the official
-       &lt;a href="https://www.jetbrains.com/help/idea/guided-tour-around-the-user-interface.html"&gt;Guided Tour around the User Interface&lt;/a&gt; from IntelliJ, which gives an in-depth overview.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        To the Call-Outs in the above screen shot:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ol&gt;
-       &lt;li&gt;Because we selected a Maven Project Type in the last session, IntelliJ configured this Project with a &lt;span style="font-weight: bold;"&gt;pom.xml&lt;/span&gt;, which is the so-called &lt;span style="font-weight: bold;"&gt;P&lt;/span&gt;r&lt;span style="font-weight: bold;"&gt;O&lt;/span&gt;ject &lt;span style="font-weight: bold;"&gt;M&lt;/span&gt;odel. It is an XML file that contains information about the project and configuration details used by Maven to build the project. It was created by default by IntelliJ and contains all the necessary information to build your project (i.e. compiling, building a jar). The content of the pom.xml can be seen in the Editor Window. You will recognise the &lt;span style="font-weight: bold;"&gt;groupId &lt;/span&gt;and &lt;span style="font-weight: bold;"&gt;artifactId&lt;/span&gt; XML elements, which contain the values, which you provided in session 1.&lt;/li&gt;
-       &lt;li&gt;IntelliJ also created the project default directory and file structure. &lt;/li&gt;
-       &lt;ul&gt;
-        &lt;li&gt;&lt;span style="font-weight: bold;"&gt;src/main/java&lt;/span&gt; will be the folder where you Java source files will be stored&lt;/li&gt;
-        &lt;li&gt;&lt;span style="font-weight: bold;"&gt;src/main/test &lt;/span&gt;will be the folder where you Java source test files will be stored &lt;/li&gt;
-        &lt;li&gt;&lt;span style="font-weight: bold;"&gt;.idea&lt;/span&gt; is a folder used by IntelliJ for its purpose and you will not require it&lt;/li&gt;
-       &lt;/ul&gt;
-       &lt;li&gt;In the &lt;span style="font-weight: bold;"&gt;External Libraries&lt;/span&gt; folder, IntelliJ lists all Java libraries which are used in your project. In our case we require the &lt;span style="font-weight: bold;"&gt;Java JDK  1.8&lt;/span&gt; libraries. If you open the folder, by double clicking it, a list of jar files will be shown, which are making up the Java JDK.&lt;/li&gt;
-       &lt;li&gt;On the right side, you have a toolbar, where you can open additional tool windows. In our case we are interested in the &lt;span style="font-weight: bold;"&gt;Maven Project&lt;/span&gt; window&lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Open the Maven Tool Window: 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ol&gt;
-       &lt;li&gt;Click on &lt;span style="font-weight: bold;"&gt;Maven Projects&lt;/span&gt; in the toolbar&lt;/li&gt;
-       &lt;li&gt;The &lt;span style="font-weight: bold;"&gt;Maven Tool Window&lt;/span&gt; will be displayed of your &lt;span style="font-weight: bold;"&gt;footballApp&lt;/span&gt; project (it’s the name you configured in the &lt;span style="font-weight: bold;"&gt;artifactId&lt;/span&gt;)&lt;/li&gt;
-       &lt;li&gt;Drill down in tree to the &lt;span style="font-weight: bold;"&gt;Lifecycle &lt;/span&gt;node and open it. You will see a list of &lt;span style="font-weight: bold;"&gt;Lifecycle Commands, &lt;/span&gt;as for example &lt;span style="font-style: italic;"&gt;clean, validate, compile &lt;/span&gt;&lt;span style="font-style: italic; font-weight: bold;"&gt; &lt;/span&gt;and so on&lt;span style="font-weight: bold;"&gt;. &lt;/span&gt;It’s on of the main concepts in Maven.&lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/e51885d9d5c96090800c777543a35989.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold;"&gt;Maven Lifecycle Commands&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Maven is based around the central concept of a build lifecycle. What this means is that the process for building and distributing a particular artifact (project) is clearly defined.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        For the person building a project, this means that it is only necessary to learn a small set of commands to build any Maven project, and the POM will ensure they get the results they desired.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        As you may already guessed, you can now for example 
-       &lt;span style="font-weight: bold; font-style: italic;"&gt;compile &lt;/span&gt;your project. There is no java source code yet, but let’s do the check if everything in Maven is correctly set up
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ol&gt;
-       &lt;li&gt;Double click on the &lt;span style="font-weight: bold;"&gt;compile &lt;/span&gt;Lifecycle command&lt;/li&gt;
-       &lt;li&gt;You will see that in the bottom of the Window, yet another Tool Windows (The Run Window) will be opened which shows the output of the Maven build process. You should see a “BUILD SUCCESS” message at the end.&lt;/li&gt;
-       &lt;li&gt;By clicking on the Icon in the upper right of the Run Window or on the highlighted entry (4: Run) in the bottom, you can hide the window (clicking the entry a second time will display it again). The same holds true for the Maven Projects Window.&lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/bc4239f8d5ce31074df808802ce5f814.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold; font-size: 14px;"&gt;Extending the POM.xml&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        As a preparation step for our next task, we will add the dependencies section in the POM.xml (this is section in the POM will allow us to define additional external library, which we require.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ol&gt;
-       &lt;li&gt;Add the &lt;span style="font-weight: bold;"&gt;&amp;lt;dependencies&amp;gt;   &amp;lt;/dependencies&amp;gt;&lt;/span&gt; in the POM.xml&lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/d5dfa5c9f94e29be3c3f45091ac5e98f.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold; font-size: 18px;"&gt;Adding the Apache HTTP Components Library to our Project&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        It’s time to introduce the term
-       &lt;span style="font-weight: bold;"&gt;API&lt;/span&gt;, which means an
-       &lt;span style="font-weight: bold;"&gt;Application Programming Interface&lt;/span&gt;. Check out this very helpful 3 minutes video to get a better understanding.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div class="responsive-video"&gt;
-        &lt;iframe src="https://www.youtube.com/embed/s7wmiS2mSXY?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        As you can see, API’s are ruling the world and allowing us to connect and glue together useful services to a new app. We will connect to the football-data API to get some interesting data about football. Well the 
-       &lt;a href="http://www.football-data.org/documentation"&gt;&lt;a href="http://www.football-data.org/"&gt;http://www.football-data.org/&lt;/a&gt;&lt;/a&gt; API is based on
-       &lt;span style="font-weight: bold;"&gt;REST&lt;/span&gt;, yet another very important term in the API world, which you have to understand. Take another 8 minutes time to grasp the concept in this video (which is quite straightforward)
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div class="responsive-video"&gt;
-        &lt;iframe src="https://www.youtube.com/embed/7YcW25PHnAA?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Each good API comes with a documentation, which describes how you can communicate with it. This holds true for our API, which provides all the necessary information on their documentation site 
-       &lt;a href="http://www.football-data.org/documentation"&gt;&lt;a href="http://www.football-data.org/documentation"&gt;http://www.football-data.org/documentation&lt;/a&gt;&lt;/a&gt;. The screenshot below taken from their site, shows the overall structure of their API. So you can retrieve data about
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;Soccer Seasons&lt;/li&gt;
-       &lt;li&gt;Teams&lt;/li&gt;
-       &lt;li&gt;Fixtures&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Quite cool isn’t it ? And that’s for free.
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/1de59aa4ebca2c2675f9ab27adbbf4b3.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        By drilling down into the documentation details you will find any kind of required information in order to connect from a program and retrieve the data.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        As we have learned in the video, we have to use HTTP-requests in order to access the data. So from a Browser point of view that’s alright, but how to do that out of our program. The Java JDK libraries (which we have configured) don’t really provide any kind of libraries for that, so what to do now ?
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Well we need here and
-       &lt;span style="font-weight: bold;"&gt;additional Java library&lt;/span&gt;, which does the main job for us. There are several libraries around which could help us to connect with a RESTful API. We decided to use the famous 
-       &lt;a href="https://hc.apache.org/"&gt;Apache HTTPComponents&lt;/a&gt; library. It’s described as follows
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;The Apache HttpComponents™ project is responsible for creating and maintaining a toolset of low level Java components focused on HTTP and associated protocols.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;The Hyper-Text Transfer Protocol (HTTP) is perhaps the most significant protocol used on the Internet today. Web services, network-enabled appliances and the growth of network computing continue to expand the role of the HTTP protocol beyond user-driven web browsers, while increasing the number of applications that require HTTP support.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;Designed for extension while providing robust support for the base HTTP protocol, the HttpComponents may be of interest to anyone building HTTP-aware client and server applications such as web browsers, web spiders, HTTP proxies, web service transport libraries, or systems that leverage or extend the HTTP protocol for distributed communication&lt;/span&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Instead of downloading the library from the Apache site, we will configure it via Maven. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ol&gt;
-       &lt;li&gt;So head over to &lt;a href="https://mvnrepository.com"&gt;&lt;a href="https://mvnrepository.com"&gt;https://mvnrepository.com&lt;/a&gt;&lt;/a&gt; and type in the name of the library we are looking for &lt;span style="font-weight: bold;"&gt;org.apache.httpcomponents&lt;/span&gt;&lt;/li&gt;
-       &lt;li&gt;There are several ones, we want the &lt;span style="font-weight: bold;"&gt;Apache HttpClient&lt;/span&gt;, click on it&lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/7c9a242ef2cc1b06cede09ee60851942.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The Apache HttpClient libary overview page will be shown. You will see a list of versions, which are available. We go for the newest one, which was released in (Jan 2017).
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ol&gt;
-       &lt;li&gt;Click on the version number &lt;span style="font-weight: bold;"&gt;4.5.3&lt;/span&gt;&lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/d264a4e75ec80018cbc138fb1d1b3863.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Now you are on the Library Version Page and will see at the bottom of the page a configuration string for Maven.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ol&gt;
-       &lt;li&gt;Copy the full string from &amp;lt;dependency&amp;gt;&amp;hellip;&amp;lt;/dependency&amp;gt;&lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/a6eaf1411827e7c7fbfbb219a4a12d15.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ol&gt;
-       &lt;li&gt;In you IntelliJ project, paste in this Maven dependency in-between the &lt;span style="font-weight: bold;"&gt;dependencies&lt;/span&gt; XLM elements&lt;/li&gt;
-       &lt;li&gt;IntelliJ will now update the list of &lt;span style="font-weight: bold;"&gt;External Libraries&lt;/span&gt;. Beside the JDK 1.8 libraries you have a set of new libraries (brought in via Maven).  &lt;/li&gt;
-      &lt;/ol&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/f40e463c7f9965c39ca2ad3ec8f4a5d0.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        If you look carefully at the list of libraries you can see not just, the
-       &lt;span style="font-weight: bold;"&gt;httpclient&lt;/span&gt; library which we added but also list of additional libraries, as for example
-       &lt;span style="font-weight: bold;"&gt;httpcore&lt;/span&gt; ?
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Why that ? Well
-       &lt;span style="font-weight: bold;"&gt; httpclient &lt;/span&gt;library itself is dependent on other libraries (apart from the Java JDK), i.e.
-       &lt;span style="font-weight: bold;"&gt;commons-code version 1.9, commons-logging 1.2&lt;/span&gt;,
-       &lt;span style="font-weight: bold;"&gt;httpcore 4.4.6&lt;/span&gt;. The Maven
-       &lt;span style="font-weight: bold;"&gt; &lt;/span&gt;Build Tool, ensures that all these are loaded as well, which makes your life easier. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;img class="img-responsive img-thumbnail article" src="/images/d11cbdb5b7f43305666ad5d6e26bda6b.png" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        That’s it for today, as you have learned, writing a program means also to collect useful libraries which are helping you in completing your development task. You don’t have to reinvent all the time the wheel and write all code from scratch. Rather watch out for open source libraries which can help you in full-filling a task and add them as external libraries to your project. Maven will help you to keep all the necessary libraries in sync and consistent. Good starting point
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;&lt;a href="http://www.apache.org/index.html#projects-list"&gt;&lt;a href="http://www.apache.org/index.html#projects-list"&gt;http://www.apache.org/index.html#projects-list&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;a href="https://github.com/"&gt;&lt;a href="https://github.com/"&gt;https://github.com/&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-      &lt;div&gt;
-        In the next session, we will write the first program, which will fetch data from the
-       &lt;a href="http://football-data.org"&gt;football-data.org&lt;/a&gt; site in a machine-readable format.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
-       &lt;a style="font-size: 11px; font-style: italic;" href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
-      &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>

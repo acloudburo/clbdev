@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Python Tutorial: Fuzzy Name Matching Algorithms</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (17)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (1)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (10)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (2)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (14)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (4)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (5)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (5)</a>
+            <a href="/tags/python.html" class="label label-default">python (6)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (18)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tut01.html" class="label label-default">tut01 (6)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (11)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2019.html" class="label label-primary">2019 (10)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2019/03/04/python-tutorial-fuzzy-name-matching-algorithms.html">Python Tutorial: Fuzzy Name Matching Algorithms</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  04.Mar 2019 | Tags <a class="label label-primary" href="/tags/tutorial.html">tutorial</a> <a class="label label-primary" href="/tags/python.html">python</a> <a class="label label-primary" href="/tags/tut01.html">tut01</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p>How to cope with the variability and complexity of person name variables used as identifiers.
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">This is the fifth article of our journey into the Python data exploration world. A list of the published articles you can find </span>
+                   <a href="https://twitter.com/i/moments/1092507080307720193" style="-en-paragraph:true;">here</a>
+                   <span style=""> (and the source code </span>
+                   <a href="https://github.com/talfco/clb-sentiment/tree/master/src/lesson5" style="-en-paragraph:true;">here</a>
+                   <span style="">). So let’s start then. </span>
+                  </div>
+                  <span style="font-size: 18px;">Methods of Name Matching </span>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">In statistical data sets retrieved from public sources the names (of a person) are often treated the same as metadata for some other field like an email, phone number, or an ID number. This is the case in our sample sets: </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                     When names are your only unifying data point, correctly matching similar names takes on greater importance, however their variability and complexity make name matching a uniquely challenging task. Nicknames, translation errors, multiple spellings of the same name, and more all can result in missed matches. (
+                    <a href="https://www.rosette.com/blog/overview-fuzzy-name-matching-techniques/">rosette.com</a>)
+                   </div>
+                  </blockquote>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">That’s precisely the situation we are confronted now: </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Our twitter data set contains a </span>
+                   <span style="font-style: italic;">Name</span>
+                   <span style=""> variable, which is set by the Twitter user itself. Dependent on the person’s preference it may </span>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      a complete artificial name
+                    </div></li>
+                   <li>
+                    <div>
+                      surname, last name (or vice versa)
+                    </div></li>
+                   <li>
+                    <div>
+                      only last name
+                    </div></li>
+                   <li>
+                    <div>
+                      abbreviation sure name, abbreviation middle name, last name
+                    </div></li>
+                   <li>
+                    <div>
+                      his full name, but did some misspelling by accident
+                    </div></li>
+                   <li>
+                    <div>
+                      etc. etc. etc.
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/846f0ddb1e96d36888f7d2c7d257f451.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">These leaves us with some data quality and normalization challenges, which we have to address so that we can use the </span>
+                   <span style="font-style: italic;">Name</span>
+                   <span style=""> attribute as a matching identifier. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Some of the challenges —  as well as our strategy how we want to tackle them — are described in the below table. Each of the method used to address a challenge will be explained in this article and is part of the </span>
+                   <a href="https://github.com/talfco/clb-sentiment/tree/master/src/lesson5" style="-en-paragraph:true;">Github tutorial source code</a>
+                   <span style="">. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/b54d9fdb7fbd52009ed632a19862d030.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Let’s start then, by addressing the challenge of </span>
+                   <span style="font-style: italic;">Titles&amp;Honorifics</span>
+                   <span style="">, </span>
+                   <span style="font-style: italic;">Missing Components,</span>
+                   <span style=""> and some other anomalies first. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">We are in the lucky position that our list is manageable from a number of records point of view, i.e., we can do a manual check about the anomalies and titles used in “Name” attribute.  </span>
+                  </div>
+                  <span style="font-size: 18px;">Name Cleanser Step  </span>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Our quality review shows that the Name field seems to have a good quality (no dummy or nicknames used). However we found some anomalies, as shown below: </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/1cf10da704a88f7d7f6fc8b60e931b7a.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">We fix these anomalies in our program in a first cleaning step. To stay generic, we use once again our yaml configuration file and add two additional parameters. </span>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                     <span style="font-style: italic;">twitterNameCleaner</span> which consists of a list of keywords which must be removed from any twitter account name
+                    </div></li>
+                   <li>
+                    <div>
+                     <span style="font-style: italic;">twitterNamesExpander</span> which expands each Twitter account name abbreviation substring to a full name string.
+                    </div></li>
+                  </ul>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Our country-specific yaml file is enhanced by the following entries. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/c08ff97c1e7399bc5df30201dc4e0201.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The cleansing step is called in the below method, which assesses every row of our Twitter table (its integration into the program is explained later) </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/b91aa351351967beca06790a84e7cc5c.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Pretty straightforward by using the String </span>
+                   <span style="font-style: italic;">replace method</span>
+                   <span style=""> </span>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      we remove every keyword found in the
+                     <span style="font-style: italic;">twitterNameCleaner</span> list from the
+                     <span style="font-style: italic;">Name</span> attribute (replace it with ‘’)
+                    </div></li>
+                   <li>
+                    <div>
+                      we replace every abbreviation found in the
+                     <span style="font-style: italic;">twitterNamesExpander</span> dictionary through its full name.
+                    </div></li>
+                  </ul>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">For our next normalizing step, we introduce an approach which has its origin in the time when America was confronted with a huge wave of immigrants 100 years ago. </span>
+                  </div>
+                  <span style="font-size: 18px;">Double Metaphone Algorithm </span>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The principle of the algorithm goes back to the last century, actually to the year 1918 (when the first computer was years away).  </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Just as side information (should you ever participate in a millionaire quiz show), the first computer was 23 years away </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                    <span style="font-style: italic;">The Z3 was a German electromechanical computer designed by Konrad Zuse. It was the world’s first working programmable, fully automatic digital computer. The Z3 was built with 2,600 relays, implementing a 22-bit word length that operated at a clock frequency of about 4–5 Hz. Program code was stored on punched film. Initial values were entered manually (</span>
+                    <a href="https://en.wikipedia.org/wiki/Z3_%28computer%29" style="font-style: italic;">Wikipedia</a>
+                    <span style="font-style: italic;">) </span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                  </blockquote>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/1951952aab2dc3892ab23bc2699e86aa.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> A Z3 replica at the Deutsche Museum (
+                   <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>)
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">So back to 1918, in that year Robert C. Russell of the US Census Bureau invented the Soundex algorithm which is capable of indexing the English language in a way that multiple spellings of the same name could be found with only a cursory glance. </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                    <span style="font-style: italic;">Immigrants to the United States had a native language that was not based on Roman characters. To write their names, the names of their relatives, or the cities they arrived from, the immigrants had to make their best guess of how to express their symbolic language in English. The United States government realized the need to be able to categorize the names of private citizens in a manner that allowed for multiple spellings of the same name (e.g. Smith and Smythe) to be grouped. (read the full story </span>
+                    <a href="http://www.b-eye-network.com/view/1596" style="font-style: italic;">here</a>
+                    <span style="font-style: italic;">) </span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                  </blockquote>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/9d891b330b5e0d174e75ac02a626d49b.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> Immigrants arriving at Ellis Island — Wikipedia — 
+                   <a href="https://commons.wikimedia.org/wiki/File:Arriving_at_Ellis_Island_LCCN2014710704.jpg">Commons Licence</a>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The Soundex algorithm is based on a phonetical categorization of letters of the alphabet. In his patent, Russell describes the strategy assigning a numeric value to each category. For example, Johnson was mapped to J525, Miller to M460 etc. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The Soundex algorithm evolved over time in the context of efficiency and accuracy and was replaced with other algorithms.  </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">For the most part, they have all been replaced by the powerful indexing system called </span>
+                   <a href="http://aspell.net/metaphone/" style="-en-paragraph:true;">Double Metaphone</a>
+                   <span style="">. The algorithm is available as open source and its last version was released around 2009. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Luckily there is a Python library </span>
+                   <a href="https://pypi.org/project/Metaphone/" style="-en-paragraph:true;">available</a>
+                   <span style="">, which we use in our program. We write some small wrapper methods around the algorithm and implement a compare method. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The </span>
+                   <span style="font-style: italic;">doublemetaphone</span>
+                   <span style=""> method returns a tuple of two characters key, which are a phonetic translation of the passed in word. Our </span>
+                   <span style="font-style: italic;">compare</span>
+                   <span style=""> method shows the ranking capability of the algorithm which is quite limited. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/7ef655297fa80ef167d3b7e490d3280f.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Let’s run some verification checks to assess the efficiency of the algorithm by introducing the </span>
+                   <a href="http://test_class.py/" style="font-style: italic;-en-paragraph:true;">test_class.py</a>
+                   <span style=""> which is based on the Python </span>
+                   <span style="font-style: italic;">pytest</span>
+                   <span style=""> framework. </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                     The pytest framework makes it easy to write small tests, yet scales to support complex functional testing for applications and libraries. (
+                    <a href="https://docs.pytest.org/en/latest/">Link</a>)
+                   </div>
+                  </blockquote>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Its usage is straightforward and, you can see the test class implementation below </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/0cfad6dd6b23a9a6ab56fbc659d4b81c.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The tests result are shown below. We used two names (A+B) and were checking with some changed names (A1/A2+B1/B2/B3) the efficiency of the algorithm. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/4d9af0a1dc2c845b845b91282bde794d.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      A1+B1 passed the Strong match check. So missing spaces and ü/ä replacements with u/a seems not affecting the double metaphone key generation
+                    </div></li>
+                   <li>
+                    <div>
+                      B2 passes the Normal match. Spelling mistakes are covered by the algorithm as well
+                    </div></li>
+                   <li>
+                    <div>
+                      A2 + B3 are failing. A2 uses an abbreviation of a name part, which cannot be coped with. This behavior we had to expect and decided to introduce the name expander algorithm (see above). B3 failed due to missing “-”. This was unexpected, but we cover this behavior with a second name cleanser step.
+                    </div></li>
+                  </ul>
+                  <span style="font-size: 18px;">Name Cleanser Step 2 </span>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Our small test run has shown that the following additional cleaning steps are beneficial: </span>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      We have to get rid of any special character which could result in a failure
+                    </div></li>
+                   <li>
+                    <div>
+                      Out of order components, i.e., the last name before the first name affects the phonetic key generation. Therefore best is to sort the name components alphabetically to increase matching accuracy.
+                    </div></li>
+                  </ul>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Besides getting rid of any special character, we decide to remove any Unicode character, i.e. in Switzerland, multiple German (ä,ö,ü), French (à,é,è) or Italian umlaut are used, and we want to get rid of them as well. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The below </span>
+                   <span style="font-style: italic;">normalize_unicode_to_ascii</span>
+                   <span style=""> method uses the </span>
+                   <span style="font-style: italic;">unicodedata</span>
+                   <span style=""> library to convert the name to ASCII and then change all character to lower case. Afterward, two regular expressions are used to remove the special characters, as well as multiple spaces.  </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Regular expression operations are a powerful mechanism but not easy to understand for a novice. You may work through the </span>
+                   <a href="https://scotch.io/tutorials/an-introduction-to-regex-in-python" style="-en-paragraph:true;">following tutorial</a>
+                   <span style=""> to get the first impression of this powerful approach.  </span>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      Just one explanation, the regular expression term
+                     <span style="font-style: italic;">‘[^A-Za-z0–9 ]+’</span> means take any number of characters between ‘A-Z’ + ‘a-z’ + ‘0–9’ +‘ ‘ out of the passed in string. ^[]+ are special characters in the regular expression. The expression sequence can be translated to “strip the string from any special character.”
+                    </div></li>
+                   <li>
+                    <div>
+                     <br>
+                    </div></li>
+                  </ul>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/e73308dde4f32b7d7f9324b29c77456b.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <span style="font-size: 18px;">The Beauty of the Data Frame “Apply” Method </span>Establish the <strong>calculate_name_matching method in both classes
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">We have now all our name cleanser, normalization, and phonetic key generator methods together (bundled in the </span>
+                   <a href="http://namemachting.py/" style="font-style: italic;-en-paragraph:true;">namemachting.py</a>
+                   <span style=""> module) and can finally construct our name matching identifiers creation method(s) </span>
+                   <span style="font-style: italic;"></strong>calculate_name_matching</span>
+                   <span style=""> for our two classes </span>
+                   <span style="font-style: italic;">govAPI</span>
+                   <span style=""> and </span>
+                   <span style="font-style: italic;">GovernmentSocialMediaAnalyzer. </span>
+                   <span style=""> </span>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/d0ebebd65dd5626a47be01f63b5add2d.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> One new module and two new methods are added
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Both of the classes get a new method, which we apply to their Panda data frames and each method creates three new identifier attributes (</span>
+                   <span style="font-style: italic;">col_match1, col_match2, col_match3</span>
+                   <span style="">). The three columns can then be used to merge the two data frames. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The method for our </span>
+                   <span style="font-style: italic;">governmentAPI</span>
+                   <span style=""> class looks as follows: </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/f57cef471d5a02c88d68e2dc88a1cdf1.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">So for our </span>
+                   <span style="font-style: italic;">govAPI</span>
+                   <span style=""> class as follows. It’s an implemented method in our abstract class. The method is used for any implemented sub-class (refer to the factory design explained in our </span>
+                   <a href="https://towardsdatascience.com/python-tutorial-connect-government-data-apis-by-using-the-factory-pattern-501e5c65ba6d" style="-en-paragraph:true;">earlier tutorial</a>
+                   <span style="">) </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/30e49168e0a2612f9f46937e79909c04.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The implementation is straightforward, we normalize the person’s name of each table (from the government API we got back three independent attributes, from the Twitter API one account name) and then calculate the two double metaphone identifier strings. All three new values we append to the passed in row. </span>
+                  </div>Don’t call us we call you: “The Hollywood Principle”
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/63f3c37ff9a3fe108b40531edd10c955.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> Photo by
+                   <a href="https://unsplash.com/photos/goholCAVTRs?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Annie Spratt</a> on 
+                   <a href="https://unsplash.com/search/photos/telephone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">One question is still open: “How do we use our new methods to get the data frame enhanced by the three columns with its calculated values for each row? </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Well, that can be achieved quite easily by using the </span>
+                   <a href="https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.DataFrame.apply.html" style="-en-paragraph:true;">Panda Data Frame </a>
+                   <a href="https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.DataFrame.apply.html" style="font-style: italic;-en-paragraph:true;">apply</a>
+                   <span style=""> method, which is defined as: </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                     apply() can apply a function along any axis of the dataframe
+                   </div>
+                  </blockquote>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">This is a nice and elegant way to do any calculation on each row or column of a data frame. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Below you see the enhanced </span>
+                   <span style="font-style: italic;">create_politican_from_govapi_table</span>
+                   <span style=""> method. On code line 4 we newly call the </span>
+                   <span style="font-style: italic;">apply</span>
+                   <span style=""> method of the data frame (</span>
+                   <span style="font-style: italic;">df</span>
+                   <span style="">) and pass in as a parameter our method name </span>
+                   <span style="font-style: italic;">self.__calculate_name_matching</span>
+                   <span style=""> and instruct the </span>
+                   <span style="font-style: italic;">apply</span>
+                   <span style=""> method to call our method for each row (</span>
+                   <span style="font-style: italic;">axis=1</span>
+                   <span style="">). </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/8e6a705b457a7928da8489ae715615ed.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Now the Panda data frame  </span>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      iterates through each data row, which represents a data record of a dedicated politician
+                    </div></li>
+                   <li>
+                    <div>
+                      calls our
+                     <span style="font-style: italic;">self.<strong>calculate_name_matching</span> method
+                    </div></li>
+                   <li>
+                    <div>
+                      passes in the data row as a parameter and stores back the data row returned by the method call (which three new columns).
+                    </div></li>
+                  </ul>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Very nifty isn’t it? We didn’t have to code any kind of loops which are fetching data, checking for the end of loop conditions and so on. We just have implemented the method which can be passed to the </span>
+                   <span style="font-style: italic;">apply</span>
+                   <span style=""> method. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">This kind of interaction is a well-known design principle in IT, known under the name “Hollywood Principle”, which the excellent </span>
+                   <a href="http://matthewtmead.com/blog/hollywood-principle-dont-call-us-well-call-you-4/" style="-en-paragraph:true;">blog article of Matthew Mead</a>
+                   <span style=""> describes as follows: </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                     The essence of this principle is “don’t call us, we’ll call you”. As you know, this is a response you might hear after auditioning for a role in a Hollywood movie. And this is the same concept for the software Hollywood Principle too. The intent is to take care to structure and implement your dependencies wisely.
+                   </div>
+                  </blockquote>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Think about our implementation above. Our </span>
+                   <span style="font-style: italic;"></strong>calculate_name_matching</span>
+                   <span style=""> method is completely decoupled of the panda data frame implementation. Our method gets just a row dictionary as an input, which we can manipulate and can give back at the end as the return value. We are completely unaware that there is a massive panda data frame implementation involved and don’t have any dependency on it. </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                     At its most basic level, the principle is about reducing the coupling in a software system. It gets back to the well known phrase in software development: loose coupling and high cohesion. You can keep classes loosely
+                    <span style="font-style: italic;">coupled</span> by ensuring that you don’t have unnecessary references and you are referencing classes and other subsystems properly. Although the Hollywood Principle does not dictate anything about cohesion, it is an important aspect too.
+                    <span style="font-style: italic;">Cohesion</span> is about keeping your classes true to their intent and not allowing their behavior to expand beyond its core purpose. Like high coupling, low cohesion doesn’t tend to cause systems to be unstable or not work properly, but will likely lead to difficulty in maintaining the software.
+                   </div>
+                  </blockquote>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Enough design teaching for today, when we run our program both plotly politician tables are enhanced by 3 new attributes, which allows us to join them together finally (uff… quite some conceptual work we had to do) </span>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/e689e93554360e3826f764d8ec4ee74a.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>Finally, Join the Data Frames
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">We now have to join the two data frames, which is one of the many combining and merging possibilities which Panda is offering. Refer to the following article by </span>
+                   <a href="https://datacarpentry.org/python-ecology-lesson/05-merging-data/" style="-en-paragraph:true;">datacarpentry.org</a>
+                   <span style="">, which gives a good introduction to the overall topic. </span>
+                  </div>
+                  <blockquote>
+                   <div>
+                     Another way to combine DataFrames is to use columns in each dataset that contain common values (a common unique id). Combining DataFrames using a common field is called “joining”. The columns containing the common values are called “join key(s)”. Joining DataFrames in this way is often useful when one DataFrame is a “lookup table” containing additional data that we want to include in the other.
+                   </div>
+                  </blockquote>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">This is achieved by the </span>
+                   <span style="font-style: italic;">merge</span>
+                   <span style=""> method which can be applied to a Panda data frame (see code line 23 below). You have to provide as parameters </span>
+                  </div>
+                  <ul>
+                   <li>
+                    <div>
+                      the two data frames
+                    </div></li>
+                   <li>
+                    <div>
+                      the matching key (in our case the double metaphone attribute
+                     <span style="font-style: italic;">col_match2</span> available in both data frames)
+                    </div></li>
+                   <li>
+                    <div>
+                      and the join strategy (
+                     <span style="font-style: italic;">how</span> parameter)
+                    </div></li>
+                  </ul>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/441b6a10091be0303e25121eb322dfc4.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">We indicate an “outer left” join (</span>
+                   <span style="font-style: italic;">how=left)</span>
+                   <span style=""> which can be visualized as follows </span>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/9439a4b1b72776e4e8da39c5063dc3ce.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Omitting the </span>
+                   <span style="font-style: italic;">how</span>
+                   <span style=""> parameter would result in an inner join </span>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/cf467ad5f09b4484d9c973f71daa9ed8.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">“Inner Join” means only take over rows which are matching, “Left Join” means to take over ALL row of the left data frame. If there is no matching right table record, fill the relevant record with “NaN” values. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Our new Plotly table </span>
+                   <span style="font-style: italic;">CH-tw-politican-merged-list</span>
+                   <span style=""> has such kind of entries.  </span>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/bcfbeecefee5901df7e4cbef2b2e9f00.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         <br>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">Well, that means our matching strategy still misses entries. Let’s compare the Pie Chart of our merged table, with the initial one: </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/fdd1c4cb6053a8919d0d67d6e3723501.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> Twitter User per Party (merged with gov API source)
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The initial one (refer to this </span>
+                   <a href="https://towardsdatascience.com/python-tutorial-connect-government-data-apis-by-using-the-factory-pattern-501e5c65ba6d" style="-en-paragraph:true;">article</a>
+                   <span style="">) missed 51 one, with our simple merge strategy we could identify another 14 entries.  </span>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/d011404a3ecf2c06521bcfd216bb508a.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> Twitter User per Party (just using Twitter API information)
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">So, we are not there yet (argh…), but enough for today, in the next session we try to adapt our matching strategy so that we can reduce the unknown once again. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="">The source code you can find in the corresponding </span>
+                   <a href="https://github.com/talfco/clb-sentiment" style="-en-paragraph:true;">Github project</a>
+                   <span style="">, a list of all other articles </span>
+                   <a href="https://twitter.com/i/moments/1092507080307720193" style="-en-paragraph:true;">here</a>
+                   <span style="">. </span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style="font-size: 11px; font-style: italic;">This blog entry was fully produced within Evernote and published using the </span>
+                   <a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;">Cloudburo Publishing Bot</a>
+                   <span style="font-size: 11px; font-style: italic;">.</span>
+                   <span style=""><br></span>
+                  </div>
+                  <div style="margin-top: 1em; margin-bottom: 1em;">
+                   <span style=""><br></span>
+                  </div></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/Cloudburonet-897759390318816/" class="btn btn-facebook">
+                <i class="fa fa-facebook"></i></a><a href="https://plus.google.com/u/1/b/102868953630532463137/+CloudburoCh/posts" class="btn btn-google-plus">
+                <i class="fa fa-google-plus"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2019 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>
