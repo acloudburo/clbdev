@@ -454,12 +454,12 @@
               <div class="article">
                 <p><span/>         <br>
                   </div>
-                  <span style="font-size: 18px;">The Beauty of the Data Frame “Apply” Method </span>Establish the <strong>calculate_name_matching method in both classes
+                  <span style="font-size: 18px;">The Beauty of the Data Frame “Apply” Method </span>Establish the calculate_name_matching method in both classes
                   <div style="margin-top: 1em; margin-bottom: 1em;">
                    <span style="">We have now all our name cleanser, normalization, and phonetic key generator methods together (bundled in the </span>
                    <a href="http://namemachting.py/" style="font-style: italic;-en-paragraph:true;">namemachting.py</a>
                    <span style=""> module) and can finally construct our name matching identifiers creation method(s) </span>
-                   <span style="font-style: italic;"></strong>calculate_name_matching</span>
+                   <span style="font-style: italic;">calculate_name_matching</span>
                    <span style=""> for our two classes </span>
                    <span style="font-style: italic;">govAPI</span>
                    <span style=""> and </span>
@@ -571,7 +571,7 @@
                    <li>
                     <div>
                       calls our
-                     <span style="font-style: italic;">self.<strong>calculate_name_matching</span> method
+                     <span style="font-style: italic;">self.__calculate_name_matching</span> method
                     </div></li>
                    <li>
                     <div>
@@ -595,7 +595,7 @@
                   </blockquote>
                   <div style="margin-top: 1em; margin-bottom: 1em;">
                    <span style="">Think about our implementation above. Our </span>
-                   <span style="font-style: italic;"></strong>calculate_name_matching</span>
+                   <span style="font-style: italic;">calculate_name_matching</span>
                    <span style=""> method is completely decoupled of the panda data frame implementation. Our method gets just a row dictionary as an input, which we can manipulate and can give back at the end as the return value. We are completely unaware that there is a massive panda data frame implementation involved and don’t have any dependency on it. </span>
                   </div>
                   <blockquote>
@@ -741,11 +741,8 @@
                    <span style="font-size: 11px; font-style: italic;">This blog entry was fully produced within Evernote and published using the </span>
                    <a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;">Cloudburo Publishing Bot</a>
                    <span style="font-size: 11px; font-style: italic;">.</span>
-                   <span style=""><br></span>
                   </div>
-                  <div style="margin-top: 1em; margin-bottom: 1em;">
-                   <span style=""><br></span>
-                  </div></p>
+                  <div style="margin-top: 1em; margin-bottom: 1em;"></div></p>
                 
               </div>
             </div>

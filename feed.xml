@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/03/04/python-tutorial-fuzzy-name-matching-algorithms.html"/>
     <id>https://dev.cloudburo.net/2019/03/04/python-tutorial-fuzzy-name-matching-algorithms.html</id>
     <published>2019-03-04T23:27:04+00:00</published>
-    <updated>2019-03-04T23:27:57+00:00</updated>
+    <updated>2019-03-05T07:29:01+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -357,12 +357,12 @@
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
       &lt;/div&gt;
-      &lt;span style="font-size: 18px;"&gt;The Beauty of the Data Frame “Apply” Method &lt;/span&gt;Establish the &lt;strong&gt;calculate_name_matching method in both classes
+      &lt;span style="font-size: 18px;"&gt;The Beauty of the Data Frame “Apply” Method &lt;/span&gt;Establish the calculate_name_matching method in both classes
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;We have now all our name cleanser, normalization, and phonetic key generator methods together (bundled in the &lt;/span&gt;
        &lt;a href="http://namemachting.py/" style="font-style: italic;-en-paragraph:true;"&gt;namemachting.py&lt;/a&gt;
        &lt;span style=""&gt; module) and can finally construct our name matching identifiers creation method(s) &lt;/span&gt;
-       &lt;span style="font-style: italic;"&gt;&lt;/strong&gt;calculate_name_matching&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;calculate_name_matching&lt;/span&gt;
        &lt;span style=""&gt; for our two classes &lt;/span&gt;
        &lt;span style="font-style: italic;"&gt;govAPI&lt;/span&gt;
        &lt;span style=""&gt; and &lt;/span&gt;
@@ -474,7 +474,7 @@
        &lt;li&gt;
         &lt;div&gt;
           calls our
-         &lt;span style="font-style: italic;"&gt;self.&lt;strong&gt;calculate_name_matching&lt;/span&gt; method
+         &lt;span style="font-style: italic;"&gt;self.__calculate_name_matching&lt;/span&gt; method
         &lt;/div&gt;&lt;/li&gt;
        &lt;li&gt;
         &lt;div&gt;
@@ -498,7 +498,7 @@
       &lt;/blockquote&gt;
       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
        &lt;span style=""&gt;Think about our implementation above. Our &lt;/span&gt;
-       &lt;span style="font-style: italic;"&gt;&lt;/strong&gt;calculate_name_matching&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;calculate_name_matching&lt;/span&gt;
        &lt;span style=""&gt; method is completely decoupled of the panda data frame implementation. Our method gets just a row dictionary as an input, which we can manipulate and can give back at the end as the return value. We are completely unaware that there is a massive panda data frame implementation involved and don’t have any dependency on it. &lt;/span&gt;
       &lt;/div&gt;
       &lt;blockquote&gt;
@@ -644,11 +644,8 @@
        &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
        &lt;a href="https://publishingbot.cloudburo.net/" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
        &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
-       &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;
       &lt;/div&gt;
-      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=""&gt;&lt;br&gt;&lt;/span&gt;
-      &lt;/div&gt;&lt;/p&gt;
+      &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;&lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
