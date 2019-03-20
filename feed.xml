@@ -5,10 +5,119 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-03-04T23:27:04+00:00</updated>
+  <updated>2019-03-20T20:31:23+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Polkadot on Ethereum Community Conference 2019</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/03/20/polkadot-on-ethereum-community-conference-2019.html"/>
+    <id>https://dev.cloudburo.net/2019/03/20/polkadot-on-ethereum-community-conference-2019.html</id>
+    <published>2019-03-20T20:31:23+00:00</published>
+    <updated>2019-03-20T20:31:29+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/426055531e5e62287fae2b007f748b55.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The following list of videos were recently posted on the Polkadot Watercooler Riot channel. So if you are interested in the current state of the project put some hours aside and watch the videos:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          All videos from Ethereum Community Conference 2019
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;a href="https://hashfabric.github.io/ethcc2/videos"&gt;&lt;a href="https://hashfabric.github.io/ethcc2/videos"&gt;https://hashfabric.github.io/ethcc2/videos&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Robert Habermeier: Consensus and Finality in Polkadot
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;a href="https://www.youtube.com/watch?v=sNU40AE2ako"&gt;&lt;a href="https://www.youtube.com/watch?v=sNU40AE2ako"&gt;https://www.youtube.com/watch?v=sNU40AE2ako&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Jack Platts: Introduction - W3F Track Ryan Zurrer: The State of Web3 &amp;amp; Polkadot Governance
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;a href="https://www.youtube.com/watch?v=qvoAf2uIF3c"&gt;&lt;a href="https://www.youtube.com/watch?v=qvoAf2uIF3c"&gt;https://www.youtube.com/watch?v=qvoAf2uIF3c&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Sergey Nazarov: Secure Decentralized Oracles on the Polkadot Network
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;a href="https://www.youtube.com/watch?v=oFkTUFzMJVI"&gt;&lt;a href="https://www.youtube.com/watch?v=oFkTUFzMJVI"&gt;https://www.youtube.com/watch?v=oFkTUFzMJVI&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Emiel van der Hoek: Exploring the Polkadot/Substrate Runtime
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;a href="https://www.youtube.com/watch?v=PLtWXwZRTtw"&gt;&lt;a href="https://www.youtube.com/watch?v=PLtWXwZRTtw"&gt;https://www.youtube.com/watch?v=PLtWXwZRTtw&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Building Payment Channels with Substrate
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;a href="https://www.youtube.com/watch?v=1CeI6Oa1BnU"&gt;&lt;a href="https://www.youtube.com/watch?v=1CeI6Oa1BnU"&gt;https://www.youtube.com/watch?v=1CeI6Oa1BnU&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;li&gt;
+        &lt;div&gt;
+          Cumulus Talk
+        &lt;/div&gt;&lt;/li&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;a href="https://www.youtube.com/watch?v=thgtXq5YMOo" style="color: rgb(35, 140, 245); font-family: Nunito, Arial, Helvetica, sans-serif; font-size: 14px; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 247, 247);"&gt;&lt;a href="https://www.youtube.com/watch?v=thgtXq5YMOo"&gt;https://www.youtube.com/watch?v=thgtXq5YMOo&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+      &lt;/ul&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Python Tutorial: Fuzzy Name Matching Algorithms</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/03/04/python-tutorial-fuzzy-name-matching-algorithms.html"/>
@@ -10279,23 +10388,6 @@
         &lt;iframe src="https://www.youtube.com/embed/_160oMzblY8?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
        &lt;/div&gt;
       &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Event-Driven Architecture Is the Wave of the Future</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html"/>
-    <id>https://dev.cloudburo.net/2017/09/13/event-driven-architecture-is-the-wave-of-the-future.html</id>
-    <published>2017-09-13T05:35:50+00:00</published>
-    <updated>2019-03-15T11:48:07+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;      Event-Driven Architecture (EDA) is the latest step in the evolution of microservices and serverless technologies. The recent Emit Conference on Event-Driven Architecture held in San Francisco provided a place for cutting-edge geeks to learn about this digital business tool. We’ve covered the emergingserverless architecture&lt;br/&gt;
-    &lt;a href="https://thenewstack.io/event-driven-architecture-wave-future/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
