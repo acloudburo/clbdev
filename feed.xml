@@ -4003,7 +4003,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/01/14/sequence-diagram-ethereum-contract-transaction-execution.html"/>
     <id>https://dev.cloudburo.net/2019/01/14/sequence-diagram-ethereum-contract-transaction-execution.html</id>
     <published>2019-01-14T19:09:10+00:00</published>
-    <updated>2019-04-06T07:15:54+00:00</updated>
+    <updated>2019-04-06T08:16:24+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -4035,10 +4035,8 @@
       &lt;div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 16px; background-color: rgb(240, 240, 240); color: rgb(69, 83, 88); font-family: hurme_no2-webfont, -apple-system, system-ui, sans-serif;"&gt;&lt;iframe src="&lt;/span&gt;
-       &lt;a href="https://quizlet.com/381929467/match/embed?i=1z8o57&amp;amp;x=1jj1" style="font-size: 16px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: pre; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(240, 240, 240); color: rgb(69, 83, 88); font-family: hurme_no2-webfont, -apple-system, system-ui, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;"&gt;&lt;a href="https://quizlet.com/381929467/match/embed?i=1z8o57&amp;amp;amp;x=1jj1"&gt;https://quizlet.com/381929467/match/embed?i=1z8o57&amp;amp;amp;x=1jj1&lt;/a&gt;&lt;/a&gt;
-       &lt;span style="font-size: 16px; background-color: rgb(240, 240, 240); color: rgb(69, 83, 88); font-family: hurme_no2-webfont, -apple-system, system-ui, sans-serif;"&gt;&amp;ldquo; height=&amp;quot;500&amp;rdquo; width=&amp;ldquo;100%&amp;rdquo; style=&amp;ldquo;border:0&amp;rdquo;&amp;gt;&lt;/iframe&gt;&lt;/span&gt;
+      &lt;div style=""&gt;
+       &lt;font face="hurme_no2-webfont, -apple-system, system-ui, sans-serif" style="color: rgb(18, 21, 23); --inversion-type-color: simple;"&gt;&lt;span style="caret-color: rgb(232, 235, 237); font-size: 16px;"&gt;&lt;h1&gt;Hello world&lt;/h1&gt;&lt;/span&gt;&lt;/font&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
