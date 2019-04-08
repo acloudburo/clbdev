@@ -5,10 +5,74 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-03-20T20:31:23+00:00</updated>
+  <updated>2019-04-08T20:11:07+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Seeing Theory - Excellent Statistics Visualization</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/04/08/seeing-theory-excellent-statistics-visualization.html"/>
+    <id>https://dev.cloudburo.net/2019/04/08/seeing-theory-excellent-statistics-visualization.html</id>
+    <published>2019-04-08T20:11:07+00:00</published>
+    <updated>2019-04-08T20:11:13+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/17fc5fd9c844e70b2306dfabdc454c76.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        An excellent visual introduction to probability and statistics can be found on the students web site of the Brown University.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As they state:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;Seeing Theory was created by Daniel Kunin while an undergraduate at Brown University. The goal of this website is to make statistics more accessible through interactive visualizations (designed using Mike Bostock’s JavaScript library D3.js).&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Just follow this link: 
+       &lt;a href="https://seeing-theory.brown.edu/"&gt;&lt;a href="https://seeing-theory.brown.edu/"&gt;https://seeing-theory.brown.edu/&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Great work.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Polkadot on Ethereum Community Conference 2019</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/03/20/polkadot-on-ethereum-community-conference-2019.html"/>
@@ -10353,52 +10417,6 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Blockchain 101 - A Visual Demo</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html"/>
-    <id>https://dev.cloudburo.net/2017/10/08/blockchain-101-a-visual-demo.html</id>
-    <published>2017-10-08T16:26:49+00:00</published>
-    <updated>2019-03-15T11:48:07+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        This is a very basic visual introduction to the concepts behind a blockchain. Andres Brownworth introduces the idea of an immutable ledger using an interactive web demo. If you are interested in playing with this on your own, it is available online at: 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;a href="https://www.youtube.com/redirect?q=http%3A%2F%2Fanders.com%2Fblockchain%2F&amp;amp;redir_token=sW6nyE6dJIJ3_7B2UwzcEkGIHup8MTUwNzU2NjA2MUAxNTA3NDc5NjYx&amp;amp;event=video_description&amp;amp;v=_160oMzblY8"&gt;&lt;a href="http://anders.com/blockchain/"&gt;http://anders.com/blockchain/&lt;/a&gt;&lt;/a&gt; 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The code that runs this demo is also on GitHub: 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;a href="https://github.com/anders94/blockchain-demo"&gt;&lt;a href="https://github.com/anders94/blockchain-demo"&gt;https://github.com/anders94/blockchain-demo&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div class="responsive-video"&gt;
-        &lt;iframe src="https://www.youtube.com/embed/_160oMzblY8?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-       &lt;/div&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;

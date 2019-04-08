@@ -859,6 +859,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/04/08/seeing-theory-excellent-statistics-visualization.html</loc>
+    <lastmod>2019-04-08</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2019/03/04/python-tutorial-fuzzy-name-matching-algorithms.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>0.7</priority>
@@ -1177,9 +1183,27 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/statistics.html</loc>
+    <lastmod>2019-03-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2019.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/04.html</loc>
+    <lastmod>2019-03-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/04/08.html</loc>
+    <lastmod>2019-03-15</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
