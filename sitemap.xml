@@ -529,12 +529,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/2019/04/13/saga-process-orchestration-in-java-using-the-flowable-process-engine.html</loc>
-    <lastmod>2019-04-13</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net/2018/12/09/the-new-data-journalism-handbook-by-google-news-lab.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>0.7</priority>
@@ -1159,12 +1153,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/tags/tut02.html</loc>
-    <lastmod>2019-03-15</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net/tags/deutsch.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>0.9</priority>
@@ -1210,12 +1198,6 @@
     <loc>https://dev.cloudburo.net/2019/04.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/2019/04/13.html</loc>
-    <lastmod>2019-03-15</lastmod>
-    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

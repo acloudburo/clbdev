@@ -5,367 +5,10 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-04-13T12:07:27+00:00</updated>
+  <updated>2019-04-08T20:11:07+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
-  <entry>
-    <title>Saga Process Orchestration in Java Using the Flowable Process Engine</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2019/04/13/saga-process-orchestration-in-java-using-the-flowable-process-engine.html"/>
-    <id>https://dev.cloudburo.net/2019/04/13/saga-process-orchestration-in-java-using-the-flowable-process-engine.html</id>
-    <published>2019-04-13T12:07:27+00:00</published>
-    <updated>2019-04-13T12:08:22+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;      &lt;div&gt;
-        Photo by 
-       &lt;a href="https://unsplash.com/photos/uYkdJEYNwSM?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0.54); background-repeat: repeat-x; background-image: url(&amp;quot;data; utf8,&lt;svg preserveAspectRatio=\&amp;quot;none\&amp;quot; viewBox=\&amp;quot;0 0 1 1\&amp;quot; xmlns=\&amp;quot;http: //www.w3.org/2000/svg\&amp;quot;&gt;&lt;line x1=\&amp;quot;0\&amp;quot; y1=\&amp;quot;0\&amp;quot; x2=\&amp;quot;1\&amp;quot; y2=\&amp;quot;1\&amp;quot; stroke=\&amp;quot;currentColor\&amp;quot; /&gt;&lt;/svg&gt;&amp;ldquo;); background-size: 1px 1px; background-position: 0px calc(1em + 1px);&amp;rdquo;&amp;gt;Geran de Klerk&lt;/a&gt; on 
-       &lt;a href="https://unsplash.com/collections/1988198/integrous?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0.54); background-repeat: repeat-x; background-image: url(&amp;quot;data; utf8,&lt;svg preserveAspectRatio=\&amp;quot;none\&amp;quot; viewBox=\&amp;quot;0 0 1 1\&amp;quot; xmlns=\&amp;quot;http: //www.w3.org/2000/svg\&amp;quot;&gt;&lt;line x1=\&amp;quot;0\&amp;quot; y1=\&amp;quot;0\&amp;quot; x2=\&amp;quot;1\&amp;quot; y2=\&amp;quot;1\&amp;quot; stroke=\&amp;quot;currentColor\&amp;quot; /&gt;&lt;/svg&gt;&amp;ldquo;); background-size: 1px 1px; background-position: 0px calc(1em + 1px);&amp;rdquo;&amp;gt;Unsplash&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;blockquote style="border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px; text-align: start; background-color: rgb(255, 255, 255);"&gt;
-       &lt;div&gt;
-        &lt;span style="color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; font-style: italic;"&gt;Flowable provides a core set of open source business process engines that are compact and highly efficient. They provide a workflow and Business Process Management (BPM) platform for developers, system admins and business users. At its heart is a lightning fast, tried and tested dynamic BPMN process engine, with accompanying DMN decision tables and CMMN case management engines, all written in Java. They are Apache 2.0 licensed open source, with a committed community. (&lt;/span&gt;
-        &lt;a href="https://www.flowable.org/" style="background-image: url(&amp;quot;file:///Applications/Evernote.app/Contents/Resources/common-editor-mac/data;%20utf8,%3Csvg%20preserveAspectRatio=%22none%22%20viewBox=%220%200%201%201%22%20xmlns=%22http:%20//www.w3.org/2000/svg%22%3E%3Cline%20x1=%220%22%20y1=%220%22%20x2=%221%22%20y2=%221%22%20stroke=%22currentColor%22%20/%3E%3C/svg%3E&amp;quot;); background-size: 1px 1px; font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; font-style: italic; font-variant-caps: normal; font-variant-ligatures: normal; line-height: 1.58; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;"&gt;Link&lt;/a&gt;
-        &lt;span style="color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; font-style: italic;"&gt;) &lt;/span&gt;
-       &lt;/div&gt;
-      &lt;/blockquote&gt;
-      &lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-size: 21px; background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif;"&gt;As one can see Flowable is positioned as a Workflow and Business Process Management Platform, what we want to understand is the feasibility of Flowable in context of low-level service orchestration, as defined as Saga Orchestration. &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-size: 21px; background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif;"&gt;Refer to the following excellent article by Bernd Rücker in order to get an overview of how to tackle “&lt;/span&gt;
-       &lt;a href="https://blog.bernd-ruecker.com/saga-how-to-implement-complex-business-transactions-without-two-phase-commit-e00aa41a1b1b" style="--x-height-multiplier:  0.375; --baseline-multiplier:  0.17; font-size: 21px; letter-spacing: -0.003em; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); background-image: url(&amp;quot;file:///Applications/Evernote.app/Contents/Resources/common-editor-mac/data;%20utf8,%3Csvg%20preserveAspectRatio=%22none%22%20viewBox=%220%200%201%201%22%20xmlns=%22http:%20//www.w3.org/2000/svg%22%3E%3Cline%20x1=%220%22%20y1=%220%22%20x2=%221%22%20y2=%221%22%20stroke=%22currentColor%22%20/%3E%3C/svg%3E&amp;quot;); background-size: 1px 1px; font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-variant-caps: normal; font-variant-ligatures: normal; line-height: 1.58; color: rgba(0, 0, 0, 0.843137); background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;-en-paragraph:true;"&gt;Business Transactions without two-phase commit&lt;/a&gt;
-       &lt;span style=" font-size: 21px; background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif;"&gt;” &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;blockquote style="border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px; text-align: start; background-color: rgb(255, 255, 255);"&gt;
-       &lt;div&gt;
-        &lt;span style="color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; font-style: italic;"&gt;The Saga pattern describes how to solve distributed (business) transactions without two-phase-commit as this does not scale in distributed systems. The basic idea is to break the overall transaction into multiple steps or activities. Only the steps internally can be performed in atomic transactions but the overall consistency is taken care of by the Saga. The Saga has the responsibility to either get the overall business transaction completed or to leave the system in a known termination state.(&lt;/span&gt;
-        &lt;a href="https://blog.bernd-ruecker.com/saga-how-to-implement-complex-business-transactions-without-two-phase-commit-e00aa41a1b1b" style="background-image: url(&amp;quot;file:///Applications/Evernote.app/Contents/Resources/common-editor-mac/data;%20utf8,%3Csvg%20preserveAspectRatio=%22none%22%20viewBox=%220%200%201%201%22%20xmlns=%22http:%20//www.w3.org/2000/svg%22%3E%3Cline%20x1=%220%22%20y1=%220%22%20x2=%221%22%20y2=%221%22%20stroke=%22currentColor%22%20/%3E%3C/svg%3E&amp;quot;); background-size: 1px 1px; font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; font-style: italic; font-variant-caps: normal; font-variant-ligatures: normal; line-height: 1.58; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;"&gt;Link&lt;/a&gt;
-        &lt;span style="color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; font-style: italic;"&gt;) &lt;/span&gt;
-       &lt;/div&gt;
-      &lt;/blockquote&gt;
-      &lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-size: 21px; background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif;"&gt;In this article, I don’t address compensating transaction but will concentrate on the basic skeleton necessary to execute Saga process orchestration. It’s mainly a combination of the workflow capability provided by Flowable combined with the power of Apache Camel (a Java integration framework based on the &lt;/span&gt;
-       &lt;a href="https://www.enterpriseintegrationpatterns.com/" style="--x-height-multiplier:  0.375; --baseline-multiplier:  0.17; font-size: 21px; letter-spacing: -0.003em; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); background-image: url(&amp;quot;file:///Applications/Evernote.app/Contents/Resources/common-editor-mac/data;%20utf8,%3Csvg%20preserveAspectRatio=%22none%22%20viewBox=%220%200%201%201%22%20xmlns=%22http:%20//www.w3.org/2000/svg%22%3E%3Cline%20x1=%220%22%20y1=%220%22%20x2=%221%22%20y2=%221%22%20stroke=%22currentColor%22%20/%3E%3C/svg%3E&amp;quot;); background-size: 1px 1px; font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-variant-caps: normal; font-variant-ligatures: normal; line-height: 1.58; color: rgba(0, 0, 0, 0.843137); background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;-en-paragraph:true;"&gt;EIP pattern&lt;/a&gt;
-       &lt;span style=" font-size: 21px; background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif;"&gt;), which is a first-citizen in Flowable via the so-called “Camel Task”. &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;span style=" font-size: 34px; background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-sans-serif-font, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Lucida Sans Unicode&amp;quot;, &amp;quot;Lucida Sans&amp;quot;, Geneva, Arial, sans-serif; font-weight: bold;"&gt;Spring Boot Application Framework &lt;/span&gt;
-      &lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-size: 21px; background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif;"&gt;Flowable in its nature is a Spring Boot based application and benefits from all the feature provided by Spring Boot. &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;blockquote style="border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px; text-align: start; background-color: rgb(255, 255, 255);"&gt;
-       &lt;div&gt;
-        &lt;span style="color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; font-style: italic;"&gt;Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can &amp;ldquo;just run&amp;rdquo;. &lt;/span&gt;
-       &lt;/div&gt;
-      &lt;/blockquote&gt;
-      &lt;blockquote style="border-left-width: 3px; border-left-style: solid; border-left-color: rgba(0, 0, 0, 0.843137); padding-left: 20px; padding-bottom: 2px; font-size: 21px; padding-top: 27px; text-align: start; background-color: rgb(255, 255, 255);"&gt;
-       &lt;div&gt;
-        &lt;span style="color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; font-style: italic;"&gt;We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need very little Spring configuration.(&lt;/span&gt;
-        &lt;a href="https://spring.io/projects/spring-boot" style="background-image: url(&amp;quot;file:///Applications/Evernote.app/Contents/Resources/common-editor-mac/data;%20utf8,%3Csvg%20preserveAspectRatio=%22none%22%20viewBox=%220%200%201%201%22%20xmlns=%22http:%20//www.w3.org/2000/svg%22%3E%3Cline%20x1=%220%22%20y1=%220%22%20x2=%221%22%20y2=%221%22%20stroke=%22currentColor%22%20/%3E%3C/svg%3E&amp;quot;); background-size: 1px 1px; font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; font-style: italic; font-variant-caps: normal; font-variant-ligatures: normal; line-height: 1.58; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;"&gt;Link&lt;/a&gt;
-        &lt;span style="color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; font-style: italic;"&gt;) &lt;/span&gt;
-       &lt;/div&gt;
-      &lt;/blockquote&gt;
-      &lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-size: 21px; background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif;"&gt;Spring Boot is all about convention over configuration. Our &lt;/span&gt;
-       &lt;span style=" font-size: 21px; background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-style: italic;"&gt;build.gradle&lt;/span&gt;
-       &lt;span style=" font-size: 21px; background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif;"&gt; looks as follows &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style="font-size: 21px; color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font; --inversion-type-color: simple;"&gt; 
-       &lt;img class='article  img-thumbnail' src='/images/d4372c2eae30bf93fb6ea07395518b41.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;The gradle build file is quite compact and consists of the following dependencies: &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; text-align: start;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px;"&gt;Spring Boot framework dependencies&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; text-align: start;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px;"&gt;Flowable Spring Boot integrated framework dependencies&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; text-align: start;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px;"&gt;Camel Boot integrated framework dependencies&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; text-align: start;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px;"&gt;As well as H2 an in-memory database required for the Flowable stateful processing engine&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;That’s it, rather straightforward. &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;span style="font-family: medium-content-sans-serif-font, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Lucida Sans Unicode&amp;quot;, &amp;quot;Lucida Sans&amp;quot;, Geneva, Arial, sans-serif; font-weight: bold; color: rgba(0, 0, 0, 0.843137); font-size: 26px; background-color: rgb(255, 255, 255);"&gt;Spring Boot and Flowable &lt;/span&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;By introducing the above Flowable dependencies (refer to the &lt;/span&gt;
-       &lt;a href="https://www.flowable.org/docs/userguide/index.html#springSpringBoot" style="--x-height-multiplier:  0.375; --baseline-multiplier:  0.17; font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; line-height: 1.58; letter-spacing: -0.003em; color: rgba(0, 0, 0, 0.843137); font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); background-image: url(&amp;quot;file:///Applications/Evernote.app/Contents/Resources/common-editor-mac/data;%20utf8,%3Csvg%20preserveAspectRatio=%22none%22%20viewBox=%220%200%201%201%22%20xmlns=%22http:%20//www.w3.org/2000/svg%22%3E%3Cline%20x1=%220%22%20y1=%220%22%20x2=%221%22%20y2=%221%22%20stroke=%22currentColor%22%20/%3E%3C/svg%3E&amp;quot;); background-size: 1px 1px; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;-en-paragraph:true;"&gt;Flowable Spring Boot App Documentation&lt;/a&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;) and using the &lt;/span&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255); font-style: italic;"&gt;@SpringBootAplication&lt;/span&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;annotation a lot has happened behind the scenes: &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; text-align: start;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px;"&gt;An in-memory datasource is created automatically (because the H2 driver is on the classpath) and passed to the Flowable process engine configuration&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; text-align: start;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px;"&gt;A Flowable ProcessEngine, CMMNEngine, DMNEngine, FormEngine, ContentEngine and IdmEngine beans have been created and exposed&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; text-align: start;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px;"&gt;All the Flowable services are exposed as Spring beans&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; text-align: start;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px;"&gt;The Spring Job Executor is created&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;You may fine-tune the Flowable App — i.e. in case you only need a subset of the provided engines, refer to the following &lt;/span&gt;
-       &lt;a href="https://www.flowable.org/docs/userguide/index.html#springBootFlowableStarter" style="--x-height-multiplier:  0.375; --baseline-multiplier:  0.17; font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; line-height: 1.58; letter-spacing: -0.003em; color: rgba(0, 0, 0, 0.843137); font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); background-image: url(&amp;quot;file:///Applications/Evernote.app/Contents/Resources/common-editor-mac/data;%20utf8,%3Csvg%20preserveAspectRatio=%22none%22%20viewBox=%220%200%201%201%22%20xmlns=%22http:%20//www.w3.org/2000/svg%22%3E%3Cline%20x1=%220%22%20y1=%220%22%20x2=%221%22%20y2=%221%22%20stroke=%22currentColor%22%20/%3E%3C/svg%3E&amp;quot;); background-size: 1px 1px; background-position: 0px calc(1em + 1px); background-repeat: repeat no-repeat;-en-paragraph:true;"&gt;Flowable Starter List&lt;/a&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;. &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;span style="font-family: medium-content-sans-serif-font, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Lucida Sans Unicode&amp;quot;, &amp;quot;Lucida Sans&amp;quot;, Geneva, Arial, sans-serif; font-weight: bold; color: rgba(0, 0, 0, 0.843137); font-size: 26px; background-color: rgb(255, 255, 255);"&gt;SpringBoot and Camel &lt;/span&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;The Apache Camel Integration Framework is included via the following two dependencies. &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 16px; background-color: rgba(0, 0, 0, 0.0470588); padding: 20px; color: rgba(0, 0, 0, 0.843137); text-align: start;"&gt;
-       &lt;div&gt;
-         implementation &amp;lsquo;org.apache.camel:camel-spring-boot-starter:2.23.0&amp;rsquo;
-       &lt;/div&gt;
-       &lt;div&gt;
-         implementation &amp;lsquo;org.flowable:flowable-camel:6.4.1&amp;rsquo;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; text-align: start;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px;"&gt;First dependency ties Camel into the Spring Boot App framework,&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; text-align: start;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px;"&gt;second dependency ties Camel into the Flowable Process Engine, via the so-called Camel Task, which enables the delegation of any third party system integration into a Flowable Process Model to a Camel Route (more on that later)&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" text-align: start;"&gt;
-       &lt;div style=" box-sizing: border-box; background-color: rgba(0, 0, 0, 0);"&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/70984ef727591ef6b113e9bfd74f3816.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;&lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;span style="font-family: medium-content-sans-serif-font, &amp;quot;Lucida Grande&amp;quot;, &amp;quot;Lucida Sans Unicode&amp;quot;, &amp;quot;Lucida Sans&amp;quot;, Geneva, Arial, sans-serif; font-weight: bold; color: rgba(0, 0, 0, 0.843137); font-size: 34px; background-color: rgb(255, 255, 255);"&gt;Bootstrapping Flowable Boot App &lt;/span&gt;
-  &lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-   &lt;span style="background-color: rgb(204, 204, 204); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; --inversion-type-background-color: simple; --inversion-type-color: simple;"&gt;&lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;To get a barebone Flowable S&lt;/span&gt;&lt;/span&gt;
-   &lt;span style="background-color: rgb(204, 204, 204); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; --inversion-type-background-color: simple; --inversion-type-color: simple;"&gt;&lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;pring App running, follow these steps: &lt;/span&gt;&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-   &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;Introduce an application.properties with the following properties. &lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div style=" font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 16px; background-color: rgba(0, 0, 0, 0.0470588); padding: 20px; color: rgba(0, 0, 0, 0.843137); text-align: start;"&gt;
-   &lt;div&gt;
-     management.endpoints.web.exposure.include=*
-   &lt;/div&gt;
-   &lt;div&gt;
-     management.endpoint.health.show-details=
-    &lt;span style="font-style: italic;"&gt;when_authorized&lt;/span&gt;
-   &lt;/div&gt;
-   &lt;div&gt;
-     flowable.idm.password-encoder=spring_delegating
-   &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-   &lt;span style="background-color: rgb(204, 204, 204); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; --inversion-type-background-color: simple; --inversion-type-color: simple;"&gt;&lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;Provide a SecurityConfiguration class. &lt;/span&gt;&lt;/span&gt;
-   &lt;span style="background-color: rgb(204, 204, 204); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; --inversion-type-background-color: simple; --inversion-type-color: simple;"&gt;&lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt; &lt;/span&gt;&lt;/span&gt;
-   &lt;br&gt;
-  &lt;/div&gt;
-  &lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-   &lt;span style="background-color: rgb(204, 204, 204); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; --inversion-type-background-color: simple; --inversion-type-color: simple;"&gt;&lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;
-&amp;ldquo;`  java&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;The  staged event-driven architecture ( SEDA) refers to an approach to  software architecture that decomposes a complex, event-driven  application into a set of stages connected by queues. It avoids the high overhead associated with  thread-based  concurrency models (i.e. locking, unlocking, and polling for locks), and decouples event and thread scheduling from application logic. 
-  As we can see after the retrieval of the message we simulate some processing&lt;br&gt;
-   .log(LoggingLevel. INFO, logger, &amp;quot;External System Processing&amp;hellip;&amp;rdquo;) 
-  .transform().simple(&amp;ldquo;Processed: ${property.input}, { Result: OK }&amp;rdquo;); &lt;/p&gt;
-
-&lt;p&gt;Finally, we return the result back to our Saga process&lt;br&gt;
-   from(&amp;ldquo;seda:continueAsync&amp;rdquo;) 
-          .to(&amp;ldquo;flowable:saga1Process:receiveAsyncTask&amp;rdquo;); &lt;/p&gt;
-
-&lt;p&gt;That’s it. So any kind of external system integration we can delegate to Camel routes, which are providing powerful integration concepts. As for example instead of implementing a retry mechanism as part of the Saga process, one can use an exception handler with a re-delivery policy also know, as the  RedeliveryErrorHandler  in Camel. This error handler will allow you to set the number of retries and also set things like the delay between retries etc.&lt;br&gt;
-   public void configure()  { 
-      // ExceptionHandler with RedliveryPolicy 
-      errorHandler(defaultErrorHandler() 
-              .maximumRedeliveries(3) 
-              .backOffMultiplier(4) 
-              .retryAttemptedLogLevel(LoggingLevel. WARN)); &lt;/p&gt;
-
-&lt;p&gt;Receive Async Response Task   This Service Receiver Task will serve as the bridge back from Camel as explained above.&lt;br&gt;
- Save Output Task   Finally, we print out the produce Camel message which was passed over.  &lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt; java 
-  package net.cloudburo.task.saga1; &lt;/p&gt;
-
-&lt;p&gt;import org.flowable.engine.delegate.DelegateExecution; 
-  import org.flowable.engine.delegate.JavaDelegate; 
-  import org.slf4j.Logger; 
-  import org.slf4j.LoggerFactory; &lt;/p&gt;
-
-&lt;p&gt;import java.util.Map; &lt;/p&gt;
-
-&lt;p&gt;public class SaveOutputTask implements JavaDelegate { &lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;  private Logger logger = LoggerFactory.getLogger(SaveOutputTask.class); 
-
-
-  @SuppressWarnings("unchecked") 
-  @Override 
-  public void execute(DelegateExecution execution) { 
-      Map&amp;lt;String, String&amp;gt; outputMap = (Map&amp;lt;String, String&amp;gt;) execution.getVariable("outputMap"); 
-      outputMap.put("outputValue", (String) execution.getVariable("camelBody")); 
-      logger.info("CamelBody: " + execution.getVariable("camelBody")); 
-  } 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;} &lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;
-&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&amp;gt;&amp;lt;/div&amp;gt;
-  &amp;lt;span style="font-family: medium-content-sans-serif-font, &amp;amp;quot;Lucida Grande&amp;amp;quot;, &amp;amp;quot;Lucida Sans Unicode&amp;amp;quot;, &amp;amp;quot;Lucida Sans&amp;amp;quot;, Geneva, Arial, sans-serif; font-weight: bold; color: rgba(0, 0, 0, 0.843137); font-size: 34px; background-color: rgb(255, 255, 255);"&amp;gt;Spring Boot App &amp;lt;/span&amp;gt;
-  &amp;lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&amp;gt;
-   &amp;lt;span style="background-color: rgb(204, 204, 204); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;amp;quot;Times New Roman&amp;amp;quot;, Times, serif; font-size: 21px; --inversion-type-background-color: simple; --inversion-type-color: simple;"&amp;gt;&amp;lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;amp;quot;Times New Roman&amp;amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&amp;gt;Within the &amp;lt;/span&amp;gt;&amp;lt;span style=" font-family: Menlo, Monaco, &amp;amp;quot;Courier New&amp;amp;quot;, Courier, monospace; font-size: 16px; color: rgba(0, 0, 0, 0.843137); background-color: rgba(0, 0, 0, 0.0470588); font-style: italic;"&amp;gt;SpringBootApplication&amp;lt;/span&amp;gt;&amp;lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;amp;quot;Times New Roman&amp;amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&amp;gt; we introduce a &amp;lt;/span&amp;gt;&amp;lt;span style=" font-family: Menlo, Monaco, &amp;amp;quot;Courier New&amp;amp;quot;, Courier, monospace; font-size: 16px; color: rgba(0, 0, 0, 0.843137); background-color: rgba(0, 0, 0, 0.0470588);"&amp;gt;CommandLineRunner&amp;lt;/span&amp;gt;&amp;lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;amp;quot;Times New Roman&amp;amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&amp;gt;which will trigger our process model. &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&amp;gt;
-   &amp;lt;span style="background-color: rgb(204, 204, 204); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;amp;quot;Times New Roman&amp;amp;quot;, Times, serif; font-size: 21px; --inversion-type-background-color: simple; --inversion-type-color: simple;"&amp;gt;&amp;lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;amp;quot;Times New Roman&amp;amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&amp;gt;&amp;amp;lt;code&amp;amp;gt; java&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-    @SpringBootApplication
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-    public class DemoApplication {
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-        Logger logger = LoggerFactory.getLogger(DemoApplication.class);
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-        public static void main(String[] args) {
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-            SpringApplication.run(DemoApplication.class, args);
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-        }
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-        @Bean
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-        public CommandLineRunner init(final RepositoryService repositoryService,
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                                      final RuntimeService runtimeService,
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                                      final TaskService taskService) {
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-            return new CommandLineRunner() {
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                @Override
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                public void run(String... strings) throws Exception {
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                    ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery();
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                    logger.info("Number of process definitions : " + query.count());
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                    List&amp;amp;lt;ProcessDefinition&amp;amp;gt; definitions = query.list();
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                    for (ProcessDefinition definition : definitions) {
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                        logger.info("Loaded Process Definitions: "+definition.getKey());
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                    }
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                    // Execute the Saga1 Process
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                    runtimeService.startProcessInstanceByKey("saga1Process");
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-                }
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-            };
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style="color: rgb(0, 0, 0); text-align: start; --inversion-type-color: simple;"&amp;gt;
-        }
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&amp;gt;
-   &amp;lt;span style="color: rgb(0, 0, 0); --inversion-type-color: simple;"&amp;gt;}&amp;lt;/span&amp;gt;
-   &amp;lt;br&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&amp;gt;
-   &amp;lt;span style="background-color: rgb(204, 204, 204); color: rgba(0, 0, 0, 0.843137); font-family: medium-content-serif-font, Georgia, Cambria, &amp;amp;quot;Times New Roman&amp;amp;quot;, Times, serif; font-size: 21px; --inversion-type-background-color: simple; --inversion-type-color: simple;"&amp;gt;&amp;lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;amp;quot;Times New Roman&amp;amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&amp;gt;&amp;amp;lt;/code&amp;amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;amp;quot;Times New Roman&amp;amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&amp;gt;
-   &amp;lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;amp;quot;Times New Roman&amp;amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&amp;gt;f we restart our application: &amp;lt;/span&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style=" font-family: Menlo, Monaco, &amp;amp;quot;Courier New&amp;amp;quot;, Courier, monospace; font-size: 16px; background-color: rgba(0, 0, 0, 0.0470588); padding: 20px; color: rgba(0, 0, 0, 0.843137); text-align: start;"&amp;gt;
-   &amp;lt;span style=" font-family: Menlo, Monaco, &amp;amp;quot;Courier New&amp;amp;quot;, Courier, monospace; font-size: 16px; background-color: rgba(0, 0, 0, 0.0470588); color: rgba(0, 0, 0, 0.843137);"&amp;gt;gradle bootApp&amp;lt;/span&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;amp;quot;Times New Roman&amp;amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&amp;gt;
-   &amp;lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;amp;quot;Times New Roman&amp;amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&amp;gt;we can see on the console the processing output of our Saga process. &amp;lt;/span&amp;gt;
-  &amp;lt;/div&amp;gt;
-  &amp;lt;div style=" text-align: start;"&amp;gt;
-   &amp;lt;div style=" box-sizing: border-box; background-color: rgba(0, 0, 0, 0);"&amp;gt;
-
-   &amp;lt;img class='article  img-thumbnail' src='/images/26342dcaf983891e3fa4a4b0cbdd5fff.png'&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;Last but not least you may also run unit tests via &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 16px; background-color: rgba(0, 0, 0, 0.0470588); padding: 20px; color: rgba(0, 0, 0, 0.843137); text-align: start;"&gt;
-       &lt;span style=" font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, Courier, monospace; font-size: 16px; background-color: rgba(0, 0, 0, 0.0470588); color: rgba(0, 0, 0, 0.843137);"&gt;gradle test&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;To wrap it up: As one can see allows Flowable with the concept of Camel Task a powerful integration of third-party systems into a BPMN process flow. The approach will ensure that the orchestration flow will not be overloaded by enterprise integration logic which is offloaded to Camel Routes. &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style=" font-family: medium-content-serif-font, Georgia, Cambria, &amp;quot;Times New Roman&amp;quot;, Times, serif; font-size: 21px; color: rgba(0, 0, 0, 0.843137); background-color: rgb(255, 255, 255);"&gt;You can check out the code here: &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div style=" font-size: 21px; text-align: start; background-color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em;"&gt;
-       &lt;span style="background-color: rgb(204, 204, 204); color: rgba(0, 0, 0, 0.541176); font-family: medium-content-sans-serif-font, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; font-size: 15px; --inversion-type-background-color: simple; --inversion-type-color: simple;"&gt;&lt;a href="https://github.com/talfco/tutorial-flowable-saga" style="font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; letter-spacing: 0px; font-size: 18px; overflow: hidden; max-height: 280px; box-sizing: border-box; color: rgba(0, 0, 0, 0.901961); box-shadow: rgba(0, 0, 0, 0.0392157) 0px 1px 4px, rgba(0, 0, 0, 0.0901961) 0px 0px 0px 1px inset; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgba(255, 255, 255, 0); outline: 0px; vertical-align: middle; line-height: 1.3;"&gt;talfco/tutorial-flowable-saga&lt;/a&gt;&lt;/span&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
   <entry>
     <title>Seeing Theory - Excellent Statistics Visualization</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/04/08/seeing-theory-excellent-statistics-visualization.html"/>
@@ -10724,6 +10367,57 @@
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="https://www.blog.google/topics/machine-learning/now-anyone-can-explore-machine-learning-no-coding-required/"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Google Cloud and GDPR</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html"/>
+    <id>https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html</id>
+    <published>2017-10-12T09:31:29+00:00</published>
+    <updated>2019-03-15T11:48:07+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Being personally involved in GDPR projects, it’s always interesting to understand how different organisation are tackling this rather complex regulatory obligations.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        A good example to learn from is Google, which provides  clear guidelines and explanations for their customers. The below link, points you to the Google Cloud GPR web site.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As they state:
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;span style="font-style: italic;"&gt;&amp;ldquo;You can count on the fact that Google is committed to GDPR compliance across Google Cloud services. We are also committed to helping our customers with their GDPR compliance journey by providing robust privacy and security protections built into our services and contracts over the years.&lt;/span&gt;
+       &lt;span style="font-style: italic;"&gt;”&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;a style="font-weight: bold;" href="https://www.google.com/cloud/security/gdpr/"&gt;Link to the Google Cloud GDPR Website&lt;/a&gt;.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
