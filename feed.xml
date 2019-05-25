@@ -5,10 +5,38 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-04-08T20:11:07+00:00</updated>
+  <updated>2019-05-25T15:22:44+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Very well done video tutorial by Bryan Lange, which describes Classification Alg</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/05/25/very-well-done-video-tutorial-by-bryan-lange-which-describes-classification-alg.html"/>
+    <id>https://dev.cloudburo.net/2019/05/25/very-well-done-video-tutorial-by-bryan-lange-which-describes-classification-alg.html</id>
+    <published>2019-05-25T15:22:44+00:00</published>
+    <updated>2019-05-25T15:22:47+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Very well done video tutorial by Bryan Lange, which describes Classification Algorithms in Python by using sklearn..
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;div class="responsive-video"&gt;
+        &lt;iframe src="https://www.youtube.com/embed/y8J6ggsLSfw?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Seeing Theory - Excellent Statistics Visualization</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/04/08/seeing-theory-excellent-statistics-visualization.html"/>
@@ -10367,57 +10395,6 @@
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="https://www.blog.google/topics/machine-learning/now-anyone-can-explore-machine-learning-no-coding-required/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Google Cloud and GDPR</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html"/>
-    <id>https://dev.cloudburo.net/2017/10/12/google-cloud-and-gdpr.html</id>
-    <published>2017-10-12T09:31:29+00:00</published>
-    <updated>2019-03-15T11:48:07+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Being personally involved in GDPR projects, it’s always interesting to understand how different organisation are tackling this rather complex regulatory obligations.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        A good example to learn from is Google, which provides  clear guidelines and explanations for their customers. The below link, points you to the Google Cloud GPR web site.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        As they state:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;&amp;ldquo;You can count on the fact that Google is committed to GDPR compliance across Google Cloud services. We are also committed to helping our customers with their GDPR compliance journey by providing robust privacy and security protections built into our services and contracts over the years.&lt;/span&gt;
-       &lt;span style="font-style: italic;"&gt;”&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;a style="font-weight: bold;" href="https://www.google.com/cloud/security/gdpr/"&gt;Link to the Google Cloud GDPR Website&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
