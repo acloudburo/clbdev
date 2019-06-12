@@ -241,6 +241,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/06/12/ethcc-keynote-by-matan-field-daostack.html</loc>
+    <lastmod>2019-06-12</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/04/25/docker-small-hints-3-ssh-into-your-aws-elastic-beanstalk-component.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>0.7</priority>
@@ -1045,6 +1051,24 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/ethereum.html</loc>
+    <lastmod>2019-03-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/crypto.html</loc>
+    <lastmod>2019-03-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/dao.html</loc>
+    <lastmod>2019-03-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/docker.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>0.9</priority>
@@ -1135,12 +1159,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/tags/ethereum.html</loc>
-    <lastmod>2019-03-15</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net/tags/diagram.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>0.9</priority>
@@ -1154,12 +1172,6 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/tags/deutsch.html</loc>
-    <lastmod>2019-03-15</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/tags/crypto.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
@@ -1192,6 +1204,18 @@
     <loc>https://dev.cloudburo.net/2019.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/06.html</loc>
+    <lastmod>2019-03-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/06/12.html</loc>
+    <lastmod>2019-03-15</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
