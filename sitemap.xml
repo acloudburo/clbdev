@@ -703,6 +703,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/05/25/very-well-done-video-tutorial-by-bryan-lange-which-describes-classification-algo.html</loc>
+    <lastmod>2019-06-12</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2018/11/06/hidoras-blog-re-published-cloudburo-article.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>0.7</priority>
@@ -1183,6 +1189,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/statistics.html</loc>
+    <lastmod>2019-03-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/devops.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>0.9</priority>
@@ -1190,12 +1202,6 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/tags/legal.html</loc>
-    <lastmod>2019-03-15</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/tags/statistics.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
@@ -1214,6 +1220,18 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/2019/06/12.html</loc>
+    <lastmod>2019-03-15</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/05.html</loc>
+    <lastmod>2019-03-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/05/25.html</loc>
     <lastmod>2019-03-15</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>

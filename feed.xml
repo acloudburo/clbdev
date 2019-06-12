@@ -117,6 +117,34 @@
 &lt;/div&gt;</content>
   </entry>
   <entry>
+    <title>Very well done video tutorial by Bryan Lange, which describes Classification Algorithms</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/05/25/very-well-done-video-tutorial-by-bryan-lange-which-describes-classification-algo.html"/>
+    <id>https://dev.cloudburo.net/2019/05/25/very-well-done-video-tutorial-by-bryan-lange-which-describes-classification-algo.html</id>
+    <published>2019-05-25T15:22:44+00:00</published>
+    <updated>2019-06-12T20:31:46+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        Very well done video tutorial by Bryan Lange, which describes Classification Algorithms in Python by using sklearn.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;div class="responsive-video"&gt;
+        &lt;iframe src="https://www.youtube.com/embed/y8J6ggsLSfw?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
     <title>Seeing Theory - Excellent Statistics Visualization</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/04/08/seeing-theory-excellent-statistics-visualization.html"/>
     <id>https://dev.cloudburo.net/2019/04/08/seeing-theory-excellent-statistics-visualization.html</id>
@@ -10400,80 +10428,6 @@
       &lt;div&gt;
        &lt;span style="color: rgb(83, 69, 64); font-size: 16px;"&gt;Amazon’s playing a very long game. The seeds planted today will enable a new wave of exciting (and society altering) automation as robots clean your home, walk your dog, and deliver eggs.&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Now anyone can explore machine learning, no coding required</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html"/>
-    <id>https://dev.cloudburo.net/2017/10/12/now-anyone-can-explore-machine-learning-no-coding-required.html</id>
-    <published>2017-10-12T10:24:16+00:00</published>
-    <updated>2019-03-15T11:48:07+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;img class="pull-left img-responsive img-thumbnail article" src="/images/325472601571f31e1bf00674c368d335.gif" /&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-      &lt;/div&gt;
-      &lt;div style=""&gt;
-        I like Google for their approach, how they introduce new technology concepts for freshmen. A good example is the teachablemachine, an interactive machine learning experiment. As they state
-      &lt;/div&gt;
-      &lt;div style=""&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div style=""&gt;
-       &lt;div&gt;
-        &lt;span style="font-style: italic;"&gt;&amp;ldquo;From helping you find &lt;/span&gt;
-        &lt;a style="font-style: italic;" href="https://www.youtube.com/watch?v=bHvf7Tagt18&amp;amp;index=11&amp;amp;list=PLeqAcoTy5741GXa8rccolGQaj_nVGw76g"&gt;your favorite dog photos&lt;/a&gt;
-        &lt;span style="font-style: italic;"&gt;, to &lt;/span&gt;
-        &lt;a style="font-style: italic;" href="https://www.youtube.com/watch?v=_rdINNHLYaQ"&gt;helping farmers in Japan sort cucumbers&lt;/a&gt;
-        &lt;span style="font-style: italic;"&gt;, machine learning is changing the way people use code to solve problems. But how does machine learning actually work? We wanted to make it easier for people who are curious about this technology to learn more about it. So we created &lt;/span&gt;
-        &lt;a style="font-style: italic;" href="http://g.co/teachablemachine"&gt;Teachable Machine&lt;/a&gt;
-        &lt;span style="font-style: italic;"&gt;, a simple experiment that lets you teach a machine using your camera—live in the browser, no coding required.&lt;/span&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-      &lt;/div&gt;
-      &lt;div style=""&gt;
-       &lt;div&gt;
-        &lt;span style="font-style: italic;"&gt;Teachable Machine is built with a new library called &lt;/span&gt;
-        &lt;a style="font-style: italic;" href="https://pair-code.github.io/deeplearnjs/"&gt;deeplearn.js&lt;/a&gt;
-        &lt;span style="font-style: italic;"&gt;, which makes it easier for any web developer to get into machine learning by training and running neural nets right in the browser. We’ve also &lt;/span&gt;
-        &lt;a style="font-style: italic;" href="https://github.com/googlecreativelab/teachable-machine"&gt;open sourced the code&lt;/a&gt;
-        &lt;span style="font-style: italic;"&gt; to help inspire others to make new experiments.&amp;rdquo;&lt;/span&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-      &lt;/div&gt;
-      &lt;div style=""&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-         Check it out at
-        &lt;a href="http://g.co/teachablemachine"&gt;g.co/teachablemachine&lt;/a&gt;.
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="https://www.blog.google/topics/machine-learning/now-anyone-can-explore-machine-learning-no-coding-required/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
