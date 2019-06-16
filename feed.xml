@@ -121,7 +121,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/05/25/very-well-done-video-tutorial-by-bryan-lange-which-describes-classification-algo.html"/>
     <id>https://dev.cloudburo.net/2019/05/25/very-well-done-video-tutorial-by-bryan-lange-which-describes-classification-algo.html</id>
     <published>2019-05-25T15:22:44+00:00</published>
-    <updated>2019-06-12T20:31:46+00:00</updated>
+    <updated>2019-06-16T11:24:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -130,7 +130,20 @@
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;div&gt;
-        Very well done video tutorial by Bryan Lange, which describes Classification Algorithms in Python by using sklearn.
+        Very well done video tutorial by Bryan Lange, which describes Classification Algorithms in Python .
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;i&gt;&amp;ldquo;Scikit-learn (formerly scikits.learn) is a free software machine learning library for the Python programming language.[3] It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.&amp;rdquo;&lt;/i&gt; (
+       &lt;a href="https://en.wikipedia.org/wiki/Scikit-learn"&gt;Wikipedia&lt;/a&gt;)
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
@@ -140,6 +153,8 @@
         &lt;iframe src="https://www.youtube.com/embed/y8J6ggsLSfw?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
        &lt;/div&gt;
       &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Scikit-learn"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
