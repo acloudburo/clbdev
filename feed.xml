@@ -83,29 +83,30 @@
     <title>DAO Project Work Announcement (PolkaDAO Proposal)</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/07/01/dao-project-work-announcement-polkadao-proposal.html"/>
     <id>https://dev.cloudburo.net/2019/07/01/dao-project-work-announcement-polkadao-proposal.html</id>
-    <published>2019-07-01T05:23:19+00:00</published>
-    <updated>2019-07-01T05:23:23+00:00</updated>
+    <published>2019-07-01T05:23:18+00:00</published>
+    <updated>2019-07-01T21:19:32+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/292192529c54ba028740d310efc4f0d1.png'&gt;&lt;/p&gt;
-  
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;div&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;div&gt;
+        My first proposal for the
+       &lt;a href="https://alchemy.daostack.io/"&gt;Alchemy DAOstack&lt;/a&gt; based DAO (Distributed Autonomous Organization) &amp;ldquo;PolkaDAO&amp;rdquo; got approved. The proposal will deliver as a first milestone the initial library of a Java-based Polkadot/Substrate library. 
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/292192529c54ba028740d310efc4f0d1.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        My first proposal for the
-       &lt;a href="https://alchemy.daostack.io/"&gt;Alchemy DAOstack&lt;/a&gt; based DAO (Distributed Autonomous Organization) &amp;ldquo;PolkaDAO&amp;rdquo; got approved. The proposal will deliver as a first milestone the initial library of a Java-based Polkadot/Substrate library. 
-      &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
@@ -131,13 +132,11 @@
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        As part of this work, I earned 0.02% reputation into the DAO governance organization.
+        As part of this work, I earned 0.61% reputation into the PolkaAO governance organization.
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="https://substrate.dev/docs/en/overview/low-level-data-format"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
