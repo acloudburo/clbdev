@@ -337,6 +337,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/07/01/dao-project-work-announcement-kyberdao-proposal.html</loc>
+    <lastmod>2019-07-01</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/05/27/docker-small-hints-4-cleaning-up-your-local-zombie-docker-images.html</loc>
     <lastmod>2019-06-23</lastmod>
     <priority>0.7</priority>

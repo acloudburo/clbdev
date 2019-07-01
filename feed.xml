@@ -5,10 +5,80 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-07-01T05:23:19+00:00</updated>
+  <updated>2019-07-01T06:07:44+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>DAO Project Work Announcement (KyberDAO Proposal)</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/07/01/dao-project-work-announcement-kyberdao-proposal.html"/>
+    <id>https://dev.cloudburo.net/2019/07/01/dao-project-work-announcement-kyberdao-proposal.html</id>
+    <published>2019-07-01T06:07:44+00:00</published>
+    <updated>2019-07-01T06:07:50+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        My first proposal for the
+       &lt;a href="https://alchemy.daostack.io/"&gt;Alchemy DAOstack&lt;/a&gt; based DAO (Distributed Autonomous Organization) &amp;ldquo;KyberDAO&amp;rdquo; got approved and funded. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/86bda129baa673f16c2ee6977b14cc96.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The proposal covers the creation of a Medium article with the title “Hello World Kyber Network for Java”. The article will provide a Java tutorial of the three Web3 Kyber swap scenarios and serves as an introduction for Java Developer’s to the Kyber Network. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        The article will be published as part of the Coinmonks Medium publication  and will be accompanied by a Github Tutorial repository. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        You can find the Proposal (managed as part of the DAOstack Ethereum contract)
+       &lt;a href="https://alchemy.daostack.io/dao/0x6bee9b81e434f7afce72a43a4016719315069539/proposal/0x25ea4cdb14c844bcf44691e588305b2d157fae0d696c5a7440c360691243c955"&gt;here&lt;/a&gt;. The project progress/documentation will be managed in a dedicated Github project: 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;a href="https://github.com/talfco/clb-kyber-java-tutorial"&gt;&lt;a href="https://github.com/talfco/clb-kyber-java-tutorial"&gt;https://github.com/talfco/clb-kyber-java-tutorial&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As part of this work, I earned 0.02% reputation into the KyberDAO governance organization.
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="https://alchemy.daostack.io/dao/0x6bee9b81e434f7afce72a43a4016719315069539/proposal/0x25ea4cdb14c844bcf44691e588305b2d157fae0d696c5a7440c360691243c955"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>DAO Project Work Announcement (PolkaDAO Proposal)</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/07/01/dao-project-work-announcement-polkadao-proposal.html"/>
@@ -10342,101 +10412,6 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Introduction to Blockstack</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html"/>
-    <id>https://dev.cloudburo.net/2017/11/14/introduction-to-blockstack.html</id>
-    <published>2017-11-14T09:10:46+00:00</published>
-    <updated>2019-06-23T21:45:40+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        An interesting blockchain based solution to watch is Blockstack. Blockstack is a new internet for decentralized apps.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        A very good and easy to read overview is given in their
-       &lt;a href="https://blockstack.com/blockstack_overview.pdf"&gt;Blockstack Overview&lt;/a&gt; document.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Blockstack aims to accelerate and facilitate the next way of computing, which going to be a shift away from computin towards decentralized computing.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        When you download Blockstack it will install everything they need to gain access to the new internet of decentralized apps.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        A user will create an account and a keychain is created on its user device. This keychain lets them sign and encrypt their files locally before it is sync and backed up to the cloud, enabling true data ownership. So in this context Blockstack is acting as intermediate to a zero knowledge cloud store.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        As user you then create and verify a BlockstackID, you truly own (and stored in Blockstack blockchain). There is a strong protection against account hijacking and impersonation.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Below you see my global BlockstackId “felixk.id”. Blockstack verified for the below 4 social accounts that I’m the owner of it.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/f4bbd66ddbf3b06b66adc00fd0cb2a75.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        At the foundation of the Blockstack platform is the Blockstack blockchain and t’a Peer 2 Peer network, which is building the secure backbone of the solution.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/be6c08d99e9baa2ff12ac5a8fdfd912c.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The Blockchain Name System (BNS) is a replacement for DNS and is meant to provide similar functionality without any central root servers. In BNS, names are owned by cryptographic key pairs. I.e. felixk.id is a named owned by my cryptograhpic key pair, stored in locally on my device as a Blockstack key chain.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        So head over to the introduction paper, which points you to other useful documentation: 
-       &lt;a href="https://blockstack.com/blockstack_overview.pdf"&gt;Blockstack Overview&lt;/a&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
