@@ -745,6 +745,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/07/07/ethereum-transactions-explained-an-erc-20-token-transfer.html</loc>
+    <lastmod>2019-07-07</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2016/06/21/a-terminology-guide-to-daos-dacs-das-and-more.html</loc>
     <lastmod>2019-06-23</lastmod>
     <priority>0.7</priority>
@@ -1234,6 +1240,12 @@
     <loc>https://dev.cloudburo.net/2019/07.html</loc>
     <lastmod>2019-06-23</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/07/07.html</loc>
+    <lastmod>2019-06-23</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

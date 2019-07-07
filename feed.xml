@@ -5,10 +5,174 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-07-01T06:07:44+00:00</updated>
+  <updated>2019-07-07T09:09:14+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Ethereum Transactions Explained: An ERC-20 Token Transfer</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/07/07/ethereum-transactions-explained-an-erc-20-token-transfer.html"/>
+    <id>https://dev.cloudburo.net/2019/07/07/ethereum-transactions-explained-an-erc-20-token-transfer.html</id>
+    <published>2019-07-07T09:09:14+00:00</published>
+    <updated>2019-07-07T09:09:22+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;div&gt;
+        &lt;div&gt;
+          When starting with Ethereum based Transactions it&amp;rsquo;s sometimes confusing to understand what&amp;rsquo;s going on, behind the hood, and which of the addresses plays what kind of role.
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;br&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          Thanks to 
+         &lt;a href="https://etherscan.io/"&gt;&lt;a href="https://etherscan.io"&gt;https://etherscan.io&lt;/a&gt; /&lt;/a&gt; it&amp;rsquo;s quite easy to follow a transaction flow and reverese engineer the overall flow.
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;br&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          In this article I explain a Ethereum ERC-20 token transaction scenario:
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;br&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-weight: bold; font-style: italic;"&gt;&amp;ldquo;Send 900 KNC (KyberNetwork) Token for a Wallet with the address (0xe443) to the address (0x227).&amp;rdquo; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;br&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          This resulted in the following transaction with
+         &lt;i style="font-weight: bold;"&gt;Transaction Hash &lt;/i&gt; 0xb39:
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;br&gt;
+        &lt;/div&gt;
+        &lt;ul&gt;
+         &lt;li&gt;
+          &lt;div&gt;
+            The
+           &lt;span style="font-style: italic; font-weight: bold;"&gt;From&lt;/span&gt; field, represents the blockchain address of the sender Wallet (0xe443)
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li&gt;
+          &lt;div&gt;
+            The
+           &lt;span style="font-style: italic; font-weight: bold;"&gt;To&lt;/span&gt; field, represents the KyberNetwork Token contract (0xdd9), which holds all Kyber token assets
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li&gt;
+          &lt;div&gt;
+           &lt;span style="font-style: italic; font-weight: bold;"&gt;Tokens Transferred&lt;/span&gt; field, shows in the
+           &lt;span style="font-weight: bold;"&gt;From&lt;/span&gt; field the sender of token (MEW Wallet) and in the
+           &lt;span style="font-weight: bold;"&gt;For&lt;/span&gt; field the receiver address (0x227) 
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li&gt;
+          &lt;div&gt;
+            The
+           &lt;span style="font-style: italic; font-weight: bold;"&gt;Transaction Fee&lt;/span&gt;
+           &lt;span style="font-style: italic;"&gt; &lt;/span&gt;is 0.13 USD.
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div&gt;
+         &lt;br&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          It&amp;rsquo;s important to realize that a ERC-20 token transfer will go to token contract address
+         &lt;u&gt;and not directly to receiver&lt;/u&gt; address (as for example when transfer Ethereum coins directly). The receiver address is configured as additional parameter of the contract.
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;br&gt;
+        &lt;/div&gt;
+        &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/6cf59f1a054a097485f908ccaa2cb35a.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;          &lt;/div&gt;
+        &lt;div&gt;
+         &lt;br&gt;
+        &lt;/div&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           If we check out the KyberNetwork contract (0x99d), we can see that the
+          &lt;span style="font-weight: bold;"&gt;Total Supply&lt;/span&gt; of tokens is around 214&amp;#39;0250&amp;#39;142,&amp;hellip; tokens (KNC) which results in a current
+          &lt;span style="font-style: italic; font-weight: bold;"&gt;Fully dilluted Market Cap&lt;/span&gt; of 52&amp;#39;071&amp;#39;916 USD (token multiplied by its current
+          &lt;span style="font-style: italic; font-weight: bold;"&gt;Price&lt;/span&gt;)
+          &lt;span style="font-style: italic; font-weight: bold;"&gt;.&lt;/span&gt;
+          &lt;span style="font-style: italic;"&gt;  &lt;/span&gt;
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Currently there are
+          &lt;span style="font-style: italic;"&gt;53&amp;#39;219&lt;/span&gt;
+          &lt;span style="font-style: italic; font-weight: bold;"&gt;Holders&lt;/span&gt; (i.e. Ethereum
+          &lt;span style="font-style: italic; font-weight: bold;"&gt; &lt;/span&gt;addresses, holding KNC tokens)
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Having
+          &lt;span style="font-weight: bold;"&gt;&lt;span style="font-weight: bold; font-style: italic;"&gt;Filtered by Token Holder&lt;/span&gt; &lt;/span&gt;set to my receiver address (0x227) , will show the actual balance of 900 KNC (of a value of around 218 USD)
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         It should be now clear, a ERC-20 contract will hold a list of all token holders (53&amp;#39;219 addresses) with the actual token assets,
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/b2b6f4ed2d8e7df0e9142574dd44d583.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         Checking my Ethereum Address directly (0x227) will show the Token received.
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/409ec3b19a2598baf0684cf3a2ed55f3.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>DAO Project Work Announcement (KyberDAO Proposal)</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/07/01/dao-project-work-announcement-kyberdao-proposal.html"/>
@@ -10362,56 +10526,6 @@
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://blogs.worldbank.org/ic4d/ten-principles-identification-sustainable-development"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>All You Wanted To Know About Bitcoin</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html"/>
-    <id>https://dev.cloudburo.net/2017/12/04/all-you-wanted-to-know-about-bitcoin.html</id>
-    <published>2017-12-04T19:05:49+00:00</published>
-    <updated>2019-06-23T21:45:40+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/998896dbd2d1c44e630e0c50b97ca006.png'&gt;&lt;/p&gt;
-  
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        The team behind
-       &lt;a href="https://bitcoinplay.net/58-insane-facts-about-bitcoin/"&gt;Bitcoin Play&lt;/a&gt;, is looking at the last 10 years of bitcoin and produced a very nice and informative infographic “
-       &lt;a href="https://bitcoinplay.net/58-insane-facts-about-bitcoin/"&gt;62 insane facts about bitcoin&lt;/a&gt;”. It all started with the release of the
-       &lt;a href="https://bitcoin.org/bitcoin.pdf"&gt;Bitcoin Whitepaper in 2007&lt;/a&gt;, which describes Bitcoin, as a Peer-to-Peer Electronic Cash System.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        It will be interesting to see how the world will look after twenty years of bitcoin … will it still be there ? A deep deep dive into  this question (ideal for a weekend read) by Daniel Jeffries can be found on the
-       &lt;a href="https://hackernoon.com/what-will-bitcoin-look-like-in-twenty-years-7e75481a798c"&gt;hackernoon blog&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;a href="https://bitcoinplay.net/58-insane-facts-about-bitcoin/"&gt;&lt;b&gt;Link to the full infographic&lt;/b&gt;&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>

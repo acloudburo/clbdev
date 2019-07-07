@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Ethereum Transactions Explained: An ERC-20 Token Transfer</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (20)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (3)</a>
+            <a href="/tags/dao.html" class="label label-default">dao (3)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (10)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (3)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (14)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/java.html" class="label label-default">java (2)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (5)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (5)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (6)</a>
+            <a href="/tags/python.html" class="label label-default">python (7)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (18)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/statistics.html" class="label label-default">statistics (2)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tut01.html" class="label label-default">tut01 (7)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (11)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2019.html" class="label label-primary">2019 (17)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2019/07/07/ethereum-transactions-explained-an-erc-20-token-transfer.html">Ethereum Transactions Explained: An ERC-20 Token Transfer</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  07.Jul 2019 | Tags <a class="label label-primary" href="/tags/blockchain.html">blockchain</a> <a class="label label-primary" href="/tags/crypto.html">crypto</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                   <div>
+                    <div>
+                      When starting with Ethereum based Transactions it&rsquo;s sometimes confusing to understand what&rsquo;s going on, behind the hood, and which of the addresses plays what kind of role.
+                    </div>
+                    <div>
+                     <br>
+                    </div>
+                    <div>
+                      Thanks to 
+                     <a href="https://etherscan.io/"><a href="https://etherscan.io">https://etherscan.io</a> /</a> it&rsquo;s quite easy to follow a transaction flow and reverese engineer the overall flow.
+                    </div>
+                    <div>
+                     <br>
+                    </div>
+                    <div>
+                      In this article I explain a Ethereum ERC-20 token transaction scenario:
+                    </div>
+                    <div>
+                     <br>
+                    </div>
+                    <div>
+                     <span style="font-weight: bold; font-style: italic;">&ldquo;Send 900 KNC (KyberNetwork) Token for a Wallet with the address (0xe443) to the address (0x227).&rdquo; </span>
+                    </div>
+                    <div>
+                     <br>
+                    </div>
+                    <div>
+                      This resulted in the following transaction with
+                     <i style="font-weight: bold;">Transaction Hash </i> 0xb39:
+                    </div>
+                    <div>
+                     <br>
+                    </div>
+                    <ul>
+                     <li>
+                      <div>
+                        The
+                       <span style="font-style: italic; font-weight: bold;">From</span> field, represents the blockchain address of the sender Wallet (0xe443)
+                      </div></li>
+                     <li>
+                      <div>
+                        The
+                       <span style="font-style: italic; font-weight: bold;">To</span> field, represents the KyberNetwork Token contract (0xdd9), which holds all Kyber token assets
+                      </div></li>
+                     <li>
+                      <div>
+                       <span style="font-style: italic; font-weight: bold;">Tokens Transferred</span> field, shows in the
+                       <span style="font-weight: bold;">From</span> field the sender of token (MEW Wallet) and in the
+                       <span style="font-weight: bold;">For</span> field the receiver address (0x227) 
+                      </div></li>
+                     <li>
+                      <div>
+                        The
+                       <span style="font-style: italic; font-weight: bold;">Transaction Fee</span>
+                       <span style="font-style: italic;"> </span>is 0.13 USD.
+                      </div></li>
+                    </ul>
+                    <div>
+                     <br>
+                    </div>
+                    <div>
+                      It&rsquo;s important to realize that a ERC-20 token transfer will go to token contract address
+                     <u>and not directly to receiver</u> address (as for example when transfer Ethereum coins directly). The receiver address is configured as additional parameter of the contract.
+                    </div>
+                    <div>
+                     <br>
+                    </div>
+                    <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/6cf59f1a054a097485f908ccaa2cb35a.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>          </div>
+                    <div>
+                     <br>
+                    </div>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                       If we check out the KyberNetwork contract (0x99d), we can see that the
+                      <span style="font-weight: bold;">Total Supply</span> of tokens is around 214&#39;0250&#39;142,&hellip; tokens (KNC) which results in a current
+                      <span style="font-style: italic; font-weight: bold;">Fully dilluted Market Cap</span> of 52&#39;071&#39;916 USD (token multiplied by its current
+                      <span style="font-style: italic; font-weight: bold;">Price</span>)
+                      <span style="font-style: italic; font-weight: bold;">.</span>
+                      <span style="font-style: italic;">  </span>
+                     </div></li>
+                    <li>
+                     <div>
+                       Currently there are
+                      <span style="font-style: italic;">53&#39;219</span>
+                      <span style="font-style: italic; font-weight: bold;">Holders</span> (i.e. Ethereum
+                      <span style="font-style: italic; font-weight: bold;"> </span>addresses, holding KNC tokens)
+                     </div></li>
+                    <li>
+                     <div>
+                       Having
+                      <span style="font-weight: bold;"><span style="font-weight: bold; font-style: italic;">Filtered by Token Holder</span> </span>set to my receiver address (0x227) , will show the actual balance of 900 KNC (of a value of around 218 USD)
+                     </div></li>
+                   </ul>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     It should be now clear, a ERC-20 contract will hold a list of all token holders (53&#39;219 addresses) with the actual token assets,
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/b2b6f4ed2d8e7df0e9142574dd44d583.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     Checking my Ethereum Address directly (0x227) will show the Token received.
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/409ec3b19a2598baf0684cf3a2ed55f3.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                  </div>
+                  <div>
+                   <br>
+                  </div></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2019 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>
