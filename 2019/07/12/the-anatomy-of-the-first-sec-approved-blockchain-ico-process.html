@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | The Anatomy of the first SEC approved Blockchain ICO process</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (21)</a>
+            <a href="/tags/blockstack.html" class="label label-default">blockstack (1)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (5)</a>
+            <a href="/tags/dao.html" class="label label-default">dao (3)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (10)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (3)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (15)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/java.html" class="label label-default">java (2)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (5)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (5)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (6)</a>
+            <a href="/tags/python.html" class="label label-default">python (7)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (18)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/statistics.html" class="label label-default">statistics (2)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tut01.html" class="label label-default">tut01 (7)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (11)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2019.html" class="label label-primary">2019 (19)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2019/07/12/the-anatomy-of-the-first-sec-approved-blockchain-ico-process.html">The Anatomy of the first SEC approved Blockchain ICO process</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  12.Jul 2019 | Tags <a class="label label-primary" href="/tags/blockchain.html">blockchain</a> <a class="label label-primary" href="/tags/blockstack.html">blockstack</a> <a class="label label-primary" href="/tags/crypto.html">crypto</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                   <div>
+                     On 11th July 2019, the United States Securities and Exchange Comission (SEC) has approved a $28 million Reg A+ offering for decentralized Internet company Blockstack.
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     This is the first time that a Crypto offering has received SEC qualification and it will chart a way forward for US small business funding in the future. 
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     According to a
+                    <a href="https://www.coindesk.com/blockstack-plans-one-of-the-first-reg-a-sec-approved-token-offerings">Coindesk</a> article the founders Muneeb Ali and Ryan Shea spent $2 million to get approval for the sale.
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     “Mr. Ali said it took so long and cost so much because the company and the SEC had to start from scratch to create a protocol for a digital-token offering under Reg A+,”
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     The Reg A+ platform lets companies raise up to $50 million from retail investors as opposed to only from so-called accredited investors. Connecting a token with a Reg A+ funding round could turn these into truly cryptocurrency-based equity investment vehicles, although Blockstack is selling utility tokens this time around.
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     I&rsquo;m following
+                    <a href="https://blockstack.org/">Blockstack</a> since 2017 and was mainly interested in their identity solution, which allows you to register your identity on the Blockstack blockcain. I registered at that time the indentity name &ldquo;felixk&rdquo;:<br>
+                    <i><a href="https://explorer.blockstack.org/name/felixk.id"><a href="https://explorer.blockstack.org/name/felixk.id">https://explorer.blockstack.org/name/felixk.id</a></a></i>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/e0eca6650e21428860d741571ffe5fb7.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     As they state on their website:
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <span style="font-style: italic;">&ldquo;Blockstack is a decentralized computing platform that puts users in control of their data and identity. Apps built on Blockstack make data breaches and trust violations an antiquated notion.&rdquo;</span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     Being interested in KYC and regulatory processes I outline in this article, the various steps Blockstack had to execute for their SEC approved ICO (which costs them at the end $2 million). Being one of the 8000 non-institutional voucher holder, I got informed periodically about the progress of this approval process and the necessary steps. 
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><b><br></b></span>
+                   </div>
+                   <div>
+                    <font style="font-size: 14pt;"><span style="font-size: 14pt; font-weight: bold;">May 2017 - Token Sale for Accredited Investors</span></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">Blockstack announced a Token Sale for a total of $50M for accredited investors. As part of this announcement they distributed 8000 vouchers to interested individuals with the same price offer. I was one of the persons who applied for the voucher</span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/98015b810db3d24ee9b39fa5e355b3a7.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><b><br></b></span>
+                   </div>
+                   <div>
+                    <font style="font-size: 14pt;"><span style="font-size: 14pt; font-weight: bold;">December 2017 - Distribution of Token Voucher for Individuals</span></font>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     In December the Token Voucher got distributed to the 8000 persons who were applying for it,
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/8ef2514e576f5522bc02a3af29f6a4e3.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     The voucher states that I&rsquo;m eligible to request for 25&#39;000 Stacks at a sale price of $0.12
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/b928b8f6ea91929440128444547c9b20.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <font style="font-size: 14pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><b><br></b></span>
+                   </div>
+                   <div>
+                    <font style="font-size: 14pt;"><span style="font-size: 14pt; font-weight: bold;">October 2018 - Stack Genesis Block Announcement</span></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">Blockstack announed the Launch of the Stacks Genesis Block.</span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;">&ldquo;This year&rsquo;s hard fork is an especially exciting milestone for the ecosystem because it distributes the first Stacks tokens to existing purchasers and recipients&hellip;</font>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;">This hard fork launches the Stacks blockchain v1, and enables the following two features for the Blockstack network:</font>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                      <font style="font-size: 10pt;">Registration of all digital assets and smart contracts for registering digital assets with the Stacks token.</font>
+                     </div></li>
+                    <li>
+                     <div>
+                      <font style="font-size: 10pt;">A genesis block that distributes Stacks tokens to existing purchasers.</font>
+                     </div></li>
+                   </ul>
+                   <div>
+                    <font style="font-size: 10pt;">The genesis block will deliver 395M Stacks tokens to purchasers of SAFTs and interests in two private funds that were sold in our 2017 Accredited Sale.&rdquo;</font>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><span style="font-size: 14pt; font-weight: bold;"> 
+                   <img class='article  img-thumbnail' src='/images/aba464feda13d8d57f1ec5f4dcfcb189.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><b><br></b></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><span style="font-size: 14pt; font-weight: bold;">April 2019 - SEC Filing Announcement</span></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><br></span>
+                   </div>
+                   <div>
+                     Muneb Ali announced the SEC Filing for $50M Regulated Token Offering for its long-time supporters of Blockstack voucher holder (around 16 months after intial distribution of the voucher):
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     &ldquo;What this means for you as a voucher holder:
+                   </div>
+                   <div>
+                     Once the SEC has approved the offering, you will be able to purchase up to 25,000 Stacks at a sale price of $0.12 (up to $3,000 worth), with one eligible voucher per eligible person. Voucher holders can purchase additional Stacks at $0.30 per token, along with the general public who are able to participate in this sale at the updated token price, subject to availability. Non-U.S. persons may be ineligible to participate if the law in your local jurisdiction prohibits this token offering.&rdquo;
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><span style="font-size: 14pt; font-weight: bold;"> 
+                   <img class='article  img-thumbnail' src='/images/4f42c3882273726f92d8f92e910f13ad.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><b><br></b></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt; font-weight: bold;">May 2019 - KYC Announcement for Voucher Holders</span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     Time to register your voucher in order to be eligible to redeem it later. 
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><span style="font-size: 14pt; font-weight: bold;"> 
+                   <img class='article  img-thumbnail' src='/images/ae40481b2870998d77e7cbfd36f66034.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><span style="font-size: 14pt;"><br></span></span>
+                   </div>
+                   <div>
+                     The registration process was doing some initial KYC checks. In my case additional verification was necessary executed by NetVerify which consisted of scanning Identity Cards etc.
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><span style="font-size: 14pt;"><br></span></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><span style="font-size: 14pt; font-weight: bold;"> 
+                   <img class='article  img-thumbnail' src='/images/9c493130327a59653bb3cf9a01b63149.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">Finally the Voucher Registration got confirmed.</span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><span style="font-size: 14pt;"><br></span></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><span style="font-size: 14pt; font-weight: bold;"> 
+                   <img class='article  img-thumbnail' src='/images/c211fefb2d721c17e325b90adf883258.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><b><br></b></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><span style="font-size: 14pt; font-weight: bold;">July 2019 - SEC Qualified Token Sale Starts</span></span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     Blockstack announced that their Token Sale is the first SEC-qualified Offering in US History on the 10th of July. Sale will start immediately one day later.
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-weight: bold;"> 
+                   <img class='article  img-thumbnail' src='/images/a9ce96066045063083c4beca8b03db78.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     As Voucher Holder you got informed about the procedure. There is no guarantee for Voucher Holder to claim the Stacks as listed on the voucher. &ldquo;Pre-registration serves as a head start&rdquo;.
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"> 
+                   <img class='article  img-thumbnail' src='/images/93d29e6283738ad9338d9a13a8c5eba3.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><br></span>
+                   </div>
+                   <div>
+                     At Token sales start I got a Email which confirmed my pre-registration (again) and the possibility to start purchasing tokens at the price outlined in the voucher back in 2017.
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"> 
+                   <img class='article  img-thumbnail' src='/images/cb606da13b32d403feeabd7af80b4b88.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><br></span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;">The process was guided through on the <a href="http://stackstoken.com">stackstoken.com</a> Website and required to get a Stacks Wallet Address as the target address for the tokens (download of Stackswallet app).  Payment transfer was possible in USD (via wire-transfer) or by transferring Ethereum or Bitcoin (direct and fast).<br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"> 
+                   <img class='article  img-thumbnail' src='/images/b05d1fdf9d973167e2a23c54c2fe8f66.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                  </div>
+                  <div>
+                    Finally the Ethereum transaction got confirmed after 60+ confirmations.
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/c76c90a1d6ed1adfba5813f3a6669bf1.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>        </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                    As one can see, quite some orchestrated processes Blockstack had to implement in order to be compliant with the SEC regulatory obligations. Interested to see how Blockstack will evolve.
+                  </div></p>
+                
+                <p><a href="https://blockstack.org/about">Link</a></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2019 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>

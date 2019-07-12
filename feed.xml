@@ -5,10 +5,388 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-07-10T20:18:55+00:00</updated>
+  <updated>2019-07-12T06:17:16+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>The Anatomy of the first SEC approved Blockchain ICO process</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/07/12/the-anatomy-of-the-first-sec-approved-blockchain-ico-process.html"/>
+    <id>https://dev.cloudburo.net/2019/07/12/the-anatomy-of-the-first-sec-approved-blockchain-ico-process.html</id>
+    <published>2019-07-12T06:17:16+00:00</published>
+    <updated>2019-07-12T12:14:22+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;div&gt;
+         On 11th July 2019, the United States Securities and Exchange Comission (SEC) has approved a $28 million Reg A+ offering for decentralized Internet company Blockstack.
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         This is the first time that a Crypto offering has received SEC qualification and it will chart a way forward for US small business funding in the future. 
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         According to a
+        &lt;a href="https://www.coindesk.com/blockstack-plans-one-of-the-first-reg-a-sec-approved-token-offerings"&gt;Coindesk&lt;/a&gt; article the founders Muneeb Ali and Ryan Shea spent $2 million to get approval for the sale.
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         “Mr. Ali said it took so long and cost so much because the company and the SEC had to start from scratch to create a protocol for a digital-token offering under Reg A+,”
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         The Reg A+ platform lets companies raise up to $50 million from retail investors as opposed to only from so-called accredited investors. Connecting a token with a Reg A+ funding round could turn these into truly cryptocurrency-based equity investment vehicles, although Blockstack is selling utility tokens this time around.
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         I&amp;rsquo;m following
+        &lt;a href="https://blockstack.org/"&gt;Blockstack&lt;/a&gt; since 2017 and was mainly interested in their identity solution, which allows you to register your identity on the Blockstack blockcain. I registered at that time the indentity name &amp;ldquo;felixk&amp;rdquo;:&lt;br&gt;
+        &lt;i&gt;&lt;a href="https://explorer.blockstack.org/name/felixk.id"&gt;&lt;a href="https://explorer.blockstack.org/name/felixk.id"&gt;https://explorer.blockstack.org/name/felixk.id&lt;/a&gt;&lt;/a&gt;&lt;/i&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e0eca6650e21428860d741571ffe5fb7.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         As they state on their website:
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-style: italic;"&gt;&amp;ldquo;Blockstack is a decentralized computing platform that puts users in control of their data and identity. Apps built on Blockstack make data breaches and trust violations an antiquated notion.&amp;rdquo;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         Being interested in KYC and regulatory processes I outline in this article, the various steps Blockstack had to execute for their SEC approved ICO (which costs them at the end $2 million). Being one of the 8000 non-institutional voucher holder, I got informed periodically about the progress of this approval process and the necessary steps. 
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt; font-weight: bold;"&gt;May 2017 - Token Sale for Accredited Investors&lt;/span&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 10pt;"&gt;Blockstack announced a Token Sale for a total of $50M for accredited investors. As part of this announcement they distributed 8000 vouchers to interested individuals with the same price offer. I was one of the persons who applied for the voucher&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/98015b810db3d24ee9b39fa5e355b3a7.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt; font-weight: bold;"&gt;December 2017 - Distribution of Token Voucher for Individuals&lt;/span&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         In December the Token Voucher got distributed to the 8000 persons who were applying for it,
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/8ef2514e576f5522bc02a3af29f6a4e3.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         The voucher states that I&amp;rsquo;m eligible to request for 25&amp;#39;000 Stacks at a sale price of $0.12
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/b928b8f6ea91929440128444547c9b20.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 14pt;"&gt;&lt;br&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt; font-weight: bold;"&gt;October 2018 - Stack Genesis Block Announcement&lt;/span&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 10pt;"&gt;Blockstack announed the Launch of the Stacks Genesis Block.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 10pt;"&gt;&amp;ldquo;This year&amp;rsquo;s hard fork is an especially exciting milestone for the ecosystem because it distributes the first Stacks tokens to existing purchasers and recipients&amp;hellip;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 10pt;"&gt;This hard fork launches the Stacks blockchain v1, and enables the following two features for the Blockstack network:&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;font style="font-size: 10pt;"&gt;Registration of all digital assets and smart contracts for registering digital assets with the Stacks token.&lt;/font&gt;
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;font style="font-size: 10pt;"&gt;A genesis block that distributes Stacks tokens to existing purchasers.&lt;/font&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 10pt;"&gt;The genesis block will deliver 395M Stacks tokens to purchasers of SAFTs and interests in two private funds that were sold in our 2017 Accredited Sale.&amp;rdquo;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt; font-weight: bold;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/aba464feda13d8d57f1ec5f4dcfcb189.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt; font-weight: bold;"&gt;April 2019 - SEC Filing Announcement&lt;/span&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         Muneb Ali announced the SEC Filing for $50M Regulated Token Offering for its long-time supporters of Blockstack voucher holder (around 16 months after intial distribution of the voucher):
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         &amp;ldquo;What this means for you as a voucher holder:
+       &lt;/div&gt;
+       &lt;div&gt;
+         Once the SEC has approved the offering, you will be able to purchase up to 25,000 Stacks at a sale price of $0.12 (up to $3,000 worth), with one eligible voucher per eligible person. Voucher holders can purchase additional Stacks at $0.30 per token, along with the general public who are able to participate in this sale at the updated token price, subject to availability. Non-U.S. persons may be ineligible to participate if the law in your local jurisdiction prohibits this token offering.&amp;rdquo;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt; font-weight: bold;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/4f42c3882273726f92d8f92e910f13ad.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt; font-weight: bold;"&gt;May 2019 - KYC Announcement for Voucher Holders&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         Time to register your voucher in order to be eligible to redeem it later. 
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt; font-weight: bold;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/ae40481b2870998d77e7cbfd36f66034.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         The registration process was doing some initial KYC checks. In my case additional verification was necessary executed by NetVerify which consisted of scanning Identity Cards etc.
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt; font-weight: bold;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/9c493130327a59653bb3cf9a01b63149.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 10pt;"&gt;Finally the Voucher Registration got confirmed.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt; font-weight: bold;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/c211fefb2d721c17e325b90adf883258.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt; font-weight: bold;"&gt;July 2019 - SEC Qualified Token Sale Starts&lt;/span&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         Blockstack announced that their Token Sale is the first SEC-qualified Offering in US History on the 10th of July. Sale will start immediately one day later.
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-weight: bold;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/a9ce96066045063083c4beca8b03db78.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         As Voucher Holder you got informed about the procedure. There is no guarantee for Voucher Holder to claim the Stacks as listed on the voucher. &amp;ldquo;Pre-registration serves as a head start&amp;rdquo;.
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/93d29e6283738ad9338d9a13a8c5eba3.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         At Token sales start I got a Email which confirmed my pre-registration (again) and the possibility to start purchasing tokens at the price outlined in the voucher back in 2017.
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/cb606da13b32d403feeabd7af80b4b88.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 10pt;"&gt;The process was guided through on the &lt;a href="http://stackstoken.com"&gt;stackstoken.com&lt;/a&gt; Website and required to get a Stacks Wallet Address as the target address for the tokens (download of Stackswallet app).  Payment transfer was possible in USD (via wire-transfer) or by transferring Ethereum or Bitcoin (direct and fast).&lt;br&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 14pt;"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/b05d1fdf9d973167e2a23c54c2fe8f66.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Finally the Ethereum transaction got confirmed after 60+ confirmations.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/c76c90a1d6ed1adfba5813f3a6669bf1.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        As one can see, quite some orchestrated processes Blockstack had to implement in order to be compliant with the SEC regulatory obligations. Interested to see how Blockstack will evolve.
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="https://blockstack.org/about"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>J.P. Konig's Assessment of Facebook Libra's Cryptocurrency</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/07/10/j-p-konig-s-assessment-of-facebook-libra-s-cryptocurrency.html"/>
@@ -10522,92 +10900,6 @@
       &lt;div&gt;
       &lt;/div&gt;
       &lt;div&gt;&lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Amazon's Architecture Team Setup</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html"/>
-    <id>https://dev.cloudburo.net/2018/03/13/amazon-s-architecture-team-setup.html</id>
-    <published>2018-03-13T18:27:05+00:00</published>
-    <updated>2019-06-23T21:45:40+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        The
-       &lt;a href="http://d0.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf"&gt;AWS Well-Architected Framework Document&lt;/a&gt; (November 2017) has an updated section about “On Architecture”, which describes the federated architecture team setup approach in their large scale enterprise.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        &amp;ldquo;
-       &lt;span style="font-style: italic;"&gt;In Amazon, we &lt;/span&gt;
-       &lt;span style="font-style: italic; font-weight: bold;"&gt;prefer to distribute capabilities into teams&lt;/span&gt;
-       &lt;span style="font-style: italic;"&gt; rather than having a centralized team with that capability. There are risks when you choose to distribute decision making authority, for example, ensuring that teams are meeting internal standards. &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;We mitigate these risks in two ways. &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;First, we have practices1 that focus on enabling each team to have that capability, and we provide access to experts who ensure that teams raise the bar on the standards they need to meet. &lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;Second, we put in place mechanisms2 that carry out automated checks to ensure standards are being meet. &lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-       &lt;div&gt;
-        &lt;span style="font-size: 14px;"&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;This distributed approach is supported by the Amazon leadership principles, and establishes a culture across all roles that works back from the customer. &lt;/span&gt;&lt;/span&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;Customer-obsessed teams build products in response to a customer need. &lt;/span&gt;&lt;span style=" font-size: 14px; font-style: italic; font-weight: bold;"&gt;For architecture this means that we expect every team to have the capability to create architectures and to follow best practices&lt;/span&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;. &lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;To help new teams gain these capabilities or existing teams to raise their bar, &lt;/span&gt;&lt;span style=" font-size: 14px; font-style: italic; font-weight: bold;"&gt;we enable access to a virtual community of principal engineers who can review their designs and help them understand what AWS best practices are&lt;/span&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;. &lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div&gt;
-        &lt;span style="font-size: 14px;"&gt;&lt;span style=" font-size: 14px; font-style: italic;"&gt;The principal engineering community works to make best practices visible and accessible. One way they do this, for example, is through lunchtime talks that focus on applying best practices to real examples. These talks are recorded and can be used as part of onboarding materials for new team members&lt;/span&gt;.&amp;rdquo;&lt;/span&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Especially I like their “architecture&amp;quot; expectation to the delivery teams, which on the one side is an obligation but on the other side a real empowerment and expression of confidence to the team capabilities. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        No central overhead but distributed team empowerment, which is lacking sometimes in other large organisations.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
