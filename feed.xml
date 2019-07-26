@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/07/26/defi-token-trading-in-java-using-the-kyber-network-1-a-kyberdao-funded-tutorial.html"/>
     <id>https://dev.cloudburo.net/2019/07/26/defi-token-trading-in-java-using-the-kyber-network-1-a-kyberdao-funded-tutorial.html</id>
     <published>2019-07-26T12:24:32+00:00</published>
-    <updated>2019-07-26T15:17:52+00:00</updated>
+    <updated>2019-07-26T17:04:39+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -24,7 +24,7 @@
     
     &lt;p&gt;&lt;div&gt;
        &lt;div&gt;
-         The tutorial will show you how you easily you can access the Kyber Network out of a Java Application in order to trade crypto tokens. The tutorial has implemented the primary trading scenarios:
+         The tutorial will show you how easily you can access the Kyber Network out of a Java Application in order to trade crypto tokens. The tutorial has implemented the primary trading scenarios:
        &lt;/div&gt;
        &lt;div&gt;
         &lt;br&gt;
@@ -562,6 +562,7 @@
         &lt;span style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/span&gt;
        &lt;/div&gt;
        &lt;div&gt;
+        &lt;img&gt;
         &lt;img width="733"&gt;
        &lt;/div&gt;
        &lt;div&gt;
@@ -749,7 +750,7 @@
        &lt;font style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/font&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;span style="font-size: 10pt;"&gt;I hope this tutorial was useful for you, so get the code loaded into a Java IDE and start playing around with it. You will realize how easy it is to execute and swap toke transactions on the Ethereum network.&lt;/span&gt;
+       &lt;span style="font-size: 10pt;"&gt;I hope this tutorial was useful for you, so get the code loaded into a Java IDE and start playing around with it. You will realize how easy it is to execute and swap token transactions on the Ethereum network.&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;font style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/font&gt;
@@ -757,6 +758,8 @@
       &lt;div&gt;
        &lt;span style="font-size: 10pt;"&gt;As already mentioned, I plan to come up with a second article, which explains the java client library and its implementation strategy in more detail.&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="https://webgate-dashboard.hidora.com/#/client/Mjc4NzcAYwBqZWxhc3RpYy1hdXRoLXByb3ZpZGVy?token=4C59D803A94E4D979C1494C45E4FDC43DFB24678C4D440D123F3C42CA68205F5&amp;amp;session=822xfc58bd05c3e2978ff957e05478ff9cf4&amp;amp;nodeId=27877&amp;amp;targetAppid=347394dd376b8ec045c86c40f944a713"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
