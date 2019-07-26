@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | Defi Token Trading In Java Using The Kyber Network #1 - A KyberDAO Funded Tutorial</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (22)</a>
+            <a href="/tags/blockstack.html" class="label label-default">blockstack (1)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (6)</a>
+            <a href="/tags/dao.html" class="label label-default">dao (4)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (10)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (3)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (15)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/java.html" class="label label-default">java (2)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (5)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (5)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (6)</a>
+            <a href="/tags/python.html" class="label label-default">python (7)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (18)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/statistics.html" class="label label-default">statistics (2)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tut01.html" class="label label-default">tut01 (7)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (11)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2019.html" class="label label-primary">2019 (20)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2019/07/26/defi-token-trading-in-java-using-the-kyber-network-1-a-kyberdao-funded-tutorial.html">Defi Token Trading In Java Using The Kyber Network #1 - A KyberDAO Funded Tutorial</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  26.Jul 2019 | Tags <a class="label label-primary" href="/tags/blockchain.html">blockchain</a> <a class="label label-primary" href="/tags/crypto.html">crypto</a> <a class="label label-primary" href="/tags/dao.html">dao</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                   <div>
+                     As a side-remark: If you are just interested in the Java Tutorial, scroll down to the relevant section. 
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     Because the tutorial was done as part of the KyberDAO &ldquo;DAOstack&rdquo; experiment, the first three sections will give an overview of this DAO experiment and the collected experiences.
+                   </div>
+                   <div>
+                    <font style="font-size: 14pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;">About DAOStack and Alchemy Earth</span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     As part of my research journey into the technology trends of the emerging world of decentralization, I started recently to investigate into Decentralized Autonomous Organizations (DAO&rsquo;s) and their impact on the future working model. My first article to the topic I published on Medium under the title &ldquo;
+                    <a href="https://medium.com/coinmonks/the-death-of-the-corporation-3aa6c6207985">Death of the Corporation</a>&rdquo;, which exploits the benefit of such a new way of working. 
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     It&rsquo;s a new series which I started after my initial one - published in Q4 2018 - about the emergence of Polkadot (
+                    <a href="https://medium.com/coinmonks/tagged/polkadot-hello-world%3Fsource%3Dpost_page---------------------------">Medium Polkadot Hello World series</a>). In a way, my own bootstrapping into the crypto space.
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     My credo when investigating into new technologies is to try it out by myself (&ldquo;eat your own dog-food&rdquo;) and not just looking at it from a top-down angle. I&rsquo;m an avid hobbyists programmer and established in the recent years a
+                    <a href="https://publishingbot.cloudburo.net/">subscription based blogging product based on Evernote</a>. Moving forward I was now looking out for some tech work in the Ethereum space to kick-start my decentralized programming activities.
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     That brings in
+                    <a href="https://daostack.io/">DAOstack</a> -  the so-called operating-system for collective intelligence - a blockchain platform (
+                    <a href="https://daostack.io/alchemy">Alchemy</a>)  for running Distributed Autonomous Organization backed by the so-called Holographic consensus.<br>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     The protocol helps DAOs prioritize the most value-aligned proposals, even with million members. The goal of the consensus protocol is to incentivize people to correctly predict what DAO&rsquo;s care about, and lets DAOs make good decisions without requiring everyone to vote on everything (
+                    <a href="https://daostack.io/deck/DAOstack-Deck-en.pdf" style="font-size: 10pt;">DAOStack Slide Deck</a>). 
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     DAOstack was experimenting in 2018 in an Alpha release and went in a public Beta with their product called &ldquo;
+                    <a href="https://alchemy.daostack.io/">Alchemy Earth</a>&rdquo; on the Ethereum mainnet. 
+                   </div>
+                   <div>
+                    <font style="font-size: 12pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;">About Kyber Network and the KyberDAO</span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     One community which onboarded a DAO (the so-called
+                    <a href="https://alchemy.daostack.io/dao/0x6bee9b81e434f7afce72a43a4016719315069539">KyberDAO</a>) as an early-mover to Alchemy Earth was the Kyber Network. 
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <a href="https://kyber.network/">Kyber Network</a> is an on-chain liquidity protocol that aggregates from a wide range of token reserves and powers instant and secure token exchange in any decentralized application.
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     It&rsquo;s a well-known Ethereum based platform in the new world of
+                    <a href="https://defi.network/">Decentralized Finance Applications</a>. 
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/c1993350c7d203003b11fa24bf4597c7.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                     Source: 
+                    <a href="https://kyber.network/">Kyber Network</a>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     The Kyber Network will allow you to exchange Ethereum based token(s), similar as a traditional foreign exchange trade trade will allow you to exchange for example USD for CHF currencies. The underlying base currency is Ether (ETH) and not any fiat currency. 
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     As part of &ldquo;
+                    <a href="https://blog.kyber.network/kyberdao-experiment-2-on-daostack-d1caca6caf35">KyberDAO</a>&rdquo; community experiment, the network launched in June their DAOstack based DAO (after a first experiment on the Aragon platform) and funded it with about 17,000 KNC (around $4500). Anyone from the community can submit a proposal with a fund request for a portion or the full amount of the grant (see
+                    <a href="https://blog.kayber.network/kyberdao-experiment-2-on-daostack-d1caca6caf35">announcement</a>).
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     An ideal test environment to request for a funded proposal in the context of my programming experience builds up. In a certain way, a win-win situation for me (Knowledge buildup) as well as the Kyber Network to get some code exposure to the Java community with my proposal. 
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">The decision to invest my time into the Kyber Network was easy because the documentation of their platform from any aspect is just excellent  It allows a newcomer to get an understanding of it very quickly. </span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">From the</span>
+                    <a href="https://developer.kyber.network/docs/API_ABI-Intro/" style="font-size: 10pt;">interface point of view</a>
+                    <span style="font-size: 10pt;">Kyber Network provides - besides the direct ABI smart contract- a RESTful API which gives users (without much smart contract knowledge) the ability to interact with their contracts. So the ideal starting point to kick start my programming in the Ethereum crypto space.</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 12pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;">About my KyberDAO proposal</span>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;"><br></span>
+                   </div>
+                   <div>
+                     On Alchemy Earth in the KyberDAO section, I created a proposal with the goal
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     &ldquo;To develop a Java Kyber Trading tutorial and publish the findings in a Medium article.&rdquo;
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     The proposal itself - shows in the below screenshot of the  Alchemy UI, is backed by a detailed document which is located 
+                    <a href="https://docs.google.com/document/d/1H-cX3dFJoOfw7rxnUecW8fYUo6ER9GgnUlWZ7bFVngY/edit%3Fusp%3Dsharing">here</a>.
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;"><br></span>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/cf584e7b7c244945fac8199075974a73.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     To publish the proposal, you require a Metamask account and a minimal amount of Ether (some cents to pay for the gas fee, when proposal data is written to the blockchain). Refer to the following
+                    <a href="https://www.youtube.com/watch%3Fv%3DBucC_e7T2oo">YoutTube Tutorial</a> of @eriktrodigues which walks you through all the necessary onboarding steps.
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     I was quite excited to see, what happens when a completely new-joiner request  for some funding of its work in a DAO community. 
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     My first proposal (actually my second one, I got funded for some work in the PolkaDAO as well, where I was a community member before) got well accepted by the community. There were some questions about the requested amount of funding, which may be normal in a contract negotiation.
+                   </div>
+                   <div>
+                    <font style="font-size: 12pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;"> 
+                   <img class='article  img-thumbnail' src='/images/2a09bb1d4dd09b598ed081b73bc5a04d.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> &lt;</span>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">I decided to re-adjust the price, which required to re-publish a completely new proposal. This process is somewhat clumsy and results that two open proposals (not automatically linked to each other via a versioning number or similar) are in the system. From a UX point of view, it&rsquo;s not immediately clear for a reviewer which proposal should be looked at. That may get confusing in case there are a large numberof proposals in the reviewing phase potentially with multiple version.</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">So I brought the problem up in the</span>
+                    <a href="https://daotalk.org/t/collected-user-insights-needs-and-feature-requests/536/5" style="font-size: 10pt;">DAOstack community forum</a>
+                    <span style="font-size: 10pt;">, which took up the feature request and kick-started a discussion around the topic.  That speaks for the DAOstack community, which is open and very responsive to problems, features, and requests by its user. </span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/d44313ce3b1a00137b4866f02e743202.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <span style="font-size: 12pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;">About the Kyber Java Client Library</span>
+                   </div>
+                   <div>
+                    <span style="font-size: 14pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">So now let&rsquo;s dig into the Java client library for the Kyber Network, which I developed as part of my funding request. For a start, let&rsquo;s run the Java Tutorial Application. Let&rsquo;s start with the preparation steps.</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;">Preparation Step: Get Java, Git and Gradle installed on your machine</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 12pt;"><br></font>
+                   </div>
+                   <div>
+                     Well it&rsquo;s obvious to have Java  and Git installed on your machine, additional the
+                    <a href="https://gradle.org/">Gradle</a> build environment will be used, so that you can easily run the tutorial code from the command line. Install all these three dependencies on your machine.
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;">Preparation Step: Create a Ropsten Test Wallet using the web3j command line utility</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">A web3j fat jar is distributed with each web3j release providing command line tools. The command line tools allow you to use some of the functionality of web3j from your terminal. </span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">In our case, we have to create a test wallet on the Ropsten test network which is used for our token swapping scenarios.</span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                       There are various installers available to the command tool
+                     </div></li>
+                    <li>
+                     <div>
+                       in case of Windows use the
+                      <a href="https://github.com/web3j/web3j/releases/tag/4.3.0">ZIP file distribution</a>
+                     </div></li>
+                    <li>
+                     <div>
+                       extract in a directory and run the web3j.bat file
+                     </div></li>
+                   </ul>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     Use the
+                    <a href="https://docs.web3j.io/command_line.html%23wallet-tools">wallet tools</a> to create a wallet 
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                      <span style="font-style: italic;">&lsquo;wallet create&rsquo;  </span>will create a wallet.json file
+                     </div></li>
+                    <li>
+                     <div>
+                      <br>
+                     </div></li>
+                   </ul>
+                   <div>
+                    <span style="font-size: 12pt;"> 
+                   <img class='article  img-thumbnail' src='/images/042f19dfe2e96d0245ffa25ec2be9b75.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;"><br></span>
+                   </div>
+                   <div>
+                     Check out the created Ethereum Address in the Wallet file and transfer some Ether to the address.
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                       You can use the ropsten faucet to create ethereum test coins:<br>
+                      <a href="https://faucet.ropsten.be/"><a href="https://faucet.ropsten.be/">https://faucet.ropsten.be/</a></a>
+                     </div></li>
+                    <li>
+                     <div>
+                       Use the 
+                      <a href="https://ropsten.etherscan.io/address/0x25971ca9171d8076f81b6699dc19bad66a0091a3"><a href="https://ropsten.etherscan.io/">https://ropsten.etherscan.io/</a></a> frontend to check your address, transactions and any other blockchain information.
+                     </div></li>
+                    <li>
+                     <div>
+                       The password chosen for the Wallet is required in our tutorial application to load the necessary credentials.
+                     </div></li>
+                   </ul>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;">Preparation Step: Create a Infura Test Node Account</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">For writing the Kyber Swap transactions to the Ethereum blockchain you will require a Infura Test Node Account (obviously there are other possibilities, but that&rsquo;s the most straightforward).</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                       Get an account setup on
+                      <a href="https://infura.io/project/dbbbc196b84949beae0c7eb321c00421">Infura</a>
+                     </div></li>
+                    <li>
+                     <div>
+                       Create a new project. You will use the Infura secret token (Project Secret) to connect to the Ropsten Test network.<br>
+                     </div></li>
+                   </ul>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/87febec8c1d83513f1ad4282b6404568.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <font style="font-size: 12pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;">Preparation Step: Clone the github directory and create a secret directory</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                       Clone the github directory with the tutorial: 
+                      <a href="https://github.com/talfco/clb-kyber-java-tutorial"><a href="https://github.com/talfco/clb-kyber-java-tutorial">https://github.com/talfco/clb-kyber-java-tutorial</a></a>
+                     </div></li>
+                    <li>
+                     <div>
+                       create a
+                      <span style="font-style: italic;">secret</span> directory in the
+                      <span style="font-style: italic;">clb-kyber-java-tutorial </span>and
+                     </div></li>
+                    <ul>
+                     <li>
+                      <div>
+                        copy the
+                       <span style="font-style: italic;">wallet.json</span> file over
+                      </div></li>
+                     <li>
+                      <div>
+                        create a
+                       <span style="font-style: italic;">secret.properties</span> file and add an entry for the
+                       <span style="font-style: italic;">wallet-password</span> as well as your
+                       <span style="font-style: italic;">infura-token</span>
+                      </div></li>
+                    </ul>
+                   </ul>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/b81c3560aebeba32a26ee2b86a49e0a1.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;">Run the Tutorial Application</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">Just type</span>
+                    <span style="font-size: 10pt; font-style: italic;">gradle run </span>
+                    <span style="font-size: 10pt;">which will kick off the tutorial application.</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">The application will call three methods:</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                       First it converts parts of your test Ether to two DAI tokens (
+                      <span style="font-style: italic;">eth2token</span>)
+                     </div></li>
+                    <li>
+                     <div>
+                       Second it converts back one DAI token to Ether (
+                      <span style="font-style: italic;">token2eth</span>)
+                     </div></li>
+                    <li>
+                     <div>
+                       Third it will convert one DAI token to one BAT token (
+                      <span style="font-style: italic;">token2token</span>
+                     </div></li>
+                   </ul>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/f64d2752b6930e717fc692dd463f4107.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                     Github-Gist: 
+                    <a href="https://gist.github.com/talfco/a88d094baff1777880192ec8a4a06f6a"><a href="https://gist.github.com/talfco/a88d094baff1777880192ec8a4a06f6a">https://gist.github.com/talfco/a88d094baff1777880192ec8a4a06f6a</a></a>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     Check the console output for created Transaction Hashes and other information.
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;">Ethereum Transactions Generated by the Tutorial</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">The tutorial application will generate 3 Ethereum Transactions, which you can checkout via the etherscan.io web application</span>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                      <a href="https://ropsten.etherscan.io/address/"><a href="https://ropsten.etherscan.io/address/">https://ropsten.etherscan.io/address/</a></a>&lt;yourTestWalletAddress&gt;
+                     </div></li>
+                    <li>
+                     <div>
+                       You will see three transactions, triggered by our three functions
+                     </div></li>
+                   </ul>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;"> 
+                   <img class='article  img-thumbnail' src='/images/38c4d204d881390dba3bfd81f9e1622e.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">If you are a newcomer, I highly suggest that you study the detailed transaction information, which will give you a lot of insight on how an Ethereum transaction is built up.</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">As for example the screenshot below is the detailed transaction information from the</span>
+                    <span style="font-size: 10pt; font-style: italic;">eth2token</span>
+                    <span style="font-size: 10pt;">conversion (2 DAI tokens bought). </span>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/a3bf9a2e4b4de44f4466c47a65b4c289.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <span style="font-size: 12pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;">Implementation Aspects - Kyber API Functionality designed as web3j module</span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">This tutorial is my frist Java programming exposure to Ethereum, so I was checking for a decent java base library for the Ethereum network. One well-known is</span>
+                    <a href="https://web3j.io/" style="font-size: 10pt;">web3j</a>
+                    <span style="font-size: 10pt;">from the Web3 lab. It&rsquo;s mainly focusing on the Smart contracts (which is mainly shielded by the Kyber Restful API) and will have the necessary tool kits to load wallet credentials and sign transactions, which plays a role as well in the Kyber Restful API</span>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/1b02d66cc527c92e7baa76f7bca6da0c.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     The introduced java classes and interfaces are inheriting from the core classes of web3j and are implemented in a similar way. This allowed me to leverage a lot of code from web3j on the one side; on the other side developers using web3j will find similar patterns. 
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;"> 
+                   <img class='article  img-thumbnail' src='/images/69d007eb8dc0d3097de1e1ecd32c92d8.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">In order to be web3j compliant (which is built around JSON-RPC interfaces), I introduced a</span>
+                    <span style="font-size: 10pt; font-style: italic;">JsonRpc2_0Kyber </span>
+                    <span style="font-size: 10pt; font-weight: bold;"> </span>
+                    <span style="font-size: 10pt;">which acts as a protocol converter and prepares the request for the Kyber REST API.</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">The Kyber Java API interface supports the following functions.</span>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;"><br></font>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/e85994130714ad2d5aa7ceb3f4d2a36d.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                     Github-GIST: 
+                    <a href="https://gist.github.com/talfco/12c9729681c347d07829f001db43aeb2"><a href="https://gist.github.com/talfco/12c9729681c347d07829f001db43aeb2">https://gist.github.com/talfco/12c9729681c347d07829f001db43aeb2</a></a>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">As one can see the major part is Java strong typed. JSON data requests are automatically converted to Java Classes via</span>
+                    <a href="https://github.com/FasterXML/jackson" style="font-size: 10pt;">Jackson XML</a>
+                    <span style="font-size: 10pt;">parsing support.  </span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">A second article will deep-dive into the various design aspects to the built client library. </span>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;"><br></span>
+                   </div>
+                   <div>
+                    <font style="font-size: 14pt;">Trading Scenarios Code Excerpts</font>
+                    <br>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;"><br></span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;">To conclude the tutorial; the code sequence of the tree scenarios is provided. As you can see the code is quite compact, readable and understandable. If you would check out a basic web3j ethereum transaction sample, you would see the similarity of the code.</span>
+                   </div>
+                   <div>
+                    <span style="font-size: 10pt;"><br></span>
+                   </div>
+                   <div>
+                    <font style="font-size: 12pt;">Scenario: ETH2TOKEN</font>
+                   </div>
+                   <div>
+                    <font style="font-size: 12pt;"><br></font>
+                   </div>
+                   <div>
+                    <font style="font-size: 10pt;">Just realize how easy it is to swap tokens on Ethereum using the Kyber API&rsquo;s!</font>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/ca35270994a3be72874abe3c3fcb5bfa.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <font style="font-size: 10pt;">Github-GIST: </font>
+                    <a href="https://gist.github.com/talfco/13ac48bf03a488be16a73f36e2ff181e"><a href="https://gist.github.com/talfco/13ac48bf03a488be16a73f36e2ff181e">https://gist.github.com/talfco/13ac48bf03a488be16a73f36e2ff181e</a></a>
+                   </div>
+                   <div>
+                    <font style="font-size: 12pt;"><br></font>
+                   </div>
+                   <div>
+                    <font style="font-size: 12pt;">Scenario: TOKEN2ETH</font>
+                   </div>
+                   <div>
+                    <font style="font-size: 12pt;"><br></font>
+                   </div>
+                   <div>
+                    <span style="font-size: 12pt;"> 
+                   <img class='article  img-thumbnail' src='/images/7f01a4cbc99f098400ae1f5cd1adbdfb.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div>
+                     Github-GIST: 
+                    <a href="https://gist.github.com/talfco/0aab8034dc503f3c242ef58c43e7b137"><a href="https://gist.github.com/talfco/0aab8034dc503f3c242ef58c43e7b137">https://gist.github.com/talfco/0aab8034dc503f3c242ef58c43e7b137</a></a>
+                    <br>
+                   </div>
+                  </div>
+                  <div>
+                   <font style="font-size: 12pt;"><br></font>
+                  </div>
+                  <div>
+                   <font style="font-size: 12pt;">Scenario Token2Token</font>
+                  </div>
+                  <div>
+                   <font style="font-size: 12pt;"><br></font>
+                  </div>
+                  <div>
+                   <font style="font-size: 10pt;">Refer to the GIST directly: </font>
+                   <a href="https://gist.github.com/talfco/8b1d5829f3961bd86ecd981e5f3fd0c8"><a href="https://gist.github.com/talfco/8b1d5829f3961bd86ecd981e5f3fd0c8">https://gist.github.com/talfco/8b1d5829f3961bd86ecd981e5f3fd0c8</a></a>
+                  </div>
+                  <div>
+                   <br>
+                  </div>
+                  <div>
+                   <font style="font-size: 14pt;">Final Point</font>
+                  </div>
+                  <div>
+                   <font style="font-size: 10pt;"><br></font>
+                  </div>
+                  <div>
+                   <font style="font-size: 10pt;">I hope this tutorial was useful for you, so get code loaded into a Java IDE and start playing around with it. You will realize how easy it is to execute and swap toke transactions on the Ethereum network.</font>
+                  </div>
+                  <div>
+                   <font style="font-size: 10pt;"><br></font>
+                  </div>
+                  <div>
+                   <font style="font-size: 10pt;">As already mentioned, I plan to come up with a second article, which explains the java client library and its implementation strategy in more detail.</font>
+                  </div></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2019 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>
