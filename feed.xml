@@ -10,11 +10,11 @@
     <name>Felix K</name>
   </author>
   <entry>
-    <title>Defi Token Trading In Java Using The Kyber Network #1 - A KyberDAO Funded Tutorial</title>
+    <title>DeFi Token Trading In Java Using The Kyber Network #1 - A KyberDAO Funded Tutorial</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/07/26/defi-token-trading-in-java-using-the-kyber-network-1-a-kyberdao-funded-tutorial.html"/>
     <id>https://dev.cloudburo.net/2019/07/26/defi-token-trading-in-java-using-the-kyber-network-1-a-kyberdao-funded-tutorial.html</id>
     <published>2019-07-26T12:24:32+00:00</published>
-    <updated>2019-07-26T12:25:05+00:00</updated>
+    <updated>2019-07-26T14:07:39+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -50,7 +50,7 @@
        &lt;/div&gt;
        &lt;div&gt;
          It&amp;rsquo;s a new series which I started after my initial one - published in Q4 2018 - about the emergence of Polkadot (
-        &lt;a href="https://medium.com/coinmonks/tagged/polkadot-hello-world%3Fsource%3Dpost_page---------------------------"&gt;Medium Polkadot Hello World series&lt;/a&gt;). In a way, my own bootstrapping into the crypto space.
+        &lt;a href="https://medium.com/coinmonks/tagged/polkadot-hello-world"&gt;Medium Polkadot Hello World series&lt;/a&gt;). In a way, my own bootstrapping into the crypto space.
        &lt;/div&gt;
        &lt;div&gt;
         &lt;br&gt;
@@ -218,7 +218,7 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; &amp;lt;&lt;/span&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
        &lt;/div&gt;
        &lt;div&gt;
         &lt;span style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/span&gt;
@@ -317,11 +317,10 @@
          &lt;div&gt;
           &lt;span style="font-style: italic;"&gt;&amp;lsquo;wallet create&amp;rsquo;  &lt;/span&gt;will create a wallet.json file
          &lt;/div&gt;&lt;/li&gt;
-        &lt;li&gt;
-         &lt;div&gt;
-          &lt;br&gt;
-         &lt;/div&gt;&lt;/li&gt;
        &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
        &lt;div&gt;
         &lt;span style="font-size: 12pt;"&gt; 
        &lt;img class='article  img-thumbnail' src='/images/042f19dfe2e96d0245ffa25ec2be9b75.png'&gt;&lt;/p&gt;
@@ -636,8 +635,7 @@
         &lt;span style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/span&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;font style="font-size: 14pt;"&gt;Trading Scenarios Code Excerpts&lt;/font&gt;
-        &lt;br&gt;
+        &lt;span style="font-size: 14pt;"&gt;Trading Scenarios Code Excerpts&lt;/span&gt;
        &lt;/div&gt;
        &lt;div&gt;
         &lt;span style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/span&gt;
@@ -649,13 +647,13 @@
         &lt;span style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/span&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;font style="font-size: 12pt;"&gt;Scenario: ETH2TOKEN&lt;/font&gt;
+        &lt;span style="font-size: 12pt;"&gt;Scenario: ETH2TOKEN&lt;/span&gt;
        &lt;/div&gt;
        &lt;div&gt;
         &lt;font style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/font&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;font style="font-size: 10pt;"&gt;Just realize how easy it is to swap tokens on Ethereum using the Kyber API&amp;rsquo;s!&lt;/font&gt;
+        &lt;span style="font-size: 10pt;"&gt;Just realize how easy it is to swap tokens on Ethereum using the Kyber API&amp;rsquo;s!&lt;/span&gt;
        &lt;/div&gt;
        &lt;div&gt;&lt;/p&gt;
     
@@ -665,14 +663,14 @@
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
        &lt;div&gt;
-        &lt;font style="font-size: 10pt;"&gt;Github-GIST: &lt;/font&gt;
+        &lt;span style="font-size: 10pt;"&gt;Github-GIST: &lt;/span&gt;
         &lt;a href="https://gist.github.com/talfco/13ac48bf03a488be16a73f36e2ff181e"&gt;&lt;a href="https://gist.github.com/talfco/13ac48bf03a488be16a73f36e2ff181e"&gt;https://gist.github.com/talfco/13ac48bf03a488be16a73f36e2ff181e&lt;/a&gt;&lt;/a&gt;
        &lt;/div&gt;
        &lt;div&gt;
         &lt;font style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/font&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;font style="font-size: 12pt;"&gt;Scenario: TOKEN2ETH&lt;/font&gt;
+        &lt;span style="font-size: 12pt;"&gt;Scenario: TOKEN2ETH&lt;/span&gt;
        &lt;/div&gt;
        &lt;div&gt;
         &lt;font style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/font&gt;
@@ -688,39 +686,38 @@
        &lt;div&gt;
          Github-GIST: 
         &lt;a href="https://gist.github.com/talfco/0aab8034dc503f3c242ef58c43e7b137"&gt;&lt;a href="https://gist.github.com/talfco/0aab8034dc503f3c242ef58c43e7b137"&gt;https://gist.github.com/talfco/0aab8034dc503f3c242ef58c43e7b137&lt;/a&gt;&lt;/a&gt;
-        &lt;br&gt;
        &lt;/div&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;font style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/font&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;font style="font-size: 12pt;"&gt;Scenario Token2Token&lt;/font&gt;
+       &lt;span style="font-size: 12pt;"&gt;Scenario Token2Token&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;font style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/font&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;font style="font-size: 10pt;"&gt;Refer to the GIST directly: &lt;/font&gt;
+       &lt;span style="font-size: 10pt;"&gt;Refer to the GIST directly: &lt;/span&gt;
        &lt;a href="https://gist.github.com/talfco/8b1d5829f3961bd86ecd981e5f3fd0c8"&gt;&lt;a href="https://gist.github.com/talfco/8b1d5829f3961bd86ecd981e5f3fd0c8"&gt;https://gist.github.com/talfco/8b1d5829f3961bd86ecd981e5f3fd0c8&lt;/a&gt;&lt;/a&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;font style="font-size: 14pt;"&gt;Final Point&lt;/font&gt;
+       &lt;span style="font-size: 14pt;"&gt;Final Point&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;font style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/font&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;font style="font-size: 10pt;"&gt;I hope this tutorial was useful for you, so get code loaded into a Java IDE and start playing around with it. You will realize how easy it is to execute and swap toke transactions on the Ethereum network.&lt;/font&gt;
+       &lt;span style="font-size: 10pt;"&gt;I hope this tutorial was useful for you, so get code loaded into a Java IDE and start playing around with it. You will realize how easy it is to execute and swap toke transactions on the Ethereum network.&lt;/span&gt;
       &lt;/div&gt;
       &lt;div&gt;
        &lt;font style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/font&gt;
       &lt;/div&gt;
       &lt;div&gt;
-       &lt;font style="font-size: 10pt;"&gt;As already mentioned, I plan to come up with a second article, which explains the java client library and its implementation strategy in more detail.&lt;/font&gt;
+       &lt;span style="font-size: 10pt;"&gt;As already mentioned, I plan to come up with a second article, which explains the java client library and its implementation strategy in more detail.&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
