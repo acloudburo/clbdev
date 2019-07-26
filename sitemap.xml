@@ -373,12 +373,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/2019/07/26/defi-token-trading-in-java-using-the-kyber-network-1-a-kyberdao-funded-tutorial.html</loc>
-    <lastmod>2019-07-26</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net/2018/10/04/polkadot-hello-world-1-cost-effective-cloud-deployment-of-a-validator-node.html</loc>
     <lastmod>2019-06-23</lastmod>
     <priority>0.7</priority>
@@ -1264,12 +1258,6 @@
     <loc>https://dev.cloudburo.net/2019/07.html</loc>
     <lastmod>2019-06-23</lastmod>
     <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/2019/07/26.html</loc>
-    <lastmod>2019-06-23</lastmod>
-    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
