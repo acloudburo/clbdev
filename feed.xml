@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/07/26/defi-token-trading-in-java-using-the-kyber-network-1-a-kyberdao-funded-tutorial.html"/>
     <id>https://dev.cloudburo.net/2019/07/26/defi-token-trading-in-java-using-the-kyber-network-1-a-kyberdao-funded-tutorial.html</id>
     <published>2019-07-26T12:24:32+00:00</published>
-    <updated>2019-07-26T18:24:36+00:00</updated>
+    <updated>2019-07-26T18:31:41+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -559,12 +559,12 @@
         &lt;span style="font-size: 10pt;"&gt;You are now also token owner on the Ropsten Network for DAI and BAT&amp;rsquo;s token. In the future you may use this simple Java Application to generate any kind of test token (as long as it is supported on the Kyber test network)&lt;/span&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;span style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/span&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;img&gt;
-        &lt;img width="733"&gt;
-       &lt;/div&gt;
+        &lt;img width="733"&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/93e30bc66e5c53083d5d5490ae5cc348.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
        &lt;div&gt;
         &lt;span style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/span&gt;
        &lt;/div&gt;
