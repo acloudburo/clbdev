@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/07/26/defi-token-trading-in-java-using-the-kyber-network-1-a-kyberdao-funded-tutorial.html"/>
     <id>https://dev.cloudburo.net/2019/07/26/defi-token-trading-in-java-using-the-kyber-network-1-a-kyberdao-funded-tutorial.html</id>
     <published>2019-07-26T12:24:32+00:00</published>
-    <updated>2019-07-28T19:41:26+00:00</updated>
+    <updated>2019-07-28T20:25:07+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -27,8 +27,11 @@
          The tutorial will show you how easily you can access the Kyber Network out of a Java Application in order to trade crypto tokens. 
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;img src="https://cdn-images-1.medium.com/max/1000/1%2AjmXOFVxciuSbtA9KpFTbnw.jpeg"&gt; 
-       &lt;img class='article  img-thumbnail' src='/images/134656958ddd44297263bcd31f8fd4fe.jpeg'&gt;&lt;/p&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/134656958ddd44297263bcd31f8fd4fe.jpeg'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
