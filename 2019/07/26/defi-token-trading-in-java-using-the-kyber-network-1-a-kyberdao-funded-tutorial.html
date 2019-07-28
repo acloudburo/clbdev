@@ -58,7 +58,7 @@
             <a href="/tags/identity.html" class="label label-default">identity (1)</a>
             <a href="/tags/inspiration.html" class="label label-default">inspiration (15)</a>
             <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
-            <a href="/tags/java.html" class="label label-default">java (2)</a>
+            <a href="/tags/java.html" class="label label-default">java (3)</a>
             <a href="/tags/javatutorial.html" class="label label-default">javatutorial (5)</a>
             <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
             <a href="/tags/legal.html" class="label label-default">legal (1)</a>
@@ -115,7 +115,7 @@
               <a href="/2019/07/26/defi-token-trading-in-java-using-the-kyber-network-1-a-kyberdao-funded-tutorial.html">DeFi Token Trading In Java Using The Kyber Network #1 - A KyberDAO Funded Tutorial</a>
             </h2>
             <p class="entry-meta">
-              Posted on  26.Jul 2019 | Tags <a class="label label-primary" href="/tags/blockchain.html">blockchain</a> <a class="label label-primary" href="/tags/crypto.html">crypto</a> <a class="label label-primary" href="/tags/dao.html">dao</a> 
+              Posted on  26.Jul 2019 | Tags <a class="label label-primary" href="/tags/blockchain.html">blockchain</a> <a class="label label-primary" href="/tags/crypto.html">crypto</a> <a class="label label-primary" href="/tags/dao.html">dao</a> <a class="label label-primary" href="/tags/java.html">java</a> 
             </p>
           </header>
           <div class="entry-description">
@@ -125,7 +125,20 @@
                 
                 <p><div>
                    <div>
-                     The tutorial will show you how easily you can access the Kyber Network out of a Java Application in order to trade crypto tokens. The tutorial has implemented the primary trading scenarios:
+                     The tutorial will show you how easily you can access the Kyber Network out of a Java Application in order to trade crypto tokens. 
+                   </div>
+                   <div>
+                    <img src="https://cdn-images-1.medium.com/max/1000/1%2AjmXOFVxciuSbtA9KpFTbnw.jpeg"> 
+                   <img class='article  img-thumbnail' src='/images/134656958ddd44297263bcd31f8fd4fe.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     The tutorial has implemented the primary trading scenarios:
                    </div>
                    <div>
                     <br>
@@ -148,7 +161,8 @@
                     <br>
                    </div>
                    <div>
-                     The tutorial was established as part of the KyberDAO &ldquo;DAOstack&rdquo; experiment. Therefore the first three sections will give an overview of this experiment and the collected experiences.
+                     The tutorial was established as part of the
+                    <a href="https://blog.kyber.network/kyberdao-experiment-2-on-daostack-d1caca6caf35">KyberDAO</a> &ldquo;DAOstack&rdquo; experiment. Therefore the first three sections will give an overview of this experiment and the collected experiences.
                    </div>
                    <div>
                     <br>
@@ -160,7 +174,7 @@
                     <font style="font-size: 14pt;"><br></font>
                    </div>
                    <div>
-                    <span style="font-size: 14pt;">About DAOStack and Alchemy Earth</span>
+                    <span style="font-size: 14pt;">About DAO&rsquo;s and the DAOstack</span>
                    </div>
                    <div>
                     <br>
@@ -180,8 +194,26 @@
                     <br>
                    </div>
                    <div>
-                     My credo when investigating into new technologies is to try it out by myself (&ldquo;eat your own dog-food&rdquo;) and not just looking at it from a top-down angle. I&rsquo;m an avid hobbyists programmer and established in the recent years a
-                    <a href="https://publishingbot.cloudburo.net/">subscription based blogging product based on Evernote</a>. Moving forward I was now looking out for some tech work in the Ethereum space to kick-start my decentralized programming activities.
+                     Decentralized Autonomous Organizations (DAOs) have seen a recent resurgence in activities, after being slashed in 2016 when the infamous hack of &ldquo;The DAO&rdquo; led to the ETH-ETC hard fork.
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     Circle Research provides in their excellent
+                    <a href="http://research.circle.com/wp-content/uploads/2019/07/2Q19-crypto-retrospective.pdf">Q2-2019 crypto retrospective</a>, the following definition:
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     &ldquo;DAO&rsquo;s are internet-native organization that can execute transactions autonomously based on a predefined set of rules enocded in a transparent, trustless platform (i.e. blockchain). All DAO&rsquo;s manage the allocation of valuable internal capital (e.g. funds to be issued to open source network developer) without relying on hierarchichal management. DAO shareholders (e.g. contributors, members, token holders etc.) at any level can submit and vote on any proposal, but don ot take part in the execution prossed (i.e. the delivery of funds)
+                   </div>
+                   <div>
+                     &hellip;
+                   </div>
+                   <div>
+                     Since no centralized entity or individual controls a DAO, these organizations can effectively manage the allocation of funds or member-approved decisions in open, distrubted networks, which can be ideal for crypto networks and associated applications&rdquo;.
                    </div>
                    <div>
                     <br>
@@ -189,21 +221,67 @@
                    <div>
                      That brings in
                     <a href="https://daostack.io/">DAOstack</a> -  the so-called operating-system for collective intelligence - a blockchain platform (
-                    <a href="https://daostack.io/alchemy">Alchemy</a>)  for running Distributed Autonomous Organization backed by the so-called Holographic consensus.<br>
+                    <a href="https://daostack.io/alchemy">Alchemy</a>)  for running Distributed Autonomous Organization on top of it backed by the so-called Holographic consensus.<br>
                    </div>
                    <div>
                     <br>
                    </div>
                    <div>
-                     The protocol helps DAOs prioritize the most value-aligned proposals, even with million members. The goal of the consensus protocol is to incentivize people to correctly predict what DAO&rsquo;s care about, and lets DAOs make good decisions without requiring everyone to vote on everything (
+                     The consensus protocol helps DAOs prioritize the most value-aligned proposals, even with million members. The goal of the consensus protocol is to incentivize people to correctly predict what DAO&rsquo;s care about (its mission) , and lets DAOs make good decisions without requiring everyone to vote on everything (
                     <a href="https://daostack.io/deck/DAOstack-Deck-en.pdf" style="font-size: 10pt;">DAOStack Slide Deck</a>). 
                    </div>
                    <div>
                     <br>
                    </div>
                    <div>
+                     In the words of Matan Field (founder of DAOstack)
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     &ldquo;A DAO is orientable and super-scaleable&rdquo; (
+                    <a href="https://dev.cloudburo.net/2019/06/12/ethcc-keynote-by-matan-field-daostack.html">ETHCC Keynote Videos</a>)
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
                      DAOstack was experimenting in 2018 in an Alpha release and went in a public Beta with their product called &ldquo;
-                    <a href="https://alchemy.daostack.io/">Alchemy Earth</a>&rdquo; on the Ethereum mainnet. 
+                    <a href="https://alchemy.daostack.io/">Alchemy Earth</a>&rdquo; on the Ethereum mainnet opening it up to communities and organizations, which want to create DAO organizations.
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     There are various DAO experiments established by decentralized networks and applications. Two of them namely the Kyber Network, as well as Polkadot were basing their experiment on DAOstack. 
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/23e31c712f4c2c019c735cd99b1a0aa2.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                     Source: 
+                    <a href="http://research.circle.com/wp-content/uploads/2019/07/2Q19-crypto-retrospective.pdf">Circle Research: Q2-2019 crypto retrospective</a>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     My credo when investigating into new technologies is to try it out by myself (&ldquo;eat your own dog-food&rdquo;) and not just looking at it from a top-down angle. I&rsquo;m an avid hobbyists programmer and established in the recent years a
+                    <a href="https://publishingbot.cloudburo.net/">subscription based blogging product based on Evernote</a>. Moving forward I was now looking out for some tech work in the Ethereum space to kick-start my decentralized programming activities. 
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     So these experiments were ideal for me to test the waters and come up with two proposals which were decided either by the Kyber Network -or the Polkadot community. Finally, both proposals got approved by the respective DAO&rsquo;s and delivered, this article concentrates on the KyberDAO proposal.
                    </div>
                    <div>
                     <font style="font-size: 12pt;"><br></font>
@@ -215,8 +293,8 @@
                     <br>
                    </div>
                    <div>
-                     One community which onboarded a DAO (the so-called
-                    <a href="https://alchemy.daostack.io/dao/0x6bee9b81e434f7afce72a43a4016719315069539">KyberDAO</a>) as an early-mover to Alchemy Earth was the Kyber Network. 
+                     Kyber Network was an early-,over which  onboarded a DAO (the so-called
+                    <a href="https://alchemy.daostack.io/dao/0x6bee9b81e434f7afce72a43a4016719315069539">KyberDAO</a>) to Alchemy Earth. 
                    </div>
                    <div>
                     <br>
@@ -249,7 +327,7 @@
                     <br>
                    </div>
                    <div>
-                     The Kyber Network will allow you to exchange Ethereum based token(s), similar as a traditional foreign exchange trade trade will allow you to exchange for example USD for CHF currencies. The underlying base currency is Ether (ETH) and not any fiat currency. 
+                     The Kyber Network allows you to exchange Ethereum based token(s), similar to a traditional foreign exchange trade which allows you to exchange fiat currencies. The difference is that there is no central exchange involved at all!  The underlying base currency is Ether (ETH) and not any fiat currency. 
                    </div>
                    <div>
                     <br>
@@ -263,7 +341,7 @@
                     <br>
                    </div>
                    <div>
-                     An ideal test environment to request for a funded proposal in the context of my programming experience builds up. In a certain way, a win-win situation for me (Knowledge buildup) as well as the Kyber Network to get some code exposure to the Java community with my proposal. 
+                     So it&rsquo;s an ideal test environment to request for a funded proposal in the context of my programming experience builds up. In a certain way, a win-win situation for me (Knowledge buildup) as well as the Kyber Network to get some code exposure to the Java community with my proposal. 
                    </div>
                    <div>
                     <br>
@@ -331,7 +409,7 @@
                     <br>
                    </div>
                    <div>
-                     My first proposal (actually my second one, I got funded for some work in the PolkaDAO as well, where I was a community member before) got well accepted by the community. There were some questions about the requested amount of funding, which may be normal in a contract negotiation.
+                     My first proposal got well accepted by the community. There were some questions about the requested amount of funding, which may be normal in a contract negotiation.
                    </div>
                    <div>
                     <font style="font-size: 12pt;"><br></font>
@@ -378,7 +456,7 @@
                     <span style="font-size: 14pt;"><br></span>
                    </div>
                    <div>
-                    <span style="font-size: 10pt;">So now let&rsquo;s dig into the Java client library for the Kyber Network, which I developed as part of my funding request. For a start, let&rsquo;s run the Java Tutorial Application. Let&rsquo;s start with the preparation steps.</span>
+                    <span style="font-size: 10pt;">So now let&rsquo;s dig into the Java client library for the Kyber Network, which I developed as part of my funding request. For a start, let&rsquo;s run the Java Tutorial Application. Some the preparation steps.</span>
                    </div>
                    <div>
                     <font style="font-size: 10pt;"><br></font>
@@ -417,16 +495,16 @@
                    <ul>
                     <li>
                      <div>
-                       There are various installers available to the command tool
+                       There are various installers available to the command line tools
                      </div></li>
                     <li>
                      <div>
                        in case of Windows use the
-                      <a href="https://github.com/web3j/web3j/releases/tag/4.3.0">ZIP file distribution</a>
+                      <a href="https://github.com/web3j/web3j/releases/tag/4.3.0">ZIP file distribution</a> and extract in a directory
                      </div></li>
                     <li>
                      <div>
-                       extract in a directory and run the web3j.bat file
+                       then run the web3j.bat file
                      </div></li>
                    </ul>
                    <div>
@@ -479,13 +557,13 @@
                     <br>
                    </div>
                    <div>
-                    <span style="font-size: 12pt;">Preparation Step: Create a Infura Test Node Account</span>
+                    <span style="font-size: 12pt;">Preparation Step: Create an Infura Test Node Account</span>
                    </div>
                    <div>
                     <font style="font-size: 10pt;"><br></font>
                    </div>
                    <div>
-                    <span style="font-size: 10pt;">For writing the Kyber Swap transactions to the Ethereum blockchain you will require a Infura Test Node Account (obviously there are other possibilities, but that&rsquo;s the most straightforward).</span>
+                    <span style="font-size: 10pt;">For writing the Kyber Swap transactions to the Ethereum blockchain you will require an Infura Test Node Account (obviously there are other possibilities, but that&rsquo;s the most straightforward).</span>
                    </div>
                    <div>
                     <font style="font-size: 10pt;"><br></font>
@@ -564,7 +642,7 @@
                     <font style="font-size: 10pt;"><br></font>
                    </div>
                    <div>
-                    <span style="font-size: 10pt;">Just type</span>
+                    <span style="font-size: 10pt;">Just type</span> 
                     <span style="font-size: 10pt; font-style: italic;">gradle run </span>
                     <span style="font-size: 10pt;">which will kick off the tutorial application.</span>
                    </div>
@@ -580,23 +658,21 @@
                    <ul>
                     <li>
                      <div>
-                       First it converts parts of your test Ether to two DAI tokens (
-                      <span style="font-style: italic;">eth2token</span>)
+                       First, it converts parts of your test Ether to two DAI tokens (
+                      <span style="font-style: italic;">eth2token</span>). The Kyber buy rate is required in order to determine the amount of Ether required.
                      </div></li>
                     <li>
                      <div>
-                       Second it converts back one DAI token to Ether (
-                      <span style="font-style: italic;">token2eth</span>)
+                       Second, it converts back one DAI token to Ether (
+                      <span style="font-style: italic;">token2eth</span>). The Kyber sale rate is required in order to determine the amount of Ether paid out.
                      </div></li>
                     <li>
                      <div>
-                       Third it will convert one DAI token to one BAT token (
-                      <span style="font-style: italic;">token2token</span>
+                       Third, it will convert one DAI token to one BAT token (
+                      <span style="font-style: italic;">token2token). </span>
+                      <span style="font-style: italic;"> </span>For this transaction, the buy rate, as well as the sale rate, is required in order to determine how many BAT tokens can be purchased
                      </div></li>
                    </ul>
-                   <div>
-                    <br>
-                   </div>
                    <div>
                     <font style="font-size: 10pt;"><br></font>
                    </div>
@@ -735,6 +811,7 @@
                     <span style="font-size: 10pt;">In order to be web3j compliant (which is built around JSON-RPC interfaces), I introduced a</span>
                     <span style="font-size: 10pt; font-style: italic;">JsonRpc2_0Kyber </span>
                     <span style="font-size: 10pt; font-weight: bold;"> </span>
+                    <span style="font-size: 10pt;">class </span>
                     <span style="font-size: 10pt;">which acts as a protocol converter and prepares the request for the Kyber REST API.</span>
                    </div>
                    <div>
@@ -781,7 +858,7 @@
                     <span style="font-size: 10pt;"><br></span>
                    </div>
                    <div>
-                    <span style="font-size: 10pt;">To conclude the tutorial; the code sequence of the tree scenarios is provided. As you can see the code is quite compact, readable and understandable. If you would check out a basic web3j ethereum transaction sample, you would see the similarity of the code.</span>
+                    <span style="font-size: 10pt;">To conclude the tutorial; the code sequence of the three scenarios is provided. As you can see the code is quite compact, readable and understandable. If you would check out a basic web3j Ethereum transaction sample, you would see the similarity of the code.</span>
                    </div>
                    <div>
                     <span style="font-size: 10pt;"><br></span>
@@ -859,8 +936,6 @@
                   <div>
                    <span style="font-size: 10pt;">As already mentioned, I plan to come up with a second article, which explains the java client library and its implementation strategy in more detail.</span>
                   </div></p>
-                
-                <p><a href="https://webgate-dashboard.hidora.com/#/client/Mjc4NzcAYwBqZWxhc3RpYy1hdXRoLXByb3ZpZGVy?token=4C59D803A94E4D979C1494C45E4FDC43DFB24678C4D440D123F3C42CA68205F5&amp;session=822xfc58bd05c3e2978ff957e05478ff9cf4&amp;nodeId=27877&amp;targetAppid=347394dd376b8ec045c86c40f944a713">Link</a></p>
                 
               </div>
             </div>
