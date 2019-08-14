@@ -127,6 +127,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/08/14/web3-summit-2019-the-google-calendar-for-planning.html</loc>
+    <lastmod>2019-08-14</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/08/11/docker-small-hints-6-using-cloudwatch-in-combination-with-log-entries-management.html</loc>
     <lastmod>2019-06-23</lastmod>
     <priority>0.7</priority>
@@ -1258,6 +1264,18 @@
     <loc>https://dev.cloudburo.net/2019.html</loc>
     <lastmod>2019-06-23</lastmod>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/08.html</loc>
+    <lastmod>2019-06-23</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/08/14.html</loc>
+    <lastmod>2019-06-23</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -2462,6 +2480,12 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/2019/page/2.html</loc>
+    <lastmod>2019-06-23</lastmod>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/page/3.html</loc>
     <lastmod>2019-06-23</lastmod>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>
