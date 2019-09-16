@@ -5,10 +5,242 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-07-26T12:24:32+00:00</updated>
+  <updated>2019-09-16T21:46:10+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Running Nextcloud on Windows 10 Docker Installation</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/09/16/running-nextcloud-on-windows-10-docker-installation.html"/>
+    <id>https://dev.cloudburo.net/2019/09/16/running-nextcloud-on-windows-10-docker-installation.html</id>
+    <published>2019-09-16T21:46:10+00:00</published>
+    <updated>2019-09-16T21:46:23+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 12pt;"&gt;&lt;b&gt;Prerequisite&lt;/b&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Having Docker Desktop installed. I used the Hyper-V version, which requires Windows 10 Professional licence.
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/9c6ad656c9f00698941b05cb5a636b19.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Enable Sharing your Drive in Docker Desktop
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/5e6740dd74776673e1dc78ae37585f3f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Create directories which will be mounted by Docker
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/e88e224b1637b363edd167d2010b691c.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 12pt;"&gt;&lt;b&gt;Add docker-compose.yml file&lt;/b&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;font style="font-size: 10pt;"&gt;Get the following docker-compose.yml (which is an extension of the following &lt;a href="https://nerdblog.steinkopf.net/2018/03/nextcloud-mit-docker/"&gt;tutorial&lt;/a&gt;)&lt;/font&gt;
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;ul&gt;
+         &lt;li&gt;
+          &lt;div&gt;
+           &lt;a href="https://gist.github.com/talfco/06786c494997c13c8bed0a25e1930f48" style="font-size: 10pt;"&gt;&lt;a href="https://gist.github.com/talfco/06786c494997c13c8bed0a25e1930f48"&gt;https://gist.github.com/talfco/06786c494997c13c8bed0a25e1930f48&lt;/a&gt;&lt;/a&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;b&gt;&lt;font style="font-size: 12pt;"&gt;Add d&lt;/font&gt;&lt;font style="font-size: 12pt;"&gt;b.env file&lt;/font&gt;&lt;/b&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;b&gt;&lt;font style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;font style="font-size: 10pt;"&gt;Add the following file&lt;/font&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/f3f0890bc0b95f3edfde5d0f3b3eb140.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;b&gt;&lt;font style="font-size: 12pt;"&gt;Run docker-compose&lt;/font&gt;&lt;/b&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;b&gt;&lt;font style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Run the command
+          &lt;font style="font-family: &amp;quot;Segoe UI Symbol&amp;quot;;"&gt;&lt;i&gt;docker-compose up&lt;/i&gt;&lt;/font&gt;
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;ul&gt;
+         &lt;li&gt;
+          &lt;div&gt;
+           &lt;span style="font-family: &amp;quot;Segoe UI Symbol&amp;quot;;"&gt;&lt;i&gt;Which will start the 3 docker instances&lt;/i&gt;&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Head over to the config.php in your local mounted docker volumes
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/1b7891306e0f35849894a986f0318c8f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           And add in the file an additional entry
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/886b7cfd2c864990913197011ba81748.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Stop and restart the Docker images
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Now you are ready to log  into your nextcloud environment (provide the admin password the first time you log in)
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Open&lt;br&gt;
+          &lt;a href="http://localhost:8094/"&gt;&lt;a href="http://localhost:8094"&gt;http://localhost:8094&lt;/a&gt;&lt;/a&gt;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/eafeeea8cc3dddefddc91a386366f552.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         DONE
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>DeFi Token Trading In Java Using The Kyber Network #1 - A KyberDAO Funded Tutorial</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/07/26/defi-token-trading-in-java-using-the-kyber-network-1-a-kyberdao-funded-tutorial.html"/>
@@ -11565,134 +11797,6 @@
        &lt;div class="responsive-video"&gt;
         &lt;iframe src="https://www.youtube.com/embed/OFV-1cpjQRk?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
        &lt;/div&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Thougths about an effective digital platform</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html"/>
-    <id>https://dev.cloudburo.net/2018/03/17/thougths-about-an-effective-digital-platform.html</id>
-    <published>2018-03-17T15:29:03+00:00</published>
-    <updated>2019-09-04T04:34:03+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        On Martin Fowlers blog Evan Bottcher published an excellent article about digital platforms, called “
-       &lt;a href="https://martinfowler.com/articles/talk-about-platforms.html"&gt;What I Talk About When I Talk About Platforms&lt;/a&gt;”.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In his article, he provide insights out of different “going to the cloud” projects of big companies and their failure and success criterias. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        As for example “The half arsed superficial private cloud”, which is a re-labelling existing virtualisation platforms for use by delivery teams in a very constrained way, with no real intent to reduce the amount of centralised control.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        It’s a consequence of 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;&amp;ldquo;The BigCo infrastructure and operations group was not ready at that time to break down it’s own organisational silos, and shift significant responsibility (and therefore access) to delivery teams. And even if the intent was good, the sheer amount of effort required to incrementally build that API to the required richness was not viable.”&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        A pattern which I’m confronted in my daily work as well, big enterprises are not ready to really shift control out of their infrastructure and operations towers.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        He introduces the concept of backlog coupling 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;&amp;quot;Digital teams are generally constrained in three main areas: slow-moving core transactional systems of record, access to high-quality data and analytics, and shared infrastructure and operations. &lt;/span&gt;
-       &lt;span style="font-style: italic;"&gt;It’s a simple concept - if a large number of items in the backlog of a digital product team require a corresponding backlog item to be raised in another team, then productivity and responsiveness suffer enormously. Backlogs get chained across the organisation, each being prioritised according to a different system.&lt;/span&gt;
-       &lt;span style="font-style: italic;"&gt;”&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Therefore
-       &lt;span style="font-style: italic;"&gt; &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;&amp;quot;The platform should provide a team with self-service access. Specifically it should allow for self-service provisioning, self-service configuration, and self-service management and operation of the platform capabilities and assets.&lt;/span&gt;
-       &lt;span style="font-style: italic;"&gt;”&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        So where to start:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;&lt;span style="font-size: 14px; font-style: italic;"&gt;Firstly you will probably already be on your journey to move away from ‘project’ as the primary mechanism for funding and staffing delivery of technology. Platform is a product, and needs a long-lived and stable product team tasked with both build and run.&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;span style="font-style: italic;"&gt;Secondly you must be willing to shift some or all of the run responsibility for applications into the application teams and away from centralised operations and support. &lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;i&gt;Thirdly you must be willing to trade off strict consistency of implementation against the freedom and responsibilities that you’re handing to the autonomous application teams.&lt;/i&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
