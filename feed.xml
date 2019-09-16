@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/09/16/running-nextcloud-on-windows-10-docker-installation.html"/>
     <id>https://dev.cloudburo.net/2019/09/16/running-nextcloud-on-windows-10-docker-installation.html</id>
     <published>2019-09-16T21:46:10+00:00</published>
-    <updated>2019-09-16T21:46:23+00:00</updated>
+    <updated>2019-09-16T21:55:13+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -24,7 +24,7 @@
     
     &lt;p&gt;&lt;div&gt;
        &lt;div&gt;
-        &lt;font style="font-size: 12pt;"&gt;&lt;b&gt;Prerequisite&lt;/b&gt;&lt;/font&gt;
+        &lt;font style="font-size: 12pt;"&gt;&lt;span style="font-size: 12pt; font-weight: bold;"&gt;Prerequisite&lt;/span&gt;&lt;/font&gt;
        &lt;/div&gt;
        &lt;div&gt;
         &lt;br&gt;
@@ -87,7 +87,7 @@
         &lt;br&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;font style="font-size: 12pt;"&gt;&lt;b&gt;Add docker-compose.yml file&lt;/b&gt;&lt;/font&gt;
+        &lt;font style="font-size: 12pt;"&gt;&lt;span style="font-size: 12pt; font-weight: bold;"&gt;Add docker-compose.yml file&lt;/span&gt;&lt;/font&gt;
        &lt;/div&gt;
        &lt;div&gt;
         &lt;font style="font-size: 10pt;"&gt;&lt;br&gt;&lt;/font&gt;
@@ -95,7 +95,9 @@
        &lt;ul&gt;
         &lt;li&gt;
          &lt;div&gt;
-          &lt;font style="font-size: 10pt;"&gt;Get the following docker-compose.yml (which is an extension of the following &lt;a href="https://nerdblog.steinkopf.net/2018/03/nextcloud-mit-docker/"&gt;tutorial&lt;/a&gt;)&lt;/font&gt;
+          &lt;span style="font-size: 10pt;"&gt;Get the following docker-compose.yml (which is an extension of the following&lt;/span&gt;
+          &lt;a href="https://nerdblog.steinkopf.net/2018/03/nextcloud-mit-docker/" style="font-size: 10pt;"&gt;tutorial&lt;/a&gt;
+          &lt;span style="font-size: 10pt;"&gt;)&lt;/span&gt;
          &lt;/div&gt;&lt;/li&gt;
         &lt;ul&gt;
          &lt;li&gt;
@@ -103,20 +105,25 @@
            &lt;a href="https://gist.github.com/talfco/06786c494997c13c8bed0a25e1930f48" style="font-size: 10pt;"&gt;&lt;a href="https://gist.github.com/talfco/06786c494997c13c8bed0a25e1930f48"&gt;https://gist.github.com/talfco/06786c494997c13c8bed0a25e1930f48&lt;/a&gt;&lt;/a&gt;
           &lt;/div&gt;&lt;/li&gt;
         &lt;/ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Adjust the volume entries, to reflect your directory locations
+         &lt;/div&gt;&lt;/li&gt;
        &lt;/ul&gt;
        &lt;div&gt;
         &lt;br&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;b&gt;&lt;font style="font-size: 12pt;"&gt;Add d&lt;/font&gt;&lt;font style="font-size: 12pt;"&gt;b.env file&lt;/font&gt;&lt;/b&gt;
+        &lt;span style="font-size: 12pt; font-weight: bold;"&gt;Add d&lt;/span&gt;
+        &lt;span style="font-size: 12pt; font-weight: bold;"&gt;b.env file&lt;/span&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;b&gt;&lt;font style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;
+        &lt;font style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/font&gt;
        &lt;/div&gt;
        &lt;ul&gt;
         &lt;li&gt;
          &lt;div&gt;
-          &lt;font style="font-size: 10pt;"&gt;Add the following file&lt;/font&gt;
+          &lt;span style="font-size: 10pt;"&gt;Add the following file&lt;/span&gt;
          &lt;/div&gt;&lt;/li&gt;
        &lt;/ul&gt;
        &lt;div&gt;
@@ -133,21 +140,21 @@
         &lt;br&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;b&gt;&lt;font style="font-size: 12pt;"&gt;Run docker-compose&lt;/font&gt;&lt;/b&gt;
+        &lt;span style="font-size: 12pt; font-weight: bold;"&gt;Run docker-compose&lt;/span&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;b&gt;&lt;font style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;
+        &lt;font style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/font&gt;
        &lt;/div&gt;
        &lt;ul&gt;
         &lt;li&gt;
          &lt;div&gt;
            Run the command
-          &lt;font style="font-family: &amp;quot;Segoe UI Symbol&amp;quot;;"&gt;&lt;i&gt;docker-compose up&lt;/i&gt;&lt;/font&gt;
+          &lt;span style="font-family: &amp;quot;Segoe UI Symbol&amp;quot;; font-style: italic;"&gt;docker-compose up&lt;/span&gt;
          &lt;/div&gt;&lt;/li&gt;
         &lt;ul&gt;
          &lt;li&gt;
           &lt;div&gt;
-           &lt;span style="font-family: &amp;quot;Segoe UI Symbol&amp;quot;;"&gt;&lt;i&gt;Which will start the 3 docker instances&lt;/i&gt;&lt;/span&gt;
+           &lt;span style="font-family: &amp;quot;Segoe UI Symbol&amp;quot;; font-style: italic;"&gt;Which will start the 3 docker instances&lt;/span&gt;
           &lt;/div&gt;&lt;/li&gt;
         &lt;/ul&gt;
        &lt;/ul&gt;
@@ -197,14 +204,10 @@
          &lt;div&gt;
            Stop and restart the Docker images
          &lt;/div&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-       &lt;ul&gt;
         &lt;li&gt;
          &lt;div&gt;
            Now you are ready to log  into your nextcloud environment (provide the admin password the first time you log in)
          &lt;/div&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-       &lt;ul&gt;
         &lt;li&gt;
          &lt;div&gt;
            Open&lt;br&gt;
@@ -228,14 +231,41 @@
         &lt;br&gt;
        &lt;/div&gt;
        &lt;div&gt;
-         DONE
+         Done - Three docker containers are created and running
        &lt;/div&gt;
        &lt;div&gt;
         &lt;br&gt;
        &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           docker container 1: maria-db
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           docker container 2: nextcloud application
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           docker container 3: db backup container
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
        &lt;div&gt;
         &lt;br&gt;
        &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/fdef13ffff02aeee6696a90bde573156.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
