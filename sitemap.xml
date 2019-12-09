@@ -769,8 +769,13 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>https://dev.cloudburo.net/2019/01/05/beginners-learning-platform-for-the-blockchain-space.html</loc>
     <lastmod>2019-12-08</lastmod>
+=======
+    <loc>https://dev.cloudburo.net/2019/12/07/introduction-to-synthetix-defi-derivatives-exchange-on-ethereum.html</loc>
+    <lastmod>2019-12-09</lastmod>
+>>>>>>> d1f04a51d1dfa2ce13782369ce06605ab37dedbb
     <priority>0.7</priority>
     <changefreq>daily</changefreq>
   </url>
