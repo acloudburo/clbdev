@@ -5,10 +5,66 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-12-07T15:28:16+00:00</updated>
+  <updated>2019-12-20T07:09:55+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>Hey Meta - A free online meta-tag generator</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/12/20/hey-meta-a-free-online-meta-tag-generator.html"/>
+    <id>https://dev.cloudburo.net/2019/12/20/hey-meta-a-free-online-meta-tag-generator.html</id>
+    <published>2019-12-20T07:09:55+00:00</published>
+    <updated>2019-12-20T07:10:03+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/2b433a1a6e0f849c4130951b267a3591.png'&gt;&lt;/p&gt;
+  
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div style="color: rgb(28, 30, 41); margin-top: 0pt; margin-bottom: 0pt;"&gt;
+       &lt;span style="color: rgb(28, 30, 41);"&gt;&amp;ldquo;Hey Meta&amp;rdquo; is a handy tool which allows you to generate impactful metatags for your website.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="color: rgb(28, 30, 41); margin-top: 0pt; margin-bottom: 0pt;"&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="color: rgb(28, 30, 41); margin-top: 0pt; margin-bottom: 0pt;"&gt;
+       &lt;span style="color: rgb(28, 30, 41);"&gt;Meta tags enable search engines, social networks, and messaging services to get the required information from your website and display it in a visual way instead of just a plain old link.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="color: rgb(28, 30, 41); margin-top: 0pt; margin-bottom: 0pt;"&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="color: rgb(28, 30, 41); margin-top: 0pt; margin-bottom: 0pt;"&gt;
+       &lt;span style="color: rgb(28, 30, 41);"&gt;&amp;ldquo;Hey Meta&amp;rdquo; helps you generate those meta tags by editing your existing ones or writing new ones which you generate and easily place on your website.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="color: rgb(28, 30, 41); margin-top: 0pt; margin-bottom: 0pt;"&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div style="color: rgb(28, 30, 41); margin-top: 0pt; margin-bottom: 0pt;"&gt;
+       &lt;span style="color: rgb(28, 30, 41);"&gt;You can find the free online meta-tag generator here:&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="color: rgb(28, 30, 41); margin-top: 0pt; margin-bottom: 0pt;"&gt;
+       &lt;a href="https://www.heymeta.com/" style="color: #4a6ee0; background: transparent;"&gt;&lt;a href="https://www.heymeta.com/"&gt;https://www.heymeta.com/&lt;/a&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="https://www.producthunt.com/alternatives/docusaurus?bc=1"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>Introduction to Synthetix - Defi Derivatives Exchange On Ethereum</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/12/07/introduction-to-synthetix-defi-derivatives-exchange-on-ethereum.html"/>
@@ -11779,67 +11835,6 @@
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="https://martinfowler.com/bliki/CircuitBreaker.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Martin Fowler's Microservices Architecture Definiton</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html"/>
-    <id>https://dev.cloudburo.net/2018/03/24/martin-fowler-s-microservices-architecture-definiton.html</id>
-    <published>2018-03-24T12:07:53+00:00</published>
-    <updated>2019-12-17T12:01:59+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Martin Fowler provides a very good introduction of the charcteristics of a Microservice Architecture.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;&lt;br&gt;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;&amp;ldquo;We cannot say there is a formal definition of the microservices architectural style, but we can attempt to describe what we see as common characteristics for architectures that fit the label. As with any definition that outlines common characteristics, not all microservice architectures have all the characteristics, but we do expect that most microservice architectures exhibit most characteristics.&amp;rdquo;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-      &lt;div&gt;
-        It covers quite an extensive scope and introduces the topic of
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;&lt;b&gt;Componentization via Services&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Organized around Business Capabilities&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;How big is a microservice?&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Products not Projects&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Smart endpoints and dumb pipes&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Microservices and SOA&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Decentralized Governance&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Many languages, many options&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Decentralized Data Management&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Battle-tested standards and enforced standards&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Infrastructure Automation&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Make it easy to do the right thing&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Design for failure&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;The circuit breaker and production ready code&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Synchronous calls considered harmful&lt;/b&gt;&lt;/li&gt;
-       &lt;li&gt;&lt;b&gt;Evolutionary Design&lt;/b&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="https://martinfowler.com/articles/microservices.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
