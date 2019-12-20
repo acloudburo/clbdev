@@ -199,12 +199,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://dev.cloudburo.net/2019/12/20/how-to-read-the-diagrams.html</loc>
-    <lastmod>2019-12-20</lastmod>
-    <priority>0.7</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://dev.cloudburo.net/2015/04/14/gradle-small-hints-2-deploy-and-integrate-maven-artifacts-on-github.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.7</priority>

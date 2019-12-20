@@ -5,66 +5,10 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-12-20T17:04:47+00:00</updated>
+  <updated>2019-12-20T07:09:54+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
-  <entry>
-    <title>How To Read The Diagrams</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2019/12/20/how-to-read-the-diagrams.html"/>
-    <id>https://dev.cloudburo.net/2019/12/20/how-to-read-the-diagrams.html</id>
-    <published>2019-12-20T17:04:47+00:00</published>
-    <updated>2019-12-20T17:04:48+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-       &lt;span style=""&gt;How To Read The Diagrams&lt;/span&gt;
-       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-        &lt;span style=""&gt;Dependent on your background, the reading of the diagrams may not be straightforward. But I can assure you that you get quickly on speed having the main concepts understood.&lt;/span&gt;
-       &lt;/div&gt;
-       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-        &lt;span style=""&gt;The diagram technique is using the Unified Modeling Language (UML):&lt;/span&gt;
-       &lt;/div&gt;
-       &lt;p style="margin-top: 18.0pt; margin-right: 0cm; margin-bottom: 18.0pt; margin-left: 0cm;"&gt;&lt;/p&gt;
-       &lt;div&gt;
-        &lt;i&gt;The Unified Modeling Language is a general-purpose, developmental, modelling language in the field of software engineering that intends to provide a standard way to visualise the design of a system.  [1]&lt;/i&gt;
-       &lt;/div&gt;
-       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-        &lt;span style=""&gt;It provides a way to visualise the system’s architectural blueprints in a diagram. But as well as the possibility to describe a business domain model of a topic area.&lt;/span&gt;
-       &lt;/div&gt;
-       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-        &lt;span style=""&gt; &lt;/span&gt;
-       &lt;/div&gt;Bibliography
-       &lt;table style="border-collapse: collapse; min-width: 100%;"&gt;
-        &lt;tbody&gt;
-         &lt;tr style=""&gt;
-          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
-           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-            &lt;span style=""&gt;[1]&lt;/span&gt;
-           &lt;/div&gt;&lt;/td&gt;
-          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
-           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-            &lt;span style=""&gt;“Unified Modeling Language,” [Online]. Available: &lt;a href="http://en.wikipedia.org/wiki/Unified_Modeling_Language"&gt;&lt;a href="http://en.wikipedia.org/wiki/Unified_Modeling_Language"&gt;http://en.wikipedia.org/wiki/Unified_Modeling_Language&lt;/a&gt;&lt;/a&gt;. [Accessed 20 12 2019].&lt;/span&gt;
-           &lt;/div&gt;&lt;/td&gt;
-         &lt;/tr&gt;
-        &lt;/tbody&gt;
-       &lt;/table&gt;
-       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-        &lt;span style="mso-fareast-font-family: &amp;quot;Times New Roman&amp;quot;;"&gt; &lt;/span&gt;
-       &lt;/div&gt;
-       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-        &lt;span style=""&gt; &lt;/span&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
   <entry>
     <title>Hey Meta - A free online meta-tag generator</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/12/20/hey-meta-a-free-online-meta-tag-generator.html"/>
@@ -11848,6 +11792,47 @@
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Circuit Breaker Pattern For Robust Microservices</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html"/>
+    <id>https://dev.cloudburo.net/2018/03/25/circuit-breaker-pattern-for-robust-microservices.html</id>
+    <published>2018-03-25T14:20:37+00:00</published>
+    <updated>2019-12-17T12:01:59+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/accba0b69f352b4c9440f05891b015c5.jpeg'&gt;&lt;/p&gt;
+  
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+        The Circuit Breaker Pattern is an important pattern which prevents to run out of critical resources leading to cascading failures accross multiple systems due to the inavailabilty of a remote supplier. 
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        In his excellent book
+       &lt;a href="https://www.amazon.com/gp/product/0978739213?ie=UTF8&amp;amp;tag=martinfowlerc-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0978739213"&gt;Release It&lt;/a&gt; &lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; , Michael Nygard popularized the Circuit Breaker pattern to prevent this kind of catastrophic cascade.
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        Martin Fowler describes the pattern in the following blog article.
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="https://martinfowler.com/bliki/CircuitBreaker.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
