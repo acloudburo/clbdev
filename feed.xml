@@ -5,7 +5,7 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-12-20T07:09:55+00:00</updated>
+  <updated>2019-12-20T07:09:54+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
@@ -13,14 +13,12 @@
     <title>Hey Meta - A free online meta-tag generator</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/12/20/hey-meta-a-free-online-meta-tag-generator.html"/>
     <id>https://dev.cloudburo.net/2019/12/20/hey-meta-a-free-online-meta-tag-generator.html</id>
-    <published>2019-12-20T07:09:55+00:00</published>
-    <updated>2019-12-20T07:10:03+00:00</updated>
+    <published>2019-12-20T07:09:54+00:00</published>
+    <updated>2019-12-20T07:29:37+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;div class="row"&gt;
-  &lt;p&gt;&lt;img class='pull-left img-responsive article img-thumbnail' src='/images/2b433a1a6e0f849c4130951b267a3591.png'&gt;&lt;/p&gt;
-  
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
     
@@ -53,14 +51,14 @@
       &lt;/div&gt;
       &lt;div&gt;&lt;/p&gt;
     
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/2b433a1a6e0f849c4130951b267a3591.png'&gt;&lt;/p&gt;
+    
   &lt;/div&gt;
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
       &lt;div&gt;
        &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="https://www.producthunt.com/alternatives/docusaurus?bc=1"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
