@@ -889,6 +889,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/12/21/dependent-on-your-background-the-reading-of-the-uml-diagrams-in-the-context-of.html</loc>
+    <lastmod>2019-12-21</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/03/16/uber-unveils-its-realtime-market-platform.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.7</priority>
@@ -1267,6 +1273,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/diagrammer.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/blockstack.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.9</priority>
@@ -1282,6 +1294,12 @@
     <loc>https://dev.cloudburo.net/2019/12.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/12/21.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
