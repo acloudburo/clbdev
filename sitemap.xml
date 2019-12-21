@@ -259,6 +259,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/12/21/how-to-read-and-interpret-the-uml-diagrams-used-in-the-diagrammer-series.html</loc>
+    <lastmod>2019-12-21</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/04/02/a-service-is-a-logical-construct-built-by-microservices.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.7</priority>
@@ -1123,6 +1129,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/diagrammer.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/tutorial.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.9</priority>
@@ -1282,6 +1294,12 @@
     <loc>https://dev.cloudburo.net/2019/12.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/12/21.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

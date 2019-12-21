@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | How To Read And Interpret The UML Diagrams Used In The Diagrammer Series</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (6)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (23)</a>
+            <a href="/tags/blockstack.html" class="label label-default">blockstack (1)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (7)</a>
+            <a href="/tags/dao.html" class="label label-default">dao (4)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/diagrammer.html" class="label label-default">diagrammer (1)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (11)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (4)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (15)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/java.html" class="label label-default">java (3)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (5)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (5)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (6)</a>
+            <a href="/tags/python.html" class="label label-default">python (7)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (20)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/statistics.html" class="label label-default">statistics (2)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tut01.html" class="label label-default">tut01 (7)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (11)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2019.html" class="label label-primary">2019 (24)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2019/12/21/how-to-read-and-interpret-the-uml-diagrams-used-in-the-diagrammer-series.html">How To Read And Interpret The UML Diagrams Used In The Diagrammer Series</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  21.Dec 2019 | Tags <a class="label label-primary" href="/tags/diagrammer.html">diagrammer</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                   <div>
+                    <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Dependent on your background, the reading of the UML diagrams in the context of the Diagrammer article  series may not be straightforward. But I can assure you that you get quickly on speed having the main concepts understood. </span>
+                   </div>
+                   <div>
+                    <span style="font-size: 11pt;"><br></span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/5bf7689dc364e8b086dd6c496fe1f14b.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt;"><br></span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">The diagram technique is using the Unified Modeling Language (UML)</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;">The Unified Modeling Language is a general-purpose, developmental, modeling language in the field of software engineering that intends to provide a standard way to visualize the design of a system</span>
+                    <span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;">[1]</span>
+                    <span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;">.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">The flexibility of the modeling language allows you to visualize almost any aspect of a system by using multiple diagram types.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">By the way, with the phrase system, we don’t mean only IT systems but any kind of it</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;">A set of things working together as parts of a mechanism or an interconnecting network.</span>
+                    <span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;">[2]</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">As well as</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;">A set of principles or procedures according to which something is done; an organized framework or method.</span>
+                    <span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;">[2]</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">There are two main categories of diagram types</span>
+                   </div>
+                   <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                    <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                     <div>
+                      <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Structure diagrams emphasize the things that must present in the system being modeled</span>
+                     </div></li>
+                    <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                     <div style="margin-top: 0pt; margin-bottom: 6pt;">
+                      <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Behavior Diagrams emphasize what must happen in the system being modeled</span>
+                     </div></li>
+                   </ul>
+                   <div style="margin: 0.7mm 0mm 0mm; text-align: left;">
+                    <span style=" font-size: 13pt; color: rgb(47, 84, 150); font-family: &quot;Calibri Light&quot;;">Class Diagram</span>
+                   </div>
+                   <div>
+                    <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">We emphasize on the domain model, which describes the structure of a system domain.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">The domain model is a representation of meaningful real-world concepts pertinent to the domain that need to be modeled in software. The concepts include the data involved in the business and rules the business uses concerning that data. A domain model leverages the natural language of the domain</span>
+                    <span style=" font-size: 10pt; color: rgb(84, 84, 84); font-family: Arial;">.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">The main diagram used to describe the concepts and relationships of a domain is the  “UML class diagram.” </span>
+                    <span style=" font-size: 11pt; font-family: Calibri;">Concepts are represented by classes, while relationships are represented by associations.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm; text-align: center;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/d6cc9de7d18d11efba7aab9992c856a4.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm; text-align: center;">
+                    <br>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; font-family: Calibri;">For example, the Diagram1 consists of</span>
+                   </div>
+                   <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                    <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                     <div>
+                      <span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri;">Three</span>
+                      <span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">Classes</span>
+                      <span style="font-size: 11pt; font-family: Calibri;">  “Trading,” “Market” and “Risk”</span>
+                     </div></li>
+                    <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                     <div>
+                      <span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri;">Two</span>
+                      <span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">Associations</span>
+                      <span style="font-size: 11pt; font-family: Calibri;">“isEnabledIn” and “bears”</span>
+                     </div></li>
+                    <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                     <div style="margin-top: 0pt; margin-bottom: 8pt;">
+                      <span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri;">The two associations have multiplicity associated with the specific classes “Market” and “Risk.”</span>
+                     </div></li>
+                   </ul>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; font-family: Calibri;">The overall diagram reads as follows:</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; font-family: Calibri;">“Trading is enabled in zero to multiple Markets, and each Market may bear zero to multiple Risks.”</span>
+                   </div>
+                   <div style="text-align: center; margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/101933850f2fec067827733f2447ead9.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; font-family: Calibri;">Two additional relationship types play as well a role in our concept modeling</span>
+                   </div>
+                   <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                    <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                     <div>
+                      <span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri;">Generalization Relationship: a generalization relationship is a relationship in which one class element (the child) is based on another class element (the parent). The two concepts in relation have to be of the same type. The child element represents a refinement or more specific element of the parent one. For example, two specific Risk Types.</span>
+                     </div></li>
+                    <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                     <div>
+                      <span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri;">Aggregation Relationship:  an aggregation relationship is a relationship in which a class is a part of or subordinate to the other element. In a way, it assembles or configures a more complex object. For example, an important aspect of a Market is Market Liquidity. We use the aggregation here because the Liquidity is a part of the Market itself. It would not exists on its own when there is no Market.</span>
+                     </div></li>
+                   </ul>
+                   <div style="margin: 0.7mm 0mm 0mm; text-align: left;">
+                    <span style=" font-size: 12pt; color: rgb(31, 55, 99); font-family: &quot;Calibri Light&quot;;">Naming Conventions</span>
+                   </div>
+                   <div>
+                    <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">In Associations and Relations, we use the terms</span>
+                   </div>
+                   <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                    <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                     <div>
+                      <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">mayHave, to express the optionality in the relation, i.e., the multiplicity 0..1</span>
+                     </div></li>
+                    <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                     <div style="margin-top: 0pt; margin-bottom: 8pt;">
+                      <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">hasA, to express the multiplicity of 1</span>
+                     </div></li>
+                   </ul>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">More content will be published, as soon as additional the Diagrammer article series introduces new diagrams.</span>
+                   </div>
+                   <span style="font-size: 16pt; color: rgb(47, 84, 150); font-family: &quot;Calibri Light&quot;;">Bibliography</span>
+                   <table style="border-collapse: collapse; min-width: 100%;">
+                    <tbody>
+                     <tr style="">
+                      <td style=" padding: 8px; border: 1px solid;">
+                       <div style="margin-top: 1em; margin-bottom: 1em;">
+                        <span style="">[1]</span>
+                       </div></td>
+                      <td style=" padding: 8px; border: 1px solid;">
+                       <div style="margin-top: 1em; margin-bottom: 1em;">
+                        <span style="">“Unified Modeling Language,” [Online]. Available: <a href="http://en.wikipedia.org/wiki/Unified_Modeling_Language"><a href="http://en.wikipedia.org/wiki/Unified_Modeling_Language">http://en.wikipedia.org/wiki/Unified_Modeling_Language</a></a>.</span>
+                       </div></td>
+                     </tr>
+                     <tr style="">
+                      <td style=" padding: 8px; border: 1px solid;">
+                       <div style="margin-top: 1em; margin-bottom: 1em;">
+                        <span style="">[2]</span>
+                       </div></td>
+                      <td style=" padding: 8px; border: 1px solid;">
+                       <div style="margin-top: 1em; margin-bottom: 1em;">
+                        <span style="">“Lexicon,” [Online]. Available: <a href="http://lexio.com/"><a href="http://lexio.com">http://lexio.com</a></a>.</span>
+                       </div></td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <br>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Photos:</span>
+                   </div>
+                   <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                    <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                     <div style="margin-top: 0pt; margin-bottom: 8pt;">
+                      <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">By</span>
+                      <a href="https://unsplash.com/%40charlesdeluvio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;">Charles</a>
+                      <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"> on </span>
+                      <a href="https://unsplash.com/s/photos/diagram?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;">Unsplash</a>
+                     </div></li>
+                   </ul>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> </span>
+                   </div>
+                  </div>
+                  <div>
+                   <br>
+                  </div></p>
+                
+                <p><a href="https://d.docs.live.net/f250da2627755048/Documents/Cloudburo/The%20Diagrammer/1%20-%20How%20To%20Read%20The%20Diagrams.docx">Link</a></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2019 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>
