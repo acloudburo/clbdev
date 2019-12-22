@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2019/12/21/how-to-read-and-interpret-the-uml-diagrams-used-in-the-diagrammer-series.html"/>
     <id>https://dev.cloudburo.net/2019/12/21/how-to-read-and-interpret-the-uml-diagrams-used-in-the-diagrammer-series.html</id>
     <published>2019-12-21T13:47:53+00:00</published>
-    <updated>2019-12-21T17:48:00+00:00</updated>
+    <updated>2019-12-22T00:26:14+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -92,13 +92,13 @@
         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The main diagram used to describe the concepts and relationships of a domain is the  “UML class diagram.” &lt;/span&gt;
         &lt;span style=" font-size: 11pt; font-family: Calibri;"&gt;Concepts are represented by classes, while relationships are represented by associations.&lt;/span&gt;
        &lt;/div&gt;
-       &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;
-        &lt;span style=""&gt; 
-       &lt;img class='article  img-thumbnail' src='/images/d6cc9de7d18d11efba7aab9992c856a4.png'&gt;&lt;/p&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/aa2255f1580a40f95c340e913f8f181f.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+    &lt;p&gt;&lt;span/&gt;          &lt;br&gt;
        &lt;/div&gt;
        &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;
         &lt;br&gt;
@@ -117,7 +117,7 @@
          &lt;div&gt;
           &lt;span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri;"&gt;Two&lt;/span&gt;
           &lt;span style="font-size: 11pt; font-family: Calibri; font-weight: bold;"&gt;Associations&lt;/span&gt;
-          &lt;span style="font-size: 11pt; font-family: Calibri;"&gt;“isEnabledIn” and “bears”&lt;/span&gt;
+          &lt;span style="font-size: 11pt; font-family: Calibri;"&gt;“takesPlace” and “bears”&lt;/span&gt;
          &lt;/div&gt;&lt;/li&gt;
         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
          &lt;div style="margin-top: 0pt; margin-bottom: 8pt;"&gt;
@@ -128,15 +128,15 @@
         &lt;span style=" font-size: 11pt; font-family: Calibri;"&gt;The overall diagram reads as follows:&lt;/span&gt;
        &lt;/div&gt;
        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
-        &lt;span style=" font-size: 11pt; font-family: Calibri;"&gt;“Trading is enabled in zero to multiple Markets, and each Market may bear zero to multiple Risks.”&lt;/span&gt;
+        &lt;span style=" font-size: 11pt; font-family: Calibri;"&gt;“Trading takes place in zero to multiple Markets, and each Market may bear zero to multiple Risks.”&lt;/span&gt;
        &lt;/div&gt;
-       &lt;div style="text-align: center; margin: 0mm 0mm 2.81mm;"&gt;
-        &lt;span style=""&gt; 
-       &lt;img class='article  img-thumbnail' src='/images/101933850f2fec067827733f2447ead9.png'&gt;&lt;/p&gt;
+       &lt;div style="text-align: center; margin: 0mm 0mm 2.81mm;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/31c3fc318d9fce2918e5a5e873ab7c70.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+    &lt;p&gt;&lt;span/&gt;          &lt;br&gt;
        &lt;/div&gt;
        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
         &lt;span style=" font-size: 11pt; font-family: Calibri;"&gt;Two additional relationship types play as well a role in our concept modeling&lt;/span&gt;
