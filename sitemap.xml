@@ -553,6 +553,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2019/12/22/the-economy-explained-by-ray-dalio-in-30-minutes.html</loc>
+    <lastmod>2019-12-22</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2015/06/07/docker-small-hints-2-controlling-cloud-costs-using-alarms-in-aws.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.7</priority>
@@ -1237,6 +1243,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/economy.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/api.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.9</priority>
@@ -1294,6 +1306,12 @@
     <loc>https://dev.cloudburo.net/2019/12.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2019/12/22.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

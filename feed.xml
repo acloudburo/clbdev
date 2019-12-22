@@ -5,10 +5,76 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-12-21T13:47:53+00:00</updated>
+  <updated>2019-12-22T01:45:52+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>The Economy explained by Ray Dalio in 30 minutes</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/12/22/the-economy-explained-by-ray-dalio-in-30-minutes.html"/>
+    <id>https://dev.cloudburo.net/2019/12/22/the-economy-explained-by-ray-dalio-in-30-minutes.html</id>
+    <published>2019-12-22T01:45:52+00:00</published>
+    <updated>2019-12-22T01:45:56+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;div&gt;
+         Raymond &amp;ldquo;Ray&amp;rdquo; Dalio is an American billionaire investor, who is a co-founder of the investment firm Bridgewater Associates, one of the world&amp;rsquo;s largest hedge funds. Astonishingly he also a producer of an economical 101 YouTube video (from the year 2013), which explains how &amp;ldquo;The Economic Machine Works.&amp;rdquo;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         The 30 minutes video (worth every minute) explains in a simple but not simplistic way the inner mechanism of the machine. Three main forces are described, which drives the economy.
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Productivity Growth
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Short Term Debt Cycle
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Long Term Deby Cycle
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         &amp;lt;youtube-video&amp;gt;
+        &lt;a href="https://youtu.be/PHe0bXAIuk0"&gt;&lt;a href="https://youtu.be/PHe0bXAIuk0"&gt;https://youtu.be/PHe0bXAIuk0&lt;/a&gt;&lt;/a&gt;&amp;lt;/youtube-video&amp;gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 18pt; color: rgb(51, 51, 51); font-family: &amp;quot;Source Sans Pro&amp;quot;;"&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Ray_Dalio"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>How To Read And Interpret The UML Diagrams Used In The Diagrammer Series</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/12/21/how-to-read-and-interpret-the-uml-diagrams-used-in-the-diagrammer-series.html"/>
@@ -11966,44 +12032,6 @@
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="http://customerthink.com/gdprs-effect-on-web-forms-events-3rd-party-lead-gen-channel-partners-and-sales/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Sam Newman's Talk - From Macro To Micro</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html"/>
-    <id>https://dev.cloudburo.net/2018/03/26/sam-newman-s-talk-from-macro-to-micro.html</id>
-    <published>2018-03-26T04:13:17+00:00</published>
-    <updated>2019-12-17T12:01:59+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Sam Newman’s Talk on the GeeCON 2013 provides an excellent introduction, how you should decompose a system into manageable pieces. It will touch the concept of “Bounded Context”, one of the major elements in the Domain Driven Design (DDD) areas. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        &amp;ldquo;Strong Cohesion&amp;rdquo; and “Loosely Coupling” are the two most important thing, which drives the making of a good service. Check it out in the following Vimeo video:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;a href="https://vimeo.com/74589816"&gt;&lt;a href="https://vimeo.com/74589816"&gt;https://vimeo.com/74589816&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
