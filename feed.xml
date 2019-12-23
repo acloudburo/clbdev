@@ -5,10 +5,228 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-12-22T01:45:51+00:00</updated>
+  <updated>2019-12-23T01:39:39+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>The Diagrammer Series – Explaining The DEFI World In Diagrams</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2019/12/23/the-diagrammer-series-explaining-the-defi-world-in-diagrams.html"/>
+    <id>https://dev.cloudburo.net/2019/12/23/the-diagrammer-series-explaining-the-defi-world-in-diagrams.html</id>
+    <published>2019-12-23T01:39:39+00:00</published>
+    <updated>2019-12-23T01:40:30+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;span style="color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;; font-weight: bold; font-size: 14pt;"&gt;Mergenthaler’s Diagrammer disrupted the graphs room in the seventies&lt;/span&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The goal of this article series is to explain the evolving systems landscape and its associated concepts in the context of Decentralized Finance in a visualized way using (UML) diagramming techniques.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;When researching for a blog series name, the word “Diagrammer” jumped into the mind.  Similar to the words “the banker,” “the writer,” “the programmer,” “the diagrammer,” would describe the person&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;who documents the systems and concepts of the world in diagrams and drawings to provide more clarity and helps for a better understanding of them.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Well, the word Diagrammer doesn’t exist according to the Oxford dictionary, so I did some Google search queries to understand how the world is commonly used in the world.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The search brought me to a very interesting Video published via the Vimeo platform [1], which explains the Mergenthaler’s Diagrammer, an automated machine used in the seventies for the production of printed quality engineering drawings and photographic films.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Amazed by the approach used fifty years ago to tackle the automation of diagramming, I thought it was a perfect fit to kick off my Diagrammer series to explore systems and concepts in the new world of decentralized finance.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/7c171a42b09a34572ad85b155ed710c7.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Mergenthaler’s Diagrammer to automate the drafting in the seventies&lt;/span&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Producing engineering diagrams in the seventies was a laborious task, which involved a lot of manual, complex drawing tasks in large graph rooms.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/9742580c4a86c7ee7e3a33e7289626b5.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt; Everything had to be drawn by hand with a pencil, which may result in a drafting bottleneck in the overall engineering process.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/fb68caef7e974580554f736a2f80e6cd.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;So the Mergenthaler Linotype Company&lt;/span&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;-&lt;/span&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;which was founded in 1886 by Ottmar Mergenthaler in the United States in 1886 and revolutionized the book and newspaper typesetting process with its famous Linotype machine – was searching for a practical approach to automating drafting.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;They found in the Diagrammer - the so-called “Shirt Sleeves Automation” – a solution which would tackle the photo drafting bottleneck an reduce the graph room operational costs, as well as produce superior diagram quality than the manual output.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/3b8724f2b200e048f313463bba475edf.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;In the production of a single diagram, the operator attaches a sheet of film behind the viewing screen of the operator unit.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/718f7d74ae1c88c8c51e4844a198f6b6.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;After receiving a rough sketch of the drawing, he attaches it to the front of the viewing screen to be used as a progress reference during the production cycle.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/b7362b4050b7b9e37d0bbd20fc3c3640.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The drawing itself is done via the symbol buttons panel, which can hold up to 256 symbols.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/f186f1adfb7ed2c265afe3e507c01263.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The symbol is optically projected onto the screen and can be moved around to bring it to its proper location and orientation.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/3b0961827299702e403a342ec6651ce3.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;By pressing the Expose button, the symbol was recorded on the special film. This process takes less than a second and allowed to speed up and standardize the drawings.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/f38149c7e1815ca400c144208bddcfd5.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;In the end, normal film development was necessary to get the diagrams done.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/5769fc6526b38b7aea819c4b5776f876.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Quite amazing how, in the early days of computing, drawing processes were automated and standardized. According to the video, the whole process was four times as fast as manual drawings.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;I suggest to watch the full video; it’s a very good example of superb design craftmanship. The video outlines multiple features of the modular built-up Diagrammer.  &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;For example, the inherent flexibility of the symbols button panel, allowed to “program” the Diagrammer for drawings and diagrams of any engineering field. Either the whole panel could be replaced or a dedicated symbol.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/be4fa9f8e487583b946fb1cb7b8acc9f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;span style="font-size: 12pt; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;The Diagrammers to automate the drawings in 2020&lt;/span&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Well, fifty years later, there are a variety of diagramming tools available, which automate the process of modeling systems via diagramming. When it comes down to model complex systems, I believe Sparx Enterprise Architecture is the most versatile.&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 11pt;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Enterprise Architect helps individuals, groups and large organizations model and manage complex information. By integrating and connecting a wide range of structural and behavioral information in visual form, you can build a coherent, verifiable model of what-is or what-will-be.&lt;/span&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[2]&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/1c3df48661295eaafb2185a861a89fdc.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Stay tuned, in the next weeks and months; we develop an overall model of the decentralized finance domain with the help of diagrams, which helps us to understand better what’s going on.&lt;/span&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+       &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;In the meantime watch the full video of the Diagrammer.&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;/div&gt;
+      &lt;div&gt;
+        &lt;iframe src="
+       &lt;a href="https://player.vimeo.com/video/75532300?byline=0&amp;amp;portrait=0"&gt;&lt;a href="https://player.vimeo.com/video/75532300?byline=0&amp;amp;amp;portrait=0"&gt;https://player.vimeo.com/video/75532300?byline=0&amp;amp;amp;portrait=0&lt;/a&gt;&lt;/a&gt;&amp;ldquo; width=&amp;quot;640&amp;rdquo; height=&amp;ldquo;360&amp;rdquo; frameborder=&amp;ldquo;0&amp;rdquo; allow=&amp;ldquo;autoplay; fullscreen&amp;rdquo; allowfullscreen&amp;gt;&lt;/iframe&gt;
+      &lt;/div&gt;
+      &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;p&gt;&lt;a href="
+       &lt;a href="https://vimeo.com/75532300"&gt;&lt;a href="https://vimeo.com/75532300"&gt;https://vimeo.com/75532300&lt;/a&gt;&lt;/a&gt;&amp;ldquo;&amp;gt;The Diagrammer by Mergenthaler - 1970&lt;/a&gt; from &lt;a href="
+       &lt;a href="https://vimeo.com/user4747369"&gt;&lt;a href="https://vimeo.com/user4747369"&gt;https://vimeo.com/user4747369&lt;/a&gt;&lt;/a&gt;&amp;rdquo;&amp;gt;Linotype: The Film&lt;/a&gt; on &lt;a href="
+       &lt;a href="https://vimeo.com/"&gt;&lt;a href="https://vimeo.com"&gt;https://vimeo.com&lt;/a&gt;&lt;/a&gt;&amp;ldquo;&amp;gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;/div&gt;
+      &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+       &lt;span style=" font-size: 11pt;"&gt;&lt;br&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>The Economy explained by Ray Dalio in 30 minutes</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/12/22/the-economy-explained-by-ray-dalio-in-30-minutes.html"/>
@@ -11949,93 +12167,6 @@
     &lt;br/&gt;
     The full article can be found here.&lt;br/&gt;
     &lt;a href="https://thenewstack.io/test-run-googles-machine-learning-based-talk-to-books-service/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>An Overview Of GDPR’s Consenting Law Impact On Marketers</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html"/>
-    <id>https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html</id>
-    <published>2018-03-31T06:20:58+00:00</published>
-    <updated>2019-12-17T12:01:59+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The article of David Crane, provides a good overview on the necessary actions a marketing department of a company has to take in order to be compliant with the European GDPR law.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        It covers topics like
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;Web Forms&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;Events&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;3rd-Party Lead Gen&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;Channel Partners, as well as&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;Sales&lt;br&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        GDPR is constructed around 6 lawful bases for processing data, the two that matter most to marketers are consent and legitimate interest. For marketers obtaining consent should be the primary legal basis to use personal data.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        GDPR should be seen as an opportunity than a threat as David states:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;&lt;span style=""&gt;There’s no doubt that &lt;/span&gt;&lt;a href="https://www.integrate.com/blog/eu-gdpr-y2k-b2b-marketing" style="-en-paragraph:true;"&gt;GDPR can threaten organizations&lt;/a&gt;&lt;span style=""&gt; that aren’t prepared for it. A lack of compliance may result in penalties that could cripple your company.&lt;/span&gt;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style=""&gt;&lt;i&gt;However, smart marketing teams are facing GDPR with a different vigor: Not simply to avoid the fallout of non-compliance with the new regulation, but to prepare their organizations for the inevitable transformation from old batch-and-blast practices to complete permission-based marketing.&lt;/i&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style=""&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style=""&gt;And be sure: This is not the end of data privacy regulations, other countries are waiting with new regulations in order to protect their citizen better.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-       &lt;/div&gt;
-       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-         You can read the full article here:
-       &lt;/div&gt;
-       &lt;div&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://customerthink.com/gdprs-effect-on-web-forms-events-3rd-party-lead-gen-channel-partners-and-sales/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>

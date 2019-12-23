@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | The Diagrammer Series – Explaining The DEFI World In Diagrams</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (7)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (23)</a>
+            <a href="/tags/blockstack.html" class="label label-default">blockstack (1)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (7)</a>
+            <a href="/tags/dao.html" class="label label-default">dao (4)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/diagrammer.html" class="label label-default">diagrammer (2)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (11)</a>
+            <a href="/tags/economy.html" class="label label-default">economy (1)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (4)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (15)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/java.html" class="label label-default">java (3)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (5)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (5)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (6)</a>
+            <a href="/tags/python.html" class="label label-default">python (7)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (20)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/statistics.html" class="label label-default">statistics (2)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tut01.html" class="label label-default">tut01 (7)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (11)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2019.html" class="label label-primary">2019 (26)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2019/12/23/the-diagrammer-series-explaining-the-defi-world-in-diagrams.html">The Diagrammer Series – Explaining The DEFI World In Diagrams</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  23.Dec 2019 | Tags <a class="label label-primary" href="/tags/diagrammer.html">diagrammer</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                   <span style="color: rgb(47, 84, 150); font-family: &quot;Calibri Light&quot;; font-weight: bold; font-size: 14pt;">Mergenthaler’s Diagrammer disrupted the graphs room in the seventies</span>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">The goal of this article series is to explain the evolving systems landscape and its associated concepts in the context of Decentralized Finance in a visualized way using (UML) diagramming techniques.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">When researching for a blog series name, the word “Diagrammer” jumped into the mind.  Similar to the words “the banker,” “the writer,” “the programmer,” “the diagrammer,” would describe the person</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">who documents the systems and concepts of the world in diagrams and drawings to provide more clarity and helps for a better understanding of them.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Well, the word Diagrammer doesn’t exist according to the Oxford dictionary, so I did some Google search queries to understand how the world is commonly used in the world.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">The search brought me to a very interesting Video published via the Vimeo platform [1], which explains the Mergenthaler’s Diagrammer, an automated machine used in the seventies for the production of printed quality engineering drawings and photographic films.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Amazed by the approach used fifty years ago to tackle the automation of diagramming, I thought it was a perfect fit to kick off my Diagrammer series to explore systems and concepts in the new world of decentralized finance.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/7c171a42b09a34572ad85b155ed710c7.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &quot;Calibri Light&quot;;">Mergenthaler’s Diagrammer to automate the drafting in the seventies</span>
+                   <div>
+                    <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Producing engineering diagrams in the seventies was a laborious task, which involved a lot of manual, complex drawing tasks in large graph rooms.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/9742580c4a86c7ee7e3a33e7289626b5.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"> Everything had to be drawn by hand with a pencil, which may result in a drafting bottleneck in the overall engineering process.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/fb68caef7e974580554f736a2f80e6cd.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">So the Mergenthaler Linotype Company</span>
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">-</span>
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">which was founded in 1886 by Ottmar Mergenthaler in the United States in 1886 and revolutionized the book and newspaper typesetting process with its famous Linotype machine – was searching for a practical approach to automating drafting.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">They found in the Diagrammer - the so-called “Shirt Sleeves Automation” – a solution which would tackle the photo drafting bottleneck an reduce the graph room operational costs, as well as produce superior diagram quality than the manual output.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/3b8724f2b200e048f313463bba475edf.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">In the production of a single diagram, the operator attaches a sheet of film behind the viewing screen of the operator unit.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/718f7d74ae1c88c8c51e4844a198f6b6.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">After receiving a rough sketch of the drawing, he attaches it to the front of the viewing screen to be used as a progress reference during the production cycle.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/b7362b4050b7b9e37d0bbd20fc3c3640.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">The drawing itself is done via the symbol buttons panel, which can hold up to 256 symbols.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/f186f1adfb7ed2c265afe3e507c01263.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">The symbol is optically projected onto the screen and can be moved around to bring it to its proper location and orientation.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/3b0961827299702e403a342ec6651ce3.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">By pressing the Expose button, the symbol was recorded on the special film. This process takes less than a second and allowed to speed up and standardize the drawings.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/f38149c7e1815ca400c144208bddcfd5.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">In the end, normal film development was necessary to get the diagrams done.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/5769fc6526b38b7aea819c4b5776f876.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Quite amazing how, in the early days of computing, drawing processes were automated and standardized. According to the video, the whole process was four times as fast as manual drawings.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">I suggest to watch the full video; it’s a very good example of superb design craftmanship. The video outlines multiple features of the modular built-up Diagrammer.  </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">For example, the inherent flexibility of the symbols button panel, allowed to “program” the Diagrammer for drawings and diagrams of any engineering field. Either the whole panel could be replaced or a dedicated symbol.</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/be4fa9f8e487583b946fb1cb7b8acc9f.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <span style="font-size: 12pt; color: rgb(31, 55, 99); font-family: &quot;Calibri Light&quot;;">The Diagrammers to automate the drawings in 2020</span>
+                   <div>
+                    <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Well, fifty years later, there are a variety of diagramming tools available, which automate the process of modeling systems via diagramming. When it comes down to model complex systems, I believe Sparx Enterprise Architecture is the most versatile.</span>
+                   </div>
+                   <div>
+                    <span style="font-size: 11pt;"><br></span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;">Enterprise Architect helps individuals, groups and large organizations model and manage complex information. By integrating and connecting a wide range of structural and behavioral information in visual form, you can build a coherent, verifiable model of what-is or what-will-be.</span>
+                    <span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;">[2]</span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <br>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/1c3df48661295eaafb2185a861a89fdc.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Stay tuned, in the next weeks and months; we develop an overall model of the decentralized finance domain with the help of diagrams, which helps us to understand better what’s going on.</span>
+                   </div>
+                  </div>
+                  <div style="margin: 0mm 0mm 2.81mm;">
+                   <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">In the meantime watch the full video of the Diagrammer.</span>
+                  </div>
+                  <div style="margin: 0mm 0mm 2.81mm;"></p>
+                
+                <p></div>
+                  <div>
+                    <iframe src="
+                   <a href="https://player.vimeo.com/video/75532300?byline=0&amp;portrait=0"><a href="https://player.vimeo.com/video/75532300?byline=0&amp;amp;portrait=0">https://player.vimeo.com/video/75532300?byline=0&amp;amp;portrait=0</a></a>&ldquo; width=&quot;640&rdquo; height=&ldquo;360&rdquo; frameborder=&ldquo;0&rdquo; allow=&ldquo;autoplay; fullscreen&rdquo; allowfullscreen&gt;</iframe>
+                  </div>
+                  <div style="margin: 0mm 0mm 2.81mm;">
+                    <p><a href="
+                   <a href="https://vimeo.com/75532300"><a href="https://vimeo.com/75532300">https://vimeo.com/75532300</a></a>&ldquo;&gt;The Diagrammer by Mergenthaler - 1970</a> from <a href="
+                   <a href="https://vimeo.com/user4747369"><a href="https://vimeo.com/user4747369">https://vimeo.com/user4747369</a></a>&rdquo;&gt;Linotype: The Film</a> on <a href="
+                   <a href="https://vimeo.com/"><a href="https://vimeo.com">https://vimeo.com</a></a>&ldquo;&gt;Vimeo</a>.</p>
+                  </div>
+                  <div style="margin: 0mm 0mm 2.81mm;"></p>
+                
+                <p></div>
+                  <div style="margin: 0mm 0mm 2.81mm;">
+                   <span style=" font-size: 11pt;"><br></span>
+                  </div>
+                  <div>
+                   <br>
+                  </div></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2019 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>
