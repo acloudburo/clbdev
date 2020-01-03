@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2020/01/03/the-diagrammer-series-how-to-read-the-diagrams.html"/>
     <id>https://dev.cloudburo.net/2020/01/03/the-diagrammer-series-how-to-read-the-diagrams.html</id>
     <published>2020-01-03T01:15:43+00:00</published>
-    <updated>2020-01-03T08:10:13+00:00</updated>
+    <updated>2020-01-03T08:20:16+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -68,8 +68,7 @@
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;By linking our model to the FIBO one, we get a firm root into the concepts as understood and used by people in the finance industry for each of their components, and the terms used for them.&lt;/span&gt;
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
-         &lt;font style="color: rgb(45, 79, 201);"&gt;&lt;i&gt;&lt;span style=""&gt;FIBO is intended for a range of users including in its simplest form as an English language Glossary that could be used to inform a bank or a regulator’s Data Dictionary, or the actual FIBO Data Dictionary could be repurposed as a bank or regulators Data Dictionary. In its most complex form, FIBO in its native Web Ontology Language (OWL), could be used as a bank’s operational ontology. There are also those external uses of FIBO such as &lt;a href="http://FIBO.schema.org" style="color: rgb(45, 79, 201);"&gt;FIBO.schema.org&lt;/a&gt; which uses FIBO as a reference to find specific information on the Internet&lt;/span&gt;&lt;span style=""&gt; &lt;/span&gt;&lt;span style=""&gt;[8]&lt;/span&gt;&lt;/i&gt;&lt;/font&gt;
-         &lt;br&gt;
+         &lt;font style="font-family: Calibri; font-size: 11pt; color: rgb(68, 114, 196);"&gt;&lt;span style="font-style: italic;"&gt;FIBO is intended for a range of users including in its simplest form as an English language Glossary that could be used to inform a bank or a regulator’s Data Dictionary, or the actual FIBO Data Dictionary could be repurposed as a bank or regulators Data Dictionary. In its most complex form, FIBO in its native Web Ontology Language (OWL), could be used as a bank’s operational ontology. There are also those external uses of FIBO such as&lt;/span&gt; &lt;a href="http://fibo.schema.org/" style="font-style: italic; color: rgb(68, 114, 196);"&gt;FIBO.schema.org&lt;/a&gt; &lt;span style="font-style: italic;"&gt;which uses FIBO as a reference to find specific information on the Internet&lt;/span&gt;&lt;span style="font-style: italic;"&gt; &lt;/span&gt;&lt;span style="font-style: italic;"&gt;[8]&lt;/span&gt;&lt;/font&gt;
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;So what’s an ontology then&lt;/span&gt;
