@@ -5,16 +5,301 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2019-12-23T01:39:38+00:00</updated>
+  <updated>2020-01-03T01:15:43+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>The Diagrammer Series - How To Read The Diagrams</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2020/01/03/the-diagrammer-series-how-to-read-the-diagrams.html"/>
+    <id>https://dev.cloudburo.net/2020/01/03/the-diagrammer-series-how-to-read-the-diagrams.html</id>
+    <published>2020-01-03T01:15:43+00:00</published>
+    <updated>2020-01-03T01:16:14+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 16pt;"&gt;&lt;span style="font-size: 16pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;; font-weight: bold;"&gt;Understanding Business Concept Model Diagrams&lt;/span&gt;&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Dependent on your background, the reading of the UML diagrams in the context of the Diagrammer article series may not be straightforward. But I can assure you that you get quickly on speed having the main concepts understood. &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/5bf7689dc364e8b086dd6c496fe1f14b.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The diagram technique is using the Unified Modeling Language (UML)&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;The Unified Modeling Language is a general-purpose, developmental, modeling language in the field of software engineering that intends to provide a standard way to visualize the design of a system&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[5]&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The flexibility of the modeling language allows you to visualize almost any aspect of a system by using multiple diagram types, as well as applying UML profiles.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;By the way, with the phrase system, we don’t mean only IT systems but any kind of it&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;A set of things working together as parts of a mechanism or an interconnecting network.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[6]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;As one can see from the definition above, the general concept “Thing” is the nucleus around which a business concept models are built up. More about “The Thing” later.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;The FIBO Model as the Semantic Anchor&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The article series concentrates on a conceptual model of Decentralized Finance aspects. In order not to reinvent the wheel, we establish the model on top of the FIBO model, which serves as the semantic anchor.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The Financial Industry Business Ontology (FIBO) is a business conceptual model developed by the Enterprise Data Management Council (EDMC) about how all financial instruments, business entities, and processes work in the financial industry. [7]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;By linking our model to the FIBO one, we get a firm root into the concepts as understood and used by people in the finance industry for each of their components, and the terms used for them.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;So what’s an ontology then&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;An ontology (in OWL) is made up of statements about Classes (i.e., sets of things) and Properties (ways that things relate to other things). FIBO defines the sets of things that are of interest in financial business applications and the ways that those things can relate to one another. In this way, FIBO can give meaning to any data (e.g., spreadsheets, relational databases, XML documents) that describe the business of finance. FIBO considers both Classes and Properties to be Concepts. The languages of Ontologies were originally developed by the US DoD and are codified by the World Wide Web Consortium (W3C).&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[8]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;We don’t dive here into more detail about OWL, which is a Semantic Web language designed to represent rich and complex knowledge about things, groups of things, and relations between things. We do that at a later stage and concentrate on the diagrammatic representation of concept models, which can be expressed in UML class diagrams.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;There are two main categories of diagram types describing an aspect of the model&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Structure diagrams emphasize the things that must present in the system being modeled&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div style="margin-top: 0pt; margin-bottom: 8pt;"&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Behavior Diagrams emphasize what must happen in the system being modeled&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;We use both kinds of diagrams in the article series but start for now with Class Diagrams.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Class Diagram &lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Structural models in UML, especially Class models, are frequently used to define and visualize business concept models as defined above.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; font-family: Calibri;"&gt;Concepts are represented by classes, while relationships are represented by associations.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="text-align: left; margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/aa2255f1580a40f95c340e913f8f181f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;
+         &lt;br&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; font-family: Calibri;"&gt;For example, the Diagram1 consists of&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri;"&gt;Three&lt;/span&gt;
+           &lt;span style="font-size: 11pt; font-family: Calibri; font-weight: bold;"&gt;Classes&lt;/span&gt;
+           &lt;span style="font-size: 11pt; font-family: Calibri;"&gt;  “Trading,” “Market” and “Risk”&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri;"&gt;Two&lt;/span&gt;
+           &lt;span style="font-size: 11pt; font-family: Calibri; font-weight: bold;"&gt;Associations&lt;/span&gt;
+           &lt;span style="font-size: 11pt; font-family: Calibri;"&gt;“takesPlace” and “bears”&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div style="margin-top: 0pt; margin-bottom: 8pt;"&gt;
+           &lt;span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri;"&gt;The two associations have multiplicity associated with the specific classes “Market” and “Risk.”&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; font-family: Calibri;"&gt;The overall diagram reads as follows:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; font-family: Calibri;"&gt;“Trading takes place in zero to multiple Markets, and each Market may bear zero to multiple Risks.”&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/31c3fc318d9fce2918e5a5e873ab7c70.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; font-family: Calibri;"&gt;Two additional relationship types play as well a role in our concept modeling&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri;"&gt;Generalization Relationship: a generalization relationship is a relationship in which one class element (the child) is based on another class element (the parent). The two concepts in relation have to be of the same type. The child element represents a refinement or more specific element of the parent one. For example, two specific Risk Types.&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(0, 0, 0); font-family: Calibri;"&gt;Aggregation Relationship:  an aggregation relationship is a relationship in which a class is a part of or subordinate to the other element. In a way, it assembles or configures a more complex object. For example, an important aspect of a Market is Market Liquidity. We use the aggregation here because the Liquidity is a part of the Market itself. It would not exists on its own when there is no Market.&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0.7mm 0mm 0mm; text-align: left;"&gt;
+         &lt;span style=" font-size: 12pt; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Naming Conventions&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;In Associations and Relations, we use the terms&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;mayHave, to express the optionality in the relation, i.e., the multiplicity 0..1&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div style="margin-top: 0pt; margin-bottom: 8pt;"&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;hasA, to express the multiplicity of 1&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;That’s the minimal primer about Class diagrams. We enhance and enrich the diagrams in the context of FIBO ontology mapping, but let’s keep it simple for the moment, one step after the other, and switch over to our actors.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;The Diagrammer’s Actors – Alice &amp;amp; Bob&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Exploring important real-world concepts in diagrams also requires actors who engage and interact with systems and individuals.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/40802f4d7316263ca27a7d4c60492921.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="text-align: center; margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 9pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Maybe an inspiration for the most famous crypto couple: Movie 1968 “Bob &amp;amp; Carol &amp;amp; Ted &amp;amp; Alice”  (&lt;/span&gt;
+         &lt;a href="https://themovieisle.com/2018/12/11/blu-ray-review-arrow-videos-bob-carol-ted-alice-arrow-academy/" style="text-indent: 0mm; font-size: 9pt; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%; text-decoration: underline;"&gt;Link&lt;/a&gt;
+         &lt;span style=" font-size: 9pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;)&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;In the diagrammer series, we are following the actor naming approach, which was introduced by Ron Rivest, Adi Shamir, and Leonard Adleman in their crypto paper 1978 and is as of today the de-facto standard in the crypto and engineering world when it comes down to “place-holder” names, aka “Alice and Bob.”&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Alice and Bob are the names of fictional characters used for convenience and to aid comprehension. For example, &amp;ldquo;How can Bob send a private message M to Alice in a public-key cryptosystem?&amp;rdquo; is believed to be easier to describe and understand than &amp;ldquo;How can B send a private message M to A in a public-key cryptosystem?&amp;rdquo;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;In cryptography and computer security, Alice and Bob are used extensively as participants in discussions about cryptographic protocols or systems. The names are conventional, and other than Alice and Bob often use a rhyming mnemonic to associate the name with the typical role of that person.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[9]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Over time a full cast of additional actors was introduced; you can find a list here [9]. As we progress in the series, we introduce new actors -  with a rhyming mnemonic - if necessary.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/c0829a15eb1fa32be9a32c00d9b797b9.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;In the example above, Alice plays a role as “Alice the Buyer” who will interact with “Bob the Seller,” as well as “Alice the Borrower,” which interacts with “Bob the Lender.”  “Charlie the Custodian” may play a role as well.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt; Want to know more about the most famous crypto couple? Head over to&lt;/span&gt;
+         &lt;a href="http://cryptocouple.com/" style="text-indent: 0mm; font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%; text-decoration: underline;"&gt;&lt;a href="http://cryptocouple.com/"&gt;http://cryptocouple.com/&lt;/a&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/37824ab9b81c16a8f37e5ad16c022865.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;That’s it for today; we are now ready to dive into the DEFI concept models…&lt;/span&gt;
+        &lt;/div&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;&lt;/div&gt;Bibliography
+       &lt;table style="border-collapse: collapse; min-width: 100%;"&gt;
+        &lt;tbody&gt;
+         &lt;tr style=""&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;[7]&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;“Enterprise Data Management Council (EDM Council),” EDMCouncil, [Online]. Available: &lt;a href="https://edmcouncil.org/"&gt;&lt;a href="https://edmcouncil.org/"&gt;https://edmcouncil.org/&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr style=""&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;[8]&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;“FIBO Primer,” EDM Councile, June 2019.&lt;/span&gt;
+            &lt;span style=""&gt;[Online]. Available: &lt;a href="https://cdn.ymaws.com/edmcouncil.org/resource/collection/16D6DC67-430E-4F75-9E07-08B1EC228091/FIBO_Primer_v0.2.pdf"&gt;&lt;a href="https://cdn.ymaws.com/edmcouncil.org/resource/collection/16D6DC67-430E-4F75-9E07-08B1EC228091/FIBO_Primer_v0.2.pdf"&gt;https://cdn.ymaws.com/edmcouncil.org/resource/collection/16D6DC67-430E-4F75-9E07-08B1EC228091/FIBO_Primer_v0.2.pdf&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr style=""&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;[9]&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;“Wikipedia Alice and Bob,” Wikipedia, [Online].&lt;/span&gt;
+            &lt;span style=""&gt;Available: &lt;a href="https://en.wikipedia.org/wiki/Alice_and_Bob"&gt;&lt;a href="https://en.wikipedia.org/wiki/Alice_and_Bob"&gt;https://en.wikipedia.org/wiki/Alice_and_Bob&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+        &lt;/tbody&gt;
+       &lt;/table&gt;
+       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+        &lt;span style="mso-fareast-font-family: &amp;quot;Times New Roman&amp;quot;;"&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=""&gt; &lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="https://d.docs.live.net/f250da2627755048/Documents/Cloudburo/The%20Diagrammer/1%20-%20How%20To%20Read%20The%20Diagrams.docx"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>The Diagrammer Series – Explaining The DEFI World In Diagrams</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2019/12/23/the-diagrammer-series-explaining-the-defi-world-in-diagrams.html"/>
     <id>https://dev.cloudburo.net/2019/12/23/the-diagrammer-series-explaining-the-defi-world-in-diagrams.html</id>
     <published>2019-12-23T01:39:38+00:00</published>
-    <updated>2019-12-28T21:52:00+00:00</updated>
+    <updated>2020-01-03T01:15:39+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -27,7 +312,7 @@
         &lt;div&gt;
          &lt;span style="font-size: 14pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;; font-weight: bold;"&gt;Mergenthaler’s Diagrammer disrupted the graphs room in the seventies&lt;/span&gt;
          &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
-          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The goal of the &amp;ldquo;Diagrammer Series&amp;rdquo; is to explain the evolving systems landscape and its associated concepts in the context of Decentralized Finance in a visualized way using (UML) diagramming techniques.&lt;/span&gt;
+          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The goal of the &amp;ldquo;Diagrammer Series&amp;rdquo; is to explain the evolving systems landscape and its associated concepts in the context of Decentralized Finance in a visualized way using (UML) diagramming techniques. &lt;/span&gt;
          &lt;/div&gt;
          &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
           &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;When researching for a blog series name, the word “Diagrammer” jumped into the mind.  Similar to the words “the banker,” “the writer,” “the programmer,” “the diagrammer,” would describe the person&lt;/span&gt;
@@ -197,45 +482,46 @@
     &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
          &lt;/div&gt;
          &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;&lt;/div&gt;
-         &lt;span style="font-family: &amp;quot;Calibri Light&amp;quot;; font-size: 12pt;"&gt;Article series ambition to establish a DEFI Ontology&lt;/span&gt;
+         &lt;span style="font-size: 12pt; font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Article series ambition to establish a DEFI Ontology&lt;/span&gt;
          &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-          &lt;span style=""&gt;&lt;span style="font-family: Calibri; font-size: 11pt;"&gt;The article series is centered around the development of an Ontology in the context of Decentralized Finance concepts (our subject matter).&lt;/span&gt;&lt;/span&gt;
+          &lt;span style=""&gt;&lt;span style="font-size: 11pt; font-family: Calibri;"&gt;The article series is centered around the development of an Ontology in the context of Decentralized Finance concepts (our subject matter).&lt;/span&gt;&lt;/span&gt;
          &lt;/div&gt;
          &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-          &lt;span style=""&gt;&lt;span style="font-family: Calibri; font-size: 11pt;"&gt;So what is an Ontology then? Think of&lt;/span&gt;&lt;/span&gt;
+          &lt;span style=""&gt;&lt;span style="font-size: 11pt; font-family: Calibri;"&gt;So what is an Ontology then? Think of&lt;/span&gt;&lt;/span&gt;
          &lt;/div&gt;
          &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-          &lt;font face="Calibri" style="font-size: 11pt;"&gt;&lt;span style="font-family: Calibri; color: rgb(45, 79, 201); font-size: 11pt; font-style: italic;"&gt;an ontology as a model that represents some subject matter… An Ontology communicates what kinds of things there are (for the subject matter of interest) and how they are related to each other.&lt;/span&gt; &lt;span style="font-family: Calibri; color: rgb(45, 79, 201); font-size: 11pt; font-style: italic;"&gt;[3]&lt;/span&gt;&lt;/font&gt;
+          &lt;span style="font-size: 11pt; font-family: Calibri; color: rgb(45, 79, 201); font-style: italic;"&gt;an ontology as a model that represents some subject matter… An Ontology communicates what kinds of things there are (for the subject matter of interest) and how they are related to each other.&lt;/span&gt;
+          &lt;span style="font-size: 11pt; font-family: Calibri; color: rgb(45, 79, 201); font-style: italic;"&gt;[3]&lt;/span&gt;
          &lt;/div&gt;
          &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-          &lt;span style=""&gt;&lt;span style="font-family: Calibri; font-size: 11pt;"&gt;Ontologies are everywhere; in essence, software uses ontologies at its core to interact with each other. They may be named differently, for example, product catalogs, knowledge graphs, data structures that capture models of the entities in the world in which a system interacts, but they play an important role.&lt;/span&gt;&lt;/span&gt;
+          &lt;span style=""&gt;&lt;span style="font-size: 11pt; font-family: Calibri;"&gt;Ontologies are everywhere; in essence, software uses ontologies at its core to interact with each other. They may be named differently, for example, product catalogs, knowledge graphs, data structures that capture models of the entities in the world in which a system interacts, but they play an important role.&lt;/span&gt;&lt;/span&gt;
          &lt;/div&gt;
          &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-          &lt;span style=""&gt;&lt;span style="font-family: Calibri; font-size: 11pt;"&gt;An ontology allows us to build up a common understanding of the structure of information among people or software agents, as well as establish a re-usable domain knowledge base. Even if the task may be hard to achieve:&lt;/span&gt;&lt;/span&gt;
+          &lt;span style=""&gt;&lt;span style="font-size: 11pt; font-family: Calibri;"&gt;An ontology allows us to build up a common understanding of the structure of information among people or software agents, as well as establish a re-usable domain knowledge base. Even if the task may be hard to achieve:&lt;/span&gt;&lt;/span&gt;
          &lt;/div&gt;
          &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-          &lt;font style="font-size: 11pt;"&gt;&lt;span style="font-style: italic; color: rgb(45, 79, 201); font-family: Calibri; font-size: 11pt;"&gt;… ontologies sure a hard to build. Understanding how the entities in some application areas might be modeled, how they might interrelate with one another, and how they might be captured in software is really difficult.&lt;/span&gt;&lt;span style="font-style: italic; color: rgb(45, 79, 201); font-family: Calibri; font-size: 11pt;"&gt; &lt;/span&gt;&lt;span style="font-style: italic; color: rgb(45, 79, 201); font-family: Calibri; font-size: 11pt;"&gt;[3]&lt;/span&gt;&lt;/font&gt;
+          &lt;font style="font-size: 11pt;"&gt;&lt;span style="font-size: 11pt; color: rgb(45, 79, 201); font-family: Calibri; font-style: italic;"&gt;… ontologies sure a hard to build. Understanding how the entities in some application areas might be modeled, how they might interrelate with one another, and how they might be captured in software is really difficult.&lt;/span&gt;&lt;span style="font-size: 11pt; color: rgb(45, 79, 201); font-family: Calibri; font-style: italic;"&gt; &lt;/span&gt;&lt;span style="font-size: 11pt; color: rgb(45, 79, 201); font-family: Calibri; font-style: italic;"&gt;[3]&lt;/span&gt;&lt;/font&gt;
          &lt;/div&gt;
          &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-          &lt;span style=""&gt;&lt;span style="font-family: Calibri; font-size: 11pt;"&gt;The exercise on its own is valuable in know-how build-up by the writer (and hopefully reader of the series) in the topics of Decentralized Finance, as well as the usage of Ontology models.&lt;/span&gt;&lt;/span&gt;
+          &lt;span style=""&gt;&lt;span style="font-size: 11pt; font-family: Calibri;"&gt;The exercise on its own is valuable in know-how build-up by the writer (and hopefully reader of the series) in the topics of Decentralized Finance, as well as the usage of Ontology models.&lt;/span&gt;&lt;/span&gt;
          &lt;/div&gt;
          &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-          &lt;span style=""&gt;&lt;span style="font-family: Calibri; font-size: 11pt;"&gt;The intention is to build the DEFI model up on the family of ontology specifications called the Financial Industry Business Ontology (FIBO).&lt;/span&gt;&lt;/span&gt;
+          &lt;span style=""&gt;&lt;span style="font-size: 11pt; font-family: Calibri;"&gt;The intention is to build the DEFI model up on the family of ontology specifications called the Financial Industry Business Ontology (FIBO).&lt;/span&gt;&lt;/span&gt;
          &lt;/div&gt;
          &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-          &lt;font style="font-size: 11pt;"&gt;&lt;span style="color: rgb(45, 79, 201); font-family: Calibri; font-size: 11pt; font-style: italic;"&gt;FIBO is a modularized formal model of the concepts represented by finance industry terms as used in official financial organization documents such as contracts, product/service specifications, and governance and regulatory compliance documents. This is referred to as a Business Conceptual Model as distinct from models or descriptions of data or IT implementations.&lt;/span&gt;&lt;span style="color: rgb(45, 79, 201); font-family: Calibri; font-size: 11pt; font-style: italic;"&gt; &lt;/span&gt;&lt;span style="color: rgb(45, 79, 201); font-family: Calibri; font-size: 11pt; font-style: italic;"&gt;[4]&lt;/span&gt;&lt;/font&gt;
+          &lt;font style="font-size: 11pt;"&gt;&lt;span style="font-size: 11pt; color: rgb(45, 79, 201); font-family: Calibri; font-style: italic;"&gt;FIBO is a modularized formal model of the concepts represented by finance industry terms as used in official financial organization documents such as contracts, product/service specifications, and governance and regulatory compliance documents. This is referred to as a Business Conceptual Model as distinct from models or descriptions of data or IT implementations.&lt;/span&gt;&lt;span style="font-size: 11pt; color: rgb(45, 79, 201); font-family: Calibri; font-style: italic;"&gt; &lt;/span&gt;&lt;span style="font-size: 11pt; color: rgb(45, 79, 201); font-family: Calibri; font-style: italic;"&gt;[4]&lt;/span&gt;&lt;/font&gt;
          &lt;/div&gt;
          &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
-          &lt;font face="Calibri" style="font-size: 11pt;"&gt;&lt;span style="font-family: Calibri; font-size: 11pt;"&gt;Stay tuned, in the next weeks and months; we develop an overall model of the decentralized finance domain with the help of an ontology and diagrams, which helps us to understand better what’s going on&lt;/span&gt;&lt;/font&gt;
+          &lt;font face="Calibri" style="font-size: 11pt;"&gt;&lt;span style="font-size: 11pt; font-family: Calibri;"&gt;Stay tuned, in the next weeks and months; we develop an overall model of the decentralized finance domain with the help of an ontology and diagrams, which helps us to understand better what’s going on&lt;/span&gt;&lt;/font&gt;
          &lt;/div&gt;
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
-         &lt;span style=""&gt;&lt;span style="color: rgb(1, 1, 1); font-family: Calibri; font-size: 11pt;"&gt;In the meantime go back in history and watch the full video of the Mergenthaler Diagrammer, an amazing engineering piece from the early days of the computer:&lt;/span&gt;&lt;/span&gt;
+         &lt;span style=""&gt;&lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;In the meantime go back in history and watch the full video of the Mergenthaler Diagrammer, an amazing engineering piece from the early days of the computer:&lt;/span&gt;&lt;/span&gt;
         &lt;/div&gt;
         &lt;ul&gt;
          &lt;li&gt;
           &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
-           &lt;a href="https://player.vimeo.com/video/75532300?byline=0&amp;amp;portrait=0" style="font-family: Calibri; font-size: 11pt;"&gt;&lt;a href="https://player.vimeo.com/video/75532300"&gt;https://player.vimeo.com/video/75532300&lt;/a&gt;&lt;/a&gt;
+           &lt;a href="https://player.vimeo.com/video/75532300?byline=0&amp;amp;portrait=0" style="font-size: 11pt; font-family: Calibri;"&gt;&lt;a href="https://player.vimeo.com/video/75532300"&gt;https://player.vimeo.com/video/75532300&lt;/a&gt;&lt;/a&gt;
           &lt;/div&gt;&lt;/li&gt;
         &lt;/ul&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;&lt;/div&gt;
@@ -271,7 +557,7 @@
            &lt;/div&gt;&lt;/td&gt;
           &lt;td style=" padding: 8px; border: 1px solid;"&gt;
            &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-            &lt;span style=""&gt;N. F. Noy and D. L. McGuinness, “&lt;a href="http://protege.stanford.edu"&gt;protege.stanford.edu&lt;/a&gt;,” Stanford University, [Online].&lt;/span&gt;
+            &lt;span style=""&gt;N. F. Noy and D. L. McGuinness, “&lt;a href="http://protege.stanford.edu/"&gt;protege.stanford.edu&lt;/a&gt;,” Stanford University, [Online].&lt;/span&gt;
             &lt;span style=""&gt;Available: &lt;a href="https://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html"&gt;&lt;a href="https://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html"&gt;https://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
            &lt;/div&gt;&lt;/td&gt;
          &lt;/tr&gt;
@@ -280,6 +566,9 @@
        &lt;div&gt;
         &lt;br&gt;
        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="https://d.docs.live.net/f250da2627755048/Documents/Cloudburo/The%20Diagrammer/1%20-%20How%20To%20Read%20The%20Diagrams.docx"&gt;Link&lt;/a&gt;&lt;/p&gt;
@@ -12013,93 +12302,6 @@
     &lt;br/&gt;
     The full article can be found here.&lt;br/&gt;
     &lt;a href="https://thenewstack.io/test-run-googles-machine-learning-based-talk-to-books-service/"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>An Overview Of GDPR’s Consenting Law Impact On Marketers</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html"/>
-    <id>https://dev.cloudburo.net/2018/03/31/an-overview-of-gdprs-consenting-law-impact-on-marketers.html</id>
-    <published>2018-03-31T06:20:58+00:00</published>
-    <updated>2019-12-17T12:01:59+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The article of David Crane, provides a good overview on the necessary actions a marketing department of a company has to take in order to be compliant with the European GDPR law.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        It covers topics like
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;ul&gt;
-        &lt;li&gt;Web Forms&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;Events&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;3rd-Party Lead Gen&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;Channel Partners, as well as&lt;br&gt;&lt;/li&gt;
-        &lt;li&gt;Sales&lt;br&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        GDPR is constructed around 6 lawful bases for processing data, the two that matter most to marketers are consent and legitimate interest. For marketers obtaining consent should be the primary legal basis to use personal data.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        GDPR should be seen as an opportunity than a threat as David states:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;i&gt;&lt;span style=""&gt;There’s no doubt that &lt;/span&gt;&lt;a href="https://www.integrate.com/blog/eu-gdpr-y2k-b2b-marketing" style="-en-paragraph:true;"&gt;GDPR can threaten organizations&lt;/a&gt;&lt;span style=""&gt; that aren’t prepared for it. A lack of compliance may result in penalties that could cripple your company.&lt;/span&gt;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style=""&gt;&lt;i&gt;However, smart marketing teams are facing GDPR with a different vigor: Not simply to avoid the fallout of non-compliance with the new regulation, but to prepare their organizations for the inevitable transformation from old batch-and-blast practices to complete permission-based marketing.&lt;/i&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style=""&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style=""&gt;And be sure: This is not the end of data privacy regulations, other countries are waiting with new regulations in order to protect their citizen better.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-       &lt;/div&gt;
-       &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-         You can read the full article here:
-       &lt;/div&gt;
-       &lt;div&gt;
-       &lt;/div&gt;
-       &lt;div&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;a href="http://customerthink.com/gdprs-effect-on-web-forms-events-3rd-party-lead-gen-channel-partners-and-sales/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
