@@ -5,10 +5,484 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2020-01-03T01:15:43+00:00</updated>
+  <updated>2020-01-14T22:30:35+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>The Diagrammer Series – Understanding Autonomous Agent, Thing In Role and Asset</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2020/01/14/the-diagrammer-series-understanding-autonomous-agent-thing-in-role-and-asset.html"/>
+    <id>https://dev.cloudburo.net/2020/01/14/the-diagrammer-series-understanding-autonomous-agent-thing-in-role-and-asset.html</id>
+    <published>2020-01-14T22:30:35+00:00</published>
+    <updated>2020-01-14T22:31:45+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 16pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;A Gentle Introduction To The FIBO Ontology&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt;"&gt;&lt;span style="color: rgb(1, 1, 1); font-family: Calibri; font-size: 11pt; font-style: italic;"&gt;The goal of the “Diagrammer Series” is to explain the evolving systems landscape and its associated concepts in the context of Decentralized Finance (DeFi) in a visualized way using (UML) diagramming techniques. The list of all articles can be found under the tag “&lt;/span&gt;&lt;a href="https://dev.cloudburo.net/tags/diagrammer.html" style="font-family: Calibri; font-size: 11pt; font-style: italic;"&gt;The Diagrammer&lt;/a&gt;&lt;span style="color: rgb(1, 1, 1); font-family: Calibri; font-size: 11pt; font-style: italic;"&gt;”&lt;/span&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt;"&gt;&lt;br&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;As stated in a previous article, the semantic anchor for our conceptual model is the Financial Industry Business Ontology (FIBO) model. The&lt;/span&gt;
+         &lt;a style="color: rgb(105, 170, 53);"&gt;The Diagrammer Series – Understanding Autonomous Agent, Thing In Role and Asset&lt;/a&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;current FIBO model is massive, and large-scale ontologies may be hard to understand for a beginner with a steep learning curve.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt;"&gt;&lt;br&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Therefore, in the Diagrammer series, I will introduce just the necessary concepts over time -complemented with enough background information - which helps you to build up FIBO know how incrementally. Honestly, I’m a FIBO novice as well (with a deep UML modeling background) and use the series to get all the necessary know-how built up by myself as well.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Fortunately, Jurgen Ziemer (&lt;/span&gt;
+         &lt;a href="https://fib-dm.com/contact-us/" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;Jayzed Data Models Inc.&lt;/a&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;) developed the FIB-DM model, which closes the bridge between the FIBO ontology world and the conventional data management world.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;There is a chasm between semantic and conventional data management. FIBO is specified in Ontology Web Language (OWL), a powerful semantic language that fully encompasses the Entity-Relationship meta-model. However, that is a barrier for Data Architects and Financial Institutions, because OWL has a gradual learning curve and Ontologists with Finance domain experience are rare. &lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[10]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Jayzed Data Models developed a Configurable Ontology to Data Model Transformer (CODT), which generates a  SPARX Enterprise Architecture based UML model of the FIBO ontology. The so-called Financial Business Data Model (FIB-DM) which serves as our Enterprise Reference Model during modeling.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;You can get the open-source FIB-DM model for a UML- or Data Modeling Tool via the&lt;/span&gt;
+         &lt;a href="https://fib-dm.com/data-model-download/" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;Download Page&lt;/a&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;. Various modeler tools are supported, we use the&lt;/span&gt;
+         &lt;a href="https://www.sparxsystems.com/" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;Sparx Enterprise Architect&lt;/a&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;modeler, which can import the&lt;/span&gt;
+         &lt;a href="https://de.wikipedia.org/wiki/XML_Metadata_Interchange" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;XML Metadata Interchange (XMI)&lt;/a&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;format of the model.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;FIB-DM itself is quite enormous, with over 1800 entities (classes). Therefore there is a Conceptual Model (FIB-CM) embedded, which consists of 15 Fundamental Concepts to support high-level Business Analysis.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;These Fundamental Concepts help during the high-level analysis and are the overarching super-types of the FIB-DM (as well as can be mapped onto the FIBO-Ontology).&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The below diagram visualizes the 15 fundamental concepts (&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-style: italic;"&gt;TimeInstant&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;and&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-style: italic;"&gt;TimeInterval&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;are grouped to the concept&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-style: italic;"&gt;Time&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;). Any of the fundamental concepts are entities that do not subtype of any other entity. 70% of the FIB-DM entities are a subtype of these 15 concepts.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Let’s do an initial model exercise, which helps for a better understanding of how the various parts are inter-connected.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/190dd05dc69bca81cd419b2bcdaf005e.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Conceptual Model For Assets&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;To define the concept Asset, we require two out of the fifteen fundamental concepts:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;AutonomousAgent&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div style="margin-top: 0pt; margin-bottom: 8pt;"&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;ThingInRole&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;They may be abstract at the moment, so let’s start from bottom up.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;By using the FIB-DM Entities and Association Excel (&lt;/span&gt;
+         &lt;a href="https://fib-dm.com/all-data-model-packages-and-entities/" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;downloaded here&lt;/a&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;), we search for existing Concept Entities which are relevant for our Asset Concept Model. We identify three Entities&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Asset:&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+          &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+           &lt;div&gt;
+            &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;“Something of monetary value that is owned or provides benefit to some party.”&lt;/span&gt;
+           &lt;/div&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Owner:&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+          &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+           &lt;div&gt;
+            &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;“A party in the ownership role, one that owns something. The thing owned is an Asset to that Party.”&lt;/span&gt;
+           &lt;/div&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Person:&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+          &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+           &lt;div style="margin-top: 0pt; margin-bottom: 8pt;"&gt;
+            &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;“A person; any member of the species homo sapiens.”&lt;/span&gt;
+           &lt;/div&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/e77ad194ce32b3d5d1029682339139bb.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;We don’t search for potential existing Associations (in spite of the exercise) between the concepts but establish an own concept diagram with the identified classes.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/b8ba9c6f31869b53b73149bf2e417fe9.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;So the diagram expresses the following concepts:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div style="margin-top: 0pt; margin-bottom: 8pt;"&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;An&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Asset&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;is owned by one (1) or multiple (*) Owners. Each&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Owner&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;has an Identity to a&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Person&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;.&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Some observations:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;That the owner of an Asset must be a Person (species of Homo Sapiens) is too specific and not accurate. The Owner of an Asset may be a company (legal entity), an association, or potentially an autonomous thing living on a blockchain network.&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0.7mm 0mm 0mm; text-align: left;"&gt;
+         &lt;span style=" font-size: 12pt; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Autonomous Agent Super Type&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;So we have to check for a generalized concept, which may cover all the possible Identity types, which brings us to one of the 15 supertypes of FIB-CM&lt;/span&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;The Autonomous Agent&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;:&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+          &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+           &lt;div style="margin-top: 0pt; margin-bottom: 8pt;"&gt;
+            &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;An agent is an autonomous individual that can adapt to and interact with its environment.&lt;/span&gt;
+           &lt;/div&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/01ec2570b01f424bbc1d6ff248ef4040.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;We readjust our diagram and move the Association end from Person to Autonomous Agent. With this change, we express that an Asset is owned by an “Autonomous Agent,” which may be the right level of abstraction. To counter-check, we identify all child classes of the Autonomous Agent.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/07725c18210fbf2c32e9e69dc1a76b56.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Beside the Person sub-class, the following concepts are available in FIBO&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Legal Person&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+          &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+           &lt;div&gt;
+            &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;any entity which can incur legal obligation and can be sued at law&lt;/span&gt;
+           &lt;/div&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Organization&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+          &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 10pt;"&gt;
+           &lt;div&gt;
+            &lt;span style="font-size: 10pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;a unique framework of authority within which a person or persons act, or are designated to act, towards some purpose, such as to meet a need or pursue collective goals continuingly&lt;/span&gt;
+           &lt;/div&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Automated System&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+          &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+           &lt;div style="margin-top: 0pt; margin-bottom: 8pt;"&gt;
+            &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;a system that reduces or eliminates the need for human involvement to complete a task&lt;/span&gt;
+           &lt;/div&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;So the available four concepts are covering any kind for identities for an Asset Ownership.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Especially the AutomatedSystem may be the supertype of any kind of (distributed) autonomous organization which lives on a blockchain network and may own asset and fully controlled by code.&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Having identified the supertype of a Person, let’s check out the supertype of the Asset class. Within Enterprise Architect, we check for related classes in the Asset properties window. As one can see the Asset class has three Generalization relationships&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Financial Asset&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;and&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Collateral&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;which are obviously child classes of Assets, i.e., they are more specialized, as well as the&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;ThingInRole&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;class, which looks like a higher level abstractional concept. If you countercheck the Fundamental Concept earlier in the article, your assumption gets confirmed. ThingInRole is one of the 15 fundamental concepts.&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/21bcfda7cb6cf8f928ff1b2ed354533b.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;So our enhanced concept diagram looks as follows&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/39ba1eb7dcd1f8e5725eb11afac41e70.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 12pt; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;ThingInRole SuperType&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The  “Thing a Role” concept is described as&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;a thing-in-role is a relative concept that ties some thing to a role it plays in a given situational context &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Perhaps a little bit abstract, but you must understand it. The “situational context” is a very important topic. It means a “Thing” may be seen differently depending on the role it plays in a dedicated situation.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The concept Asset only makes sense in the situational context of Ownership, i.e., an Asset doesn’t exist when there is no ownership.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Now the tricky question what on our wold has no ownership and may be not an Asset per se? Well, the atmosphere of our world or the international waters have no ownership defined, be it for an enterprise or country point of view. So it’s not seen as an asset as by our definition.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 12pt; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Mare Liberum&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;International waters (high seas) do not belong to any State&amp;rsquo;s jurisdiction, known under the doctrine of &amp;lsquo;Mare liberum.&amp;rsquo; States have the right to fishing, navigation, overflight, laying cables and pipelines, as well as scientific research.&lt;/span&gt;
+         &lt;span style="font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[11]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/43d657b190fbf93bd0fa5320aad1157a.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 10pt; color: rgb(17, 17, 17); font-family: Calibri;"&gt;Photo by &lt;/span&gt;
+        &lt;a href="https://unsplash.com/%40rashevsky?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="font-size: 10pt; background: rgb(245, 245, 245); color: rgb(118, 118, 118); font-family: Calibri; text-decoration: underline;"&gt;Anastasia Palagutina&lt;/a&gt;
+        &lt;span style="font-size: 10pt; color: rgb(17, 17, 17); font-family: Calibri;"&gt; on &lt;/span&gt;
+        &lt;a href="https://unsplash.com/s/photos/fishing-boat?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="font-size: 10pt; background: rgb(245, 245, 245); color: rgb(118, 118, 118); font-family: Calibri; text-decoration: underline;"&gt;Unsplash&lt;/a&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;So as long Fishes are swimming freely in the international waters, they are just a pure&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Thing&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;, but as soon as they get caught by a fisher, they get a “&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Thing In the Role&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;” of Ownership (situational context) and are seen as an Asset owned by the fishermen.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;You can think of any situational context for the very same thing. I.e., in the situational context of human food supply, the fish is a “Thing In the Role” of a “Grocery.” For the Fishmonger selling the fish, it’s an asset with value. Both are talking about the same thing, “the fish,” but the meaning of the “fish” is different.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;By outlining a situational context in a concept diagram, you make the meaning explicit; it requires from the diagram reader to accept and understand the contextual border of the diagram and not starting to intermingle another context of the thing when trying to interpret the diagram. Keeping the focus is key when reading and interpreting complex diagrams.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;To finalize the story, let’s think about the supertype of the Owner then. Well, quite easy if you have grasped the idea.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Owner&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;is a role of an&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;AutonomousAgent.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;In the situational context of an Asset, it expresses for the Thing AutonomousAgent the Role&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Owner.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Again if the Asset doesn’t exist, there is no Owner concept (a so-called relative concept).&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Our enhanced diagram confirms our observation. The Owner is sub-type of ThingInRole.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/0e8b288a38404b3313b7ae7f4d6c008d.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;As one can see, the FIBO also introduces two sub-types for ThingInRole&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;AgentInRole&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+          &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+           &lt;div&gt;
+            &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;is a relative concept that ties an autonomous agent to a role they are playing in a given situational context.&lt;/span&gt;
+           &lt;/div&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;PartyInRole&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+          &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 10pt;"&gt;
+           &lt;div&gt;
+            &lt;span style="font-size: 10pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;is a relative concept that ties an independent party to a specific role they are standing in which they play some part, i.e., are “party to”&lt;/span&gt;
+           &lt;/div&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;and Owner is a direct subtype of PartyInRole.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Let’s conclude today’s article by revisiting the conceptual model for actors introduced in the last article.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Conceptual Model For Actors (Revisited)&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;We were modeling the role of a Person, i.e., Alice in the role of Buyer as a generalization&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/94649a390a1c0cb962c2ffcd0214839a.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;After today&amp;rsquo;s session, we adapt it to align it with the FIBO ontology.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Alice, Bob, and Charlie are “Autonomous Agents” of sub-type “Person.”&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div style="margin-top: 0pt; margin-bottom: 8pt;"&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Alice (Borrower), Alice (Buyer), etc. are “Thing In Role” concepts of sub-type “Party In Role”&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Out updated model looks like the following:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/b231c4b2e9d991b53b15a973cc8c5d9b.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;That’s it for today in our next session, we define fundamental concepts around the public blockchain topic and connect with the Asset concept.&lt;/span&gt;
+        &lt;/div&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Bibliography&lt;/span&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;table style="border-collapse: collapse; min-width: 100%;"&gt;
+        &lt;tbody&gt;
+         &lt;tr style=""&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;[10]&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;J. Ziemer, “Financial Industry Data Model,” Jayzed Data Models Inc, [Online]. Available: &lt;a href="https://fib-dm.com/"&gt;&lt;a href="https://fib-dm.com/"&gt;https://fib-dm.com/&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr style=""&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;[11]&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;“Wikipedia International Waters,” [Online]. Available: &lt;a href="https://en.wikipedia.org/wiki/International_waters"&gt;&lt;a href="https://en.wikipedia.org/wiki/International_waters"&gt;https://en.wikipedia.org/wiki/International_waters&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+        &lt;/tbody&gt;
+       &lt;/table&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="https://d.docs.live.net/f250da2627755048/Documents/Cloudburo/The%20Diagrammer/1%20-%20How%20To%20Read%20The%20Diagrams.docx"&gt;Link&lt;/a&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>The Diagrammer Series - How To Read The Diagrams</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2020/01/03/the-diagrammer-series-how-to-read-the-diagrams.html"/>
@@ -12285,26 +12759,6 @@
        &lt;a href="https://publishingbot.cloudburo.net" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
        &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Test Run: Google’s Machine Learning-Based ‘Talk to Books’ Service</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html"/>
-    <id>https://dev.cloudburo.net/2018/04/23/test-run-googles-machine-learning-based-talk-to-books-service.html</id>
-    <published>2018-04-23T11:07:31+00:00</published>
-    <updated>2019-12-17T12:01:59+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;      A very interesting article how Google is exploiting new machine learning strategies.&lt;br/&gt;
-    They recently used machine learning to train an application to answer questions in a very unique way. It scans hundreds of thousands of books and identifies sentences which seem to offer the best response. And it does this by analyzing what it sees as the meaning of the question rather than just matching up keywords. It’s Google’s way of showcasing improved ways of processing natural-language queries.&lt;br/&gt;
-    &lt;br/&gt;
-    The full article can be found here.&lt;br/&gt;
-    &lt;a href="https://thenewstack.io/test-run-googles-machine-learning-based-talk-to-books-service/"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>

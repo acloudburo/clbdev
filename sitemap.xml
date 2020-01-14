@@ -745,6 +745,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2020/01/14/the-diagrammer-series-understanding-autonomous-agent-thing-in-role-and-asset.html</loc>
+    <lastmod>2020-01-14</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2017/06/18/java-for-beginners-table-of-content-and-resources.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.7</priority>
@@ -1312,6 +1318,12 @@
     <loc>https://dev.cloudburo.net/2020/01.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2020/01/14.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>

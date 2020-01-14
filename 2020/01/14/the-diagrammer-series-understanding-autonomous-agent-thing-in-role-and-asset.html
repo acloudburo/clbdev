@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | The Diagrammer Series – Understanding Autonomous Agent, Thing In Role and Asset</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (7)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (23)</a>
+            <a href="/tags/blockstack.html" class="label label-default">blockstack (1)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (7)</a>
+            <a href="/tags/dao.html" class="label label-default">dao (4)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/diagrammer.html" class="label label-default">diagrammer (3)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (11)</a>
+            <a href="/tags/economy.html" class="label label-default">economy (1)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (4)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (15)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/java.html" class="label label-default">java (3)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (5)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (1)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (5)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (6)</a>
+            <a href="/tags/python.html" class="label label-default">python (7)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (20)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/statistics.html" class="label label-default">statistics (2)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tut01.html" class="label label-default">tut01 (7)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (11)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2020.html" class="label label-primary">2020 (2)</a>
+            <a href="/2019.html" class="label label-primary">2019 (25)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2020/01/14/the-diagrammer-series-understanding-autonomous-agent-thing-in-role-and-asset.html">The Diagrammer Series – Understanding Autonomous Agent, Thing In Role and Asset</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  14.Jan 2020 | Tags <a class="label label-primary" href="/tags/diagrammer.html">diagrammer</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                   <div>
+                    <span style="font-size: 16pt; color: rgb(47, 84, 150); font-family: &quot;Calibri Light&quot;;">A Gentle Introduction To The FIBO Ontology</span>
+                    <div>
+                     <span style="font-size: 11pt;"><span style="color: rgb(1, 1, 1); font-family: Calibri; font-size: 11pt; font-style: italic;">The goal of the “Diagrammer Series” is to explain the evolving systems landscape and its associated concepts in the context of Decentralized Finance (DeFi) in a visualized way using (UML) diagramming techniques. The list of all articles can be found under the tag “</span><a href="https://dev.cloudburo.net/tags/diagrammer.html" style="font-family: Calibri; font-size: 11pt; font-style: italic;">The Diagrammer</a><span style="color: rgb(1, 1, 1); font-family: Calibri; font-size: 11pt; font-style: italic;">”</span></span>
+                    </div>
+                    <div>
+                     <span style="font-size: 11pt;"><br></span>
+                    </div>
+                    <div>
+                     <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">As stated in a previous article, the semantic anchor for our conceptual model is the Financial Industry Business Ontology (FIBO) model. The</span>
+                     <a style="color: rgb(105, 170, 53);">The Diagrammer Series – Understanding Autonomous Agent, Thing In Role and Asset</a>
+                     <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">current FIBO model is massive, and large-scale ontologies may be hard to understand for a beginner with a steep learning curve.</span>
+                    </div>
+                    <div>
+                     <span style="font-size: 11pt;"><br></span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Therefore, in the Diagrammer series, I will introduce just the necessary concepts over time -complemented with enough background information - which helps you to build up FIBO know how incrementally. Honestly, I’m a FIBO novice as well (with a deep UML modeling background) and use the series to get all the necessary know-how built up by myself as well.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Fortunately, Jurgen Ziemer (</span>
+                     <a href="https://fib-dm.com/contact-us/" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;">Jayzed Data Models Inc.</a>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">) developed the FIB-DM model, which closes the bridge between the FIBO ontology world and the conventional data management world.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;">There is a chasm between semantic and conventional data management. FIBO is specified in Ontology Web Language (OWL), a powerful semantic language that fully encompasses the Entity-Relationship meta-model. However, that is a barrier for Data Architects and Financial Institutions, because OWL has a gradual learning curve and Ontologists with Finance domain experience are rare. </span>
+                     <span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;">[10]</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Jayzed Data Models developed a Configurable Ontology to Data Model Transformer (CODT), which generates a  SPARX Enterprise Architecture based UML model of the FIBO ontology. The so-called Financial Business Data Model (FIB-DM) which serves as our Enterprise Reference Model during modeling.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">You can get the open-source FIB-DM model for a UML- or Data Modeling Tool via the</span>
+                     <a href="https://fib-dm.com/data-model-download/" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;">Download Page</a>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">. Various modeler tools are supported, we use the</span>
+                     <a href="https://www.sparxsystems.com/" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;">Sparx Enterprise Architect</a>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">modeler, which can import the</span>
+                     <a href="https://de.wikipedia.org/wiki/XML_Metadata_Interchange" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;">XML Metadata Interchange (XMI)</a>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">format of the model.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">FIB-DM itself is quite enormous, with over 1800 entities (classes). Therefore there is a Conceptual Model (FIB-CM) embedded, which consists of 15 Fundamental Concepts to support high-level Business Analysis.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">These Fundamental Concepts help during the high-level analysis and are the overarching super-types of the FIB-DM (as well as can be mapped onto the FIBO-Ontology).</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">The below diagram visualizes the 15 fundamental concepts (</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-style: italic;">TimeInstant</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">and</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-style: italic;">TimeInterval</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">are grouped to the concept</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-style: italic;">Time</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">). Any of the fundamental concepts are entities that do not subtype of any other entity. 70% of the FIB-DM entities are a subtype of these 15 concepts.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Let’s do an initial model exercise, which helps for a better understanding of how the various parts are inter-connected.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/190dd05dc69bca81cd419b2bcdaf005e.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                    </div>
+                    <span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &quot;Calibri Light&quot;;">Conceptual Model For Assets</span>
+                    <div>
+                     <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">To define the concept Asset, we require two out of the fifteen fundamental concepts:</span>
+                    </div>
+                    <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">AutonomousAgent</span>
+                      </div></li>
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div style="margin-top: 0pt; margin-bottom: 8pt;">
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">ThingInRole</span>
+                      </div></li>
+                    </ul>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">They may be abstract at the moment, so let’s start from bottom up.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">By using the FIB-DM Entities and Association Excel (</span>
+                     <a href="https://fib-dm.com/all-data-model-packages-and-entities/" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;">downloaded here</a>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">), we search for existing Concept Entities which are relevant for our Asset Concept Model. We identify three Entities</span>
+                    </div>
+                    <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Asset:</span>
+                      </div></li>
+                     <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                      <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                       <div>
+                        <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">“Something of monetary value that is owned or provides benefit to some party.”</span>
+                       </div></li>
+                     </ul>
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Owner:</span>
+                      </div></li>
+                     <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                      <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                       <div>
+                        <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">“A party in the ownership role, one that owns something. The thing owned is an Asset to that Party.”</span>
+                       </div></li>
+                     </ul>
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Person:</span>
+                      </div></li>
+                     <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                      <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                       <div style="margin-top: 0pt; margin-bottom: 8pt;">
+                        <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">“A person; any member of the species homo sapiens.”</span>
+                       </div></li>
+                     </ul>
+                    </ul>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/e77ad194ce32b3d5d1029682339139bb.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">We don’t search for potential existing Associations (in spite of the exercise) between the concepts but establish an own concept diagram with the identified classes.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/b8ba9c6f31869b53b73149bf2e417fe9.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">So the diagram expresses the following concepts:</span>
+                    </div>
+                    <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div style="margin-top: 0pt; margin-bottom: 8pt;">
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">An</span>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">Asset</span>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">is owned by one (1) or multiple (*) Owners. Each</span>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">Owner</span>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">has an Identity to a</span>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">Person</span>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">.</span>
+                      </div></li>
+                    </ul>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Some observations:</span>
+                    </div>
+                    <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">That the owner of an Asset must be a Person (species of Homo Sapiens) is too specific and not accurate. The Owner of an Asset may be a company (legal entity), an association, or potentially an autonomous thing living on a blockchain network.</span>
+                      </div></li>
+                    </ul>
+                    <div style="margin: 0.7mm 0mm 0mm; text-align: left;">
+                     <span style=" font-size: 12pt; color: rgb(31, 55, 99); font-family: &quot;Calibri Light&quot;;">Autonomous Agent Super Type</span>
+                    </div>
+                    <div>
+                     <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">So we have to check for a generalized concept, which may cover all the possible Identity types, which brings us to one of the 15 supertypes of FIB-CM</span>
+                     <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">:</span>
+                    </div>
+                    <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">The Autonomous Agent</span>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">:</span>
+                      </div></li>
+                     <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                      <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                       <div style="margin-top: 0pt; margin-bottom: 8pt;">
+                        <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">An agent is an autonomous individual that can adapt to and interact with its environment.</span>
+                       </div></li>
+                     </ul>
+                    </ul>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/01ec2570b01f424bbc1d6ff248ef4040.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">We readjust our diagram and move the Association end from Person to Autonomous Agent. With this change, we express that an Asset is owned by an “Autonomous Agent,” which may be the right level of abstraction. To counter-check, we identify all child classes of the Autonomous Agent.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/07725c18210fbf2c32e9e69dc1a76b56.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Beside the Person sub-class, the following concepts are available in FIBO</span>
+                    </div>
+                    <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Legal Person</span>
+                      </div></li>
+                     <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                      <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                       <div>
+                        <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">any entity which can incur legal obligation and can be sued at law</span>
+                       </div></li>
+                     </ul>
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Organization</span>
+                      </div></li>
+                     <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                      <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 10pt;">
+                       <div>
+                        <span style="font-size: 10pt; color: rgb(1, 1, 1); font-family: Calibri;">a unique framework of authority within which a person or persons act, or are designated to act, towards some purpose, such as to meet a need or pursue collective goals continuingly</span>
+                       </div></li>
+                     </ul>
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Automated System</span>
+                      </div></li>
+                     <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                      <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                       <div style="margin-top: 0pt; margin-bottom: 8pt;">
+                        <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">a system that reduces or eliminates the need for human involvement to complete a task</span>
+                       </div></li>
+                     </ul>
+                    </ul>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">So the available four concepts are covering any kind for identities for an Asset Ownership.</span>
+                    </div>
+                    <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Especially the AutomatedSystem may be the supertype of any kind of (distributed) autonomous organization which lives on a blockchain network and may own asset and fully controlled by code.</span>
+                      </div></li>
+                    </ul>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Having identified the supertype of a Person, let’s check out the supertype of the Asset class. Within Enterprise Architect, we check for related classes in the Asset properties window. As one can see the Asset class has three Generalization relationships</span>
+                    </div>
+                    <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">Financial Asset</span>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">and</span>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">Collateral</span>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">which are obviously child classes of Assets, i.e., they are more specialized, as well as the</span>
+                      </div></li>
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">ThingInRole</span>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">class, which looks like a higher level abstractional concept. If you countercheck the Fundamental Concept earlier in the article, your assumption gets confirmed. ThingInRole is one of the 15 fundamental concepts.</span>
+                      </div></li>
+                    </ul>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/21bcfda7cb6cf8f928ff1b2ed354533b.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">So our enhanced concept diagram looks as follows</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/39ba1eb7dcd1f8e5725eb11afac41e70.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                    </div>
+                    <span style="font-size: 12pt; color: rgb(31, 55, 99); font-family: &quot;Calibri Light&quot;;">ThingInRole SuperType</span>
+                    <div>
+                     <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">The  “Thing a Role” concept is described as</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;">a thing-in-role is a relative concept that ties some thing to a role it plays in a given situational context </span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Perhaps a little bit abstract, but you must understand it. The “situational context” is a very important topic. It means a “Thing” may be seen differently depending on the role it plays in a dedicated situation.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">The concept Asset only makes sense in the situational context of Ownership, i.e., an Asset doesn’t exist when there is no ownership.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Now the tricky question what on our wold has no ownership and may be not an Asset per se? Well, the atmosphere of our world or the international waters have no ownership defined, be it for an enterprise or country point of view. So it’s not seen as an asset as by our definition.</span>
+                    </div>
+                    <span style="font-size: 12pt; color: rgb(31, 55, 99); font-family: &quot;Calibri Light&quot;;">Mare Liberum</span>
+                    <div>
+                     <span style="font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;">International waters (high seas) do not belong to any State&rsquo;s jurisdiction, known under the doctrine of &lsquo;Mare liberum.&rsquo; States have the right to fishing, navigation, overflight, laying cables and pipelines, as well as scientific research.</span>
+                     <span style="font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;">[11]</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/43d657b190fbf93bd0fa5320aad1157a.jpeg'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                    </div>
+                    <span style="font-size: 10pt; color: rgb(17, 17, 17); font-family: Calibri;">Photo by </span>
+                    <a href="https://unsplash.com/%40rashevsky?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="font-size: 10pt; background: rgb(245, 245, 245); color: rgb(118, 118, 118); font-family: Calibri; text-decoration: underline;">Anastasia Palagutina</a>
+                    <span style="font-size: 10pt; color: rgb(17, 17, 17); font-family: Calibri;"> on </span>
+                    <a href="https://unsplash.com/s/photos/fishing-boat?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" style="font-size: 10pt; background: rgb(245, 245, 245); color: rgb(118, 118, 118); font-family: Calibri; text-decoration: underline;">Unsplash</a>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">So as long Fishes are swimming freely in the international waters, they are just a pure</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">Thing</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">, but as soon as they get caught by a fisher, they get a “</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">Thing In the Role</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">” of Ownership (situational context) and are seen as an Asset owned by the fishermen.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">You can think of any situational context for the very same thing. I.e., in the situational context of human food supply, the fish is a “Thing In the Role” of a “Grocery.” For the Fishmonger selling the fish, it’s an asset with value. Both are talking about the same thing, “the fish,” but the meaning of the “fish” is different.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">By outlining a situational context in a concept diagram, you make the meaning explicit; it requires from the diagram reader to accept and understand the contextual border of the diagram and not starting to intermingle another context of the thing when trying to interpret the diagram. Keeping the focus is key when reading and interpreting complex diagrams.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">To finalize the story, let’s think about the supertype of the Owner then. Well, quite easy if you have grasped the idea.</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">Owner</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">is a role of an</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">AutonomousAgent.</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">In the situational context of an Asset, it expresses for the Thing AutonomousAgent the Role</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;">Owner.</span>
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Again if the Asset doesn’t exist, there is no Owner concept (a so-called relative concept).</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Our enhanced diagram confirms our observation. The Owner is sub-type of ThingInRole.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/0e8b288a38404b3313b7ae7f4d6c008d.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">As one can see, the FIBO also introduces two sub-types for ThingInRole</span>
+                    </div>
+                    <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">AgentInRole</span>
+                      </div></li>
+                     <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                      <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                       <div>
+                        <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">is a relative concept that ties an autonomous agent to a role they are playing in a given situational context.</span>
+                       </div></li>
+                     </ul>
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">PartyInRole</span>
+                      </div></li>
+                     <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                      <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 10pt;">
+                       <div>
+                        <span style="font-size: 10pt; color: rgb(1, 1, 1); font-family: Calibri;">is a relative concept that ties an independent party to a specific role they are standing in which they play some part, i.e., are “party to”</span>
+                       </div></li>
+                     </ul>
+                    </ul>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">and Owner is a direct subtype of PartyInRole.</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Let’s conclude today’s article by revisiting the conceptual model for actors introduced in the last article.</span>
+                    </div>
+                    <span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &quot;Calibri Light&quot;;">Conceptual Model For Actors (Revisited)</span>
+                    <div>
+                     <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">We were modeling the role of a Person, i.e., Alice in the role of Buyer as a generalization</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/94649a390a1c0cb962c2ffcd0214839a.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">After today&rsquo;s session, we adapt it to align it with the FIBO ontology.</span>
+                    </div>
+                    <ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;">
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div>
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Alice, Bob, and Charlie are “Autonomous Agents” of sub-type “Person.”</span>
+                      </div></li>
+                     <li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;">
+                      <div style="margin-top: 0pt; margin-bottom: 8pt;">
+                       <span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Alice (Borrower), Alice (Buyer), etc. are “Thing In Role” concepts of sub-type “Party In Role”</span>
+                      </div></li>
+                    </ul>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">Out updated model looks like the following:</span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=""> 
+                   <img class='article  img-thumbnail' src='/images/b231c4b2e9d991b53b15a973cc8c5d9b.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/> </span>
+                    </div>
+                    <div style="margin: 0mm 0mm 2.81mm;">
+                     <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;">That’s it for today in our next session, we define fundamental concepts around the public blockchain topic and connect with the Asset concept.</span>
+                    </div>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &quot;Calibri Light&quot;;">Bibliography</span>
+                    <br>
+                   </div>
+                   <table style="border-collapse: collapse; min-width: 100%;">
+                    <tbody>
+                     <tr style="">
+                      <td style=" padding: 8px; border: 1px solid;">
+                       <div style="margin-top: 1em; margin-bottom: 1em;">
+                        <span style="">[10]</span>
+                       </div></td>
+                      <td style=" padding: 8px; border: 1px solid;">
+                       <div style="margin-top: 1em; margin-bottom: 1em;">
+                        <span style="">J. Ziemer, “Financial Industry Data Model,” Jayzed Data Models Inc, [Online]. Available: <a href="https://fib-dm.com/"><a href="https://fib-dm.com/">https://fib-dm.com/</a></a>.</span>
+                       </div></td>
+                     </tr>
+                     <tr style="">
+                      <td style=" padding: 8px; border: 1px solid;">
+                       <div style="margin-top: 1em; margin-bottom: 1em;">
+                        <span style="">[11]</span>
+                       </div></td>
+                      <td style=" padding: 8px; border: 1px solid;">
+                       <div style="margin-top: 1em; margin-bottom: 1em;">
+                        <span style="">“Wikipedia International Waters,” [Online]. Available: <a href="https://en.wikipedia.org/wiki/International_waters"><a href="https://en.wikipedia.org/wiki/International_waters">https://en.wikipedia.org/wiki/International_waters</a></a>.</span>
+                       </div></td>
+                     </tr>
+                    </tbody>
+                   </table>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <br>
+                   </div>
+                   <div style="margin: 0mm 0mm 2.81mm;">
+                    <span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"><br></span>
+                   </div>
+                  </div></p>
+                
+                <p><a href="https://d.docs.live.net/f250da2627755048/Documents/Cloudburo/The%20Diagrammer/1%20-%20How%20To%20Read%20The%20Diagrams.docx">Link</a></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2020 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>
