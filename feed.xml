@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2020/01/14/the-diagrammer-series-understanding-autonomous-agent-thing-in-role-and-asset.html"/>
     <id>https://dev.cloudburo.net/2020/01/14/the-diagrammer-series-understanding-autonomous-agent-thing-in-role-and-asset.html</id>
     <published>2020-01-14T22:30:35+00:00</published>
-    <updated>2020-01-14T22:31:45+00:00</updated>
+    <updated>2020-01-14T23:32:43+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -26,14 +26,30 @@
        &lt;div&gt;
         &lt;span style="font-size: 16pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;A Gentle Introduction To The FIBO Ontology&lt;/span&gt;
         &lt;div&gt;
-         &lt;span style="font-size: 11pt;"&gt;&lt;span style="color: rgb(1, 1, 1); font-family: Calibri; font-size: 11pt; font-style: italic;"&gt;The goal of the “Diagrammer Series” is to explain the evolving systems landscape and its associated concepts in the context of Decentralized Finance (DeFi) in a visualized way using (UML) diagramming techniques. The list of all articles can be found under the tag “&lt;/span&gt;&lt;a href="https://dev.cloudburo.net/tags/diagrammer.html" style="font-family: Calibri; font-size: 11pt; font-style: italic;"&gt;The Diagrammer&lt;/a&gt;&lt;span style="color: rgb(1, 1, 1); font-family: Calibri; font-size: 11pt; font-style: italic;"&gt;”&lt;/span&gt;&lt;/span&gt;
+         &lt;span style="font-size: 11pt;"&gt;&lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-style: italic;"&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;
         &lt;/div&gt;
         &lt;div&gt;
-         &lt;span style="font-size: 11pt;"&gt;&lt;br&gt;&lt;/span&gt;
+         &lt;span style="font-size: 11pt;"&gt;&lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-style: italic;"&gt;The goal of the “Diagrammer Series” is to explain the evolving systems landscape and its associated concepts in the context of Decentralized Finance (DeFi) in a visualized way using (UML) diagramming techniques. The list of all articles can be found under the tag “&lt;/span&gt;&lt;a href="https://dev.cloudburo.net/tags/diagrammer.html" style="font-size: 11pt; font-family: Calibri; font-style: italic;"&gt;The Diagrammer&lt;/a&gt;&lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-style: italic;"&gt;”&lt;/span&gt;&lt;/span&gt;
         &lt;/div&gt;
         &lt;div&gt;
-         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;As stated in a previous article, the semantic anchor for our conceptual model is the Financial Industry Business Ontology (FIBO) model. The&lt;/span&gt;
-         &lt;a style="color: rgb(105, 170, 53);"&gt;The Diagrammer Series – Understanding Autonomous Agent, Thing In Role and Asset&lt;/a&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;&lt;br&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/459ccc45a68becbbf5f9a8911bbd5cc6.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;          &lt;/div&gt;
+        &lt;div style="text-align: center;"&gt;
+         &lt;font style="font-size: 9pt;"&gt;&lt;span style="color: rgb(17, 17, 17); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; background-color: rgb(245, 245, 245);"&gt;Photo by&lt;/span&gt;&lt;span style="color: rgb(17, 17, 17); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; background-color: rgb(245, 245, 245);"&gt; &lt;/span&gt;&lt;a href="https://unsplash.com/%40toddquackenbush?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="box-sizing: border-box; background-color: rgb(245, 245, 245); color: rgb(118, 118, 118); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;"&gt;Todd Quackenbush&lt;/a&gt;&lt;span style="color: rgb(17, 17, 17); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; background-color: rgb(245, 245, 245);"&gt; &lt;/span&gt;&lt;span style="color: rgb(17, 17, 17); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; background-color: rgb(245, 245, 245);"&gt;on&lt;/span&gt;&lt;span style="color: rgb(17, 17, 17); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; background-color: rgb(245, 245, 245);"&gt; &lt;/span&gt;&lt;a href="https://unsplash.com/%40toddquackenbush?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="box-sizing: border-box; background-color: rgb(245, 245, 245); color: rgb(118, 118, 118); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;San Francisco&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Ubuntu, Roboto, Noto, &amp;quot;Segoe UI&amp;quot;, Arial, sans-serif; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: nowrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;"&gt;Unsplash&lt;/a&gt;&lt;/font&gt;
+         &lt;br&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;&lt;br&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;As stated in a previous article, the semantic anchor for our conceptual model is the Financial Industry Business Ontology (FIBO) model. The &lt;/span&gt;
          &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;current FIBO model is massive, and large-scale ontologies may be hard to understand for a beginner with a steep learning curve.&lt;/span&gt;
         &lt;/div&gt;
         &lt;div&gt;
@@ -44,7 +60,7 @@
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Fortunately, Jurgen Ziemer (&lt;/span&gt;
-         &lt;a href="https://fib-dm.com/contact-us/" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;Jayzed Data Models Inc.&lt;/a&gt;
+         &lt;a href="https://fib-dm.com/contact-us/" style="text-indent: 0mm; font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%; text-decoration: underline;"&gt;Jayzed Data Models Inc.&lt;/a&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;) developed the FIB-DM model, which closes the bridge between the FIBO ontology world and the conventional data management world.&lt;/span&gt;
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
@@ -56,11 +72,11 @@
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;You can get the open-source FIB-DM model for a UML- or Data Modeling Tool via the&lt;/span&gt;
-         &lt;a href="https://fib-dm.com/data-model-download/" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;Download Page&lt;/a&gt;
+         &lt;a href="https://fib-dm.com/data-model-download/" style="text-indent: 0mm; font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%; text-decoration: underline;"&gt;Download Page&lt;/a&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;. Various modeler tools are supported, we use the&lt;/span&gt;
-         &lt;a href="https://www.sparxsystems.com/" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;Sparx Enterprise Architect&lt;/a&gt;
+         &lt;a href="https://www.sparxsystems.com/" style="text-indent: 0mm; font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%; text-decoration: underline;"&gt;Sparx Enterprise Architect&lt;/a&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;modeler, which can import the&lt;/span&gt;
-         &lt;a href="https://de.wikipedia.org/wiki/XML_Metadata_Interchange" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;XML Metadata Interchange (XMI)&lt;/a&gt;
+         &lt;a href="https://de.wikipedia.org/wiki/XML_Metadata_Interchange" style="text-indent: 0mm; font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%; text-decoration: underline;"&gt;XML Metadata Interchange (XMI)&lt;/a&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;format of the model.&lt;/span&gt;
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
@@ -108,7 +124,7 @@
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;By using the FIB-DM Entities and Association Excel (&lt;/span&gt;
-         &lt;a href="https://fib-dm.com/all-data-model-packages-and-entities/" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;downloaded here&lt;/a&gt;
+         &lt;a href="https://fib-dm.com/all-data-model-packages-and-entities/" style="text-indent: 0mm; font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%; text-decoration: underline;"&gt;downloaded here&lt;/a&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;), we search for existing Concept Entities which are relevant for our Asset Concept Model. We identify three Entities&lt;/span&gt;
         &lt;/div&gt;
         &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
@@ -305,7 +321,7 @@
   &lt;div class="article"&gt;
     &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
         &lt;/div&gt;
-        &lt;span style="font-size: 12pt; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;ThingInRole SuperType&lt;/span&gt;
+        &lt;span style="font-size: 12pt; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;ThingInRole Super Type&lt;/span&gt;
         &lt;div&gt;
          &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The  “Thing a Role” concept is described as&lt;/span&gt;
         &lt;/div&gt;
@@ -326,6 +342,9 @@
          &lt;span style="font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;International waters (high seas) do not belong to any State&amp;rsquo;s jurisdiction, known under the doctrine of &amp;lsquo;Mare liberum.&amp;rsquo; States have the right to fishing, navigation, overflight, laying cables and pipelines, as well as scientific research.&lt;/span&gt;
          &lt;span style="font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[11]&lt;/span&gt;
         &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt;"&gt;&lt;br&gt;&lt;/span&gt;
+        &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
          &lt;span style=""&gt; 
        &lt;img class='article  img-thumbnail' src='/images/43d657b190fbf93bd0fa5320aad1157a.jpeg'&gt;&lt;/p&gt;
@@ -338,6 +357,9 @@
         &lt;a href="https://unsplash.com/%40rashevsky?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="font-size: 10pt; background: rgb(245, 245, 245); color: rgb(118, 118, 118); font-family: Calibri; text-decoration: underline;"&gt;Anastasia Palagutina&lt;/a&gt;
         &lt;span style="font-size: 10pt; color: rgb(17, 17, 17); font-family: Calibri;"&gt; on &lt;/span&gt;
         &lt;a href="https://unsplash.com/s/photos/fishing-boat?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="font-size: 10pt; background: rgb(245, 245, 245); color: rgb(118, 118, 118); font-family: Calibri; text-decoration: underline;"&gt;Unsplash&lt;/a&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;&lt;br&gt;&lt;/span&gt;
+        &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;So as long Fishes are swimming freely in the international waters, they are just a pure&lt;/span&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Thing&lt;/span&gt;
@@ -444,7 +466,6 @@
        &lt;/div&gt;
        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
         &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Bibliography&lt;/span&gt;
-        &lt;br&gt;
        &lt;/div&gt;
        &lt;table style="border-collapse: collapse; min-width: 100%;"&gt;
         &lt;tbody&gt;
@@ -474,8 +495,11 @@
         &lt;br&gt;
        &lt;/div&gt;
        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
-        &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;&lt;br&gt;&lt;/span&gt;
+        &lt;span style=" font-size: 11pt;"&gt;&lt;br&gt;&lt;/span&gt;
        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
     &lt;p&gt;&lt;a href="https://d.docs.live.net/f250da2627755048/Documents/Cloudburo/The%20Diagrammer/1%20-%20How%20To%20Read%20The%20Diagrams.docx"&gt;Link&lt;/a&gt;&lt;/p&gt;
