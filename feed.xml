@@ -5,10 +5,476 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2020-01-14T22:30:35+00:00</updated>
+  <updated>2020-02-05T12:06:30+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>The Diagrammer Series – When Money Left The Tangible Asset Space</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2020/02/05/the-diagrammer-series-when-money-left-the-tangible-asset-space.html"/>
+    <id>https://dev.cloudburo.net/2020/02/05/the-diagrammer-series-when-money-left-the-tangible-asset-space.html</id>
+    <published>2020-02-05T12:06:30+00:00</published>
+    <updated>2020-02-05T12:07:44+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/2e2c89beb0eea3b94c8815f46ab5d9ac.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;          &lt;span style="text-align: center; font-size: 11pt; font-weight: normal; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Photo by &lt;/span&gt;
+        &lt;a href="https://unsplash.com/%40spacex?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-align: center; text-indent: 0mm; font-size: 11pt; font-weight: normal; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%;"&gt;SpaceX&lt;/a&gt;
+        &lt;span style="text-align: center; font-size: 11pt; font-weight: normal; color: rgb(1, 1, 1); font-family: Calibri;"&gt; on &lt;/span&gt;
+        &lt;a href="https://unsplash.com/s/photos/space?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-align: center; text-indent: 0mm; font-size: 11pt; font-weight: normal; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%;"&gt;Unsplash&lt;/a&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;In the last article, we established the Asset concept model in the context of FIBO (blue classes below). Today we concentrate our work around the main asset type, the Money concept. Money plays a central role in our society and is as well a main driver for the Decentralized Finance (DeFi) concept space.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Although the people in history might have lived through the exchange of goods and not relying on the value of money itself, modern society today could not function without money. Money plays a huge role in society in a variety of ways, such as in business, at people’s jobs, and even in education. Money helps people achieve a better quality of education, a larger chance of business success, and higher work output.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[12]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/e34f0629c4b72dbd78ccd917503cc529.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;For that, we leave the FIBO ontology model behind us. The concept of Money isn’t defined in a way that is suitable for our conceptual DeFi work. It’s focus relies on the classic concept of Money as a tangible asset of value exchange issued by a central authority as used by financial services. We definitely have to enhance that. So let’s start then.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Store of Value Concept&lt;/span&gt;
+        &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/2b4229d769bf30c4bb9ccefb30ae92b6.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;          &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Let’s revisit the Asset concept quickly. The main property of an Asset is that it functions as a&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Store Of Value&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;, which is defined as:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;A&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic; font-weight: bold;"&gt;Store Of Value&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;is the function of an asset that can be saved, retrieved, and exchanged at a later time, and be predictably useful when retrieved. More generally, a store of value is anything that retains purchasing power into the future.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[13]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The value of an asset may be expressed in a&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Monetary Amount,&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;which is based on a&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Currency&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Monetary value is the amount of currency that would be exchanged for the sale of an asset. It is commonly understood as the worth in cash that something has within the open market.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Let’s check out the FIBO definition of Currency:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Is a Medium of Exchange value, defined by reference to the geographical location of the monetary authorities responsible for it&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The FIBO currency definition is strongly linked to monetary authorities&amp;#39; control in geographical or jurisdictional locations. As we see shortly, that is not generic enough to be used for a concept model in the decentralized finance world.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Stereotypes&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Before we move on let’s explain the meaning of some Stereotypes which we introduced in the above UML diagram, i.e &amp;lt;&amp;lt;clb.s&amp;gt;&amp;gt;, &amp;lt;&amp;lt;clb.a&amp;gt;&amp;gt;.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;A stereotype is one of three types of extensibility mechanisms in the Unified Modeling Language (UML), the other two being tags and constraints. They allow designers to extend the vocabulary of UML to create new model elements, derived from existing ones, but that have specific properties that are suitable for a particular domain or otherwise specialized usage.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[13]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;In our case, we introduced the stereotypes for the UML Modeling element “Association.”&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The &amp;lt;&amp;lt;clb.a&amp;gt;&amp;gt; “append” stereotype allows us to identify Associations between FIB-DM model elements and newly introduced one by us.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/46eab4327cbfbb87b376e40c89985cc9.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The &amp;lt;&amp;lt;clb.s&amp;gt;&amp;gt; “simplify” stereotype allows us to identify direct Associations between two FIB-DM classes, which are modeled out in the FIB-DM as well as Association classes. &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/1ca25f111eaa733696dd8f3b2afca41b.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;By introducing these two extension mechanisms (stereotypes), we can at any time identify in a standardized way where we introduced new concepts or simplified the FIB-DM model.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;You will also encounter the &amp;lt;&amp;lt;clb.g&amp;gt;&amp;gt; stereotype in diagrams, which marks Generalization association between FIB-DM concepts and newly introduced ones.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Refer to the below screenshot, which shows all linked elements for the class “MonetaryAmount.” With a glimpse of a view, you can easily identify how the concept was enhanced with new relationships.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/4daf24236f2e3c7da5d47f8974fc6a61.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Enough of theory, let’s switch back to our concept modeling.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Money Concept&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Money plays a pivotal role and is defined as:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt;"&gt;&lt;br&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Money is any item or verifiable record that is generally accepted as payment for goods and services and repayment of debts, such as taxes, in a particular country or socio-economic context.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[13]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;So let’s enhance our diagram with various concepts to embed the Money concept world firmly.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/5bdad6693d390854c1b248d4e0b09392.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;As one can see in the above diagram:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;For Asset, we introduced three distinct subtypes, beside&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Money&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;as well as&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Tangible Asset&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;and Intangible Asset&lt;/span&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;subtype (yellow concepts)&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;We define the two new asset types (used mainly in the accounting area) as:&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;A&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic; font-weight: bold;"&gt;Tangible Asset&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;is any physical asset owned by an autonomous agent to produce or purchase goods and services. They have a finite monetary value and can be quantified with relative ease. Tangible assets can also be sold to generate a monetary amount in the event the autonomous faces financial difficulty. Examples like property, plant, equipment, but also securities (like stocks, bonds, cash) are treated as a tangible asset.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;As well as&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 11pt; font-weight: normal; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt; An&lt;/span&gt;
+        &lt;span style="font-size: 11pt; font-weight: normal; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Intangible Asset&lt;/span&gt;
+        &lt;span style="font-size: 11pt; font-weight: normal; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;is an identifiable non-monetary asset without physical substance. Such an asset is identifiable when it is separable, or when it arises from contractual or other legal rights. Separable assets can be sold, transferred, licensed, etc. Examples of intangible assets include computer software, licenses, trademarks, patents, films, copyrights, and import quotas. [14]&lt;/span&gt;
+        &lt;span style="font-size: 11pt; font-weight: normal; color: rgb(68, 114, 196); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;.&lt;/span&gt;
+        &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;The Money Shift Into The Intangible Asset Space&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;We explicitly decided to keep Money separate of the Tangible- and Intangible Asset types because, since the introduction of Digital Money, the Money concept left the Tangible Asset Space and can now be either a tangible or intangible asset.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;To understand that better let’s check the subtypes of the Money Concept and their properties&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Commodity Money and Fiat Money are representations of tangible assets&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div style="margin-top: 0pt; margin-bottom: 6pt;"&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Digital Money is a representation of intangible assets&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0.7mm 0mm 0mm; text-align: left;"&gt;
+         &lt;span style=" font-size: 12pt; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Commodity Money&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Is defined as&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt;"&gt;&lt;br&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic; font-weight: bold;"&gt;Commodity Money&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;is money whose value comes from a commodity of which it is made. Commodity money consists of objects having value or use in themselves (intrinsic value) as well as their value in buying goods.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/26595c34daf8342a7e73dc87ef24260d.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Picture by&lt;/span&gt;
+         &lt;a href="https://upload.wikimedia.org/wikipedia/commons/9/9e/Gold1oz.jpg" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;Wikipedia&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;It’s a money type which is based normally on a Thing, which has the feature of Scarcity.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;As we see later,&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Scarcity&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;is one of the key design features of a digital currency as well and refers to the basic economic problem&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;the gap between limited – that is, scarce – resources and theoretically limitless wants. This situation requires people to make decisions about how to allocate resources efficiently, to satisfy basic needs, and as many additional wants as possible. Any resource that has a non-zero cost to consume is scarce to some degree, but what matters in practice is relative scarcity.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[15]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Commodity Money based on a scarce (not easy to get) resource –for example Gold – is a Store of Value, as well has intrinsic value features like&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;composability&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;easily and securely storable&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;transportable&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div style="margin-top: 0pt; margin-bottom: 8pt;"&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;difficulty to counterfeit&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;which makes it an ideal&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Medium of Exchange&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;, a second major function of Money.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;A&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic; font-weight: bold;"&gt;Medium of Exchange&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;is an intermediary instrument or system used to facilitate the sale, purchase, or trade of goods between parties. For a system to function as a medium of exchange, it must represent a standard of value. Further, all parties must accept that standard.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[15]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The third major function of many is its representation of a standard of value, which is also described as a&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Unit Of Account&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;. The value of something is measured in a specific&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Currency&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;, which allows different things to be compared against each other.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The above diagram shows all the three main functions of Money as green concepts.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;The model expresses with the Association “canBeConvertedInto” the power of Money acting as Medium of Exchange (payment) to convert the Store of Value of any Asset into Money.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/5e7e46ebaa82aaaed31943ab89348958.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 12pt; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Fiat Money&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;When we talk about Fiat Money, we normally refer to it’s unit of account function as Fiat Currency.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Fiat currencies expressed in nations coins and bank notes are playing a major ( perhaps the most important) role in the world of value exchange.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/15b7637353cc3b14c8f712434e4d422c.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Photo by &lt;/span&gt;
+         &lt;a href="https://unsplash.com/%40nbmat?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;Mathieu Turle&lt;/a&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt; on &lt;/span&gt;
+         &lt;a href="https://unsplash.com/s/photos/coins?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;Unsplash&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Fiat Money&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;is defined as&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Fiat money is a government-issued currency that is not backed by a physical commodity, such as gold or silver, but rather by the government that issued it. The value of fiat money is derived from the relationship between supply and demand and the stability of the issuing government, rather than the worth of a commodity backing it as is the case for commodity money. Most modern paper currencies are fiat currencies, including the U.S. dollar, the euro, and other major global currencies.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[15]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;As the definition above states, a Fiat Money has no intrinsic value, which holds true also for Digital Money, as we see later in the article.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/542ec9cae8e729a2652c6f72f64c502f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Its value is purely derived by the&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;ul style="margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm; padding-left: 0pt;"&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;relationship between supply and demand, but as well as&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li style="margin-left: 33pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;"&gt;
+          &lt;div style="margin-top: 0pt; margin-bottom: 8pt;"&gt;
+           &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;the stability of the issuing government.&lt;/span&gt;
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;To believe in the value of a Fiat currency, you have trust in the issuing government, which ultimately controls the value of the Fiat currency.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Despite the use of fiat money (money that is not backed by a commodity but is backed by the government), many don’t really believe it has any worth at all. After all, the government can control what the currency is worth by issuing more or less of it. The banks also have a say in how money travels from one person to the next&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;. [16]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;These shortcomings - in the context of centralized controls in the value setting, as well as value exchange – resulted in the nineties of the last century in the rise of Digital Currencies, namely Crypto Currencies.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;For these reasons, some have begun to lose faith in these more “tangible” financial assets. To solve this, the belief arose that re-establishing the value of tangibles would have to be done through intangibles mediums. Namely cryptocurrencies. This is because we currently believe that money has value, and so it does. If we all agree that crypto has value, then this currency would be used for a wider range of uses.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[16]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/dd4228e84b18a198f202c04469c30cd7.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span style="font-size: 12pt; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Digital Money&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Finally, we arrived by one of our main concepts in the world of Decentralized Finance (DeFi), the Digital Money, a new type that lives in the Intangible Asset space and may circumvent the shortcomings of Fiat currencies which are controlled by governments and financial institutions. Digital Money is defined as&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Any means of payment that exists purely in electronic form. Digital money is not tangible, like a dollar bill or a coin. It is accounted for and transferred using computers. The most successful and widely-used form of digital money is the cryptocurrency Bitcoin. Digital money is exchanged using technologies such as smartphones, credit cards, and online cryptocurrency exchanges. In some cases, it can be transferred into physical cash, for example, by withdrawing cash from an ATM.&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri;"&gt;[15]&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;We are now ready to enter the digital space with it’s decentralized and permissionless innovative blockchain solutions.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;In the next article, we do an additional refinement step in the digital money taxonomy by introducing the “money flower concept,” as introduced by the Bank Of International Settlement. Stay tuned!&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
+         &lt;span style=""&gt; 
+       &lt;img class='article  img-thumbnail' src='/images/7a61b266f825d4a459d2a8e9db23737c.jpeg'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt; &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;
+         &lt;span style=" font-size: 10pt; color: rgb(17, 17, 17); font-family: Helvetica;"&gt;Photo by &lt;/span&gt;
+         &lt;a href="https://unsplash.com/%40grakozy?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-indent: 0mm; font-size: 10pt; background: rgb(245, 245, 245); line-height: 108%; color: rgb(118, 118, 118); font-family: Helvetica; text-decoration: underline;"&gt;Greg Rakozy&lt;/a&gt;
+         &lt;span style=" font-size: 10pt; color: rgb(17, 17, 17); font-family: Helvetica;"&gt; on &lt;/span&gt;
+         &lt;a href="https://unsplash.com/s/photos/space?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-indent: 0mm; font-size: 10pt; background: rgb(245, 245, 245); line-height: 108%; color: rgb(118, 118, 118); font-family: Helvetica; text-decoration: underline;"&gt;Unsplash&lt;/a&gt;
+        &lt;/div&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font face="Calibri Light"&gt;&lt;span style="font-size: 16px;"&gt;References&lt;/span&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;table style="border-collapse: collapse; min-width: 100%;"&gt;
+        &lt;tbody&gt;
+         &lt;tr style=""&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;[12]&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt; “Money&amp;rsquo;s Role In Society,” [Online]. Available: &lt;a href="http://scripts.cac.psu.edu/users/h/w/hwp5131/Assignment%205.html"&gt;&lt;a href="http://scripts.cac.psu.edu/users/h/w/hwp5131/Assignment%205.html"&gt;http://scripts.cac.psu.edu/users/h/w/hwp5131/Assignment%205.html&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr style=""&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;[13]&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;“Wikipedia,” [Online]. Available: &lt;a href="https://en.wikipedia.org/"&gt;&lt;a href="https://en.wikipedia.org/"&gt;https://en.wikipedia.org/&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr style=""&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;[14]&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;“IFRS Reporting Standard,” IFRS, [Online]. Available: &lt;a href="https://www.ifrs.org/issued-standards/list-of-standards/ias-38-intangible-assets/#about"&gt;&lt;a href="https://www.ifrs.org/issued-standards/list-of-standards/ias-38-intangible-assets/#about"&gt;https://www.ifrs.org/issued-standards/list-of-standards/ias-38-intangible-assets/#about&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr style=""&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;[15]&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;“Investopedia,” [Online]. Available: &lt;a href="https://www.investopedia.com/"&gt;&lt;a href="https://www.investopedia.com/"&gt;https://www.investopedia.com/&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr style=""&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;[16]&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+          &lt;td style=" padding: 8px; border: 1px solid;"&gt;
+           &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
+            &lt;span style=""&gt;S. Kordyban, “&lt;a href="http://hedgetrade.com"&gt;hedgetrade.com&lt;/a&gt;,” 19 December 2019. [Online]. Available: &lt;a href="https://hedgetrade.com/is-crypto-an-intangible-asset/"&gt;&lt;a href="https://hedgetrade.com/is-crypto-an-intangible-asset/"&gt;https://hedgetrade.com/is-crypto-an-intangible-asset/&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
+           &lt;/div&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+        &lt;/tbody&gt;
+       &lt;/table&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;span style="font-size: 12pt; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;&lt;br&gt;&lt;/span&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>The Diagrammer Series – Understanding Autonomous Agent, Thing In Role and Asset</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2020/01/14/the-diagrammer-series-understanding-autonomous-agent-thing-in-role-and-asset.html"/>
@@ -12215,573 +12681,6 @@
       &lt;/div&gt;
       &lt;div&gt;
        &lt;span style="font-size: 11px;"&gt;&lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
-      &lt;/div&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Tutorial: Drools Decision Tables in Excel for a Product Proposal</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html"/>
-    <id>https://dev.cloudburo.net/2018/05/10/tutorial-drools-decision-tables-in-excel-for-a-product-proposal.html</id>
-    <published>2018-05-10T11:07:02+00:00</published>
-    <updated>2019-12-17T12:01:59+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-       &lt;span style="font-weight: bold;"&gt;Tutorial Source Repository: &lt;/span&gt;
-       &lt;a href="https://github.com/talfco/tutorial-drools-decisiontable" style="font-weight: bold;"&gt;&lt;a href="https://github.com/talfco/tutorial-drools-decisiontable"&gt;https://github.com/talfco/tutorial-drools-decisiontable&lt;/a&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The Tutorial covers the following points
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          Defining a Product Sales Decision Table for a customer in Excel, covering a product proposal, which is
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;ul&gt;
-        &lt;li&gt;
-         &lt;div&gt;
-           dependent of its life stage, accumulated assets as well as expressed needs
-         &lt;/div&gt;&lt;/li&gt;
-        &lt;li&gt;
-         &lt;div&gt;
-           as well as calculating a discount which can be offered him
-         &lt;/div&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          We will use a Drools Global Variable to communicate back the proposed initial offering
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The official Drools site 
-       &lt;a href="http://www.drools.org/"&gt;&lt;a href="http://www.drools.org/"&gt;http://www.drools.org/&lt;/a&gt;&lt;/a&gt; provides the following definitions:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-style: italic;"&gt;Drools is a Business Rules Management System (BRMS) solution. It provides a core Business Rules Engine (BRE), a web authoring and rules management application (Drools Workbench) and an Eclipse IDE plugin for core development.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          This sounds quite huge and complex, but the current design and architecture of of Drools, allows a very lightweight and simple integration of the BRMS in Java applications, which require a flexible, “easy to manage” approach of Business Rules by using spreadsheet(s).
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        This nifty feature is called “Drools Decision Tables in Excel&amp;quot;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Very briefly speaking, in Drools decision tables are a way to generate rules driven from the data entered into a spreadsheet. All the usual features of a spreadsheet for data capture and manipulation can be taken advantage of. Decision tables are a &amp;ldquo;precise yet compact&amp;rdquo; (ref. Wikipedia) way of representing conditional logic, and are well suited to business level rules.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Two kind of objects plays a role in context of the Drools BRMS:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          the Condition Object(s), which defines the input objects required in a decision rule
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          the Action Object(s), which is required in order to store the results of the calculated decision
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Condition Object: Customer&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        So let’s start with our example:
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        We want to model the decision rule of a product proposal for a financial services digital journey which takes into consideration the questions answered by the customer on our web page. It includes the following questions
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          two personal data questions about its current life stage, as well as its current financial assets 
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          a set of customer preferences in context of its financial needs
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The data collected we will store in our Customer class
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/be6a91805e80a8337a147dfbf97e874c.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        We define 3 enum’s in order to differentiate the customer’s question answers given 
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-         &lt;span style=""&gt;CustomerNeed, CustomerLifeStage, CustomerAssets&lt;/span&gt;
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/94537edf65869b0c908d415e42337f62.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Action Object: Offer&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;The Offer object will store the result of our product offering rule calculation.&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;In our example our offering will consist of a&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-         &lt;span style="font-size: 14px;"&gt;Product Package offered by the financial service&lt;/span&gt;
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          A list of individual Products
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          A discount of the overall price of the offering. We assume that the base price is not part of this calculation and provided as part of a Product Catalog service.
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/17eda1987704abff9a5dedf7ec824d2d.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Also here we keep a enum for the Product Package, as well as the individual Product result.
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/92cae82864a3e38087047483b20acb52.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Decision Table Excel&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Having defined the Input and Output Object, it’s time to define the our product offering rule in a Decision Table Excel. Drools Decision Table Excel functionality is very powerful, you can find the full documentation
-       &lt;a href="http://docs.jboss.org/drools/release/7.7.0.Final/drools-docs/html_single/#_decision_tables_in_spreadsheets"&gt;here&lt;/a&gt;.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Consider decision tables as a course of action if rules exist that can be expressed as rule templates and data: each row of a decision table provides data that is combined with a template to generate a rule.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        As each row is a rule, the same principles apply. As the rule engine processes the facts, any rules that match may fire. (Some people are confused by this. It is possible to clear the agenda when a rule fires and simulate a very simple decision table where only the first match effects an action.) Also note that you can have multiple tables on one spreadsheet. This way, rules can be grouped where they share common templates, yet at the end of the day they are all combined into one rule package. Decision tables are essentially a tool to generate DRL rules automatically. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        So it’s a lightweight and easy to understand approach 
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          for a business analyst to model the rules on the ons side
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          as well as convenient way for a business user to verify and sign-off the rules&lt;br&gt;
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Having the possibility to distribute the rules in multiple tables or separate Excels, allows to handle governance and business ownership in an easy and straightforward way.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        In a normal case the Excel’s are delivered as part of the resource bundle of the JAR file. But you could think of more flexible strategies by loading the Excels during startup from a local or remote location in order not being dependent from code build delivery.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The below screenshot provides an overall overview of a Drools Decision Table Excel
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/0501330c9490c9e296591fb792bd32dc.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        So let’s look at the different part of the Excel.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold;"&gt;Rule Set Part&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The Rule Set part consists amongst others (not all options used in the tutorial) of a
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          Import row, which imports the above defined decision and action classes.
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          Variables row, which defines global variables. In our example, we define the Offer class, which is used to store and transfer out the product proposal. As one can see in the later section, the offer variable, will be initialised by the caller and passed by reference to the rule execution.
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          Notes row, for a descriptive text.
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/521100aad0ceadf77f096625669afd0e.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-weight: bold;"&gt;Rule Table Part - Rule Definition&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The screenshot below shows the Rule Definition Part. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/a03fe87ecdf7171a9e8e5c8237c2020e.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The Name and Condition Column, define left-hand side (LHS) of the decision rule.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          The blue cells, are defining the Code snippet and interpolated values for constructing a constraint within a pattern in a condition. 
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;ul&gt;
-        &lt;li&gt;
-         &lt;div&gt;
-           I.e. the first column condition will pass in the life stage of a Customer to the 9 rules defined, the second column the assets of a Customer and so on 
-         &lt;/div&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          Each row from 11-19 defines one specific rule. In our tutorial we define some rules 
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;ul&gt;
-        &lt;li&gt;
-         &lt;div&gt;
-           for a customer of the life stage *Career Focused”, i.e. which Product Package should be chosen (11),
-         &lt;/div&gt;&lt;/li&gt;
-        &lt;li&gt;
-         &lt;div&gt;
-           as well which discount should be taken into consideration in context with its accumulated asset (12-15)
-         &lt;/div&gt;&lt;/li&gt;
-        &lt;li&gt;
-         &lt;div&gt;
-           furthermore we will propose additional individual products dependent on his expressed needs (16-19)
-         &lt;/div&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/cd7a85515166393b21033c1c22251754.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The action we take for each row is defined in the ACTION columns
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/befbfa8bff469d4ab1cb82ffc8f61570.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          The first action column is used to identify optimal product package, so only relevant for the rule of line 11.
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          The second action column is used propose the single product and relevant for rule line 16-19
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          The third action column is used to calculate a discount and is relevant for rule line 12-15
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        Our tutorial covered some proposal rules mainly for the life stage Career Focused. In a real life example we would have rules for each life stage and multiple rules for any product combination. As already explained above, drools is comfortable to consumer multiple tables and spreadsheets which allows to decompose the offering for example along functional boundaries in order to manage the complexity within a single Excel table.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Instantiating a Rule Engine &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;Instantiating a Rule Engine is quite straightforward and can be achieved by establishing a &lt;/span&gt;
-       &lt;span style="font-size: 14px;"&gt;KieSession &lt;/span&gt;
-       &lt;span style="font-size: 14px;"&gt;&lt;span style="font-size: 14px;"&gt;an passing the Decision Table Excel.&lt;/span&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/62a59b95a38cd8db9b550e8258bd58b4.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Testing the Rules&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;In order to test our rules, we have build up a Customer object, which holds the answers to our questions from a dedicated customer&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          In our example a customer in life stage CAREERFOCUSED with an asset of 150k-300k and a need for LifeInsurance, Saving Accounts and Mortage
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          The customer will be inserted into the
-         &lt;span style=""&gt;KieSession&lt;/span&gt; into which we loaded beforehand our Excel (which is part of our jar file delivery)
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          We initialize our action object
-         &lt;span style=""&gt;offer&lt;/span&gt;, which will be added as a global variable under the name
-         &lt;span style=""&gt;offer&lt;/span&gt; to the KieSession (remember the variable definition in the Excel)
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          It’s time to the calculate the offering by calling
-         &lt;span style=""&gt; kSession.fireAllRules()&lt;/span&gt;
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-         &lt;span style=""&gt;Having done that our offer Object will have the result of the calculation. In our example&lt;/span&gt;
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;ul&gt;
-        &lt;li&gt;
-         &lt;div&gt;
-           An offer for the product package CAREERFOCUSED_PACKAGE with a discount of 10%, as well as to additional single products.
-         &lt;/div&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/b842c4fc36460b30625379b670293f3f.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The test output will also spill out the compiled decision rules (DSR) from the Excel. So the Excel is just another rule definition concept which will be converted into the powerful DSR drool language and feeded into their Production Rule System with its inference engine. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/597a4ee5a1d604c77072dd38fb2372f1.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;         &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 18px; font-weight: bold;"&gt;Outlook - Future Proof&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 14px;"&gt;By building up a Product Proposal rule engine on top of Drools, you will gain &lt;/span&gt;
-      &lt;/div&gt;
-      &lt;ul&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          an easy to model and manage rule definition approach by just using Excel
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          the flexibility to load Excel either out of a JAR or any kind of other local or remote location 
-        &lt;/div&gt;&lt;/li&gt;
-       &lt;li&gt;
-        &lt;div&gt;
-          a future proof approach in case the complexity of the rules will grow. I.e. Drools is a hybrid reasoning system which supports forward-reasoning as well as backward-reasoning programming styles and comes with a Business Rules Engine (BRE), a web authoring and rules management application (Drools Workbench) and an Eclipse IDE plugin for core development (should your rule appetite grow)
-        &lt;/div&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;This blog entry was fully produced within Evernote and published using the &lt;/span&gt;
-       &lt;a href="https://publishingbot.cloudburo.net" style="font-size: 11px; font-style: italic;"&gt;Cloudburo Publishing Bot&lt;/a&gt;
-       &lt;span style="font-size: 11px; font-style: italic;"&gt;.&lt;/span&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
