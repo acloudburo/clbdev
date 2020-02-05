@@ -5,7 +5,7 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2020-02-05T12:06:30+00:00</updated>
+  <updated>2020-02-05T12:06:29+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
@@ -13,8 +13,8 @@
     <title>The Diagrammer Series – When Money Left The Tangible Asset Space</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2020/02/05/the-diagrammer-series-when-money-left-the-tangible-asset-space.html"/>
     <id>https://dev.cloudburo.net/2020/02/05/the-diagrammer-series-when-money-left-the-tangible-asset-space.html</id>
-    <published>2020-02-05T12:06:30+00:00</published>
-    <updated>2020-02-05T12:07:44+00:00</updated>
+    <published>2020-02-05T12:06:29+00:00</published>
+    <updated>2020-02-05T13:43:22+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -29,10 +29,12 @@
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;          &lt;span style="text-align: center; font-size: 11pt; font-weight: normal; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Photo by &lt;/span&gt;
-        &lt;a href="https://unsplash.com/%40spacex?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-align: center; text-indent: 0mm; font-size: 11pt; font-weight: normal; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%;"&gt;SpaceX&lt;/a&gt;
-        &lt;span style="text-align: center; font-size: 11pt; font-weight: normal; color: rgb(1, 1, 1); font-family: Calibri;"&gt; on &lt;/span&gt;
-        &lt;a href="https://unsplash.com/s/photos/space?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-align: center; text-indent: 0mm; font-size: 11pt; font-weight: normal; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%;"&gt;Unsplash&lt;/a&gt;
+    &lt;p&gt;&lt;span/&gt;          &lt;div&gt;
+         &lt;span style="text-align: center; font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: normal;"&gt;Photo by &lt;/span&gt;
+         &lt;a href="https://unsplash.com/%40spacex?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-align: center; text-indent: 0mm; font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; font-weight: normal; line-height: 108%;"&gt;SpaceX&lt;/a&gt;
+         &lt;span style="text-align: center; font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: normal;"&gt; on &lt;/span&gt;
+         &lt;a href="https://unsplash.com/s/photos/space?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-align: center; text-indent: 0mm; font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; font-weight: normal; line-height: 108%;"&gt;Unsplash&lt;/a&gt;
+        &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;In the last article, we established the Asset concept model in the context of FIBO (blue classes below). Today we concentrate our work around the main asset type, the Money concept. Money plays a central role in our society and is as well a main driver for the Decentralized Finance (DeFi) concept space.&lt;/span&gt;
         &lt;/div&gt;
@@ -92,6 +94,9 @@
         &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;Stereotypes&lt;/span&gt;
         &lt;div&gt;
          &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Before we move on let’s explain the meaning of some Stereotypes which we introduced in the above UML diagram, i.e &amp;lt;&amp;lt;clb.s&amp;gt;&amp;gt;, &amp;lt;&amp;lt;clb.a&amp;gt;&amp;gt;.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;&lt;br&gt;&lt;/span&gt;
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;A stereotype is one of three types of extensibility mechanisms in the Unified Modeling Language (UML), the other two being tags and constraints. They allow designers to extend the vocabulary of UML to create new model elements, derived from existing ones, but that have specific properties that are suitable for a particular domain or otherwise specialized usage.&lt;/span&gt;
@@ -189,10 +194,12 @@
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;As well as&lt;/span&gt;
         &lt;/div&gt;
-        &lt;span style="font-size: 11pt; font-weight: normal; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt; An&lt;/span&gt;
-        &lt;span style="font-size: 11pt; font-weight: normal; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Intangible Asset&lt;/span&gt;
-        &lt;span style="font-size: 11pt; font-weight: normal; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;is an identifiable non-monetary asset without physical substance. Such an asset is identifiable when it is separable, or when it arises from contractual or other legal rights. Separable assets can be sold, transferred, licensed, etc. Examples of intangible assets include computer software, licenses, trademarks, patents, films, copyrights, and import quotas. [14]&lt;/span&gt;
-        &lt;span style="font-size: 11pt; font-weight: normal; color: rgb(68, 114, 196); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;.&lt;/span&gt;
+        &lt;span style="font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic; font-weight: normal;"&gt; An&lt;/span&gt;
+        &lt;span style="font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Intangible Asset&lt;/span&gt;
+        &lt;span style="font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic; font-weight: normal;"&gt;is an identifiable non-monetary asset without physical substance. Such an asset is identifiable when it is separable, or when it arises from contractual or other legal rights. Separable assets can be sold, transferred, licensed, etc. Examples of intangible assets include computer software, licenses, trademarks, patents, films, copyrights, and import quotas. [14]&lt;/span&gt;
+        &lt;div&gt;
+         &lt;span style="font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic; font-weight: normal;"&gt;&lt;br&gt;&lt;/span&gt;
+        &lt;/div&gt;
         &lt;span style="font-size: 13pt; color: rgb(47, 84, 150); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;The Money Shift Into The Intangible Asset Space&lt;/span&gt;
         &lt;div&gt;
          &lt;span style="font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;We explicitly decided to keep Money separate of the Tangible- and Intangible Asset types because, since the introduction of Digital Money, the Money concept left the Tangible Asset Space and can now be either a tangible or intangible asset.&lt;/span&gt;
@@ -233,7 +240,7 @@
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Picture by&lt;/span&gt;
-         &lt;a href="https://upload.wikimedia.org/wikipedia/commons/9/9e/Gold1oz.jpg" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;Wikipedia&lt;/a&gt;
+         &lt;a href="https://upload.wikimedia.org/wikipedia/commons/9/9e/Gold1oz.jpg" style="text-indent: 0mm; font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%; text-decoration: underline;"&gt;Wikipedia&lt;/a&gt;
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;It’s a money type which is based normally on a Thing, which has the feature of Scarcity.&lt;/span&gt;
@@ -317,9 +324,9 @@
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;Photo by &lt;/span&gt;
-         &lt;a href="https://unsplash.com/%40nbmat?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;Mathieu Turle&lt;/a&gt;
+         &lt;a href="https://unsplash.com/%40nbmat?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-indent: 0mm; font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%; text-decoration: underline;"&gt;Mathieu Turle&lt;/a&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt; on &lt;/span&gt;
-         &lt;a href="https://unsplash.com/s/photos/coins?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-indent: 0mm; font-size: 11pt; line-height: 108%; color: rgb(0, 0, 255); font-family: Calibri; text-decoration: underline;"&gt;Unsplash&lt;/a&gt;
+         &lt;a href="https://unsplash.com/s/photos/coins?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-indent: 0mm; font-size: 11pt; color: rgb(0, 0, 255); font-family: Calibri; line-height: 108%; text-decoration: underline;"&gt;Unsplash&lt;/a&gt;
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri; font-weight: bold;"&gt;Fiat Money&lt;/span&gt;
@@ -357,8 +364,7 @@
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;To believe in the value of a Fiat currency, you have trust in the issuing government, which ultimately controls the value of the Fiat currency.&lt;/span&gt;
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
-         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Despite the use of fiat money (money that is not backed by a commodity but is backed by the government), many don’t really believe it has any worth at all. After all, the government can control what the currency is worth by issuing more or less of it. The banks also have a say in how money travels from one person to the next&lt;/span&gt;
-         &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;. [16]&lt;/span&gt;
+         &lt;span style=" font-size: 11pt; color: rgb(68, 114, 196); font-family: Calibri; font-style: italic;"&gt;Despite the use of fiat money (money that is not backed by a commodity but is backed by the government), many don’t really believe it has any worth at all. After all, the government can control what the currency is worth by issuing more or less of it. The banks also have a say in how money travels from one person to the next. [16]&lt;/span&gt;
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm;"&gt;
          &lt;span style=" font-size: 11pt; color: rgb(1, 1, 1); font-family: Calibri;"&gt;These shortcomings - in the context of centralized controls in the value setting, as well as value exchange – resulted in the nineties of the last century in the rise of Digital Currencies, namely Crypto Currencies.&lt;/span&gt;
@@ -399,16 +405,16 @@
         &lt;/div&gt;
         &lt;div style="margin: 0mm 0mm 2.81mm; text-align: center;"&gt;
          &lt;span style=" font-size: 10pt; color: rgb(17, 17, 17); font-family: Helvetica;"&gt;Photo by &lt;/span&gt;
-         &lt;a href="https://unsplash.com/%40grakozy?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-indent: 0mm; font-size: 10pt; background: rgb(245, 245, 245); line-height: 108%; color: rgb(118, 118, 118); font-family: Helvetica; text-decoration: underline;"&gt;Greg Rakozy&lt;/a&gt;
+         &lt;a href="https://unsplash.com/%40grakozy?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-indent: 0mm; font-size: 10pt; background: rgb(245, 245, 245); color: rgb(118, 118, 118); font-family: Helvetica; line-height: 108%; text-decoration: underline;"&gt;Greg Rakozy&lt;/a&gt;
          &lt;span style=" font-size: 10pt; color: rgb(17, 17, 17); font-family: Helvetica;"&gt; on &lt;/span&gt;
-         &lt;a href="https://unsplash.com/s/photos/space?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-indent: 0mm; font-size: 10pt; background: rgb(245, 245, 245); line-height: 108%; color: rgb(118, 118, 118); font-family: Helvetica; text-decoration: underline;"&gt;Unsplash&lt;/a&gt;
+         &lt;a href="https://unsplash.com/s/photos/space?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText" style="text-indent: 0mm; font-size: 10pt; background: rgb(245, 245, 245); color: rgb(118, 118, 118); font-family: Helvetica; line-height: 108%; text-decoration: underline;"&gt;Unsplash&lt;/a&gt;
         &lt;/div&gt;
        &lt;/div&gt;
        &lt;div&gt;
         &lt;br&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;font face="Calibri Light"&gt;&lt;span style="font-size: 16px;"&gt;References&lt;/span&gt;&lt;/font&gt;
+        &lt;span style="font-size: 16px; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;References&lt;/span&gt;
        &lt;/div&gt;
        &lt;table style="border-collapse: collapse; min-width: 100%;"&gt;
         &lt;tbody&gt;
@@ -459,7 +465,7 @@
            &lt;/div&gt;&lt;/td&gt;
           &lt;td style=" padding: 8px; border: 1px solid;"&gt;
            &lt;div style="margin-top: 1em; margin-bottom: 1em;"&gt;
-            &lt;span style=""&gt;S. Kordyban, “&lt;a href="http://hedgetrade.com"&gt;hedgetrade.com&lt;/a&gt;,” 19 December 2019. [Online]. Available: &lt;a href="https://hedgetrade.com/is-crypto-an-intangible-asset/"&gt;&lt;a href="https://hedgetrade.com/is-crypto-an-intangible-asset/"&gt;https://hedgetrade.com/is-crypto-an-intangible-asset/&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
+            &lt;span style=""&gt;S. Kordyban, “&lt;a href="http://hedgetrade.com/"&gt;hedgetrade.com&lt;/a&gt;,” 19 December 2019. [Online]. Available: &lt;a href="https://hedgetrade.com/is-crypto-an-intangible-asset/"&gt;&lt;a href="https://hedgetrade.com/is-crypto-an-intangible-asset/"&gt;https://hedgetrade.com/is-crypto-an-intangible-asset/&lt;/a&gt;&lt;/a&gt;.&lt;/span&gt;
            &lt;/div&gt;&lt;/td&gt;
          &lt;/tr&gt;
         &lt;/tbody&gt;
@@ -468,8 +474,11 @@
         &lt;br&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;span style="font-size: 12pt; color: rgb(31, 55, 99); font-family: &amp;quot;Calibri Light&amp;quot;;"&gt;&lt;br&gt;&lt;/span&gt;
+        &lt;span style="font-size: 12pt;"&gt;&lt;br&gt;&lt;/span&gt;
        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
