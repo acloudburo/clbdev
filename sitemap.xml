@@ -1309,6 +1309,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/easparx.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/deutsch.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.9</priority>

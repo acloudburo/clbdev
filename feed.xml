@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2020/02/10/how-to-create-a-mdg-technology-file-in-sparx-enterprise-architect.html"/>
     <id>https://dev.cloudburo.net/2020/02/10/how-to-create-a-mdg-technology-file-in-sparx-enterprise-architect.html</id>
     <published>2020-02-10T12:36:15+00:00</published>
-    <updated>2020-02-10T13:07:03+00:00</updated>
+    <updated>2020-02-10T14:27:29+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -39,9 +39,6 @@
        &lt;/div&gt;
        &lt;div&gt;
          I noted them down, because after some time I can&amp;rsquo;t remember them anymore ;).
-       &lt;/div&gt;
-       &lt;div&gt;
-        &lt;br&gt;
        &lt;/div&gt;
        &lt;div&gt;
         &lt;br&gt;
@@ -73,13 +70,17 @@
          &lt;div&gt;
            Choose the location where you stored the UML Profile in an earlier version (Replace the current UML profile file)
          &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+          &lt;font style="color: rgb(255, 0, 0);"&gt;&lt;b&gt;MAKE SURE to use the same &amp;ldquo;Profile Name&lt;/b&gt;&lt;/font&gt; &amp;rdquo;(refer to the discussion at the end of this article), otherwise earlier stereotypes in the model aren&amp;rsquo;t modifiable anymore!
+         &lt;/div&gt;&lt;/li&gt;
        &lt;/ul&gt;
        &lt;div&gt;
         &lt;br&gt;
        &lt;/div&gt;
        &lt;div&gt;&lt;/p&gt;
     
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/f9d5e4dc57b8e0ea2ec2f0af9dc902ad.png'&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/592b2218e5f3b9e40ea17b176d74e910.png'&gt;&lt;/p&gt;
     
   &lt;/div&gt;
   &lt;div class="article"&gt;
@@ -90,7 +91,7 @@
        &lt;ul&gt;
         &lt;li&gt;
          &lt;div&gt;
-           The UML Profile file got created
+           The UML Profile file got created.
          &lt;/div&gt;&lt;/li&gt;
         &lt;li&gt;
          &lt;div&gt;
@@ -216,10 +217,10 @@
         &lt;br&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;font style="font-size: 14pt;"&gt;&lt;b&gt;Be careful: Avoiding Profile Name and ID conflicts&lt;/b&gt;&lt;/font&gt;
+        &lt;font style="font-size: 14pt;"&gt;&lt;span style="font-size: 14pt; font-weight: bold;"&gt;Be careful: Avoiding Profile Name and ID conflicts&lt;/span&gt;&lt;/font&gt;
        &lt;/div&gt;
        &lt;div&gt;
-        &lt;font style="font-size: 14pt;"&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;
+        &lt;font style="font-size: 14pt;"&gt;&lt;br&gt;&lt;/font&gt;
        &lt;/div&gt;
        &lt;ul&gt;
         &lt;li&gt;
