@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" />
+    <title>dev@cloudburo | How To Create A MDG Technology File In SPARX Enterprise Architect</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" /><!--[if lt IE 9]><script src="../../../js/ie8.js"></script><![endif]--><link href="../../../css/all.css" rel="stylesheet" /><script type="text/javascript">
+      (function(d,e,j,h,f,c,b){d.GoogleAnalyticsObject=f;d[f]=d[f]||function(){(d[f].q=d[f].q||[]).push(arguments)},d[f].l=1*new Date();c=e.createElement(j),b=e.getElementsByTagName(j)[0];c.async=1;c.src=h;b.parentNode.insertBefore(c,b)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-35696879-1", location.hostname);ga("send","pageview");
+    </script>
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C400italic%2C700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <!--HTML5 shiv for IE8 support--><!--[if lt IE 9]
+    | <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script-->
+  </head>
+  <body>
+    <div class="col-sm-3 sidebar" id="secondary" style="display: none;">
+      <aside>
+        <div class="about">
+          <h4>
+            <a class="sidebarlink" href="/"><i class="fa fa-chevron-right"></i>    Home     <i class="fa fa-home"></i></a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu1.html"><i class="fa fa-chevron-right"></i>    About   </a>
+          </h4>
+          <h4>
+            <a class="sidebarlink" href="/menu2.html"><i class="fa fa-chevron-right"></i>    Contact   </a>
+          </h4>
+        </div>
+        <div class="tags">
+          <h4>
+            Categories
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/tags/ai.html" class="label label-default">ai (2)</a>
+            <a href="/tags/api.html" class="label label-default">api (2)</a>
+            <a href="/tags/architecture.html" class="label label-default">architecture (26)</a>
+            <a href="/tags/aws.html" class="label label-default">aws (13)</a>
+            <a href="/tags/banking.html" class="label label-default">banking (7)</a>
+            <a href="/tags/bigdata.html" class="label label-default">bigdata (2)</a>
+            <a href="/tags/blockchain.html" class="label label-default">blockchain (23)</a>
+            <a href="/tags/blockstack.html" class="label label-default">blockstack (1)</a>
+            <a href="/tags/bots.html" class="label label-default">bots (2)</a>
+            <a href="/tags/cloud.html" class="label label-default">cloud (3)</a>
+            <a href="/tags/crypto.html" class="label label-default">crypto (8)</a>
+            <a href="/tags/dao.html" class="label label-default">dao (4)</a>
+            <a href="/tags/datascience.html" class="label label-default">datascience (3)</a>
+            <a href="/tags/deutsch.html" class="label label-default">deutsch (1)</a>
+            <a href="/tags/devops.html" class="label label-default">devops (1)</a>
+            <a href="/tags/diagram.html" class="label label-default">diagram (1)</a>
+            <a href="/tags/diagrammer.html" class="label label-default">diagrammer (4)</a>
+            <a href="/tags/docker.html" class="label label-default">docker (11)</a>
+            <a href="/tags/economy.html" class="label label-default">economy (1)</a>
+            <a href="/tags/ethereum.html" class="label label-default">ethereum (4)</a>
+            <a href="/tags/futurework.html" class="label label-default">futureWork (5)</a>
+            <a href="/tags/gdpr.html" class="label label-default">gdpr (3)</a>
+            <a href="/tags/googleapps.html" class="label label-default">googleapps (1)</a>
+            <a href="/tags/gradle.html" class="label label-default">gradle (3)</a>
+            <a href="/tags/identity.html" class="label label-default">identity (1)</a>
+            <a href="/tags/inspiration.html" class="label label-default">inspiration (15)</a>
+            <a href="/tags/intellij.html" class="label label-default">intellij (1)</a>
+            <a href="/tags/java.html" class="label label-default">java (3)</a>
+            <a href="/tags/javatutorial.html" class="label label-default">javatutorial (5)</a>
+            <a href="/tags/journalism.html" class="label label-default">journalism (2)</a>
+            <a href="/tags/legal.html" class="label label-default">legal (1)</a>
+            <a href="/tags/m.html" class="label label-default">m (1)</a>
+            <a href="/tags/marketing.html" class="label label-default">marketing (2)</a>
+            <a href="/tags/meteor.html" class="label label-default">meteor (5)</a>
+            <a href="/tags/microservice.html" class="label label-default">microservice (18)</a>
+            <a href="/tags/ml.html" class="label label-default">ml (2)</a>
+            <a href="/tags/modeling.html" class="label label-default">modeling (2)</a>
+            <a href="/tags/personaldata.html" class="label label-default">personalData (5)</a>
+            <a href="/tags/platform.html" class="label label-default">platform (2)</a>
+            <a href="/tags/polkadot.html" class="label label-default">polkadot (6)</a>
+            <a href="/tags/python.html" class="label label-default">python (7)</a>
+            <a href="/tags/quicktips.html" class="label label-default">quicktips (21)</a>
+            <a href="/tags/shift.html" class="label label-default">shift (4)</a>
+            <a href="/tags/smallhints.html" class="label label-default">smallhints (13)</a>
+            <a href="/tags/startup.html" class="label label-default">startup (11)</a>
+            <a href="/tags/statistics.html" class="label label-default">statistics (2)</a>
+            <a href="/tags/teambuilding.html" class="label label-default">teambuilding (2)</a>
+            <a href="/tags/tut01.html" class="label label-default">tut01 (7)</a>
+            <a href="/tags/tutorial.html" class="label label-default">tutorial (11)</a>
+            <a href="/tags/uml.html" class="label label-default">uml (1)</a>
+          </ul>
+        </div>
+        <div class="timeline">
+          <h4>
+            By year
+          </h4>
+          <ul class="list-unstyled">
+            <a href="/2020.html" class="label label-primary">2020 (4)</a>
+            <a href="/2019.html" class="label label-primary">2019 (25)</a>
+            <a href="/2018.html" class="label label-primary">2018 (33)</a>
+            <a href="/2017.html" class="label label-primary">2017 (18)</a>
+            <a href="/2016.html" class="label label-primary">2016 (16)</a>
+            <a href="/2015.html" class="label label-primary">2015 (35)</a>
+            <a href="/2014.html" class="label label-primary">2014 (10)</a>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <!--/#secondary-->
+    <div class="col-sm-12" id="primary">
+      <div class="content">
+        <header class="header">
+          <hgroup class="pull-left">
+            <h1 class="site-title">
+              <a href="/">dev@cloudburo</a>
+            </h1>
+          </hgroup>
+          <div class="btn btn-primary pull-right" id="togglesidebar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </header>
+        <section class="post">
+          <header class="entry-header">
+            <h2 class="entry-title">
+              <a href="/2020/02/10/how-to-create-a-mdg-technology-file-in-sparx-enterprise-architect.html">How To Create A MDG Technology File In SPARX Enterprise Architect</a>
+            </h2>
+            <p class="entry-meta">
+              Posted on  10.Feb 2020 | Tags <a class="label label-primary" href="/tags/quicktips.html">quicktips</a> <a class="label label-primary" href="/tags/m.html">m</a> <a class="label label-primary" href="/tags/modeling.html">modeling</a> <a class="label label-primary" href="/tags/uml.html">uml</a> 
+            </p>
+          </header>
+          <div class="entry-description">
+            <div class="row">
+              <div class="article">
+                <p><span/></p>
+                
+                <p><div>
+                   <div>
+                     Enterprise Architect is a powerful tool with hundreds of built in features and support for a wide range of modeling standards ready to use out of the box.  It also provides a range of powerful extension mechanisms.
+                    <a href="https://sparxsystems.com/enterprise_architect_user_guide/15.0/modeling/introduction_2.html">The Enterprise Architect Software Development Kit (SDK)</a> contains the mechanisms for extending the core UML to support the modeling of a particular domain, platform or method. Enterprise Architect and other partner organizations provide commercially available Model Driven Generation (MDG) Technologies, but anyone is free to use the SDK to create a new Profile and to distribute it as an MDG Technology.
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     Here the steps in order to create an Enterprise Architect (MDG) Files, which contains an own create UML-profile package, which is used in my
+                    <a href="https://dev.cloudburo.net/tags/diagrammer.html">Diagrammer Series</a>.
+                    <br>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     I noted them down, because after some time I can&rsquo;t remember them anymore ;).
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/5413ab7ed58b777b759271ff4085e3bd.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                       Select the package which contains the UML profile in the Project window (left-side)
+                     </div></li>
+                    <li>
+                     <div>
+                       Goto &ldquo;Specialize&rdquo; -&gt; &ldquo;Publish-Tech&rdquo; 
+                     </div></li>
+                    <li>
+                     <div>
+                       In the Menu-Drop Down select &ldquo;Publish Package as UML Profile&rdquo; 
+                     </div></li>
+                    <li>
+                     <div>
+                       Choose the location where you stored the UML Profile in an earlier version (Replace the current UML profile file)
+                     </div></li>
+                   </ul>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/f9d5e4dc57b8e0ea2ec2f0af9dc902ad.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                       The UML Profile file got created
+                     </div></li>
+                    <li>
+                     <div>
+                       Select now &ldquo;Generate MDG Technology&rdquo;
+                     </div></li>
+                   </ul>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/79e5b1a9a6b12e1cb298922e3bef9dc9.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                       Select the last version of your MDF Technology File
+                     </div></li>
+                   </ul>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/ab204860706eadc17a5ebecb4c1949fc.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                       Increase the Version Number
+                     </div></li>
+                   </ul>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/97bda8ebefa096ab5cbe8365c7150f42.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div>
+                     It includes Profiles Meta Model
+                   </div>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/0e9b1af6314b73f4ae7ae6d149ebb79f.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                       Make sure to the path shows to your previously generated profile file
+                     </div></li>
+                   </ul>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/17abd6cf554a6c16074e53afc7ddb30e.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                   <ul>
+                    <li>
+                     <div>
+                       You are done
+                     </div></li>
+                   </ul>
+                   <div>
+                    <br>
+                   </div>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/57be727c9ed0a781cfc860164bf7e0c2.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <ul>
+                    <li>
+                     <div>
+                       Restart EA and check that the new profile file is loaded
+                     </div></li>
+                   </ul>
+                   <div></p>
+                
+                <p><img class='article  img-thumbnail' src='/images/0a08d6f936b350a6c1754066bec758c6.png'></p>
+                
+              </div>
+              <div class="article">
+                <p><span/>         </div>
+                   <div>
+                    <br>
+                   </div>
+                  </div></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="comments">
+            <div id="disqus_thread">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              //<![CDATA[
+                                var disqus_shortname = 'dev1cloudburo';
+                        
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              //]]>
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+              
+              <script type="text/javascript">
+              //<![CDATA[
+                  var disqus_shortname = 'dev1cloudburo';
+                  (function () {
+                      var s = document.createElement('script'); s.async = true;
+                      s.type = 'text/javascript';
+                      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                  }());
+              //]]>
+              </script>
+              
+            </div>
+          </div>
+        </section><footer class="footer">
+          <p>
+          </p>
+          <div class="socials-footer"><a href="https://twitter.com/talfco" class="btn btn-twitter">
+                <i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/felixk" class="btn btn-linkedin">
+                <i class="fa fa-linkedin"></i></a><a href="https://github.com/talfco" class="btn btn-github">
+                <i class="fa fa-github"></i></a>
+          </div>
+          <p>
+            © 2020 All rights reserved 
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="../../../js/all.js"></script>
+  </body>
+</html>

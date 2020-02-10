@@ -5,10 +5,222 @@
   <id>https://dev.cloudburo.net</id>
   <link href="https://dev.cloudburo.net"/>
   <link href="https://dev.cloudburo.net/feed.xml" rel="self"/>
-  <updated>2020-02-05T12:06:29+00:00</updated>
+  <updated>2020-02-10T12:36:15+00:00</updated>
   <author>
     <name>Felix K</name>
   </author>
+  <entry>
+    <title>How To Create A MDG Technology File In SPARX Enterprise Architect</title>
+    <link rel="alternate" href="https://dev.cloudburo.net/2020/02/10/how-to-create-a-mdg-technology-file-in-sparx-enterprise-architect.html"/>
+    <id>https://dev.cloudburo.net/2020/02/10/how-to-create-a-mdg-technology-file-in-sparx-enterprise-architect.html</id>
+    <published>2020-02-10T12:36:15+00:00</published>
+    <updated>2020-02-10T12:36:36+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="row"&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;div&gt;
+       &lt;div&gt;
+         Enterprise Architect is a powerful tool with hundreds of built in features and support for a wide range of modeling standards ready to use out of the box.  It also provides a range of powerful extension mechanisms.
+        &lt;a href="https://sparxsystems.com/enterprise_architect_user_guide/15.0/modeling/introduction_2.html"&gt;The Enterprise Architect Software Development Kit (SDK)&lt;/a&gt; contains the mechanisms for extending the core UML to support the modeling of a particular domain, platform or method. Enterprise Architect and other partner organizations provide commercially available Model Driven Generation (MDG) Technologies, but anyone is free to use the SDK to create a new Profile and to distribute it as an MDG Technology.
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         Here the steps in order to create an Enterprise Architect (MDG) Files, which contains an own create UML-profile package, which is used in my
+        &lt;a href="https://dev.cloudburo.net/tags/diagrammer.html"&gt;Diagrammer Series&lt;/a&gt;.
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         I noted them down, because after some time I can&amp;rsquo;t remember them anymore ;).
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/5413ab7ed58b777b759271ff4085e3bd.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Select the package which contains the UML profile in the Project window (left-side)
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Goto &amp;ldquo;Specialize&amp;rdquo; -&amp;gt; &amp;ldquo;Publish-Tech&amp;rdquo; 
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           In the Menu-Drop Down select &amp;ldquo;Publish Package as UML Profile&amp;rdquo; 
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Choose the location where you stored the UML Profile in an earlier version (Replace the current UML profile file)
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/f9d5e4dc57b8e0ea2ec2f0af9dc902ad.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           The UML Profile file got created
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Select now &amp;ldquo;Generate MDG Technology&amp;rdquo;
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/79e5b1a9a6b12e1cb298922e3bef9dc9.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Select the last version of your MDF Technology File
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/ab204860706eadc17a5ebecb4c1949fc.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Increase the Version Number
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/97bda8ebefa096ab5cbe8365c7150f42.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         It includes Profiles Meta Model
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/0e9b1af6314b73f4ae7ae6d149ebb79f.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Make sure to the path shows to your previously generated profile file
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/17abd6cf554a6c16074e53afc7ddb30e.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           You are done
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/57be727c9ed0a781cfc860164bf7e0c2.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Restart EA and check that the new profile file is loaded
+         &lt;/div&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/0a08d6f936b350a6c1754066bec758c6.png'&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+  &lt;div class="article"&gt;
+    &lt;p&gt;&lt;span/&gt;         &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;&lt;/p&gt;
+    
+  &lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
   <entry>
     <title>The Diagrammer Series – When Money Left The Tangible Asset Space</title>
     <link rel="alternate" href="https://dev.cloudburo.net/2020/02/05/the-diagrammer-series-when-money-left-the-tangible-asset-space.html"/>
@@ -12621,76 +12833,6 @@
     The segment of one, a missed opportunity? Professors C. K. Prahalad and M. S. Krishnan described the Segment of One as N organizations coming together to solve the need of 1 customer. Every individual customer is recognized as a unique (segment of one) whose environment, lifestyle, personality, preferences, needs and wants are appreciated as different. Current banking solutions are overwhelmingly generic and lack relevance and context for intended customers.&lt;br/&gt;
     Read the full article here.&lt;br/&gt;
     &lt;a href="https://www.thoughtworks.com/insights/blog/precision-banking-segment-one"&gt;Link&lt;/a&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>ERC-725 Video Tutorial</title>
-    <link rel="alternate" href="https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html"/>
-    <id>https://dev.cloudburo.net/2018/05/11/erc-725-video-tutorial.html</id>
-    <published>2018-05-11T07:10:04+00:00</published>
-    <updated>2019-12-17T12:01:59+00:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;div class="row"&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;div&gt;
-        Origin, which are building a platform for decentralized peer-to-peer marketplaces, published recently
-       &lt;a href="https://medium.com/originprotocol/managing-identity-with-a-ui-for-erc-725-5c7422b38c09"&gt;an excellent tutorial&lt;/a&gt; and Youtube video about “Managing Identity with a UI for ERC 725”.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-725.md"&gt; ERC 725&lt;/a&gt; (and 735) — a proposed standard for managing identity on the blockchain from Fabian Vogelsteller. Fabian works on the Ethereum project and is well known in the community as the creator of the Mist browser and Web3.js.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        The standard is about Identities, Claim Issuer and Claim Checker. In a nutshell the concept is described in this comment by Fabian. 
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/p&gt;
-    
-    &lt;p&gt;&lt;img class='article  img-thumbnail' src='/images/f73feb5ad7e5c6679d36074e439f8678.png'&gt;&lt;/p&gt;
-    
-  &lt;/div&gt;
-  &lt;div class="article"&gt;
-    &lt;p&gt;&lt;span/&gt;        &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        By the way I found it super useful to subscribe to the ERC-725 comment history on Github to understand how the standard is evolving during its draft phase. You got more or less a live picture of the incremental design process of  an ERC standard.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-        But nothing beats a prototype GUI demo when it comes to an easy to follow tutorial of an ERC standard. So thanks to
-       &lt;a href="https://medium.com/@nick_p"&gt;Nick Poulden&lt;/a&gt; who assembled this learning video.
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;div class="responsive-video"&gt;
-        &lt;iframe src="https://www.youtube.com/embed/jjUKWRK8H2g?rel=0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-       &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;br&gt;
-      &lt;/div&gt;
-      &lt;div&gt;
-       &lt;span style="font-size: 11px;"&gt;&lt;i&gt;This blog entry was fully produced within Evernote and published using the &lt;a href="https://publishingbot.cloudburo.net"&gt;Cloudburo Publishing Bot&lt;/a&gt;.&lt;/i&gt;&lt;/span&gt;
-      &lt;/div&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
