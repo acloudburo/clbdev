@@ -14,7 +14,7 @@
     <link rel="alternate" href="https://dev.cloudburo.net/2020/02/10/how-to-create-a-mdg-technology-file-in-sparx-enterprise-architect.html"/>
     <id>https://dev.cloudburo.net/2020/02/10/how-to-create-a-mdg-technology-file-in-sparx-enterprise-architect.html</id>
     <published>2020-02-10T12:36:15+00:00</published>
-    <updated>2020-02-10T12:36:36+00:00</updated>
+    <updated>2020-02-10T13:07:03+00:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -33,7 +33,6 @@
        &lt;div&gt;
          Here the steps in order to create an Enterprise Architect (MDG) Files, which contains an own create UML-profile package, which is used in my
         &lt;a href="https://dev.cloudburo.net/tags/diagrammer.html"&gt;Diagrammer Series&lt;/a&gt;.
-        &lt;br&gt;
        &lt;/div&gt;
        &lt;div&gt;
         &lt;br&gt;
@@ -216,7 +215,51 @@
        &lt;div&gt;
         &lt;br&gt;
        &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 14pt;"&gt;&lt;b&gt;Be careful: Avoiding Profile Name and ID conflicts&lt;/b&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;font style="font-size: 14pt;"&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;
+       &lt;/div&gt;
+       &lt;ul&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           Each Profile should have a unique name and ID.
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           The Profile name is specified when saving the Profile, while the ID is derived from the GUID of the diagram or Package that was used to save the Profile.
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+         &lt;div&gt;
+           To avoid name and ID conflicts:
+         &lt;/div&gt;&lt;/li&gt;
+        &lt;ul&gt;
+         &lt;li&gt;
+          &lt;div&gt;
+            When creating multiple Profiles, use a new diagram or Package for each Profile
+          &lt;/div&gt;&lt;/li&gt;
+         &lt;li&gt;
+          &lt;div&gt;
+            When saving Profiles enter a Profile name that is unique
+          &lt;/div&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+       &lt;/ul&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+       &lt;div&gt;
+         On starting Enterprise Architect or enabling an MDG Technology,if a duplicate Profile name or duplicate Profile ID is detected, a warning will be displayed in the System Output window.
+       &lt;/div&gt;
+       &lt;div&gt;
+        &lt;br&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+       &lt;br&gt;
       &lt;/div&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;a href="https://sparxsystems.com/enterprise_architect_user_guide/15.0/modeling/exportprofile_2.html"&gt;Link&lt;/a&gt;&lt;/p&gt;
     
   &lt;/div&gt;
 &lt;/div&gt;</content>
