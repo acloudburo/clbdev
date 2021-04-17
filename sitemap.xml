@@ -907,6 +907,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2021/04/17/what-is-a-nft-understanding-the-primary-concepts.html</loc>
+    <lastmod>2021-04-17</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2017/10/25/amazon-wants-to-let-strangers-into-your-home.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.7</priority>
@@ -1330,6 +1336,30 @@
     <loc>https://dev.cloudburo.net/tags/intellij.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/tags/nft.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2021.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2021/04.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://dev.cloudburo.net/2021/04/17.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
