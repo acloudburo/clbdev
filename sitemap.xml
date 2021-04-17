@@ -505,6 +505,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/2021/04/17/the-conclusion-of-the-long-term-debt-cycle-and-the-rise-of-bitcoin.html</loc>
+    <lastmod>2021-04-17</lastmod>
+    <priority>0.7</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/2018/12/21/data-journalism-the-disinformation-report-assessing-the-ira-us-propaganda-war.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.7</priority>
@@ -1255,6 +1261,12 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
+    <loc>https://dev.cloudburo.net/tags/economy.html</loc>
+    <lastmod>2019-12-17</lastmod>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
     <loc>https://dev.cloudburo.net/tags/journalism.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.9</priority>
@@ -1322,12 +1334,6 @@
   </url>
   <url>
     <loc>https://dev.cloudburo.net/tags/bigdata.html</loc>
-    <lastmod>2019-12-17</lastmod>
-    <priority>0.9</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>https://dev.cloudburo.net/tags/economy.html</loc>
     <lastmod>2019-12-17</lastmod>
     <priority>0.9</priority>
     <changefreq>daily</changefreq>
